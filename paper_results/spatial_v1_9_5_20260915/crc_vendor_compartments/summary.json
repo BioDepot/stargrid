@@ -1,0 +1,58 @@
+{
+  "area": "D1",
+  "compatibility_decomposition": "per-feature-per-bin min/shared and positive residuals",
+  "field_definition": "raw feature-by-2um-bin molecule mass",
+  "inputs": {
+    "barcode_mappings": {
+      "path": "<datasets>/visium_hd_human_crc/processed_4.1.0_outs/barcode_mappings.parquet",
+      "sha256": "474ba729d433f0da832c88a37772a3985422a23b7f37edf8472d5628c4b69614"
+    },
+    "open_policy_mex": {
+      "gated_hard": {
+        "barcodes.tsv": "ddac32c22c3b5049e3d536f8fe064664dbc29cf682e973c8f3d2bd3049d9c77d",
+        "features.tsv": "ca5165e52795b21f013b20876fca809d155f00d7d159eb4cd12c0c48eae7b434",
+        "matrix.mtx": "e0a4d8207088b67d688f1f99ed1b8311151b5a19c64d02e8366fdeaff68d0687"
+      },
+      "postcollapse_hard": {
+        "barcodes.tsv": "ddac32c22c3b5049e3d536f8fe064664dbc29cf682e973c8f3d2bd3049d9c77d",
+        "features.tsv": "ca5165e52795b21f013b20876fca809d155f00d7d159eb4cd12c0c48eae7b434",
+        "matrix.mtx": "2d179c95c11977833ea6bf0cce4983d025204cec11b602b7ce756ba10ad71786"
+      },
+      "postcollapse_soft": {
+        "barcodes.tsv": "ddac32c22c3b5049e3d536f8fe064664dbc29cf682e973c8f3d2bd3049d9c77d",
+        "features.tsv": "ca5165e52795b21f013b20876fca809d155f00d7d159eb4cd12c0c48eae7b434",
+        "matrix.mtx": "232444bdf4c235c6705cc364f141b9c39b948157328384cb62105eeec83c9047"
+      },
+      "strict": {
+        "barcodes.tsv": "ddac32c22c3b5049e3d536f8fe064664dbc29cf682e973c8f3d2bd3049d9c77d",
+        "features.tsv": "ca5165e52795b21f013b20876fca809d155f00d7d159eb4cd12c0c48eae7b434",
+        "matrix.mtx": "7ff22a1aad1f42bc1b16b0cf9da29f46e113e64063fb58f97e3b16ea8a04d6cd"
+      }
+    },
+    "space_ranger_h5": {
+      "path": "<datasets>/visium_hd_human_crc/processed_4.1.0_outs/binned_outputs/square_002um/raw_feature_bc_matrix.h5",
+      "sha256": "ce1dae73b2f9e340788df447776d372f86c2a67dc511d5950baa46c816a3cebf"
+    }
+  },
+  "invariants": {
+    "cell_nucleus_masks_not_used_as_assignment_priors": true,
+    "normalized_tv_is_secondary": true,
+    "occupancy_jaccard_not_computed": true,
+    "raw_mass_not_normalized": true,
+    "space_ranger_is_compatibility_not_truth": true,
+    "strict_and_ambiguous_increment_reported_separately": false
+  },
+  "limitations": [
+    "The image-derived cell and nucleus masks are a noisy, non-transcriptomic oracle.",
+    "Shared/additional fields are matrix-level feature-by-bin mass decompositions, not exact read-member-set matches.",
+    "This engineering fixture does not establish biological superiority."
+  ],
+  "outputs": {
+    "comparison_deltas.tsv": "677bff25c27e919da1bd9def04e86493800f166eb11278b471da0b0493a56e1d",
+    "field_biology.tsv": "f9a1df3e894791c43032268ffca9b20528b4d95d413358e7bada0bb712790e79"
+  },
+  "schema": "visium_hd_processing.flex_full_compartment_biology.v1",
+  "slide": "H1-GMHFWPH",
+  "strict_increments": "omitted_non_nested_postcollapse_policies",
+  "umi_mode": "1mm_cr"
+}

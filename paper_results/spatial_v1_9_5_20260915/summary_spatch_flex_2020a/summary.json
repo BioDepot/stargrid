@@ -1,0 +1,160 @@
+{
+  "accounting": {
+    "candidate_rows": 800207036,
+    "exact_h0_reads": 269928116,
+    "joined_reads": 621817154,
+    "read_cliques": 275669128,
+    "reads_decoded": 676879511,
+    "reads_with_candidates": 650712941
+  },
+  "cross_scale_mass_residuals": {
+    "gated_hard": {
+      "absolute": 0.0,
+      "relative": 0.0
+    },
+    "hard": {
+      "absolute": 0.0,
+      "relative": 0.0
+    },
+    "soft_expected": {
+      "absolute": 0.00031769275665283203,
+      "relative": 1.175919281035694e-12
+    },
+    "strict": {
+      "absolute": 0.0,
+      "relative": 0.0
+    }
+  },
+  "hard_minus_strict_same_primary": 57515871.0,
+  "inputs": {
+    "<runs>/20260915_v195_spatch_flex_2020a/PRIMARY_SEAL.json": "adbebfe7f50888b85278023228acb93817a2f7837f5e03d618f19d240a233df7",
+    "<runs>/20260915_v195_spatch_flex_2020a/star/SpatialFlex.out/run_summary.tsv": "3a641997dacd06bf4fea6529c5254ed4272453e2858c0476f1a42c9308d9ca80",
+    "<runs>/20260915_v195_spatch_flex_2020a/star/SpatialFlex.out/summary.tsv": "86c4118c6cc938ff08d931dc50746299471b884264d9ce9ba218784e056f4fcc"
+  },
+  "not_emitted_by_native_summary": [
+    "feature_eligible_ambiguous_reads",
+    "posterior_clique_mass_residual"
+  ],
+  "policy_masses_full_capture_axis": {
+    "gated_hard": 234434272.0,
+    "hard": 270244052.0,
+    "soft_expected": 270165445.6865863,
+    "strict": 212728181.0
+  },
+  "policy_rows": [
+    {
+      "barcodes": "10322509",
+      "features": "18032",
+      "mass": "212728181",
+      "matrix_field": "integer",
+      "nnz": "201627790",
+      "product": "strict",
+      "scale": "square_002um"
+    },
+    {
+      "barcodes": "702161",
+      "features": "18032",
+      "mass": "212728181",
+      "matrix_field": "integer",
+      "nnz": "174870152",
+      "product": "strict",
+      "scale": "square_008um"
+    },
+    {
+      "barcodes": "175561",
+      "features": "18032",
+      "mass": "212728181",
+      "matrix_field": "integer",
+      "nnz": "146585401",
+      "product": "strict",
+      "scale": "square_016um"
+    },
+    {
+      "barcodes": "10322509",
+      "features": "18032",
+      "mass": "270165445.68658632",
+      "matrix_field": "real",
+      "nnz": "323769984",
+      "product": "soft_expected",
+      "scale": "square_002um"
+    },
+    {
+      "barcodes": "702161",
+      "features": "18032",
+      "mass": "270165445.68690401",
+      "matrix_field": "real",
+      "nnz": "239841831",
+      "product": "soft_expected",
+      "scale": "square_008um"
+    },
+    {
+      "barcodes": "175561",
+      "features": "18032",
+      "mass": "270165445.68663222",
+      "matrix_field": "real",
+      "nnz": "187577022",
+      "product": "soft_expected",
+      "scale": "square_016um"
+    },
+    {
+      "barcodes": "10322509",
+      "features": "18032",
+      "mass": "270244052",
+      "matrix_field": "integer",
+      "nnz": "254061192",
+      "product": "hard",
+      "scale": "square_002um"
+    },
+    {
+      "barcodes": "702161",
+      "features": "18032",
+      "mass": "270244052",
+      "matrix_field": "integer",
+      "nnz": "217064507",
+      "product": "hard",
+      "scale": "square_008um"
+    },
+    {
+      "barcodes": "175561",
+      "features": "18032",
+      "mass": "270244052",
+      "matrix_field": "integer",
+      "nnz": "177945826",
+      "product": "hard",
+      "scale": "square_016um"
+    },
+    {
+      "barcodes": "10322509",
+      "features": "18032",
+      "mass": "234434272",
+      "matrix_field": "integer",
+      "nnz": "221476162",
+      "product": "gated_hard",
+      "scale": "square_002um"
+    },
+    {
+      "barcodes": "702161",
+      "features": "18032",
+      "mass": "234434272",
+      "matrix_field": "integer",
+      "nnz": "191002602",
+      "product": "gated_hard",
+      "scale": "square_008um"
+    },
+    {
+      "barcodes": "175561",
+      "features": "18032",
+      "mass": "234434272",
+      "matrix_field": "integer",
+      "nnz": "158741653",
+      "product": "gated_hard",
+      "scale": "square_016um"
+    }
+  ],
+  "primary": "<runs>/20260915_v195_spatch_flex_2020a",
+  "primary_seal_sha256": "adbebfe7f50888b85278023228acb93817a2f7837f5e03d618f19d240a233df7",
+  "release": "v1.9.5",
+  "schema": "visium_hd_processing.sealed_primary_summary.v1",
+  "source_revision": "c95c57d8672e9db128be33e554a9a9244a5d2359",
+  "spatial_output": "<runs>/20260915_v195_spatch_flex_2020a/star/SpatialFlex.out"
+}

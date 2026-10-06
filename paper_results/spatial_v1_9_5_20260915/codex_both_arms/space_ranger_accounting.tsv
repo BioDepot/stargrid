@@ -1,0 +1,2 @@
+method	h5ad_raw_mass	h5ad_gene_features	filtered_panel_gene_features	diagnostic_non_panel_gene_features	filtered_panel_axis_exact	mass_definition
+space_ranger_2020a	264118518	18085	18085	0	True	published filtered-feature H5AD; diagnostic genes outside the filtered probe reference are absent

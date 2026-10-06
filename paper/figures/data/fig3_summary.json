@@ -1,0 +1,58 @@
+{
+ "headline": {
+  "nonminimum_not_short_bc2_overlap": 192555,
+  "shared_eligible_reads": 707409359,
+  "short_bc2_overlap_nonminimum": 3644060,
+  "sr_raw_split_cost_equal_to_star_minimum": 895,
+  "sr_raw_split_cost_greater_than_star_minimum": 3835720,
+  "sr_raw_split_max_half_above_ed2": 5070,
+  "sr_selected_nonminimum": 3836615,
+  "sr_selected_retained_minimum": 635825455,
+  "sr_unassigned_with_star_candidate": 1870429,
+  "star_candidate_reads": 641532499,
+  "star_no_candidate_reads": 65876860
+ },
+ "parent_relation": {
+  "cross_16um": 494718,
+  "same_16um_only": 379841,
+  "same_8um": 2962056
+ },
+ "sr_edit_class": {
+  "deletion_frame+deletion_frame": 39157,
+  "deletion_frame+deletion_mixed": 17392,
+  "deletion_frame+exact": 3223,
+  "deletion_frame+insertion_frame": 2979137,
+  "deletion_frame+insertion_mixed": 5639,
+  "deletion_frame+same_length_edit": 22312,
+  "deletion_mixed+deletion_frame": 20022,
+  "deletion_mixed+deletion_mixed": 15262,
+  "deletion_mixed+exact": 5662,
+  "deletion_mixed+insertion_frame": 375,
+  "deletion_mixed+insertion_mixed": 2708,
+  "deletion_mixed+same_length_edit": 11143,
+  "exact+insertion_mixed": 43,
+  "insertion_frame+deletion_frame": 171,
+  "insertion_frame+deletion_mixed": 256,
+  "insertion_frame+exact": 1144,
+  "insertion_frame+insertion_frame": 17112,
+  "insertion_frame+insertion_mixed": 1034,
+  "insertion_frame+same_length_edit": 292,
+  "insertion_mixed+deletion_frame": 523,
+  "insertion_mixed+deletion_mixed": 1103,
+  "insertion_mixed+exact": 637,
+  "insertion_mixed+insertion_frame": 7793,
+  "insertion_mixed+insertion_mixed": 4488,
+  "insertion_mixed+same_length_edit": 918,
+  "same_length_edit+deletion_frame": 4914,
+  "same_length_edit+deletion_mixed": 3324,
+  "same_length_edit+exact": 10742,
+  "same_length_edit+insertion_frame": 649062,
+  "same_length_edit+insertion_mixed": 6823,
+  "same_length_edit+same_length_edit": 4204
+ },
+ "ledger_rows": 3836615,
+ "sources": {
+  "ledger": "<runs>/20260720_vm2jxxk_full_sr_disagreement_raw_edit_audit_v1/nonminimum_raw_edit_ledger.tsv.gz",
+  "summary": "<runs>/20260720_vm2jxxk_full_sr_disagreement_paper_taxonomy_v1/summary.json"
+ }
+}

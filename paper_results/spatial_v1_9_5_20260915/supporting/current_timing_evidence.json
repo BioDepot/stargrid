@@ -1,0 +1,137 @@
+{
+  "cases": [
+    {
+      "arm": "2020a",
+      "dataset": "crc",
+      "primary_run_id": "20260915_v195_crc_flex_2020a",
+      "speedup": 1.4438631078758468,
+      "star_seconds": 791.28,
+      "time_reduction_percent": 30.741356673960617,
+      "vendor_seconds": 1142.5
+    },
+    {
+      "arm": "2020a",
+      "dataset": "spatch",
+      "primary_run_id": "20260915_v195_spatch_flex_2020a",
+      "speedup": 1.5431718748717445,
+      "star_seconds": 2436.54,
+      "time_reduction_percent": 35.19840425531915,
+      "vendor_seconds": 3760.0
+    },
+    {
+      "arm": "2024a",
+      "dataset": "spatch",
+      "primary_run_id": "20260915_v195_spatch_flex_2024a",
+      "speedup": null,
+      "star_seconds": 2454.71,
+      "time_reduction_percent": null,
+      "vendor_seconds": null,
+      "vendor_unavailable_reason": "The archived SPATCH vendor timing used GRCh38-2020-A. No matched2024-A timing exists; no new vendor execution is authorized."
+    },
+    {
+      "arm": "2024a_compatibility",
+      "dataset": "ovarian",
+      "primary_run_id": "20260915_v195_ovarian_gex_2024a_compat",
+      "speedup": 1.2547988007305892,
+      "star_seconds": 2611.59,
+      "time_reduction_percent": 20.30594869729204,
+      "vendor_seconds": 3277.02
+    },
+    {
+      "arm": "2024a_annotated",
+      "dataset": "ovarian",
+      "primary_run_id": "20260915_v195_ovarian_gex_2024a_annotated",
+      "speedup": 1.2524776126248363,
+      "star_seconds": 2616.43,
+      "time_reduction_percent": 20.15825353522408,
+      "vendor_seconds": 3277.02
+    }
+  ],
+  "inputs": {
+    "cases": [
+      {
+        "arm": "2020a",
+        "dataset": "crc",
+        "primary_run_id": "20260915_v195_crc_flex_2020a",
+        "star": {
+          "path": "<runs>/20260915_v195_crc_flex_2020a/logs/star.time.txt",
+          "release": "v1.9.5",
+          "sha256": "a53215b4336a837eae8e93731ef3cd4dcd54a498428e7e4b9636e9250a19b0f3"
+        },
+        "vendor": {
+          "path": "<local>/20260813_nvme_reclaim/star-spatial-ssd-benchmark-20260729/space_ranger/crc.time.txt",
+          "release": "Space Ranger 4.1.0",
+          "sha256": "66e5f1287703d606596a784cb47576a993210d9f09d18db778924f2ada533963"
+        }
+      },
+      {
+        "arm": "2020a",
+        "dataset": "spatch",
+        "primary_run_id": "20260915_v195_spatch_flex_2020a",
+        "star": {
+          "path": "<runs>/20260915_v195_spatch_flex_2020a/logs/star.time.txt",
+          "release": "v1.9.5",
+          "sha256": "a97320a61ea2ba89d973ffab182629da737bc4739ff16ff5155c5b4bed775485"
+        },
+        "vendor": {
+          "path": "<local>/20260813_nvme_reclaim/star-spatial-ssd-benchmark-20260729/space_ranger/spatch.time.txt",
+          "release": "Space Ranger 4.1.0",
+          "sha256": "358f34fa850181dd010a1d447243175a5ac1d3bfb68b96047495665b129c0be8"
+        }
+      },
+      {
+        "arm": "2024a",
+        "dataset": "spatch",
+        "primary_run_id": "20260915_v195_spatch_flex_2024a",
+        "star": {
+          "path": "<runs>/20260915_v195_spatch_flex_2024a/logs/star.time.txt",
+          "release": "v1.9.5",
+          "sha256": "7c7c135661c98273ee8c85d4c5c656d1761f9f3185f6cfa2e0323a11a5e85ae1"
+        },
+        "vendor": null,
+        "vendor_unavailable_reason": "The archived SPATCH vendor timing used GRCh38-2020-A. No matched2024-A timing exists; no new vendor execution is authorized."
+      },
+      {
+        "arm": "2024a_compatibility",
+        "dataset": "ovarian",
+        "primary_run_id": "20260915_v195_ovarian_gex_2024a_compat",
+        "star": {
+          "path": "<runs>/20260915_v195_ovarian_gex_2024a_compat/logs/star.time.txt",
+          "release": "v1.9.5",
+          "sha256": "6489539e7e574c051801164d2e3263880ea1d18dde8ff29a502e8abd7fe89086"
+        },
+        "vendor": {
+          "path": "<storage>/20260813_ovarian_sr410_nvme_timed_v2/logs/spaceranger.time.txt",
+          "release": "Space Ranger 4.1.0",
+          "sha256": "90903720178bac2eafb16d53da95d60a90b64b8b83dbac88f04c565314f9ed73"
+        }
+      },
+      {
+        "arm": "2024a_annotated",
+        "dataset": "ovarian",
+        "primary_run_id": "20260915_v195_ovarian_gex_2024a_annotated",
+        "star": {
+          "path": "<runs>/20260915_v195_ovarian_gex_2024a_annotated/logs/star.time.txt",
+          "release": "v1.9.5",
+          "sha256": "bbb82eb59433a3b2f6786d178236874c8a577423af4bfdd592f2ee596ad4f748"
+        },
+        "vendor": {
+          "path": "<storage>/20260813_ovarian_sr410_nvme_timed_v2/logs/spaceranger.time.txt",
+          "release": "Space Ranger 4.1.0",
+          "sha256": "90903720178bac2eafb16d53da95d60a90b64b8b83dbac88f04c565314f9ed73"
+        }
+      }
+    ],
+    "created_at": "2026-09-15T14:30:11.705177+00:00",
+    "headline_case_indices": [
+      0,
+      1,
+      3
+    ],
+    "preparation_note": "Resolved all STAR timing paths through the verified retained primary folders; the initial local-copy filename assumption for CRC did not exist, so preparation stopped before any timing extraction.",
+    "release": "v1.9.5",
+    "timing_scope": "Single cold NVMe STAR observations, four policies at2/8/16um, STAR32 threads plus rapidgzip-P4 per mate. Frozen vendor timings: single policy,32 local cores. STAR excludes registration; vendor includes it. No BAM or secondary analysis. Annotated ovarian is a separate evidence arm, not an additional headline replicate."
+  },
+  "release": "v1.9.5",
+  "schema": "visium_hd_processing.spatial_timings.v1"
+}

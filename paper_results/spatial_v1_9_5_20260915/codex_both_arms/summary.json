@@ -1,0 +1,263 @@
+{
+  "coordinate_serialization": {
+    "coefficients": [
+      [
+        0.02392709240684132,
+        -7.9981410814650244
+      ],
+      [
+        7.998405994493817,
+        0.024132048697062203
+      ],
+      [
+        2817.729828407656,
+        7192.114379165532
+      ]
+    ],
+    "design": "[Visium 8um row, Visium 8um column, intercept] -> published SPATCH spatial microns",
+    "max_um": 0.14859195347463577,
+    "p99_um": 0.10757826953937417,
+    "rmse_um": 0.0409017375987638,
+    "role": "fixed coordinate serialization only; no expression enters the fit"
+  },
+  "inputs": {
+    "codex_h5ad": {
+      "path": "<datasets>/spatch_visium_hd_codex/ov_visium_hd_ffpe/processed/proteome/adata_codex.h5ad",
+      "sha256": "b3398745f0e7438a0c05e2c4f2df17c908a76a3418b0ff5c8bf26aa7168d23a8"
+    },
+    "probe_csv": {
+      "path": "<local>/genome-110-44/Chromium_Human_Transcriptome_Probe_Set_v1.1.0_GRCh38-2024-A.csv",
+      "sha256": "978284a6a593f767e9bbbb535daf1575071c2eaad43f6d6842a2376db9bfc8eb"
+    },
+    "space_ranger_filtered_probe_set": {
+      "path": "<local>/visium_hd_human_crc_v2_flex_index/flex_probe_artifacts/filtered_probe_set.csv",
+      "sha256": "caafbc084e0ddb72de73402005b05b7ef4fd5475442f2fd05b73244321f815c8"
+    },
+    "space_ranger_h5ad": {
+      "path": "<datasets>/spatch_visium_hd_codex/ov_visium_hd_ffpe/processed/transcriptome/adata.h5ad",
+      "sha256": "b8dd5ec7c85eca40f48aaea70bde65f7f3b6298ae6de7c19aae6577094efdecc"
+    },
+    "star_methods": {
+      "star_2020a_gated_hard": [
+        {
+          "path": "<runs>/20260915_v195_spatch_flex_2020a/star/SpatialFlex.out/gated_hard/square_008um/features.tsv",
+          "sha256": "7b6d6e3cc42d7410a54ff934c45116d4d63cc3a47d88e3fb59489cfe4a038405"
+        },
+        {
+          "path": "<runs>/20260915_v195_spatch_flex_2020a/star/SpatialFlex.out/gated_hard/square_008um/barcodes.tsv",
+          "sha256": "615768af9b68ee6bebc022e3c91684510a3841f6a1265151efe2e4341332fa26"
+        },
+        {
+          "path": "<runs>/20260915_v195_spatch_flex_2020a/star/SpatialFlex.out/gated_hard/square_008um/matrix.mtx",
+          "sha256": "8b9c1ff1878b66d5aec805c4c31f525403179884b2d2ccd369253255d8f74a89"
+        },
+        {
+          "path": "<runs>/references/half_probe_spatial_20260915/2020a/probe_gene_list.txt",
+          "sha256": "0dc8d7fd2fc0cb8cf54e6707bc5450d853fc890a39fa6626836e332644eae2b8"
+        }
+      ],
+      "star_2020a_hard": [
+        {
+          "path": "<runs>/20260915_v195_spatch_flex_2020a/star/SpatialFlex.out/hard/square_008um/features.tsv",
+          "sha256": "7b6d6e3cc42d7410a54ff934c45116d4d63cc3a47d88e3fb59489cfe4a038405"
+        },
+        {
+          "path": "<runs>/20260915_v195_spatch_flex_2020a/star/SpatialFlex.out/hard/square_008um/barcodes.tsv",
+          "sha256": "615768af9b68ee6bebc022e3c91684510a3841f6a1265151efe2e4341332fa26"
+        },
+        {
+          "path": "<runs>/20260915_v195_spatch_flex_2020a/star/SpatialFlex.out/hard/square_008um/matrix.mtx",
+          "sha256": "b8c8bf2e46bfc60becc1f845a2760eb1c809c77a634eff96d360eb127a78e84b"
+        },
+        {
+          "path": "<runs>/references/half_probe_spatial_20260915/2020a/probe_gene_list.txt",
+          "sha256": "0dc8d7fd2fc0cb8cf54e6707bc5450d853fc890a39fa6626836e332644eae2b8"
+        }
+      ],
+      "star_2020a_soft_expected": [
+        {
+          "path": "<runs>/20260915_v195_spatch_flex_2020a/star/SpatialFlex.out/soft_expected/square_008um/features.tsv",
+          "sha256": "7b6d6e3cc42d7410a54ff934c45116d4d63cc3a47d88e3fb59489cfe4a038405"
+        },
+        {
+          "path": "<runs>/20260915_v195_spatch_flex_2020a/star/SpatialFlex.out/soft_expected/square_008um/barcodes.tsv",
+          "sha256": "615768af9b68ee6bebc022e3c91684510a3841f6a1265151efe2e4341332fa26"
+        },
+        {
+          "path": "<runs>/20260915_v195_spatch_flex_2020a/star/SpatialFlex.out/soft_expected/square_008um/matrix.mtx",
+          "sha256": "89b879257d5dc156da77dbf56040afb87d46b7583288ca4e2479487130b260d7"
+        },
+        {
+          "path": "<runs>/references/half_probe_spatial_20260915/2020a/probe_gene_list.txt",
+          "sha256": "0dc8d7fd2fc0cb8cf54e6707bc5450d853fc890a39fa6626836e332644eae2b8"
+        }
+      ],
+      "star_2020a_strict": [
+        {
+          "path": "<runs>/20260915_v195_spatch_flex_2020a/star/SpatialFlex.out/strict/square_008um/features.tsv",
+          "sha256": "7b6d6e3cc42d7410a54ff934c45116d4d63cc3a47d88e3fb59489cfe4a038405"
+        },
+        {
+          "path": "<runs>/20260915_v195_spatch_flex_2020a/star/SpatialFlex.out/strict/square_008um/barcodes.tsv",
+          "sha256": "615768af9b68ee6bebc022e3c91684510a3841f6a1265151efe2e4341332fa26"
+        },
+        {
+          "path": "<runs>/20260915_v195_spatch_flex_2020a/star/SpatialFlex.out/strict/square_008um/matrix.mtx",
+          "sha256": "94b9fe3fc09a0a19bb933a38d58d3687e062181b0d232b2c2bfe725fae6529bb"
+        },
+        {
+          "path": "<runs>/references/half_probe_spatial_20260915/2020a/probe_gene_list.txt",
+          "sha256": "0dc8d7fd2fc0cb8cf54e6707bc5450d853fc890a39fa6626836e332644eae2b8"
+        }
+      ],
+      "star_2024a_gated_hard": [
+        {
+          "path": "<runs>/20260915_v195_spatch_flex_2024a/star/SpatialFlex.out/gated_hard/square_008um/features.tsv",
+          "sha256": "2a6bac4bfc0e4856f822fd7f6f52ce79a088e0f416267d3f49012908d69a8a81"
+        },
+        {
+          "path": "<runs>/20260915_v195_spatch_flex_2024a/star/SpatialFlex.out/gated_hard/square_008um/barcodes.tsv",
+          "sha256": "43fb186bd293d638e3b7db41e9753b82166e7857e1adcfcc5a5e265d59f59bed"
+        },
+        {
+          "path": "<runs>/20260915_v195_spatch_flex_2024a/star/SpatialFlex.out/gated_hard/square_008um/matrix.mtx",
+          "sha256": "899328a973f405d1845d5fc059cd2498a0bc4660adf64216dd8be2e3351efad0"
+        },
+        {
+          "path": "<runs>/references/half_probe_spatial_20260915/2024a/probe_gene_list.txt",
+          "sha256": "f63835ed673749206e53332e1bc1bc902c5e8e456b6d7bfd2a71a4c54dcbf29b"
+        }
+      ],
+      "star_2024a_hard": [
+        {
+          "path": "<runs>/20260915_v195_spatch_flex_2024a/star/SpatialFlex.out/hard/square_008um/features.tsv",
+          "sha256": "2a6bac4bfc0e4856f822fd7f6f52ce79a088e0f416267d3f49012908d69a8a81"
+        },
+        {
+          "path": "<runs>/20260915_v195_spatch_flex_2024a/star/SpatialFlex.out/hard/square_008um/barcodes.tsv",
+          "sha256": "43fb186bd293d638e3b7db41e9753b82166e7857e1adcfcc5a5e265d59f59bed"
+        },
+        {
+          "path": "<runs>/20260915_v195_spatch_flex_2024a/star/SpatialFlex.out/hard/square_008um/matrix.mtx",
+          "sha256": "60c4aa4c62f22d801930e352dceb10feea392f1e44be421a63a30439277efc8d"
+        },
+        {
+          "path": "<runs>/references/half_probe_spatial_20260915/2024a/probe_gene_list.txt",
+          "sha256": "f63835ed673749206e53332e1bc1bc902c5e8e456b6d7bfd2a71a4c54dcbf29b"
+        }
+      ],
+      "star_2024a_soft_expected": [
+        {
+          "path": "<runs>/20260915_v195_spatch_flex_2024a/star/SpatialFlex.out/soft_expected/square_008um/features.tsv",
+          "sha256": "2a6bac4bfc0e4856f822fd7f6f52ce79a088e0f416267d3f49012908d69a8a81"
+        },
+        {
+          "path": "<runs>/20260915_v195_spatch_flex_2024a/star/SpatialFlex.out/soft_expected/square_008um/barcodes.tsv",
+          "sha256": "43fb186bd293d638e3b7db41e9753b82166e7857e1adcfcc5a5e265d59f59bed"
+        },
+        {
+          "path": "<runs>/20260915_v195_spatch_flex_2024a/star/SpatialFlex.out/soft_expected/square_008um/matrix.mtx",
+          "sha256": "4d2d9ad4685bf823a5e60e5366b42aaf08fb705bd3ba1d33c87c5dab03a386e8"
+        },
+        {
+          "path": "<runs>/references/half_probe_spatial_20260915/2024a/probe_gene_list.txt",
+          "sha256": "f63835ed673749206e53332e1bc1bc902c5e8e456b6d7bfd2a71a4c54dcbf29b"
+        }
+      ],
+      "star_2024a_strict": [
+        {
+          "path": "<runs>/20260915_v195_spatch_flex_2024a/star/SpatialFlex.out/strict/square_008um/features.tsv",
+          "sha256": "2a6bac4bfc0e4856f822fd7f6f52ce79a088e0f416267d3f49012908d69a8a81"
+        },
+        {
+          "path": "<runs>/20260915_v195_spatch_flex_2024a/star/SpatialFlex.out/strict/square_008um/barcodes.tsv",
+          "sha256": "43fb186bd293d638e3b7db41e9753b82166e7857e1adcfcc5a5e265d59f59bed"
+        },
+        {
+          "path": "<runs>/20260915_v195_spatch_flex_2024a/star/SpatialFlex.out/strict/square_008um/matrix.mtx",
+          "sha256": "b2b3d5af1ca9bdba3ffb897aedf65c43e13866211bdd93cf487ced2df7dff3a4"
+        },
+        {
+          "path": "<runs>/references/half_probe_spatial_20260915/2024a/probe_gene_list.txt",
+          "sha256": "f63835ed673749206e53332e1bc1bc902c5e8e456b6d7bfd2a71a4c54dcbf29b"
+        }
+      ]
+    }
+  },
+  "interpretation": {
+    "codex_role": "independent noisy protein and transferred-area oracle",
+    "raw_probe_filtered_probes_field": "passed-gDNA-QC annotation; not the 10x included/target_sets off-target exclusion",
+    "reference_arms": "reported separately; 2024-A is not projected onto the 2020-A Space Ranger axis",
+    "space_ranger_accounting": "filtered-panel gene axis; diagnostic non-panel counts excluded",
+    "space_ranger_role": "compatibility comparator, not biological truth"
+  },
+  "method": "published fixed Visium-HD/CODEX transfer; common CODEX grid; raw RNA mass",
+  "outputs": {
+    "marker_axis_coverage.tsv": {
+      "bytes": 6947,
+      "sha256": "ac56bc9d8110f3e9cd16a434eb61891fa9485a7485cc6b4a44710674e641a26f"
+    },
+    "marker_metrics.tsv": {
+      "bytes": 125754,
+      "sha256": "b57b313c9347977c63e3b56995dcd605b3e66c45834c74998360c742b13977e1"
+    },
+    "method_summary.tsv": {
+      "bytes": 4090,
+      "sha256": "4ce8c1adb465d446bb5c920c2b4e21e63d6abc8493045023e8031165ef1fbe96"
+    },
+    "raw_mass.tsv": {
+      "bytes": 1100,
+      "sha256": "5887796bdc1f352b1891d4c1fc763c6946e2e724fa0b130413a6885207aadd76"
+    },
+    "space_ranger_accounting.tsv": {
+      "bytes": 292,
+      "sha256": "cc4640b34f773f458cc761180680ade45f9a307d5b5c2b934efcf3a810ed5410"
+    }
+  },
+  "parameters": {
+    "bin_sizes_um": [
+      100,
+      200,
+      300,
+      400,
+      500
+    ],
+    "normalize_method_mass": false,
+    "occupancy_jaccard": false,
+    "primary_shape_metric": "ROC AUC for top-quantile CODEX protein intensity",
+    "protein_positive_quantile": 0.8,
+    "secondary_shape_metrics": [
+      "raw Pearson",
+      "raw Spearman"
+    ]
+  },
+  "schema": "visium_hd_processing.spatch_codex.v1",
+  "space_ranger_accounting": {
+    "axis_exact": true,
+    "diagnostic_non_panel_gene_features": 0,
+    "filtered_panel_gene_features": 18085,
+    "filtered_probe_panel": {
+      "bytes": 5999590,
+      "deprecated_rows": 0,
+      "eligible_gene_count": 18085,
+      "eligible_probe_rows": 53504,
+      "excluded_gene_count": 0,
+      "included_false_rows": 0,
+      "included_true_rows": 53504,
+      "input_gene_count": 18085,
+      "input_probe_rows": 53504,
+      "metadata": {
+        "panel_name": "Visium Human Transcriptome Probe Set v2.0",
+        "panel_type": "predesigned",
+        "probe_set_file_format": "2.0",
+        "reference_genome": "GRCh38",
+        "reference_version": "2020-A"
+      },
+      "path": "<local>/visium_hd_human_crc_v2_flex_index/flex_probe_artifacts/filtered_probe_set.csv",
+      "sha256": "caafbc084e0ddb72de73402005b05b7ef4fd5475442f2fd05b73244321f815c8"
+    },
+    "h5ad_gene_features": 18085,
+    "h5ad_raw_mass": 264118518.0,
+    "mass_definition": "published filtered-feature H5AD; diagnostic genes outside the filtered probe reference are absent"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "comparison_scale_um": 8,
+  "dataset": "CRC",
+  "invariants": {
+    "biological_feature_axis_only": true,
+    "diagnostic_non_panel_counts_excluded": true,
+    "raw_mass_not_normalized": true,
+    "space_ranger_barcode_axis_is_primary": true
+  },
+  "methods": {
+    "hard": {
+      "gene_log1p_pearson": 0.9999600180789405,
+      "gene_total_pearson": 0.9999992526133789,
+      "gene_total_spearman_common_detected": 0.9999714962904698,
+      "inputs": [
+        {
+          "bytes": 867120,
+          "path": "<runs>/20260915_v195_crc_flex_2020a/star/SpatialFlex.out/hard/square_008um/features.tsv",
+          "sha256": "ca5165e52795b21f013b20876fca809d155f00d7d159eb4cd12c0c48eae7b434"
+        },
+        {
+          "bytes": 12018446,
+          "path": "<runs>/20260915_v195_crc_flex_2020a/star/SpatialFlex.out/hard/square_008um/barcodes.tsv",
+          "sha256": "179a0bb2c88cb567d39cbfaf6200f03caaf0fef3d1096b8325deb47a1addd0d0"
+        },
+        {
+          "bytes": 968212454,
+          "path": "<runs>/20260915_v195_crc_flex_2020a/star/SpatialFlex.out/hard/square_008um/matrix.mtx",
+          "sha256": "e63ad20b55eb3317628f5054f0904be93c0de69145f1d88779add04b0b5f7114"
+        }
+      ],
+      "percent_mass_difference_over_space_ranger_on_common_axis": 4.618864764233508,
+      "shared_spatial_bin_mass": 72716867.0,
+      "signed_mass_difference_on_common_axis": 3365379.0,
+      "space_ranger_features_absent_from_star": 20,
+      "space_ranger_mass": 72861605.0,
+      "space_ranger_mass_on_features_absent_from_star": 0.0,
+      "space_ranger_nnz": 65669288,
+      "space_ranger_positive_spatial_bin_residual_mass": 144738.0,
+      "spatial_bin_cosine_on_common_axis": 0.9995734928972606,
+      "spatial_bin_log1p_pearson_on_common_axis": 0.9963453667467025,
+      "spatial_bin_normalized_total_variation_on_common_axis": 0.01341231740550322,
+      "spatial_bin_spearman_on_common_axis": 0.9983730108582777,
+      "spatial_bin_total_pearson_on_common_axis": 0.9992946950423022,
+      "star_barcodes_outside_space_ranger_axis": 0,
+      "star_full_mass": 76226984.0,
+      "star_mass_on_space_ranger_axis": 76226984.0,
+      "star_mass_outside_space_ranger_axis": 0.0,
+      "star_nnz": 68588159,
+      "star_positive_spatial_bin_residual_mass": 3510117.0,
+      "star_to_space_ranger_positive_spatial_residual_mass_ratio": 24.251523442357914
+    },
+    "soft_expected": {
+      "gene_log1p_pearson": 0.9999590982344192,
+      "gene_total_pearson": 0.9999992135080454,
+      "gene_total_spearman_common_detected": 0.999970534852326,
+      "inputs": [
+        {
+          "bytes": 867120,
+          "path": "<runs>/20260915_v195_crc_flex_2020a/star/SpatialFlex.out/soft_expected/square_008um/features.tsv",
+          "sha256": "ca5165e52795b21f013b20876fca809d155f00d7d159eb4cd12c0c48eae7b434"
+        },
+        {
+          "bytes": 12018446,
+          "path": "<runs>/20260915_v195_crc_flex_2020a/star/SpatialFlex.out/soft_expected/square_008um/barcodes.tsv",
+          "sha256": "179a0bb2c88cb567d39cbfaf6200f03caaf0fef3d1096b8325deb47a1addd0d0"
+        },
+        {
+          "bytes": 1274218634,
+          "path": "<runs>/20260915_v195_crc_flex_2020a/star/SpatialFlex.out/soft_expected/square_008um/matrix.mtx",
+          "sha256": "c1e905588f082b8bce2fdd4c7225185839ee228222fea164f6cafb5614098209"
+        }
+      ],
+      "percent_mass_difference_over_space_ranger_on_common_axis": 4.543789648756319,
+      "shared_spatial_bin_mass": 72673821.27993307,
+      "signed_mass_difference_on_common_axis": 3310678.0659077168,
+      "space_ranger_features_absent_from_star": 20,
+      "space_ranger_mass": 72861605.0,
+      "space_ranger_mass_on_features_absent_from_star": 0.0,
+      "space_ranger_nnz": 65669288,
+      "space_ranger_positive_spatial_bin_residual_mass": 187783.7200669558,
+      "spatial_bin_cosine_on_common_axis": 0.999464879634022,
+      "spatial_bin_log1p_pearson_on_common_axis": 0.9963002453355954,
+      "spatial_bin_normalized_total_variation_on_common_axis": 0.015005272113158396,
+      "spatial_bin_spearman_on_common_axis": 0.9982599135205983,
+      "spatial_bin_total_pearson_on_common_axis": 0.999116276581408,
+      "star_barcodes_outside_space_ranger_axis": 0,
+      "star_full_mass": 76172283.06590769,
+      "star_mass_on_space_ranger_axis": 76172283.06590772,
+      "star_mass_outside_space_ranger_axis": 0.0,
+      "star_nnz": 73820973,
+      "star_positive_spatial_bin_residual_mass": 3498461.78597466,
+      "star_to_space_ranger_positive_spatial_residual_mass_ratio": 18.630272021063675
+    }
+  },
+  "outputs": {
+    "coarse_fields.npz": {
+      "bytes": 16432463,
+      "sha256": "772aa37a84cbc85faebe53c57e2a0e711fc4983a3e11130201f13882f853eb9a"
+    }
+  },
+  "schema": "visium_hd_processing.flex_star_sr_prepared_fields.v1",
+  "space_ranger": {
+    "barcodes": 702244,
+    "bytes": 115075547,
+    "features": 18085,
+    "kind": "space_ranger_target_gene_h5",
+    "nnz": 65669288,
+    "path": "<datasets>/visium_hd_human_crc/processed_4.1.0_outs/binned_outputs/square_008um/raw_feature_bc_matrix.h5",
+    "sha256": "dc28747bdd5fbb88047054f31e435c4b296e0de40aadbd254191056c82a83ccd"
+  }
+}

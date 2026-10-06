@@ -1,0 +1,47 @@
+{
+  "datasets": [
+    "CRC",
+    "SPATCH"
+  ],
+  "inputs": {
+    "CRC": {
+      "gene_residuals_sha256": "ec4a7587ab9c33c2c3e15ad8d181bc2bb87bd8d2fae8a8b1db88510d908c9d95",
+      "method_summary_sha256": "dc9a96993459fa06146989e2fd195bb95ad91f486b42344b7f0069bcf0f1aa13",
+      "root": "<storage>/analyses/crc_gene_bin/attempt1/result",
+      "summary_sha256": "68d29888e56c35ac7535f5f1d02497271ad5111535d88c53b29cf43f223985d7",
+      "top_gene_residuals_sha256": "9edced8b0796ee7594eda4cff0c5a5700e890f4a2c6715a5a495cfeef47d94e2"
+    },
+    "SPATCH": {
+      "gene_residuals_sha256": "4579408f269578a1dafc06fdc81607aefd39b27772ee84796879831abfc0e332",
+      "method_summary_sha256": "30fcd1230bf0c01d8d58658287882cec16376e1ec5db4d785dba82052b3ee217",
+      "root": "<runs>/20261005_spatch_gene_bin_affine_supported_v1/result",
+      "summary_sha256": "4c0c5e685efcd30f8317a9d2600c5c4c474c51694fdaac0fa43ac47cf2553a37",
+      "top_gene_residuals_sha256": "9fde59b4f9be62a62fe18ad934c7a1ba8d59cc4b50070b244a9f12e7fbace258"
+    }
+  },
+  "invariants": {
+    "gene_bin_residuals_not_total_bin_residuals": true,
+    "image_or_segmentation_not_used_for_assignment": true,
+    "molecule_identity_compared": false,
+    "raw_mass_not_normalized": true
+  },
+  "methods": [
+    "hard",
+    "soft_expected"
+  ],
+  "outputs": {
+    "cross_slide_gene_consistency.tsv": {
+      "bytes": 2308,
+      "sha256": "9d638219c77ccf302b702f179d294d21cda0bc4aedd9bb0cbe3f9caf4ed50d81"
+    },
+    "two_slide_method_summary.tsv": {
+      "bytes": 7480,
+      "sha256": "3be51ac3a43f5a9f6f73b87c831de120607a4dbe74094638c2b2c8291a2d4c43"
+    },
+    "two_slide_top_gene_residuals.tsv": {
+      "bytes": 171094,
+      "sha256": "f1017b61464310f13b70dfa720040a71d352f4931d0771af99b7b684b4db9309"
+    }
+  },
+  "schema": "visium_hd_processing.flex_star_sr_gene_bin_he_two_slide.v1"
+}

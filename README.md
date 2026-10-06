@@ -7,7 +7,9 @@ STAR Suite takes sequencing reads to count matrices at 2, 8 and 16 µm, includin
 the spatial barcode. This repository holds the Visium HD code that is not part of STAR Suite:
 placing the tissue image on the capture grid, detecting nuclei, checking that placement against
 the counts, building cell matrices, measuring the quality of a slide, and the evaluation code that
-compares the counts with Space Ranger's and with other assays.
+compares the counts with Space Ranger's and with other assays. It also holds the result tables,
+numbers and figure generators of our manuscript, *Open, auditable processing of Visium HD spatial
+transcriptomics from sequencing reads to count matrices* (L.-H. Hung and K. Y. Yeung).
 
 **Status: early.** The layout mirrors our development repository. Most tools are command-line
 scripts, each with `--help`; there is no stable Python API yet.
@@ -23,6 +25,7 @@ scripts, each with `--help`; there is no stable Python API yet.
 | Quality measures for a slide | `scripts/measure_hd_qc_reference.py`, `scripts/summarize_hd_qc_reference.py` | Counts beyond the tissue and their decay with distance; the contrast of counts under nuclei. |
 | Cell matrices from square counts | `scripts/build_hd_cell_matrix.py`, `validate_hd_cell_matrix_truth.py`, `stage_hd_output_matrix.py`, `compare_hd_cell_matrices.py` | Grows each nucleus by a fixed distance and sums the squares. Works on hard counts and on expected counts. |
 | Evaluation code for our manuscript | `scripts/publication/`, and the other scripts in `scripts/` | Agreement with Space Ranger, H&E scoring, adjacent-section Xenium and CODEX. |
+| Results of our manuscript | `paper_results/`, `paper/`, `docs/DATASETS.md` | Result tables, every number, and the figure and table generators. See below. |
 | Parts of the reference model | `src/star_spatial/` | Only the modules the scripts above import. |
 
 ### Check the placement of the nuclei
@@ -45,18 +48,43 @@ Two cautions:
 - **The lower count under nuclei has been seen on a few slides only**, covering two chemistries.
   Do not assume it for a tissue that has not been measured.
 
+## Results of the manuscript
+
+```
+paper_results/spatial_v1_9_5_20260915/   accepted result tables for the three slides; its README lists them
+paper_results/frame_edit_distance_sr_taxonomy_20260720/   audit of Space Ranger's recorded coordinates
+paper_results/xenium_ovarian_adjacent_20251007/           Xenium dataset record (files, sizes, MD5)
+paper/numbers.tex and *_numbers.tex      every number in the manuscript, one macro each
+paper/figures/                           figures, their generators (scripts/) and source data (data/)
+paper/supplementary/                     Additional file 1 (Tables S1-S5) and its generator
+docs/DATASETS.md                         datasets, sources and licences
+```
+
+The analyses were run with STAR Suite v1.9.5 (commit `c95c57d`). The cited release, v1.9.5.a,
+writes byte-identical matrices on the four official downsampled spatial checks.
+
+Run a generator from the repository root, for example
+`python3 paper/figures/scripts/fig2_agreement.py /tmp/out`; `paper/figures/scripts/README.md` lists
+them. They need numpy, pandas and matplotlib. `paper/numbers.tex` is written by
+`scripts/publication/export_spatial_paper_numbers.py` from the accepted tables, and each macro
+records the result it came from.
+
+The H&E tables include the placement corrections described above: a whole-square shift of the
+masks on one slide and a fitted displacement on another.
+
 ## What is not here
 
 - **The pipeline.** Reads to count matrices, including barcode decoding, is STAR Suite.
-- **Data.** No reads, images, count matrices or vendor outputs. The barcode layout of a slide is
-  read from reference files distributed with Space Ranger; obtain them under its licence.
-- **Result tables and figures** of the manuscript. They are released with it.
+- **Data.** No reads, images, count matrices or vendor outputs; the result tables are summaries
+  computed from them. `docs/DATASETS.md` gives the source and licence of each dataset. The barcode
+  layout of a slide is read from reference files distributed with Space Ranger; obtain them under
+  its licence.
 - **A benchmark of cell-assignment methods** against known cell identities. It will be added.
 - **`hd_candidate_preserving_reference`** cannot be built here yet: it includes the reference read
   decoder, whose source is not in this repository.
 
-Scripts that reproduce particular runs name their inputs with placeholders such as `<runs>/…` and
-`<datasets>/…`. Replace them with your own paths.
+Scripts that reproduce particular runs, and paths inside result records, use placeholders such as
+`<runs>/…`, `<datasets>/…`, `<storage>/…` and `<local>/…` in place of our own paths.
 
 ## Install and test
 
@@ -94,5 +122,5 @@ observed output and make no statement about how Space Ranger produces it.
 
 MIT; see `LICENSE`.
 
-A manuscript describing the processing and its evaluation is in preparation. Until it is
-available, please cite this repository and STAR Suite.
+The manuscript named above is in preparation. Until it is available, please cite this repository
+and STAR Suite.

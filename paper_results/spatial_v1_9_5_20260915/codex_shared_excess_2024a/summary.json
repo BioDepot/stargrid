@@ -1,0 +1,68 @@
+{
+  "component_definition": "Within each direct RNA/protein marker and fixed CODEX evaluation grid: shared=min(STAR,SR), STAR excess=max(STAR-SR,0), SR only=max(SR-STAR,0).",
+  "component_unit": "CODEX marker by evaluation grid",
+  "coordinate_serialization": {
+    "coefficients": [
+      [
+        0.02392709240684132,
+        -7.9981410814650244
+      ],
+      [
+        7.998405994493817,
+        0.024132048697062203
+      ],
+      [
+        2817.729828407656,
+        7192.114379165532
+      ]
+    ],
+    "max_um": 0.14859195347463577,
+    "p99_um": 0.10757826953937417,
+    "rmse_um": 0.0409017375987638
+  },
+  "inputs": {
+    "codex_h5ad": "<datasets>/spatch_visium_hd_codex/ov_visium_hd_ffpe/processed/proteome/adata_codex.h5ad",
+    "probe_csv": "<local>/genome-110-44/Chromium_Human_Transcriptome_Probe_Set_v1.1.0_GRCh38-2024-A.csv",
+    "space_ranger_filtered_probe_set": "<local>/visium_hd_human_crc_v2_flex_index/flex_probe_artifacts/filtered_probe_set.csv",
+    "space_ranger_h5ad": "<datasets>/spatch_visium_hd_codex/ov_visium_hd_ffpe/processed/transcriptome/adata.h5ad",
+    "star_methods": {
+      "hard": "<runs>/20260915_v195_spatch_flex_2024a/star/SpatialFlex.out/hard/square_008um",
+      "soft_expected": "<runs>/20260915_v195_spatch_flex_2024a/star/SpatialFlex.out/soft_expected/square_008um"
+    }
+  },
+  "invariants": {
+    "codex_not_used_for_assignment": true,
+    "hard_and_soft_reported_separately": true,
+    "net_equals_star_excess_minus_space_ranger_only": true,
+    "raw_mass_not_normalized": true,
+    "space_ranger_is_comparator_not_truth": true
+  },
+  "outputs": {
+    "component_reconciliation.tsv": {
+      "bytes": 1534,
+      "sha256": "74f4db06f347e092cf52522c63475e286b0de405a08d0ca7dd60bb5453a21fba"
+    },
+    "marker_metrics.tsv": {
+      "bytes": 100536,
+      "sha256": "8fa31207f4ac3568189cda2befe3dc3a5e7ff69ff57ead9005516135e5d25051"
+    },
+    "method_summary.tsv": {
+      "bytes": 3319,
+      "sha256": "59ea0022ebda2ca558880bf937f0624be5d8ee6976b5d6412540c31f41ab35e3"
+    }
+  },
+  "parameters": {
+    "bin_sizes_um": [
+      100,
+      200,
+      300,
+      400,
+      500
+    ],
+    "protein_positive_quantile": 0.8,
+    "raw_mass_normalized": false
+  },
+  "schema": "visium_hd_processing.spatch_codex_shared_excess.v1",
+  "whole_slide_count_mass_included": false,
+  "whole_slide_count_mass_reason": "Whole-slide filtered-panel count accounting is reported separately; this table is restricted to direct CODEX marker genes and grids."
+}

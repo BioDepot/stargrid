@@ -1,0 +1,71 @@
+{
+  "baseline": "strict",
+  "comparisons": {
+    "gated_hard": {
+      "baseline_mass": 164293957.0,
+      "elementwise_superset": false,
+      "equal_bins": 4196578,
+      "maximum_bin_difference": 72.0,
+      "minimum_bin_difference": -2.0,
+      "negative_difference_mass_absolute": 411.0,
+      "net_mass_difference_policy_minus_baseline": 15316569.0,
+      "policy_higher_bins": 4731429,
+      "policy_lower_bins": 410,
+      "policy_mass": 179610526.0,
+      "positive_difference_mass": 15316980.0,
+      "union_occupied_bins": 8928417
+    },
+    "hard": {
+      "baseline_mass": 164293957.0,
+      "elementwise_superset": false,
+      "equal_bins": 2271413,
+      "maximum_bin_difference": 124.0,
+      "minimum_bin_difference": -1.0,
+      "negative_difference_mass_absolute": 168.0,
+      "net_mass_difference_policy_minus_baseline": 37594318.0,
+      "policy_higher_bins": 6824740,
+      "policy_lower_bins": 168,
+      "policy_mass": 201888275.0,
+      "positive_difference_mass": 37594486.0,
+      "union_occupied_bins": 9096321
+    },
+    "soft_expected": {
+      "baseline_mass": 164293957.0,
+      "elementwise_superset": false,
+      "equal_bins": 1006936,
+      "maximum_bin_difference": 97.59646170899737,
+      "minimum_bin_difference": -2.0,
+      "negative_difference_mass_absolute": 13990.465572084748,
+      "net_mass_difference_policy_minus_baseline": 37044613.96804339,
+      "policy_higher_bins": 8596017,
+      "policy_lower_bins": 24030,
+      "policy_mass": 201338570.9680434,
+      "positive_difference_mass": 37058604.43361546,
+      "union_occupied_bins": 9626983
+    }
+  },
+  "inputs": {
+    "gated_hard": {
+      "bytes": 31311920,
+      "path": "<storage>/analyses/ovarian_bin_totals/attempt1/result/gated_hard.bin_totals.tsv.gz",
+      "sha256": "0ba3c7752bd872e89daf8e6cc02b244a92bedebf4c28368d913173b53a41b5f3"
+    },
+    "hard": {
+      "bytes": 32107919,
+      "path": "<storage>/analyses/ovarian_bin_totals/attempt1/result/hard.bin_totals.tsv.gz",
+      "sha256": "4fcae907649a45ce15605c7856d65c10aecd746c2dfe0580c3cd188cbf45c26d"
+    },
+    "soft_expected": {
+      "bytes": 111677624,
+      "path": "<storage>/analyses/ovarian_bin_totals/attempt1/result/soft_expected.bin_totals.tsv.gz",
+      "sha256": "a1739609f9bb7cd60b2335ee9ae74650c3ad74955cf0f0750bd7249f5c6f4ee3"
+    },
+    "strict": {
+      "bytes": 30701148,
+      "path": "<storage>/analyses/ovarian_bin_totals/attempt1/result/strict.bin_totals.tsv.gz",
+      "sha256": "5b4d5ecceeb42b1619f760bdbeb843275fc5a83d39a405669cc0a10768c2b773"
+    }
+  },
+  "interpretation": "A net mass difference is not an independent increment cohort when elementwise_superset is false.",
+  "schema": "visium_hd_processing.policy_bin_total_nesting.v1"
+}

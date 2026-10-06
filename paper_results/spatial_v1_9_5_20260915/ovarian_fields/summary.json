@@ -1,0 +1,112 @@
+{
+  "comparison_scale_um": 8,
+  "dataset": "OVARIAN_GEX_SR410_INTRONS",
+  "invariants": {
+    "biological_feature_axis_only": true,
+    "diagnostic_non_panel_counts_excluded": true,
+    "raw_mass_not_normalized": true,
+    "space_ranger_barcode_axis_is_primary": true
+  },
+  "methods": {
+    "hard": {
+      "gene_log1p_pearson": 0.9928078849749737,
+      "gene_total_pearson": 0.9989276247385532,
+      "gene_total_spearman_common_detected": 0.992642654876642,
+      "inputs": [
+        {
+          "bytes": 1556448,
+          "path": "<runs>/20260915_v195_ovarian_gex_2024a_compat/starSpatialGex.out/hard/square_008um/features.tsv",
+          "sha256": "c4b910126b4709973cedd47f9f254be4e604942420b44cb1764a29ed8f339c91"
+        },
+        {
+          "bytes": 12413042,
+          "path": "<runs>/20260915_v195_ovarian_gex_2024a_compat/starSpatialGex.out/hard/square_008um/barcodes.tsv",
+          "sha256": "0a61165201f28d91605922fef6a9adcf511ff23c63034ad8099dac6cedf84967"
+        },
+        {
+          "bytes": 2172218690,
+          "path": "<runs>/20260915_v195_ovarian_gex_2024a_compat/starSpatialGex.out/hard/square_008um/matrix.mtx",
+          "sha256": "2c26ca52de257fbdab2b714f485420fb575f7f34c25b8051a1950b1fbf697d2d"
+        }
+      ],
+      "percent_mass_difference_over_space_ranger_on_common_axis": 7.643687956191945,
+      "shared_spatial_bin_mass": 187493579.0,
+      "signed_mass_difference_on_common_axis": 14335917.0,
+      "space_ranger_features_absent_from_star": 6180,
+      "space_ranger_mass": 187552358.0,
+      "space_ranger_mass_on_features_absent_from_star": 411.0,
+      "space_ranger_nnz": 143120279,
+      "space_ranger_positive_spatial_bin_residual_mass": 58779.0,
+      "spatial_bin_cosine_on_common_axis": 0.9996397673341375,
+      "spatial_bin_log1p_pearson_on_common_axis": 0.9974330431337243,
+      "spatial_bin_normalized_total_variation_on_common_axis": 0.01192651900974269,
+      "spatial_bin_spearman_on_common_axis": 0.9987565393306348,
+      "spatial_bin_total_pearson_on_common_axis": 0.9993666242605922,
+      "star_barcodes_outside_space_ranger_axis": 0,
+      "star_full_mass": 201888275.0,
+      "star_mass_on_space_ranger_axis": 201888275.0,
+      "star_mass_outside_space_ranger_axis": 0.0,
+      "star_nnz": 152704963,
+      "star_positive_spatial_bin_residual_mass": 14394696.0,
+      "star_to_space_ranger_positive_spatial_residual_mass_ratio": 244.8952176797836
+    },
+    "soft_expected": {
+      "gene_log1p_pearson": 0.9928470423952386,
+      "gene_total_pearson": 0.9989158398067574,
+      "gene_total_spearman_common_detected": 0.9926483296202497,
+      "inputs": [
+        {
+          "bytes": 1556448,
+          "path": "<runs>/20260915_v195_ovarian_gex_2024a_compat/starSpatialGex.out/soft_expected/square_008um/features.tsv",
+          "sha256": "c4b910126b4709973cedd47f9f254be4e604942420b44cb1764a29ed8f339c91"
+        },
+        {
+          "bytes": 12413042,
+          "path": "<runs>/20260915_v195_ovarian_gex_2024a_compat/starSpatialGex.out/soft_expected/square_008um/barcodes.tsv",
+          "sha256": "0a61165201f28d91605922fef6a9adcf511ff23c63034ad8099dac6cedf84967"
+        },
+        {
+          "bytes": 3030383259,
+          "path": "<runs>/20260915_v195_ovarian_gex_2024a_compat/starSpatialGex.out/soft_expected/square_008um/matrix.mtx",
+          "sha256": "88c05df6465eea253fed484736381d4539c406a3eee6d78775d14d19a2894901"
+        }
+      ],
+      "percent_mass_difference_over_space_ranger_on_common_axis": 7.350594316731234,
+      "shared_spatial_bin_mass": 187461663.50736523,
+      "signed_mass_difference_on_common_axis": 13786212.968043417,
+      "space_ranger_features_absent_from_star": 6180,
+      "space_ranger_mass": 187552358.0,
+      "space_ranger_mass_on_features_absent_from_star": 411.0,
+      "space_ranger_nnz": 143120279,
+      "space_ranger_positive_spatial_bin_residual_mass": 90694.49263479983,
+      "spatial_bin_cosine_on_common_axis": 0.9994889311146529,
+      "spatial_bin_log1p_pearson_on_common_axis": 0.9973385247267024,
+      "spatial_bin_normalized_total_variation_on_common_axis": 0.014153992894115503,
+      "spatial_bin_spearman_on_common_axis": 0.9986320398317452,
+      "spatial_bin_total_pearson_on_common_axis": 0.9991039945612626,
+      "star_barcodes_outside_space_ranger_axis": 0,
+      "star_full_mass": 201338570.9680433,
+      "star_mass_on_space_ranger_axis": 201338570.96804342,
+      "star_mass_outside_space_ranger_axis": 0.0,
+      "star_nnz": 165577110,
+      "star_positive_spatial_bin_residual_mass": 13876907.46067818,
+      "star_to_space_ranger_positive_spatial_residual_mass_ratio": 153.0071678834615
+    }
+  },
+  "outputs": {
+    "coarse_fields.npz": {
+      "bytes": 17469913,
+      "sha256": "4b5766f6c74910048b8ab7cf58187ef35c64588b50e0abcc83d02e59fccfef16"
+    }
+  },
+  "schema": "visium_hd_processing.flex_star_sr_prepared_fields.v1",
+  "space_ranger": {
+    "barcodes": 702244,
+    "bytes": 242123090,
+    "features": 38606,
+    "kind": "space_ranger_target_gene_h5",
+    "nnz": 143120279,
+    "path": "<runs>/20260728_human_ovarian_hd3prime_sr410_introns_32c_bam_v1/outs/binned_outputs/square_008um/raw_feature_bc_matrix.h5",
+    "sha256": "7581b8a74acf125642936ce91cb368d1b24d5f7c41e06374fc9a2152ba948fd3"
+  }
+}

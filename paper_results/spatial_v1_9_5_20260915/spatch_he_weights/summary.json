@@ -1,0 +1,158 @@
+{
+  "allow_unsupported_coarse_barcodes": true,
+  "area": "D1",
+  "barcode_axis": "space_ranger_barcode_axis",
+  "coarse_barcodes": 629942,
+  "comparison_scale_um": 8,
+  "dataset": "SPATCH",
+  "geometry_audit": {
+    "base": {
+      "affine_model": "[dy,dx] = [1,source_row,source_col] @ coefficients; corrected q=p+d(p)",
+      "before_mask_affine": {
+        "cell_mask_bins": 3327070,
+        "cellpose_projection": {
+          "cell_labels_tree_sha256": "1e8879acfed28c48a6eec99137dc4f870f9f1ea4e88f95518b308cef8b9c722b",
+          "coordinate_resampling": "explicit source-pixel and pixel-centre transform",
+          "grid_geometry": "independent_capture_grid",
+          "native_roi_bins_outside_cellpose_pixel_support": 0,
+          "nucleus_labels_tree_sha256": "0a1cda62b9baa1d94aa017f6f78e3b04ab3bb04098533c950eb952f9d4147bed",
+          "registration_moving_sampling": "decimate",
+          "registration_moving_source_downsample": 16,
+          "segmentation_downsample": 2,
+          "segmentation_root": "<runs>/20260727_spatch_flex_native_he_morphology_v1/cellpose",
+          "segmentation_shape_yx": [
+            14687,
+            27825
+          ],
+          "segmentation_summary_sha256": "e2e54788aadf8a691afa2391830bca1bcaf38b579f9222905b7dfc68113f448f"
+        },
+        "cellpose_supported_roi_2um_bins": 11222500,
+        "compartment_source": "independent_he_cellpose",
+        "complete_16um_parents": 174724,
+        "extracellular_mask_bins": 7895430,
+        "geometry_source": "independent_capture_grid",
+        "native_col_max": 3349,
+        "native_col_min": 0,
+        "native_roi_2um_bins": 11222500,
+        "native_row_max": 3349,
+        "native_row_min": 0,
+        "nucleus_mask_bins": 1604469,
+        "selection_scope": "full_registered_extent"
+      },
+      "cell_mask_bins": 3328184,
+      "cellpose_projection": {
+        "cell_labels_tree_sha256": "1e8879acfed28c48a6eec99137dc4f870f9f1ea4e88f95518b308cef8b9c722b",
+        "coordinate_resampling": "explicit source-pixel and pixel-centre transform",
+        "grid_geometry": "independent_capture_grid",
+        "native_roi_bins_outside_cellpose_pixel_support": 0,
+        "nucleus_labels_tree_sha256": "0a1cda62b9baa1d94aa017f6f78e3b04ab3bb04098533c950eb952f9d4147bed",
+        "registration_moving_sampling": "decimate",
+        "registration_moving_source_downsample": 16,
+        "segmentation_downsample": 2,
+        "segmentation_root": "<runs>/20260727_spatch_flex_native_he_morphology_v1/cellpose",
+        "segmentation_shape_yx": [
+          14687,
+          27825
+        ],
+        "segmentation_summary_sha256": "e2e54788aadf8a691afa2391830bca1bcaf38b579f9222905b7dfc68113f448f"
+      },
+      "cellpose_supported_roi_2um_bins": 11207343,
+      "compartment_source": "independent_he_cellpose",
+      "complete_16um_parents": 174724,
+      "destination_squares_without_source_in_grid": 15157,
+      "extracellular_mask_bins": 7879159,
+      "geometry_source": "independent_capture_grid",
+      "mask_affine_coefficients": [
+        [
+          -8.415172951661932,
+          -2.5346450464698824
+        ],
+        [
+          0.001783184607177998,
+          -0.0008639446353949137
+        ],
+        [
+          0.0005328812094362265,
+          0.0002942540382558044
+        ]
+      ],
+      "native_col_max": 3349,
+      "native_col_min": 0,
+      "native_roi_2um_bins": 11222500,
+      "native_row_max": 3349,
+      "native_row_min": 0,
+      "nucleus_mask_bins": 1604689,
+      "resampling": "inverse transform, nearest square (ties to even), states and support together",
+      "selection_scope": "full_registered_extent"
+    },
+    "coarse_axis": {
+      "coarse_barcodes": 629942,
+      "comparison_scale_um": 8,
+      "complete_16um_parents": 156264,
+      "he_supported_2um_children": 10055583,
+      "he_unsupported_coarse_barcodes": 962
+    }
+  },
+  "he_cell_area_fraction": 0.33010766257908664,
+  "he_nucleus_area_fraction": 0.1591956428583007,
+  "he_supported_2um_children": 10055583,
+  "he_unsupported_coarse_barcodes": 962,
+  "inputs": {
+    "capture_grid": {
+      "path": "<runs>/20260727_spatch_flex_native_he_morphology_v1/capture_grid_primary/capture_grid.json",
+      "sha256": "5ae932accea378cd0912d63be9c023a62c40843300e467c1882fdb0839884fb0"
+    },
+    "cellpose_summary": {
+      "path": "<runs>/20260727_spatch_flex_native_he_morphology_v1/cellpose/summary.json",
+      "sha256": "e2e54788aadf8a691afa2391830bca1bcaf38b579f9222905b7dfc68113f448f"
+    },
+    "native_registration": {
+      "path": "<runs>/20260727_spatch_flex_native_he_morphology_v1/registration/registration.json",
+      "sha256": "3dfd30869dfadf4bd9ea4ca0912d28a5e4d976f0e98cdbec16e810b54408e0df"
+    },
+    "prepared_arrays": {
+      "path": "<storage>/analyses/spatch_fields/attempt1/result/coarse_fields.npz",
+      "sha256": "c357d8134fea021a35ed71a472d372f45035cc0b812bb36423a3149f6aca01b8"
+    },
+    "prepared_summary": {
+      "path": "<storage>/analyses/spatch_fields/attempt1/result/summary.json",
+      "sha256": "1ba2927ced40e5974f9002f808dc61d08ba843ab0698ead02b8f72a701e51e4b"
+    }
+  },
+  "invariants": {
+    "existing_segmentation_reused_without_rerun": true,
+    "image_or_segmentation_not_used_for_assignment": true,
+    "space_ranger_barcode_axis_is_primary": true
+  },
+  "mask_affine": {
+    "coefficients": [
+      [
+        -8.415172951661932,
+        -2.5346450464698824
+      ],
+      [
+        0.001783184607177998,
+        -0.0008639446353949137
+      ],
+      [
+        0.0005328812094362265,
+        0.0002942540382558044
+      ]
+    ],
+    "fit_summary": "<runs>/20261004_spatch_affine_placement_fit_v1/result/summary.json",
+    "model": "[dy,dx] = [1,source_row,source_col] @ coefficients; corrected q=p+d(p)",
+    "reason": "PI-authorized SPATCH affine correction; 9/9 held-out regions within one square; 18 final regions; Gate A resolved at zero in 9/9 regions",
+    "resampling": "inverse transform, nearest square (ties to even), states and support together",
+    "sha256": "a84d7498d18ea20ea49955b142a71dfa04634ff561e5cd08900b542eafda4088"
+  },
+  "mask_shift_helper_sha256": "4d89eda381da1407e5ad7ff25d246a4aaf3d2daba2532def867963e742271b9a",
+  "outputs": {
+    "he_bin_weights.npz": {
+      "bytes": 3634797,
+      "sha256": "845db4eebffb6661af4e6017a312b5d99b272dba4ea496a081562661d48f2142"
+    }
+  },
+  "projection": "Per-coarse-bin fractions of frozen image-derived states; states and support resampled together by the disclosed count-guided affine correction.",
+  "schema": "visium_hd_processing.flex_he_bin_weights.v1",
+  "slide": "H1-WP2FTZD"
+}

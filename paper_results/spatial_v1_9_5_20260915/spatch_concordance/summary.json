@@ -1,0 +1,99 @@
+{
+  "comparison_axis": {
+    "gene": "union of H5AD target genes and STAR features",
+    "spatial": "retained Space Ranger H5AD barcode axis"
+  },
+  "interpretation": "Space Ranger is a compatibility comparator, not truth.",
+  "invariants": {
+    "mass_outside_retained_h5ad_barcode_axis_reported": true,
+    "normalized_tv_is_secondary_shape_metric": true,
+    "raw_mass_not_normalized": true,
+    "space_ranger_not_used_for_star_assignment": true
+  },
+  "methods": {
+    "gated_hard": [
+      {
+        "bytes": 865536,
+        "path": "<runs>/20260915_v195_spatch_flex_2020a/star/SpatialFlex.out/gated_hard/square_008um/features.tsv",
+        "sha256": "7b6d6e3cc42d7410a54ff934c45116d4d63cc3a47d88e3fb59489cfe4a038405"
+      },
+      {
+        "bytes": 12454643,
+        "path": "<runs>/20260915_v195_spatch_flex_2020a/star/SpatialFlex.out/gated_hard/square_008um/barcodes.tsv",
+        "sha256": "615768af9b68ee6bebc022e3c91684510a3841f6a1265151efe2e4341332fa26"
+      },
+      {
+        "bytes": 2698138942,
+        "path": "<runs>/20260915_v195_spatch_flex_2020a/star/SpatialFlex.out/gated_hard/square_008um/matrix.mtx",
+        "sha256": "8b9c1ff1878b66d5aec805c4c31f525403179884b2d2ccd369253255d8f74a89"
+      }
+    ],
+    "hard": [
+      {
+        "bytes": 865536,
+        "path": "<runs>/20260915_v195_spatch_flex_2020a/star/SpatialFlex.out/hard/square_008um/features.tsv",
+        "sha256": "7b6d6e3cc42d7410a54ff934c45116d4d63cc3a47d88e3fb59489cfe4a038405"
+      },
+      {
+        "bytes": 12454643,
+        "path": "<runs>/20260915_v195_spatch_flex_2020a/star/SpatialFlex.out/hard/square_008um/barcodes.tsv",
+        "sha256": "615768af9b68ee6bebc022e3c91684510a3841f6a1265151efe2e4341332fa26"
+      },
+      {
+        "bytes": 3066045773,
+        "path": "<runs>/20260915_v195_spatch_flex_2020a/star/SpatialFlex.out/hard/square_008um/matrix.mtx",
+        "sha256": "b8c8bf2e46bfc60becc1f845a2760eb1c809c77a634eff96d360eb127a78e84b"
+      }
+    ],
+    "soft_expected": [
+      {
+        "bytes": 865536,
+        "path": "<runs>/20260915_v195_spatch_flex_2020a/star/SpatialFlex.out/soft_expected/square_008um/features.tsv",
+        "sha256": "7b6d6e3cc42d7410a54ff934c45116d4d63cc3a47d88e3fb59489cfe4a038405"
+      },
+      {
+        "bytes": 12454643,
+        "path": "<runs>/20260915_v195_spatch_flex_2020a/star/SpatialFlex.out/soft_expected/square_008um/barcodes.tsv",
+        "sha256": "615768af9b68ee6bebc022e3c91684510a3841f6a1265151efe2e4341332fa26"
+      },
+      {
+        "bytes": 4462872079,
+        "path": "<runs>/20260915_v195_spatch_flex_2020a/star/SpatialFlex.out/soft_expected/square_008um/matrix.mtx",
+        "sha256": "89b879257d5dc156da77dbf56040afb87d46b7583288ca4e2479487130b260d7"
+      }
+    ],
+    "strict": [
+      {
+        "bytes": 865536,
+        "path": "<runs>/20260915_v195_spatch_flex_2020a/star/SpatialFlex.out/strict/square_008um/features.tsv",
+        "sha256": "7b6d6e3cc42d7410a54ff934c45116d4d63cc3a47d88e3fb59489cfe4a038405"
+      },
+      {
+        "bytes": 12454643,
+        "path": "<runs>/20260915_v195_spatch_flex_2020a/star/SpatialFlex.out/strict/square_008um/barcodes.tsv",
+        "sha256": "615768af9b68ee6bebc022e3c91684510a3841f6a1265151efe2e4341332fa26"
+      },
+      {
+        "bytes": 2470310114,
+        "path": "<runs>/20260915_v195_spatch_flex_2020a/star/SpatialFlex.out/strict/square_008um/matrix.mtx",
+        "sha256": "94b9fe3fc09a0a19bb933a38d58d3687e062181b0d232b2c2bfe725fae6529bb"
+      }
+    ]
+  },
+  "output": {
+    "bytes": 2398,
+    "path": "<storage>/analyses/spatch_concordance/attempt1/result/aggregate_concordance.tsv",
+    "sha256": "54aa7efb7f58dcce5b387b4029b02d75cb3d2a2e19a834928e045838924f1c8a"
+  },
+  "scale_um": 8,
+  "schema": "visium_hd_processing.flex_h5ad_aggregate_concordance.v1",
+  "space_ranger": {
+    "barcodes": 629942,
+    "bytes": 1756657237,
+    "features": 18085,
+    "nnz": 211807231,
+    "path": "<datasets>/spatch_visium_hd_codex/ov_visium_hd_ffpe/processed/transcriptome/adata.h5ad",
+    "sha256": "b8dd5ec7c85eca40f48aaea70bde65f7f3b6298ae6de7c19aae6577094efdecc"
+  },
+  "umi_mode": "1mm_cr"
+}

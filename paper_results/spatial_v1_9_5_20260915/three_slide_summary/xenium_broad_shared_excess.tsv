@@ -1,0 +1,5 @@
+dataset	method	component	patch_scale_um	component_unit	raw_component_mass_in_xenium_cohort	gene_total_log1p_pearson_vs_xenium	gene_total_spearman_vs_xenium	median_gene_spatial_pearson_vs_xenium	median_patch_profile_pearson_vs_xenium	macro_cluster_fraction_pearson_vs_xenium	macro_cluster_dominant_roc_auc_vs_xenium
+OVARIAN_GEX	hard	shared	128	shared gene by registered patch	32262994.0	0.9227202347525498	0.9032880653614288	0.07701167579841198	0.6564317631053471	0.20563326524714007	0.6073679572543393
+OVARIAN_GEX	hard	star_excess	128	shared gene by registered patch	2628423.0	0.8875800247230005	0.8856368831480741	0.03137913420350184	0.36664550268152474	0.11460416205687025	0.5428695249155296
+OVARIAN_GEX	soft_expected	shared	128	shared gene by registered patch	32207139.539509434	0.9227337354005921	0.9032654148493323	0.07637155543017424	0.6568829896435847	0.2059522886988737	0.6071340907818271
+OVARIAN_GEX	soft_expected	star_excess	128	shared gene by registered patch	2596767.6133712255	0.8883139069892146	0.8860467977045905	0.030830558270184716	0.3674577109281266	0.11853727312695926	0.5449221735465541

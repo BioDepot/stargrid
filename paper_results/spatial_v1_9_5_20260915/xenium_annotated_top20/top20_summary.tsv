@@ -1,0 +1,4 @@
+method	top_gene_count	median_spatial_pearson	summed_visium_counts
+space_ranger	20	0.23840185519499255	425839.0
+strict	20	0.235865746067558	372281.0
+hard	20	0.25615321450717543	457107.0

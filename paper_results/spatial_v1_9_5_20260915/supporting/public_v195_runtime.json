@@ -1,0 +1,20 @@
+{
+  "status": "public_archive_verified",
+  "archive": "<local>/v1.9.5/download/STAR-suite-v1.9.5-linux-amd64-glibc234.tar.gz",
+  "archive_sha256": "44d15d985a52461fef0756bad5a366ee4377877d62001123560eae1963cf4dd6",
+  "runtimes": [
+    {
+      "path": "<local>/v1.9.5/glibc234/bin/STAR",
+      "sha256": "b8daab02615a7dd1d2c07638d1ede221e64d74db9c1d789e74905e656219296b",
+      "version": "1.9.5",
+      "source_revision": "c95c57d8672e9db128be33e554a9a9244a5d2359"
+    },
+    {
+      "path": "<storage>/official-glibc234/bin/STAR",
+      "sha256": "b8daab02615a7dd1d2c07638d1ede221e64d74db9c1d789e74905e656219296b",
+      "version": "1.9.5",
+      "source_revision": "c95c57d8672e9db128be33e554a9a9244a5d2359"
+    }
+  ],
+  "verified_at": "2026-09-15T10:50:00.364321+00:00"
+}

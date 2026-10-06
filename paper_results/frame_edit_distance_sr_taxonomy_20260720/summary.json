@@ -1,0 +1,70 @@
+{
+  "schema": "visium_hd_processing.paper.frame_edit_distance_sr_taxonomy.v1",
+  "dataset": "H1-VM2JXXK/A1 full natural human CRC",
+  "date": "2026-07-20",
+  "edit_hash_oracle": {
+    "targets": 6700,
+    "generated_target_query_pairs": 36277422,
+    "returned_hit_checks": 54545380,
+    "collision_lookup_calls": 11338539,
+    "missing_source_hits": 0,
+    "wrong_source_distances": 0,
+    "wrong_returned_distances": 0,
+    "out_of_envelope_hits": 0,
+    "duplicate_hits": 0,
+    "passed": true,
+    "summary_sha256": "b73d40e91d9770846b63273f592e02a30c79a1ee9c45b35908fc85fc623db251"
+  },
+  "headline": {
+    "shared_eligible_reads": 707409359,
+    "star_candidate_reads": 641532499,
+    "star_no_candidate_reads": 65876860,
+    "sr_selected_retained_minimum": 635825455,
+    "sr_selected_nonminimum": 3836615,
+    "sr_unassigned_with_star_candidate": 1870429,
+    "short_bc2_overlap_nonminimum": 3644060,
+    "nonminimum_not_short_bc2_overlap": 192555,
+    "sr_raw_split_cost_greater_than_star_minimum": 3835720,
+    "sr_raw_split_cost_equal_to_star_minimum": 895,
+    "sr_raw_split_max_half_above_ed2": 5070
+  },
+  "nonminimum_minimum_tier": {
+    "H1": 3644367,
+    "H2": 43787,
+    "H3": 148461
+  },
+  "unassigned_minimum_tier": {
+    "H1": 2279,
+    "H2": 433228,
+    "H3": 691911,
+    "H4": 743011
+  },
+  "nonminimum_raw_geometry": {
+    "sr_best_split_1_plus_1": 3627986,
+    "sr_best_split_offset_minus_1": 3033432,
+    "deletion_frame_plus_insertion_frame": 2979137,
+    "same_8um_parent": 2962056,
+    "same_16um_only": 379841,
+    "cross_16um": 494718
+  },
+  "dominant_class_molecule_effect": {
+    "affected_exact_member_molecules": 1538738,
+    "explained_2um_disagreements": 1352442,
+    "all_2um_disagreements": 8341434,
+    "explained_2um_fraction": 0.16213543138985456,
+    "explained_cross_16um_disagreements": 155633,
+    "all_cross_16um_disagreements": 2110744,
+    "explained_cross_16um_fraction": 0.07373371664209397
+  },
+  "full_artifacts": {
+    "edit_hash_oracle_run": "<runs>/20260720_vm2jxxk_full_edit_hash_oracle_audit_v1",
+    "disagreement_ledger_run": "<runs>/20260720_vm2jxxk_full_sr_disagreement_taxonomy_v1",
+    "raw_edit_ledger_run": "<runs>/20260720_vm2jxxk_full_sr_disagreement_raw_edit_audit_v1",
+    "paper_taxonomy_run": "<runs>/20260720_vm2jxxk_full_sr_disagreement_paper_taxonomy_v1",
+    "raw_edit_summary_sha256": "3ed4368eda0f0a5f0b87b72793e34b4cdb021f119fb8c7effe7cc36163903553",
+    "raw_edit_ledger_sha256": "d94e54a220e83023bedf57d08a1c8c3176b6d3e7283774e16b5755d825269192",
+    "paper_taxonomy_summary_sha256": "057f85844aff42ebf235673db0faab388f34f7dc317d83f217edc43b6d21555f",
+    "paper_taxonomy_tsv_sha256": "884ce0be0902df5c8704c294e4939fa4e9ccb7999d52d5d7b602b218b227f3a1"
+  },
+  "interpretation_boundary": "The audit measures raw CR evidence and Space Ranger emitted coordinates. It does not infer or assert Space Ranger's internal algorithm."
+}

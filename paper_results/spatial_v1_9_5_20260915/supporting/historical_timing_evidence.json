@@ -1,0 +1,109 @@
+{
+  "cases": [
+    {
+      "arm": "historical_2020a_hard_only_dev_cc1059ae",
+      "dataset": "crc",
+      "primary_run_id": "crc_hard_packed_fastq_preprint_v1",
+      "speedup": 1.3967504920718363,
+      "star_seconds": 817.97,
+      "time_reduction_percent": 28.405251641137852,
+      "vendor_seconds": 1142.5
+    },
+    {
+      "arm": "historical_2020a_hard_only_dev_cc1059ae",
+      "dataset": "spatch",
+      "primary_run_id": "spatch_hard_packed_fastq_preprint_v1",
+      "speedup": 1.3787287094585923,
+      "star_seconds": 2727.15,
+      "time_reduction_percent": 27.469414893617017,
+      "vendor_seconds": 3760.0
+    },
+    {
+      "arm": "historical_2024a_compatibility_v1.7.1",
+      "dataset": "ovarian",
+      "primary_run_id": "20260813_star_suite_v1_7_1_ovarian_gex_full_compatibility_nvme_timed_v1",
+      "speedup": 1.4814335958337477,
+      "star_seconds": 2212.06,
+      "time_reduction_percent": 32.49781813965127,
+      "vendor_seconds": 3277.02
+    },
+    {
+      "arm": "historical_2024a_annotated_v1.7.1",
+      "dataset": "ovarian",
+      "primary_run_id": "20260813_star_suite_v1_7_1_ovarian_gex_full_annotated_nvme_timed_v1",
+      "speedup": 1.4683831305002422,
+      "star_seconds": 2231.72,
+      "time_reduction_percent": 31.897882832573497,
+      "vendor_seconds": 3277.02
+    }
+  ],
+  "inputs": {
+    "cases": [
+      {
+        "arm": "historical_2020a_hard_only_dev_cc1059ae",
+        "dataset": "crc",
+        "primary_run_id": "crc_hard_packed_fastq_preprint_v1",
+        "star": {
+          "path": "<local>/20260813_nvme_reclaim/star-spatial-ssd-benchmark-20260729/optimization_remaining_20260813/crc_hard_packed_fastq_preprint_v1/star_time.txt",
+          "release": "unreleased cc1059ae",
+          "sha256": "0c340a914d6265ff141e46c37cf9c7e5c1e2d209c84eaee3a291b806d4383b01"
+        },
+        "vendor": {
+          "path": "<local>/20260813_nvme_reclaim/star-spatial-ssd-benchmark-20260729/space_ranger/crc.time.txt",
+          "release": "Space Ranger 4.1.0",
+          "sha256": "66e5f1287703d606596a784cb47576a993210d9f09d18db778924f2ada533963"
+        }
+      },
+      {
+        "arm": "historical_2020a_hard_only_dev_cc1059ae",
+        "dataset": "spatch",
+        "primary_run_id": "spatch_hard_packed_fastq_preprint_v1",
+        "star": {
+          "path": "<local>/20260813_nvme_reclaim/star-spatial-ssd-benchmark-20260729/optimization_remaining_20260813/spatch_hard_packed_fastq_preprint_v1/star_time.txt",
+          "release": "unreleased cc1059ae",
+          "sha256": "2eea4459a55fbf591852f6a30f4b68e57c70e51677f099c7c55effa668966ec2"
+        },
+        "vendor": {
+          "path": "<local>/20260813_nvme_reclaim/star-spatial-ssd-benchmark-20260729/space_ranger/spatch.time.txt",
+          "release": "Space Ranger 4.1.0",
+          "sha256": "358f34fa850181dd010a1d447243175a5ac1d3bfb68b96047495665b129c0be8"
+        }
+      },
+      {
+        "arm": "historical_2024a_compatibility_v1.7.1",
+        "dataset": "ovarian",
+        "primary_run_id": "20260813_star_suite_v1_7_1_ovarian_gex_full_compatibility_nvme_timed_v1",
+        "star": {
+          "path": "<runs>/20260813_ovarian_xenium_cross_platform_star_v1_7_1_v1/run_instance/star/compatibility/star.time.txt",
+          "release": "v1.7.1",
+          "sha256": "1d619d39e32523562419598e40de16df9871dd04cad92b4634d0b6361ed4896c"
+        },
+        "vendor": {
+          "path": "<storage>/20260813_ovarian_sr410_nvme_timed_v2/logs/spaceranger.time.txt",
+          "release": "Space Ranger 4.1.0",
+          "sha256": "90903720178bac2eafb16d53da95d60a90b64b8b83dbac88f04c565314f9ed73"
+        }
+      },
+      {
+        "arm": "historical_2024a_annotated_v1.7.1",
+        "dataset": "ovarian",
+        "primary_run_id": "20260813_star_suite_v1_7_1_ovarian_gex_full_annotated_nvme_timed_v1",
+        "star": {
+          "path": "<runs>/20260813_ovarian_xenium_cross_platform_star_v1_7_1_v1/run_instance/star/annotated/star.time.txt",
+          "release": "v1.7.1",
+          "sha256": "94f188f14f199b99eaea99b59f583ae167d3edb13a5b744a758da34e2a624ffd"
+        },
+        "vendor": {
+          "path": "<storage>/20260813_ovarian_sr410_nvme_timed_v2/logs/spaceranger.time.txt",
+          "release": "Space Ranger 4.1.0",
+          "sha256": "90903720178bac2eafb16d53da95d60a90b64b8b83dbac88f04c565314f9ed73"
+        }
+      }
+    ],
+    "purpose": "Extract original timing evidence for the old/new paper report; no benchmark execution",
+    "release": "historical: Flex dev cc1059ae; ovarian v1.7.1",
+    "timing_scope": "Historical Flex writes hard-only products. Current v1.9.5 writes four policies. STAR excludes registration; vendor includes registration. All timings are one observation per definition on the same NVMe host."
+  },
+  "release": "historical: Flex dev cc1059ae; ovarian v1.7.1",
+  "schema": "visium_hd_processing.spatial_timings.v1"
+}

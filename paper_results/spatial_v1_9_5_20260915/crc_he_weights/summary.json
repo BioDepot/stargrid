@@ -1,0 +1,86 @@
+{
+  "area": "D1",
+  "barcode_axis": "space_ranger_barcode_axis",
+  "coarse_barcodes": 702244,
+  "comparison_scale_um": 8,
+  "dataset": "CRC",
+  "geometry_audit": {
+    "base": {
+      "cell_mask_bins": 3761790,
+      "cellpose_projection": {
+        "cell_labels_tree_sha256": "dd8a3417c7a0c5550ce9bb42f743660ccfff32785dcb1f87a724cce1722ccb97",
+        "coordinate_resampling": "explicit source-pixel and pixel-centre transform",
+        "grid_geometry": "independent_capture_grid",
+        "native_roi_bins_outside_cellpose_pixel_support": 0,
+        "nucleus_labels_tree_sha256": "98c75aa2e79dc06f325f273fce8800119126b5bc49a23272c01049cfd30753a8",
+        "registration_moving_sampling": "decimate",
+        "registration_moving_source_downsample": 16,
+        "segmentation_downsample": 2,
+        "segmentation_root": "<runs>/20260726_crc_native_image_end_to_end_v4/cellpose",
+        "segmentation_shape_yx": [
+          21802,
+          26510
+        ],
+        "segmentation_summary_sha256": "9ca52b8e0c29ef2e87bbf454de5bfbf1bfa1766b0844a6c7ebcefa0d5bd701c5"
+      },
+      "cellpose_supported_roi_2um_bins": 11222500,
+      "compartment_source": "independent_he_cellpose",
+      "complete_16um_parents": 174724,
+      "extracellular_mask_bins": 7460710,
+      "geometry_source": "independent_capture_grid",
+      "native_col_max": 3349,
+      "native_col_min": 0,
+      "native_roi_2um_bins": 11222500,
+      "native_row_max": 3349,
+      "native_row_min": 0,
+      "nucleus_mask_bins": 1769337,
+      "selection_scope": "full_registered_extent"
+    },
+    "coarse_axis": {
+      "coarse_barcodes": 702244,
+      "comparison_scale_um": 8,
+      "complete_16um_parents": 174724,
+      "he_supported_2um_children": 11222500,
+      "he_unsupported_coarse_barcodes": 0
+    }
+  },
+  "he_cell_area_fraction": 0.3352007128536422,
+  "he_nucleus_area_fraction": 0.1576597905992426,
+  "he_supported_2um_children": 11222500,
+  "inputs": {
+    "capture_grid": {
+      "path": "<runs>/20260726_crc_native_image_end_to_end_v4/capture_grid_primary/capture_grid.json",
+      "sha256": "311f778a9b0cc116433395cc91e1da5dd402e7360a1f651cabab3d9cf7cdb20a"
+    },
+    "cellpose_summary": {
+      "path": "<runs>/20260726_crc_native_image_end_to_end_v4/cellpose/summary.json",
+      "sha256": "9ca52b8e0c29ef2e87bbf454de5bfbf1bfa1766b0844a6c7ebcefa0d5bd701c5"
+    },
+    "native_registration": {
+      "path": "<runs>/20260726_crc_native_image_end_to_end_v4/registration/registration.json",
+      "sha256": "d6d7b4829a33449d6356ad122aaf154b0012d1c917172fea8b3f1ea6230df23d"
+    },
+    "prepared_arrays": {
+      "path": "<storage>/analyses/crc_fields/attempt1/result/coarse_fields.npz",
+      "sha256": "772aa37a84cbc85faebe53c57e2a0e711fc4983a3e11130201f13882f853eb9a"
+    },
+    "prepared_summary": {
+      "path": "<storage>/analyses/crc_fields/attempt1/result/summary.json",
+      "sha256": "52a63cff9268201bc6624c2101fd75ba7b39c5a17f70dad4124476f7246961c8"
+    }
+  },
+  "invariants": {
+    "existing_segmentation_reused_without_rerun": true,
+    "image_or_segmentation_not_used_for_assignment": true,
+    "space_ranger_barcode_axis_is_primary": true
+  },
+  "outputs": {
+    "he_bin_weights.npz": {
+      "bytes": 2361757,
+      "sha256": "f0171abf35ee048b13cb6c55b0751ef99d223bf07f2101a515ba09e53385988a"
+    }
+  },
+  "projection": "Per-coarse-bin fractions of independently segmented H&E-supported 2-um child centers; expression is not used to define the weights.",
+  "schema": "visium_hd_processing.flex_he_bin_weights.v1",
+  "slide": "H1-GMHFWPH"
+}

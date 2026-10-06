@@ -1,0 +1,71 @@
+{
+  "inputs": {
+    "CRC": {
+      "cellpose_summary": {
+        "path": "<runs>/20260726_crc_native_image_end_to_end_v4/cellpose/summary.json",
+        "sha256": "9ca52b8e0c29ef2e87bbf454de5bfbf1bfa1766b0844a6c7ebcefa0d5bd701c5"
+      },
+      "comparison_summary": {
+        "path": "<storage>/analyses/crc_morphology/attempt1/result/summary.json",
+        "sha256": "6c36dc0bb8669e700b9cb0b11a88c3dc742852445ea262a728b03c45fbcb3eaf"
+      },
+      "mass_reconciliation": {
+        "path": "<storage>/analyses/crc_morphology/attempt1/result/mass_reconciliation.tsv",
+        "sha256": "5b32c2bd4e79773cc9ea2d7fb99b3a00cf41d718ecc0183fc33447d68138d272"
+      },
+      "morphology_fields": {
+        "path": "<storage>/analyses/crc_morphology/attempt1/result/morphology_fields.tsv",
+        "sha256": "8d996ce8d1db0d0b97b81aa95496884e082d06766bddc517ba8b368fcc83e0d0"
+      }
+    },
+    "SPATCH": {
+      "cellpose_summary": {
+        "path": "<runs>/20260727_spatch_flex_native_he_morphology_v1/cellpose/summary.json",
+        "sha256": "e2e54788aadf8a691afa2391830bca1bcaf38b579f9222905b7dfc68113f448f"
+      },
+      "comparison_summary": {
+        "path": "<runs>/20261005_spatch_morphology_affine_supported_v1/result/summary.json",
+        "sha256": "566b6b7558c0c16dc397465f0f58b249e14ced0bef1675ad3f0d15c700d044bf"
+      },
+      "mass_reconciliation": {
+        "path": "<runs>/20261005_spatch_morphology_affine_supported_v1/result/mass_reconciliation.tsv",
+        "sha256": "29bb33228bf69820551ad464e5bf2d91ac96bb9a392739a4dc1eae9581b3ac1b"
+      },
+      "morphology_fields": {
+        "path": "<runs>/20261005_spatch_morphology_affine_supported_v1/result/morphology_fields.tsv",
+        "sha256": "67cc240ca6015b8947eaec034cba97d0a1a83df43ef94774df292782c950850b"
+      }
+    }
+  },
+  "interpretation": "STAR-versus-Space-Ranger compatibility comparison on each Space Ranger barcode axis using matched independent H&E/Cellpose structure masks.",
+  "invariants": {
+    "primary_comparator_is_space_ranger": true,
+    "prior_mapq_mode_analysis_preserved_separately": true,
+    "raw_mass_not_normalized": true,
+    "same_cellpose_method_signature_required": true,
+    "spatial_bin_residual_not_feature_bin_residual": true
+  },
+  "outputs": {
+    "flex_star_sr_he_consistency.tsv": {
+      "bytes": 4036,
+      "sha256": "7634670975a6b364333d22e44880d237aa0803fc84c1baee6b5165e0e9743f03"
+    }
+  },
+  "result_id": "hd_flex_full_star_sr_he_cellpose_two_slide_v1",
+  "schema": "visium_hd_processing.flex_star_sr_he_consistency.v1",
+  "shared_cellpose_method_signature": {
+    "cell_domain": "nearest-nucleus label expansion",
+    "cellprob_threshold": 0.0,
+    "channel": "Ruifrok-style hematoxylin optical density",
+    "downsample": 2,
+    "engine": "Cellpose",
+    "engine_version": "4.1.1",
+    "flow_threshold": 0.4,
+    "max_size_fraction": 0.4,
+    "min_size": 15,
+    "model": "cpsam",
+    "nucleus_expansion_um": 2.0,
+    "overlap": 128,
+    "tile_size": 2048
+  }
+}

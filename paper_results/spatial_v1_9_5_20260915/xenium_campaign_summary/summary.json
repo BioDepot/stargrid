@@ -1,0 +1,286 @@
+{
+  "cancer_panel": {
+    "annotated": {
+      "all_policy_scope_bootstrap_intervals_span_zero": true,
+      "axes": {
+        "cancer_poor_patch_count": 102,
+        "cancer_rich_patch_count": 663,
+        "comparison_patch_count": 1854,
+        "exclude_mecom_gene_count": 55,
+        "full_reference_panel_gene_count": 56,
+        "label_leakage_controlled_gene_count": 54,
+        "reference_panel_shared_gene_count": 56,
+        "shared_gene_count": 4911,
+        "xenium_cancer_cell_count": 136776,
+        "xenium_cell_count": 200900
+      },
+      "intervals": [
+        {
+          "ci95_high": 0.0036345217762821683,
+          "ci95_low": -0.0036635350784355973,
+          "mean_delta": 4.185309116105136e-05,
+          "method": "strict",
+          "scope": "full_reference_panel",
+          "spans_zero": true
+        },
+        {
+          "ci95_high": 0.002319750486921799,
+          "ci95_low": -0.0030450038235505356,
+          "mean_delta": -0.00039621806490317387,
+          "method": "hard",
+          "scope": "full_reference_panel",
+          "spans_zero": true
+        },
+        {
+          "ci95_high": 0.0038793544978666192,
+          "ci95_low": -0.00375676851022872,
+          "mean_delta": 0.00013026189496777887,
+          "method": "strict",
+          "scope": "exclude_mecom",
+          "spans_zero": true
+        },
+        {
+          "ci95_high": 0.002519421658695018,
+          "ci95_low": -0.002966822201251243,
+          "mean_delta": -0.0002598516439346761,
+          "method": "hard",
+          "scope": "exclude_mecom",
+          "spans_zero": true
+        },
+        {
+          "ci95_high": 0.004187690522273381,
+          "ci95_low": -0.003525983322215521,
+          "mean_delta": 0.0003987070499950145,
+          "method": "strict",
+          "scope": "label_leakage_controlled",
+          "spans_zero": true
+        },
+        {
+          "ci95_high": 0.0024218783373916013,
+          "ci95_low": -0.0030640095963529066,
+          "mean_delta": -0.0003358613989140613,
+          "method": "hard",
+          "scope": "label_leakage_controlled",
+          "spans_zero": true
+        }
+      ],
+      "intervals_spanning_zero": 6,
+      "policy_scope_interval_count": 6
+    },
+    "compatibility": {
+      "all_policy_scope_bootstrap_intervals_span_zero": true,
+      "axes": {
+        "cancer_poor_patch_count": 102,
+        "cancer_rich_patch_count": 663,
+        "comparison_patch_count": 1854,
+        "exclude_mecom_gene_count": 55,
+        "full_reference_panel_gene_count": 56,
+        "label_leakage_controlled_gene_count": 54,
+        "reference_panel_shared_gene_count": 56,
+        "shared_gene_count": 4910,
+        "xenium_cancer_cell_count": 136776,
+        "xenium_cell_count": 200900
+      },
+      "intervals": [
+        {
+          "ci95_high": 0.003637053426197023,
+          "ci95_low": -0.003505533057868725,
+          "mean_delta": 0.00010139802527344957,
+          "method": "strict",
+          "scope": "full_reference_panel",
+          "spans_zero": true
+        },
+        {
+          "ci95_high": 0.0023135880483415162,
+          "ci95_low": -0.003004074933140665,
+          "mean_delta": -0.0003657194401138942,
+          "method": "hard",
+          "scope": "full_reference_panel",
+          "spans_zero": true
+        },
+        {
+          "ci95_high": 0.003861495578623591,
+          "ci95_low": -0.0036164445896280004,
+          "mean_delta": 0.00017018736741919248,
+          "method": "strict",
+          "scope": "exclude_mecom",
+          "spans_zero": true
+        },
+        {
+          "ci95_high": 0.0025610106924985904,
+          "ci95_low": -0.002846598806806406,
+          "mean_delta": -0.00016991850901884446,
+          "method": "hard",
+          "scope": "exclude_mecom",
+          "spans_zero": true
+        },
+        {
+          "ci95_high": 0.004141127919242084,
+          "ci95_low": -0.003392162476408939,
+          "mean_delta": 0.0004360858359320382,
+          "method": "strict",
+          "scope": "label_leakage_controlled",
+          "spans_zero": true
+        },
+        {
+          "ci95_high": 0.002441878726240513,
+          "ci95_low": -0.002949240977883797,
+          "mean_delta": -0.00025507940732853474,
+          "method": "hard",
+          "scope": "label_leakage_controlled",
+          "spans_zero": true
+        }
+      ],
+      "intervals_spanning_zero": 6,
+      "policy_scope_interval_count": 6
+    }
+  },
+  "inputs": {
+    "<storage>/analyses/xenium_annotated_cancer/attempt1/result/summary.json": "9921c22a7295ac399915f56a4d341dbfb63f0e9fbe6a6e2111f5f1992c767488",
+    "<storage>/analyses/xenium_annotated_top20/attempt1/result/top20_genes.tsv": "7de09bf78ca708b0261188ae3853ce7d40d0bea674122f38305895c52d0a08f3",
+    "<storage>/analyses/xenium_annotated_top20/attempt1/result/top20_summary.tsv": "462ad069432512fd95880296296a56af76db56c53e1aa94009d9c675cf5eadcf",
+    "<storage>/analyses/xenium_compatibility_cancer/attempt1/result/summary.json": "9ff62f65d19cd54f21e1b959ba0444311b07d80c88c9df0da50388121e53dfbf",
+    "<storage>/analyses/xenium_compatibility_top20/attempt1/result/top20_genes.tsv": "e92faf08ec8738664e171552274cd069877b31336db9daec12667088c6c25d7f",
+    "<storage>/analyses/xenium_compatibility_top20/attempt1/result/top20_summary.tsv": "5f76662101393c699fe00eb4a90859ae5666d79a9e6eb64fd83d5ec98c0424a0"
+  },
+  "interpretation_review": {
+    "any_non_null_cancer_interval": false,
+    "any_top20_ties": false,
+    "vendor_scope_corrected_from_historical_4_0_1_exon_only": true
+  },
+  "interval_count": 12,
+  "intervals_spanning_zero": 12,
+  "release": "v1.9.5",
+  "schema": "visium_hd_processing.xenium_campaign_summary.v1",
+  "top20": {
+    "annotated": {
+      "comparisons": {
+        "hard": {
+          "historical_test_definition": "strictly better genes out of all 20; exact fair-binomial probability ordering",
+          "losses_vs_space_ranger": 5,
+          "mean_spatial_pearson_delta_vs_space_ranger": 0.006416344559727685,
+          "tied_genes_require_interpretation_review": false,
+          "ties_vs_space_ranger": 0,
+          "trials": 20,
+          "two_sided_exact_binomial_p": 0.04138946533203125,
+          "wins_vs_space_ranger": 15
+        },
+        "strict": {
+          "historical_test_definition": "strictly better genes out of all 20; exact fair-binomial probability ordering",
+          "losses_vs_space_ranger": 13,
+          "mean_spatial_pearson_delta_vs_space_ranger": -0.006073186600749279,
+          "tied_genes_require_interpretation_review": false,
+          "ties_vs_space_ranger": 0,
+          "trials": 20,
+          "two_sided_exact_binomial_p": 0.26317596435546875,
+          "wins_vs_space_ranger": 7
+        }
+      },
+      "gene_axis": [
+        "ENSG00000181143",
+        "ENSG00000074181",
+        "ENSG00000168036",
+        "ENSG00000169919",
+        "ENSG00000117394",
+        "ENSG00000157601",
+        "ENSG00000101144",
+        "ENSG00000104419",
+        "ENSG00000149294",
+        "ENSG00000117983",
+        "ENSG00000095303",
+        "ENSG00000137959",
+        "ENSG00000176890",
+        "ENSG00000163347",
+        "ENSG00000107201",
+        "ENSG00000112715",
+        "ENSG00000085276",
+        "ENSG00000076706",
+        "ENSG00000178999",
+        "ENSG00000090339"
+      ],
+      "gene_count": 20,
+      "method_summary": {
+        "hard": {
+          "median_spatial_pearson": 0.25615321450717543,
+          "summed_visium_counts": 457107.0,
+          "top_gene_count": 20
+        },
+        "space_ranger": {
+          "median_spatial_pearson": 0.23840185519499255,
+          "summed_visium_counts": 425839.0,
+          "top_gene_count": 20
+        },
+        "strict": {
+          "median_spatial_pearson": 0.235865746067558,
+          "summed_visium_counts": 372281.0,
+          "top_gene_count": 20
+        }
+      }
+    },
+    "compatibility": {
+      "comparisons": {
+        "hard": {
+          "historical_test_definition": "strictly better genes out of all 20; exact fair-binomial probability ordering",
+          "losses_vs_space_ranger": 5,
+          "mean_spatial_pearson_delta_vs_space_ranger": 0.006092532969689797,
+          "tied_genes_require_interpretation_review": false,
+          "ties_vs_space_ranger": 0,
+          "trials": 20,
+          "two_sided_exact_binomial_p": 0.04138946533203125,
+          "wins_vs_space_ranger": 15
+        },
+        "strict": {
+          "historical_test_definition": "strictly better genes out of all 20; exact fair-binomial probability ordering",
+          "losses_vs_space_ranger": 14,
+          "mean_spatial_pearson_delta_vs_space_ranger": -0.006306735488471381,
+          "tied_genes_require_interpretation_review": false,
+          "ties_vs_space_ranger": 0,
+          "trials": 20,
+          "two_sided_exact_binomial_p": 0.11531829833984375,
+          "wins_vs_space_ranger": 6
+        }
+      },
+      "gene_axis": [
+        "ENSG00000181143",
+        "ENSG00000074181",
+        "ENSG00000168036",
+        "ENSG00000169919",
+        "ENSG00000117394",
+        "ENSG00000157601",
+        "ENSG00000101144",
+        "ENSG00000104419",
+        "ENSG00000149294",
+        "ENSG00000117983",
+        "ENSG00000095303",
+        "ENSG00000137959",
+        "ENSG00000176890",
+        "ENSG00000163347",
+        "ENSG00000107201",
+        "ENSG00000112715",
+        "ENSG00000085276",
+        "ENSG00000076706",
+        "ENSG00000178999",
+        "ENSG00000090339"
+      ],
+      "gene_count": 20,
+      "method_summary": {
+        "hard": {
+          "median_spatial_pearson": 0.25694130082970557,
+          "summed_visium_counts": 456286.0,
+          "top_gene_count": 20
+        },
+        "space_ranger": {
+          "median_spatial_pearson": 0.2384015333508126,
+          "summed_visium_counts": 425839.0,
+          "top_gene_count": 20
+        },
+        "strict": {
+          "median_spatial_pearson": 0.2365020304336976,
+          "summed_visium_counts": 371612.0,
+          "top_gene_count": 20
+        }
+      }
+    }
+  },
+  "vendor_sha256": "b6de673de13a9c12df37e6d62668b9013e577a1256d8d9b5d502bbd1ee96f0f5"
+}

@@ -1,0 +1,160 @@
+{
+  "accounting": {
+    "candidate_rows": 441113893,
+    "exact_h0_reads": 179248335,
+    "joined_reads": 352285194,
+    "read_cliques": 195081035,
+    "reads_decoded": 474131092,
+    "reads_with_candidates": 423760144
+  },
+  "cross_scale_mass_residuals": {
+    "gated_hard": {
+      "absolute": 0.0,
+      "relative": 0.0
+    },
+    "hard": {
+      "absolute": 0.0,
+      "relative": 0.0
+    },
+    "soft_expected": {
+      "absolute": 0.00011670589447021484,
+      "relative": 6.116035650107694e-13
+    },
+    "strict": {
+      "absolute": 0.0,
+      "relative": 0.0
+    }
+  },
+  "hard_minus_strict_same_primary": 35643399.0,
+  "inputs": {
+    "<runs>/20260915_v195_ovarian_gex_2024a_annotated/PRIMARY_SEAL.json": "0c574f3d3470ad0bf2354a516afc9c5b98906d549bfd6626a850204f2c676f70",
+    "<runs>/20260915_v195_ovarian_gex_2024a_annotated/starSpatialGex.out/run_summary.tsv": "a7d66b9cab24bf88a03eb2a307c172d7a40689c8734c4d040632f5e5693e4ebf",
+    "<runs>/20260915_v195_ovarian_gex_2024a_annotated/starSpatialGex.out/summary.tsv": "63f22a05ec707c94b61293c3af27e7a62e5d33d16a776db7f93716292804c657"
+  },
+  "not_emitted_by_native_summary": [
+    "feature_eligible_ambiguous_reads",
+    "posterior_clique_mass_residual"
+  ],
+  "policy_masses_full_capture_axis": {
+    "gated_hard": 170196357.0,
+    "hard": 191328545.0,
+    "soft_expected": 190819513.07487854,
+    "strict": 155685146.0
+  },
+  "policy_rows": [
+    {
+      "barcodes": "9569390",
+      "features": "32407",
+      "mass": "155685146",
+      "matrix_field": "integer",
+      "nnz": "151314870",
+      "product": "strict",
+      "scale": "square_002um"
+    },
+    {
+      "barcodes": "699572",
+      "features": "32407",
+      "mass": "155685146",
+      "matrix_field": "integer",
+      "nnz": "125663600",
+      "product": "strict",
+      "scale": "square_008um"
+    },
+    {
+      "barcodes": "175452",
+      "features": "32407",
+      "mass": "155685146",
+      "matrix_field": "integer",
+      "nnz": "101349924",
+      "product": "strict",
+      "scale": "square_016um"
+    },
+    {
+      "barcodes": "9569390",
+      "features": "32407",
+      "mass": "190819513.07487854",
+      "matrix_field": "real",
+      "nnz": "229196941",
+      "product": "soft_expected",
+      "scale": "square_002um"
+    },
+    {
+      "barcodes": "699572",
+      "features": "32407",
+      "mass": "190819513.07476184",
+      "matrix_field": "real",
+      "nnz": "163069518",
+      "product": "soft_expected",
+      "scale": "square_008um"
+    },
+    {
+      "barcodes": "175452",
+      "features": "32407",
+      "mass": "190819513.07477742",
+      "matrix_field": "real",
+      "nnz": "124928519",
+      "product": "soft_expected",
+      "scale": "square_016um"
+    },
+    {
+      "barcodes": "9569390",
+      "features": "32407",
+      "mass": "191328545",
+      "matrix_field": "integer",
+      "nnz": "184921440",
+      "product": "hard",
+      "scale": "square_002um"
+    },
+    {
+      "barcodes": "699572",
+      "features": "32407",
+      "mass": "191328545",
+      "matrix_field": "integer",
+      "nnz": "150306879",
+      "product": "hard",
+      "scale": "square_008um"
+    },
+    {
+      "barcodes": "175452",
+      "features": "32407",
+      "mass": "191328545",
+      "matrix_field": "integer",
+      "nnz": "119551343",
+      "product": "hard",
+      "scale": "square_016um"
+    },
+    {
+      "barcodes": "9569390",
+      "features": "32407",
+      "mass": "170196357",
+      "matrix_field": "integer",
+      "nnz": "165049171",
+      "product": "gated_hard",
+      "scale": "square_002um"
+    },
+    {
+      "barcodes": "699572",
+      "features": "32407",
+      "mass": "170196357",
+      "matrix_field": "integer",
+      "nnz": "135793039",
+      "product": "gated_hard",
+      "scale": "square_008um"
+    },
+    {
+      "barcodes": "175452",
+      "features": "32407",
+      "mass": "170196357",
+      "matrix_field": "integer",
+      "nnz": "108864281",
+      "product": "gated_hard",
+      "scale": "square_016um"
+    }
+  ],
+  "primary": "<runs>/20260915_v195_ovarian_gex_2024a_annotated",
+  "primary_seal_sha256": "0c574f3d3470ad0bf2354a516afc9c5b98906d549bfd6626a850204f2c676f70",
+  "release": "v1.9.5",
+  "schema": "visium_hd_processing.sealed_primary_summary.v1",
+  "source_revision": "c95c57d8672e9db128be33e554a9a9244a5d2359",
+  "spatial_output": "<runs>/20260915_v195_ovarian_gex_2024a_annotated/starSpatialGex.out"
+}

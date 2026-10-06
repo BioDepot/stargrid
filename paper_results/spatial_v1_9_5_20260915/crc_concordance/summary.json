@@ -1,0 +1,121 @@
+{
+  "comparison_axis": "union of nonzero feature-by-bin entries on the declared target set",
+  "feature_axis_audit": {
+    "16": {
+      "absent_feature_space_ranger_mass": 0.0,
+      "absent_feature_space_ranger_mass_fraction": 0.0,
+      "open_features": 18065,
+      "space_ranger_features_absent_from_open_axis": [
+        "ENSG00000132570",
+        "ENSG00000134184",
+        "ENSG00000134551",
+        "ENSG00000154438",
+        "ENSG00000159648",
+        "ENSG00000167104",
+        "ENSG00000175699",
+        "ENSG00000180777",
+        "ENSG00000186105",
+        "ENSG00000186190",
+        "ENSG00000187238",
+        "ENSG00000198610",
+        "ENSG00000204640",
+        "ENSG00000205944",
+        "ENSG00000232423",
+        "ENSG00000234068",
+        "ENSG00000244057",
+        "ENSG00000258992",
+        "ENSG00000277058",
+        "ENSG00000285329"
+      ],
+      "space_ranger_target_features": 18085
+    },
+    "2": {
+      "absent_feature_space_ranger_mass": 0.0,
+      "absent_feature_space_ranger_mass_fraction": 0.0,
+      "open_features": 18065,
+      "space_ranger_features_absent_from_open_axis": [
+        "ENSG00000132570",
+        "ENSG00000134184",
+        "ENSG00000134551",
+        "ENSG00000154438",
+        "ENSG00000159648",
+        "ENSG00000167104",
+        "ENSG00000175699",
+        "ENSG00000180777",
+        "ENSG00000186105",
+        "ENSG00000186190",
+        "ENSG00000187238",
+        "ENSG00000198610",
+        "ENSG00000204640",
+        "ENSG00000205944",
+        "ENSG00000232423",
+        "ENSG00000234068",
+        "ENSG00000244057",
+        "ENSG00000258992",
+        "ENSG00000277058",
+        "ENSG00000285329"
+      ],
+      "space_ranger_target_features": 18085
+    },
+    "8": {
+      "absent_feature_space_ranger_mass": 0.0,
+      "absent_feature_space_ranger_mass_fraction": 0.0,
+      "open_features": 18065,
+      "space_ranger_features_absent_from_open_axis": [
+        "ENSG00000132570",
+        "ENSG00000134184",
+        "ENSG00000134551",
+        "ENSG00000154438",
+        "ENSG00000159648",
+        "ENSG00000167104",
+        "ENSG00000175699",
+        "ENSG00000180777",
+        "ENSG00000186105",
+        "ENSG00000186190",
+        "ENSG00000187238",
+        "ENSG00000198610",
+        "ENSG00000204640",
+        "ENSG00000205944",
+        "ENSG00000232423",
+        "ENSG00000234068",
+        "ENSG00000244057",
+        "ENSG00000258992",
+        "ENSG00000277058",
+        "ENSG00000285329"
+      ],
+      "space_ranger_target_features": 18085
+    }
+  },
+  "inputs": {
+    "policy_mex_root": "<runs>/20260915_v195_crc_flex_2020a/star/SpatialFlex.out",
+    "vendor_h5": {
+      "16": {
+        "path": "<datasets>/visium_hd_human_crc/processed_4.1.0_outs/binned_outputs/square_016um/raw_feature_bc_matrix.h5",
+        "sha256": "4aa3c6a8097035969c862d1d15e08257bfd4abbe4af21b6fcf11ff50d57b23d6"
+      },
+      "2": {
+        "path": "<datasets>/visium_hd_human_crc/processed_4.1.0_outs/binned_outputs/square_002um/raw_feature_bc_matrix.h5",
+        "sha256": "ce1dae73b2f9e340788df447776d372f86c2a67dc511d5950baa46c816a3cebf"
+      },
+      "8": {
+        "path": "<datasets>/visium_hd_human_crc/processed_4.1.0_outs/binned_outputs/square_008um/raw_feature_bc_matrix.h5",
+        "sha256": "dc28747bdd5fbb88047054f31e435c4b296e0de40aadbd254191056c82a83ccd"
+      }
+    }
+  },
+  "invariants": {
+    "normalized_tv_is_secondary_shape_metric": true,
+    "occupancy_jaccard_not_computed": true,
+    "open_policy_feature_axes_identical": true,
+    "raw_mass_not_normalized": true,
+    "space_ranger_mass_on_target_features_absent_from_open_axis_reported_separately": true,
+    "target_axis_identical_across_scales": true,
+    "vendor_not_used_for_open_assignment": true
+  },
+  "output": {
+    "path": "<storage>/analyses/crc_concordance/attempt1/result/matrix_concordance.tsv",
+    "sha256": "276754318992e41e4f5dacb6d3fc7bf67136054c253efd9a8e898551f1cbb03a"
+  },
+  "schema": "visium_hd_processing.flex_policy_matrix_concordance.v1",
+  "umi_mode": "1mm_cr"
+}

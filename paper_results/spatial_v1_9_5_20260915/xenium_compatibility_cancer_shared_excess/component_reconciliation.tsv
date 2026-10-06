@@ -1,0 +1,3 @@
+method	space_ranger_target_gene_patch_mass	star_target_gene_patch_mass	shared_target_gene_patch_mass	star_excess_target_gene_patch_mass	space_ranger_only_target_gene_patch_mass	star_excess_cancer_rich_mass	star_excess_cancer_poor_mass	shared_cancer_rich_mass	shared_cancer_poor_mass	net_star_minus_space_ranger_mass	reconciled_net_from_components
+hard	33999035.0	36670030.0	33872286.0	2797744.0	126749.0	1013109.0	77095.0	12530020.0	851731.0	2670995.0	2670995.0
+soft_expected	33999035.0	36582648.67619959	33812545.69092638	2770102.985273229	186489.30907364946	999956.8205288992	77507.34141929456	12508653.457847573	850107.3707632055	2583613.6761995926	2583613.6761995796

@@ -1,0 +1,249 @@
+{
+  "comparison_scale_um": 8,
+  "dataset": "CRC",
+  "inputs": {
+    "he_bin_weights": {
+      "arrays": {
+        "bytes": 2361757,
+        "path": "<storage>/analyses/crc_he_weights/attempt1/result/he_bin_weights.npz",
+        "sha256": "f0171abf35ee048b13cb6c55b0751ef99d223bf07f2101a515ba09e53385988a"
+      },
+      "summary": {
+        "bytes": 3697,
+        "path": "<storage>/analyses/crc_he_weights/attempt1/result/summary.json",
+        "sha256": "b87cdffb27dfea150121af79b26720fb3ed21e90d9229b3f69916504c327a194"
+      }
+    },
+    "prior_morphology_reconciliation": {
+      "bytes": 1495,
+      "path": "<storage>/analyses/crc_morphology/attempt1/result/mass_reconciliation.tsv",
+      "sha256": "5b32c2bd4e79773cc9ea2d7fb99b3a00cf41d718ecc0183fc33447d68138d272"
+    },
+    "space_ranger": [
+      {
+        "bytes": 115075547,
+        "path": "<datasets>/visium_hd_human_crc/processed_4.1.0_outs/binned_outputs/square_008um/raw_feature_bc_matrix.h5",
+        "sha256": "dc28747bdd5fbb88047054f31e435c4b296e0de40aadbd254191056c82a83ccd"
+      }
+    ],
+    "star_methods": {
+      "hard": [
+        {
+          "bytes": 867120,
+          "path": "<runs>/20260915_v195_crc_flex_2020a/star/SpatialFlex.out/hard/square_008um/features.tsv",
+          "sha256": "ca5165e52795b21f013b20876fca809d155f00d7d159eb4cd12c0c48eae7b434"
+        },
+        {
+          "bytes": 12018446,
+          "path": "<runs>/20260915_v195_crc_flex_2020a/star/SpatialFlex.out/hard/square_008um/barcodes.tsv",
+          "sha256": "179a0bb2c88cb567d39cbfaf6200f03caaf0fef3d1096b8325deb47a1addd0d0"
+        },
+        {
+          "bytes": 968212454,
+          "path": "<runs>/20260915_v195_crc_flex_2020a/star/SpatialFlex.out/hard/square_008um/matrix.mtx",
+          "sha256": "e63ad20b55eb3317628f5054f0904be93c0de69145f1d88779add04b0b5f7114"
+        }
+      ],
+      "soft_expected": [
+        {
+          "bytes": 867120,
+          "path": "<runs>/20260915_v195_crc_flex_2020a/star/SpatialFlex.out/soft_expected/square_008um/features.tsv",
+          "sha256": "ca5165e52795b21f013b20876fca809d155f00d7d159eb4cd12c0c48eae7b434"
+        },
+        {
+          "bytes": 12018446,
+          "path": "<runs>/20260915_v195_crc_flex_2020a/star/SpatialFlex.out/soft_expected/square_008um/barcodes.tsv",
+          "sha256": "179a0bb2c88cb567d39cbfaf6200f03caaf0fef3d1096b8325deb47a1addd0d0"
+        },
+        {
+          "bytes": 1274218634,
+          "path": "<runs>/20260915_v195_crc_flex_2020a/star/SpatialFlex.out/soft_expected/square_008um/matrix.mtx",
+          "sha256": "c1e905588f082b8bce2fdd4c7225185839ee228222fea164f6cafb5614098209"
+        }
+      ]
+    }
+  },
+  "invariants": {
+    "biological_feature_axis_only": true,
+    "diagnostic_non_panel_counts_excluded": true,
+    "image_or_segmentation_not_used_for_assignment": true,
+    "prior_total_bin_residual_result_reconciled": true,
+    "raw_mass_not_normalized": true,
+    "space_ranger_barcode_axis_is_primary": true,
+    "space_ranger_is_comparator_not_truth": true
+  },
+  "methods": {
+    "hard": {
+      "barcodes": 702244,
+      "dataset": "CRC",
+      "feature_bin_to_spatial_bin_star_positive_residual_ratio": 1.444637600399075,
+      "genes": 18085,
+      "genes_with_negative_net_star_delta": 43,
+      "genes_with_positive_net_star_delta": 17532,
+      "genes_with_star_positive_gene_bin_residual": 17823,
+      "method": "hard",
+      "raw_mass_normalized": false,
+      "same_gene_space_ranger_cell_fraction_reference": 0.513190474446414,
+      "same_gene_space_ranger_cell_reference_residual_mass_coverage": 1.0,
+      "same_gene_space_ranger_nucleus_fraction_reference": 0.2657144781898321,
+      "same_gene_space_ranger_nucleus_reference_residual_mass_coverage": 1.0,
+      "shared_gene_bin_mass": 71156137.0,
+      "shared_gene_bin_nnz": 64266659,
+      "signed_mass_difference": 3365379.0,
+      "space_ranger_gene_bin_nnz": 65669288,
+      "space_ranger_gene_ids_absent_from_star": [
+        "ENSG00000132570",
+        "ENSG00000134184",
+        "ENSG00000134551",
+        "ENSG00000154438",
+        "ENSG00000159648",
+        "ENSG00000167104",
+        "ENSG00000175699",
+        "ENSG00000180777",
+        "ENSG00000186105",
+        "ENSG00000186190",
+        "ENSG00000187238",
+        "ENSG00000198610",
+        "ENSG00000204640",
+        "ENSG00000205944",
+        "ENSG00000232423",
+        "ENSG00000234068",
+        "ENSG00000244057",
+        "ENSG00000258992",
+        "ENSG00000277058",
+        "ENSG00000285329"
+      ],
+      "space_ranger_genes_absent_from_star": 20,
+      "space_ranger_mass": 72861605.0,
+      "space_ranger_mass_on_genes_absent_from_star": 0.0,
+      "space_ranger_positive_gene_bin_residual_mass": 1705468.0,
+      "space_ranger_positive_gene_bin_residual_nnz": 1694818,
+      "space_ranger_positive_spatial_bin_residual_mass": 144738.0,
+      "space_ranger_whole_cell_mass_fraction": 0.5131994630436703,
+      "space_ranger_whole_nucleus_mass_fraction": 0.2655949865501865,
+      "star_barcodes": 677910,
+      "star_gene_bin_nnz": 68588159,
+      "star_gene_bin_nnz_on_space_ranger_axis": 68588159,
+      "star_gene_bin_nnz_outside_space_ranger_axis": 0,
+      "star_genes": 18065,
+      "star_mass_all_axes": 76226984.0,
+      "star_mass_on_space_ranger_axis": 76226984.0,
+      "star_mass_outside_space_ranger_axis": 0.0,
+      "star_matrix_market_explicit_zero_entries": 0,
+      "star_percent_excess_over_space_ranger": 4.618864764233508,
+      "star_positive_gene_bin_residual_mass": 5070847.0,
+      "star_positive_gene_bin_residual_nnz": 4986001,
+      "star_positive_minus_same_gene_space_ranger_cell_fraction_pp": -0.9356992584310886,
+      "star_positive_minus_same_gene_space_ranger_nucleus_fraction_pp": -0.5592475889230286,
+      "star_positive_residual_cell_mass_fraction": 0.5038334818621031,
+      "star_positive_residual_effective_gene_count": 1028.29821011067,
+      "star_positive_residual_nucleus_mass_fraction": 0.26012200230060184,
+      "star_positive_residual_top100_gene_fraction": 0.16840756583663438,
+      "star_positive_residual_top10_gene_fraction": 0.07737997222160321,
+      "star_positive_residual_vs_space_ranger_gene_total_pearson": 0.9980275575720846,
+      "star_positive_residual_vs_space_ranger_gene_total_spearman": 0.9944402524643291,
+      "star_positive_spatial_bin_residual_mass": 3510117.0,
+      "star_to_space_ranger_positive_gene_bin_residual_mass_ratio": 2.9732876840843687,
+      "star_vs_space_ranger_gene_normalized_total_variation": 0.0011569106359872769,
+      "star_vs_space_ranger_gene_total_pearson": 0.9999992526133789,
+      "star_whole_cell_mass_fraction": 0.512931265587,
+      "star_whole_nucleus_mass_fraction": 0.2654087617778502
+    },
+    "soft_expected": {
+      "barcodes": 702244,
+      "dataset": "CRC",
+      "feature_bin_to_spatial_bin_star_positive_residual_ratio": 1.6701334910548506,
+      "genes": 18085,
+      "genes_with_negative_net_star_delta": 72,
+      "genes_with_positive_net_star_delta": 17519,
+      "genes_with_star_positive_gene_bin_residual": 17970,
+      "method": "soft_expected",
+      "raw_mass_normalized": false,
+      "same_gene_space_ranger_cell_fraction_reference": 0.5132129799363591,
+      "same_gene_space_ranger_cell_reference_residual_mass_coverage": 0.9999999999999999,
+      "same_gene_space_ranger_nucleus_fraction_reference": 0.26580122499938696,
+      "same_gene_space_ranger_nucleus_reference_residual_mass_coverage": 0.9999999999999999,
+      "shared_gene_bin_mass": 70329384.86997586,
+      "shared_gene_bin_nnz": 65390447,
+      "signed_mass_difference": 3310678.065907702,
+      "space_ranger_gene_bin_nnz": 65669288,
+      "space_ranger_gene_ids_absent_from_star": [
+        "ENSG00000132570",
+        "ENSG00000134184",
+        "ENSG00000134551",
+        "ENSG00000154438",
+        "ENSG00000159648",
+        "ENSG00000167104",
+        "ENSG00000175699",
+        "ENSG00000180777",
+        "ENSG00000186105",
+        "ENSG00000186190",
+        "ENSG00000187238",
+        "ENSG00000198610",
+        "ENSG00000204640",
+        "ENSG00000205944",
+        "ENSG00000232423",
+        "ENSG00000234068",
+        "ENSG00000244057",
+        "ENSG00000258992",
+        "ENSG00000277058",
+        "ENSG00000285329"
+      ],
+      "space_ranger_genes_absent_from_star": 20,
+      "space_ranger_mass": 72861605.0,
+      "space_ranger_mass_on_genes_absent_from_star": 0.0,
+      "space_ranger_positive_gene_bin_residual_mass": 2532220.1300241426,
+      "space_ranger_positive_gene_bin_residual_nnz": 6223891,
+      "space_ranger_positive_spatial_bin_residual_mass": 187783.72006695584,
+      "space_ranger_whole_cell_mass_fraction": 0.5131994630436703,
+      "space_ranger_whole_nucleus_mass_fraction": 0.2655949865501865,
+      "star_barcodes": 677910,
+      "star_gene_bin_nnz": 73815682,
+      "star_gene_bin_nnz_on_space_ranger_axis": 73815682,
+      "star_gene_bin_nnz_outside_space_ranger_axis": 0,
+      "star_genes": 18065,
+      "star_mass_all_axes": 76172283.06590772,
+      "star_mass_on_space_ranger_axis": 76172283.0659077,
+      "star_mass_outside_space_ranger_axis": 0.0,
+      "star_matrix_market_explicit_zero_entries": 5291,
+      "star_percent_excess_over_space_ranger": 4.543789648756299,
+      "star_positive_gene_bin_residual_mass": 5842898.195931846,
+      "star_positive_gene_bin_residual_nnz": 9653256,
+      "star_positive_minus_same_gene_space_ranger_cell_fraction_pp": -0.9091646692276911,
+      "star_positive_minus_same_gene_space_ranger_nucleus_fraction_pp": -0.5272244674867255,
+      "star_positive_residual_cell_mass_fraction": 0.5041213332440821,
+      "star_positive_residual_effective_gene_count": 1107.0598735094686,
+      "star_positive_residual_nucleus_mass_fraction": 0.2605289803245197,
+      "star_positive_residual_top100_gene_fraction": 0.16484929876084975,
+      "star_positive_residual_top10_gene_fraction": 0.07422311214105776,
+      "star_positive_residual_vs_space_ranger_gene_total_pearson": 0.995732688503092,
+      "star_positive_residual_vs_space_ranger_gene_total_spearman": 0.9955194908654849,
+      "star_positive_spatial_bin_residual_mass": 3498461.78597466,
+      "star_to_space_ranger_positive_gene_bin_residual_mass_ratio": 2.3074211150339994,
+      "star_vs_space_ranger_gene_normalized_total_variation": 0.001174194411767234,
+      "star_vs_space_ranger_gene_total_pearson": 0.9999992135080452,
+      "star_whole_cell_mass_fraction": 0.5128836406023732,
+      "star_whole_nucleus_mass_fraction": 0.26538496245898496
+    }
+  },
+  "molecule_identity_compared": false,
+  "molecule_identity_limitation": "The shared published SPATCH comparator is a count H5AD without molecule identities; gene-by-bin is therefore the finest common comparison level.",
+  "morphology_projection": "Each gene-bin residual is weighted by the independently segmented H&E cell and nucleus fractions among that 8-um bin's supported 2-um child centers.",
+  "outputs": {
+    "gene_residuals.tsv": {
+      "bytes": 13089443,
+      "sha256": "ec4a7587ab9c33c2c3e15ad8d181bc2bb87bd8d2fae8a8b1db88510d908c9d95"
+    },
+    "method_summary.tsv": {
+      "bytes": 4040,
+      "sha256": "dc9a96993459fa06146989e2fd195bb95ad91f486b42344b7f0069bcf0f1aa13"
+    },
+    "top_gene_residuals.tsv": {
+      "bytes": 83795,
+      "sha256": "9edced8b0796ee7594eda4cff0c5a5700e890f4a2c6715a5a495cfeef47d94e2"
+    }
+  },
+  "primary_axis": "shared_biological_gene_by_space_ranger_barcode_axis",
+  "residual_definition": "For each biological gene and Space Ranger-axis 8-um bin: shared=min(STAR,SR), STAR-positive=STAR-shared, SR-positive=SR-shared.",
+  "schema": "visium_hd_processing.flex_star_sr_gene_bin_he_residuals.v1"
+}

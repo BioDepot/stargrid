@@ -1,0 +1,514 @@
+{
+  "area": "D1",
+  "grid_to_microscope_fit": {
+    "fit_max_residual_microscope_pixels": 2.643799571842216e-11,
+    "fit_mean_residual_microscope_pixels": 1.081958616831546e-11,
+    "fit_points": 4489,
+    "fit_rmse_microscope_pixels": 1.2344743315393575e-11,
+    "grid_rows": 11222500
+  },
+  "inputs": {
+    "<datasets>/visium_hd_human_crc/processed_4.1.0_outs/barcode_mappings.parquet": "474ba729d433f0da832c88a37772a3985422a23b7f37edf8472d5628c4b69614",
+    "<datasets>/visium_hd_human_crc/processed_4.1.0_outs/binned_outputs/square_002um/raw_feature_bc_matrix.h5": "ce1dae73b2f9e340788df447776d372f86c2a67dc511d5950baa46c816a3cebf",
+    "<datasets>/visium_hd_human_crc/processed_4.1.0_outs/binned_outputs/square_002um/spatial/tissue_positions.parquet": "198c6bfaade531af77c58150a558681e73a8d5dbaac1759e5bfda7deae64ea69",
+    "<datasets>/visium_hd_human_crc/processed_4.1.0_outs/spatial/final_alignment.json": "dfa0d90d53c18f2a5a039486ef2983208b1cbbd01cb3439dbe2664e689b87ea8",
+    "<runs>/20260725_crc_registration_cpp_prototype_v7/coarse_primary/registration.json": "b5d72ebd048c0b850aab62de6981149bf53525a2b2bdd7e2692cbe35ba72eb07",
+    "<runs>/20260725_crc_registration_morphology_sensitivity_v1/summary.json": "b95a8d62124bae54144ec7fe410e443781f2f49013842e385a2978d87da3117d",
+    "<storage>/analyses/crc_vendor_compartments/attempt2/result/field_biology.tsv": "f9a1df3e894791c43032268ffca9b20528b4d95d413358e7bada0bb712790e79"
+  },
+  "invariants": {
+    "capture_grid_placement_held_fixed": true,
+    "expression_matrices_unchanged": true,
+    "native_registration_estimated_without_space_ranger_oracle": true,
+    "raw_mass_unchanged": true,
+    "space_ranger_transform_used_only_as_baseline_comparator": true
+  },
+  "mask_reprojection": {
+    "cell_mask_xor_bins": 344494,
+    "cell_mask_xor_fraction": 0.030696725328580976,
+    "changed_state_bins": 2070681,
+    "changed_state_fraction": 0.18451156159501003,
+    "grid_bins": 11222500,
+    "maximum_displacement_2um_bins": 1.6453487095132753,
+    "maximum_displacement_um": 3.2906974190265506,
+    "mean_displacement_2um_bins": 1.3270299875366158,
+    "mean_displacement_um": 2.6540599750732317,
+    "median_displacement_2um_bins": 1.3479604523933684,
+    "median_displacement_um": 2.6959209047867367,
+    "nucleus_mask_xor_bins": 1727253,
+    "nucleus_mask_xor_fraction": 0.15390982401425707,
+    "out_of_bounds_bins": 6700
+  },
+  "maximum_absolute_star_minus_vendor_contrast_change": 0.0019679403598018563,
+  "maximum_metric_changes": {
+    "cell_fraction_pearson_16um": {
+      "field": "postcollapse_hard_space_ranger_only",
+      "maximum_absolute_difference": 0.0010523304247665455
+    },
+    "extracellular_mass": {
+      "field": "postcollapse_soft",
+      "maximum_absolute_difference": 79147.83916197438
+    },
+    "extracellular_mass_fraction": {
+      "field": "gated_hard_star_only",
+      "maximum_absolute_difference": 0.0012562589656503476
+    },
+    "in_cell_average_precision": {
+      "field": "postcollapse_soft",
+      "maximum_absolute_difference": 0.0010199919688378412
+    },
+    "in_cell_mass": {
+      "field": "postcollapse_soft",
+      "maximum_absolute_difference": 79147.83916203678
+    },
+    "in_cell_mass_fraction": {
+      "field": "gated_hard_star_only",
+      "maximum_absolute_difference": 0.001256258965650403
+    },
+    "in_cell_normalized_tv": {
+      "field": "gated_hard",
+      "maximum_absolute_difference": 0.00039660228920362917
+    },
+    "in_cell_roc_auc": {
+      "field": "gated_hard",
+      "maximum_absolute_difference": 0.001199266818220801
+    },
+    "in_nucleus_average_precision": {
+      "field": "postcollapse_soft_shared_with_space_ranger",
+      "maximum_absolute_difference": 0.008931750951141182
+    },
+    "in_nucleus_mass": {
+      "field": "postcollapse_hard",
+      "maximum_absolute_difference": 537108.0
+    },
+    "in_nucleus_mass_fraction": {
+      "field": "strict_shared_with_space_ranger",
+      "maximum_absolute_difference": 0.007455392387763882
+    },
+    "in_nucleus_normalized_tv": {
+      "field": "strict_shared_with_space_ranger",
+      "maximum_absolute_difference": 0.006194799619536506
+    },
+    "in_nucleus_roc_auc": {
+      "field": "strict_shared_with_space_ranger",
+      "maximum_absolute_difference": 0.007251387663145259
+    },
+    "nucleus_fraction_pearson_16um": {
+      "field": "postcollapse_soft_space_ranger_only",
+      "maximum_absolute_difference": 0.0016468210311021414
+    }
+  },
+  "outputs": {
+    "comparison_deltas_native_registration.tsv": "db411cab6239b1edc5b73c4c61e95540d179cfc94efe5381e7374398dfeb706b",
+    "field_biology_native_registration.tsv": "211664d5aa0144e1ac75dadb7eddaba77d7e6d6a2cd95338312cab653443aefc",
+    "registration_sensitivity.tsv": "eff1a6933c18c8aa1576b6c7a55908bd8fa96fbd8697caed57b1fc8979441745"
+  },
+  "registration_mode": "frozen_transform_reuse",
+  "schema": "visium_hd_processing.flex_registration_sensitivity.v1",
+  "scope": "morphology metrics only; expression matrices and capture-grid placement fixed",
+  "slide": "H1-GMHFWPH",
+  "star_minus_vendor_contrast_changes": [
+    {
+      "absolute_change": 1.3771559746800222e-05,
+      "baseline_contrast": 0.0004100682799046407,
+      "comparison": "strict_vs_space_ranger",
+      "metric": "in_cell_mass_fraction",
+      "native_contrast": 0.00039629672015784045
+    },
+    {
+      "absolute_change": 1.8425942740707413e-05,
+      "baseline_contrast": 0.0005563109035850999,
+      "comparison": "strict_vs_space_ranger",
+      "metric": "in_cell_area_normalized_enrichment",
+      "native_contrast": 0.0005378849608443925
+    },
+    {
+      "absolute_change": 0.00040856108657633117,
+      "baseline_contrast": -0.000759905743569822,
+      "comparison": "strict_vs_space_ranger",
+      "metric": "in_nucleus_mass_fraction",
+      "native_contrast": -0.0003513446569934908
+    },
+    {
+      "absolute_change": 0.0019679403598018563,
+      "baseline_contrast": -0.0036619836650968463,
+      "comparison": "strict_vs_space_ranger",
+      "metric": "in_nucleus_area_normalized_enrichment",
+      "native_contrast": -0.00169404330529499
+    },
+    {
+      "absolute_change": 1.3771559746821038e-05,
+      "baseline_contrast": -0.00041006827990467537,
+      "comparison": "strict_vs_space_ranger",
+      "metric": "extracellular_mass_fraction",
+      "native_contrast": -0.00039629672015785433
+    },
+    {
+      "absolute_change": 6.590927206895358e-06,
+      "baseline_contrast": -0.0036966320380635853,
+      "comparison": "strict_vs_space_ranger",
+      "metric": "in_cell_roc_auc",
+      "native_contrast": -0.0037032229652704807
+    },
+    {
+      "absolute_change": 8.929925312872733e-06,
+      "baseline_contrast": -0.002040772388055223,
+      "comparison": "strict_vs_space_ranger",
+      "metric": "in_cell_average_precision",
+      "native_contrast": -0.002049702313368096
+    },
+    {
+      "absolute_change": 0.0004829256658251957,
+      "baseline_contrast": -0.001721499844777652,
+      "comparison": "strict_vs_space_ranger",
+      "metric": "in_nucleus_roc_auc",
+      "native_contrast": -0.0012385741789524563
+    },
+    {
+      "absolute_change": 0.000477815890240485,
+      "baseline_contrast": -0.001755898313172799,
+      "comparison": "strict_vs_space_ranger",
+      "metric": "in_nucleus_average_precision",
+      "native_contrast": -0.001278082422932314
+    },
+    {
+      "absolute_change": 1.2069395019131957e-05,
+      "baseline_contrast": -0.00013195635454588128,
+      "comparison": "strict_vs_space_ranger",
+      "metric": "cell_fraction_pearson_16um",
+      "native_contrast": -0.00011988695952674933
+    },
+    {
+      "absolute_change": 2.8855991477505505e-05,
+      "baseline_contrast": 0.00027298545725917833,
+      "comparison": "strict_vs_space_ranger",
+      "metric": "nucleus_fraction_pearson_16um",
+      "native_contrast": 0.00030184144873668384
+    },
+    {
+      "absolute_change": 2.220703066380114e-06,
+      "baseline_contrast": -0.00021799841786729335,
+      "comparison": "strict_vs_space_ranger",
+      "metric": "in_cell_normalized_tv",
+      "native_contrast": -0.00021577771480091323
+    },
+    {
+      "absolute_change": 0.0003893394786430582,
+      "baseline_contrast": -0.0005929404454182441,
+      "comparison": "strict_vs_space_ranger",
+      "metric": "in_nucleus_normalized_tv",
+      "native_contrast": -0.0009822799240613023
+    },
+    {
+      "absolute_change": 1.1608781036898108e-05,
+      "baseline_contrast": -0.00036733633120999976,
+      "comparison": "postcollapse_soft_vs_space_ranger",
+      "metric": "in_cell_mass_fraction",
+      "native_contrast": -0.00037894511224689786
+    },
+    {
+      "absolute_change": 1.5994536145091942e-05,
+      "baseline_contrast": -0.0004983394628390592,
+      "comparison": "postcollapse_soft_vs_space_ranger",
+      "metric": "in_cell_area_normalized_enrichment",
+      "native_contrast": -0.0005143339989841511
+    },
+    {
+      "absolute_change": 3.3135831479624844e-05,
+      "baseline_contrast": -0.0003861672879365008,
+      "comparison": "postcollapse_soft_vs_space_ranger",
+      "metric": "in_nucleus_mass_fraction",
+      "native_contrast": -0.00035303145645687595
+    },
+    {
+      "absolute_change": 0.0001587627095598343,
+      "baseline_contrast": -0.0018609390867017073,
+      "comparison": "postcollapse_soft_vs_space_ranger",
+      "metric": "in_nucleus_area_normalized_enrichment",
+      "native_contrast": -0.001702176377141873
+    },
+    {
+      "absolute_change": 1.1608781035975235e-05,
+      "baseline_contrast": 0.0003673363312090769,
+      "comparison": "postcollapse_soft_vs_space_ranger",
+      "metric": "extracellular_mass_fraction",
+      "native_contrast": 0.0003789451122450521
+    },
+    {
+      "absolute_change": 4.320844340399699e-05,
+      "baseline_contrast": 0.009350091587968623,
+      "comparison": "postcollapse_soft_vs_space_ranger",
+      "metric": "in_cell_roc_auc",
+      "native_contrast": 0.009306883144564626
+    },
+    {
+      "absolute_change": 4.223844537321053e-05,
+      "baseline_contrast": 0.00815262051755239,
+      "comparison": "postcollapse_soft_vs_space_ranger",
+      "metric": "in_cell_average_precision",
+      "native_contrast": 0.008110382072179179
+    },
+    {
+      "absolute_change": 4.214877232744385e-05,
+      "baseline_contrast": 0.004225346397687346,
+      "comparison": "postcollapse_soft_vs_space_ranger",
+      "metric": "in_nucleus_roc_auc",
+      "native_contrast": 0.00426749517001479
+    },
+    {
+      "absolute_change": 0.0005092203513764049,
+      "baseline_contrast": 0.006098670179893573,
+      "comparison": "postcollapse_soft_vs_space_ranger",
+      "metric": "in_nucleus_average_precision",
+      "native_contrast": 0.006607890531269978
+    },
+    {
+      "absolute_change": 5.888504808815309e-06,
+      "baseline_contrast": 0.0005988737199041916,
+      "comparison": "postcollapse_soft_vs_space_ranger",
+      "metric": "cell_fraction_pearson_16um",
+      "native_contrast": 0.0006047622247130069
+    },
+    {
+      "absolute_change": 1.7616459205616053e-05,
+      "baseline_contrast": 0.000818491408622668,
+      "comparison": "postcollapse_soft_vs_space_ranger",
+      "metric": "nucleus_fraction_pearson_16um",
+      "native_contrast": 0.0008361078678282841
+    },
+    {
+      "absolute_change": 2.0057628371372704e-05,
+      "baseline_contrast": -0.007189762604605632,
+      "comparison": "postcollapse_soft_vs_space_ranger",
+      "metric": "in_cell_normalized_tv",
+      "native_contrast": -0.007169704976234259
+    },
+    {
+      "absolute_change": 0.00010692536746625958,
+      "baseline_contrast": -0.0022639279084472053,
+      "comparison": "postcollapse_soft_vs_space_ranger",
+      "metric": "in_nucleus_normalized_tv",
+      "native_contrast": -0.002370853275913465
+    },
+    {
+      "absolute_change": 5.76207318137012e-06,
+      "baseline_contrast": -0.0002770255191038018,
+      "comparison": "postcollapse_hard_vs_space_ranger",
+      "metric": "in_cell_mass_fraction",
+      "native_contrast": -0.0002827875922851719
+    },
+    {
+      "absolute_change": 8.000366614746568e-06,
+      "baseline_contrast": -0.0003758211117537158,
+      "comparison": "postcollapse_hard_vs_space_ranger",
+      "metric": "in_cell_area_normalized_enrichment",
+      "native_contrast": -0.00038382147836846237
+    },
+    {
+      "absolute_change": 5.0451539738149975e-05,
+      "baseline_contrast": -0.0003956505940912458,
+      "comparison": "postcollapse_hard_vs_space_ranger",
+      "metric": "in_nucleus_mass_fraction",
+      "native_contrast": -0.00034519905435309584
+    },
+    {
+      "absolute_change": 0.00024222744346169556,
+      "baseline_contrast": -0.0019066391126900673,
+      "comparison": "postcollapse_hard_vs_space_ranger",
+      "metric": "in_nucleus_area_normalized_enrichment",
+      "native_contrast": -0.0016644116692283717
+    },
+    {
+      "absolute_change": 5.762073181314609e-06,
+      "baseline_contrast": 0.0002770255191037671,
+      "comparison": "postcollapse_hard_vs_space_ranger",
+      "metric": "extracellular_mass_fraction",
+      "native_contrast": 0.0002827875922850817
+    },
+    {
+      "absolute_change": 2.6935719820153636e-05,
+      "baseline_contrast": 0.0026095637983555298,
+      "comparison": "postcollapse_hard_vs_space_ranger",
+      "metric": "in_cell_roc_auc",
+      "native_contrast": 0.002582628078535376
+    },
+    {
+      "absolute_change": 1.4920664775153192e-05,
+      "baseline_contrast": 0.001602110597099693,
+      "comparison": "postcollapse_hard_vs_space_ranger",
+      "metric": "in_cell_average_precision",
+      "native_contrast": 0.0015871899323245398
+    },
+    {
+      "absolute_change": 0.00011271268759560638,
+      "baseline_contrast": 0.0015364978663101603,
+      "comparison": "postcollapse_hard_vs_space_ranger",
+      "metric": "in_nucleus_roc_auc",
+      "native_contrast": 0.0016492105539057667
+    },
+    {
+      "absolute_change": 0.0002089290821323253,
+      "baseline_contrast": 0.0012203486538043817,
+      "comparison": "postcollapse_hard_vs_space_ranger",
+      "metric": "in_nucleus_average_precision",
+      "native_contrast": 0.001429277735936707
+    },
+    {
+      "absolute_change": 2.7978965809749567e-06,
+      "baseline_contrast": 0.00047139195119255684,
+      "comparison": "postcollapse_hard_vs_space_ranger",
+      "metric": "cell_fraction_pearson_16um",
+      "native_contrast": 0.0004741898477735318
+    },
+    {
+      "absolute_change": 1.187245325839914e-05,
+      "baseline_contrast": 0.0006131734064555028,
+      "comparison": "postcollapse_hard_vs_space_ranger",
+      "metric": "nucleus_fraction_pearson_16um",
+      "native_contrast": 0.0006250458597139019
+    },
+    {
+      "absolute_change": 1.965527535152667e-05,
+      "baseline_contrast": -0.00444672062586754,
+      "comparison": "postcollapse_hard_vs_space_ranger",
+      "metric": "in_cell_normalized_tv",
+      "native_contrast": -0.004427065350516013
+    },
+    {
+      "absolute_change": 9.714018651540979e-05,
+      "baseline_contrast": -0.001273777246238117,
+      "comparison": "postcollapse_hard_vs_space_ranger",
+      "metric": "in_nucleus_normalized_tv",
+      "native_contrast": -0.0013709174327535267
+    },
+    {
+      "absolute_change": 2.4773069059902397e-05,
+      "baseline_contrast": 0.00014324539191423735,
+      "comparison": "gated_hard_vs_space_ranger",
+      "metric": "in_cell_mass_fraction",
+      "native_contrast": 0.00011847232285433495
+    },
+    {
+      "absolute_change": 3.353106700587638e-05,
+      "baseline_contrast": 0.00019433098660726067,
+      "comparison": "gated_hard_vs_space_ranger",
+      "metric": "in_cell_area_normalized_enrichment",
+      "native_contrast": 0.0001607999196013843
+    },
+    {
+      "absolute_change": 0.00036206216438355865,
+      "baseline_contrast": -0.0008270346414286367,
+      "comparison": "gated_hard_vs_space_ranger",
+      "metric": "in_nucleus_mass_fraction",
+      "native_contrast": -0.00046497247704507805
+    },
+    {
+      "absolute_change": 0.0017435664647822424,
+      "baseline_contrast": -0.003985477637204804,
+      "comparison": "gated_hard_vs_space_ranger",
+      "metric": "in_nucleus_area_normalized_enrichment",
+      "native_contrast": -0.0022419111724225615
+    },
+    {
+      "absolute_change": 2.4773069059839947e-05,
+      "baseline_contrast": -0.00014324539191421654,
+      "comparison": "gated_hard_vs_space_ranger",
+      "metric": "extracellular_mass_fraction",
+      "native_contrast": -0.00011847232285437659
+    },
+    {
+      "absolute_change": 4.4728647390468446e-05,
+      "baseline_contrast": -0.0005462626571717255,
+      "comparison": "gated_hard_vs_space_ranger",
+      "metric": "in_cell_roc_auc",
+      "native_contrast": -0.000590991304562194
+    },
+    {
+      "absolute_change": 2.8396598070301593e-05,
+      "baseline_contrast": -0.00022110887027526616,
+      "comparison": "gated_hard_vs_space_ranger",
+      "metric": "in_cell_average_precision",
+      "native_contrast": -0.00024950546834556775
+    },
+    {
+      "absolute_change": 0.00043208858272669737,
+      "baseline_contrast": -0.0002585462332064248,
+      "comparison": "gated_hard_vs_space_ranger",
+      "metric": "in_nucleus_roc_auc",
+      "native_contrast": 0.0001735423495202726
+    },
+    {
+      "absolute_change": 0.0005052829481034249,
+      "baseline_contrast": -0.0005364671647497543,
+      "comparison": "gated_hard_vs_space_ranger",
+      "metric": "in_nucleus_average_precision",
+      "native_contrast": -3.118421664632942e-05
+    },
+    {
+      "absolute_change": 1.2726058375434057e-05,
+      "baseline_contrast": 0.00013244205184909097,
+      "comparison": "gated_hard_vs_space_ranger",
+      "metric": "cell_fraction_pearson_16um",
+      "native_contrast": 0.00014516811022452503
+    },
+    {
+      "absolute_change": 3.922749983031881e-05,
+      "baseline_contrast": 0.000543255801169984,
+      "comparison": "gated_hard_vs_space_ranger",
+      "metric": "nucleus_fraction_pearson_16um",
+      "native_contrast": 0.0005824833010003028
+    },
+    {
+      "absolute_change": 2.5069686046486073e-05,
+      "baseline_contrast": -0.0024758493634293166,
+      "comparison": "gated_hard_vs_space_ranger",
+      "metric": "in_cell_normalized_tv",
+      "native_contrast": -0.0024507796773828305
+    },
+    {
+      "absolute_change": 0.0003566447427804098,
+      "baseline_contrast": -0.0008970321774871559,
+      "comparison": "gated_hard_vs_space_ranger",
+      "metric": "in_nucleus_normalized_tv",
+      "native_contrast": -0.0012536769202675657
+    }
+  ],
+  "strict_increments": "omitted_non_nested_postcollapse_policies",
+  "transforms": {
+    "grid_to_microscope": [
+      [
+        -7.298419283437693,
+        -0.3272422211158956,
+        30120.701648030485
+      ],
+      [
+        -0.327158239547364,
+        7.298371475146993,
+        5908.712622896037
+      ],
+      [
+        -7.4321527544463306e-09,
+        -8.890698133354494e-10,
+        1.0
+      ]
+    ],
+    "old_mask_grid_from_expression_grid": [
+      [
+        0.9998478797288718,
+        -0.00021031263511638406,
+        1.570940803314125
+      ],
+      [
+        -6.848922160490919e-05,
+        0.9995234301264816,
+        0.4892007444595443
+      ],
+      [
+        -4.0881387884891695e-08,
+        -6.985260599455856e-08,
+        1.0
+      ]
+    ]
+  },
+  "umi_mode": "1mm_cr"
+}

@@ -1,0 +1,160 @@
+{
+  "accounting": {
+    "candidate_rows": 230038960,
+    "exact_h0_reads": 95213316,
+    "joined_reads": 190716551,
+    "read_cliques": 77615686,
+    "reads_decoded": 212554625,
+    "reads_with_candidates": 200331213
+  },
+  "cross_scale_mass_residuals": {
+    "gated_hard": {
+      "absolute": 0.0,
+      "relative": 0.0
+    },
+    "hard": {
+      "absolute": 0.0,
+      "relative": 0.0
+    },
+    "soft_expected": {
+      "absolute": 9.95248556137085e-05,
+      "relative": 1.3065757202993228e-12
+    },
+    "strict": {
+      "absolute": 0.0,
+      "relative": 0.0
+    }
+  },
+  "hard_minus_strict_same_primary": 11995989.0,
+  "inputs": {
+    "<storage>/primaries/crc_flex_2020a/PRIMARY_SEAL.json": "d6129e7c5ccb31fdcde36428ea11c29a71d28e42917efde9dc4b719182a9dc49",
+    "<storage>/primaries/crc_flex_2020a/star/SpatialFlex.out/run_summary.tsv": "256c82666000bd30e98418e66ccacd340d705efa8bc0149b8999a3847974282a",
+    "<storage>/primaries/crc_flex_2020a/star/SpatialFlex.out/summary.tsv": "d7556b0969fa6a99268420c5554e135f07835bd7d60958eed0ac9e37699df35d"
+  },
+  "not_emitted_by_native_summary": [
+    "feature_eligible_ambiguous_reads",
+    "posterior_clique_mass_residual"
+  ],
+  "policy_masses_full_capture_axis": {
+    "gated_hard": 69330045.0,
+    "hard": 76226984.0,
+    "soft_expected": 76172283.06582825,
+    "strict": 64230995.0
+  },
+  "policy_rows": [
+    {
+      "barcodes": "8630990",
+      "features": "18065",
+      "mass": "64230995",
+      "matrix_field": "integer",
+      "nnz": "63016239",
+      "product": "strict",
+      "scale": "square_002um"
+    },
+    {
+      "barcodes": "677910",
+      "features": "18065",
+      "mass": "64230995",
+      "matrix_field": "integer",
+      "nnz": "58321208",
+      "product": "strict",
+      "scale": "square_008um"
+    },
+    {
+      "barcodes": "175265",
+      "features": "18065",
+      "mass": "64230995",
+      "matrix_field": "integer",
+      "nnz": "52862874",
+      "product": "strict",
+      "scale": "square_016um"
+    },
+    {
+      "barcodes": "8630990",
+      "features": "18065",
+      "mass": "76172283.065828249",
+      "matrix_field": "real",
+      "nnz": "89749617",
+      "product": "soft_expected",
+      "scale": "square_002um"
+    },
+    {
+      "barcodes": "677910",
+      "features": "18065",
+      "mass": "76172283.065888092",
+      "matrix_field": "real",
+      "nnz": "73820973",
+      "product": "soft_expected",
+      "scale": "square_008um"
+    },
+    {
+      "barcodes": "175265",
+      "features": "18065",
+      "mass": "76172283.065927774",
+      "matrix_field": "real",
+      "nnz": "64175832",
+      "product": "soft_expected",
+      "scale": "square_016um"
+    },
+    {
+      "barcodes": "8630990",
+      "features": "18065",
+      "mass": "76226984",
+      "matrix_field": "integer",
+      "nnz": "74628533",
+      "product": "hard",
+      "scale": "square_002um"
+    },
+    {
+      "barcodes": "677910",
+      "features": "18065",
+      "mass": "76226984",
+      "matrix_field": "integer",
+      "nnz": "68588159",
+      "product": "hard",
+      "scale": "square_008um"
+    },
+    {
+      "barcodes": "175265",
+      "features": "18065",
+      "mass": "76226984",
+      "matrix_field": "integer",
+      "nnz": "61646095",
+      "product": "hard",
+      "scale": "square_016um"
+    },
+    {
+      "barcodes": "8630990",
+      "features": "18065",
+      "mass": "69330045",
+      "matrix_field": "integer",
+      "nnz": "67958131",
+      "product": "gated_hard",
+      "scale": "square_002um"
+    },
+    {
+      "barcodes": "677910",
+      "features": "18065",
+      "mass": "69330045",
+      "matrix_field": "integer",
+      "nnz": "62705131",
+      "product": "gated_hard",
+      "scale": "square_008um"
+    },
+    {
+      "barcodes": "175265",
+      "features": "18065",
+      "mass": "69330045",
+      "matrix_field": "integer",
+      "nnz": "56628923",
+      "product": "gated_hard",
+      "scale": "square_016um"
+    }
+  ],
+  "primary": "<storage>/primaries/crc_flex_2020a",
+  "primary_seal_sha256": "d6129e7c5ccb31fdcde36428ea11c29a71d28e42917efde9dc4b719182a9dc49",
+  "release": "v1.9.5",
+  "schema": "visium_hd_processing.sealed_primary_summary.v1",
+  "source_revision": "c95c57d8672e9db128be33e554a9a9244a5d2359",
+  "spatial_output": "<storage>/primaries/crc_flex_2020a/star/SpatialFlex.out"
+}

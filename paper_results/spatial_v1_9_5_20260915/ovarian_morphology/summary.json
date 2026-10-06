@@ -1,0 +1,230 @@
+{
+  "area": "D1",
+  "comparison_scale_um": 8,
+  "dataset": "OVARIAN_GEX_SR410_INTRONS",
+  "geometry_audit": {
+    "base": {
+      "before_mask_shift": {
+        "cell_mask_bins": 6126540,
+        "cellpose_projection": {
+          "cell_labels_tree_sha256": "5e6c90a7ed2cdcfc57b7599428dffecbfc5881c8ac645017d4180b64caf93fb8",
+          "coordinate_resampling": "explicit source-pixel and pixel-centre transform",
+          "grid_geometry": "independent_capture_grid",
+          "native_roi_bins_outside_cellpose_pixel_support": 965,
+          "nucleus_labels_tree_sha256": "d4cade70defad548cdc0b0fca5d041e9b3b1b22168b82bf11163a52e83c4131c",
+          "registration_moving_sampling": "decimate",
+          "registration_moving_source_downsample": 8,
+          "segmentation_downsample": 2,
+          "segmentation_root": "<runs>/20260726_ovarian_cellpose_full_native_flow08_exp8_v1",
+          "segmentation_shape_yx": [
+            13343,
+            12906
+          ],
+          "segmentation_summary_sha256": "1c1d9543096fa1c1e96f0fb0939d15dfc6bab6b31f0734c47b58e6d3f5e212d8"
+        },
+        "cellpose_supported_roi_2um_bins": 10527080,
+        "compartment_source": "independent_he_cellpose",
+        "complete_16um_parents": 164027,
+        "extracellular_mask_bins": 4400540,
+        "geometry_source": "independent_capture_grid",
+        "native_col_max": 3246,
+        "native_col_min": 0,
+        "native_roi_2um_bins": 10528045,
+        "native_row_max": 3247,
+        "native_row_min": 0,
+        "nucleus_mask_bins": 2309067,
+        "selection_scope": "full_registered_extent"
+      },
+      "cell_mask_bins": 6118100,
+      "cellpose_projection": {
+        "cell_labels_tree_sha256": "5e6c90a7ed2cdcfc57b7599428dffecbfc5881c8ac645017d4180b64caf93fb8",
+        "coordinate_resampling": "explicit source-pixel and pixel-centre transform",
+        "grid_geometry": "independent_capture_grid",
+        "native_roi_bins_outside_cellpose_pixel_support": 965,
+        "nucleus_labels_tree_sha256": "d4cade70defad548cdc0b0fca5d041e9b3b1b22168b82bf11163a52e83c4131c",
+        "registration_moving_sampling": "decimate",
+        "registration_moving_source_downsample": 8,
+        "segmentation_downsample": 2,
+        "segmentation_root": "<runs>/20260726_ovarian_cellpose_full_native_flow08_exp8_v1",
+        "segmentation_shape_yx": [
+          13343,
+          12906
+        ],
+        "segmentation_summary_sha256": "1c1d9543096fa1c1e96f0fb0939d15dfc6bab6b31f0734c47b58e6d3f5e212d8"
+      },
+      "cellpose_supported_roi_2um_bins": 10507619,
+      "compartment_source": "independent_he_cellpose",
+      "complete_16um_parents": 163936,
+      "extracellular_mask_bins": 4389519,
+      "geometry_source": "independent_capture_grid",
+      "mask_shift_squares_dy_dx": [
+        -3,
+        -3
+      ],
+      "native_col_max": 3246,
+      "native_col_min": 0,
+      "native_roi_2um_bins": 10528045,
+      "native_row_max": 3247,
+      "native_row_min": 0,
+      "nucleus_mask_bins": 2305362,
+      "selection_scope": "full_registered_extent",
+      "shifted_out_supported_squares": 19461
+    },
+    "common_axis": {
+      "coarse_barcodes": 702244,
+      "comparison_scale_um": 8,
+      "complete_16um_parents": 163936,
+      "he_supported_2um_children": 10507619,
+      "he_unsupported_coarse_barcodes": 45004
+    }
+  },
+  "inputs": {
+    "capture_grid": {
+      "path": "<runs>/20260726_ovarian_native_registration_v1/capture_grid_canonical_v1/capture_grid.json",
+      "sha256": "ae26777f2aa740b19bbe8634dfd62d0da29a911d719f36f07d723efa3921707d"
+    },
+    "cellpose_summary": {
+      "path": "<runs>/20260726_ovarian_cellpose_full_native_flow08_exp8_v1/summary.json",
+      "sha256": "1c1d9543096fa1c1e96f0fb0939d15dfc6bab6b31f0734c47b58e6d3f5e212d8"
+    },
+    "native_registration": {
+      "path": "<runs>/20260726_ovarian_native_registration_v1/registration_primary/registration.json",
+      "sha256": "85b0aa1b393e0c3db106fd32c67d1b186f17ad8322ac568db7cfa3d827ba8d52"
+    },
+    "prepared_fields": {
+      "arrays_sha256": "4b5766f6c74910048b8ab7cf58187ef35c64588b50e0abcc83d02e59fccfef16",
+      "path": "<storage>/analyses/ovarian_fields/attempt1/result",
+      "summary_sha256": "4d6bfe3aeedd61f66115439f1e46d758670fba28e661401820bfe166b8ba0e65"
+    },
+    "space_ranger": {
+      "barcodes": 702244,
+      "bytes": 242123090,
+      "features": 38606,
+      "kind": "space_ranger_target_gene_h5",
+      "nnz": 143120279,
+      "path": "<runs>/20260728_human_ovarian_hd3prime_sr410_introns_32c_bam_v1/outs/binned_outputs/square_008um/raw_feature_bc_matrix.h5",
+      "sha256": "7581b8a74acf125642936ce91cb368d1b24d5f7c41e06374fc9a2152ba948fd3"
+    },
+    "star_methods": {
+      "hard": [
+        {
+          "bytes": 1556448,
+          "path": "<runs>/20260915_v195_ovarian_gex_2024a_compat/starSpatialGex.out/hard/square_008um/features.tsv",
+          "sha256": "c4b910126b4709973cedd47f9f254be4e604942420b44cb1764a29ed8f339c91"
+        },
+        {
+          "bytes": 12413042,
+          "path": "<runs>/20260915_v195_ovarian_gex_2024a_compat/starSpatialGex.out/hard/square_008um/barcodes.tsv",
+          "sha256": "0a61165201f28d91605922fef6a9adcf511ff23c63034ad8099dac6cedf84967"
+        },
+        {
+          "bytes": 2172218690,
+          "path": "<runs>/20260915_v195_ovarian_gex_2024a_compat/starSpatialGex.out/hard/square_008um/matrix.mtx",
+          "sha256": "2c26ca52de257fbdab2b714f485420fb575f7f34c25b8051a1950b1fbf697d2d"
+        }
+      ],
+      "soft_expected": [
+        {
+          "bytes": 1556448,
+          "path": "<runs>/20260915_v195_ovarian_gex_2024a_compat/starSpatialGex.out/soft_expected/square_008um/features.tsv",
+          "sha256": "c4b910126b4709973cedd47f9f254be4e604942420b44cb1764a29ed8f339c91"
+        },
+        {
+          "bytes": 12413042,
+          "path": "<runs>/20260915_v195_ovarian_gex_2024a_compat/starSpatialGex.out/soft_expected/square_008um/barcodes.tsv",
+          "sha256": "0a61165201f28d91605922fef6a9adcf511ff23c63034ad8099dac6cedf84967"
+        },
+        {
+          "bytes": 3030383259,
+          "path": "<runs>/20260915_v195_ovarian_gex_2024a_compat/starSpatialGex.out/soft_expected/square_008um/matrix.mtx",
+          "sha256": "88c05df6465eea253fed484736381d4539c406a3eee6d78775d14d19a2894901"
+        }
+      ]
+    }
+  },
+  "invariants": {
+    "biological_feature_axis_only": true,
+    "diagnostic_non_panel_counts_excluded": true,
+    "existing_expression_and_image_artifacts_only": true,
+    "image_or_segmentation_not_used_for_assignment": true,
+    "raw_mass_not_normalized": true,
+    "space_ranger_is_comparator_not_truth": true
+  },
+  "mask_shift": {
+    "applied_before": "coarse-axis restriction and all field scoring",
+    "boundary_policy": "discard shifted-out squares; newly exposed squares have no support; no wrapping",
+    "euclidean_micrometres": 8.48528137423857,
+    "micrometres_dy_dx": [
+      -6,
+      -6
+    ],
+    "reason": "2026-10-04 paper-mask placement: STAR and intron-inclusive Space Ranger both resolve a dip at (-3,-3), with all nine eligible regions agreeing; PI-authorized whole-square correction",
+    "sign_convention": "state and support at (r,c) move to (r+dy,c+dx)",
+    "squares_dy_dx": [
+      -3,
+      -3
+    ]
+  },
+  "morphology_projection": "Each coarse-bin count is distributed uniformly over its supported 2-um child centers. The frozen image-derived states and support are translated together by the disclosed count-guided whole-square correction before any field is scored. No new image registration or segmentation is fitted.",
+  "outputs": {
+    "mass_reconciliation.tsv": {
+      "bytes": 1560,
+      "sha256": "e53ce81a348188424df9fbc23152235ad689626f43c0fcc85660d2a6ef37316c"
+    },
+    "morphology_fields.tsv": {
+      "bytes": 6797,
+      "sha256": "9f1d3b9e50cbce1835220801e955a641674a349bba6055d4db1448a3037ce2f6"
+    },
+    "scoring_geometry.npz": {
+      "bytes": 2111854,
+      "sha256": "96b64602e2ff5ae8bc2b5432fceb967009eafe4b98c666cb58f91b98d81339e3"
+    }
+  },
+  "primary_comparison_axis": "space_ranger_barcode_axis",
+  "provenance": {
+    "command": [
+      "scripts/publication/score_hd_flex_star_sr_morphology.py",
+      "--prepared-fields",
+      "<storage>/analyses/ovarian_fields/attempt1/result",
+      "--cellpose-segmentation",
+      "<runs>/20260726_ovarian_cellpose_full_native_flow08_exp8_v1",
+      "--capture-grid-json",
+      "<runs>/20260726_ovarian_native_registration_v1/capture_grid_canonical_v1/capture_grid.json",
+      "--native-registration-json",
+      "<runs>/20260726_ovarian_native_registration_v1/registration_primary/registration.json",
+      "--registration-moving-source-downsample",
+      "8",
+      "--registration-moving-sampling",
+      "decimate",
+      "--allow-unsupported-coarse-barcodes",
+      "--width",
+      "3350",
+      "--height",
+      "3350",
+      "--slide",
+      "H1-YQJBZ7X",
+      "--area",
+      "D1",
+      "--dataset",
+      "OVARIAN_GEX_SR410_INTRONS",
+      "--mask-shift-squares",
+      "-3",
+      "-3",
+      "--mask-shift-reason",
+      "2026-10-04 paper-mask placement: STAR and intron-inclusive Space Ranger both resolve a dip at (-3,-3), with all nine eligible regions agreeing; PI-authorized whole-square correction",
+      "--export-scoring-geometry",
+      "--out-dir",
+      "<runs>/20261004_ovarian_he_morphology_in_register_v1/result"
+    ],
+    "cpus": "20-31",
+    "generator_sha256": "cdd74c46dde5c76d789780e70768aa2a48d86aa7179d71b6fd758face5e0ea20",
+    "geometry_helper_sha256": "b91dac30d8db71c05d3a3f775e80299a3aa631245b17dd8bbe0f51be84737408",
+    "mask_shift_helper_sha256": "528d65bece72ff8c1296ab3e2b5d534d14c7298007f1b85dc7056eaa06b99926",
+    "source_revision": "9f71c6a43ab413a4869852f68b83ac420505ec03"
+  },
+  "residual_definition": "Positive differences of total spatial-bin mass; not feature-bin or read-member residuals.",
+  "schema": "visium_hd_processing.flex_star_sr_he_morphology.v1",
+  "scoring_geometry_export": "shifted base geometry before coarse-axis restriction",
+  "slide": "H1-YQJBZ7X",
+  "unsupported_coarse_barcode_policy": "excluded symmetrically from STAR and Space Ranger morphology fields; retained in separate whole-slide count accounting"
+}

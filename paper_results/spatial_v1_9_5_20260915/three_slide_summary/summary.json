@@ -1,0 +1,76 @@
+{
+  "control_definition": "Within each control's declared evaluation unit, shared=min(STAR,SR) and STAR excess=max(STAR-SR,0). Control coverage is not count mass.",
+  "count_definition": "Whole-slide biological counts; net=STAR-SR and percent=100*net/SR. Full and matched Space Ranger barcode-axis values are separate.",
+  "inputs": {
+    "<runs>/20261004_ovarian_he_morphology_in_register_v1/result/morphology_fields.tsv": {
+      "bytes": 6797,
+      "sha256": "9f1d3b9e50cbce1835220801e955a641674a349bba6055d4db1448a3037ce2f6"
+    },
+    "<runs>/20261005_spatch_gene_bin_affine_supported_v1/result/summary.json": {
+      "bytes": 13939,
+      "sha256": "4c0c5e685efcd30f8317a9d2600c5c4c474c51694fdaac0fa43ac47cf2553a37"
+    },
+    "<runs>/20261005_spatch_morphology_affine_supported_v1/result/morphology_fields.tsv": {
+      "bytes": 6914,
+      "sha256": "67cc240ca6015b8947eaec034cba97d0a1a83df43ef94774df292782c950850b"
+    },
+    "<storage>/analyses/codex_shared_excess_2020a/attempt1/result/marker_metrics.tsv": {
+      "bytes": 100524,
+      "sha256": "55e3f5c9e9bad12730066fcbb0c1a78a9a41756f90cbce30592170605086dfbd"
+    },
+    "<storage>/analyses/codex_shared_excess_2020a/attempt1/result/method_summary.tsv": {
+      "bytes": 3325,
+      "sha256": "b81a59d10a6916da7f5cd1bb74c261695f73831b691be78a83bd9b4bc2a99fd3"
+    },
+    "<storage>/analyses/crc_gene_bin/attempt1/result/summary.json": {
+      "bytes": 11888,
+      "sha256": "68d29888e56c35ac7535f5f1d02497271ad5111535d88c53b29cf43f223985d7"
+    },
+    "<storage>/analyses/crc_morphology/attempt1/result/morphology_fields.tsv": {
+      "bytes": 6778,
+      "sha256": "8d996ce8d1db0d0b97b81aa95496884e082d06766bddc517ba8b368fcc83e0d0"
+    },
+    "<storage>/analyses/ovarian_fields/attempt1/result/summary.json": {
+      "bytes": 5426,
+      "sha256": "4d6bfe3aeedd61f66115439f1e46d758670fba28e661401820bfe166b8ba0e65"
+    },
+    "<storage>/analyses/xenium_compatibility_broad/attempt1/result/matrix_delta_summary.tsv": {
+      "bytes": 2739,
+      "sha256": "8db71dab3bdb4ffaa320e33a2304f6ef47f089618be9c711bbb6d45a6db645de"
+    },
+    "<storage>/analyses/xenium_compatibility_cancer_shared_excess/attempt1/result/method_summary.tsv": {
+      "bytes": 16872,
+      "sha256": "297fc24f4aeba25114ea3cbc8da60871474e0572ae8f25c5cc442e4a2ea77355"
+    }
+  },
+  "invariants": {
+    "controls_not_used_for_assignment": true,
+    "hard_and_soft_reported_separately": true,
+    "net_percentage_uses_space_ranger_once_as_denominator": true,
+    "raw_mass_not_normalized": true,
+    "whole_slide_counts_separate_from_control_domains": true
+  },
+  "outputs": {
+    "codex_shared_excess.tsv": {
+      "bytes": 4078,
+      "sha256": "9758cc3d5c8bc550594b9696e02774dd40c5f88d180a160d50c4a010112c73df"
+    },
+    "count_gain.tsv": {
+      "bytes": 1139,
+      "sha256": "b75beaf2835cd32b3417b2fbd5fa9c57484a7bf8cfdadd98fd84f3e258ed0810"
+    },
+    "he_shared_excess.tsv": {
+      "bytes": 2779,
+      "sha256": "ab46577d7a284d7c1ed3f5c5729df9a47bba1aa50c827b9a92d310fd4823f3e7"
+    },
+    "xenium_broad_shared_excess.tsv": {
+      "bytes": 1107,
+      "sha256": "50ac1ef25cb4d3a031f44cb2a42c512ce374d1f754254d490bad53145a9d773c"
+    },
+    "xenium_cancer_shared_excess.tsv": {
+      "bytes": 3262,
+      "sha256": "4d7ca9d3bd292352e2c47bf73a74fa1438a57df5a0476f7ca6b50e9f0cee6652"
+    }
+  },
+  "schema": "visium_hd_processing.three_slide_shared_excess_controls.v1"
+}

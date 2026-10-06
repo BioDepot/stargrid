@@ -1,0 +1,262 @@
+{
+  "area": "D1",
+  "comparison_scale_um": 8,
+  "dataset": "SPATCH",
+  "geometry_audit": {
+    "base": {
+      "affine_model": "[dy,dx] = [1,source_row,source_col] @ coefficients; corrected q=p+d(p)",
+      "before_mask_affine": {
+        "cell_mask_bins": 3327070,
+        "cellpose_projection": {
+          "cell_labels_tree_sha256": "1e8879acfed28c48a6eec99137dc4f870f9f1ea4e88f95518b308cef8b9c722b",
+          "coordinate_resampling": "explicit source-pixel and pixel-centre transform",
+          "grid_geometry": "independent_capture_grid",
+          "native_roi_bins_outside_cellpose_pixel_support": 0,
+          "nucleus_labels_tree_sha256": "0a1cda62b9baa1d94aa017f6f78e3b04ab3bb04098533c950eb952f9d4147bed",
+          "registration_moving_sampling": "decimate",
+          "registration_moving_source_downsample": 16,
+          "segmentation_downsample": 2,
+          "segmentation_root": "<runs>/20260727_spatch_flex_native_he_morphology_v1/cellpose",
+          "segmentation_shape_yx": [
+            14687,
+            27825
+          ],
+          "segmentation_summary_sha256": "e2e54788aadf8a691afa2391830bca1bcaf38b579f9222905b7dfc68113f448f"
+        },
+        "cellpose_supported_roi_2um_bins": 11222500,
+        "compartment_source": "independent_he_cellpose",
+        "complete_16um_parents": 174724,
+        "extracellular_mask_bins": 7895430,
+        "geometry_source": "independent_capture_grid",
+        "native_col_max": 3349,
+        "native_col_min": 0,
+        "native_roi_2um_bins": 11222500,
+        "native_row_max": 3349,
+        "native_row_min": 0,
+        "nucleus_mask_bins": 1604469,
+        "selection_scope": "full_registered_extent"
+      },
+      "cell_mask_bins": 3328184,
+      "cellpose_projection": {
+        "cell_labels_tree_sha256": "1e8879acfed28c48a6eec99137dc4f870f9f1ea4e88f95518b308cef8b9c722b",
+        "coordinate_resampling": "explicit source-pixel and pixel-centre transform",
+        "grid_geometry": "independent_capture_grid",
+        "native_roi_bins_outside_cellpose_pixel_support": 0,
+        "nucleus_labels_tree_sha256": "0a1cda62b9baa1d94aa017f6f78e3b04ab3bb04098533c950eb952f9d4147bed",
+        "registration_moving_sampling": "decimate",
+        "registration_moving_source_downsample": 16,
+        "segmentation_downsample": 2,
+        "segmentation_root": "<runs>/20260727_spatch_flex_native_he_morphology_v1/cellpose",
+        "segmentation_shape_yx": [
+          14687,
+          27825
+        ],
+        "segmentation_summary_sha256": "e2e54788aadf8a691afa2391830bca1bcaf38b579f9222905b7dfc68113f448f"
+      },
+      "cellpose_supported_roi_2um_bins": 11207343,
+      "compartment_source": "independent_he_cellpose",
+      "complete_16um_parents": 174724,
+      "destination_squares_without_source_in_grid": 15157,
+      "extracellular_mask_bins": 7879159,
+      "geometry_source": "independent_capture_grid",
+      "mask_affine_coefficients": [
+        [
+          -8.415172951661932,
+          -2.5346450464698824
+        ],
+        [
+          0.001783184607177998,
+          -0.0008639446353949137
+        ],
+        [
+          0.0005328812094362265,
+          0.0002942540382558044
+        ]
+      ],
+      "native_col_max": 3349,
+      "native_col_min": 0,
+      "native_roi_2um_bins": 11222500,
+      "native_row_max": 3349,
+      "native_row_min": 0,
+      "nucleus_mask_bins": 1604689,
+      "resampling": "inverse transform, nearest square (ties to even), states and support together",
+      "selection_scope": "full_registered_extent"
+    },
+    "common_axis": {
+      "coarse_barcodes": 629942,
+      "comparison_scale_um": 8,
+      "complete_16um_parents": 156264,
+      "he_supported_2um_children": 10055583,
+      "he_unsupported_coarse_barcodes": 962
+    }
+  },
+  "inputs": {
+    "capture_grid": {
+      "path": "<runs>/20260727_spatch_flex_native_he_morphology_v1/capture_grid_primary/capture_grid.json",
+      "sha256": "5ae932accea378cd0912d63be9c023a62c40843300e467c1882fdb0839884fb0"
+    },
+    "cellpose_summary": {
+      "path": "<runs>/20260727_spatch_flex_native_he_morphology_v1/cellpose/summary.json",
+      "sha256": "e2e54788aadf8a691afa2391830bca1bcaf38b579f9222905b7dfc68113f448f"
+    },
+    "native_registration": {
+      "path": "<runs>/20260727_spatch_flex_native_he_morphology_v1/registration/registration.json",
+      "sha256": "3dfd30869dfadf4bd9ea4ca0912d28a5e4d976f0e98cdbec16e810b54408e0df"
+    },
+    "prepared_fields": {
+      "arrays_sha256": "c357d8134fea021a35ed71a472d372f45035cc0b812bb36423a3149f6aca01b8",
+      "path": "<storage>/analyses/spatch_fields/attempt1/result",
+      "summary_sha256": "1ba2927ced40e5974f9002f808dc61d08ba843ab0698ead02b8f72a701e51e4b"
+    },
+    "space_ranger": {
+      "barcodes": 629942,
+      "bytes": 1756657237,
+      "features": 18085,
+      "kind": "published_space_ranger_filtered_h5ad",
+      "nnz": 211807231,
+      "path": "<datasets>/spatch_visium_hd_codex/ov_visium_hd_ffpe/processed/transcriptome/adata.h5ad",
+      "sha256": "b8dd5ec7c85eca40f48aaea70bde65f7f3b6298ae6de7c19aae6577094efdecc"
+    },
+    "star_methods": {
+      "hard": [
+        {
+          "bytes": 865536,
+          "path": "<runs>/20260915_v195_spatch_flex_2020a/star/SpatialFlex.out/hard/square_008um/features.tsv",
+          "sha256": "7b6d6e3cc42d7410a54ff934c45116d4d63cc3a47d88e3fb59489cfe4a038405"
+        },
+        {
+          "bytes": 12454643,
+          "path": "<runs>/20260915_v195_spatch_flex_2020a/star/SpatialFlex.out/hard/square_008um/barcodes.tsv",
+          "sha256": "615768af9b68ee6bebc022e3c91684510a3841f6a1265151efe2e4341332fa26"
+        },
+        {
+          "bytes": 3066045773,
+          "path": "<runs>/20260915_v195_spatch_flex_2020a/star/SpatialFlex.out/hard/square_008um/matrix.mtx",
+          "sha256": "b8c8bf2e46bfc60becc1f845a2760eb1c809c77a634eff96d360eb127a78e84b"
+        }
+      ],
+      "soft_expected": [
+        {
+          "bytes": 865536,
+          "path": "<runs>/20260915_v195_spatch_flex_2020a/star/SpatialFlex.out/soft_expected/square_008um/features.tsv",
+          "sha256": "7b6d6e3cc42d7410a54ff934c45116d4d63cc3a47d88e3fb59489cfe4a038405"
+        },
+        {
+          "bytes": 12454643,
+          "path": "<runs>/20260915_v195_spatch_flex_2020a/star/SpatialFlex.out/soft_expected/square_008um/barcodes.tsv",
+          "sha256": "615768af9b68ee6bebc022e3c91684510a3841f6a1265151efe2e4341332fa26"
+        },
+        {
+          "bytes": 4462872079,
+          "path": "<runs>/20260915_v195_spatch_flex_2020a/star/SpatialFlex.out/soft_expected/square_008um/matrix.mtx",
+          "sha256": "89b879257d5dc156da77dbf56040afb87d46b7583288ca4e2479487130b260d7"
+        }
+      ]
+    }
+  },
+  "invariants": {
+    "biological_feature_axis_only": true,
+    "diagnostic_non_panel_counts_excluded": true,
+    "existing_expression_and_image_artifacts_only": true,
+    "image_or_segmentation_not_used_for_assignment": true,
+    "raw_mass_not_normalized": true,
+    "space_ranger_is_comparator_not_truth": true
+  },
+  "mask_affine": {
+    "coefficients": [
+      [
+        -8.415172951661932,
+        -2.5346450464698824
+      ],
+      [
+        0.001783184607177998,
+        -0.0008639446353949137
+      ],
+      [
+        0.0005328812094362265,
+        0.0002942540382558044
+      ]
+    ],
+    "fit_summary": "<runs>/20261004_spatch_affine_placement_fit_v1/result/summary.json",
+    "model": "[dy,dx] = [1,source_row,source_col] @ coefficients; corrected q=p+d(p)",
+    "reason": "PI-authorized SPATCH affine correction; 9/9 held-out regions within one square; 18 final regions; Gate A resolved at zero in 9/9 regions",
+    "resampling": "inverse transform, nearest square (ties to even), states and support together",
+    "sha256": "a84d7498d18ea20ea49955b142a71dfa04634ff561e5cd08900b542eafda4088"
+  },
+  "mask_shift": {
+    "applied_before": "coarse-axis restriction and all field scoring",
+    "boundary_policy": "discard shifted-out squares; newly exposed squares have no support; no wrapping",
+    "euclidean_micrometres": 0.0,
+    "micrometres_dy_dx": [
+      0,
+      0
+    ],
+    "reason": "PI-authorized SPATCH affine correction; 9/9 held-out regions within one square; 18 final regions; Gate A resolved at zero in 9/9 regions",
+    "sign_convention": "state and support at (r,c) move to (r+dy,c+dx)",
+    "squares_dy_dx": [
+      0,
+      0
+    ]
+  },
+  "morphology_projection": "Each coarse-bin count is distributed uniformly over its supported 2-um child centers. Frozen image-derived states and support are resampled together by the disclosed count-guided affine correction before scoring. No segmentation is refitted.",
+  "outputs": {
+    "mass_reconciliation.tsv": {
+      "bytes": 1540,
+      "sha256": "29bb33228bf69820551ad464e5bf2d91ac96bb9a392739a4dc1eae9581b3ac1b"
+    },
+    "morphology_fields.tsv": {
+      "bytes": 6914,
+      "sha256": "67cc240ca6015b8947eaec034cba97d0a1a83df43ef94774df292782c950850b"
+    },
+    "scoring_geometry.npz": {
+      "bytes": 3065818,
+      "sha256": "5b157968a2fb6df3f9db6b3abd9b1f2e0c53f754f3c29c1661271bd5a64c5764"
+    }
+  },
+  "primary_comparison_axis": "space_ranger_barcode_axis",
+  "provenance": {
+    "command": [
+      "<local>/scripts/publication/score_hd_flex_star_sr_morphology.py",
+      "--prepared-fields",
+      "<storage>/analyses/spatch_fields/attempt1/result",
+      "--cellpose-segmentation",
+      "<runs>/20260727_spatch_flex_native_he_morphology_v1/cellpose",
+      "--capture-grid-json",
+      "<runs>/20260727_spatch_flex_native_he_morphology_v1/capture_grid_primary/capture_grid.json",
+      "--native-registration-json",
+      "<runs>/20260727_spatch_flex_native_he_morphology_v1/registration/registration.json",
+      "--registration-moving-source-downsample",
+      "16",
+      "--registration-moving-sampling",
+      "decimate",
+      "--width",
+      "3350",
+      "--height",
+      "3350",
+      "--slide",
+      "H1-WP2FTZD",
+      "--area",
+      "D1",
+      "--dataset",
+      "SPATCH",
+      "--out-dir",
+      "<runs>/20261005_spatch_morphology_affine_supported_v1/result",
+      "--mask-affine-json",
+      "<runs>/20261004_spatch_affine_placement_fit_v1/result/summary.json",
+      "--mask-shift-reason",
+      "PI-authorized SPATCH affine correction; 9/9 held-out regions within one square; 18 final regions; Gate A resolved at zero in 9/9 regions",
+      "--allow-unsupported-coarse-barcodes",
+      "--export-scoring-geometry"
+    ],
+    "cpus": "20-31",
+    "generator_sha256": "4be0697638efd14b4caaf4d8ac8afabdeab41863a9cfabae72f191637527e06a",
+    "geometry_helper_sha256": "b91dac30d8db71c05d3a3f775e80299a3aa631245b17dd8bbe0f51be84737408",
+    "mask_shift_helper_sha256": "4d89eda381da1407e5ad7ff25d246a4aaf3d2daba2532def867963e742271b9a",
+    "source_revision": "756028da9000f3829ec334b4e5c9463092cba84c"
+  },
+  "residual_definition": "Positive differences of total spatial-bin mass; not feature-bin or read-member residuals.",
+  "schema": "visium_hd_processing.flex_star_sr_he_morphology.v1",
+  "scoring_geometry_export": "shifted base geometry before coarse-axis restriction",
+  "slide": "H1-WP2FTZD",
+  "unsupported_coarse_barcode_policy": "excluded symmetrically from STAR and Space Ranger morphology fields; retained in separate whole-slide count accounting"
+}

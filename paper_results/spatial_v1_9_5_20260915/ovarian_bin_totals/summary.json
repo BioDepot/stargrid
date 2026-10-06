@@ -1,0 +1,54 @@
+{
+  "invariants": {
+    "coordinate_axis_format_and_uniqueness_checked": true,
+    "raw_mass_not_normalized": true
+  },
+  "products": {
+    "gated_hard": {
+      "mass": 179610526.0,
+      "matrix_nnz": 172146426,
+      "matrix_sha256": "f799ef751dfb3a9c9048f96645b0670e64462d67a9c695c302722eae84aeccb0",
+      "occupied_bins": 8928409,
+      "output": "<storage>/analyses/ovarian_bin_totals/attempt1/result/gated_hard.bin_totals.tsv.gz",
+      "sha256": "0ba3c7752bd872e89daf8e6cc02b244a92bedebf4c28368d913173b53a41b5f3",
+      "source": "<runs>/20260915_v195_ovarian_gex_2024a_compat/starSpatialGex.out/gated_hard/square_002um"
+    },
+    "hard": {
+      "mass": 201888275.0,
+      "matrix_nnz": 192668573,
+      "matrix_sha256": "ed84a4736a6d47f550a10964fb4ce0e1570d74f2204c5bd8b97212a7666baecf",
+      "occupied_bins": 9096302,
+      "output": "<storage>/analyses/ovarian_bin_totals/attempt1/result/hard.bin_totals.tsv.gz",
+      "sha256": "4fcae907649a45ce15605c7856d65c10aecd746c2dfe0580c3cd188cbf45c26d",
+      "source": "<runs>/20260915_v195_ovarian_gex_2024a_compat/starSpatialGex.out/hard/square_002um"
+    },
+    "soft_expected": {
+      "mass": 201338570.96803972,
+      "matrix_nnz": 238382367,
+      "matrix_sha256": "620c1381daa1d78c2aec56a7e37b01fb23115c35d69baac47ce9e8dce4c8a2a3",
+      "occupied_bins": 9625477,
+      "output": "<storage>/analyses/ovarian_bin_totals/attempt1/result/soft_expected.bin_totals.tsv.gz",
+      "sha256": "a1739609f9bb7cd60b2335ee9ae74650c3ad74955cf0f0750bd7249f5c6f4ee3",
+      "source": "<runs>/20260915_v195_ovarian_gex_2024a_compat/starSpatialGex.out/soft_expected/square_002um"
+    },
+    "space_ranger": {
+      "mass": 187552358.0,
+      "occupied_bins": 8925978,
+      "output": "<storage>/analyses/ovarian_bin_totals/attempt1/result/space_ranger.bin_totals.tsv.gz",
+      "sha256": "d5c7a9083c5fdbf19d8e6ec3b28e7e42c92293efbd75b9f6484e92bba8b31423",
+      "source": "<runs>/20260728_human_ovarian_hd3prime_sr410_introns_32c_bam_v1/outs/binned_outputs/square_002um/raw_feature_bc_matrix.h5",
+      "source_sha256": "a1a7470d39a03254d090a9e71709555abe33faf34c5632fd2509fceefbf1f298"
+    },
+    "strict": {
+      "mass": 164293957.0,
+      "matrix_nnz": 157927671,
+      "matrix_sha256": "78bd9ce142dccbea20e03a5cff81b6f9b9ecb3f16e7c0578a7b50554230a3419",
+      "occupied_bins": 8796991,
+      "output": "<storage>/analyses/ovarian_bin_totals/attempt1/result/strict.bin_totals.tsv.gz",
+      "sha256": "5b4d5ecceeb42b1619f760bdbeb843275fc5a83d39a405669cc0a10768c2b773",
+      "source": "<runs>/20260915_v195_ovarian_gex_2024a_compat/starSpatialGex.out/strict/square_002um"
+    }
+  },
+  "scale": "square_002um",
+  "schema": "visium_hd_processing.policy_mex_bin_totals.v1"
+}

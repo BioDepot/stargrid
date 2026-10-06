@@ -1,0 +1,60 @@
+{
+  "schema": "star_spatial.hd.edit_hash_oracle_audit.v1",
+  "max_edit": 2,
+  "max_targets": 0,
+  "bc1": {
+    "targets": 3350,
+    "generated_target_query_pairs": 19353751,
+    "lookup_calls": 19353751,
+    "returned_hit_checks": 28768307,
+    "collision_lookup_calls": 5875416,
+    "missing_source_hits": 0,
+    "wrong_source_distances": 0,
+    "wrong_returned_distances": 0,
+    "out_of_envelope_hits": 0,
+    "duplicate_returned_hits": 0,
+    "errors": 0
+  },
+  "bc2": {
+    "targets": 3350,
+    "generated_target_query_pairs": 16923671,
+    "lookup_calls": 16923671,
+    "returned_hit_checks": 25777073,
+    "collision_lookup_calls": 5463123,
+    "missing_source_hits": 0,
+    "wrong_source_distances": 0,
+    "wrong_returned_distances": 0,
+    "out_of_envelope_hits": 0,
+    "duplicate_returned_hits": 0,
+    "errors": 0
+  },
+  "total": {
+    "targets": 6700,
+    "generated_target_query_pairs": 36277422,
+    "lookup_calls": 36277422,
+    "returned_hit_checks": 54545380,
+    "collision_lookup_calls": 11338539,
+    "missing_source_hits": 0,
+    "wrong_source_distances": 0,
+    "wrong_returned_distances": 0,
+    "out_of_envelope_hits": 0,
+    "duplicate_returned_hits": 0,
+    "errors": 0
+  },
+  "passed": true,
+  "artifacts": {
+    "<storage>/decoder_oracle_official01/failures.tsv": {
+      "bytes": 102,
+      "sha256": "ff1e679b123c38fa385e229e5f842acc86263882568128991d3642121a325d22"
+    },
+    "<storage>/decoder_oracle_official01/summary.json": {
+      "bytes": 1222,
+      "sha256": "b73d40e91d9770846b63273f592e02a30c79a1ee9c45b35908fc85fc623db251"
+    },
+    "<storage>/decoder_oracle_official01/strata.tsv": {
+      "bytes": 1282,
+      "sha256": "59004292c8c4f48828469b222d6e2cf9adc9bdc974fff86eec093c66d0a31118"
+    }
+  },
+  "release_source": "c95c57d8672e9db128be33e554a9a9244a5d2359"
+}

@@ -1,0 +1,133 @@
+{
+  "area": "D1",
+  "comparison_scale_um": 8,
+  "dataset": "CRC",
+  "geometry_audit": {
+    "base": {
+      "cell_mask_bins": 3761790,
+      "cellpose_projection": {
+        "cell_labels_tree_sha256": "dd8a3417c7a0c5550ce9bb42f743660ccfff32785dcb1f87a724cce1722ccb97",
+        "coordinate_resampling": "explicit source-pixel and pixel-centre transform",
+        "grid_geometry": "independent_capture_grid",
+        "native_roi_bins_outside_cellpose_pixel_support": 0,
+        "nucleus_labels_tree_sha256": "98c75aa2e79dc06f325f273fce8800119126b5bc49a23272c01049cfd30753a8",
+        "registration_moving_sampling": "decimate",
+        "registration_moving_source_downsample": 16,
+        "segmentation_downsample": 2,
+        "segmentation_root": "<runs>/20260726_crc_native_image_end_to_end_v4/cellpose",
+        "segmentation_shape_yx": [
+          21802,
+          26510
+        ],
+        "segmentation_summary_sha256": "9ca52b8e0c29ef2e87bbf454de5bfbf1bfa1766b0844a6c7ebcefa0d5bd701c5"
+      },
+      "cellpose_supported_roi_2um_bins": 11222500,
+      "compartment_source": "independent_he_cellpose",
+      "complete_16um_parents": 174724,
+      "extracellular_mask_bins": 7460710,
+      "geometry_source": "independent_capture_grid",
+      "native_col_max": 3349,
+      "native_col_min": 0,
+      "native_roi_2um_bins": 11222500,
+      "native_row_max": 3349,
+      "native_row_min": 0,
+      "nucleus_mask_bins": 1769337,
+      "selection_scope": "full_registered_extent"
+    },
+    "common_axis": {
+      "coarse_barcodes": 702244,
+      "comparison_scale_um": 8,
+      "complete_16um_parents": 174724,
+      "he_supported_2um_children": 11222500,
+      "he_unsupported_coarse_barcodes": 0
+    }
+  },
+  "inputs": {
+    "capture_grid": {
+      "path": "<runs>/20260726_crc_native_image_end_to_end_v4/capture_grid_primary/capture_grid.json",
+      "sha256": "311f778a9b0cc116433395cc91e1da5dd402e7360a1f651cabab3d9cf7cdb20a"
+    },
+    "cellpose_summary": {
+      "path": "<runs>/20260726_crc_native_image_end_to_end_v4/cellpose/summary.json",
+      "sha256": "9ca52b8e0c29ef2e87bbf454de5bfbf1bfa1766b0844a6c7ebcefa0d5bd701c5"
+    },
+    "native_registration": {
+      "path": "<runs>/20260726_crc_native_image_end_to_end_v4/registration/registration.json",
+      "sha256": "d6d7b4829a33449d6356ad122aaf154b0012d1c917172fea8b3f1ea6230df23d"
+    },
+    "prepared_fields": {
+      "arrays_sha256": "772aa37a84cbc85faebe53c57e2a0e711fc4983a3e11130201f13882f853eb9a",
+      "path": "<storage>/analyses/crc_fields/attempt1/result",
+      "summary_sha256": "52a63cff9268201bc6624c2101fd75ba7b39c5a17f70dad4124476f7246961c8"
+    },
+    "space_ranger": {
+      "barcodes": 702244,
+      "bytes": 115075547,
+      "features": 18085,
+      "kind": "space_ranger_target_gene_h5",
+      "nnz": 65669288,
+      "path": "<datasets>/visium_hd_human_crc/processed_4.1.0_outs/binned_outputs/square_008um/raw_feature_bc_matrix.h5",
+      "sha256": "dc28747bdd5fbb88047054f31e435c4b296e0de40aadbd254191056c82a83ccd"
+    },
+    "star_methods": {
+      "hard": [
+        {
+          "bytes": 867120,
+          "path": "<runs>/20260915_v195_crc_flex_2020a/star/SpatialFlex.out/hard/square_008um/features.tsv",
+          "sha256": "ca5165e52795b21f013b20876fca809d155f00d7d159eb4cd12c0c48eae7b434"
+        },
+        {
+          "bytes": 12018446,
+          "path": "<runs>/20260915_v195_crc_flex_2020a/star/SpatialFlex.out/hard/square_008um/barcodes.tsv",
+          "sha256": "179a0bb2c88cb567d39cbfaf6200f03caaf0fef3d1096b8325deb47a1addd0d0"
+        },
+        {
+          "bytes": 968212454,
+          "path": "<runs>/20260915_v195_crc_flex_2020a/star/SpatialFlex.out/hard/square_008um/matrix.mtx",
+          "sha256": "e63ad20b55eb3317628f5054f0904be93c0de69145f1d88779add04b0b5f7114"
+        }
+      ],
+      "soft_expected": [
+        {
+          "bytes": 867120,
+          "path": "<runs>/20260915_v195_crc_flex_2020a/star/SpatialFlex.out/soft_expected/square_008um/features.tsv",
+          "sha256": "ca5165e52795b21f013b20876fca809d155f00d7d159eb4cd12c0c48eae7b434"
+        },
+        {
+          "bytes": 12018446,
+          "path": "<runs>/20260915_v195_crc_flex_2020a/star/SpatialFlex.out/soft_expected/square_008um/barcodes.tsv",
+          "sha256": "179a0bb2c88cb567d39cbfaf6200f03caaf0fef3d1096b8325deb47a1addd0d0"
+        },
+        {
+          "bytes": 1274218634,
+          "path": "<runs>/20260915_v195_crc_flex_2020a/star/SpatialFlex.out/soft_expected/square_008um/matrix.mtx",
+          "sha256": "c1e905588f082b8bce2fdd4c7225185839ee228222fea164f6cafb5614098209"
+        }
+      ]
+    }
+  },
+  "invariants": {
+    "biological_feature_axis_only": true,
+    "diagnostic_non_panel_counts_excluded": true,
+    "existing_expression_and_image_artifacts_only": true,
+    "image_or_segmentation_not_used_for_assignment": true,
+    "raw_mass_not_normalized": true,
+    "space_ranger_is_comparator_not_truth": true
+  },
+  "morphology_projection": "Each coarse-bin count is distributed uniformly over its independent H&E-supported 2-um child centers; no expression enters registration or segmentation.",
+  "outputs": {
+    "mass_reconciliation.tsv": {
+      "bytes": 1495,
+      "sha256": "5b32c2bd4e79773cc9ea2d7fb99b3a00cf41d718ecc0183fc33447d68138d272"
+    },
+    "morphology_fields.tsv": {
+      "bytes": 6778,
+      "sha256": "8d996ce8d1db0d0b97b81aa95496884e082d06766bddc517ba8b368fcc83e0d0"
+    }
+  },
+  "primary_comparison_axis": "space_ranger_barcode_axis",
+  "residual_definition": "Positive differences of total spatial-bin mass; not feature-bin or read-member residuals.",
+  "schema": "visium_hd_processing.flex_star_sr_he_morphology.v1",
+  "slide": "H1-GMHFWPH",
+  "unsupported_coarse_barcode_policy": "not allowed"
+}
