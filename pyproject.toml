@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "visium-hd-suite"
+version = "0.1.0"
+description = "Visium HD tools around STAR Suite: image placement, nuclei, placement check, cell matrices, quality measures and evaluation code"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [{name = "Visium HD Processing contributors"}]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+]
+
+[project.optional-dependencies]
+tools = ["numpy>=1.23", "scipy>=1.9", "pandas", "h5py", "pyarrow", "threadpoolctl"]
+test = ["numpy>=1.23", "scipy>=1.9", "pandas", "h5py", "pyarrow", "anndata", "matplotlib", "scikit-learn",
+        "threadpoolctl", "opencv-python-headless", "tifffile", "zarr", "pytest>=7"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

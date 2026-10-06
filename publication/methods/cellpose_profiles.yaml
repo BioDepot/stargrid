@@ -1,0 +1,39 @@
+schema_version: 1
+engine:
+  name: Cellpose
+  version: 4.1.1
+  model: cpsam
+  model_sha256: e1440429eb384f95afe32bcba6510f90d518eaedc917ede549bed6804004abe2
+  image_tag: star-spatial-cellpose-opencv-cuda:paper1
+  image_id: sha256:2c291b90919e236708471db63dcc010c6e3844f5580f0fc830053eb922134835
+  base_image: pytorch/pytorch:2.8.0-cuda12.6-cudnn9-devel
+  base_image_digest: sha256:adb0f2d3769e0796a5d86740b0f900a72835b6fa9577b77d6efed460f1322fcb
+
+profiles:
+  independent_v1:
+    paper_role: three_slide_primary
+    downsample: 2
+    model: cpsam
+    tile_size: 2048
+    overlap: 128
+    nucleus_expansion_um: 2.0
+    flow_threshold: 0.4
+    cellprob_threshold: 0.0
+    min_size: 15
+    max_size_fraction: 0.4
+  sr_compat_v1:
+    paper_role: supplementary_vendor_mask_compatibility
+    downsample: 2
+    model: cpsam
+    tile_size: 2048
+    overlap: 128
+    nucleus_expansion_um: 8.0
+    flow_threshold: 0.8
+    cellprob_threshold: 0.0
+    min_size: 15
+    max_size_fraction: 0.4
+
+policy:
+  primary_profile: independent_v1
+  identical_successful_slide_repeat_requires_explicit_authorization: true
+  failed_or_incomplete_attempt_may_relaunch_toward_one_authorized_success: true
