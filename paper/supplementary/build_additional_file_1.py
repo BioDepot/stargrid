@@ -13,9 +13,9 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 R = HERE.parents[1] / "paper_results" / "spatial_v1_9_5_20260915"
 OUT = Path(sys.argv[1]) if len(sys.argv) > 1 else HERE / "supplementary_tables.tex"
-POLICY = {"strict": "strict", "postcollapse_soft": "soft-expected", "soft_expected": "soft-expected",
-          "postcollapse_hard": "hard", "hard": "hard", "gated_hard": "gated-hard"}
-ORDER = ["strict", "soft-expected", "hard", "gated-hard"]
+POLICY = {"strict": "strict", "postcollapse_soft": "expected-count", "soft_expected": "expected-count",
+          "postcollapse_hard": "hard", "hard": "hard", "gated_hard": "confidence-gated"}
+ORDER = ["strict", "expected-count", "hard", "confidence-gated"]
 
 
 def rows(path):
@@ -51,7 +51,7 @@ blocks = []
 # --- S1: policy-by-scale concordance ---------------------------------------------------
 body = []
 for slide, path in (("Colorectal", R / "crc_concordance/matrix_concordance.tsv"),
-                    ("Ovarian 3$'$", R / "ovarian_concordance/matrix_concordance.tsv")):
+                    ("Ovarian", R / "ovarian_concordance/matrix_concordance.tsv")):
     data = [r for r in rows(path) if r["umi_mode"] == "1mm_cr"]
     data.sort(key=lambda r: (int(r["scale_um"]), ORDER.index(POLICY[r["policy"]])))
     for r in data:
@@ -135,7 +135,7 @@ for key, name in fields:
 blocks.append(table(
     r"\textbf{Table S4. Registration sensitivity on the colorectal slide.} Each entry gives the score with Space "
     r"Ranger's microscope registration, followed by the score with our registration, using the same image masks "
-    rf"reprojected through each. Reprojection changes {100 * mask['cell_mask_xor_fraction']:.2f}\% of grid squares' "
+    rf"reprojected through each. Reprojection changes {100 * mask['cell_mask_xor_fraction']:.2f}\% of capture locations' "
     rf"cell-mask state and {100 * mask['nucleus_mask_xor_fraction']:.2f}\% of their nucleus-mask state "
     rf"(median displacement {mask['median_displacement_um']:.2f}\,\textmu m). The largest change in any STAR minus "
     rf"Space Ranger score difference is ${sci(reg['maximum_absolute_star_minus_vendor_contrast_change'])}$.",
@@ -149,7 +149,7 @@ sr = float(next(r for r in rows(R / "three_slide_summary/count_gain.tsv")
 body = [[POLICY[p], n(compat[p]), f(100 * (compat[p] / sr - 1), 2), n(annot[p]), f(100 * (annot[p] / sr - 1), 2)]
         for p in ("strict", "soft_expected", "hard", "gated_hard")]
 blocks.append(table(
-    rf"\textbf{{Table S5. Ovarian 3$'$ slide under the two multimapper settings.}} Molecule totals over the full capture "
+    rf"\textbf{{Table S5. The ovarian dataset under the two multimapper settings.}} Molecule totals over the full capture "
     rf"grid and percentage differences from Space Ranger 4.1.0 with introns included ({n(sr)} molecules).",
     "tab:s5", ["Field", "Compatibility", "vs SR (\\%)", "Annotated", "vs SR (\\%)"], body, "lrrrr"))
 

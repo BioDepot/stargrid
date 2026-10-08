@@ -22,7 +22,7 @@ OUT = Path(sys.argv[1]) if len(sys.argv) > 1 else HERE.parent
 S.apply()
 STRICT = S.STAR_SOFT          # the conservative field: same hue as hard, lighter
 GREY = "#d1d5db"
-SLIDES = [("Colorectal\n(Flex)", "crc"), ("SPATCH\n(Flex)", "spatch"), ("Ovarian\n(3′)", "ovarian")]
+SLIDES = [("Colorectal\n(Flex)", "crc"), ("SPATCH\n(Flex)", "spatch"), ("Ovarian\n(RNA-seq)", "ovarian")]
 SUMMARY = {"crc": R / "supporting/crc_primary_summary.json",
            "spatch": R / "summary_spatch_flex_2020a/summary.json",
            "ovarian": R / "summary_ovarian_gex_2024a_compat/summary.json"}
@@ -53,7 +53,7 @@ gs = fig.add_gridspec(2, 2, width_ratios=[1.25, 1], hspace=0.85, wspace=0.42)
 ax = fig.add_subplot(gs[0, 0])
 S.panel_label(ax, "a", dx=-0.16, dy=1.14)
 ax.set_title("Read accounting", pad=6)
-stages = [("with a candidate square", "reads_with_candidates", GREY),
+stages = [("with a candidate location", "reads_with_candidates", GREY),
           ("with a gene and a candidate", "joined_reads", S.STAR)]
 bar_h = 0.34
 for i, (label, key) in enumerate(SLIDES):

@@ -16,7 +16,7 @@ import spatial_paper_figstyle as fs
 
 POLICY = "hard"           # primary policy; soft is reported in the caption
 DATASETS = ["CRC", "SPATCH"]
-LABELS = {"CRC": "Colorectal\n(10x)", "SPATCH": "Ovarian\n(SPATCH)"}
+LABELS = {"CRC": "Colorectal\n(Flex)", "SPATCH": "SPATCH\n(Flex)"}
 
 
 def load(source):

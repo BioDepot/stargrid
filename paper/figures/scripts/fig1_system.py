@@ -58,15 +58,15 @@ ax.add_patch(FancyBboxPatch((33, 2), 132, 56, boxstyle="round,pad=0,rounding_siz
 ax.text(35, 55.2, "One STAR process", fontsize=6.3, color=S.STAR, fontweight="bold", va="top")
 
 box(ax, 38, 31, 38, 19, "Spatial decoding",
-    "every square at the\nminimum edit distance\n(≤ 2 edits per half)", face=PALE)
-box(ax, 38, 8, 38, 21, "Feature assignment",
-    "3′: genome alignment,\nintrons included\nProbe: half-probe match,\nno genome", face=PALE)
+    "every location at the\nminimum edit distance\n(≤ 2 edits per half)", face=PALE)
+box(ax, 38, 8, 38, 21, "Gene assignment",
+    "RNA-seq: alignment,\nintrons included\nFlex: half-probe match,\nno genome", face=PALE)
 box(ax, 84, 18, 34, 21, "Read cliques",
-    "same gene,\nsame raw UMI,\na shared candidate\nsquare", face=PALE)
+    "same gene,\nsame raw UMI,\na shared candidate\nlocation", face=PALE)
 box(ax, 125, 18, 36, 21, "Molecule resolution",
-    "Phred likelihood +\noligo-frequency prior;\nUMI correction per\ncandidate square", face=PALE)
+    "Phred likelihood +\noligo-frequency prior;\nUMI correction per\nlocation", face=PALE)
 box(ax, 170, 14, 30, 31, "Count matrices",
-    "strict\nhard (reported)\nsoft-expected\ngated-hard\n\nat 2, 8 and 16 µm", face="white")
+    "strict\nhard (reported)\nexpected-count\nconfidence-gated\n\nat 2, 8 and 16 µm", face="white")
 
 arrow(ax, 28, 37, 38, 40.5)     # Read 1 -> spatial decoding
 arrow(ax, 28, 22, 38, 18.5)     # Read 2 -> feature assignment
@@ -84,7 +84,7 @@ ax.set_ylim(0, 100)
 ax.axis("off")
 S.panel_label(ax, "b", dx=-0.10, dy=1.10)
 ax.set_title("The spatial barcode", pad=4)
-ax.text(0, 96, f"BC1 names the column, BC2 the row:\n{M['gridSide']} × {M['gridSide']} squares", fontsize=5.6,
+ax.text(0, 96, f"BC1 names the column, BC2 the row:\n{M['gridSide']} × {M['gridSide']} capture locations", fontsize=5.6,
         va="top", color=S.INK, linespacing=1.3)
 g0x, g0y, cell = 34, 22, 11
 bc1 = [15, 16, 15, 16]
@@ -119,8 +119,8 @@ ax.text(0, 30, "one read clique:\nsame gene,\nsame raw UMI", fontsize=5.6, va="c
 arrow(ax, 36, 66, 44, 66)
 ax.text(46, 84, "Candidates A, B", fontsize=5.8, color=S.INK, fontweight="bold")
 ax.text(46, 76, "posterior: A ≫ B", fontsize=5.6, color=S.INK)
-policies = [("strict", "dropped: two candidates"), ("hard", "A"), ("soft-expected", "A and B, by posterior"),
-            ("gated-hard", "A, if confident")]
+policies = [("strict", "dropped: two candidates"), ("hard", "A"), ("expected-count", "A and B, by posterior"),
+            ("confidence-gated", "A, if confident")]
 for k, (p, what) in enumerate(policies):
     y = 64 - k * 13
     ax.text(46, y, p, fontsize=5.6, color=S.STAR if p == "hard" else S.INK,
@@ -136,7 +136,7 @@ ax.text(0.0, 0.84, f"{M['oracleErrors']} errors", transform=ax.transAxes, fontsi
         fontweight="bold", color=S.STAR, va="top")
 ax.text(0.0, 0.60, f"in {M['oracleDistanceChecks']} distances\n"
         f"over {M['oracleQueryPairs']} query pairs\n"
-        f"and the full codebook of {M['oracleOligos']}\noligos, against an independent\n"
+        f"and the full list of {M['oracleOligos']}\noligos, against an independent\n"
         "Wagner–Fischer calculation", transform=ax.transAxes, fontsize=5.6, va="top", color=S.INK,
         linespacing=1.3)
 

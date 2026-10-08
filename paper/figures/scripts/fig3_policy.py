@@ -63,10 +63,10 @@ bottom = outer[1].subgridspec(1, 2, width_ratios=[2.05, 1], wspace=0.62)
 ax = fig.add_subplot(top[0, 0])
 ax.axis("off")
 S.panel_label(ax, "a", dx=-0.10, dy=1.13)
-ax.set_title("Reads with a square in range", pad=6)
-rows = [("A closest square", M["taxSRMinimumPct"], M["taxSRMinimum"], S.INK),
-        ("A different square", M["taxSRNonminimumPct"], M["taxSRNonminimum"], S.SR),
-        ("No square", M["taxSRUnassignedPct"], M["taxSRUnassigned"], S.INK_MUTED)]
+ax.set_title("Reads with a location in range", pad=6)
+rows = [("A closest location", M["taxSRMinimumPct"], M["taxSRMinimum"], S.INK),
+        ("A different location", M["taxSRNonminimumPct"], M["taxSRNonminimum"], S.SR),
+        ("No location", M["taxSRUnassignedPct"], M["taxSRUnassigned"], S.INK_MUTED)]
 ax.text(0.0, 0.93, f"{M['taxCandidateReads']} reads; Space Ranger reports:", transform=ax.transAxes,
         fontsize=6, color=S.INK_MUTED, va="top")
 for k, (label, pct, count, colour) in enumerate(rows):
@@ -99,15 +99,15 @@ ax.set_xlim(0.5, 3.75)
 ax.set_ylim(1.35, 4.6)
 ax.set_xticks([1, 2, 3])
 ax.set_yticks([2, 3, 4])
-ax.set_xlabel("Edits to the closest square")
-ax.set_ylabel("Edits to Space Ranger's square")
+ax.set_xlabel("Edits to the closest location")
+ax.set_ylabel("Edits to Space Ranger's location")
 S.hide_y_grid_behind(ax)
 ax.xaxis.grid(True)
 
 # --- c: geometry ---------------------------------------------------------------
 ax = fig.add_subplot(top[0, 2])
 S.panel_label(ax, "c", dx=-0.56, dy=1.13)
-ax.set_title("Fit of Space Ranger's square", pad=6)
+ax.set_title("Fit of Space Ranger's location", pad=6)
 summ = json.load(open(DATA / "fig3_summary.json"))
 cls = summ["sr_edit_class"]
 n_all = sum(cls.values())
@@ -130,7 +130,7 @@ ax.set_axisbelow(True)
 ax = fig.add_subplot(bottom[0, 0])
 ax.axis("off")
 S.panel_label(ax, "d", dx=-0.045, dy=1.10)
-ax.set_title("One read, two squares (Table 5, read 1)", pad=6)
+ax.set_title("One read, two locations (Table 5, read 1)", pad=6)
 cases = [r for r in csv.DictReader(open(HERE / "sr_audit_worked_cases.tsv"), delimiter="\t")
          if r["case"] == "same 8 um bin"]
 closest = next(r for r in cases if r["square"] == "closest")
@@ -161,7 +161,7 @@ width1 = max(len(r1c), len(o1c))
 gap = width1 + 1
 read_row = r1c + " " + (r2s if len(r2s) >= len(r2c) else r2c)
 labels = [(0.80, "Read barcode", read_row, [], S.INK),
-          (0.52, f"Closest square\nrow {closest['row']}", o1c + " " + o2c.rjust(len(r2s)), m1c + [gap + k + (len(r2s) - len(o2c)) for k in m2c], S.STAR),
+          (0.52, f"Closest\nrow {closest['row']}", o1c + " " + o2c.rjust(len(r2s)), m1c + [gap + k + (len(r2s) - len(o2c)) for k in m2c], S.STAR),
           (0.18, f"Space Ranger\nrow {sr['row']}", o1c + " " + o2s, m1c + [gap + k for k in m2s], S.SR)]
 for y, name, seq, marks, colour in labels:
     ax.text(0.0, y, name, transform=ax.transAxes, fontsize=6, color=colour if colour != S.INK else S.INK,
@@ -175,13 +175,13 @@ ax.text(xe, 0.52, f"{closest['total']} edit", transform=ax.transAxes, fontsize=6
 ax.text(xe, 0.18, f"{sr['total']} edits", transform=ax.transAxes, fontsize=6.5, color=S.SR,
         fontweight="bold", va="center")
 ax.text(0.0, -0.06, "Shaded: edits relative to the read. The two BC2 oligos differ only by the first base;\n"
-        "the squares are adjacent rows, 2 µm apart.", transform=ax.transAxes, fontsize=5.5,
+        "the locations are in adjacent rows, 2 µm apart.", transform=ax.transAxes, fontsize=5.5,
         color=S.INK_MUTED, va="top")
 
 # --- e: spatial consequence --------------------------------------------------------
 ax = fig.add_subplot(bottom[0, 1])
 S.panel_label(ax, "e", dx=-0.66, dy=1.10)
-ax.set_title("Bin of Space Ranger's square vs closest", pad=6)
+ax.set_title("Space Ranger's location vs closest", pad=6)
 pr = summ["parent_relation"]
 n_pr = sum(pr.values())
 parts = [("Same 8 µm bin", pr["same_8um"]), ("Same 16 µm bin", pr["same_16um_only"]),
