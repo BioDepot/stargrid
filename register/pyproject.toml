@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stargrid-register"
+version = "0.2.0"
+description = "Check and correct the registration of a microscope image to the Visium HD capture grid from the counts"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [{name = "STARgrid contributors"}]
+dependencies = ["numpy>=1.23", "scipy>=1.9", "pandas>=1.5", "h5py>=3.7", "pyarrow>=10"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+
+[project.urls]
+Homepage = "https://github.com/BioDepot/stargrid/tree/main/register"
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+other = ["opencv-python-headless>=4.5", "SimpleITK>=2.2"]
+
+[project.scripts]
+stargrid-register = "stargrid_register.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

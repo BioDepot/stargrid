@@ -46,8 +46,8 @@ control.
 |---|---|---|
 | Place the microscope image on the capture grid | `native/` (`visium_hd_capture_grid`, `visium_hd_register`, `visium_hd_tiff_decimate`) | C++, built with CMake. Uses the images only, no counts. See the warning below. |
 | Detect nuclei in the H&E image | `scripts/publication/segment_hd_he_cellpose.py`, `publication/methods/cellpose_profiles.yaml`, `containers/cellpose-paper/`; `scripts/segment_hd_he_stardist.py` | Cellpose, and StarDist at the settings of one published tool. Which detector and settings to prefer is still being evaluated. |
-| Check where the nuclei lie relative to the counts | `scripts/measure_hd_qc_reference.py` | Works from output files: a count for each 2 µm capture location, a tissue mask and a nucleus mask. |
-| Move nuclei into register | `scripts/publication/hd_mask_shift.py`, `fit_hd_mask_affine.py`, `check_hd_mask_affine.py` | A shift by whole capture locations, or a displacement that varies linearly across the slide, fitted on some regions and checked on the others. |
+| Check where the nuclei lie relative to the counts | `register/` (the Python package `stargrid-register`: `check`, `refine`, `place`) | Works from output files: a count for each 2 µm capture location, the tissue flags and a nucleus mask. Reproduces the manuscript's runs, which used `scripts/measure_hd_qc_reference.py`. See `register/README.md`. |
+| Move nuclei into register | `register/` (`stargrid-register fit`, `apply`) | A shift by whole capture locations, or a displacement that varies linearly across the slide, fitted on some regions and checked on the others. The manuscript's runs used `scripts/publication/hd_mask_shift.py`, `fit_hd_mask_affine.py` and `check_hd_mask_affine.py`. |
 | Quality measures for a slide | `scripts/measure_hd_qc_reference.py`, `scripts/summarize_hd_qc_reference.py` | Counts beyond the tissue and their decay with distance; the contrast of counts under nuclei. |
 | Cell matrices from 2 µm counts | `scripts/build_hd_cell_matrix.py`, `validate_hd_cell_matrix_truth.py`, `stage_hd_output_matrix.py`, `compare_hd_cell_matrices.py` | Grows each nucleus by a fixed distance and sums the capture locations. Works on the counts under the HARD policy and under the expected-count policy. |
 | Evaluation code for our manuscript | `scripts/publication/`, and the other scripts in `scripts/` | Agreement with Space Ranger, H&E scoring, adjacent-section Xenium and CODEX. |
@@ -61,18 +61,21 @@ examined, it placed the nuclei several micrometres from where the counts place t
 those the error drifted across the slide. Its own fit statistics gave no warning. Run the check
 before using image-derived nuclei with counts.
 
-The check rests on one observation: on the slides we have measured, the count on capture
-locations under a nucleus is lower than on those around it. So the mean count under the nucleus
-mask, as the mask is moved over the grid, is lowest where mask and counts are in register, with a
-ring of higher values around that position. `measure_hd_qc_reference.py` reports the shift at
-which the mean is lowest relative to its ring, for the whole slide and for regions of it.
+The check rests on one observation: on the tumour slides we have measured, the count on capture
+locations under nuclei is, on average, lower than on the same locations moved a few micrometres.
+The comparison is local; it does not require nuclei to hold fewer counts than the rest of the
+tissue. So the mean count under the nucleus mask, as the mask is moved over the grid, is lower
+where mask and counts are in register than in a ring of shifts around that position: a dip. The
+package in `register/` (`stargrid-register`) reports the shift of the dip, for the whole slide and
+for regions of it, and corrects the mask; see `register/README.md`.
 
 Two cautions:
 - **A cross-correlation peak does not locate the nuclei.** It lies on the ring.
   `scripts/measure_hd_global_offset_fft.py` computes that peak. It is superseded and is here only
   because other tools import its readers.
-- **The lower count under nuclei has been seen on a few slides only**, covering both kinds of
-  quantitation. Do not assume it for a tissue that has not been measured.
+- **The dip has been seen on a few slides only**: colorectal and ovarian tumours, with both kinds
+  of quantitation. On lung cores it was weaker and only local. Do not assume it for a tissue that
+  has not been measured.
 
 ## Results of the manuscript
 
