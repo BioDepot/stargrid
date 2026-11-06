@@ -4,10 +4,29 @@ The package was run on the inputs of the accepted analysis runs of the STARgrid 
 output compared with their records. The inputs (count matrices, tissue flags, nucleus label images
 and registrations) are not distributed here; the tests in `tests/` use synthetic slides.
 
-The results below are those of versions 0.1.0 and 0.2.0, which chose the shift by the contrast
-against a ring of shifts. From version 0.3.0 the shift is the deepest local dip, accepted when it
-is stable under block resampling (see the README). The experimental fallbacks of 0.3.0
-(`--experimental-fallback`) are off by default and change none of these results.
+The first results below are those of version 0.4.0, which takes the shift from the deepest stable
+dip or, where the dip is not usable, from the highest stable peak of the ring (see the README).
+The later ones are those of versions 0.1.0 and 0.2.0, which chose the shift by the contrast
+against the shifts 3 to 5 locations away; from version 0.3.0 the shift is the deepest local dip,
+accepted when it is stable under block resampling. The dip is usable on the whole ovarian slide
+and in every region of the SPATCH slide, so the ring of 0.4.0 is not used there.
+
+## The dip and the ring (version 0.4.0, 2026-11-06)
+
+The package at its defaults was run on the inputs of the manuscript's analysis of the ring: the
+tumour slides under each registration tested (12 placements), the four lung cores and the two
+whole post-Xenium lung sections with nuclei from the H&E image and imaged by Xenium (12), and the
+four public slides of other tissues (4). On each of the 448 surfaces that analysis measured (the
+whole slide or section, and each region with at least 30,000 nucleus locations in tissue), it gave
+the analysis's dip (whether there is one, its shift, its share of resamples within one location
+and whether it is usable) and, where the dip was not usable, its ring of width 3 (the same for the
+highest peak), and so the shift of the manuscript's rule: the dip on 327 surfaces, the ring on 27
+and no shift on 94. There were no differences.
+
+```sh
+stargrid-register check --counts square_totals.npz --tissue tissue_positions.parquet \
+    --nuclei grid_labels.npz --out check.json          # the ring is the default; --fallback none turns it off
+```
 
 ## Ovarian slide (H1-YQJBZ7X/D1), whole slide (version 0.1.0, 2026-10-18)
 

@@ -1,14 +1,16 @@
 """The count-based check: where a nucleus mask lies relative to the counts.
 
-On the Visium HD tumour slides examined so far, the total count on capture locations under nuclei
-is, on average, lower than on the same locations moved a few micrometres. This is a local
-comparison: it does not require nuclei to hold fewer counts than the rest of the tissue. The mean
-count under a nucleus mask, as the mask is moved over the grid, is therefore lower where the mask
-lies on the nuclei than at the shifts next to it (a dip). The shift of the deepest dip within the
+On most Visium HD slides examined so far, the counts around nuclei follow a pattern: more molecules
+in a ring just around each nucleus and, usually, fewer under the nucleus itself. The mean count
+under a nucleus mask, as the mask is moved over the grid, is therefore lower where the mask lies on
+the nuclei than at the shifts next to it (a dip). This is a local comparison: it does not require
+nuclei to hold fewer counts than the rest of the tissue. The shift of the deepest dip within the
 search is the registration shift, accepted only if it is interior to the search and stable when
-the slide is resampled in spatial blocks. Where counts are higher under nuclei there is no dip and
-no shift, unless an experimental fallback is asked for (see `assess`). A displacement (dy, dx) is in capture locations of 2 um, rows downward, from mask to
-counts: a nucleus at (row, col) samples the counts at (row + dy, col + dx).
+the slide is resampled in spatial blocks. Where the dip is weak or absent, a mask of the ring of
+locations just outside the nuclei is moved in the same way, and the highest stable peak of its mean
+count is the shift; where neither can be used there is no shift (see `assess`). A displacement
+(dy, dx) is in capture locations of 2 um, rows downward, from mask to counts: a nucleus at
+(row, col) samples the counts at (row + dy, col + dx).
 """
 from __future__ import annotations
 
@@ -19,13 +21,13 @@ from scipy import fft, ndimage
 
 RADIUS = 13           # half-width of the shift surface, in locations (the search plus one)
 SEARCH = 12           # largest shift searched on each axis
-RING = (3, 5)         # the ring of the descriptive contrast, as Chebyshev distances in locations
+CONTRAST_RING = (3, 5)  # the shifts of the descriptive contrast, as Chebyshev distances in locations
 DRAWS = 200           # spatial-block bootstrap draws
 BLOCK = 100           # block side, in capture locations
 SEED = 20261007
 STABLE = 0.95         # share of draws whose deepest dip must lie within one location of the full-data dip
-FRINGE = 3            # width of the band around the nuclei for the experimental fringe fallback, in locations
-FALLBACKS = ('fringe', 'peak')  # experimental, off by default (see `assess`)
+RING_WIDTH = 3        # width of the ring of locations around the nuclei, used where the dip is not usable
+FALLBACKS = ('ring', 'peak', 'none')  # what `assess` uses where the dip is not usable; 'peak' is experimental
 
 
 def shift_surface(nucleus, counts, support, radius=RADIUS):
@@ -51,25 +53,25 @@ def shift_surface(nucleus, counts, support, radius=RADIUS):
 
 
 def contrast(surface, dy, dx, radius=RADIUS):
-    """One minus the mean count at (dy, dx) over the median on the ring 3 to 5 locations away.
+    """One minus the mean count at (dy, dx) over the median at the shifts 3 to 5 locations away.
 
     Descriptive only: no decision rests on it.
     """
     yy, xx = np.mgrid[-5:6, -5:6]
     ring = np.maximum(np.abs(yy), np.abs(xx))
     values = surface[radius + dy + yy, radius + dx + xx]
-    ref = np.median(values[(ring >= RING[0]) & (ring <= RING[1])])
+    ref = np.median(values[(ring >= CONTRAST_RING[0]) & (ring <= CONTRAST_RING[1])])
     centre = surface[radius + dy, radius + dx]
     return float(1 - centre / ref) if np.isfinite(ref) and ref > 0 else None
 
 
-def feature(surface, radius=RADIUS, search=RADIUS - RING[1]):
+def feature(surface, radius=RADIUS, search=RADIUS - CONTRAST_RING[1]):
     """The shift with the strongest contrast against its ring, with its profile (descriptive).
 
     Returns dy, dx (locations), the contrast (positive for a dip), whether it lies on the search
     boundary, and the median count at each Chebyshev radius 0 to 5 around it.
     """
-    if radius < search + RING[1]:
+    if radius < search + CONTRAST_RING[1]:
         raise ValueError('the surface radius must be at least the search plus the ring radius (5)')
     candidates = []
     for dy in range(-search, search + 1):
@@ -85,7 +87,7 @@ def feature(surface, radius=RADIUS, search=RADIUS - RING[1]):
     yy, xx = np.mgrid[-5:6, -5:6]
     rr = np.maximum(np.abs(yy), np.abs(xx))
     patch = surface[radius + dy + yy, radius + dx + xx]
-    reference = float(np.median(patch[(rr >= RING[0]) & (rr <= RING[1])]))
+    reference = float(np.median(patch[(rr >= CONTRAST_RING[0]) & (rr <= CONTRAST_RING[1])]))
     half = (centre + reference) / 2
     profile = [{'radius_squares': r, 'radius_um': 2 * r, 'median_count': float(np.median(patch[rr == r]))}
                for r in range(6)]
@@ -107,6 +109,19 @@ def dips(surfaces, search=SEARCH):
     r > search. Returns (found, dy, dx, depth), each of length n; ties go to the first offset in
     row-major order.
     """
+    return _extremes(surfaces, search, 'dip')
+
+
+def peaks(surfaces, search=SEARCH):
+    """The highest peak of each surface in a stack, and whether one exists.
+
+    A peak is an offset whose value is higher than at all eight neighbouring offsets; its height is
+    the value over the median of the neighbours, minus one. Returns (found, dy, dx, height) as `dips`.
+    """
+    return _extremes(surfaces, search, 'peak')
+
+
+def _extremes(surfaces, search, kind):
     s = np.asarray(surfaces, float)
     radius = (s.shape[1] - 1) // 2
     if radius < search + 1:
@@ -116,9 +131,11 @@ def dips(surfaces, search=SEARCH):
     around = np.stack([s[:, lo + j:hi + j, lo + i:hi + i] for j in (-1, 0, 1) for i in (-1, 0, 1)
                        if (j, i) != (0, 0)], axis=-1)
     with np.errstate(invalid='ignore', divide='ignore'):
-        is_dip = np.isfinite(centre) & np.isfinite(around).all(-1) & (centre[..., None] < around).all(-1)
-        depth = np.where(is_dip, 1 - centre / np.median(around, axis=-1), -np.inf)
-    flat = depth.reshape(len(s), -1)
+        beyond = (centre[..., None] < around) if kind == 'dip' else (centre[..., None] > around)
+        hit = np.isfinite(centre) & np.isfinite(around).all(-1) & beyond.all(-1)
+        ratio = centre / np.median(around, axis=-1)
+        value = np.where(hit, 1 - ratio if kind == 'dip' else ratio - 1, -np.inf)
+    flat = value.reshape(len(s), -1)
     k = flat.argmax(axis=1)
     best = flat[np.arange(len(s)), k]
     width = 2 * search + 1
@@ -216,29 +233,25 @@ def resample(stats, draws=DRAWS, seed=SEED):
     return _ratio(np.einsum('rb,pbk->rpk', weights, stats, optimize=True))
 
 
-def fringe_mask(nucleus, width=FRINGE):
-    """The band around the nuclei: locations within `width` locations of a nucleus that are not nucleus."""
+def ring_mask(nucleus, width=RING_WIDTH):
+    """The ring around the nuclei: locations within `width` locations of a nucleus that are not nucleus."""
     return (ndimage.distance_transform_edt(~nucleus) <= width) & ~nucleus
 
 
 def peak(surface, boot, search=SEARCH, stable=STABLE):
-    """The highest peak of a shift surface, accepted by the rule of the dip (for the experimental fallbacks).
+    """The highest peak of a shift surface, accepted by the rule of the dip (for the ring and the peak fallback).
 
     A peak is a shift whose mean count is higher than at all eight neighbours; the highest (largest
     value over the median of its neighbours) is taken. It is usable if it is interior to the search
     and, in at least `stable` of the resampled surfaces `boot`, the highest peak lies within one
     location of it. Returns peak_dy, peak_dx, peak_height, peak_share_within_one and peak_usable.
     """
-    radius = (surface.shape[0] - 1) // 2
     out = dict(peak_dy=None, peak_dx=None, peak_height=None, peak_share_within_one=None, peak_usable=False)
-    with np.errstate(divide='ignore'):
-        found = local_dip(1 / surface, radius, search)     # a peak of the surface is a dip of its reciprocal
-        if 'depth' not in found:
-            return out
-        hit, by, bx, _ = dips(1 / boot, search)
-    dy, dx = found['dy'], found['dx']
-    y, x = radius + dy, radius + dx
-    height = surface[y, x] / np.median(np.delete(surface[y - 1:y + 2, x - 1:x + 2].ravel(), 4)) - 1
+    found, dy, dx, height = peaks(surface[None], search)
+    if not found[0]:
+        return out
+    dy, dx, height = int(dy[0]), int(dx[0]), height[0]
+    hit, by, bx, _ = peaks(boot, search)
     far = np.where(hit, np.maximum(np.abs(by - dy), np.abs(bx - dx)), 10 ** 6)
     share = float((far <= 1).mean())
     out.update(peak_dy=dy, peak_dx=dx, peak_height=float(height), peak_share_within_one=share,
@@ -247,62 +260,83 @@ def peak(surface, boot, search=SEARCH, stable=STABLE):
 
 
 def assess(nucleus, counts, support, bounds=None, *, search=SEARCH, draws=DRAWS, seed=SEED,
-           block=BLOCK, stable=STABLE, fallback=None, fringe=None, fringe_width=FRINGE):
+           block=BLOCK, stable=STABLE, fallback='ring', ring=None, ring_width=RING_WIDTH):
     """The registration shift of the nuclei in `bounds` (default the whole grid), and whether to trust it.
 
-    The shift is the deepest dip within `search` locations of the shift surface. It is usable if it
-    lies inside the search (|dy| and |dx| below `search`) and is stable: in at least `stable` of the
-    `draws` spatial-block resamples of the slide, the deepest dip lies within one location of it.
-    Otherwise the status is 'no dip' or 'unstable' and no shift is given (the deepest dip, if any,
-    is kept as `candidate_dy`, `candidate_dx`). The contrast against the ring of shifts 3 to 5
-    locations away is descriptive only. Returns the result and the full-data surface.
-
-    `fallback` (experimental, for research; off by default) gives a shift where the dip does not:
-    - 'fringe': where there is no usable dip, the highest stable peak of the surface of the band
-      around the nuclei (`fringe_mask` of `fringe_width` locations; pass `fringe` to reuse one).
-      Where counts are higher just around nuclei, the band has its highest mean count when it lies
-      on that band, even where the dip under the nuclei is too weak to pass.
-    - 'peak': where the surface of the nuclei has no dip at all, its highest stable peak. Where a
-      weak dip is present the highest peak lies on its rim, which is why an unstable dip never
-      falls back to it.
-    Neither has been tested against an independent reference in a tissue without a dip.
+    The shift is the deepest dip within `search` locations of the shift surface. The dip is usable if
+    it lies inside the search (|dy| and |dx| below `search`) and is stable: in at least `stable` of
+    the `draws` spatial-block resamples of the slide, the deepest dip lies within one location of it.
+    Otherwise `dip_status` is 'no dip' or 'unstable' (the deepest dip, if any, is kept as
+    `candidate_dy`, `candidate_dx`), and `fallback` says what is used instead:
+    - 'ring' (the default): the ring around the nuclei (`ring_mask` of `ring_width` locations; pass
+      `ring` to reuse one) is moved in the same way, and its highest peak, accepted by the same rule
+      of stability, is the shift. Where counts are higher just around nuclei than under them, the
+      ring has its highest mean count where it lies on that ring of higher counts, even where the
+      dip under the nuclei is too weak to pass. `ring_status` is 'usable', 'no peak' or 'unstable'.
+    - 'peak' (experimental, for research): where the surface of the nuclei has no dip at all, its
+      highest stable peak. Where a weak dip is present the highest peak lies on its rim, which is
+      why an unstable dip never falls back to it.
+    - 'none': no shift.
+    `status` is 'usable' if a shift is given and 'not registered' otherwise; `method` says which
+    surface gave it ('dip', 'ring' or 'peak (experimental)'). The contrast against the shifts 3 to
+    5 locations away is descriptive only. Returns the result and the full-data surface of the nuclei.
     """
+    if fallback not in FALLBACKS:
+        raise ValueError(f'fallback must be one of {FALLBACKS}')
     if bounds is None:
         bounds = (0, nucleus.shape[0], 0, nucleus.shape[1])
     radius = search + 1
     blocks = blocks_for(support, bounds, block=block, margin=radius)
     size = 2 * radius + 1
-    row = dict(status='no dip', usable=False, dy=None, dx=None, dy_um=None, dx_um=None, depth=None,
-               mean_count=None, neighbour_median=None, interior=None, share_any_dip=None,
-               share_within_one=None, share_exact=None, depth_lo=None, depth_hi=None,
-               ring_contrast_at_dip=None, candidate_dy=None, candidate_dx=None, method=None, blocks=len(blocks),
-               draws=draws, seed=seed, search=search)
+    row = dict(status='not registered', usable=False, method=None, dy=None, dx=None, dy_um=None, dx_um=None,
+               dip_status='no dip', depth=None, mean_count=None, neighbour_median=None, interior=None,
+               share_any_dip=None, share_within_one=None, share_exact=None, depth_lo=None, depth_hi=None,
+               contrast_at_dip=None, candidate_dy=None, candidate_dx=None, fallback=fallback,
+               blocks=len(blocks), draws=draws, seed=seed, search=search)
     if not len(blocks):
+        row['reason'] = 'no tissue'
         return row, np.full((size, size), np.nan)
     stats = block_sums(nucleus, counts, support, blocks, radius)
     surface = _ratio(stats.sum(1)).reshape(size, size)
     boot = resample(stats, draws, seed).reshape(draws, size, size)
     found, by, bx, _ = dips(boot, search)
     row['share_any_dip'] = float(found.mean())
+
+    def accept(method, dy, dx):
+        row.update(status='usable', usable=True, method=method, dy=dy, dx=dx, dy_um=2 * dy, dx_um=2 * dx)
+
+    def why(what, interior):
+        return (f'{what} within one location in fewer than {stable:.0%} of resamples' if interior
+                else f'{what} on the edge of the search')
+
     def fall_back(no_dip):
-        if fallback == 'peak' and no_dip:
-            row.update(peak(surface, boot, search, stable))
-        elif fallback == 'fringe':
-            band = fringe if fringe is not None else fringe_mask(nucleus, fringe_width)
-            fstats = block_sums(band, counts, support, blocks, radius)
-            row.update(peak(_ratio(fstats.sum(1)).reshape(size, size),
-                            resample(fstats, draws, seed).reshape(draws, size, size), search, stable),
-                       fringe_width=fringe_width)
-        else:
-            return
-        row['fallback'] = fallback
-        if row.pop('peak_usable'):
-            label = 'fringe peak (experimental)' if fallback == 'fringe' else 'peak (experimental)'
-            row.update(status=label, method=label, usable=True, dy=row['peak_dy'], dx=row['peak_dx'],
-                       dy_um=2 * row['peak_dy'], dx_um=2 * row['peak_dx'], reason='no usable dip; ' + label)
+        if fallback == 'ring':
+            mask = ring if ring is not None else ring_mask(nucleus, ring_width)
+            rstats = block_sums(mask, counts, support, blocks, radius)
+            p = peak(_ratio(rstats.sum(1)).reshape(size, size),
+                     resample(rstats, draws, seed).reshape(draws, size, size), search, stable)
+            row.update({k.replace('peak_', 'ring_'): v for k, v in p.items() if k != 'peak_usable'},
+                       ring_width=ring_width)
+            if p['peak_usable']:
+                row['ring_status'] = 'usable'
+                accept('ring', p['peak_dy'], p['peak_dx'])
+                row['reason'] += '; ring used'
+            else:
+                row['ring_status'] = 'no peak' if p['peak_dy'] is None else 'unstable'
+                row['reason'] += '; ' + ('no peak of the ring' if p['peak_dy'] is None else
+                                         why('highest peak of the ring', max(abs(p['peak_dy']), abs(p['peak_dx'])) < search))
+        elif fallback == 'peak' and no_dip:
+            p = peak(surface, boot, search, stable)
+            row.update({k: v for k, v in p.items() if k != 'peak_usable'})
+            if p['peak_usable']:
+                accept('peak (experimental)', p['peak_dy'], p['peak_dx'])
+                row['reason'] += '; peak (experimental) used'
+            else:
+                row['reason'] += '; peak (experimental) not usable'
 
     dip = local_dip(surface, radius, search)
     if 'depth' not in dip:
+        row['reason'] = 'no dip'
         fall_back(True)
         return row, surface
     dy, dx = dip['dy'], dip['dx']
@@ -314,34 +348,34 @@ def assess(nucleus, counts, support, bounds=None, *, search=SEARCH, draws=DRAWS,
         row['depth_lo'], row['depth_hi'] = (float(v) for v in np.percentile(fixed[np.isfinite(fixed)], [2.5, 97.5]))
     row.update(depth=dip['depth'], mean_count=dip['mean_count'], neighbour_median=dip['neighbour_median'],
                candidate_dy=dy, candidate_dx=dx, interior=bool(max(abs(dy), abs(dx)) < search))
-    row['usable'] = bool(row['interior'] and row['share_within_one'] >= stable)
-    if row['usable']:
-        row.update(status='usable', method='dip', dy=dy, dx=dx, dy_um=2 * dy, dx_um=2 * dx)
-        a, b = max(0, bounds[0] - RING[1] - radius), min(nucleus.shape[0], bounds[1] + RING[1] + radius)
-        c, d = max(0, bounds[2] - RING[1] - radius), min(nucleus.shape[1], bounds[3] + RING[1] + radius)
+    if row['interior'] and row['share_within_one'] >= stable:
+        row['dip_status'] = 'usable'
+        accept('dip', dy, dx)
+        reach = CONTRAST_RING[1] + radius
+        a, b = max(0, bounds[0] - reach), min(nucleus.shape[0], bounds[1] + reach)
+        c, d = max(0, bounds[2] - reach), min(nucleus.shape[1], bounds[3] + reach)
         local = np.zeros((b - a, d - c), bool)
         local[bounds[0] - a:bounds[1] - a, bounds[2] - c:bounds[3] - c] = nucleus[bounds[0]:bounds[1], bounds[2]:bounds[3]]
-        wide = shift_surface(local, counts[a:b, c:d], support[a:b, c:d], radius + RING[1])
-        row['ring_contrast_at_dip'] = contrast(wide, dy, dx, radius + RING[1])
+        wide = shift_surface(local, counts[a:b, c:d], support[a:b, c:d], reach)
+        row['contrast_at_dip'] = contrast(wide, dy, dx, reach)
     else:
-        row['status'] = 'unstable'
-        row['reason'] = ('deepest dip on the edge of the search' if not row['interior']
-                         else f'deepest dip within one location in fewer than {stable:.0%} of resamples')
+        row['dip_status'] = 'unstable'
+        row['reason'] = why('deepest dip', row['interior'])
         fall_back(False)
     return row, surface
 
 
 def regions(nucleus, counts, support, *, divisions=5, minimum=30000, search=SEARCH, draws=DRAWS,
-            seed=SEED, block=BLOCK, fallback=None, fringe_width=FRINGE):
+            seed=SEED, block=BLOCK, fallback='ring', ring_width=RING_WIDTH):
     """The check in each region of a divisions x divisions split of the grid.
 
-    A region is usable if it holds at least `minimum` nucleus locations in the support and its
-    deepest dip is usable (see `assess`). The centroid of its nucleus locations is recorded for
-    fitting a displacement that varies across the slide.
+    A region is usable if it holds at least `minimum` nucleus locations in the support and `assess`
+    gives it a shift, from its dip or, where that is not usable, from `fallback`. The centroid of its
+    nucleus locations is recorded for fitting a displacement that varies across the slide.
     """
     ey = np.linspace(0, nucleus.shape[0], divisions + 1).astype(int)
     ex = np.linspace(0, nucleus.shape[1], divisions + 1).astype(int)
-    band = fringe_mask(nucleus, fringe_width) if fallback == 'fringe' else None
+    mask = ring_mask(nucleus, ring_width) if fallback == 'ring' else None
     rows, surfaces = [], {}
     for iy in range(divisions):
         for ix in range(divisions):
@@ -354,11 +388,11 @@ def regions(nucleus, counts, support, *, divisions=5, minimum=30000, search=SEAR
             if len(yy) >= minimum:
                 result, surfaces[row['region']] = assess(nucleus, counts, support, (int(y0), int(y1), int(x0), int(x1)),
                                                          search=search, draws=draws, seed=seed, block=block,
-                                                         fallback=fallback, fringe=band, fringe_width=fringe_width)
+                                                         fallback=fallback, ring=mask, ring_width=ring_width)
                 row.update(result)
-                row['reason'] = row.get('reason', 'usable' if row['usable'] else row['status'])
+                row['reason'] = row.get('reason', 'usable')
             else:
-                row['reason'] = f'fewer than {minimum} nucleus squares in tissue'
+                row.update(status='not tested', reason=f'fewer than {minimum} nucleus squares in tissue')
             rows.append(row)
     return rows, surfaces
 

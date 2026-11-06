@@ -98,12 +98,21 @@ def test_pure_peak_has_no_dip():
     assert not dip.dips(peak[None])[0].any()
 
 
+def test_peaks_finds_the_highest_peak():
+    yy, xx = np.mgrid[-13:14, -13:14]
+    surface = 1 + 0.3 * np.exp(-((yy - 2) ** 2 + (xx + 1) ** 2) / 2.0) + 0.1 * np.exp(-((yy + 5) ** 2 + (xx - 5) ** 2) / 2.0)
+    found, dy, dx, height = dip.peaks(surface[None])
+    assert found[0] and (dy[0], dx[0]) == (2, -1)
+    assert height[0] == pytest.approx(surface[15, 12] / np.median(np.delete(surface[14:17, 11:14].ravel(), 4)) - 1)
+
+
 def test_pure_peak_is_reported_as_no_dip_on_a_slide():
-    """Counts higher under nuclei: no usable dip, no shift."""
+    """Counts higher under nuclei and not around them: no usable dip or ring, no shift."""
     labels, counts, tissue = slide(shift=(-2, 1), dip_fraction=-0.5)
     result, _ = dip.assess(labels > 0, counts, tissue, search=8, draws=100)
     assert not result['usable'] and result['dy'] is None and result['dx'] is None
-    assert result['status'] in ('no dip', 'unstable')
+    assert result['status'] == 'not registered' and result['method'] is None
+    assert result['dip_status'] in ('no dip', 'unstable') and result['ring_status'] in ('no peak', 'unstable')
 
 
 def lattice_slide(width=360, spacing=36, radius=3, shift=(-2, 1), under=18, band=0):
@@ -126,29 +135,38 @@ def lattice_slide(width=360, spacing=36, radius=3, shift=(-2, 1), under=18, band
     return labels, counts, np.ones((width, width), bool)
 
 
-def test_fallbacks_are_experimental_and_off_by_default():
-    labels, counts, tissue = lattice_slide()
-    off, _ = dip.assess(labels > 0, counts, tissue, search=8, draws=60)
-    assert off['status'] == 'no dip' and off['dy'] is None and 'fallback' not in off
-    on, _ = dip.assess(labels > 0, counts, tissue, search=8, draws=60, fallback='peak')
-    assert on['status'] == 'peak (experimental)' and on['method'] == 'peak (experimental)' and on['usable']
-    assert (on['dy'], on['dx']) == (-2, 1) and on['peak_height'] > 0 and on['peak_share_within_one'] == 1
-
-
-def test_fringe_fallback_finds_the_band_around_the_nuclei():
-    """Counts high on the nuclei and on a band around them: the band's surface peaks at the shift."""
+def test_ring_is_used_by_default_where_there_is_no_dip():
+    """Counts high on the nuclei and on a ring around them: no dip, and the ring's surface peaks at the shift."""
     labels, counts, tissue = lattice_slide(band=2)
-    on, _ = dip.assess(labels > 0, counts, tissue, search=8, draws=60, fallback='fringe', fringe_width=2)
-    assert on['status'] == 'fringe peak (experimental)' and on['fallback'] == 'fringe' and on['usable']
-    assert (on['dy'], on['dx']) == (-2, 1) and on['fringe_width'] == 2
+    on, _ = dip.assess(labels > 0, counts, tissue, search=8, draws=60, ring_width=2)
+    assert on['dip_status'] == 'no dip' and on['ring_status'] == 'usable'
+    assert on['status'] == 'usable' and on['method'] == 'ring' and on['usable'] and on['fallback'] == 'ring'
+    assert (on['dy'], on['dx']) == (-2, 1) and on['ring_width'] == 2 and on['ring_share_within_one'] == 1
+    off, _ = dip.assess(labels > 0, counts, tissue, search=8, draws=60, fallback='none')
+    assert off['status'] == 'not registered' and off['dy'] is None and 'ring_status' not in off
 
 
-@pytest.mark.parametrize('fallback', ['peak', 'fringe'])
+def test_peak_fallback_is_experimental_and_off_by_default():
+    labels, counts, tissue = lattice_slide()
+    on, _ = dip.assess(labels > 0, counts, tissue, search=8, draws=60, fallback='peak')
+    assert on['status'] == 'usable' and on['method'] == 'peak (experimental)' and on['usable']
+    assert (on['dy'], on['dx']) == (-2, 1) and on['peak_height'] > 0 and on['peak_share_within_one'] == 1
+    default, _ = dip.assess(labels > 0, counts, tissue, search=8, draws=60)
+    assert default['method'] != 'peak (experimental)' and 'peak_dy' not in default
+
+
+def test_unknown_fallback_is_refused():
+    labels, counts, tissue = lattice_slide()
+    with pytest.raises(ValueError):
+        dip.assess(labels > 0, counts, tissue, search=8, draws=10, fallback='fringe')
+
+
+@pytest.mark.parametrize('fallback', ['ring', 'peak'])
 def test_fallbacks_are_not_used_where_there_is_a_usable_dip(fallback):
     labels, counts, tissue = slide(shift=(-2, 1), seed=7)
-    off, _ = dip.assess(labels > 0, counts, tissue, search=8, draws=60)
+    off, _ = dip.assess(labels > 0, counts, tissue, search=8, draws=60, fallback='none')
     on, _ = dip.assess(labels > 0, counts, tissue, search=8, draws=60, fallback=fallback)
-    assert on == off and on['method'] == 'dip'
+    assert {**on, 'fallback': None} == {**off, 'fallback': None} and on['method'] == 'dip'
 
 
 def test_noise_dip_is_unstable_and_rejected():
@@ -160,8 +178,8 @@ def test_noise_dip_is_unstable_and_rejected():
         labels[r - 2:r + 3, c - 2:c + 3] = k
     counts = rng.poisson(12.0, size=(width, width)).astype(float)
     result, _ = dip.assess(labels > 0, counts, np.ones((width, width), bool), search=8, draws=100)
-    assert not result['usable'] and result['dy'] is None
-    assert result['status'] in ('no dip', 'unstable')
+    assert not result['usable'] and result['dy'] is None and result['status'] == 'not registered'
+    assert result['dip_status'] in ('no dip', 'unstable') and result['ring_status'] in ('no peak', 'unstable')
 
 
 def test_assessment_is_deterministic_in_the_seed():
@@ -170,7 +188,7 @@ def test_assessment_is_deterministic_in_the_seed():
     b, _ = dip.assess(labels > 0, counts, tissue, search=8, draws=60)
     c, _ = dip.assess(labels > 0, counts, tissue, search=8, draws=60, seed=1)
     assert a == b
-    assert (a['dy'], a['dx']) == (-2, 1) and a['status'] == 'usable'
+    assert (a['dy'], a['dx']) == (-2, 1) and a['status'] == 'usable' and a['method'] == 'dip'
     assert a['share_exact'] <= a['share_within_one'] <= a['share_any_dip'] <= 1
     assert a['depth_lo'] <= a['depth_hi']
     assert (c['dy'], c['dx']) == (-2, 1)
@@ -188,7 +206,8 @@ def test_block_sums_match_the_whole_surface():
 def test_dip_on_the_search_edge_is_not_usable():
     labels, counts, tissue = slide(shift=(-8, 0))
     result, _ = dip.assess(labels > 0, counts, tissue, search=8, draws=60)
-    assert not result['usable'] and result['dy'] is None and result['status'] == 'unstable'
+    assert not result['usable'] and result['dy'] is None and result['dip_status'] == 'unstable'
+    assert result['status'] == 'not registered' and result['reason'].startswith('deepest dip on the edge')
 
 
 @pytest.mark.parametrize('method', ['ncc', 'mi'])
@@ -249,9 +268,10 @@ def test_command_line_check_and_fit(tmp_path):
     assert cli.main(['check', *args, '--divisions', '0', '--search', '8', '--draws', '100',
                      '--out', str(tmp_path / 'check.json')]) == 0
     result = json.loads((tmp_path / 'check.json').read_text())
-    assert result['whole']['status'] == 'usable'
+    assert result['whole']['status'] == 'usable' and result['whole']['method'] == 'dip'
+    assert result['fallback'] == 'ring' and result['ring_width'] == 3
     assert (result['whole']['dy'], result['whole']['dx']) == (-2, -1)
-    assert result['whole']['share_within_one'] >= 0.95 and result['whole']['ring_contrast_at_dip'] > 0
+    assert result['whole']['share_within_one'] >= 0.95 and result['whole']['contrast_at_dip'] > 0
     assert cli.main(['refine', *args, '--radius', '6', '--out', str(tmp_path / 'refine.json')]) == 0
     assert json.loads((tmp_path / 'refine.json').read_text())['integer_dy'] == -2
     assert cli.main(['apply', '--nuclei', str(tmp_path / 'nuclei.npz'), '--width', '360', '--shift=-2,-1',
@@ -259,6 +279,22 @@ def test_command_line_check_and_fit(tmp_path):
     moved = io.load_grid(tmp_path / 'moved.npz', 360)
     f = dip.feature(dip.shift_surface(moved > 0, counts, tissue))
     assert (f['dy'], f['dx']) == (0, 0)
+
+
+def test_command_line_check_uses_the_ring_where_there_is_no_dip(tmp_path):
+    labels, counts, tissue = lattice_slide(band=2)
+    np.savez(tmp_path / 'counts.npz', total=counts)
+    np.savez(tmp_path / 'tissue.npz', tissue=tissue)
+    np.savez(tmp_path / 'nuclei.npz', labels=labels)
+    args = ['check', '--counts', str(tmp_path / 'counts.npz'), '--tissue', str(tmp_path / 'tissue.npz'),
+            '--nuclei', str(tmp_path / 'nuclei.npz'), '--width', '360', '--divisions', '0', '--search', '8',
+            '--draws', '60', '--ring-width', '2']
+    assert cli.main([*args, '--out', str(tmp_path / 'ring.json')]) == 0
+    whole = json.loads((tmp_path / 'ring.json').read_text())['whole']
+    assert whole['method'] == 'ring' and (whole['dy'], whole['dx']) == (-2, 1) and whole['offset_um'] > 0
+    assert cli.main([*args, '--fallback', 'none', '--out', str(tmp_path / 'none.json')]) == 0
+    whole = json.loads((tmp_path / 'none.json').read_text())['whole']
+    assert whole['status'] == 'not registered' and whole['dy'] is None and whole['offset_um'] is None
 
 
 def test_other_methods_run_on_a_planted_shift():

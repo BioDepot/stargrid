@@ -3,21 +3,23 @@
 Check, and correct, how a microscope image is registered to the Visium HD capture grid, using the
 counts themselves.
 
-On the Visium HD tumour slides we have examined, the total count on 2 µm capture locations under
-cell nuclei is, on average, lower than on the same locations moved a few micrometres. The
-comparison is local: it does not require nuclei to hold fewer counts than the rest of the tissue.
-Moving a nucleus mask, segmented from the slide's H&E or DAPI image, over the capture grid and
-recording the mean count under it therefore traces a dip, lower than the shifts next to it, where
-the mask lies on the nuclei. The shift of the deepest dip from zero is how far the registration
-places the image from the counts, for the whole slide or for regions of it, and it can be used to
-correct the registration. The shift is reported only if the dip is stable when the slide is
-resampled in spatial blocks; where there is no dip, the check gives no shift.
+On most Visium HD slides we have examined, the counts around cell nuclei follow a pattern: more
+molecules in a ring of 2 µm capture locations just around each nucleus and, usually, fewer under
+the nucleus itself. Moving a nucleus mask, segmented from the slide's H&E or DAPI image, over the
+capture grid and recording the mean count under it therefore traces a dip, lower than the shifts
+next to it, where the mask lies on the nuclei; moving a mask of the ring traces a peak at the same
+shift. The comparison is local: it does not require nuclei to hold fewer counts than the rest of
+the tissue. The check takes the dip where it is stable when the slide is resampled in spatial
+blocks and, where the dip is weak or absent, the peak of the ring if that is stable. The shift
+from zero is how far the registration places the image from the counts, for the whole slide or for
+regions of it, and it can be used to correct the registration. Where neither is stable, the check
+gives no shift.
 
 The check needs only a 2 µm count matrix, the tissue flags and a nucleus mask on the grid. It works
 on the output of [STARgrid](https://github.com/morphic-bio/STAR-suite), the open Visium HD pipeline
 of STAR Suite, and on Space Ranger's output.
 
-**Status: early (version 0.3.0).** The methods are those of the STARgrid manuscript (see Citation),
+**Status: early (version 0.4.0).** The methods are those of the STARgrid manuscript (see Citation),
 and the package reproduces its registration results exactly (`docs/REGRESSION.md`). The
 command-line interface and output fields may still change.
 
@@ -28,7 +30,7 @@ merged here when they are ready.
 
 | Part | What it does |
 |---|---|
-| `stargrid-register check` | The deepest dip for the whole slide (shift, depth, stability under block resampling) and for the regions of a 5 × 5 division, or no shift where there is no stable dip |
+| `stargrid-register check` | The shift for the whole slide and for the regions of a 5 × 5 division: the deepest stable dip (shift, depth, stability under block resampling) or, where there is none, the highest stable peak of the ring; no shift where neither is stable |
 | `stargrid-register refine` | The same displacement by band-pass normalised cross-correlation or mutual information, with a sub-location estimate |
 | `stargrid-register fit` | A displacement that varies linearly across the slide, fitted to alternate regions and accepted only if it predicts the regions left out |
 | `stargrid-register apply` | Moves a nucleus label grid by a shift or by the fitted displacement |
@@ -65,7 +67,7 @@ ctest --test-dir build
 ## Use
 
 ```sh
-# Where do the nuclei lie relative to the counts? (--experimental-fallback: see below)
+# Where do the nuclei lie relative to the counts? (the dip, or the ring where the dip is not usable)
 stargrid-register check \
     --counts outs/binned_outputs/square_002um/filtered_feature_bc_matrix.h5 \
     --tissue outs/binned_outputs/square_002um/spatial/tissue_positions.parquet \
@@ -103,72 +105,94 @@ nucleus at (row, col) lies over the counts at (row + dy, col + dx).
 
 A dip is a shift at which the mean count under the mask is lower than at all eight neighbouring
 shifts. Its depth is one minus that count over the median count at the eight neighbours. The
-check takes the deepest dip within 12 locations (24 µm) of zero in each direction.
+check takes the deepest dip within 12 locations (24 µm) of zero in each direction. The dip is
+usable if it lies inside the search (|dy| and |dx| below 12, not on its edge) and is stable.
 
-- `whole.status`: `usable`, `no dip` (no shift is lower than all its neighbours) or `unstable`.
-  A shift is given only when the status is `usable` (or, with an experimental fallback below,
-  `fringe peak (experimental)` or `peak (experimental)`). `whole.method` says which.
-- `whole.dy`, `whole.dx` and `offset_um`: where the dip lies; empty unless usable. Zero means the
-  mask is in register with the counts, to the nearest location.
-- `whole.usable`: true if the deepest dip lies inside the search (|dy| and |dx| below 12, not on its
-  edge) and is stable. A region must also hold at least 30,000 nucleus locations in tissue.
+Where the dip is not usable, the ring is used: the capture locations within `--ring-width`
+locations (default 3, that is 6 µm, by Euclidean distance) of a capture location under a nucleus
+that are not themselves under a nucleus. Its mask is moved in the same way, and its highest peak,
+a shift at which the mean count is higher than at all eight neighbours, is taken if it is inside
+the search and stable by the same rule. `--fallback none` turns the ring off.
+
+- `whole.status`: `usable` (a shift is given) or `not registered`. `whole.method`: `dip` or
+  `ring` (or `peak (experimental)`, below), the surface that gave the shift.
+- `whole.dy`, `whole.dx` and `offset_um`: the shift; empty unless usable. Zero means the mask is
+  in register with the counts, to the nearest location.
+- `whole.dip_status`: `usable`, `no dip` (no shift is lower than all its neighbours) or `unstable`.
+  `whole.ring_status`: `usable`, `no peak` or `unstable`; present only where the ring was measured.
+  `reason` says why a surface was not used.
 - `whole.depth`: the depth of the deepest dip, as a fraction. `depth_lo`, `depth_hi`: the 95% range
   of the depth at that shift over the resamples.
+- `ring_dy`, `ring_dx`, `ring_height`, `ring_share_within_one`, `ring_width`: the highest peak of
+  the ring, its height (the mean count there over the median at the eight neighbours, minus one)
+  and its stability, recorded whenever the ring was measured, whether or not it passed.
 - Stability: the slide is resampled 200 times in blocks of 100 × 100 locations (seed 20261007), the
-  deepest dip is found in each resample, and the dip is stable if it lies within one location of
-  the full-data dip in at least 95% of them. `share_within_one` is that share, `share_exact` the
-  share at exactly the same shift, and `share_any_dip` the share of resamples with any dip.
+  deepest dip (or highest peak) is found in each resample, and it is stable if it lies within one
+  location of the full-data one in at least 95% of them. `share_within_one` is that share for the
+  dip, `share_exact` the share at exactly the same shift, and `share_any_dip` the share of
+  resamples with any dip.
 - `candidate_dy`, `candidate_dx`: the deepest dip even when it is not usable, for inspection only;
   do not use it as a shift.
-- `ring_contrast_at_dip`: descriptive only. How far the count at the shift is below the median
-  count 3 to 5 locations away. No decision uses it.
-- `regions`, `usable_regions`, `regions_at_zero`: the same in each region with enough nuclei;
-  `fit` uses only the usable regions.
-
-Cautions:
-- The dip has been seen on colorectal, ovarian, lymph-node, prostate and lung tissue. Its cause is
-  not known. On the public kidney and mouse-brain slides we examined there was no dip; the check
-  then gives no shift. Do not use the shift of a slide whose status is not `usable`.
-- On lung cores measured on the same section by Xenium and Visium HD, the local dip lay at the true
-  shift, where a comparison against a ring of shifts gave a peak one or two locations away.
-- Space Ranger 4.0 and later refine their registration against the counts by default, so agreement
-  between this check and Space Ranger's registration is not independent of the counts.
-- A cross-correlation peak between nuclei and counts lies on the ring around the dip, not at the
-  nuclei. Use the dip.
-
-## Experimental fallbacks, where there is no usable dip
-
-For research only, and not part of the method of the STARgrid manuscript. `--experimental-fallback`
-(on `check` and `fit`; off by default) gives a shift where the dip does not, accepted by the same
-stability test as a dip. `status` and `method` then say `fringe peak (experimental)` or
-`peak (experimental)`, and `peak_dy`, `peak_dx`, `peak_height` and `peak_share_within_one` are
-recorded whether or not the fallback passes. A usable dip is never replaced.
-
-- `fringe`: where there is no usable dip, the mean count under the band around the nuclei (the
-  locations within `--fringe-width` locations of a nucleus, default 3, that is 0 to 6 µm outside its
-  edge) is followed as the band is moved, and its highest stable peak is taken. Where counts are
-  higher just around nuclei than under them, the band is highest when it lies on that band, even
-  where the dip under the nuclei is too weak to pass.
-- `peak`: where the surface of the nuclei has no dip at all, its highest stable peak. An unstable
-  dip never falls back to it, because the highest peak then lies on the rim of the dip.
+- `contrast_at_dip`: descriptive only. How far the count at the dip is below the median count at
+  the shifts 3 to 5 locations away. No decision uses it.
+- `regions`, `usable_regions`, `regions_at_zero`: the same in each region with at least 30,000
+  nucleus locations in tissue (`status` `not tested` otherwise); `fit` uses only the usable
+  regions, whether the dip or the ring gave their shift.
 
 What has been tested:
-- On lung tissue imaged by Xenium and Visium HD on the same section (four cores and one whole
-  section), with nuclei from the H&E image or imaged by Xenium, the fringe peak (width 3) was never
-  two or more locations from the true shift where it passed, on whole sections or regions. Where the dip did not pass, it
-  gave a shift in 7 of 44 cases, 6 of them exactly right, including one whole section whose dip
-  lay at the true shift but was not stable. A width of 1 location, chosen first, did not meet this
-  standard; the width of 3 was chosen after seeing these results.
-- On the tumour slides of the manuscript, the fringe peak equals the dip on every whole slide but
-  one, where it is one location away, and is within one location of it in every region where
+- On lung tissue imaged by Xenium and Visium HD on the same section (four cores and two whole
+  sections), the Xenium nuclei show where the nuclei lie. The dip of the nuclei segmented from the
+  H&E image lay there in all four cores. On both whole sections it lay there but was not stable,
+  and the ring gave that shift.
+- Region by region, with nuclei from the H&E image or imaged by Xenium, the ring was never two or
+  more locations from the true shift where it passed. On the cores and the first whole section,
+  where the dip did not pass, the ring gave a shift in 7 of 44 cases, 6 of them exactly right. Its
+  width of 3 locations was chosen after seeing these results (a width of 1 location, chosen first,
+  did not meet this standard); on the second whole section, tested afterwards, it gave a shift in
+  5 of 29 such cases, all exactly right.
+- On the tumour slides of the manuscript, the peak of the ring equals the dip on every whole slide
+  but one, where it is one location away, and is within one location of it in every region where
   both pass.
-- On the public kidney and mouse-brain slides, which have no dip, the fringe peak moves with its
-  width, and the peak of the nuclei is within one location of Space Ranger 4's registration. No
-  independent reference has tested either there, and Space Ranger 4's registration also uses
-  the counts.
 
-Treat a shift from either fallback as a hypothesis to check against an independent reference,
-such as nuclei imaged on the same section.
+Cautions:
+- The dip has been seen on colorectal, ovarian, lymph-node, prostate and lung tissue. On the public
+  kidney and mouse-brain slides we examined there was no dip, and the peak of the ring moved with
+  the width of the ring; at the default width the ring gives a shift of one location on the kidney
+  slide and no shift on the mouse-brain slide. No reference imaged on the same section has tested
+  the ring in these tissues. Do not use the shift of a slide whose status is not `usable`.
+- On lung cores measured on the same section by Xenium and Visium HD, the local dip lay at the true
+  shift, where the comparison against the shifts 3 to 5 locations away (the rule of versions 0.1
+  and 0.2) gave a shift one or two locations away.
+- Space Ranger 4.0 and later refine their registration against the counts by default, so agreement
+  between this check and Space Ranger's registration is not independent of the counts.
+- A cross-correlation peak between nuclei and counts lies on the rim of the dip, not at the
+  nuclei. Use the dip, or the ring.
+
+## Experimental: the peak of the nuclei
+
+For research only, and not part of the method of the STARgrid manuscript. `--fallback peak` (on
+`check` and `fit`) replaces the ring: where the surface of the nuclei has no dip at all, its
+highest stable peak is taken, and `method` says `peak (experimental)`; `peak_dy`, `peak_dx`,
+`peak_height` and `peak_share_within_one` are recorded whether or not it passes. An unstable dip
+never falls back to it, because the highest peak then lies on the rim of the dip. On the public
+kidney and mouse-brain slides it lies within one location of Space Ranger 4's registration, which
+also uses the counts; no independent reference has tested it.
+
+## Changes in 0.4.0
+
+- The ring is used by default where the dip is not usable (`--fallback ring`, `--ring-width 3`).
+  In 0.3.0 it was off by default (`--experimental-fallback fringe`); `--fallback none` gives the
+  0.3.0 default. Where the dip is usable, results are unchanged.
+- The highest peak is chosen by its height (the mean count over the median at its eight
+  neighbours, minus one), as in the manuscript's analysis; 0.3.0 chose it on the reciprocal of the
+  surface, which can pick a different peak in a few resamples.
+- `status` is `usable` or `not registered`; the dip's own status is now `dip_status` and the ring's
+  `ring_status`. `method` is `dip`, `ring` or `peak (experimental)`.
+- Renamed: the ring's `peak_*` fields to `ring_*`, `fringe_width` to `ring_width`,
+  `ring_contrast_at_dip` to `contrast_at_dip`; in the Python interface `dip.fringe_mask` to
+  `dip.ring_mask`, `dip.FRINGE` to `dip.RING_WIDTH`, `dip.RING` to `dip.CONTRAST_RING`, and the
+  `fringe` and `fringe_width` arguments of `dip.assess` and `dip.regions` to `ring` and
+  `ring_width`.
 
 ## Citation
 
