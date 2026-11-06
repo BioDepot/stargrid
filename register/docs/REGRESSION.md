@@ -4,6 +4,11 @@ The package was run on the inputs of the accepted analysis runs of the STARgrid 
 output compared with their records. The inputs (count matrices, tissue flags, nucleus label images
 and registrations) are not distributed here; the tests in `tests/` use synthetic slides.
 
+The results below are those of versions 0.1.0 and 0.2.0, which chose the shift by the contrast
+against a ring of shifts. From version 0.3.0 the shift is the deepest local dip, accepted when it
+is stable under block resampling (see the README). The experimental fallbacks of 0.3.0
+(`--experimental-fallback`) are off by default and change none of these results.
+
 ## Ovarian slide (H1-YQJBZ7X/D1), whole slide (version 0.1.0, 2026-10-18)
 
 Counts: STARgrid `hard` totals at 2 µm. Tissue: the 2 µm `tissue_positions.parquet` of the

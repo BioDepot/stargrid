@@ -40,15 +40,17 @@ def _distance_um(dy, dx):
 
 def check(a):
     counts, tissue, nuclei = _load(a)
-    surface = dip.shift_surface(nuclei, counts, tissue, a.radius)
-    whole = dip.feature(surface, a.radius, a.search)
+    whole, surface = dip.assess(nuclei, counts, tissue, search=a.search, draws=a.draws, seed=a.seed,
+                                fallback=a.experimental_fallback, fringe_width=a.fringe_width)
+    whole['nucleus_locations_in_tissue'] = int((nuclei & tissue).sum())
     whole['offset_um'] = _distance_um(whole['dy'], whole['dx'])
-    result = dict(tool=f'stargrid-register {__version__}', step='check',
-                  nucleus_locations_in_tissue=int((nuclei & tissue).sum()), whole=whole,
-                  local_dip=dip.local_dip(surface, a.radius, a.search),
-                  contrast_at_zero=dip.contrast(surface, 0, 0, a.radius))
+    result = dict(tool=f'stargrid-register {__version__}', step='check', whole=whole)
+    if a.experimental_fallback:
+        result.update(experimental_fallback=a.experimental_fallback, fringe_width=a.fringe_width)
     if a.divisions:
-        rows, _ = dip.regions(nuclei, counts, tissue, divisions=a.divisions)
+        rows, _ = dip.regions(nuclei, counts, tissue, divisions=a.divisions, search=a.search,
+                              draws=a.draws, seed=a.seed, fallback=a.experimental_fallback,
+                              fringe_width=a.fringe_width)
         result['regions'] = rows
         usable = [r for r in rows if r['usable']]
         result['usable_regions'] = len(usable)
@@ -66,7 +68,8 @@ def refine(a):
 
 def fit(a):
     counts, tissue, nuclei = _load(a)
-    rows, _ = dip.regions(nuclei, counts, tissue, divisions=a.divisions)
+    rows, _ = dip.regions(nuclei, counts, tissue, divisions=a.divisions, draws=a.draws, seed=a.seed,
+                          fallback=a.experimental_fallback, fringe_width=a.fringe_width)
     model = affine.fit_regions(rows)
     final = model.get('final_fit') or model.get('training_fit')
     corners = {}
@@ -76,8 +79,11 @@ def fit(a):
                              'bottom_left': (w, 0), 'bottom_right': (w, w)}.items():
             d = affine.displacement(final['coefficients'], r, c)
             corners[name] = dict(displacement_squares=d.tolist(), magnitude_um=float(2 * np.linalg.norm(d)))
-    return dict(tool=f'stargrid-register {__version__}', step='fit', regions=rows, fit=model,
-                displacement_at_locations=corners)
+    result = dict(tool=f'stargrid-register {__version__}', step='fit', regions=rows, fit=model,
+                  displacement_at_locations=corners)
+    if a.experimental_fallback:
+        result.update(experimental_fallback=a.experimental_fallback, fringe_width=a.fringe_width)
+    return result
 
 
 def apply(a):
@@ -115,17 +121,30 @@ def place(a):
                 image_scale=a.image_scale, image_to_labels=frame)
 
 
+_FALLBACK = ('experimental, for research: "fringe", where there is no usable dip, the highest stable peak '
+             'of the band around the nuclei; "peak", where there is no dip at all, the highest stable peak '
+             'of the nuclei. Neither has been tested against an independent reference in a tissue without a dip')
+
+
+def _fallback_options(p):
+    p.add_argument('--experimental-fallback', choices=dip.FALLBACKS, default=None, help=_FALLBACK)
+    p.add_argument('--fringe-width', type=int, default=dip.FRINGE,
+                   help='width of the band around the nuclei for --experimental-fallback fringe, in locations')
+
+
 def main(argv=None):
     p = argparse.ArgumentParser(prog='stargrid-register', description=__doc__)
     p.add_argument('--version', action='version', version=f'%(prog)s {__version__}')
     sub = p.add_subparsers(dest='step', required=True)
 
-    c = sub.add_parser('check', help='where the nuclei lie relative to the counts (the dip)')
+    c = sub.add_parser('check', help='where the nuclei lie relative to the counts (the dip), if there is one')
     _common(c)
-    c.add_argument('--radius', type=int, default=dip.RADIUS)
-    c.add_argument('--search', type=int, default=dip.SEARCH)
+    c.add_argument('--search', type=int, default=dip.SEARCH, help='largest shift searched, in locations')
+    c.add_argument('--draws', type=int, default=dip.DRAWS, help='spatial-block resamples for the stability test')
+    c.add_argument('--seed', type=int, default=dip.SEED)
     c.add_argument('--divisions', type=int, default=5, help='regions per axis; 0 for the whole slide only')
     c.add_argument('--surface', type=Path, help='also save the shift surface (.npy)')
+    _fallback_options(c)
 
     r = sub.add_parser('refine', help='confirm with band-pass cross-correlation or mutual information')
     _common(r)
@@ -135,6 +154,9 @@ def main(argv=None):
     f = sub.add_parser('fit', help='fit a displacement that varies linearly across the slide')
     _common(f)
     f.add_argument('--divisions', type=int, default=5)
+    f.add_argument('--draws', type=int, default=dip.DRAWS, help='spatial-block resamples for the stability test')
+    f.add_argument('--seed', type=int, default=dip.SEED)
+    _fallback_options(f)
 
     ap = sub.add_parser('apply', help='move a nucleus label grid by a shift or a fitted affine displacement')
     ap.add_argument('--nuclei', type=Path, required=True)
