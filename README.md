@@ -46,6 +46,7 @@ control.
 |---|---|---|
 | Place the microscope image on the capture grid | `native/` (`visium_hd_capture_grid`, `visium_hd_register`, `visium_hd_tiff_decimate`) | C++, built with CMake. Uses the images only, no counts. See the warning below. |
 | Detect nuclei in the H&E image | `scripts/publication/segment_hd_he_cellpose.py`, `publication/methods/cellpose_profiles.yaml`, `containers/cellpose-paper/`; `scripts/segment_hd_he_stardist.py` | Cellpose, and StarDist at the settings of one published tool. Which detector and settings to prefer is still being evaluated. |
+| Place the nuclei on the grid, check them against the counts and correct them: the pipeline steps | `native/` (`visium_hd_count_register`: `project`, `check`, `correct`) | C++, parallel. The same results as `stargrid-register` 0.6.0, including its spatial-block resamples. The core needs only the C++ standard library, so it can be built into STAR; reading and writing the files needs zlib and zstd. |
 | Check where the nuclei lie relative to the counts | `register/` (the Python package `stargrid-register`: `check`, `refine`, `place`) | Works from output files: a count for each 2 µm capture location, the tissue flags and a nucleus mask. Reproduces the manuscript's runs, which used `scripts/measure_hd_qc_reference.py`. See `register/README.md`. |
 | Move nuclei into register | `register/` (`stargrid-register fit`, `apply`) | A shift by whole capture locations, or a displacement that varies linearly across the slide, fitted on some regions and checked on the others. The manuscript's runs used `scripts/publication/hd_mask_shift.py`, `fit_hd_mask_affine.py` and `check_hd_mask_affine.py`. |
 | Quality measures for a slide | `scripts/measure_hd_qc_reference.py`, `scripts/summarize_hd_qc_reference.py` | Counts beyond the tissue and their decay with distance; the contrast of counts under nuclei. |
@@ -137,8 +138,10 @@ cmake --build build -j
 ctest --test-dir build
 ```
 
-Add `-DVISIUM_HD_BUILD_READ_TOOLS=ON` for the read-level comparison tools, which also need htslib
-and zlib. The segmentation scripts need Cellpose or StarDist; the container definition in
+The registration check and correction from the counts (`visium_hd_count_register`) need only zlib
+and zstd; `-DVISIUM_HD_BUILD_REGISTRATION=OFF` builds them without OpenCV and libtiff. Add
+`-DVISIUM_HD_BUILD_READ_TOOLS=ON` for the read-level comparison tools, which also need htslib and
+zlib. The segmentation scripts need Cellpose or StarDist; the container definition in
 `containers/cellpose-paper/` records the Cellpose environment we used.
 
 Run the Python tests from a git checkout: some tools record the source revision in their output.
