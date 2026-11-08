@@ -1,7 +1,7 @@
-"""A displacement that varies linearly across the slide, fitted to regional dips.
+"""A displacement that varies linearly across the slide, fitted to regional shifts.
 
-The model is [dy, dx] = [1, row, col] @ coefficients, fitted to the regions where the dip is
-resolved. It is fitted to alternate regions (a checkerboard of the division) and accepted only if
+The model is [dy, dx] = [1, row, col] @ coefficients, fitted to the regions where the shift is
+usable. It is fitted to alternate regions (a checkerboard of the division) and accepted only if
 it predicts at least 75% of the regions left out to within one location; the accepted model is then
 refitted to all usable regions. One round of outlier rejection (residual above two locations on
 either axis) is allowed in each fit.
@@ -33,7 +33,7 @@ def fit_once_with_rejection(rows):
 
 
 def fit_regions(rows, *, minimum_final=12, held_out_tolerance=1, minimum_held_out_fraction=.75):
-    """Fit, test on held-out regions, and refit; `rows` as returned by dip.regions."""
+    """Fit, test on held-out regions, and refit; `rows` as returned by ratio.regions."""
     usable = [r for r in rows if r['usable']]
     train = [r for r in usable if (r['row'] + r['col']) % 2 == 0]
     held = [r for r in usable if (r['row'] + r['col']) % 2 == 1]

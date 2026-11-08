@@ -4,7 +4,9 @@ The package was run on the inputs of the accepted analysis runs of the STARgrid 
 output compared with their records. The inputs (count matrices, tissue flags, nucleus label images
 and registrations) are not distributed here; the tests in `tests/` use synthetic slides.
 
-The first results below are those of version 0.5.0, which takes the shift from the deepest stable
+The first results below are those of version 0.6.0, which takes the shift from the correlation ratio of
+the counts, divided by their local mean, on bands of distance from the nucleus edge (see the README); then
+those of version 0.5.0, which takes the shift from the deepest stable
 dip, from the highest stable peak of the ring where a dip is present but not usable and, with
 `--disk`, from the highest stable peak of the disk, the nuclei and their ring together, where
 there is no dip (see the README); then
@@ -12,6 +14,21 @@ those of version 0.4.0, which used the ring wherever the dip was not usable. The
 against the shifts 3 to 5 locations away; from version 0.3.0 the shift is the deepest local dip,
 accepted when it is stable under block resampling. The dip is usable on the whole ovarian slide
 and in every region of the SPATCH slide, so neither the ring nor the disk is used there.
+
+## The correlation ratio (version 0.6.0, 2026-11-08)
+
+The package at its defaults (window of the local mean 5 × 5 locations) was run on the same 448
+surfaces as 0.5.0 (below) and compared with the manuscript's analysis of the correlation ratio, which
+computed it for windows of several sizes with a direct loop over the band locations. On every surface it
+gave that analysis's result for the 5 × 5 window: whether there is a local maximum, its shift, its share
+of resamples within one location, whether it is usable, and the correlation ratio at the shift and at
+zero; its correlation-ratio surface matched the analysis's to within 10⁻⁶ of the surface's range. A
+shift is given on 427 of the 448 surfaces. There were no differences. A whole slide takes about 4 s.
+
+```sh
+stargrid-register check --counts square_totals.npz --tissue tissue_positions.parquet \
+    --nuclei grid_labels.npz --out check.json
+```
 
 ## The dip, the ring and the disk (version 0.5.0, 2026-11-08)
 

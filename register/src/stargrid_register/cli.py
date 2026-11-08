@@ -9,7 +9,7 @@ from pathlib import Path
 
 import numpy as np
 
-from . import __version__, affine, dip, io, methods, transform
+from . import __version__, affine, dip, io, methods, ratio, transform
 
 
 def _common(p):
@@ -40,16 +40,14 @@ def _distance_um(dy, dx):
 
 def check(a):
     counts, tissue, nuclei = _load(a)
-    whole, surface = dip.assess(nuclei, counts, tissue, search=a.search, draws=a.draws, seed=a.seed,
-                                fallback=a.fallback, disk=a.disk, ring_width=a.ring_width)
+    whole, surface = ratio.assess(nuclei, counts, tissue, search=a.search, draws=a.draws, seed=a.seed,
+                                  baseline=a.baseline)
     whole['nucleus_locations_in_tissue'] = int((nuclei & tissue).sum())
     whole['offset_um'] = _distance_um(whole['dy'], whole['dx'])
-    result = dict(tool=f'stargrid-register {__version__}', step='check', fallback=a.fallback,
-                  disk=a.disk, ring_width=a.ring_width, whole=whole)
+    result = dict(tool=f'stargrid-register {__version__}', step='check', baseline=a.baseline, whole=whole)
     if a.divisions:
-        rows, _ = dip.regions(nuclei, counts, tissue, divisions=a.divisions, search=a.search,
-                              draws=a.draws, seed=a.seed, fallback=a.fallback, disk=a.disk,
-                              ring_width=a.ring_width)
+        rows, _ = ratio.regions(nuclei, counts, tissue, divisions=a.divisions, search=a.search,
+                                draws=a.draws, seed=a.seed, baseline=a.baseline)
         result['regions'] = rows
         usable = [r for r in rows if r['usable']]
         result['usable_regions'] = len(usable)
@@ -67,8 +65,8 @@ def refine(a):
 
 def fit(a):
     counts, tissue, nuclei = _load(a)
-    rows, _ = dip.regions(nuclei, counts, tissue, divisions=a.divisions, draws=a.draws, seed=a.seed,
-                          fallback=a.fallback, disk=a.disk, ring_width=a.ring_width)
+    rows, _ = ratio.regions(nuclei, counts, tissue, divisions=a.divisions, draws=a.draws, seed=a.seed,
+                            baseline=a.baseline)
     model = affine.fit_regions(rows)
     final = model.get('final_fit') or model.get('training_fit')
     corners = {}
@@ -78,8 +76,8 @@ def fit(a):
                              'bottom_left': (w, 0), 'bottom_right': (w, w)}.items():
             d = affine.displacement(final['coefficients'], r, c)
             corners[name] = dict(displacement_squares=d.tolist(), magnitude_um=float(2 * np.linalg.norm(d)))
-    return dict(tool=f'stargrid-register {__version__}', step='fit', fallback=a.fallback,
-                disk=a.disk, ring_width=a.ring_width, regions=rows, fit=model, displacement_at_locations=corners)
+    return dict(tool=f'stargrid-register {__version__}', step='fit', baseline=a.baseline,
+                regions=rows, fit=model, displacement_at_locations=corners)
 
 
 def apply(a):
@@ -117,17 +115,10 @@ def place(a):
                 image_scale=a.image_scale, image_to_labels=frame)
 
 
-_FALLBACK = ('what gives the shift where a dip is present but not usable: "ring" (the default), the highest '
-             'stable peak of the ring of locations around the nuclei; "none", no shift')
-_DISK = ('where there is no dip at all, take the highest stable peak of the mean count under the nuclei and '
-         'their ring together (the disk); without it there is no shift there and the first registration stands')
-
-
-def _fallback_options(p):
-    p.add_argument('--fallback', choices=dip.FALLBACKS, default='ring', help=_FALLBACK)
-    p.add_argument('--disk', action='store_true', help=_DISK)
-    p.add_argument('--ring-width', type=int, default=dip.RING_WIDTH,
-                   help='width of the ring around the nuclei, also used for the disk, in locations (default 3, that is 6 um)')
+def _baseline_option(p):
+    p.add_argument('--baseline', type=int, default=ratio.BASELINE,
+                   help='half-width of the window whose mean count each count is divided by, in locations '
+                        '(default 2: 5 x 5 locations, +-4 um)')
 
 
 def main(argv=None):
@@ -135,14 +126,14 @@ def main(argv=None):
     p.add_argument('--version', action='version', version=f'%(prog)s {__version__}')
     sub = p.add_subparsers(dest='step', required=True)
 
-    c = sub.add_parser('check', help='where the nuclei lie relative to the counts: the dip, or the ring where the dip is weak')
+    c = sub.add_parser('check', help='where the nuclei lie relative to the counts: the profile of counts across the nucleus edge')
     _common(c)
     c.add_argument('--search', type=int, default=dip.SEARCH, help='largest shift searched, in locations')
     c.add_argument('--draws', type=int, default=dip.DRAWS, help='spatial-block resamples for the stability test')
     c.add_argument('--seed', type=int, default=dip.SEED)
     c.add_argument('--divisions', type=int, default=5, help='regions per axis; 0 for the whole slide only')
-    c.add_argument('--surface', type=Path, help='also save the shift surface (.npy)')
-    _fallback_options(c)
+    c.add_argument('--surface', type=Path, help='also save the correlation-ratio surface (.npy)')
+    _baseline_option(c)
 
     r = sub.add_parser('refine', help='confirm with band-pass cross-correlation or mutual information')
     _common(r)
@@ -154,7 +145,7 @@ def main(argv=None):
     f.add_argument('--divisions', type=int, default=5)
     f.add_argument('--draws', type=int, default=dip.DRAWS, help='spatial-block resamples for the stability test')
     f.add_argument('--seed', type=int, default=dip.SEED)
-    _fallback_options(f)
+    _baseline_option(f)
 
     ap = sub.add_parser('apply', help='move a nucleus label grid by a shift or a fitted affine displacement')
     ap.add_argument('--nuclei', type=Path, required=True)
@@ -186,7 +177,7 @@ def main(argv=None):
     result = {'check': check, 'refine': refine, 'fit': fit, 'apply': apply, 'place': place}[a.step](a)
     a.out.write_text(json.dumps(result, indent=2, allow_nan=False) + '\n')
     summary = result.get('whole') or result.get('fit') or {k: v for k, v in result.items() if k != 'regions'}
-    print(json.dumps({k: v for k, v in summary.items() if k not in ('ring_profile', 'regions', 'held_out')},
+    print(json.dumps({k: v for k, v in summary.items() if k not in ('profile', 'regions', 'held_out')},
                      default=str)[:2000])
     return 0
 

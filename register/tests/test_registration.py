@@ -1,11 +1,11 @@
-"""Synthetic tests: a known displacement between nuclei and the dip in the counts is recovered."""
+"""Synthetic tests: a known displacement between nuclei and the pattern of counts around them is recovered."""
 import json
 
 import numpy as np
 import pandas as pd
 import pytest
 
-from stargrid_register import affine, cli, dip, io, methods, transform
+from stargrid_register import affine, cli, dip, io, methods, ratio, transform
 
 
 def slide(width=360, n=900, radius=3, shift=(0, 0), field=None, seed=1, base=12.0, dip_fraction=0.3):
@@ -106,21 +106,11 @@ def test_peaks_finds_the_highest_peak():
     assert height[0] == pytest.approx(surface[15, 12] / np.median(np.delete(surface[14:17, 11:14].ravel(), 4)) - 1)
 
 
-def test_pure_peak_is_reported_as_no_dip_on_a_slide():
-    """Counts higher under nuclei and not around them: no usable dip or ring, no shift by default."""
-    labels, counts, tissue = slide(shift=(-2, 1), dip_fraction=-0.5)
-    result, _ = dip.assess(labels > 0, counts, tissue, search=8, draws=100)
-    assert not result['usable'] and result['dy'] is None and result['dx'] is None
-    assert result['status'] == 'not registered' and result['method'] is None
-    assert result['dip_status'] in ('no dip', 'unstable') and result.get('ring_status') in (None, 'no peak', 'unstable')
-    assert 'disk_status' not in result
-
-
-def lattice_slide(width=360, spacing=36, radius=3, shift=(-2, 1), under=18, band=0):
+def lattice_slide(width=360, spacing=36, radius=3, shift=(-2, 1), under=18, band=0, around=None):
     """Nuclei on a lattice, and noise-free counts that are `under` on the nuclei moved by `shift`
-    and on a band of `band` locations around them, 12 elsewhere.
+    and `around` (default `under`) on a band of `band` locations around them, 12 elsewhere.
 
-    The shift surface is flat away from the planted shift, so it has a peak and no dip at all.
+    With `around` equal to `under` the mean count under the nuclei has a peak and no dip at all.
     """
     labels = np.zeros((width, width), np.int32)
     reach = radius + band
@@ -132,103 +122,9 @@ def lattice_slide(width=360, spacing=36, radius=3, shift=(-2, 1), under=18, band
                                 for c in range(spacing, width - spacing, spacing)), start=1):
         labels[r - reach:r + reach + 1, c - reach:c + reach + 1][disc] = k
         moved = counts[r + shift[0] - reach:r + shift[0] + reach + 1, c + shift[1] - reach:c + shift[1] + reach + 1]
-        moved[high] = under
+        moved[high] = under if around is None else around
+        moved[disc] = under
     return labels, counts, np.ones((width, width), bool)
-
-
-def edge_dip_slide(width=360, spacing=36, radius=3, dip_at=(-8, 0), peak_at=(-3, 2)):
-    """Nuclei on a lattice, and noise-free counts that are low on the nuclei moved by `dip_at` and
-    high on the nuclei moved by `peak_at`: with a search of 8, the only dip lies on its edge."""
-    labels = np.zeros((width, width), np.int32)
-    yy, xx = np.mgrid[-radius:radius + 1, -radius:radius + 1]
-    disc = (yy ** 2 + xx ** 2) <= radius ** 2
-    counts = np.full((width, width), 12.0)
-    for k, (r, c) in enumerate(((r, c) for r in range(spacing, width - spacing, spacing)
-                                for c in range(spacing, width - spacing, spacing)), start=1):
-        labels[r - radius:r + radius + 1, c - radius:c + radius + 1][disc] = k
-        for (dy, dx), value in ((dip_at, 6.0), (peak_at, 18.0)):
-            counts[r + dy - radius:r + dy + radius + 1, c + dx - radius:c + dx + radius + 1][disc] = value
-    return labels, counts, np.ones((width, width), bool)
-
-
-def test_ring_is_used_where_the_dip_is_present_but_not_usable():
-    """A dip on the edge of the search is present but not usable, so the ring is measured; here the
-    ring mask passed in is the nucleus mask itself, whose highest peak is interior."""
-    labels, counts, tissue = edge_dip_slide()
-    nuc = labels > 0
-    on, _ = dip.assess(nuc, counts, tissue, search=8, draws=60, ring=nuc, ring_width=2)
-    assert on['dip_status'] == 'unstable' and (on['candidate_dy'], on['candidate_dx']) == (-8, 0)
-    assert on['ring_status'] == 'usable' and on['status'] == 'usable' and on['method'] == 'ring'
-    assert (on['dy'], on['dx']) == (-3, 2) and on['ring_share_within_one'] == 1 and 'disk_status' not in on
-    with_disk, _ = dip.assess(nuc, counts, tissue, search=8, draws=60, ring=nuc, ring_width=2, disk=True)
-    assert {**with_disk, 'disk': None} == {**on, 'disk': None}
-    off, _ = dip.assess(nuc, counts, tissue, search=8, draws=60, fallback='none')
-    assert off['status'] == 'not registered' and off['dy'] is None and 'ring_status' not in off
-
-
-def test_no_dip_keeps_the_first_registration_unless_the_disk_is_asked_for():
-    """Counts high on the nuclei and the ring around them: no dip. The ring is not used, and the
-    disk, the nuclei and their ring together, peaks at the shift when asked for."""
-    labels, counts, tissue = lattice_slide(band=3)
-    default, _ = dip.assess(labels > 0, counts, tissue, search=8, draws=60, ring_width=2)
-    assert default['dip_status'] == 'no dip' and default['status'] == 'not registered' and default['dy'] is None
-    assert 'ring_status' not in default and 'disk_status' not in default and not default['disk']
-    assert default['reason'] == 'no dip; the first registration stands'
-    on, _ = dip.assess(labels > 0, counts, tissue, search=8, draws=60, disk=True)
-    assert on['disk_status'] == 'usable' and on['status'] == 'usable' and on['method'] == 'disk' and on['disk']
-    assert (on['dy'], on['dx']) == (-2, 1) and on['disk_height'] > 0 and on['disk_share_within_one'] == 1
-    assert 'ring_status' not in on and on['ring_width'] == 3
-
-
-def test_disk_sums_are_those_of_the_nuclei_plus_the_ring():
-    """The disk uses the sums of the dip and of the ring: the same as moving the nuclei and their
-    ring as one mask."""
-    labels, counts, tissue = slide(shift=(-2, 1), seed=3)
-    nuc = labels > 0
-    ring = dip.ring_mask(nuc, 3)
-    blocks = dip.blocks_for(tissue, (0, nuc.shape[0], 0, nuc.shape[1]))
-    both = dip.block_sums(nuc, counts, tissue, blocks) + dip.block_sums(ring, counts, tissue, blocks)
-    assert not (nuc & ring).any() and np.array_equal(both, dip.block_sums(nuc | ring, counts, tissue, blocks))
-
-
-def test_unknown_fallback_is_refused():
-    labels, counts, tissue = lattice_slide()
-    for fallback in ('fringe', 'peak'):
-        with pytest.raises(ValueError):
-            dip.assess(labels > 0, counts, tissue, search=8, draws=10, fallback=fallback)
-
-
-@pytest.mark.parametrize('options', [dict(fallback='ring'), dict(disk=True)])
-def test_fallbacks_are_not_used_where_there_is_a_usable_dip(options):
-    labels, counts, tissue = slide(shift=(-2, 1), seed=7)
-    off, _ = dip.assess(labels > 0, counts, tissue, search=8, draws=60, fallback='none')
-    on, _ = dip.assess(labels > 0, counts, tissue, search=8, draws=60, **options)
-    assert {**on, 'fallback': None, 'disk': None} == {**off, 'fallback': None, 'disk': None} and on['method'] == 'dip'
-
-
-def test_noise_dip_is_unstable_and_rejected():
-    rng = np.random.default_rng(5)
-    width = 360
-    labels = np.zeros((width, width), np.int32)
-    centres = rng.integers(20, width - 20, size=(900, 2))
-    for k, (r, c) in enumerate(centres, start=1):
-        labels[r - 2:r + 3, c - 2:c + 3] = k
-    counts = rng.poisson(12.0, size=(width, width)).astype(float)
-    result, _ = dip.assess(labels > 0, counts, np.ones((width, width), bool), search=8, draws=100)
-    assert not result['usable'] and result['dy'] is None and result['status'] == 'not registered'
-    assert result['dip_status'] in ('no dip', 'unstable') and result.get('ring_status') in (None, 'no peak', 'unstable')
-
-
-def test_assessment_is_deterministic_in_the_seed():
-    labels, counts, tissue = slide(shift=(-2, 1), seed=7)
-    a, _ = dip.assess(labels > 0, counts, tissue, search=8, draws=60)
-    b, _ = dip.assess(labels > 0, counts, tissue, search=8, draws=60)
-    c, _ = dip.assess(labels > 0, counts, tissue, search=8, draws=60, seed=1)
-    assert a == b
-    assert (a['dy'], a['dx']) == (-2, 1) and a['status'] == 'usable' and a['method'] == 'dip'
-    assert a['share_exact'] <= a['share_within_one'] <= a['share_any_dip'] <= 1
-    assert a['depth_lo'] <= a['depth_hi']
-    assert (c['dy'], c['dx']) == (-2, 1)
 
 
 def test_block_sums_match_the_whole_surface():
@@ -240,11 +136,86 @@ def test_block_sums_match_the_whole_surface():
     assert np.allclose(whole, dip.shift_surface(nuc, counts, tissue, 6), rtol=0, atol=1e-12)
 
 
-def test_dip_on_the_search_edge_is_not_usable():
+def test_band_labels_follow_the_distance_from_the_nucleus_edge():
+    nuc = np.zeros((21, 21), bool)
+    nuc[5:16, 5:16] = True
+    labels = ratio.band_labels(nuc)
+    assert labels[10, 10] == 0 and labels[6, 10] == 1 and labels[5, 10] == 2      # 6, 2 and 1 from the edge
+    assert [labels[10, 15 + k] for k in range(1, 6)] == [3, 4, 5, 6, 7]            # 1 to 5 outside
+    assert labels[0, 0] == -1 and labels[4, 4] == 4                                 # far; sqrt(2) outside
+
+
+def test_band_sums_match_direct_sums():
+    """Each supported location in a block counts under the band that the shift brings onto it."""
+    labels, counts, tissue = slide(width=140, n=60, shift=(1, -2), seed=2)
+    tissue[:, :9] = False
+    bands, values = ratio.band_labels(labels > 0), ratio.corrected(counts, tissue)
+    bounds = (20, 120, 10, 130)
+    blocks = dip.blocks_for(tissue, bounds, block=50, margin=5)
+    stats, totals = ratio.band_sums(bands, values, tissue, blocks, radius=5)
+    ys, xs = np.mgrid[bounds[0]:bounds[1], bounds[2]:bounds[3]]
+    inside = tissue[ys, xs]
+    v = values[ys, xs][inside]
+    assert np.allclose(totals.sum(0), [inside.sum(), v.sum(), (v ** 2).sum()])
+    for dy, dx in [(0, 0), (1, -2), (-5, 4)]:
+        source = bands[ys - dy, xs - dx]
+        k = (5 + dy) * 11 + 5 + dx
+        for b in range(len(ratio.BANDS)):
+            hit = inside & (source == b)
+            assert stats[k, :, b, 0].sum() == hit.sum()
+            assert stats[k, :, b, 1].sum() == pytest.approx(values[ys, xs][hit].sum(), rel=1e-12, abs=1e-9)
+
+
+@pytest.mark.parametrize('form', ['dip', 'ring', 'disk'])
+def test_ratio_finds_each_form_of_the_pattern(form):
+    """Fewer counts under the nuclei (the dip), more just around them (the ring), or more under the
+    nuclei and their ring (the disk, with no dip): one measure finds the shift in each."""
+    if form == 'dip':
+        labels, counts, tissue = slide(shift=(-2, 1), seed=7)
+    elif form == 'ring':
+        labels, counts, tissue = lattice_slide(band=3, under=12, around=18)
+    else:
+        labels, counts, tissue = lattice_slide(band=3)
+    result, surface = ratio.assess(labels > 0, counts, tissue, search=8, draws=60)
+    assert result['status'] == 'usable' and result['method'] == 'correlation ratio'
+    assert (result['dy'], result['dx']) == (-2, 1) and result['share_within_one'] >= 0.95
+    assert result['eta2'] == pytest.approx(np.nanmax(surface[1:-1, 1:-1])) and result['eta2'] > result['eta2_at_zero']
+    profile = result['profile']
+    assert list(profile) == list(ratio.BANDS) + ['far']
+    if form == 'dip':
+        assert profile['I3'] < profile['O2']
+    elif form == 'ring':
+        assert profile['O2'] > profile['I3'] and profile['O2'] > profile['far']
+    else:                         # within the disk the counts are level; the contrast is at its edge
+        assert profile['O3'] > profile['far'] > profile['O4']
+
+
+def test_noise_is_not_registered():
+    rng = np.random.default_rng(5)
+    width = 360
+    labels = np.zeros((width, width), np.int32)
+    for k, (r, c) in enumerate(rng.integers(20, width - 20, size=(900, 2)), start=1):
+        labels[r - 2:r + 3, c - 2:c + 3] = k
+    counts = rng.poisson(12.0, size=(width, width)).astype(float)
+    result, _ = ratio.assess(labels > 0, counts, np.ones((width, width), bool), search=8, draws=100)
+    assert not result['usable'] and result['dy'] is None and result['status'] == 'not registered'
+
+
+def test_shift_on_the_search_edge_is_not_usable():
     labels, counts, tissue = slide(shift=(-8, 0))
-    result, _ = dip.assess(labels > 0, counts, tissue, search=8, draws=60)
-    assert not result['usable'] and result['dy'] is None and result['dip_status'] == 'unstable'
-    assert result['status'] == 'not registered' and result['reason'].startswith('deepest dip on the edge')
+    result, _ = ratio.assess(labels > 0, counts, tissue, search=8, draws=60)
+    assert not result['usable'] and result['dy'] is None and (result['candidate_dy'], result['candidate_dx']) == (-8, 0)
+    assert result['status'] == 'not registered' and result['reason'] == 'highest maximum on the edge of the search'
+
+
+def test_assessment_is_deterministic_in_the_seed():
+    labels, counts, tissue = slide(shift=(-2, 1), seed=7)
+    a, _ = ratio.assess(labels > 0, counts, tissue, search=8, draws=60)
+    b, _ = ratio.assess(labels > 0, counts, tissue, search=8, draws=60)
+    c, _ = ratio.assess(labels > 0, counts, tissue, search=8, draws=60, seed=1)
+    assert a == b
+    assert a['share_exact'] <= a['share_within_one'] <= a['share_any_peak'] <= 1
+    assert (c['dy'], c['dx']) == (-2, 1)
 
 
 @pytest.mark.parametrize('method', ['ncc', 'mi'])
@@ -261,7 +232,7 @@ def test_regions_and_affine_fit_recover_a_varying_displacement():
         return (-4 + 6 * r / width, 2 - 5 * c / width)
 
     labels, counts, tissue = slide(width=width, n=2600, field=field, seed=3)
-    rows, _ = dip.regions(labels > 0, counts, tissue, divisions=5, minimum=1500, search=8, draws=100)
+    rows, _ = ratio.regions(labels > 0, counts, tissue, divisions=5, minimum=1500, search=8, draws=100)
     assert sum(r['usable'] for r in rows) >= 20
     model = affine.fit_regions(rows, minimum_final=12)
     assert model['accepted'], model.get('stop_reason')
@@ -303,37 +274,24 @@ def test_command_line_check_and_fit(tmp_path):
     args = ['--counts', str(tmp_path / 'counts.npz'), '--tissue', str(tmp_path / 'tissue.npz'),
             '--nuclei', str(tmp_path / 'nuclei.npz'), '--width', '360']
     assert cli.main(['check', *args, '--divisions', '0', '--search', '8', '--draws', '100',
-                     '--out', str(tmp_path / 'check.json')]) == 0
+                     '--surface', str(tmp_path / 'surface.npy'), '--out', str(tmp_path / 'check.json')]) == 0
     result = json.loads((tmp_path / 'check.json').read_text())
-    assert result['whole']['status'] == 'usable' and result['whole']['method'] == 'dip'
-    assert result['fallback'] == 'ring' and result['ring_width'] == 3 and result['disk'] is False
-    assert (result['whole']['dy'], result['whole']['dx']) == (-2, -1)
-    assert result['whole']['share_within_one'] >= 0.95 and result['whole']['contrast_at_dip'] > 0
+    whole = result['whole']
+    assert whole['status'] == 'usable' and whole['method'] == 'correlation ratio' and result['baseline'] == 2
+    assert (whole['dy'], whole['dx']) == (-2, -1) and whole['share_within_one'] >= 0.95
+    assert whole['offset_um'] == pytest.approx(2 * np.hypot(2, 1))
+    assert np.load(tmp_path / 'surface.npy').shape == (19, 19)
+    assert cli.main(['check', *args, '--divisions', '0', '--search', '8', '--draws', '100', '--baseline', '4',
+                     '--out', str(tmp_path / 'check4.json')]) == 0
+    result = json.loads((tmp_path / 'check4.json').read_text())
+    assert result['baseline'] == 4 and (result['whole']['dy'], result['whole']['dx']) == (-2, -1)
     assert cli.main(['refine', *args, '--radius', '6', '--out', str(tmp_path / 'refine.json')]) == 0
     assert json.loads((tmp_path / 'refine.json').read_text())['integer_dy'] == -2
     assert cli.main(['apply', '--nuclei', str(tmp_path / 'nuclei.npz'), '--width', '360', '--shift=-2,-1',
                      '--out-grid', str(tmp_path / 'moved.npz'), '--out', str(tmp_path / 'apply.json')]) == 0
     moved = io.load_grid(tmp_path / 'moved.npz', 360)
-    f = dip.feature(dip.shift_surface(moved > 0, counts, tissue))
-    assert (f['dy'], f['dx']) == (0, 0)
-
-
-def test_command_line_check_uses_the_disk_only_where_asked(tmp_path):
-    labels, counts, tissue = lattice_slide(band=3)
-    np.savez(tmp_path / 'counts.npz', total=counts)
-    np.savez(tmp_path / 'tissue.npz', tissue=tissue)
-    np.savez(tmp_path / 'nuclei.npz', labels=labels)
-    args = ['check', '--counts', str(tmp_path / 'counts.npz'), '--tissue', str(tmp_path / 'tissue.npz'),
-            '--nuclei', str(tmp_path / 'nuclei.npz'), '--width', '360', '--divisions', '0', '--search', '8',
-            '--draws', '60']
-    assert cli.main([*args, '--disk', '--out', str(tmp_path / 'disk.json')]) == 0
-    result = json.loads((tmp_path / 'disk.json').read_text())
-    whole = result['whole']
-    assert result['disk'] is True and whole['method'] == 'disk' and (whole['dy'], whole['dx']) == (-2, 1)
-    assert whole['offset_um'] > 0
-    assert cli.main([*args, '--out', str(tmp_path / 'default.json')]) == 0
-    whole = json.loads((tmp_path / 'default.json').read_text())['whole']
-    assert whole['status'] == 'not registered' and whole['dy'] is None and whole['offset_um'] is None
+    again, _ = ratio.assess(moved > 0, counts, tissue, search=8, draws=60)
+    assert (again['dy'], again['dx']) == (0, 0)
 
 
 def test_other_methods_run_on_a_planted_shift():
