@@ -18,7 +18,7 @@ reproducing the results.
 | `io.mtx_totals`, `io.load_counts`, `io.load_grid`, `methods.register` | — | — | New |
 | `dip.local_dip`, `dip.dips`, `dip.depth_at` | — | — | New; the criterion of the manuscript's lung test (lower than all eight neighbouring shifts; depth against their median) |
 | `dip.blocks_for`, `dip.block_sums`, `dip.resample`, `dip.assess` | — | — | New in 0.3.0; the 100 × 100 location block resampling (200 draws, seed 20261007) of the manuscript's bootstrap, with exact block sums by FFT; the local dip replaces the ring rule for choosing and accepting the shift |
-| `dip.peak`, `dip.ring_mask` and the `fallback` option of `dip.assess` | — | — | New in 0.3.0 (experimental, off by default). From 0.4.0 the ring is used by default where the dip is not usable, as in the manuscript's method, and gives the manuscript's ring results (`docs/REGRESSION.md`); the peak of the nuclei (`fallback='peak'`) remains experimental |
+| `dip.peak`, `dip.ring_mask` and the `fallback` option of `dip.assess` | — | — | New in 0.3.0 (experimental, off by default). From 0.4.0 the ring is used by default where the dip is not usable, as in the manuscript's method, and gives the manuscript's ring results (`docs/REGRESSION.md`); from 0.5.0 only where a dip is present, with the optional disk (`disk=True`), the nuclei and their ring together, where there is none |
 | `dip.edge_distance_profile` | — | — | New, descriptive |
 | `transform.*` | — | — | New; the manuscript's runs moved masks with their own scoring code. `sampling="archived-floor"` follows the pixel convention of those runs |
 | C++ image registration | this repository's `native/` | commit e85a5de | Unchanged |

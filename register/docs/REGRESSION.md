@@ -4,12 +4,32 @@ The package was run on the inputs of the accepted analysis runs of the STARgrid 
 output compared with their records. The inputs (count matrices, tissue flags, nucleus label images
 and registrations) are not distributed here; the tests in `tests/` use synthetic slides.
 
-The first results below are those of version 0.4.0, which takes the shift from the deepest stable
-dip or, where the dip is not usable, from the highest stable peak of the ring (see the README).
-The later ones are those of versions 0.1.0 and 0.2.0, which chose the shift by the contrast
+The first results below are those of version 0.5.0, which takes the shift from the deepest stable
+dip, from the highest stable peak of the ring where a dip is present but not usable and, with
+`--disk`, from the highest stable peak of the disk, the nuclei and their ring together, where
+there is no dip (see the README); then
+those of version 0.4.0, which used the ring wherever the dip was not usable. The later ones are those of versions 0.1.0 and 0.2.0, which chose the shift by the contrast
 against the shifts 3 to 5 locations away; from version 0.3.0 the shift is the deepest local dip,
 accepted when it is stable under block resampling. The dip is usable on the whole ovarian slide
-and in every region of the SPATCH slide, so the ring of 0.4.0 is not used there.
+and in every region of the SPATCH slide, so neither the ring nor the disk is used there.
+
+## The dip, the ring and the disk (version 0.5.0, 2026-11-08)
+
+The package was run on the same 448 surfaces as 0.4.0 (below). It gave the analysis's dip on every
+surface; where a dip was present but not usable, its ring of width 3; and where there was no dip
+(20 surfaces), no shift at the defaults and, with `--disk`, the analysis's disk (whether it has a
+peak, its shift, its share of resamples within one location and whether it is usable). The
+package adds the sums of the nuclei to those of the ring, while the analysis moved the nuclei and
+the ring as one mask; the package's disk was also compared with the analysis on all 448 surfaces.
+The shift of the rule: the dip on 327 surfaces, the ring on 24 and no shift on 97; with `--disk`,
+the disk on 17 of the 20 surfaces without a dip. There were no differences.
+0.4.0 registered three surfaces by the ring that 0.5.0 leaves unregistered by default, all without a dip: the
+kidney slide as a whole and one of its regions, and one mouse-brain region.
+
+```sh
+stargrid-register check --counts square_totals.npz --tissue tissue_positions.parquet \
+    --nuclei grid_labels.npz --out check.json          # add --disk to use the disk where there is no dip
+```
 
 ## The dip and the ring (version 0.4.0, 2026-11-06)
 
