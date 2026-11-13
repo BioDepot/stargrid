@@ -32,9 +32,11 @@ colorectal Flex slide differs only where noted.
 - Linux on x86-64. Disk, for the ovarian slide: about 55 GB while the download unpacks and 35 GB
   after it, 13 GB for the genome index, and about 170 GB free in STAR's output folder, which STAR
   checks before it starts (its temporary files and the matrices; our run wrote 110 GB in all and
-  kept 28 GB of matrices). The colorectal slide needs less.
+  kept 28 GB of matrices). The colorectal slide needs less: about 76 GB free in the output folder,
+  and 22 GB for its probe cache in place of the genome index.
 - Memory: STAR holds the genome index in memory (about 14 GB) and needs at least 9 GB more; it uses
-  up to half of the free memory, and our ovarian run peaked at 30 GB. Building the genome index
+  up to half of the free memory. Our ovarian run peaked at 30 GB, our colorectal run at 28 GB (most
+  of it the probe cache). Building the genome index
   takes about 30 GB of memory and a quarter of an hour on 12 cores.
 - [STAR Suite](https://github.com/morphic-bio/STAR-suite) release 1.12.2 or later (the release
   binary), and a clone of its repository for the scripts.
@@ -93,8 +95,9 @@ STAR-suite/scripts/run_visium_hd.sh --mode flex --fastq-dir data/${P}_fastqs \
 
 The matrices are in `run/SpatialGex.out` (Flex: `run/SpatialFlex.out`), one folder for each
 resolution policy, each with `square_002um`, `square_008um` and `square_016um` in Matrix Market
-format. On 12 cores the ovarian run takes about two and a half hours. The manuscript reports the
-counts under the `hard` policy. Check that yours are the same as ours, file for file:
+format. On 12 cores the ovarian run takes about two and a half hours, and the colorectal run about
+three quarters of an hour, including building the probe cache. The manuscript reports the counts
+under the `hard` policy. Check that yours are the same as ours, file for file:
 
 ```sh
 (cd run/SpatialGex.out && sha256sum -c ../../stargrid/docs/expected/ovarian_hard.sha256)
@@ -141,11 +144,11 @@ GPU.
 
 **Checks we ran on these steps.** The genome index built with the command above is byte-identical
 to the manuscript's, and the barcode inputs that `run_visium_hd.sh` builds are byte-identical to
-ours. On the whole ovarian slide, `run_visium_hd.sh` writes the same matrices, under all four
-policies and at all three scales, as the manuscript's run. On 100,000-read subsets of the ovarian
-and colorectal slides it does the same; on the colorectal slide, with the probe cache it builds
-from the downloaded probe set and the 2020-A GTF. On the three slides of the manuscript's timing, the first stage of
-`run_registration.sh` gives the same transforms as the manuscript's runs.
+ours. On the whole ovarian and colorectal slides, `run_visium_hd.sh` writes the same matrices,
+under all four policies and at all three scales, as the manuscript's runs; on the colorectal
+slide, with the probe cache it builds from the downloaded probe set and the 2020-A GTF. On the
+three slides of the manuscript's timing, the first stage of `run_registration.sh` gives the same
+transforms as the manuscript's runs.
 
 ## What else is here
 
