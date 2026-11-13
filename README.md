@@ -36,8 +36,8 @@ colorectal Flex slide differs only where noted.
   and 22 GB for its probe cache in place of the genome index.
 - Memory: STAR holds the genome index in memory (about 14 GB) and needs at least 9 GB more; it uses
   up to half of the free memory. Our ovarian run peaked at 30 GB, our colorectal run at 28 GB (most
-  of it the probe cache). Building the genome index
-  takes about 30 GB of memory and a quarter of an hour on 12 cores.
+  of it the probe cache). Building the genome index takes about 30 GB of memory and a quarter of
+  an hour on 12 cores.
 - [STAR Suite](https://github.com/morphic-bio/STAR-suite) release 1.12.2 or later (the release
   binary), and a clone of its repository for the scripts.
 - `visium_hd_v1.slide` from a Space Ranger installation (`lib/python/cellranger/barcodes/`). The
