@@ -45,8 +45,9 @@ colorectal Flex slide differs only where noted.
   `python -c "from cellpose import models; models.CellposeModel(pretrained_model='cpsam')"`.
 
 **1. Download the data.** `scripts/download_dataset.sh` downloads the reads, the H&E and CytAssist
-images and the 10x Genomics reference GRCh38 2024-A, and checks each file against the checksums of
-the copies we used:
+images and the files of the 10x Genomics human reference that the slide needs (ovarian: genome and
+GTF of GRCh38 2024-A; colorectal: the probe set and the GTF of GRCh38 2020-A, the probe set's
+reference), and checks each file against the checksums of the copies we used:
 
 ```sh
 scripts/download_dataset.sh ovarian data/        # or: colorectal
@@ -77,13 +78,14 @@ STAR-suite/scripts/run_visium_hd.sh --mode gex --fastq-dir data/${P}_fastqs \
 ```
 
 For the colorectal Flex slide no genome index is needed; the probe cache is built from the probe
-set published with the dataset and the GTF:
+set published with the dataset and the GTF of its reference version (2020-A; another version drops
+some of the probe set's genes):
 
 ```sh
 P=Visium_HD_6p5mm_Human_Colon_Cancer
 STAR-suite/scripts/run_visium_hd.sh --mode flex --fastq-dir data/${P}_fastqs \
     --slide "$SLIDE" --flex-reference data/flex_reference --probe-set data/${P}_probe_set.csv \
-    --gtf data/refdata-gex-GRCh38-2024-A/genes/genes.gtf.gz --out-dir run --threads 16
+    --gtf data/refdata-gex-GRCh38-2020-A/genes/genes.gtf --out-dir run --threads 16
 ```
 
 The matrices are in `run/SpatialGex.out` (Flex: `run/SpatialFlex.out`), one folder for each
@@ -135,11 +137,12 @@ fitted displacement are the same. The run takes about ten minutes, most of it Ce
 GPU.
 
 **Checks we ran on these steps.** The genome index built with the command above is byte-identical
-to the manuscript's. On 100,000-read subsets of the ovarian and colorectal slides,
-`run_visium_hd.sh` writes the same matrices as the commands recorded for the manuscript, and the
-barcode inputs and probe cache it builds are byte-identical to ours. On the three slides of the
-manuscript's timing, the first stage of `run_registration.sh` gives the same transforms as the
-manuscript's runs.
+to the manuscript's, and the barcode inputs that `run_visium_hd.sh` builds are byte-identical to
+ours. On 100,000-read subsets of the ovarian and colorectal slides, `run_visium_hd.sh` writes the
+same matrices, under all four policies and at all three scales, as the manuscript's runs; on the
+colorectal slide it does so with the probe cache it builds from the downloaded probe set and the
+2020-A GTF. On the three slides of the manuscript's timing, the first stage of
+`run_registration.sh` gives the same transforms as the manuscript's runs.
 
 ## What else is here
 

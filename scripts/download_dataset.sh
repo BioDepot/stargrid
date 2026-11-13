@@ -5,7 +5,8 @@
 #   ovarian      Visium HD 3' human ovarian cancer, fresh frozen (H1-YQJBZ7X/D1),
 #                RNA-seq quantitation against GRCh38 2024-A
 #   colorectal   Visium HD human colorectal cancer, FFPE, 6.5 mm (H1-GMHFWPH/D1),
-#                Flex quantitation with the probe set published with it
+#                Flex quantitation with the probe set published with it, whose
+#                reference is GRCh38 2020-A
 #
 # Both come from 10x Genomics' dataset pages under CC BY 4.0 (docs/DATASETS.md).
 # The slide layout file (<serial>.vlf) is not downloaded here; see the message
@@ -17,12 +18,14 @@ usage() {
 usage: download_dataset.sh ovarian|colorectal OUT_DIR [--keep-archives]
 
 Downloads the FASTQ files (extracted from their archive), the H&E and CytAssist
-images and, for colorectal, the probe set; then the 10x Genomics human
-reference GRCh38 2024-A (genome FASTA and GTF). Files already present and
-correct are not downloaded again. Needs curl, md5sum and tar.
+images and, for colorectal, the probe set; then from the 10x Genomics human
+reference the files the slide needs: for ovarian the genome FASTA and GTF of
+GRCh38 2024-A, for colorectal the GTF of GRCh38 2020-A. Files already present
+and correct are not downloaded again. Needs curl, md5sum and tar.
 
 Space while unpacking: about 70 GB for ovarian (36 GB afterwards), 42 GB for
-colorectal (25 GB afterwards) and 15 GB for the reference (3 GB afterwards).
+colorectal (25 GB afterwards) and 15 GB for the reference (3 GB afterwards for
+ovarian, 1.5 GB for colorectal).
 --keep-archives keeps the FASTQ and reference archives, which are otherwise
 deleted once unpacked.
 EOF
@@ -57,6 +60,11 @@ case "$dataset" in
         serial=H1-YQJBZ7X
         area=D1
         layout_sha256=1b48b8365a42cae37072250528cd372e0e516bfe5294263dd8ad07dea7dd4f20
+        reference=refdata-gex-GRCh38-2024-A
+        reference_files=(
+            "fasta/genome.fa 46c8022ace600b277a05a94b0cb2f4fa"
+            "genes/genes.gtf.gz 7eea40d4fb344eed2c255e2935aa2f95"
+        )
         files=(
             "${prefix}_fastqs.tar 12fa0cff0565bf6b62ba835d6b18ef6b"
             "${prefix}_tissue_image.btf eb0838ec91d559e0b2110435c35e9c43"
@@ -69,6 +77,8 @@ case "$dataset" in
         serial=H1-GMHFWPH
         area=D1
         layout_sha256=ce2ec21b24a19a5eaac11d842a51528476af018e05e7edac367e809016482a63
+        reference=refdata-gex-GRCh38-2020-A
+        reference_files=("genes/genes.gtf 97d0768dced6086008e6e2eee49e5665")
         files=(
             "${prefix}_fastqs.tar baf3600bb3d88cfcd9b16c546a17e1d9"
             "${prefix}_tissue_image.btf b3abeb5464f070262f691c5595440b1b"
@@ -78,10 +88,7 @@ case "$dataset" in
         ;;
     *) usage >&2; die "the dataset must be ovarian or colorectal" ;;
 esac
-reference_url=https://cf.10xgenomics.com/supp/cell-exp/refdata-gex-GRCh38-2024-A.tar.gz
-reference=refdata-gex-GRCh38-2024-A
-reference_fasta_md5=46c8022ace600b277a05a94b0cb2f4fa
-reference_gtf_md5=7eea40d4fb344eed2c255e2935aa2f95
+reference_url=https://cf.10xgenomics.com/supp/cell-exp/$reference.tar.gz
 
 mkdir -p "$out_dir"
 cd "$out_dir"
@@ -121,22 +128,30 @@ else
         curl -fL --retry 8 --retry-delay 5 --retry-all-errors --continue-at - -o "$reference.tar.gz" "$reference_url"
     fi
     echo "unpacking $reference.tar.gz"
-    tar -xzf "$reference.tar.gz" "$reference/fasta/genome.fa" "$reference/genes/genes.gtf.gz"
-    echo "$reference_fasta_md5  $reference/fasta/genome.fa" | md5sum -c --quiet - \
-        || die "$reference/fasta/genome.fa differs from the manuscript's reference"
-    echo "$reference_gtf_md5  $reference/genes/genes.gtf.gz" | md5sum -c --quiet - \
-        || die "$reference/genes/genes.gtf.gz differs from the manuscript's reference"
+    members=()
+    for entry in "${reference_files[@]}"; do
+        read -r name md5 <<< "$entry"
+        members+=("$reference/$name")
+    done
+    tar -xzf "$reference.tar.gz" "${members[@]}"
+    for entry in "${reference_files[@]}"; do
+        read -r name md5 <<< "$entry"
+        echo "$md5  $reference/$name" | md5sum -c --quiet - \
+            || die "$reference/$name differs from the manuscript's reference"
+    done
     touch "$reference/.complete"
     [[ $keep -eq 1 ]] || rm -f "$reference.tar.gz"
 fi
 
+reference_list=
+for entry in "${reference_files[@]}"; do reference_list+="${entry%% *} "; done
 cat <<EOF
 
 Downloaded to $(pwd):
   FASTQ files       ${prefix}_fastqs/
   H&E image         ${prefix}_tissue_image.btf
   CytAssist image   ${prefix}_image.tif
-  reference         $reference/ (genome FASTA and GTF)
+  reference         $reference/ (${reference_list% })
 EOF
 [[ "$dataset" == colorectal ]] && echo "  probe set         ${prefix}_probe_set.csv"
 cat <<EOF
