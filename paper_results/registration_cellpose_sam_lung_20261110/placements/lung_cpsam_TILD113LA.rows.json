@@ -1,0 +1,194 @@
+[
+ {
+  "set": "Lung TILD113LA, Cellpose-SAM H&E nuclei",
+  "surface": "whole",
+  "bounds": [
+   0,
+   1554,
+   64,
+   1688
+  ],
+  "nucleus_in_tissue": 61924,
+  "centroid_y": 781.6602125185711,
+  "centroid_x": 797.3028712615464,
+  "tested": true,
+  "blocks": 272,
+  "repro_package_fft_surface_full_pm17": 0.0,
+  "repro": {
+   "package_fft_surface": 0.0
+  },
+  "repro_pass": true,
+  "ring_dy": -7,
+  "ring_dx": -1,
+  "ring_sign": "peak",
+  "ring_contrast": -0.14420302252247041,
+  "ring_border": false,
+  "ring_usable": false,
+  "dip": true,
+  "dy": -4,
+  "dx": -2,
+  "depth": 0.031184272771820787,
+  "interior": true,
+  "n_minima": 8,
+  "second_depth": 0.013952312566225089,
+  "profile": [
+   0.9688157272281792,
+   1.0,
+   1.0263617157526912,
+   0.9991941657607292,
+   0.9486757830745917,
+   0.9002265758440785
+  ],
+  "share_any": 1.0,
+  "share_within1": 1.0,
+  "share_exact": 1.0,
+  "depth_lo": 0.022716512100667368,
+  "depth_hi": 0.038627983912759255,
+  "usable": true,
+  "reason": "usable"
+ },
+ {
+  "set": "Lung TILD113LA, Cellpose-SAM H&E nuclei",
+  "surface": "r0c0",
+  "bounds": [
+   0,
+   518,
+   64,
+   605
+  ],
+  "nucleus_in_tissue": 7679,
+  "centroid_y": 319.05065763771324,
+  "centroid_x": 378.2136997004818,
+  "tested": false,
+  "usable": false,
+  "reason": "fewer than 30000 nucleus locations in tissue"
+ },
+ {
+  "set": "Lung TILD113LA, Cellpose-SAM H&E nuclei",
+  "surface": "r0c1",
+  "bounds": [
+   0,
+   518,
+   605,
+   1146
+  ],
+  "nucleus_in_tissue": 5190,
+  "centroid_y": 253.05606936416186,
+  "centroid_x": 855.540655105973,
+  "tested": false,
+  "usable": false,
+  "reason": "fewer than 30000 nucleus locations in tissue"
+ },
+ {
+  "set": "Lung TILD113LA, Cellpose-SAM H&E nuclei",
+  "surface": "r0c2",
+  "bounds": [
+   0,
+   518,
+   1146,
+   1688
+  ],
+  "nucleus_in_tissue": 4403,
+  "centroid_y": 260.331592096298,
+  "centroid_x": 1388.454917101976,
+  "tested": false,
+  "usable": false,
+  "reason": "fewer than 30000 nucleus locations in tissue"
+ },
+ {
+  "set": "Lung TILD113LA, Cellpose-SAM H&E nuclei",
+  "surface": "r1c0",
+  "bounds": [
+   518,
+   1036,
+   64,
+   605
+  ],
+  "nucleus_in_tissue": 9810,
+  "centroid_y": 737.5756371049949,
+  "centroid_x": 370.06004077471965,
+  "tested": false,
+  "usable": false,
+  "reason": "fewer than 30000 nucleus locations in tissue"
+ },
+ {
+  "set": "Lung TILD113LA, Cellpose-SAM H&E nuclei",
+  "surface": "r1c1",
+  "bounds": [
+   518,
+   1036,
+   605,
+   1146
+  ],
+  "nucleus_in_tissue": 9944,
+  "centroid_y": 767.5658688656476,
+  "centroid_x": 844.1204746580853,
+  "tested": false,
+  "usable": false,
+  "reason": "fewer than 30000 nucleus locations in tissue"
+ },
+ {
+  "set": "Lung TILD113LA, Cellpose-SAM H&E nuclei",
+  "surface": "r1c2",
+  "bounds": [
+   518,
+   1036,
+   1146,
+   1688
+  ],
+  "nucleus_in_tissue": 5925,
+  "centroid_y": 807.2415189873418,
+  "centroid_x": 1345.266835443038,
+  "tested": false,
+  "usable": false,
+  "reason": "fewer than 30000 nucleus locations in tissue"
+ },
+ {
+  "set": "Lung TILD113LA, Cellpose-SAM H&E nuclei",
+  "surface": "r2c0",
+  "bounds": [
+   1036,
+   1554,
+   64,
+   605
+  ],
+  "nucleus_in_tissue": 5471,
+  "centroid_y": 1231.759276183513,
+  "centroid_x": 368.74465362822156,
+  "tested": false,
+  "usable": false,
+  "reason": "fewer than 30000 nucleus locations in tissue"
+ },
+ {
+  "set": "Lung TILD113LA, Cellpose-SAM H&E nuclei",
+  "surface": "r2c1",
+  "bounds": [
+   1036,
+   1554,
+   605,
+   1146
+  ],
+  "nucleus_in_tissue": 9291,
+  "centroid_y": 1260.6019804111506,
+  "centroid_x": 869.5005919707244,
+  "tested": false,
+  "usable": false,
+  "reason": "fewer than 30000 nucleus locations in tissue"
+ },
+ {
+  "set": "Lung TILD113LA, Cellpose-SAM H&E nuclei",
+  "surface": "r2c2",
+  "bounds": [
+   1036,
+   1554,
+   1146,
+   1688
+  ],
+  "nucleus_in_tissue": 4211,
+  "centroid_y": 1280.3443362621706,
+  "centroid_x": 1382.9009736404655,
+  "tested": false,
+  "usable": false,
+  "reason": "fewer than 30000 nucleus locations in tissue"
+ }
+]

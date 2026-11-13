@@ -1,0 +1,194 @@
+[
+ {
+  "set": "Lung TILD111LA, Xenium nuclei",
+  "surface": "whole",
+  "bounds": [
+   64,
+   1867,
+   0,
+   1529
+  ],
+  "nucleus_in_tissue": 174665,
+  "centroid_y": 1047.6767869922423,
+  "centroid_x": 718.69899521942,
+  "tested": true,
+  "blocks": 304,
+  "repro": {
+   "package_fft_surface": 0.0,
+   "saved_surface": 0.0
+  },
+  "repro_pass": true,
+  "ring_dy": 0,
+  "ring_dx": -2,
+  "ring_sign": "peak",
+  "ring_contrast": -0.14580639470336076,
+  "ring_border": false,
+  "ring_usable": false,
+  "dip": true,
+  "dy": 0,
+  "dx": 0,
+  "depth": 0.011958335800141384,
+  "interior": true,
+  "n_minima": 2,
+  "second_depth": 0.006756211262875178,
+  "profile": [
+   0.9880416641998586,
+   1.0,
+   0.9908833546204942,
+   0.9478475004564103,
+   0.9027518605169415,
+   0.8619168360887955
+  ],
+  "share_any": 0.99,
+  "share_within1": 0.885,
+  "share_exact": 0.885,
+  "depth_lo": 0.006315118848281756,
+  "depth_hi": 0.017824288265953676,
+  "usable": false,
+  "reason": "unstable under resampling"
+ },
+ {
+  "set": "Lung TILD111LA, Xenium nuclei",
+  "surface": "r0c0",
+  "bounds": [
+   64,
+   665,
+   0,
+   509
+  ],
+  "nucleus_in_tissue": 20978,
+  "centroid_y": 424.7342453999428,
+  "centroid_x": 263.68195252168937,
+  "tested": false,
+  "usable": false,
+  "reason": "fewer than 30000 nucleus locations in tissue"
+ },
+ {
+  "set": "Lung TILD111LA, Xenium nuclei",
+  "surface": "r0c1",
+  "bounds": [
+   64,
+   665,
+   509,
+   1019
+  ],
+  "nucleus_in_tissue": 16485,
+  "centroid_y": 445.7905368516833,
+  "centroid_x": 763.94279648165,
+  "tested": false,
+  "usable": false,
+  "reason": "fewer than 30000 nucleus locations in tissue"
+ },
+ {
+  "set": "Lung TILD111LA, Xenium nuclei",
+  "surface": "r0c2",
+  "bounds": [
+   64,
+   665,
+   1019,
+   1529
+  ],
+  "nucleus_in_tissue": 8218,
+  "centroid_y": 494.0596252129472,
+  "centroid_x": 1177.1895838403505,
+  "tested": false,
+  "usable": false,
+  "reason": "fewer than 30000 nucleus locations in tissue"
+ },
+ {
+  "set": "Lung TILD111LA, Xenium nuclei",
+  "surface": "r1c0",
+  "bounds": [
+   665,
+   1266,
+   0,
+   509
+  ],
+  "nucleus_in_tissue": 20187,
+  "centroid_y": 995.8555010650418,
+  "centroid_x": 273.27309654728293,
+  "tested": false,
+  "usable": false,
+  "reason": "fewer than 30000 nucleus locations in tissue"
+ },
+ {
+  "set": "Lung TILD111LA, Xenium nuclei",
+  "surface": "r1c1",
+  "bounds": [
+   665,
+   1266,
+   509,
+   1019
+  ],
+  "nucleus_in_tissue": 28314,
+  "centroid_y": 946.4810694356149,
+  "centroid_x": 756.9444797626616,
+  "tested": false,
+  "usable": false,
+  "reason": "fewer than 30000 nucleus locations in tissue"
+ },
+ {
+  "set": "Lung TILD111LA, Xenium nuclei",
+  "surface": "r1c2",
+  "bounds": [
+   665,
+   1266,
+   1019,
+   1529
+  ],
+  "nucleus_in_tissue": 15740,
+  "centroid_y": 1006.680876747141,
+  "centroid_x": 1203.2777001270647,
+  "tested": false,
+  "usable": false,
+  "reason": "fewer than 30000 nucleus locations in tissue"
+ },
+ {
+  "set": "Lung TILD111LA, Xenium nuclei",
+  "surface": "r2c0",
+  "bounds": [
+   1266,
+   1867,
+   0,
+   509
+  ],
+  "nucleus_in_tissue": 16484,
+  "centroid_y": 1494.149660276632,
+  "centroid_x": 283.26170832322254,
+  "tested": false,
+  "usable": false,
+  "reason": "fewer than 30000 nucleus locations in tissue"
+ },
+ {
+  "set": "Lung TILD111LA, Xenium nuclei",
+  "surface": "r2c1",
+  "bounds": [
+   1266,
+   1867,
+   509,
+   1019
+  ],
+  "nucleus_in_tissue": 27012,
+  "centroid_y": 1562.9251443802755,
+  "centroid_x": 787.5619724566859,
+  "tested": false,
+  "usable": false,
+  "reason": "fewer than 30000 nucleus locations in tissue"
+ },
+ {
+  "set": "Lung TILD111LA, Xenium nuclei",
+  "surface": "r2c2",
+  "bounds": [
+   1266,
+   1867,
+   1019,
+   1529
+  ],
+  "nucleus_in_tissue": 21247,
+  "centroid_y": 1556.873817480115,
+  "centroid_x": 1219.047771450087,
+  "tested": false,
+  "usable": false,
+  "reason": "fewer than 30000 nucleus locations in tissue"
+ }
+]

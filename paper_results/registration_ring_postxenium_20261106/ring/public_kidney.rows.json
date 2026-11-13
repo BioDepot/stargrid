@@ -1,0 +1,3152 @@
+{
+ "placement": "public:kidney",
+ "counts": "star",
+ "label": "public kidney",
+ "expansions": [
+  0,
+  1,
+  2,
+  3
+ ],
+ "seed": 20261007,
+ "draws": 200,
+ "search": 12,
+ "radius": 13,
+ "inputs_sha256": {
+  "<datasets>/visium_hd_sr401_kidney/square_002um/raw_feature_bc_matrix.h5": "8cedcb45cc1ab789873d662780e61f40906d7401fb18673b2efbe68bd7884b4b",
+  "<datasets>/visium_hd_sr401_kidney/square_002um/spatial/tissue_positions.parquet": "856196acc40dcd44aebe2dbace12357557d36ec57d0b0ca0b59edfbc5a123622",
+  "<datasets>/visium_hd_sr401_kidney/Visium_HD_Human_Kidney_FFPE_barcode_mappings.parquet": "98c27296440d77a3f022c36384c0cd0752a31214b8e7ceeaa96d6515a582fb0b"
+ },
+ "elapsed": 92.62284588813782,
+ "affinity": [
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31
+ ],
+ "rows": [
+  {
+   "set": "public kidney",
+   "surface": "whole",
+   "bounds": [
+    0,
+    3350,
+    0,
+    3350
+   ],
+   "nucleus_in_tissue": 984186,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": 0,
+     "value": 0.021188686199387297,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.565,
+     "lo": 0.014322222416110664,
+     "hi": 0.025791729134303523,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 2,
+     "dx": 0,
+     "value": 0.016604426087468704,
+     "n": 4,
+     "second": 0.014061533986284402,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.995,
+     "share_exact": 0.995,
+     "lo": 0.015212478991315708,
+     "hi": 0.018266596984102414,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.027800279756338475,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.025002372092437435,
+     "hi": 0.02989632419120739,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -2,
+     "value": 0.007901955478865963,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.98,
+     "share_exact": 0.98,
+     "lo": 0.005858915588085223,
+     "hi": 0.009988509695462444,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.008175271329696754,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.705,
+     "lo": 0.006593410192966659,
+     "hi": 0.009568157779055248,
+     "usable": true
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -1,
+     "value": 0.0033909566538918856,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.64,
+     "lo": 0.0020036899333165546,
+     "hi": 0.003967071602744815,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r0c0",
+   "bounds": [
+    0,
+    670,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 44686,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": 1,
+     "value": 0.012677084960813323,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.84,
+     "share_exact": 0.575,
+     "lo": 0.006464396478471896,
+     "hi": 0.02075341352099463,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -12,
+     "dx": -9,
+     "value": 0.005959193148540987,
+     "n": 1,
+     "second": null,
+     "interior": false,
+     "share_any": 0.99,
+     "share_within1": 0.235,
+     "share_exact": 0.165,
+     "lo": 6.017194259497783e-05,
+     "hi": 0.011738261657707383,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -1,
+     "value": 0.023756009214805918,
+     "n": 3,
+     "second": 0.012376041770420843,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.455,
+     "share_exact": 0.45,
+     "lo": 0.015065026285886856,
+     "hi": 0.028982622600405152,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.029247114429057697,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.975,
+     "share_exact": 0.925,
+     "lo": 0.017940484077302223,
+     "hi": 0.036660335776393896,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 2,
+     "value": 0.006467277568709129,
+     "n": 2,
+     "second": 0.0031574775767844176,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.44,
+     "share_exact": 0.36,
+     "lo": 0.0033355541481205563,
+     "hi": 0.00959178759386677,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.007170836927306468,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.995,
+     "share_exact": 0.575,
+     "lo": 0.002112989962390288,
+     "hi": 0.009741631000352725,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r0c1",
+   "bounds": [
+    0,
+    670,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 40406,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.04260550344636593,
+     "n": 3,
+     "second": 0.003724306947387568,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.029231798130975185,
+     "hi": 0.05221845107901733,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -10,
+     "dx": 0,
+     "value": 0.008043612599571648,
+     "n": 3,
+     "second": 0.00330067958205138,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.285,
+     "share_exact": 0.285,
+     "lo": 0.003333880955768906,
+     "hi": 0.01307426864174281,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -1,
+     "value": 0.018629194756742518,
+     "n": 2,
+     "second": 0.01293106388009213,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.165,
+     "share_exact": 0.14,
+     "lo": 0.010476948287341576,
+     "hi": 0.024183737305329897,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.03986148854981586,
+     "n": 2,
+     "second": 0.002287240532910073,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.995,
+     "lo": 0.030521408602447127,
+     "hi": 0.047367852643521675,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 3,
+     "value": 0.016006965953280883,
+     "n": 2,
+     "second": 0.011108932069388011,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.745,
+     "share_exact": 0.74,
+     "lo": 0.010203568065643358,
+     "hi": 0.020369461631837775,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.021064634762696044,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.82,
+     "lo": 0.014051207906588906,
+     "hi": 0.0261849503585149,
+     "usable": true
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 2,
+     "dx": 0,
+     "value": 0.0014948205323375152,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.375,
+     "share_exact": 0.14,
+     "lo": 0.0001468681747519407,
+     "hi": 0.005332161019840306,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -1,
+     "dx": 1,
+     "value": 0.00477515089147329,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.905,
+     "share_within1": 0.815,
+     "share_exact": 0.725,
+     "lo": 0.0021006436994743527,
+     "hi": 0.008366507046201916,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r0c2",
+   "bounds": [
+    0,
+    670,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 43533,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.021855689116077937,
+     "n": 9,
+     "second": 0.008479711723663907,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.905,
+     "lo": 0.014039552972735453,
+     "hi": 0.03422412189233021,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -10,
+     "value": 0.006732637269504349,
+     "n": 8,
+     "second": 0.005680528078880531,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.14,
+     "share_exact": 0.125,
+     "lo": 0.0007924525576741394,
+     "hi": 0.012130915998285655,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 2,
+     "dx": 0,
+     "value": 0.020186479141677482,
+     "n": 7,
+     "second": 0.005768063655549938,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.64,
+     "share_exact": 0.44,
+     "lo": 0.014580739170695961,
+     "hi": 0.026825053162424804,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.03474530880824456,
+     "n": 4,
+     "second": 0.004923726016653696,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.935,
+     "lo": 0.027346920190139012,
+     "hi": 0.042612606164913136,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -10,
+     "value": 0.003746837947593784,
+     "n": 4,
+     "second": 0.0036085882076213327,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.135,
+     "share_exact": 0.135,
+     "lo": 0.001704954459898006,
+     "hi": 0.007754560433099213,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -1,
+     "dx": 1,
+     "value": 0.015753548239476278,
+     "n": 2,
+     "second": 0.0017207173289830457,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.675,
+     "lo": 0.010213637253244838,
+     "hi": 0.019509707011852517,
+     "usable": true
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 3,
+     "dx": 1,
+     "value": 0.004026402619276004,
+     "n": 5,
+     "second": 0.0016082720510819382,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.385,
+     "share_exact": 0.31,
+     "lo": 0.0017259985354254827,
+     "hi": 0.00534353389788505,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -1,
+     "dx": 1,
+     "value": 0.0043044070783810895,
+     "n": 3,
+     "second": 0.0012615050747171175,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.835,
+     "share_exact": 0.765,
+     "lo": 0.0025239363247657213,
+     "hi": 0.0076675122178272445,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r0c3",
+   "bounds": [
+    0,
+    670,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 38494,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.052426485737518735,
+     "n": 10,
+     "second": 0.007586542072787195,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.725,
+     "lo": 0.04349029974795445,
+     "hi": 0.06149219606739457,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -1,
+     "dx": 8,
+     "value": 0.006757559895490761,
+     "n": 11,
+     "second": 0.005936940569313598,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.09,
+     "share_exact": 0.065,
+     "lo": 0.00033398321940860125,
+     "hi": 0.009813638653047652,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 2,
+     "dx": 0,
+     "value": 0.02725157052418825,
+     "n": 11,
+     "second": 0.026854628959306348,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.66,
+     "share_exact": 0.615,
+     "lo": 0.019730068757094342,
+     "hi": 0.036346556164020966,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.042414607875053245,
+     "n": 10,
+     "second": 0.00884510047283149,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.57,
+     "lo": 0.03388800630738446,
+     "hi": 0.04674463579371296,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 3,
+     "dx": 0,
+     "value": 0.00872203216219658,
+     "n": 7,
+     "second": 0.0036512362507685747,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.67,
+     "share_exact": 0.42,
+     "lo": 0.0069355096805255095,
+     "hi": 0.01164668668993822,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.030364503574669466,
+     "n": 8,
+     "second": 0.00363738587290241,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.94,
+     "lo": 0.024172203167919636,
+     "hi": 0.034138274073109987,
+     "usable": true
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 3,
+     "dx": -1,
+     "value": 0.006164865509731721,
+     "n": 7,
+     "second": 0.0016605187345017924,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.985,
+     "share_exact": 0.255,
+     "lo": 0.003793374645452674,
+     "hi": 0.008413088840487975,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.013321565745731512,
+     "n": 3,
+     "second": 0.003330223776096264,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.815,
+     "lo": 0.008741780221355026,
+     "hi": 0.01702253928121287,
+     "usable": true
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r0c4",
+   "bounds": [
+    0,
+    670,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 35202,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.06037223304847661,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.047449243767256996,
+     "hi": 0.06925859889441309,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -7,
+     "dx": 12,
+     "value": 0.009167212544330505,
+     "n": 4,
+     "second": 0.004746749289437302,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.28,
+     "share_exact": 0.25,
+     "lo": 0.0033497986460176155,
+     "hi": 0.014580745149681091,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 2,
+     "dx": 0,
+     "value": 0.026816815002063343,
+     "n": 5,
+     "second": 0.017289502737548368,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.885,
+     "share_exact": 0.855,
+     "lo": 0.019446768593083235,
+     "hi": 0.03386127039708055,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.03408611871360112,
+     "n": 3,
+     "second": 0.0076528811264605645,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.91,
+     "lo": 0.02753345971018484,
+     "hi": 0.044013788457297275,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -2,
+     "value": 0.020139743218490214,
+     "n": 3,
+     "second": 0.014737502919246026,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.895,
+     "share_exact": 0.84,
+     "lo": 0.015075743496443505,
+     "hi": 0.02351810507776157,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.020804472769678894,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.99,
+     "lo": 0.016232171170058145,
+     "hi": 0.024550434082175762,
+     "usable": true
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -2,
+     "value": 0.008218151422641151,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.67,
+     "share_exact": 0.52,
+     "lo": 0.005943117374209395,
+     "hi": 0.01132888355223165,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.01096112249119019,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.008073029039138799,
+     "hi": 0.014415131724731647,
+     "usable": true
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r1c0",
+   "bounds": [
+    670,
+    1340,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 47733,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 2,
+     "dx": 1,
+     "value": 0.01355819109820855,
+     "n": 3,
+     "second": 0.008475657849408735,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.85,
+     "share_exact": 0.46,
+     "lo": 0.006065010141525195,
+     "hi": 0.017644744077240173,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -1,
+     "dx": -1,
+     "value": 0.006941532278735063,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.99,
+     "share_within1": 0.2,
+     "share_exact": 0.15,
+     "lo": -0.0011057979283077334,
+     "hi": 0.01239666533765223,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -1,
+     "value": 0.017354633711225587,
+     "n": 3,
+     "second": 0.01465153031991595,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.485,
+     "share_exact": 0.355,
+     "lo": 0.009252532259379737,
+     "hi": 0.021454364707426888,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.02218158848444496,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.975,
+     "share_exact": 0.795,
+     "lo": 0.012910932391633722,
+     "hi": 0.029514953314706438,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 2,
+     "value": 0.005870985535865403,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.845,
+     "share_exact": 0.545,
+     "lo": 0.002845987652044135,
+     "hi": 0.010059887745974307,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.008353043811616168,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.31,
+     "lo": 0.0024098905671557924,
+     "hi": 0.013472506570671361,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r1c1",
+   "bounds": [
+    670,
+    1340,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 45722,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": 1,
+     "value": 0.013212097879134577,
+     "n": 5,
+     "second": 0.004868309877285926,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.76,
+     "share_exact": 0.59,
+     "lo": 0.005334394859516473,
+     "hi": 0.022037491439650704,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -11,
+     "dx": -5,
+     "value": 0.004103157175989858,
+     "n": 5,
+     "second": 0.0040715152824828404,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.06,
+     "share_exact": 0.035,
+     "lo": -0.00033353005523593644,
+     "hi": 0.008588903164124336,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 2,
+     "dx": 0,
+     "value": 0.01958473549299722,
+     "n": 3,
+     "second": 0.00859566537861478,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.91,
+     "share_exact": 0.71,
+     "lo": 0.012996512768820296,
+     "hi": 0.023768997827701373,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.02544151865073041,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.985,
+     "lo": 0.018340168939082444,
+     "hi": 0.031599194035185935,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 3,
+     "value": 0.010349671230208024,
+     "n": 4,
+     "second": 0.006702685879965031,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.95,
+     "share_exact": 0.945,
+     "lo": 0.008043931568138662,
+     "hi": 0.012840682028717899,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.008184274903530242,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.965,
+     "share_exact": 0.82,
+     "lo": 0.0051047532454390225,
+     "hi": 0.014012651482344323,
+     "usable": true
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 0,
+     "value": 0.002820591067917544,
+     "n": 2,
+     "second": 0.0027036967028426506,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.445,
+     "share_exact": 0.155,
+     "lo": 0.00048166174192165734,
+     "hi": 0.004908827599422417,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -9,
+     "dx": 2,
+     "value": 0.001852751346668402,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.925,
+     "share_within1": 0.165,
+     "share_exact": 0.095,
+     "lo": 0.0005632433557994837,
+     "hi": 0.0035250617254431495,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r1c2",
+   "bounds": [
+    670,
+    1340,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 42115,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.0540896485227238,
+     "n": 17,
+     "second": 0.007783662663209734,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.65,
+     "lo": 0.04094324837075684,
+     "hi": 0.0691614571223657,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": 0,
+     "value": 0.006783237865541136,
+     "n": 10,
+     "second": 0.005489557469164352,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.37,
+     "share_exact": 0.145,
+     "lo": 0.002888265635529072,
+     "hi": 0.011268124849858075,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 2,
+     "dx": 1,
+     "value": 0.014149845277591222,
+     "n": 26,
+     "second": 0.005718521773773855,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.6,
+     "share_exact": 0.585,
+     "lo": 0.008612059432547652,
+     "hi": 0.021270408579991015,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.043426352317602834,
+     "n": 20,
+     "second": 0.005194424196006353,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.03652883734492145,
+     "hi": 0.050345628600641686,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 3,
+     "dx": 1,
+     "value": 0.01128142832362422,
+     "n": 12,
+     "second": 0.007279691009177691,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.48,
+     "share_exact": 0.43,
+     "lo": 0.008109508928576375,
+     "hi": 0.013810833650695915,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.019697863178159025,
+     "n": 8,
+     "second": 0.002997005183609569,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.88,
+     "lo": 0.01432399887588243,
+     "hi": 0.02568394244519212,
+     "usable": true
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 2,
+     "dx": -2,
+     "value": 0.005335111817653004,
+     "n": 15,
+     "second": 0.0037009712928695038,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.56,
+     "share_exact": 0.445,
+     "lo": 0.0027601266967691054,
+     "hi": 0.007957882194998312,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.010240378080530355,
+     "n": 5,
+     "second": 0.0027652779411583284,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.995,
+     "share_exact": 0.9,
+     "lo": 0.006499958236906844,
+     "hi": 0.01421664971062477,
+     "usable": true
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r1c3",
+   "bounds": [
+    670,
+    1340,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 43293,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.050970826498127675,
+     "n": 17,
+     "second": 0.007184815375266718,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.92,
+     "lo": 0.03854810111981895,
+     "hi": 0.06008124235660572,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": 0,
+     "value": 0.00851854277596098,
+     "n": 11,
+     "second": 0.0057348867638257195,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.33,
+     "share_exact": 0.285,
+     "lo": 0.001677816943388802,
+     "hi": 0.014908526687244966,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": 0,
+     "value": 0.02084851702059609,
+     "n": 21,
+     "second": 0.01659095252020948,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.59,
+     "share_exact": 0.59,
+     "lo": 0.013870142804470798,
+     "hi": 0.025362281660110342,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.04632060899665991,
+     "n": 16,
+     "second": 0.008271711128346682,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.03937346696536224,
+     "hi": 0.0534899248313065,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 3,
+     "dx": 0,
+     "value": 0.012143129641339678,
+     "n": 12,
+     "second": 0.0032132996280473947,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.845,
+     "share_exact": 0.715,
+     "lo": 0.00889917314425311,
+     "hi": 0.01470241344839877,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.017617289313640372,
+     "n": 5,
+     "second": 0.003114632176646981,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.675,
+     "lo": 0.013831451643235104,
+     "hi": 0.023894643829400725,
+     "usable": true
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 2,
+     "dx": -2,
+     "value": 0.0049113664864477435,
+     "n": 8,
+     "second": 0.003240851211522955,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.695,
+     "share_exact": 0.415,
+     "lo": 0.0027103743164216265,
+     "hi": 0.006977246019589966,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.010825826287364948,
+     "n": 4,
+     "second": 0.003115146902478827,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.99,
+     "lo": 0.007836489121238636,
+     "hi": 0.013965744147000232,
+     "usable": true
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r1c4",
+   "bounds": [
+    670,
+    1340,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 39446,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": 1,
+     "value": 0.03302409059912326,
+     "n": 14,
+     "second": 0.007023534905114648,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.785,
+     "lo": 0.020620622842191606,
+     "hi": 0.04357551763025438,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": -2,
+     "value": 0.019290608875711324,
+     "n": 11,
+     "second": 0.006070000573472734,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.41,
+     "share_exact": 0.395,
+     "lo": 0.006974974123084657,
+     "hi": 0.023306534093148926,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": -2,
+     "value": 0.01951023193553758,
+     "n": 17,
+     "second": 0.014088538148267604,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.675,
+     "share_exact": 0.395,
+     "lo": 0.011791636650438697,
+     "hi": 0.022594306353858874,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.03690081807918866,
+     "n": 17,
+     "second": 0.00785740936460566,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.029965481295546374,
+     "hi": 0.04505854035250855,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": -2,
+     "value": 0.00729382111502086,
+     "n": 9,
+     "second": 0.007196913792281601,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.71,
+     "share_exact": 0.535,
+     "lo": 0.00555741274193034,
+     "hi": 0.012393524503779153,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.016615342423752955,
+     "n": 8,
+     "second": 0.006411895440961657,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.99,
+     "lo": 0.011519195210812566,
+     "hi": 0.020828151259509386,
+     "usable": true
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": -2,
+     "value": 0.0040470740940756755,
+     "n": 5,
+     "second": 0.002302613919641372,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.835,
+     "share_exact": 0.38,
+     "lo": 0.0019191917781058055,
+     "hi": 0.006335894967470425,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": 6,
+     "value": 0.0029132604860050426,
+     "n": 4,
+     "second": 0.0028041933356849347,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.175,
+     "share_exact": 0.155,
+     "lo": 0.0010093236240428349,
+     "hi": 0.004526862216816721,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r2c0",
+   "bounds": [
+    1340,
+    2010,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 46618,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 2,
+     "dx": 1,
+     "value": 0.008981857724426057,
+     "n": 3,
+     "second": 0.0060383097743272884,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.375,
+     "share_exact": 0.15,
+     "lo": 0.002421659824621292,
+     "hi": 0.01590175515363378,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.02298436381890223,
+     "n": 3,
+     "second": 0.004383180336239634,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.825,
+     "share_exact": 0.81,
+     "lo": 0.001114712970266488,
+     "hi": 0.047163325491813644,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 2,
+     "value": 0.014230061324979948,
+     "n": 3,
+     "second": 0.011655504007715534,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.83,
+     "share_exact": 0.815,
+     "lo": 0.009722450016643347,
+     "hi": 0.02376738902915715,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.012233387780001381,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.98,
+     "share_exact": 0.945,
+     "lo": 0.0038259038663845226,
+     "hi": 0.022192341822877302,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.014158592421917415,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.995,
+     "lo": 0.009315136896564108,
+     "hi": 0.02046252513239228,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r2c1",
+   "bounds": [
+    1340,
+    2010,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 43174,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.021459968241548166,
+     "n": 5,
+     "second": 0.007928327355906317,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.94,
+     "share_exact": 0.91,
+     "lo": 0.009965850600766917,
+     "hi": 0.033509707698440104,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -1,
+     "dx": -2,
+     "value": 0.007390348231488542,
+     "n": 4,
+     "second": 0.005720598303010416,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.45,
+     "share_exact": 0.245,
+     "lo": 0.0018854629022341087,
+     "hi": 0.01318466268973289,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 2,
+     "value": 0.021081795427040584,
+     "n": 4,
+     "second": 0.017268604672171062,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.715,
+     "share_exact": 0.715,
+     "lo": 0.013733255035096547,
+     "hi": 0.02735514237552481,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.03525909033320662,
+     "n": 2,
+     "second": 0.0031219584218081797,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.028665488010231766,
+     "hi": 0.04224643757964244,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": 1,
+     "value": 0.009216991095189364,
+     "n": 4,
+     "second": 0.007821711491795336,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.485,
+     "share_exact": 0.35,
+     "lo": 0.006183729964852757,
+     "hi": 0.011727937095453278,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.012095857375652441,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.86,
+     "lo": 0.006348107360212807,
+     "hi": 0.01658586305788586,
+     "usable": true
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -1,
+     "value": 0.0032299457863165237,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.665,
+     "share_exact": 0.32,
+     "lo": 0.0010108704324946205,
+     "hi": 0.004983979667273292,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r2c2",
+   "bounds": [
+    1340,
+    2010,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 42629,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.05245469020089111,
+     "n": 16,
+     "second": 0.007092884405470956,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.04219995887429356,
+     "hi": 0.06307396986398454,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -10,
+     "dx": 11,
+     "value": 0.008758715026905839,
+     "n": 12,
+     "second": 0.0072369546621045,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.105,
+     "share_exact": 0.1,
+     "lo": 0.0016085362682624173,
+     "hi": 0.013201232430893871,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -2,
+     "value": 0.02232762661547727,
+     "n": 26,
+     "second": 0.021093565608316878,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.495,
+     "share_exact": 0.34,
+     "lo": 0.017357018067152778,
+     "hi": 0.027137847364951884,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.05116921821423981,
+     "n": 17,
+     "second": 0.0078584968714287,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.046380903228714625,
+     "hi": 0.057328774603696245,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 3,
+     "value": 0.011367597325000034,
+     "n": 21,
+     "second": 0.010521389153614003,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.305,
+     "share_exact": 0.29,
+     "lo": 0.008711236903252617,
+     "hi": 0.014436421260958355,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.0288652270765839,
+     "n": 11,
+     "second": 0.00438039144495761,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.02553581823639794,
+     "hi": 0.03438271602245326,
+     "usable": true
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 2,
+     "dx": -2,
+     "value": 0.0051872394335059635,
+     "n": 16,
+     "second": 0.004758967874144204,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.21,
+     "share_exact": 0.185,
+     "lo": 0.003538974447908855,
+     "hi": 0.007539033712881971,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.012685624875442225,
+     "n": 8,
+     "second": 0.0032330460237438574,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.010633389324863402,
+     "hi": 0.016490189541229786,
+     "usable": true
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r2c3",
+   "bounds": [
+    1340,
+    2010,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 42172,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.052464923001052544,
+     "n": 16,
+     "second": 0.00797646963874965,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.99,
+     "lo": 0.04267491840469651,
+     "hi": 0.06198431867054318,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 6,
+     "dx": 3,
+     "value": 0.007630258763971276,
+     "n": 11,
+     "second": 0.006336996169074127,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.195,
+     "share_exact": 0.17,
+     "lo": 0.0029260220726676977,
+     "hi": 0.011816171907043638,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -2,
+     "value": 0.03133028641001445,
+     "n": 29,
+     "second": 0.03046139165572037,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.56,
+     "share_exact": 0.56,
+     "lo": 0.023075659433171896,
+     "hi": 0.03870932458952659,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.0469952544284169,
+     "n": 20,
+     "second": 0.007276708706966617,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.03815225843951964,
+     "hi": 0.05566048912001985,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 3,
+     "dx": 0,
+     "value": 0.019297856302322947,
+     "n": 24,
+     "second": 0.014854274179149307,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.925,
+     "share_exact": 0.925,
+     "lo": 0.013744053924787314,
+     "hi": 0.022813370083215052,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.02774597655661093,
+     "n": 13,
+     "second": 0.007347187404821542,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.97,
+     "lo": 0.019817800849176472,
+     "hi": 0.03304286429809793,
+     "usable": true
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -3,
+     "value": 0.0059951803089444144,
+     "n": 18,
+     "second": 0.005733184521370394,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.28,
+     "share_exact": 0.255,
+     "lo": 0.0041832490443329765,
+     "hi": 0.008441346137646816,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.015998830222386573,
+     "n": 9,
+     "second": 0.003332642163182409,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.77,
+     "lo": 0.010419438242941666,
+     "hi": 0.018672509594919184,
+     "usable": true
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r2c4",
+   "bounds": [
+    1340,
+    2010,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 39268,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.04016492757292456,
+     "n": 10,
+     "second": 0.006667428981223189,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.515,
+     "lo": 0.027120615661383646,
+     "hi": 0.05425885345027412,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -1,
+     "dx": -2,
+     "value": 0.01320391492608941,
+     "n": 11,
+     "second": 0.010202147279659068,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.54,
+     "share_exact": 0.47,
+     "lo": 0.004752421366803958,
+     "hi": 0.018522255669349664,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 2,
+     "value": 0.024771656728488356,
+     "n": 16,
+     "second": 0.02097561085737909,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.83,
+     "share_exact": 0.83,
+     "lo": 0.01813122328052712,
+     "hi": 0.030501829687941785,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.04054835391122846,
+     "n": 10,
+     "second": 0.005280289179714792,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.03156545386497657,
+     "hi": 0.04910172554997393,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -3,
+     "value": 0.010080683372669874,
+     "n": 10,
+     "second": 0.0037446305537145452,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.675,
+     "share_exact": 0.25,
+     "lo": 0.005694128866412552,
+     "hi": 0.012665796392089557,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.018905495245447823,
+     "n": 7,
+     "second": 0.0033986940432984003,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.58,
+     "lo": 0.012482261286952432,
+     "hi": 0.023525934654611152,
+     "usable": true
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -3,
+     "value": 0.005838794657200719,
+     "n": 6,
+     "second": 0.00279754805413579,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.885,
+     "share_exact": 0.475,
+     "lo": 0.003560520616855689,
+     "hi": 0.008013384802248058,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.008475677846950025,
+     "n": 8,
+     "second": 0.002869739538038596,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.94,
+     "share_exact": 0.89,
+     "lo": 0.0044353751887259985,
+     "hi": 0.012286931811230696,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r3c0",
+   "bounds": [
+    2010,
+    2680,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 41312,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -1,
+     "value": 0.012453459167900638,
+     "n": 3,
+     "second": 0.00786987765297753,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.285,
+     "share_exact": 0.155,
+     "lo": 0.004700665861801306,
+     "hi": 0.01696705618308931,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.02228420375282225,
+     "n": 3,
+     "second": 0.002966709765419573,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.95,
+     "share_exact": 0.935,
+     "lo": 0.010406579176225112,
+     "hi": 0.030287432077937826,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 2,
+     "dx": 0,
+     "value": 0.013596638840664754,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.6,
+     "share_exact": 0.415,
+     "lo": 0.009493441772721845,
+     "hi": 0.018158342825189595,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.01379022689466669,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.97,
+     "share_within1": 0.91,
+     "share_exact": 0.91,
+     "lo": 0.00881896930088413,
+     "hi": 0.020218894844695905,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.013388694126080347,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.99,
+     "lo": 0.008209342011017157,
+     "hi": 0.01825228113642661,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.017843743897048903,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.013040736929779579,
+     "hi": 0.020731895689441688,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r3c1",
+   "bounds": [
+    2010,
+    2680,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 49175,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 2,
+     "dx": 2,
+     "value": 0.009573704862379406,
+     "n": 6,
+     "second": 0.009308349883429656,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.16,
+     "share_exact": 0.095,
+     "lo": 0.0029432449788899862,
+     "hi": 0.014017256337641915,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.03524427152262544,
+     "n": 6,
+     "second": 0.007811868582626835,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.84,
+     "share_exact": 0.78,
+     "lo": -0.003867489759562015,
+     "hi": 0.06782587064013977,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -12,
+     "dx": 7,
+     "value": 0.008766812055593709,
+     "n": 6,
+     "second": 0.005645450048141987,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.24,
+     "share_exact": 0.24,
+     "lo": 0.003712397505617282,
+     "hi": 0.01155755416687031,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.008028544814411287,
+     "n": 4,
+     "second": 0.0055594990459260085,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.55,
+     "share_exact": 0.55,
+     "lo": -0.004892369732997891,
+     "hi": 0.025674671659748308,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.015681498559393825,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.89,
+     "share_exact": 0.825,
+     "lo": -0.0019148016585997538,
+     "hi": 0.030969419839300513,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -8,
+     "dx": -12,
+     "value": 0.002559112789161322,
+     "n": 1,
+     "second": null,
+     "interior": false,
+     "share_any": 0.845,
+     "share_within1": 0.2,
+     "share_exact": 0.2,
+     "lo": 0.00025310424164142755,
+     "hi": 0.005582791256047876,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.01736363276883557,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.98,
+     "lo": 0.0049775560065068725,
+     "hi": 0.027774463491479766,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r3c2",
+   "bounds": [
+    2010,
+    2680,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 43262,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": 0,
+     "value": 0.022778926298415714,
+     "n": 5,
+     "second": 0.008439360521799388,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.92,
+     "share_exact": 0.345,
+     "lo": 0.01322935012696464,
+     "hi": 0.0319626321383453,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 9,
+     "dx": 1,
+     "value": 0.0031068082221314963,
+     "n": 3,
+     "second": 0.0026789661911326146,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.035,
+     "share_exact": 0.02,
+     "lo": -0.0013210023534896641,
+     "hi": 0.007748145495596676,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -2,
+     "value": 0.020860556281500964,
+     "n": 8,
+     "second": 0.012668849185395459,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.64,
+     "share_exact": 0.62,
+     "lo": 0.011227331668575397,
+     "hi": 0.03010708840805771,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 1,
+     "dx": 0,
+     "value": 0.027047121706193278,
+     "n": 8,
+     "second": 0.005291193497612423,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.59,
+     "lo": 0.020702073243455802,
+     "hi": 0.03708908084855674,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": 0,
+     "value": 0.01035159718345513,
+     "n": 5,
+     "second": 0.006792494657102077,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.785,
+     "share_exact": 0.64,
+     "lo": 0.00457897447262029,
+     "hi": 0.016825424713797874,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 1,
+     "dx": 0,
+     "value": 0.013238373443123286,
+     "n": 7,
+     "second": 0.0032304328498412582,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.74,
+     "lo": 0.009543143068795015,
+     "hi": 0.018627049355087966,
+     "usable": true
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -1,
+     "value": 0.002688379574569577,
+     "n": 9,
+     "second": 0.002327209328194302,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.23,
+     "share_exact": 0.025,
+     "lo": 0.00035077873745901215,
+     "hi": 0.004586494999600211,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 1,
+     "dx": 1,
+     "value": 0.004168322523832146,
+     "n": 4,
+     "second": 0.002011162706579417,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.665,
+     "share_exact": 0.26,
+     "lo": 0.0010188545237338283,
+     "hi": 0.007569008538831914,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r3c3",
+   "bounds": [
+    2010,
+    2680,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 39974,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.03394046995723543,
+     "n": 9,
+     "second": 0.008494268700687257,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.915,
+     "lo": 0.025033978579524635,
+     "hi": 0.04850313692425722,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 1,
+     "dx": -3,
+     "value": 0.009097603268486187,
+     "n": 8,
+     "second": 0.00636291844691661,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.175,
+     "share_exact": 0.125,
+     "lo": 0.0024492988103405142,
+     "hi": 0.012253058954023614,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 2,
+     "value": 0.019630837930698197,
+     "n": 17,
+     "second": 0.01648311792491075,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.54,
+     "share_exact": 0.54,
+     "lo": 0.014105943588826803,
+     "hi": 0.02592167379491018,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.03835557048871152,
+     "n": 10,
+     "second": 0.007948281271007995,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.030790060915147792,
+     "hi": 0.04731612261436936,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -3,
+     "value": 0.007015539747147859,
+     "n": 8,
+     "second": 0.005663853425424081,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.205,
+     "share_exact": 0.17,
+     "lo": 0.004551094310468956,
+     "hi": 0.010573956168122296,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 1,
+     "dx": 0,
+     "value": 0.020744331715781716,
+     "n": 6,
+     "second": 0.002630443571911334,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.82,
+     "lo": 0.01563692686935627,
+     "hi": 0.02538773131429251,
+     "usable": true
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -3,
+     "value": 0.004828037026465948,
+     "n": 14,
+     "second": 0.002874548614334671,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.48,
+     "share_exact": 0.31,
+     "lo": 0.0021412856930267178,
+     "hi": 0.007426497019703167,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 1,
+     "dx": 1,
+     "value": 0.006377968546381174,
+     "n": 7,
+     "second": 0.0022895990747714423,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.965,
+     "share_exact": 0.76,
+     "lo": 0.003903310947289321,
+     "hi": 0.009791370787487432,
+     "usable": true
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r3c4",
+   "bounds": [
+    2010,
+    2680,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 23489,
+   "tested": false
+  },
+  {
+   "set": "public kidney",
+   "surface": "r4c0",
+   "bounds": [
+    2680,
+    3350,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 43522,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 2,
+     "dx": 0,
+     "value": 0.027987023845439163,
+     "n": 3,
+     "second": 0.022797952857706694,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.735,
+     "share_exact": 0.37,
+     "lo": 0.009881662136182879,
+     "hi": 0.039663465242626025,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.03847876943991824,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.62,
+     "lo": 0.01552621358606996,
+     "hi": 0.06912514751158584,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.014465107642354758,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.985,
+     "share_exact": 0.6,
+     "lo": 0.0010641851412044436,
+     "hi": 0.02333708292702757,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.0314779974759094,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.019985503128391625,
+     "hi": 0.04088861682360397,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.02590107961880972,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.995,
+     "lo": 0.018254913954701697,
+     "hi": 0.03376516673745495,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r4c1",
+   "bounds": [
+    2680,
+    3350,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 40836,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": 0,
+     "value": 0.018361624446552316,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.955,
+     "share_exact": 0.855,
+     "lo": 0.00519634650752866,
+     "hi": 0.03207951581534494,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -2,
+     "value": 0.021694830465456727,
+     "n": 3,
+     "second": 0.012212968416639658,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.955,
+     "share_exact": 0.945,
+     "lo": 0.013127389808799805,
+     "hi": 0.028183154182739468,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.019117636352836476,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.985,
+     "share_within1": 0.97,
+     "share_exact": 0.97,
+     "lo": 0.009083438998099833,
+     "hi": 0.02987982743480925,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -2,
+     "value": 0.007991790070964067,
+     "n": 2,
+     "second": 0.0071643803377408055,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.61,
+     "share_exact": 0.43,
+     "lo": 0.00519726845513121,
+     "hi": 0.012738451098007825,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 0,
+     "value": 0.007762638053746107,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.48,
+     "lo": 0.003514450952524595,
+     "hi": 0.010697800407579517,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r4c2",
+   "bounds": [
+    2680,
+    3350,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 36552,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.040750369437585254,
+     "n": 6,
+     "second": 0.006202002696775288,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.985,
+     "lo": 0.029178607481345747,
+     "hi": 0.05247032730753574,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 8,
+     "dx": 3,
+     "value": 0.005374496394150996,
+     "n": 3,
+     "second": 0.0033465432593775546,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.15,
+     "share_exact": 0.105,
+     "lo": -0.0004276905693675058,
+     "hi": 0.011628430409993163,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": 0,
+     "value": 0.022103099801026094,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.615,
+     "share_exact": 0.475,
+     "lo": 0.01507176806803794,
+     "hi": 0.02788544699042255,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.04472623552665789,
+     "n": 5,
+     "second": 0.004396771110989572,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.99,
+     "lo": 0.037564433462411034,
+     "hi": 0.050552491736120884,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": 0,
+     "value": 0.01509994066081255,
+     "n": 2,
+     "second": 0.001075406808088708,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.97,
+     "share_exact": 0.75,
+     "lo": 0.010642275155252534,
+     "hi": 0.01811390512057494,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 1,
+     "dx": 0,
+     "value": 0.013869344632912006,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.965,
+     "lo": 0.0093400724746516,
+     "hi": 0.019752718308010883,
+     "usable": true
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -1,
+     "value": 0.0052452197556907,
+     "n": 2,
+     "second": 0.001756155208638921,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.965,
+     "share_exact": 0.56,
+     "lo": 0.0030985592634064974,
+     "hi": 0.007754687054644183,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r4c3",
+   "bounds": [
+    2680,
+    3350,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 29989,
+   "tested": false
+  },
+  {
+   "set": "public kidney",
+   "surface": "r4c4",
+   "bounds": [
+    2680,
+    3350,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 1584,
+   "tested": false
+  }
+ ]
+}

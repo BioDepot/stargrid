@@ -1,0 +1,1028 @@
+{
+ "placement": "ov_stardist_img",
+ "mask": "nuclei and ring of width 3 (f0 | f3)",
+ "harness": "<local>/paper_results/registration_ring_postxenium_20261106/ring/fpr.py",
+ "seed": 20261007,
+ "draws": 200,
+ "search": 12,
+ "radius": 13,
+ "inputs_sha256": {
+  "<datasets>/visium_hd_3prime_human_ovarian_ff_min_depth/source/downloads/Visium_HD_3prime_Human_Ovarian_Cancer_FF_Min_Depth_barcode_mappings.parquet": "c77700869df690dccf71f7adb6d4eae9a285225c1dd864c6c038f1eb2815da3c",
+  "<datasets>/visium_hd_3prime_human_ovarian_ff_min_depth/oracle_inputs/binned_outputs/square_002um/spatial/tissue_positions.parquet": "af26ae36552849787d50a01b50d0e3eaa5cf08926dcb525bc8009e1cf2000c94",
+  "<runs>/20260927_ovarian_cell_mapping_inputs_v1/square_totals.npz": "db1916d292981f703c8440a1017e9d4a1550876cecdafcfbb5577a8c85b7183e",
+  "<runs>/20261004_ovarian_stardist_grid_v1/grid_labels.npz": "20b8df010c81987188d310d9d8b750d8706f2eb2c1aa5f2dc21590bbb9a4659e"
+ },
+ "elapsed": 40.12441420555115,
+ "affinity": [
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15
+ ],
+ "rows": [
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "whole",
+   "bounds": [
+    0,
+    3350,
+    0,
+    3350
+   ],
+   "nucleus_in_tissue": 1504952,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -8,
+     "dx": -8,
+     "value": 0.0003791096073577638,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.355,
+     "share_exact": 0.145,
+     "lo": 0.00027619622933754975,
+     "hi": 0.0007627882655166508,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.0035493463025079164,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.0031933591477288415,
+     "hi": 0.003914102991705898,
+     "usable": true
+    }
+   }
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r0c0",
+   "bounds": [
+    0,
+    670,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 66097,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -9,
+     "dx": -3,
+     "value": 0.0009358446786154051,
+     "n": 2,
+     "second": 0.0005171854558043698,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.16,
+     "share_exact": 0.07,
+     "lo": -0.00016175215958463826,
+     "hi": 0.0021619404098193527,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -4,
+     "value": 0.0028627653300503653,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.99,
+     "share_within1": 0.975,
+     "share_exact": 0.505,
+     "lo": 0.001592169197922516,
+     "hi": 0.0044698736394374215,
+     "usable": true
+    }
+   }
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r0c1",
+   "bounds": [
+    0,
+    670,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 101532,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 3,
+     "dx": 1,
+     "value": 0.0007406876634672432,
+     "n": 4,
+     "second": 0.00041426665634958226,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.08,
+     "share_exact": 0.06,
+     "lo": -0.00033298351950518114,
+     "hi": 0.001424027985093368,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -4,
+     "value": 0.004210718115374101,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.79,
+     "lo": 0.0024939568019783642,
+     "hi": 0.005234582464100371,
+     "usable": true
+    }
+   }
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r0c2",
+   "bounds": [
+    0,
+    670,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 67897,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 5,
+     "dx": -6,
+     "value": 0.000529217483313138,
+     "n": 3,
+     "second": 0.00038527778717445393,
+     "interior": true,
+     "share_any": 0.96,
+     "share_within1": 0.08,
+     "share_exact": 0.005,
+     "lo": -0.00022672466844533,
+     "hi": 0.0010727205898333429,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -3,
+     "value": 0.004968462256238371,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.65,
+     "lo": 0.003160996091257501,
+     "hi": 0.005815961695748504,
+     "usable": true
+    }
+   }
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r0c3",
+   "bounds": [
+    0,
+    670,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 13508,
+   "tested": false
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r0c4",
+   "bounds": [
+    0,
+    670,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 0,
+   "tested": false
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r1c0",
+   "bounds": [
+    670,
+    1340,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 66376,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 2,
+     "dx": -5,
+     "value": 0.0014247548859211978,
+     "n": 7,
+     "second": 0.001401604915769461,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.03,
+     "share_exact": 0.025,
+     "lo": 0.000379354512833302,
+     "hi": 0.0025262409459476057,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -4,
+     "value": 0.003982329875323654,
+     "n": 2,
+     "second": 0.0006057030663141338,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.97,
+     "share_exact": 0.49,
+     "lo": 0.0018531576628383673,
+     "hi": 0.0046277202907436255,
+     "usable": true
+    }
+   }
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r1c1",
+   "bounds": [
+    670,
+    1340,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 86620,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -9,
+     "dx": -4,
+     "value": 0.0010818425667840081,
+     "n": 7,
+     "second": 0.0009849176889784594,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.115,
+     "share_exact": 0.075,
+     "lo": -7.497775742937268e-06,
+     "hi": 0.002360106548563968,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.0055152858853704245,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.73,
+     "lo": 0.003419172633648038,
+     "hi": 0.006275174043806958,
+     "usable": true
+    }
+   }
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r1c2",
+   "bounds": [
+    670,
+    1340,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 89436,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": 2,
+     "value": 0.0010521054994603318,
+     "n": 9,
+     "second": 0.0008653554377839878,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.1,
+     "share_exact": 0.085,
+     "lo": 9.634465044243147e-05,
+     "hi": 0.0018230814996863355,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -4,
+     "value": 0.005376466269275015,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.62,
+     "lo": 0.0039508865787803325,
+     "hi": 0.006004178542857838,
+     "usable": true
+    }
+   }
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r1c3",
+   "bounds": [
+    670,
+    1340,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 81977,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 2,
+     "dx": -12,
+     "value": 0.0010986799654528756,
+     "n": 7,
+     "second": 0.0008281710929725072,
+     "interior": false,
+     "share_any": 0.88,
+     "share_within1": 0.035,
+     "share_exact": 0.035,
+     "lo": 0.0002078861684460143,
+     "hi": 0.002008287001222553,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -3,
+     "value": 0.0037087819540267963,
+     "n": 3,
+     "second": 0.0006890890323488774,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.41,
+     "lo": 0.0018263678515094252,
+     "hi": 0.004676321838502796,
+     "usable": true
+    }
+   }
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r1c4",
+   "bounds": [
+    670,
+    1340,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 5539,
+   "tested": false
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r2c0",
+   "bounds": [
+    1340,
+    2010,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 75281,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -9,
+     "dx": -3,
+     "value": 0.0010472389931115433,
+     "n": 3,
+     "second": 0.0009971845969571902,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.12,
+     "share_exact": 0.075,
+     "lo": 0.00021498204887867027,
+     "hi": 0.0019856643258843575,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.002390414218665704,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.455,
+     "lo": 0.0013527319804528953,
+     "hi": 0.0035546905620566977,
+     "usable": true
+    }
+   }
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r2c1",
+   "bounds": [
+    1340,
+    2010,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 74998,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": 3,
+     "value": 0.0011797555759327505,
+     "n": 5,
+     "second": 0.0011583228816942626,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.065,
+     "share_exact": 0.04,
+     "lo": 0.00012662461331039432,
+     "hi": 0.0018688422929859284,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.003990875390141091,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.88,
+     "lo": 0.0024565912447643444,
+     "hi": 0.004780087540367951,
+     "usable": true
+    }
+   }
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r2c2",
+   "bounds": [
+    1340,
+    2010,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 80501,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -10,
+     "value": 0.0011663991607970825,
+     "n": 3,
+     "second": 0.0011314167907956474,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.035,
+     "share_exact": 0.025,
+     "lo": -1.3826527682064817e-05,
+     "hi": 0.001530950958426347,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -4,
+     "value": 0.005812213177723624,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.5,
+     "lo": 0.003922767537424571,
+     "hi": 0.007274558133340678,
+     "usable": true
+    }
+   }
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r2c3",
+   "bounds": [
+    1340,
+    2010,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 83383,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 3,
+     "dx": -6,
+     "value": 0.0010299564873208489,
+     "n": 4,
+     "second": 0.0007357647716343951,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.18,
+     "share_exact": 0.12,
+     "lo": 6.565416431839066e-06,
+     "hi": 0.002446512739688678,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.0035804682365676577,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.83,
+     "lo": 0.0022064905768375415,
+     "hi": 0.004804266088427989,
+     "usable": true
+    }
+   }
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r2c4",
+   "bounds": [
+    1340,
+    2010,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 42891,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -9,
+     "value": 0.0010314591458466804,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.17,
+     "share_exact": 0.06,
+     "lo": -0.0001420192010370469,
+     "hi": 0.0021747159183247433,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.004668586530373275,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.985,
+     "share_within1": 0.945,
+     "share_exact": 0.43,
+     "lo": 0.002251892447481291,
+     "hi": 0.00600584443409512,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r3c0",
+   "bounds": [
+    2010,
+    2680,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 56211,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -11,
+     "dx": -3,
+     "value": 0.001929145164954571,
+     "n": 2,
+     "second": 0.001760011584794885,
+     "interior": true,
+     "share_any": 0.99,
+     "share_within1": 0.455,
+     "share_exact": 0.45,
+     "lo": 0.000876017425741632,
+     "hi": 0.00319851442313684,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -2,
+     "value": 0.00203939628577543,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.97,
+     "share_within1": 0.89,
+     "share_exact": 0.48,
+     "lo": 0.0009693545722943231,
+     "hi": 0.0030501226682426528,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r3c1",
+   "bounds": [
+    2010,
+    2680,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 93106,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 3,
+     "dx": -2,
+     "value": 0.00092170183961926,
+     "n": 6,
+     "second": 0.0008639337307436712,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.05,
+     "share_exact": 0.025,
+     "lo": 4.7801811864789384e-05,
+     "hi": 0.0016401094732391432,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.003554603870884132,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.44,
+     "lo": 0.0020222945245038037,
+     "hi": 0.004146204283403044,
+     "usable": true
+    }
+   }
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r3c2",
+   "bounds": [
+    2010,
+    2680,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 80035,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 3,
+     "dx": -6,
+     "value": 0.0012056805611537769,
+     "n": 6,
+     "second": 0.0011445438530093277,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.05,
+     "share_exact": 0.05,
+     "lo": 0.0005332104978242325,
+     "hi": 0.0019299380159474798,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.003153210016425434,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.665,
+     "lo": 0.0018460603143595712,
+     "hi": 0.004781724207870092,
+     "usable": true
+    }
+   }
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r3c3",
+   "bounds": [
+    2010,
+    2680,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 73843,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -6,
+     "dx": 1,
+     "value": 0.0018834715281261794,
+     "n": 10,
+     "second": 0.0017367981008140632,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.17,
+     "share_exact": 0.155,
+     "lo": 0.0009085480579073713,
+     "hi": 0.0033034105767967615,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.0035642982170327464,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.415,
+     "lo": 0.0017744056231972672,
+     "hi": 0.004699496948020793,
+     "usable": true
+    }
+   }
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r3c4",
+   "bounds": [
+    2010,
+    2680,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 49983,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -6,
+     "dx": -9,
+     "value": 0.001632649257197194,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.99,
+     "share_within1": 0.45,
+     "share_exact": 0.28,
+     "lo": 0.0009102083570572517,
+     "hi": 0.002562721010515051,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": -2,
+     "value": 0.000903415582979239,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.76,
+     "share_within1": 0.67,
+     "share_exact": 0.105,
+     "lo": -2.8637681274645808e-05,
+     "hi": 0.0022040721821466555,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r4c0",
+   "bounds": [
+    2680,
+    3350,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 2921,
+   "tested": false
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r4c1",
+   "bounds": [
+    2680,
+    3350,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 48529,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -7,
+     "dx": 4,
+     "value": 0.0009342873087276882,
+     "n": 2,
+     "second": 0.0007968491468131056,
+     "interior": true,
+     "share_any": 0.925,
+     "share_within1": 0.065,
+     "share_exact": 0.015,
+     "lo": -0.00016279325036878676,
+     "hi": 0.002057954953987762,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.002274434719263807,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.975,
+     "share_within1": 0.91,
+     "share_exact": 0.45,
+     "lo": 0.0008328241466176973,
+     "hi": 0.004351068311383233,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r4c2",
+   "bounds": [
+    2680,
+    3350,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 69466,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": -2,
+     "value": 0.00047276837739262945,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.545,
+     "share_within1": 0.125,
+     "share_exact": 0.045,
+     "lo": -0.0010023871226760212,
+     "hi": 0.0020644690993335997,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.002386712384788159,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.945,
+     "share_within1": 0.92,
+     "share_exact": 0.415,
+     "lo": 0.0007611615361088261,
+     "hi": 0.003879898753263281,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r4c3",
+   "bounds": [
+    2680,
+    3350,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 64615,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": -4,
+     "value": 0.002606971865844243,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.885,
+     "share_within1": 0.88,
+     "share_exact": 0.31,
+     "lo": 0.0012607732113853493,
+     "hi": 0.00347728342851453,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r4c4",
+   "bounds": [
+    2680,
+    3350,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 30207,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.0032609255455003927,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.73,
+     "share_within1": 0.61,
+     "share_exact": 0.275,
+     "lo": -0.0007818845397343288,
+     "hi": 0.00527951842721508,
+     "usable": false
+    }
+   }
+  }
+ ]
+}

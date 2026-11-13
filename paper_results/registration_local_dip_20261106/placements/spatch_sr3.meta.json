@@ -1,0 +1,53 @@
+{
+ "placement": "spatch_sr3",
+ "label": "SPATCH, SR 3.0.0",
+ "seed": 20261007,
+ "draws": 200,
+ "search": 12,
+ "radius": 17,
+ "input_files": {
+  "<runs>/20261004_spatch_paper_mask_inputs_v3/result/star_qc_config.json": {
+   "sha256": "b00b33010947b72fa432065bfa1ee584084fc970a1e17763a650898fce7878db",
+   "recorded": "b00b33010947b72fa432065bfa1ee584084fc970a1e17763a650898fce7878db",
+   "match": true
+  },
+  "<runs>/20261004_spatch_paper_mask_inputs_v3/result/square_totals.npz": {
+   "sha256": "9017ef8260cf91af2062da60e7bf6baca1f14910762f4a8edec38417406973e3",
+   "recorded": "9017ef8260cf91af2062da60e7bf6baca1f14910762f4a8edec38417406973e3",
+   "match": true
+  },
+  "<runs>/20260727_spatch_visium_hd_ffpe_100k_sr_version_audit_v2/sr410_2020a_visium_v2_100k/outs/binned_outputs/square_002um/spatial/tissue_positions.parquet": {
+   "sha256": "cb7418a1645ffc6110f2d98a0e0c77e48a2444d44dea1720e1675cf4345fdf4c",
+   "recorded": "cb7418a1645ffc6110f2d98a0e0c77e48a2444d44dea1720e1675cf4345fdf4c",
+   "match": true
+  },
+  "<runs>/20261009_registration_subposition_amendment7_whole_sr3_v3/accepted_grid_labels.npy": {
+   "sha256": "63dc43d9d6f4793ae04f9c5f9f3f0b729e4aacd0abe08f4d3b9b15d737404ac9",
+   "recorded": "63dc43d9d6f4793ae04f9c5f9f3f0b729e4aacd0abe08f4d3b9b15d737404ac9",
+   "match": true
+  },
+  "<runs>/20261009_registration_subposition_amendment7_whole_sr3_v3/M0_surface.npy": {
+   "sha256": "8f44fe7f98985785fdb09884b0d3b4093b7f1212f7d6c7506469caaebbbc1a2b",
+   "recorded": null,
+   "match": null
+  },
+  "<runs>/20261009_registration_subposition_amendment7_whole_sr3_v3/whole_position_regions.npz": {
+   "sha256": "2d75ae873699cadbba06c85c45a50e366c7c2919fea4ad84f0a7cde026bf414d",
+   "recorded": null,
+   "match": null
+  }
+ },
+ "inputs_sha_ok": true,
+ "all_reproduced": true,
+ "elapsed_seconds": 39.091583490371704,
+ "affinity": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7
+ ]
+}

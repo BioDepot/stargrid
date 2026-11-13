@@ -1,0 +1,3176 @@
+{
+ "placement": "ov_cellpose_dep",
+ "counts": "star",
+ "label": "Ovarian, Cellpose, deposited SR 4.0.1",
+ "expansions": [
+  0,
+  1,
+  2,
+  3
+ ],
+ "seed": 20261007,
+ "draws": 200,
+ "search": 12,
+ "radius": 13,
+ "inputs_sha256": {
+  "<datasets>/visium_hd_3prime_human_ovarian_ff_min_depth/oracle_inputs/binned_outputs/square_002um/spatial/tissue_positions.parquet": "af26ae36552849787d50a01b50d0e3eaa5cf08926dcb525bc8009e1cf2000c94",
+  "<runs>/20260927_ovarian_cell_mapping_inputs_v1/square_totals.npz": "db1916d292981f703c8440a1017e9d4a1550876cecdafcfbb5577a8c85b7183e",
+  "<runs>/20261009_registration_subposition_deposit_whole_T1_v1/accepted_grid_labels.npy": "25a8c073c24d837bcd10540a720d672d0c290fa07f3423543779a7109bcb0610",
+  "<runs>/20261009_registration_subposition_deposit_whole_T1_v1/M0_surface.npy": "ad023fb24a7475e4e0c182af34abb97afca6d75313207d8692529d81bd5ce59f"
+ },
+ "elapsed": 52.7549786567688,
+ "affinity": [
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31
+ ],
+ "rows": [
+  {
+   "set": "Ovarian, Cellpose, deposited SR 4.0.1",
+   "surface": "whole",
+   "bounds": [
+    0,
+    3350,
+    0,
+    3350
+   ],
+   "nucleus_in_tissue": 2293663,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 7,
+     "value": 0.001708676117849084,
+     "n": 6,
+     "second": 0.0013085665892738074,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.29,
+     "share_exact": 0.175,
+     "lo": 0.000980127753255461,
+     "hi": 0.00200688216120275,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.029653606233750684,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.02878386685013673,
+     "hi": 0.030535063755299702,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.00605180914544623,
+     "n": 9,
+     "second": 0.0012067204969015144,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.005174811198396373,
+     "hi": 0.0068461762862921435,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": -2,
+     "value": 0.0024004657238466676,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.965,
+     "share_exact": 0.775,
+     "lo": 0.001752816980137864,
+     "hi": 0.003418734217927591,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.012305572622804073,
+     "n": 4,
+     "second": 0.0005672833326086923,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.011167095533323035,
+     "hi": 0.013354100805445435,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": 2,
+     "value": 0.0009552693089937003,
+     "n": 3,
+     "second": 0.0006549721188598978,
+     "interior": true,
+     "share_any": 0.895,
+     "share_within1": 0.415,
+     "share_exact": 0.37,
+     "lo": 0.0004200467358315335,
+     "hi": 0.0015265242397155627,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.015696040953282697,
+     "n": 3,
+     "second": 0.00016920439865630854,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.015267350522151602,
+     "hi": 0.016389584398354674,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 2,
+     "dx": 11,
+     "value": 0.0003661453876675491,
+     "n": 6,
+     "second": 0.0003370257501430496,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.1,
+     "share_exact": 0.05,
+     "lo": -2.11241362561564e-06,
+     "hi": 0.0006470154029481538,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Ovarian, Cellpose, deposited SR 4.0.1",
+   "surface": "r0c0",
+   "bounds": [
+    0,
+    670,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 110817,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 6,
+     "value": 0.003092828735588915,
+     "n": 2,
+     "second": 0.002874812132351412,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.28,
+     "share_exact": 0.15,
+     "lo": 0.0002592887317557302,
+     "hi": 0.004432841604700727,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.026898423795892135,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.02286536386768772,
+     "hi": 0.030255536585741066,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.008568374459836825,
+     "n": 21,
+     "second": 0.0048157655477532035,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.82,
+     "share_exact": 0.74,
+     "lo": 0.004235542950898802,
+     "hi": 0.014057864751956311,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": 0,
+     "value": 0.005687619149887024,
+     "n": 17,
+     "second": 0.0047677973056410305,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.195,
+     "share_exact": 0.195,
+     "lo": 0.0017819342586065268,
+     "hi": 0.008414612452545775,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.015590247537889512,
+     "n": 17,
+     "second": 0.0033899763044011877,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.55,
+     "lo": 0.012029696434775439,
+     "hi": 0.01845645925301533,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -12,
+     "dx": -11,
+     "value": 0.002990010742375815,
+     "n": 16,
+     "second": 0.0022805273966071127,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.09,
+     "share_exact": 0.065,
+     "lo": 0.0007353091315799781,
+     "hi": 0.005858636214764646,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.01869042576124147,
+     "n": 2,
+     "second": 0.0017646543817604332,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.016972428620793532,
+     "hi": 0.021564407868141112,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 2,
+     "dx": -11,
+     "value": 0.0020714839741741153,
+     "n": 8,
+     "second": 0.0016349052684072607,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.01,
+     "share_exact": 0.01,
+     "lo": 0.00015024223955245608,
+     "hi": 0.0038518856613722094,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Ovarian, Cellpose, deposited SR 4.0.1",
+   "surface": "r0c1",
+   "bounds": [
+    0,
+    670,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 161241,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 7,
+     "dx": 3,
+     "value": 0.0018528479219881433,
+     "n": 4,
+     "second": 0.0016479985150628096,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.17,
+     "share_exact": 0.02,
+     "lo": 0.0001725199177438963,
+     "hi": 0.0025693542944539307,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.03179134265166428,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.02882295796796056,
+     "hi": 0.034987428047045174,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.005549024509388545,
+     "n": 43,
+     "second": 0.002824475119654446,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.555,
+     "share_exact": 0.51,
+     "lo": 0.0028289097815135276,
+     "hi": 0.008846424979963526,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 1,
+     "dx": -2,
+     "value": 0.0062730479419012,
+     "n": 19,
+     "second": 0.002943911254341347,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.705,
+     "share_exact": 0.52,
+     "lo": 0.002674396075079469,
+     "hi": 0.008537719048852702,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.01315248827494142,
+     "n": 19,
+     "second": 0.0019451560831464931,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.995,
+     "lo": 0.0104655602516464,
+     "hi": 0.016960051177372638,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 7,
+     "dx": 6,
+     "value": 0.0017317869297701627,
+     "n": 13,
+     "second": 0.00129120676746719,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.04,
+     "share_exact": 0.03,
+     "lo": -5.766092536332304e-05,
+     "hi": 0.0029860562933613673,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.018319855280804598,
+     "n": 12,
+     "second": 0.0014504328985558423,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.01638184686798428,
+     "hi": 0.019986235701759225,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 5,
+     "dx": -6,
+     "value": 0.0021076072352768094,
+     "n": 17,
+     "second": 0.0013439633483943725,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.15,
+     "share_exact": 0.135,
+     "lo": 0.0005009747652049256,
+     "hi": 0.0030985326234238,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Ovarian, Cellpose, deposited SR 4.0.1",
+   "surface": "r0c2",
+   "bounds": [
+    0,
+    670,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 107408,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": 6,
+     "value": 0.0019388783015941158,
+     "n": 6,
+     "second": 0.0016966616902185372,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.085,
+     "share_exact": 0.065,
+     "lo": 0.00026437132756074736,
+     "hi": 0.0038135400540700646,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.031229308702948044,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.028897979692072674,
+     "hi": 0.033917921080791696,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 6,
+     "dx": -6,
+     "value": 0.004632964683396912,
+     "n": 27,
+     "second": 0.00400733721948332,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.15,
+     "share_exact": 0.125,
+     "lo": 0.0009029517738404937,
+     "hi": 0.007502982334260883,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 5,
+     "dx": 8,
+     "value": 0.004137857980860193,
+     "n": 22,
+     "second": 0.003837273841252542,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.1,
+     "share_exact": 0.095,
+     "lo": 0.0012424016838355424,
+     "hi": 0.0071162430749687824,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.011642072063053233,
+     "n": 11,
+     "second": 0.0020304153396406566,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.009523033172758561,
+     "hi": 0.014230524960999885,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 7,
+     "dx": -9,
+     "value": 0.0024002111913413726,
+     "n": 17,
+     "second": 0.0016507548243342995,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.155,
+     "share_exact": 0.15,
+     "lo": 0.0005111286069376305,
+     "hi": 0.003994738960325767,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.01525462975125813,
+     "n": 5,
+     "second": 0.0025434868787457265,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.013208678942122538,
+     "hi": 0.01679662469310691,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -6,
+     "dx": 3,
+     "value": 0.0015729324553821478,
+     "n": 7,
+     "second": 0.0014932488127795684,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.08,
+     "share_exact": 0.05,
+     "lo": 0.00012147608795091971,
+     "hi": 0.0027515609153842165,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Ovarian, Cellpose, deposited SR 4.0.1",
+   "surface": "r0c3",
+   "bounds": [
+    0,
+    670,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 22294,
+   "tested": false
+  },
+  {
+   "set": "Ovarian, Cellpose, deposited SR 4.0.1",
+   "surface": "r0c4",
+   "bounds": [
+    0,
+    670,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 0,
+   "tested": false
+  },
+  {
+   "set": "Ovarian, Cellpose, deposited SR 4.0.1",
+   "surface": "r1c0",
+   "bounds": [
+    670,
+    1340,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 102954,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": 4,
+     "value": 0.003184972386254259,
+     "n": 4,
+     "second": 0.002331843745638329,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.145,
+     "share_exact": 0.095,
+     "lo": 0.0008522604041969195,
+     "hi": 0.004954298500035354,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.027956360040509165,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.02489833271615203,
+     "hi": 0.03166072547828288,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.01087197887573188,
+     "n": 16,
+     "second": 0.006031631587203767,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.925,
+     "share_exact": 0.845,
+     "lo": 0.007124382716809941,
+     "hi": 0.014231779373362957,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 1,
+     "dx": -2,
+     "value": 0.006353574747714141,
+     "n": 13,
+     "second": 0.005036248525034148,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.485,
+     "share_exact": 0.44,
+     "lo": 0.002244765876524402,
+     "hi": 0.01031189525568255,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.017553167423872473,
+     "n": 12,
+     "second": 0.003787433939622886,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.595,
+     "lo": 0.013914502342544538,
+     "hi": 0.02070986558765874,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 8,
+     "dx": -4,
+     "value": 0.0027325167671311545,
+     "n": 13,
+     "second": 0.0025361413193947246,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.035,
+     "share_exact": 0.035,
+     "lo": 0.0002415433626240443,
+     "hi": 0.00443177406785657,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.020289075314314786,
+     "n": 12,
+     "second": 0.002070906311643528,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.995,
+     "lo": 0.017643159629308312,
+     "hi": 0.022532261993069243,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 6,
+     "dx": 3,
+     "value": 0.0027188091306471485,
+     "n": 13,
+     "second": 0.0016771734127275506,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.24,
+     "share_exact": 0.205,
+     "lo": 0.00096505189194811,
+     "hi": 0.004681541396150683,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Ovarian, Cellpose, deposited SR 4.0.1",
+   "surface": "r1c1",
+   "bounds": [
+    670,
+    1340,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 131722,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 7,
+     "dx": -1,
+     "value": 0.0037586453662721286,
+     "n": 6,
+     "second": 0.0026958988510226156,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.605,
+     "share_exact": 0.535,
+     "lo": 0.0017995262095866827,
+     "hi": 0.005238097291616223,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.036439676303572144,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.033367813632690355,
+     "hi": 0.03868960789417866,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.004489050607089373,
+     "n": 21,
+     "second": 0.003416854236249378,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.43,
+     "share_exact": 0.42,
+     "lo": 0.0017106894473561285,
+     "hi": 0.008834956159848468,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": -2,
+     "value": 0.007447311668458134,
+     "n": 7,
+     "second": 0.0025917299879155697,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.92,
+     "share_exact": 0.39,
+     "lo": 0.003597981693068805,
+     "hi": 0.010013915063537293,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.011669781777493116,
+     "n": 21,
+     "second": 0.002758150037028617,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.62,
+     "lo": 0.008823447935175782,
+     "hi": 0.016478502751372973,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 2,
+     "dx": 4,
+     "value": 0.0027611325430458855,
+     "n": 12,
+     "second": 0.0021714083399599904,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.25,
+     "share_exact": 0.17,
+     "lo": 0.0006749811656660443,
+     "hi": 0.004640201731741955,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.016694775820314867,
+     "n": 12,
+     "second": 0.0016100848396727319,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.015516681439927738,
+     "hi": 0.01857609303669803,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -6,
+     "dx": 4,
+     "value": 0.001549789510757349,
+     "n": 12,
+     "second": 0.0014051909536672014,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.06,
+     "share_exact": 0.03,
+     "lo": 0.0004130977383729307,
+     "hi": 0.0027673871006109936,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Ovarian, Cellpose, deposited SR 4.0.1",
+   "surface": "r1c2",
+   "bounds": [
+    670,
+    1340,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 137407,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": -6,
+     "value": 0.0019075543372806258,
+     "n": 6,
+     "second": 0.0018921494239547698,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.19,
+     "share_exact": 0.155,
+     "lo": 0.001105386295492583,
+     "hi": 0.004004901939223748,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.033917917344371884,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.031095513222513634,
+     "hi": 0.036431814415481927,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": -6,
+     "value": 0.0046356199340165105,
+     "n": 17,
+     "second": 0.004521224731276252,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.1,
+     "share_exact": 0.08,
+     "lo": 0.0013179432001135306,
+     "hi": 0.006146858352309315,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": -2,
+     "value": 0.006326577047456872,
+     "n": 4,
+     "second": 0.0017511545106597692,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.685,
+     "share_exact": 0.57,
+     "lo": 0.0032764850588981238,
+     "hi": 0.008428942505591326,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.011237102791319842,
+     "n": 14,
+     "second": 0.0032843674633360465,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.97,
+     "lo": 0.009405373015072072,
+     "hi": 0.014376485626042634,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": 0,
+     "value": 0.0032887498721010378,
+     "n": 7,
+     "second": 0.002932976900822837,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.33,
+     "share_exact": 0.19,
+     "lo": 0.0011914453332075748,
+     "hi": 0.004655316498057699,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.017159362273767576,
+     "n": 13,
+     "second": 0.0012272972954932015,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.01603891407166767,
+     "hi": 0.01868954879538743,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 6,
+     "dx": 2,
+     "value": 0.0016695395861290319,
+     "n": 13,
+     "second": 0.0016606286927887126,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.28,
+     "share_exact": 0.18,
+     "lo": 0.00035620134965925484,
+     "hi": 0.002713448163284202,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Ovarian, Cellpose, deposited SR 4.0.1",
+   "surface": "r1c3",
+   "bounds": [
+    670,
+    1340,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 122014,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 10,
+     "dx": -2,
+     "value": 0.0026129603262343704,
+     "n": 8,
+     "second": 0.00224855491408249,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.155,
+     "share_exact": 0.1,
+     "lo": 0.0013271545394505702,
+     "hi": 0.004055665751498106,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.03290094003610933,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.029952337595214932,
+     "hi": 0.035607190703699096,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.0052434043425555465,
+     "n": 25,
+     "second": 0.004745836916692614,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.425,
+     "share_exact": 0.425,
+     "lo": 0.0017298422495903134,
+     "hi": 0.010068648944201179,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 10,
+     "dx": 5,
+     "value": 0.0057259955217841,
+     "n": 18,
+     "second": 0.004829272719052424,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.255,
+     "share_exact": 0.255,
+     "lo": 0.0028587795748751116,
+     "hi": 0.00820855734118888,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.01118517550639253,
+     "n": 9,
+     "second": 0.003055108401548212,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.965,
+     "lo": 0.008025983006640558,
+     "hi": 0.013377358309344313,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 10,
+     "dx": 10,
+     "value": 0.0030142957373854307,
+     "n": 7,
+     "second": 0.0026774629277873663,
+     "interior": true,
+     "share_any": 0.985,
+     "share_within1": 0.135,
+     "share_exact": 0.135,
+     "lo": 0.0007325439745394014,
+     "hi": 0.004740075091971594,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.014124930960521365,
+     "n": 4,
+     "second": 0.0013455853040003074,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.012238714004641476,
+     "hi": 0.01707548015808909,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": 12,
+     "value": 0.0018677953153604099,
+     "n": 8,
+     "second": 0.00161558082811597,
+     "interior": false,
+     "share_any": 0.94,
+     "share_within1": 0.035,
+     "share_exact": 0.03,
+     "lo": 0.0002863660285581188,
+     "hi": 0.002926940889850783,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Ovarian, Cellpose, deposited SR 4.0.1",
+   "surface": "r1c4",
+   "bounds": [
+    670,
+    1340,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 9053,
+   "tested": false
+  },
+  {
+   "set": "Ovarian, Cellpose, deposited SR 4.0.1",
+   "surface": "r2c0",
+   "bounds": [
+    1340,
+    2010,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 102100,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 6,
+     "dx": -3,
+     "value": 0.004538550872130731,
+     "n": 6,
+     "second": 0.0032288615862845482,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.345,
+     "share_exact": 0.335,
+     "lo": 0.002155943916220898,
+     "hi": 0.006520646898491933,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.030851548278150953,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.02846949454059722,
+     "hi": 0.03347729984446664,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.010541046753306027,
+     "n": 14,
+     "second": 0.0052254711694741385,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.935,
+     "share_exact": 0.93,
+     "lo": 0.0065277865862296,
+     "hi": 0.013451461783352204,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -1,
+     "dx": -1,
+     "value": 0.004995508033972973,
+     "n": 3,
+     "second": 0.004913856197618194,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.4,
+     "share_exact": 0.21,
+     "lo": 0.0017456867410513529,
+     "hi": 0.007698916171214771,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.0168100676109173,
+     "n": 6,
+     "second": 0.0024597372070123136,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.98,
+     "lo": 0.01407312061595591,
+     "hi": 0.01988932019027147,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": 1,
+     "value": 0.003059524469551378,
+     "n": 3,
+     "second": 0.0019110404685577231,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.285,
+     "share_exact": 0.27,
+     "lo": 0.0008097119133925302,
+     "hi": 0.00506842433735004,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.017616059707054044,
+     "n": 6,
+     "second": 0.0019696067882477575,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.965,
+     "lo": 0.014408571885702543,
+     "hi": 0.020109979278086127,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 8,
+     "dx": 10,
+     "value": 0.0005388188515431658,
+     "n": 2,
+     "second": 0.0004653893380732743,
+     "interior": true,
+     "share_any": 0.99,
+     "share_within1": 0.08,
+     "share_exact": 0.005,
+     "lo": -0.0006770662674949801,
+     "hi": 0.00247300225668998,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Ovarian, Cellpose, deposited SR 4.0.1",
+   "surface": "r2c1",
+   "bounds": [
+    1340,
+    2010,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 107513,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -7,
+     "value": 0.003855376206254091,
+     "n": 9,
+     "second": 0.0033668453797526254,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.34,
+     "share_exact": 0.26,
+     "lo": 0.0015572824057372649,
+     "hi": 0.005360305376791647,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.031138560207216615,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.028899316704173946,
+     "hi": 0.03340259951475645,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.0064179957810543975,
+     "n": 20,
+     "second": 0.005109807775626418,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.575,
+     "share_exact": 0.55,
+     "lo": 0.003949357260571035,
+     "hi": 0.009644369994830792,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": -2,
+     "value": 0.004041446326412568,
+     "n": 5,
+     "second": 0.002169790106961389,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.46,
+     "share_exact": 0.27,
+     "lo": 0.0016639743646627847,
+     "hi": 0.007516087316240467,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.010824643670166223,
+     "n": 13,
+     "second": 0.0017975094702684657,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.55,
+     "lo": 0.008566076214851493,
+     "hi": 0.014010030212703584,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 1,
+     "dx": -3,
+     "value": 0.0037128792408662736,
+     "n": 8,
+     "second": 0.002095117047596129,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.375,
+     "share_exact": 0.27,
+     "lo": 0.0007869907520962478,
+     "hi": 0.004677335970974511,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.015310156416953102,
+     "n": 17,
+     "second": 0.0021203253726675975,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.013676589907837294,
+     "hi": 0.017708686598136313,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 5,
+     "dx": 2,
+     "value": 0.0022739815933614516,
+     "n": 12,
+     "second": 0.0021982496805301732,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.11,
+     "share_exact": 0.09,
+     "lo": 0.0006416718951109846,
+     "hi": 0.003832934073605171,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Ovarian, Cellpose, deposited SR 4.0.1",
+   "surface": "r2c2",
+   "bounds": [
+    1340,
+    2010,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 117619,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -8,
+     "dx": 0,
+     "value": 0.0029093574073797424,
+     "n": 5,
+     "second": 0.0026151159736982343,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.2,
+     "share_exact": 0.155,
+     "lo": 0.001045154857715186,
+     "hi": 0.004704720434328302,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.03554470410387578,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.03266374607029299,
+     "hi": 0.038190998893766044,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 12,
+     "dx": 11,
+     "value": 0.0034871369918796358,
+     "n": 15,
+     "second": 0.00327478078603205,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.085,
+     "share_exact": 0.085,
+     "lo": 0.00088860263571644,
+     "hi": 0.005430819069681338,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": -1,
+     "value": 0.005953048232716807,
+     "n": 5,
+     "second": 0.0018166951491301875,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.925,
+     "share_exact": 0.43,
+     "lo": 0.002972246980675364,
+     "hi": 0.00892483691918687,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.008855120487684554,
+     "n": 12,
+     "second": 0.0019529282358179412,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.895,
+     "lo": 0.0061419680591645875,
+     "hi": 0.010920138413533688,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -1,
+     "dx": -2,
+     "value": 0.005092467979416648,
+     "n": 4,
+     "second": 0.0040725187148050734,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.82,
+     "share_exact": 0.69,
+     "lo": 0.002112854097799821,
+     "hi": 0.0076520672780188825,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.013740026313478593,
+     "n": 11,
+     "second": 0.0019441549734702246,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.010501752603178338,
+     "hi": 0.015896820833659852,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 8,
+     "dx": -12,
+     "value": 0.0022443967385308294,
+     "n": 11,
+     "second": 0.002168195891600333,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.25,
+     "share_exact": 0.215,
+     "lo": 0.0004349359105486256,
+     "hi": 0.004076197617216418,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Ovarian, Cellpose, deposited SR 4.0.1",
+   "surface": "r2c3",
+   "bounds": [
+    1340,
+    2010,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 133498,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 3,
+     "dx": -7,
+     "value": 0.0025382145686834168,
+     "n": 7,
+     "second": 0.0023231303629789313,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.19,
+     "share_exact": 0.135,
+     "lo": 0.0009257783156764844,
+     "hi": 0.0034792283402514446,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.02710898317981736,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.024118626388652357,
+     "hi": 0.02905911827858869,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.009617992694901822,
+     "n": 13,
+     "second": 0.004926525273363014,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.95,
+     "share_exact": 0.93,
+     "lo": 0.006606526628416193,
+     "hi": 0.014209955636969814,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -1,
+     "dx": -1,
+     "value": 0.005942685238700118,
+     "n": 2,
+     "second": 0.0028755478265104495,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.52,
+     "share_exact": 0.375,
+     "lo": 0.0025651531554248515,
+     "hi": 0.009868238521498752,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.012596572313920529,
+     "n": 8,
+     "second": 0.002702274253308934,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.64,
+     "lo": 0.009690345747223212,
+     "hi": 0.01514955560407102,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 4,
+     "dx": 0,
+     "value": 0.002676369099163467,
+     "n": 3,
+     "second": 0.0018086293494991024,
+     "interior": true,
+     "share_any": 0.99,
+     "share_within1": 0.285,
+     "share_exact": 0.24,
+     "lo": 0.0011880914117109813,
+     "hi": 0.004299244912307802,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.014279799274186322,
+     "n": 4,
+     "second": 0.001266749395661737,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.012635252734684854,
+     "hi": 0.016912508429800722,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -5,
+     "dx": 12,
+     "value": 0.0017465391179487533,
+     "n": 6,
+     "second": 0.001692775932107371,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.11,
+     "share_exact": 0.11,
+     "lo": 0.00033952081555353736,
+     "hi": 0.0031982686542780915,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Ovarian, Cellpose, deposited SR 4.0.1",
+   "surface": "r2c4",
+   "bounds": [
+    1340,
+    2010,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 74373,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 6,
+     "value": 0.0016854453779815426,
+     "n": 2,
+     "second": 0.0016392400545124364,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.115,
+     "share_exact": 0.075,
+     "lo": -0.00037754449673829124,
+     "hi": 0.004083256266901242,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.026253830937980505,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.024050207844113207,
+     "hi": 0.0298197378288372,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.011390455838624636,
+     "n": 6,
+     "second": 0.004670058253251064,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.765,
+     "share_exact": 0.765,
+     "lo": 0.006507487846019339,
+     "hi": 0.016652696467847696,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 2,
+     "dx": 1,
+     "value": 0.005587660771631753,
+     "n": 7,
+     "second": 0.004713499268094723,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.19,
+     "share_exact": 0.165,
+     "lo": 0.002747005866291724,
+     "hi": 0.008107695149939673,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.013939453993911721,
+     "n": 6,
+     "second": 0.0037929525327384805,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.98,
+     "share_exact": 0.84,
+     "lo": 0.01183725546876166,
+     "hi": 0.018463266913503907,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -12,
+     "dx": 5,
+     "value": 0.0022556937820968903,
+     "n": 5,
+     "second": 0.001559439401738194,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.055,
+     "share_exact": 0.025,
+     "lo": -0.00030672701859508757,
+     "hi": 0.004378106237587992,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.015308166640001009,
+     "n": 4,
+     "second": 0.001999527975372839,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.775,
+     "lo": 0.013216968290042796,
+     "hi": 0.019633448292621754,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 2,
+     "dx": -11,
+     "value": 0.0027464131281763615,
+     "n": 8,
+     "second": 0.002180370501190798,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.3,
+     "share_exact": 0.185,
+     "lo": 0.0007777973796603554,
+     "hi": 0.0050061068557260835,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Ovarian, Cellpose, deposited SR 4.0.1",
+   "surface": "r3c0",
+   "bounds": [
+    2010,
+    2680,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 75890,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": 6,
+     "value": 0.0037494747968187525,
+     "n": 6,
+     "second": 0.003330648797071012,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.22,
+     "share_exact": 0.18,
+     "lo": 0.0004655789031950464,
+     "hi": 0.006200356342336711,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.026755340180320886,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.023295986219923962,
+     "hi": 0.030071417851389694,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.006857037185071135,
+     "n": 21,
+     "second": 0.005513237720406572,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.52,
+     "share_exact": 0.415,
+     "lo": 0.0015580047422752209,
+     "hi": 0.011621691064135542,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 3,
+     "dx": 9,
+     "value": 0.004929559210135048,
+     "n": 9,
+     "second": 0.0037499223610272248,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.245,
+     "share_exact": 0.245,
+     "lo": 0.0024305172184301864,
+     "hi": 0.009035992121763411,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.009592300270693244,
+     "n": 20,
+     "second": 0.0028369163065014025,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.905,
+     "lo": 0.007351526112528267,
+     "hi": 0.013048148678305555,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 3,
+     "dx": 9,
+     "value": 0.003441947061316508,
+     "n": 15,
+     "second": 0.002864293931793882,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.14,
+     "share_exact": 0.13,
+     "lo": 0.000512765491141759,
+     "hi": 0.0051861861167455305,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.014007615156669262,
+     "n": 13,
+     "second": 0.0023994220437810743,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.965,
+     "lo": 0.011817770966406965,
+     "hi": 0.01668776676823403,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 9,
+     "dx": -9,
+     "value": 0.0027675060810581353,
+     "n": 8,
+     "second": 0.0015891852109239935,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.095,
+     "share_exact": 0.09,
+     "lo": -1.3140471759282006e-05,
+     "hi": 0.004519509163365035,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Ovarian, Cellpose, deposited SR 4.0.1",
+   "surface": "r3c1",
+   "bounds": [
+    2010,
+    2680,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 133236,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -7,
+     "value": 0.003304228703117529,
+     "n": 6,
+     "second": 0.0019749033823952544,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.2,
+     "share_exact": 0.165,
+     "lo": 0.0008987096252343563,
+     "hi": 0.004135068811328164,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.028665146089090654,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.02651714548767882,
+     "hi": 0.0317590845876103,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.007777142905481371,
+     "n": 17,
+     "second": 0.0031209661688678114,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.755,
+     "share_exact": 0.755,
+     "lo": 0.004898718960921466,
+     "hi": 0.01076467852062844,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": -2,
+     "value": 0.0044862420176640105,
+     "n": 7,
+     "second": 0.0042451852338745155,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.485,
+     "share_exact": 0.405,
+     "lo": 0.0024653699683895775,
+     "hi": 0.008764992157907617,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.014069849935609335,
+     "n": 12,
+     "second": 0.0022608257988276925,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.01225694026646546,
+     "hi": 0.01655018178257907,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": 0,
+     "value": 0.002577126466597579,
+     "n": 8,
+     "second": 0.0020611384628774765,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.37,
+     "share_exact": 0.235,
+     "lo": 0.0008099038555977601,
+     "hi": 0.004693528272611302,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.0148461483042579,
+     "n": 20,
+     "second": 0.0014437195810157455,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.785,
+     "lo": 0.012304946010452067,
+     "hi": 0.017356037252368534,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 2,
+     "dx": -7,
+     "value": 0.0014201773270039464,
+     "n": 13,
+     "second": 0.0011377860029264664,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.095,
+     "share_exact": 0.085,
+     "lo": -8.046164235880884e-06,
+     "hi": 0.0026803071410422025,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Ovarian, Cellpose, deposited SR 4.0.1",
+   "surface": "r3c2",
+   "bounds": [
+    2010,
+    2680,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 112164,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 7,
+     "dx": -3,
+     "value": 0.0024429738290472347,
+     "n": 10,
+     "second": 0.0023488983497894633,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.105,
+     "share_exact": 0.08,
+     "lo": 0.0008222443438427041,
+     "hi": 0.004290924579723299,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.030812765223630856,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.027266216429189975,
+     "hi": 0.034185403654870106,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -7,
+     "value": 0.003340834018337624,
+     "n": 18,
+     "second": 0.0032782340402481847,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.025,
+     "share_exact": 0.015,
+     "lo": 6.83754288374084e-05,
+     "hi": 0.00539141667191248,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": -1,
+     "value": 0.00811739074025486,
+     "n": 6,
+     "second": 0.0046092959241900155,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.855,
+     "share_exact": 0.61,
+     "lo": 0.004201612906822791,
+     "hi": 0.010601048166659872,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.009423310398299467,
+     "n": 18,
+     "second": 0.0020003964488830572,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.705,
+     "lo": 0.007661682263717129,
+     "hi": 0.012495843049070383,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 3,
+     "dx": 1,
+     "value": 0.00239119095625695,
+     "n": 10,
+     "second": 0.002303449154324344,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.185,
+     "share_exact": 0.09,
+     "lo": -0.00043909499345159416,
+     "hi": 0.004619941126814392,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.01334722803369881,
+     "n": 17,
+     "second": 0.0017488871554411922,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.011635491399925124,
+     "hi": 0.015136125488015396,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -5,
+     "dx": -1,
+     "value": 0.002231167927456923,
+     "n": 18,
+     "second": 0.0018874877289734027,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.06,
+     "share_exact": 0.055,
+     "lo": 0.00017919680393384545,
+     "hi": 0.003287441696068885,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Ovarian, Cellpose, deposited SR 4.0.1",
+   "surface": "r3c3",
+   "bounds": [
+    2010,
+    2680,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 106955,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -6,
+     "dx": -2,
+     "value": 0.0031463446656194716,
+     "n": 8,
+     "second": 0.0029519255690479973,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.12,
+     "share_exact": 0.06,
+     "lo": 0.000327835585226527,
+     "hi": 0.004485306629619967,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.028953241675679586,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.025901601925223543,
+     "hi": 0.032653587010187266,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.011151657025394668,
+     "n": 15,
+     "second": 0.005469572300556669,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.97,
+     "share_exact": 0.96,
+     "lo": 0.006485306342577846,
+     "hi": 0.013960080404946751,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 2,
+     "dx": 2,
+     "value": 0.004239851894008662,
+     "n": 5,
+     "second": 0.0036700660238272453,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.235,
+     "share_exact": 0.175,
+     "lo": 0.001604928581721035,
+     "hi": 0.008066475182731209,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.011974550665523553,
+     "n": 16,
+     "second": 0.0029304593686083624,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.745,
+     "lo": 0.009552547455103672,
+     "hi": 0.016265976563863128,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": 0,
+     "value": 0.002667676531723173,
+     "n": 8,
+     "second": 0.0025125742571129317,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.08,
+     "share_exact": 0.07,
+     "lo": 0.00029934165479926776,
+     "hi": 0.004252468333134008,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.014396119721055145,
+     "n": 16,
+     "second": 0.0022624465193301635,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.01285432164712046,
+     "hi": 0.01675169534286179,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 10,
+     "dx": 0,
+     "value": 0.0018544226280451381,
+     "n": 10,
+     "second": 0.0017957035847918634,
+     "interior": true,
+     "share_any": 0.985,
+     "share_within1": 0.02,
+     "share_exact": 0.02,
+     "lo": -0.00018163600660987535,
+     "hi": 0.0030715910214398345,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Ovarian, Cellpose, deposited SR 4.0.1",
+   "surface": "r3c4",
+   "bounds": [
+    2010,
+    2680,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 92161,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -6,
+     "dx": -1,
+     "value": 0.0030193696797318204,
+     "n": 7,
+     "second": 0.0023575582375081616,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.15,
+     "share_exact": 0.115,
+     "lo": 0.0009365728950317732,
+     "hi": 0.004732594240193723,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.02013492792099769,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.017658887528601848,
+     "hi": 0.02315338335903639,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.009901202199753323,
+     "n": 9,
+     "second": 0.006082295163492901,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.765,
+     "share_exact": 0.735,
+     "lo": 0.004747560100912507,
+     "hi": 0.015186993955510627,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 12,
+     "dx": 8,
+     "value": 0.0048846085155345165,
+     "n": 7,
+     "second": 0.003979941134334308,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.165,
+     "share_exact": 0.16,
+     "lo": 8.279678799519852e-05,
+     "hi": 0.008853418736857735,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.017132557213379807,
+     "n": 6,
+     "second": 0.0031105081633826526,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.99,
+     "share_exact": 0.975,
+     "lo": 0.012236563538244417,
+     "hi": 0.01941428470724608,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -12,
+     "dx": 12,
+     "value": 0.0024741723729865273,
+     "n": 10,
+     "second": 0.0023832823170314432,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.075,
+     "share_exact": 0.07,
+     "lo": 5.7261135586611545e-05,
+     "hi": 0.004742178321492096,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.021998385119614605,
+     "n": 3,
+     "second": 0.002399210341905711,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.9,
+     "lo": 0.016900570767216423,
+     "hi": 0.02335605868151498,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -7,
+     "dx": 8,
+     "value": 0.0031389386040062695,
+     "n": 4,
+     "second": 0.0019299289550013254,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.15,
+     "share_exact": 0.125,
+     "lo": 0.0010057120845555296,
+     "hi": 0.005190473330869552,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Ovarian, Cellpose, deposited SR 4.0.1",
+   "surface": "r4c0",
+   "bounds": [
+    2680,
+    3350,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 3362,
+   "tested": false
+  },
+  {
+   "set": "Ovarian, Cellpose, deposited SR 4.0.1",
+   "surface": "r4c1",
+   "bounds": [
+    2680,
+    3350,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 69427,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": 7,
+     "value": 0.003521544617005379,
+     "n": 5,
+     "second": 0.002248491284995824,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.23,
+     "share_exact": 0.195,
+     "lo": 0.0020057623727001484,
+     "hi": 0.005484313821590349,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.024725842212445337,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.022645333552296303,
+     "hi": 0.02702435916861599,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": 9,
+     "value": 0.004296655365555457,
+     "n": 23,
+     "second": 0.0034601673561471813,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.05,
+     "share_exact": 0.035,
+     "lo": 0.0008443361996140764,
+     "hi": 0.007562813435623212,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -10,
+     "dx": 0,
+     "value": 0.004646817585461149,
+     "n": 12,
+     "second": 0.004416258529030048,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.075,
+     "share_exact": 0.075,
+     "lo": 0.0016324465021919478,
+     "hi": 0.007993726656354328,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.01347561033912359,
+     "n": 15,
+     "second": 0.0028650348252543534,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.93,
+     "lo": 0.010250503916655546,
+     "hi": 0.015490737131579776,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -6,
+     "dx": 10,
+     "value": 0.00203542567881565,
+     "n": 13,
+     "second": 0.001826394377496765,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.035,
+     "share_exact": 0.03,
+     "lo": -0.000987342634824928,
+     "hi": 0.004417148629374467,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.016015712252559267,
+     "n": 10,
+     "second": 0.0016774204382346003,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.845,
+     "lo": 0.012024603836796304,
+     "hi": 0.019117742068609184,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 9,
+     "dx": -2,
+     "value": 0.0016963267262397608,
+     "n": 13,
+     "second": 0.00156167291897924,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.04,
+     "share_exact": 0.025,
+     "lo": -0.0005054436391259241,
+     "hi": 0.0035723379508000447,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Ovarian, Cellpose, deposited SR 4.0.1",
+   "surface": "r4c2",
+   "bounds": [
+    2680,
+    3350,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 105563,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 7,
+     "dx": -2,
+     "value": 0.00181433942779341,
+     "n": 4,
+     "second": 0.0014056830140030119,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.055,
+     "share_exact": 0.04,
+     "lo": -0.0001206522418163047,
+     "hi": 0.004199396077979656,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.024668815226575713,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.021287103519545426,
+     "hi": 0.028708367440969405,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": 9,
+     "value": 0.004203864019951542,
+     "n": 19,
+     "second": 0.00372030585702654,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.125,
+     "share_exact": 0.12,
+     "lo": 0.0008935107380403653,
+     "hi": 0.007403117983997365,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 2,
+     "dx": -1,
+     "value": 0.005507042350703428,
+     "n": 14,
+     "second": 0.0028136483315623906,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.63,
+     "share_exact": 0.355,
+     "lo": 0.001869976501805848,
+     "hi": 0.01014110380605789,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.01523387430929457,
+     "n": 4,
+     "second": 0.0013107067020217134,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.805,
+     "lo": 0.010464196224230782,
+     "hi": 0.018413505557130977,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": 1,
+     "value": 0.002663455114049751,
+     "n": 6,
+     "second": 0.002212586586346932,
+     "interior": true,
+     "share_any": 0.97,
+     "share_within1": 0.105,
+     "share_exact": 0.075,
+     "lo": 0.0008138527110812144,
+     "hi": 0.004627020265099785,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.015834481883356677,
+     "n": 5,
+     "second": 0.001287948709965292,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.98,
+     "lo": 0.0124095148105619,
+     "hi": 0.018612047985806412,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 9,
+     "dx": -1,
+     "value": 0.0017959851394440118,
+     "n": 5,
+     "second": 0.0016091741388609693,
+     "interior": true,
+     "share_any": 0.965,
+     "share_within1": 0.07,
+     "share_exact": 0.065,
+     "lo": 0.00011759742427403797,
+     "hi": 0.0035603183958124464,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Ovarian, Cellpose, deposited SR 4.0.1",
+   "surface": "r4c3",
+   "bounds": [
+    2680,
+    3350,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 102823,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": -6,
+     "value": 0.0026709372587889746,
+     "n": 6,
+     "second": 0.0016204672968818112,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.145,
+     "share_exact": 0.14,
+     "lo": 0.0009359419023239668,
+     "hi": 0.004298633482282316,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.025003887777724665,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.021074961997228095,
+     "hi": 0.027427270141176133,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 1,
+     "value": 0.007277860222302923,
+     "n": 11,
+     "second": 0.004825118349779167,
+     "interior": true,
+     "share_any": 0.99,
+     "share_within1": 0.715,
+     "share_exact": 0.695,
+     "lo": 0.004740338521314724,
+     "hi": 0.012039966416784882,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 2,
+     "dx": -2,
+     "value": 0.0051994205208555355,
+     "n": 7,
+     "second": 0.003993688655594352,
+     "interior": true,
+     "share_any": 0.985,
+     "share_within1": 0.165,
+     "share_exact": 0.16,
+     "lo": 0.0014560866454324003,
+     "hi": 0.008138511434135255,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 0,
+     "value": 0.011370892146340905,
+     "n": 2,
+     "second": 0.001849522280704452,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.64,
+     "lo": 0.006935381866891755,
+     "hi": 0.015800161301159212,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": 2,
+     "value": 0.0032632998255622825,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.855,
+     "share_within1": 0.24,
+     "share_exact": 0.175,
+     "lo": -0.000657597381808339,
+     "hi": 0.0057942582794952855,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 0,
+     "value": 0.01603088245905182,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.87,
+     "lo": 0.012477134774531023,
+     "hi": 0.017762024343848742,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "Ovarian, Cellpose, deposited SR 4.0.1",
+   "surface": "r4c4",
+   "bounds": [
+    2680,
+    3350,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 52069,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": -9,
+     "value": 0.0029195491059581524,
+     "n": 7,
+     "second": 0.0023755900837034716,
+     "interior": true,
+     "share_any": 0.955,
+     "share_within1": 0.035,
+     "share_exact": 0.015,
+     "lo": 0.0002783896981576772,
+     "hi": 0.0045882013631868565,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.022412685148432532,
+     "n": 4,
+     "second": 0.0021871946762169747,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.885,
+     "lo": 0.015718560810089165,
+     "hi": 0.025705664607791504,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 0,
+     "value": 0.009378700556203157,
+     "n": 14,
+     "second": 0.00797027767377978,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.41,
+     "share_exact": 0.405,
+     "lo": 0.004248748018699672,
+     "hi": 0.017460989998948694,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": 11,
+     "value": 0.00889916082477038,
+     "n": 12,
+     "second": 0.007068144923426334,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.225,
+     "share_exact": 0.225,
+     "lo": 0.004341815541279126,
+     "hi": 0.013456334122367698,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 0,
+     "value": 0.011870503988168357,
+     "n": 4,
+     "second": 0.0041373010637899554,
+     "interior": true,
+     "share_any": 0.99,
+     "share_within1": 0.92,
+     "share_exact": 0.665,
+     "lo": 0.008244664060025131,
+     "hi": 0.01752970750579146,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 11,
+     "dx": 11,
+     "value": 0.003392164683068688,
+     "n": 4,
+     "second": 0.0028773045197501013,
+     "interior": true,
+     "share_any": 0.915,
+     "share_within1": 0.085,
+     "share_exact": 0.06,
+     "lo": 0.0005728224042961611,
+     "hi": 0.00607161232677841,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 0,
+     "value": 0.016080186479360492,
+     "n": 2,
+     "second": 0.0020741606980005933,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.645,
+     "lo": 0.010668994941247067,
+     "hi": 0.021371380309958426,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 5,
+     "dx": 10,
+     "value": 0.002595878412249064,
+     "n": 3,
+     "second": 0.002157463367235213,
+     "interior": true,
+     "share_any": 0.935,
+     "share_within1": 0.195,
+     "share_exact": 0.11,
+     "lo": -0.0019564903321859783,
+     "hi": 0.005478090225034846,
+     "usable": false
+    }
+   }
+  }
+ ]
+}

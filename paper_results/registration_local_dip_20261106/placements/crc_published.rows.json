@@ -1,0 +1,50 @@
+[
+ {
+  "set": "Colorectal, deposited nucleus map",
+  "surface": "whole",
+  "bounds": [
+   0,
+   3350,
+   0,
+   3350
+  ],
+  "nucleus_in_tissue": 2306029,
+  "centroid_y": 1541.5114584421965,
+  "centroid_x": 1505.0819191779462,
+  "tested": true,
+  "blocks": 1012,
+  "repro": {
+   "package_fft_surface": 0.0,
+   "saved_surface": 0.0
+  },
+  "repro_pass": true,
+  "ring_dy": 0,
+  "ring_dx": 0,
+  "ring_sign": "dip",
+  "ring_contrast": 0.05739284040431292,
+  "ring_border": false,
+  "ring_usable": true,
+  "dip": true,
+  "dy": 0,
+  "dx": 0,
+  "depth": 0.028968229720596206,
+  "interior": true,
+  "n_minima": 1,
+  "second_depth": null,
+  "profile": [
+   0.9710317702794038,
+   1.0,
+   1.033414157855163,
+   1.0410040975891395,
+   1.0334482709673978,
+   1.021622073254782
+  ],
+  "share_any": 1.0,
+  "share_within1": 1.0,
+  "share_exact": 1.0,
+  "depth_lo": 0.02760217831728925,
+  "depth_hi": 0.030178117085398897,
+  "usable": true,
+  "reason": "usable"
+ }
+]

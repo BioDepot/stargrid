@@ -178,22 +178,26 @@ import its readers.
 ## Results of the manuscript
 
 ```
-paper_results/           result tables, each folder with a README of its contents
-paper/numbers.tex and *_numbers.tex      numbers, one macro each
-paper/figures/           figures, their generators (scripts/) and source data (data/)
-paper/supplementary/     supplementary tables and their generator
+paper/*_numbers.tex      every number in the manuscript, one macro each, with its source in comments
+paper/figures/           the figures, their scripts (scripts/) and source data (data/)
+paper/supplementary/     the generated supplementary tables and their script
+paper_results/           the result records these are written from
 ```
 
-These are the results of version 1 of the preprint. Those of the revised manuscript will replace
-them. Run a generator from the repository root, for example
-`python3 paper/figures/scripts/fig2_agreement.py /tmp/out`; `paper/figures/scripts/README.md`
-lists them. They need numpy, pandas and matplotlib.
+These are the manuscript as submitted to Genome Research. `paper/regenerate.sh` writes every
+number file, figure and generated supplementary table again from `paper_results/` and compares
+each with the copy in `paper/`; `paper/README.md` lists which script writes which file and the few
+inputs that are not in this repository. It needs Python 3.10 or later with numpy, pandas, scipy
+and matplotlib. The results of version 1 of the preprint are kept in the tag
+`preprint-v1-results`.
 
 ## What is not here
 
 - **The decoding, gene assignment and count assignment**, which are part of STAR in STAR Suite.
-- **Data.** No reads, images, count matrices or vendor outputs; the result tables are summaries
-  computed from them. `docs/DATASETS.md` gives the source and licence of each dataset.
+- **Data.** No reads, images or count matrices, and of Space Ranger's output only the version,
+  command line and summary metrics of one of our runs (`paper_results/number_inputs/`); the result
+  tables are summaries computed from the data. `docs/DATASETS.md` gives the source and licence of
+  each dataset.
 - **A benchmark of cell-assignment methods** against known cell identities. It will be added.
 - **`hd_candidate_preserving_reference`** cannot be built here yet: it includes the reference read
   decoder, whose source is not in this repository.

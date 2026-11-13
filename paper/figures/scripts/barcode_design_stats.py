@@ -7,11 +7,12 @@ which records the Read 1 segments listed in the chemistry definition and the
 collisions of that fixed-segment representation. Prints LaTeX macros.
 """
 import json
+import os
 import sys
 
-OLIGOS = "<storage>/runs/cleanroom_hd_mouse_brain/slide_oligos"
-CONTRACT = ("<datasets>/visium_hd_human_crc/hd_barcode_contract/"
-            "visium_hd_v1_readspace_suffix_prefix_20260504/summary.json")
+# The folder written by make_visium_hd_contract.py (STAR Suite) from the slide-design file.
+OLIGOS = os.environ.get("VISIUM_HD_BARCODE_INPUTS", "barcode_inputs")
+CONTRACT = "paper_results/number_inputs/barcode_contract_summary.json"
 
 halves = {h: [l.strip() for l in open(f"{OLIGOS}/{h}_full_oligos.txt") if l.strip()] for h in ("bc1", "bc2")}
 out = {}

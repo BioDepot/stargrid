@@ -1,0 +1,955 @@
+{
+ "placement": "public:kidney",
+ "mask": "nuclei and ring of width 3 (f0 | f3)",
+ "harness": "<local>/paper_results/registration_ring_postxenium_20261106/ring/fpr.py",
+ "seed": 20261007,
+ "draws": 200,
+ "search": 12,
+ "radius": 13,
+ "inputs_sha256": {
+  "<datasets>/visium_hd_sr401_kidney/square_002um/raw_feature_bc_matrix.h5": "8cedcb45cc1ab789873d662780e61f40906d7401fb18673b2efbe68bd7884b4b",
+  "<datasets>/visium_hd_sr401_kidney/square_002um/spatial/tissue_positions.parquet": "856196acc40dcd44aebe2dbace12357557d36ec57d0b0ca0b59edfbc5a123622",
+  "<datasets>/visium_hd_sr401_kidney/Visium_HD_Human_Kidney_FFPE_barcode_mappings.parquet": "98c27296440d77a3f022c36384c0cd0752a31214b8e7ceeaa96d6515a582fb0b"
+ },
+ "elapsed": 87.26200366020203,
+ "affinity": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7
+ ],
+ "rows": [
+  {
+   "set": "public kidney",
+   "surface": "whole",
+   "bounds": [
+    0,
+    3350,
+    0,
+    3350
+   ],
+   "nucleus_in_tissue": 984186,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.0035590329900230255,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.003318458297572419,
+     "hi": 0.004112214706896511,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r0c0",
+   "bounds": [
+    0,
+    670,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 44686,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.007378193372763908,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.985,
+     "lo": 0.005546404878180766,
+     "hi": 0.008985058388979617,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r0c1",
+   "bounds": [
+    0,
+    670,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 40406,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": 1,
+     "value": 0.0036050003698497868,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.995,
+     "share_exact": 0.65,
+     "lo": 0.0020418449404598915,
+     "hi": 0.005040249909179023,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r0c2",
+   "bounds": [
+    0,
+    670,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 43533,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 3,
+     "dx": 1,
+     "value": 0.0026940572177998057,
+     "n": 2,
+     "second": 0.0009861897025260635,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.74,
+     "share_exact": 0.505,
+     "lo": 0.0013985700308161155,
+     "hi": 0.003958913938338815,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r0c3",
+   "bounds": [
+    0,
+    670,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 38494,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 3,
+     "dx": 0,
+     "value": 0.0038281785114024913,
+     "n": 2,
+     "second": 0.001414636666285718,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.88,
+     "share_exact": 0.57,
+     "lo": 0.0021401262224228835,
+     "hi": 0.005960378919628667,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -6,
+     "dx": 1,
+     "value": 0.001728625574648257,
+     "n": 2,
+     "second": 0.0008965510356834239,
+     "interior": true,
+     "share_any": 0.95,
+     "share_within1": 0.315,
+     "share_exact": 0.235,
+     "lo": 0.0006903714168227049,
+     "hi": 0.003948821814719972,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r0c4",
+   "bounds": [
+    0,
+    670,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 35202,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": -1,
+     "value": 0.0032746559489582605,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.93,
+     "share_exact": 0.46,
+     "lo": 0.001262130896208541,
+     "hi": 0.004492862607470929,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r1c0",
+   "bounds": [
+    670,
+    1340,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 47733,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.006778048106019119,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.885,
+     "lo": 0.004595622860378778,
+     "hi": 0.00816936698041712,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r1c1",
+   "bounds": [
+    670,
+    1340,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 45722,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.0022618940091387874,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.835,
+     "share_exact": 0.47,
+     "lo": 0.001081259221668529,
+     "hi": 0.0033146171819248677,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r1c2",
+   "bounds": [
+    670,
+    1340,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 42115,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -8,
+     "dx": 8,
+     "value": 0.0014960189196988605,
+     "n": 7,
+     "second": 0.0014833422482996017,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.005,
+     "share_exact": 0.005,
+     "lo": 0.00029410383408785546,
+     "hi": 0.0024487663324221924,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -5,
+     "dx": -2,
+     "value": 0.0024742183181235555,
+     "n": 2,
+     "second": 0.0016514913921291674,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.66,
+     "share_exact": 0.35,
+     "lo": 0.0010262471892902886,
+     "hi": 0.004491023294477742,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r1c3",
+   "bounds": [
+    670,
+    1340,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 43293,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 4,
+     "dx": 0,
+     "value": 0.004196098731923614,
+     "n": 8,
+     "second": 0.0027223472303794516,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.36,
+     "share_exact": 0.325,
+     "lo": 0.0021699441937025497,
+     "hi": 0.005326388656473842,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -5,
+     "dx": 3,
+     "value": 0.0019451624375860233,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.435,
+     "share_exact": 0.21,
+     "lo": 0.0009416064974557103,
+     "hi": 0.0035895217121283385,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r1c4",
+   "bounds": [
+    670,
+    1340,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 39446,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": -3,
+     "value": 0.0026538746953348458,
+     "n": 2,
+     "second": 0.00037869682485869305,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.92,
+     "share_exact": 0.49,
+     "lo": 0.0014293931136732385,
+     "hi": 0.004296174876535031,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": 8,
+     "value": 0.0011511657425274935,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.275,
+     "share_exact": 0.08,
+     "lo": -0.00015264726025314144,
+     "hi": 0.0027396801925868887,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r2c0",
+   "bounds": [
+    1340,
+    2010,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 46618,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.005517527719413717,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.78,
+     "lo": 0.004125094700023197,
+     "hi": 0.007822503756587558,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r2c1",
+   "bounds": [
+    1340,
+    2010,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 43174,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.0036638143185012684,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.96,
+     "share_exact": 0.725,
+     "lo": 0.001914472393708111,
+     "hi": 0.005057109482169336,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r2c2",
+   "bounds": [
+    1340,
+    2010,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 42629,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 2,
+     "dx": 3,
+     "value": 0.003301508440504808,
+     "n": 12,
+     "second": 0.00132899827432853,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.49,
+     "share_exact": 0.225,
+     "lo": 0.0014144457020436097,
+     "hi": 0.005107411675087442,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -4,
+     "value": 0.001453369704248031,
+     "n": 5,
+     "second": 0.0011132223169425526,
+     "interior": true,
+     "share_any": 0.965,
+     "share_within1": 0.13,
+     "share_exact": 0.075,
+     "lo": 0.0003370057926740555,
+     "hi": 0.0029034477320251605,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r2c3",
+   "bounds": [
+    1340,
+    2010,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 42172,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 3,
+     "dx": 0,
+     "value": 0.0031798311915118838,
+     "n": 17,
+     "second": 0.002294631377762313,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.295,
+     "share_exact": 0.29,
+     "lo": 0.0015483028675635224,
+     "hi": 0.004875159507178895,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -4,
+     "value": 0.003004405180588421,
+     "n": 6,
+     "second": 0.001993575484731225,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.295,
+     "share_exact": 0.28,
+     "lo": 0.0011723550419101808,
+     "hi": 0.004566161528653048,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r2c4",
+   "bounds": [
+    1340,
+    2010,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 39268,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": -3,
+     "value": 0.0029114515763561943,
+     "n": 4,
+     "second": 0.0016257026000077168,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.795,
+     "share_exact": 0.415,
+     "lo": 0.0011844509083400179,
+     "hi": 0.005148080992472327,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 10,
+     "dx": 11,
+     "value": 0.0017211310590982132,
+     "n": 5,
+     "second": 0.0012114531714516596,
+     "interior": true,
+     "share_any": 0.94,
+     "share_within1": 0.13,
+     "share_exact": 0.12,
+     "lo": 0.00016347005496463452,
+     "hi": 0.0029492116704976424,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r3c0",
+   "bounds": [
+    2010,
+    2680,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 41312,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.010076369813384778,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.007654613056585507,
+     "hi": 0.012061217844467648,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r3c1",
+   "bounds": [
+    2010,
+    2680,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 49175,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.004493281160452778,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.9,
+     "lo": 0.002930113201848905,
+     "hi": 0.006006632010795526,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r3c2",
+   "bounds": [
+    2010,
+    2680,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 43262,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": -1,
+     "value": 0.0008796234083430221,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.29,
+     "share_exact": 0.065,
+     "lo": 0.00044578138524445365,
+     "hi": 0.0023057066183815936,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r3c3",
+   "bounds": [
+    2010,
+    2680,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 39974,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -3,
+     "value": 0.0032393084425459406,
+     "n": 4,
+     "second": 0.0009492649542703901,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.4,
+     "share_exact": 0.235,
+     "lo": 0.0010314520773564541,
+     "hi": 0.004425434846873895,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 3,
+     "dx": 8,
+     "value": 0.002386394298455552,
+     "n": 2,
+     "second": 0.0006983411335178547,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.435,
+     "share_exact": 0.145,
+     "lo": 0.00040510958165675126,
+     "hi": 0.004684884365378669,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r3c4",
+   "bounds": [
+    2010,
+    2680,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 23489,
+   "tested": false
+  },
+  {
+   "set": "public kidney",
+   "surface": "r4c0",
+   "bounds": [
+    2680,
+    3350,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 43522,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.01079864051119861,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.008490294292582117,
+     "hi": 0.012968723832859148,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r4c1",
+   "bounds": [
+    2680,
+    3350,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 40836,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.006708723170072872,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.92,
+     "lo": 0.004554340294939047,
+     "hi": 0.008787760813071628,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r4c2",
+   "bounds": [
+    2680,
+    3350,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 36552,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": -1,
+     "value": 0.003346395947403824,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.99,
+     "share_exact": 0.47,
+     "lo": 0.001966138709384646,
+     "hi": 0.005827063981263409,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "public kidney",
+   "surface": "r4c3",
+   "bounds": [
+    2680,
+    3350,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 29989,
+   "tested": false
+  },
+  {
+   "set": "public kidney",
+   "surface": "r4c4",
+   "bounds": [
+    2680,
+    3350,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 1584,
+   "tested": false
+  }
+ ]
+}

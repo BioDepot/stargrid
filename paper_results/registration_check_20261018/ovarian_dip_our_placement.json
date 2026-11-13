@@ -1,0 +1,73 @@
+{
+  "slide": "ovarian H1-YQJBZ7X/D1",
+  "maps": {
+    "published": {
+      "nucleus_squares_in_tissue": 2136573,
+      "mean_count_at_zero_shift": 26.828579692807125,
+      "minimum": {
+        "dy": 0,
+        "dx": 0,
+        "mean_count": 26.828579692807125
+      },
+      "maximum": {
+        "dy": -5,
+        "dx": -5,
+        "mean_count": 32.003517844737246
+      }
+    },
+    "native_cellpose": {
+      "nucleus_squares_in_tissue": 2299529,
+      "mean_count_at_zero_shift": 31.78646235816117,
+      "minimum": {
+        "dy": -3,
+        "dx": -3,
+        "mean_count": 27.38176708202974
+      },
+      "maximum": {
+        "dy": -8,
+        "dx": -8,
+        "mean_count": 32.406348771845785
+      },
+      "displacement_of_published_map": {
+        "dy_squares": -3,
+        "dx_squares": -3,
+        "correlation_at_peak": 0.6977155196436833,
+        "correlation_at_zero": 0.27799423378327537
+      }
+    },
+    "native_stardist": {
+      "nucleus_squares_in_tissue": 1504952,
+      "mean_count_at_zero_shift": 31.50779825535964,
+      "minimum": {
+        "dy": -3,
+        "dx": -3,
+        "mean_count": 26.802342177298243
+      },
+      "maximum": {
+        "dy": -8,
+        "dx": -8,
+        "mean_count": 31.914735826813846
+      },
+      "displacement_of_published_map": {
+        "dy_squares": -3,
+        "dx_squares": -3,
+        "correlation_at_peak": 0.6192256965098974,
+        "correlation_at_zero": 0.19322001403254022
+      }
+    }
+  },
+  "tissue_share_of_squares": 0.672400623746937,
+  "mean_count_in_tissue": 26.299416804841123,
+  "mean_count_off_tissue": 0.9336243541383561,
+  "share_of_counts_off_tissue": 0.01700175505486884,
+  "reference_mean_count_20_60um_inside_edge": 21.790608071019076,
+  "inputs": {
+    "<datasets>/visium_hd_3prime_human_ovarian_ff_min_depth/source/downloads/Visium_HD_3prime_Human_Ovarian_Cancer_FF_Min_Depth_barcode_mappings.parquet": "c77700869df690dccf71f7adb6d4eae9a285225c1dd864c6c038f1eb2815da3c",
+    "<datasets>/visium_hd_3prime_human_ovarian_ff_min_depth/oracle_inputs/binned_outputs/square_002um/spatial/tissue_positions.parquet": "af26ae36552849787d50a01b50d0e3eaa5cf08926dcb525bc8009e1cf2000c94",
+    "<runs>/20260927_ovarian_cell_mapping_inputs_v1/square_totals.npz": "db1916d292981f703c8440a1017e9d4a1550876cecdafcfbb5577a8c85b7183e",
+    "<runs>/20260927_ovarian_cell_mapping_inputs_v1/grid_labels.npz": "00dc8eb1070ee245b3562acad9d434cb7a0ef63ca34a51e970f40bcbe9cc9524",
+    "<runs>/20261004_ovarian_stardist_grid_v1/grid_labels.npz": "20b8df010c81987188d310d9d8b750d8706f2eb2c1aa5f2dc21590bbb9a4659e"
+  },
+  "script_sha256": "1745406f17e0efaa8976cfa099af1e05cf64f301633369dcb78e83c2a73d6f76",
+  "status": "post hoc, exploratory; not a protocol endpoint"
+}

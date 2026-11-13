@@ -1,0 +1,42 @@
+{
+ "placement": "crc_cellpose_dep",
+ "label": "Colorectal, Cellpose-SAM, deposited SR 4.1.0",
+ "seed": 20261007,
+ "draws": 200,
+ "search": 12,
+ "radius": 17,
+ "input_files": {
+  "<datasets>/visium_hd_human_crc/processed_4.1.0_outs/binned_outputs/square_002um/spatial/tissue_positions.parquet": {
+   "sha256": "198c6bfaade531af77c58150a558681e73a8d5dbaac1759e5bfda7deae64ea69",
+   "recorded": "198c6bfaade531af77c58150a558681e73a8d5dbaac1759e5bfda7deae64ea69",
+   "match": true
+  },
+  "<runs>/20260930_crc_calibration_inputs_v1/square_totals.npz": {
+   "sha256": "7dee08cdc3bd2b7ba76b608b9365cb21c0460e720d38f8698f6890b12c8cf147",
+   "recorded": "7dee08cdc3bd2b7ba76b608b9365cb21c0460e720d38f8698f6890b12c8cf147",
+   "match": true
+  },
+  "<runs>/20261110_registration_cellpose_sam_v1/crc_cellpose_dep/accepted_grid_labels.npy": {
+   "sha256": "aa482fee06b68d3b7db3bba281ac2cde743c9392af5a09937fcd7a7d3e97c44e",
+   "recorded": null,
+   "match": null
+  }
+ },
+ "inputs_sha_ok": true,
+ "all_reproduced": true,
+ "elapsed_seconds": 37.08188819885254,
+ "affinity": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  12,
+  13,
+  14,
+  15
+ ]
+}

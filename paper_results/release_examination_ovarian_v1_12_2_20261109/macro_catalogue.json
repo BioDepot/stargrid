@@ -1,0 +1,415 @@
+[
+  {
+    "macro": "auditAboveHalfAtypicalCROv",
+    "examined_macro": "auditAboveHalfAtypicalCR",
+    "decimal_places": 0,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "auditJointHiOv",
+    "examined_macro": "auditJointHi",
+    "decimal_places": 0,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "auditJointLoOv",
+    "examined_macro": "auditJointLo",
+    "decimal_places": 0,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "auditNoCandidateMateSupportedOv",
+    "examined_macro": "auditNoCandidateMateSupported",
+    "decimal_places": 0,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "auditNoCandidateMateSupportedPctOv",
+    "examined_macro": "auditNoCandidateMateSupportedPct",
+    "decimal_places": 1,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "auditSRAboveHalfInOverlapOv",
+    "examined_macro": "auditSRAboveHalfInOverlap",
+    "decimal_places": 0,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "auditSRBeyondHalfOv",
+    "examined_macro": "auditSRBeyondHalf",
+    "decimal_places": 0,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "auditSRBeyondHalfPctOv",
+    "examined_macro": "auditSRBeyondHalfPct",
+    "decimal_places": 4,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "auditSREmittedOv",
+    "examined_macro": "auditSREmitted",
+    "decimal_places": 0,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "auditSRNoCandidateEmittedOv",
+    "examined_macro": "auditSRNoCandidateEmitted",
+    "decimal_places": 0,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "auditWithinAtypicalCRPctOv",
+    "examined_macro": "auditWithinAtypicalCRPct",
+    "decimal_places": 1,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "frameAboveEDTwoOv",
+    "examined_macro": "frameAboveEDTwo",
+    "decimal_places": 0,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "frameBestSplitOneOneOv",
+    "examined_macro": "frameBestSplitOneOne",
+    "decimal_places": 0,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "frameDelPlusInsOv",
+    "examined_macro": "frameDelPlusIns",
+    "decimal_places": 0,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "frameOffsetMinusOneOv",
+    "examined_macro": "frameOffsetMinusOne",
+    "decimal_places": 0,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "outOtherDifferentOv",
+    "examined_macro": "outOtherDifferent",
+    "decimal_places": 0,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "outOtherDifferentPctOv",
+    "examined_macro": "outOtherDifferentPct",
+    "decimal_places": 3,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "outOtherShareOfDifferentPctOv",
+    "examined_macro": "outOtherShareOfDifferentPct",
+    "decimal_places": 2,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "outOtherTwoOrThreeEditsPctOv",
+    "examined_macro": "outOtherTwoOrThreeEditsPct",
+    "decimal_places": 1,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "outOursAlsoSRPlacedPctOv",
+    "examined_macro": "outOursAlsoSRPlacedPct",
+    "decimal_places": 2,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "outSROnlyOfSRPctOv",
+    "examined_macro": "outSROnlyOfSRPct",
+    "decimal_places": 4,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "outSROnlyPctOv",
+    "examined_macro": "outSROnlyPct",
+    "decimal_places": 4,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "outSRPlacedAlsoOursPctOv",
+    "examined_macro": "outSRPlacedAlsoOursPct",
+    "decimal_places": 3,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "outTiedPctOv",
+    "examined_macro": "outTiedPct",
+    "decimal_places": 1,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "outTiedSRAmongPctOv",
+    "examined_macro": "outTiedSRAmongPct",
+    "decimal_places": 1,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "outTiedSRNonePctOv",
+    "examined_macro": "outTiedSRNonePct",
+    "decimal_places": 1,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "outTiedSROtherPctOv",
+    "examined_macro": "outTiedSROtherPct",
+    "decimal_places": 1,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "outUnassignedExactOv",
+    "examined_macro": "outUnassignedExact",
+    "decimal_places": 0,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "outUnassignedRateFourOv",
+    "examined_macro": "outUnassignedRateFour",
+    "decimal_places": 1,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "outUnassignedRateOneOv",
+    "examined_macro": "outUnassignedRateOne",
+    "decimal_places": 3,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "outUnassignedRateThreeOv",
+    "examined_macro": "outUnassignedRateThree",
+    "decimal_places": 1,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "outUnassignedRateTwoOv",
+    "examined_macro": "outUnassignedRateTwo",
+    "decimal_places": 2,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "outUnassignedSingleClosestPctOv",
+    "examined_macro": "outUnassignedSingleClosestPct",
+    "decimal_places": 1,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "outUnassignedThreeOrFourEditsPctOv",
+    "examined_macro": "outUnassignedThreeOrFourEditsPct",
+    "decimal_places": 1,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "outUnassignedTwoOrMoreEditsPctOv",
+    "examined_macro": "outUnassignedTwoOrMoreEditsPct",
+    "decimal_places": 1,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "shortBCTwoMoleculesOv",
+    "examined_macro": "shortBCTwoMolecules",
+    "decimal_places": 0,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "shortBCTwoPctOv",
+    "examined_macro": "shortBCTwoPct",
+    "decimal_places": 2,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "shortBCTwoReadsOv",
+    "examined_macro": "shortBCTwoReads",
+    "decimal_places": 0,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "shortBCTwoSixteenPctOv",
+    "examined_macro": "shortBCTwoSixteenPct",
+    "decimal_places": 2,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "shortBCTwoTwoUmDisagreeOv",
+    "examined_macro": "shortBCTwoTwoUmDisagree",
+    "decimal_places": 0,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "shortBCTwoTwoUmPctOv",
+    "examined_macro": "shortBCTwoTwoUmPct",
+    "decimal_places": 2,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "shortBCTwoTwoUmTotalOv",
+    "examined_macro": "shortBCTwoTwoUmTotal",
+    "decimal_places": 0,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "taxCandidatePctOv",
+    "examined_macro": "taxCandidatePct",
+    "decimal_places": 2,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "taxCandidateReadsOv",
+    "examined_macro": "taxCandidateReads",
+    "decimal_places": 0,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "taxNoCandidateOv",
+    "examined_macro": "taxNoCandidate",
+    "decimal_places": 0,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "taxNoCandidatePctOv",
+    "examined_macro": "taxNoCandidatePct",
+    "decimal_places": 2,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "taxNonminEqualCostOv",
+    "examined_macro": "taxNonminEqualCost",
+    "decimal_places": 0,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "taxNonminEqualCostPctOv",
+    "examined_macro": "taxNonminEqualCostPct",
+    "decimal_places": 4,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "taxNonminGreaterCostOv",
+    "examined_macro": "taxNonminGreaterCost",
+    "decimal_places": 0,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "taxNonminGreaterCostPctOv",
+    "examined_macro": "taxNonminGreaterCostPct",
+    "decimal_places": 4,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "taxSRMinimumOv",
+    "examined_macro": "taxSRMinimum",
+    "decimal_places": 0,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "taxSRMinimumPctOv",
+    "examined_macro": "taxSRMinimumPct",
+    "decimal_places": 4,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "taxSRNonminimumOv",
+    "examined_macro": "taxSRNonminimum",
+    "decimal_places": 0,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "taxSRNonminimumPctOv",
+    "examined_macro": "taxSRNonminimumPct",
+    "decimal_places": 4,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "taxSRUnassignedOv",
+    "examined_macro": "taxSRUnassigned",
+    "decimal_places": 0,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "taxSRUnassignedPctOv",
+    "examined_macro": "taxSRUnassignedPct",
+    "decimal_places": 4,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "taxSharedRecordsOv",
+    "examined_macro": "taxSharedRecords",
+    "decimal_places": 0,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "taxUniqueMinNonminOv",
+    "examined_macro": "taxUniqueMinNonmin",
+    "decimal_places": 0,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  },
+  {
+    "macro": "taxUniqueMinNonminPctOv",
+    "examined_macro": "taxUniqueMinNonminPct",
+    "decimal_places": 2,
+    "examined_source": "paper_results/release_examination_20261025/results.json",
+    "examined_source_sha256": "db5155334203edbd0b606b6046ecb7db7eab1fa57e88de708c5eb8636825b0b7"
+  }
+]

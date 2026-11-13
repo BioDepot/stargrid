@@ -1,0 +1,215 @@
+{
+ "placement": "lung_cpsam_TILD111LA",
+ "mask": "nuclei and ring of width 3 (f0 | f3)",
+ "harness": "<local>/paper_results/registration_ring_postxenium_20261106/ring/fpr.py",
+ "seed": 20261007,
+ "draws": 200,
+ "search": 12,
+ "radius": 13,
+ "inputs_sha256": {
+  "<runs>/20261010_registration_oracle_lung_expression_inputs_v1/total.npy": "8bc4b401f80f0f46e3f29acbb8262a9664bf1e52077ff9c4d7a0f96eaa69da5d",
+  "<runs>/20261010_registration_oracle_lung_expression_inputs_v1/tissue.npy": "c797a4a6d39faf402e434ac60a2d8840c80c6c5800f544ccaac96487478fe33c",
+  "<runs>/20261110_lung_cellpose_sam_v1/grids/vannan.npz": "4b0010feabaacf6a6d12e31e9f348df01beced73e24920ea4e5a245cfd3f61c8"
+ },
+ "elapsed": 3.0201079845428467,
+ "affinity": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  12,
+  13,
+  14,
+  15
+ ],
+ "rows": [
+  {
+   "set": "Lung TILD111LA, Cellpose-SAM H&E nuclei",
+   "surface": "whole",
+   "bounds": [
+    64,
+    1867,
+    0,
+    1529
+   ],
+   "nucleus_in_tissue": 77151,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.006873704434233963,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.99,
+     "lo": 0.0054499250284030295,
+     "hi": 0.008566882655954,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "truth": [
+    -3,
+    -3
+   ]
+  },
+  {
+   "set": "Lung TILD111LA, Cellpose-SAM H&E nuclei",
+   "surface": "r0c0",
+   "bounds": [
+    64,
+    665,
+    0,
+    509
+   ],
+   "nucleus_in_tissue": 10153,
+   "tested": false,
+   "truth": [
+    -3,
+    -3
+   ]
+  },
+  {
+   "set": "Lung TILD111LA, Cellpose-SAM H&E nuclei",
+   "surface": "r0c1",
+   "bounds": [
+    64,
+    665,
+    509,
+    1019
+   ],
+   "nucleus_in_tissue": 6215,
+   "tested": false,
+   "truth": [
+    -3,
+    -3
+   ]
+  },
+  {
+   "set": "Lung TILD111LA, Cellpose-SAM H&E nuclei",
+   "surface": "r0c2",
+   "bounds": [
+    64,
+    665,
+    1019,
+    1529
+   ],
+   "nucleus_in_tissue": 4221,
+   "tested": false,
+   "truth": [
+    -3,
+    -3
+   ]
+  },
+  {
+   "set": "Lung TILD111LA, Cellpose-SAM H&E nuclei",
+   "surface": "r1c0",
+   "bounds": [
+    665,
+    1266,
+    0,
+    509
+   ],
+   "nucleus_in_tissue": 7667,
+   "tested": false,
+   "truth": [
+    -3,
+    -3
+   ]
+  },
+  {
+   "set": "Lung TILD111LA, Cellpose-SAM H&E nuclei",
+   "surface": "r1c1",
+   "bounds": [
+    665,
+    1266,
+    509,
+    1019
+   ],
+   "nucleus_in_tissue": 12395,
+   "tested": false,
+   "truth": [
+    -3,
+    -3
+   ]
+  },
+  {
+   "set": "Lung TILD111LA, Cellpose-SAM H&E nuclei",
+   "surface": "r1c2",
+   "bounds": [
+    665,
+    1266,
+    1019,
+    1529
+   ],
+   "nucleus_in_tissue": 7496,
+   "tested": false,
+   "truth": [
+    -3,
+    -3
+   ]
+  },
+  {
+   "set": "Lung TILD111LA, Cellpose-SAM H&E nuclei",
+   "surface": "r2c0",
+   "bounds": [
+    1266,
+    1867,
+    0,
+    509
+   ],
+   "nucleus_in_tissue": 7672,
+   "tested": false,
+   "truth": [
+    -3,
+    -3
+   ]
+  },
+  {
+   "set": "Lung TILD111LA, Cellpose-SAM H&E nuclei",
+   "surface": "r2c1",
+   "bounds": [
+    1266,
+    1867,
+    509,
+    1019
+   ],
+   "nucleus_in_tissue": 11725,
+   "tested": false,
+   "truth": [
+    -3,
+    -3
+   ]
+  },
+  {
+   "set": "Lung TILD111LA, Cellpose-SAM H&E nuclei",
+   "surface": "r2c2",
+   "bounds": [
+    1266,
+    1867,
+    1019,
+    1529
+   ],
+   "nucleus_in_tissue": 9607,
+   "tested": false,
+   "truth": [
+    -3,
+    -3
+   ]
+  }
+ ]
+}

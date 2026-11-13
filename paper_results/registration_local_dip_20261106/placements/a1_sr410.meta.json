@@ -1,0 +1,48 @@
+{
+ "placement": "a1_sr410",
+ "label": "A1, SR 4.1.0",
+ "seed": 20261007,
+ "draws": 200,
+ "search": 12,
+ "radius": 17,
+ "input_files": {
+  "<runs>/20260716_vm2jxxk_natural_sr401_bam_v1/outs/binned_outputs/square_002um/raw_feature_bc_matrix.h5": {
+   "sha256": "eaef4e80223cf74f474e07ef015c6daf6febc1eb3c7fbc4694e15891c9dde8ee",
+   "recorded": "eaef4e80223cf74f474e07ef015c6daf6febc1eb3c7fbc4694e15891c9dde8ee",
+   "match": true
+  },
+  "<runs>/20260718_vm2jxxk_ambiguous_biological_opportunity_auc_v1/masks/tissue_mask.bin": {
+   "sha256": "861a9fab56a513670485281409fe0c791a48018d4ca6514fb22b17b3306b7c6d",
+   "recorded": "861a9fab56a513670485281409fe0c791a48018d4ca6514fb22b17b3306b7c6d",
+   "match": true
+  },
+  "<runs>/20261009_registration_subposition_amendment10_whole_v1/accepted_grid_labels.npy": {
+   "sha256": "bce8a9c02cd8c30961a9d9251befb8c4931f980dbd3cea74cf3b025377af10c2",
+   "recorded": "bce8a9c02cd8c30961a9d9251befb8c4931f980dbd3cea74cf3b025377af10c2",
+   "match": true
+  },
+  "<runs>/20261009_registration_subposition_amendment10_whole_v1/M0_surface.npy": {
+   "sha256": "54c2f49a3cc9601625175a5f92a063ceb9eb391dc2a13651b207a2a6504ffa19",
+   "recorded": null,
+   "match": null
+  },
+  "<runs>/20261009_registration_subposition_amendment10_whole_v1/whole_position_regions.npz": {
+   "sha256": "c0a195cbd3d3fe9355bebdd8af598dcd55ca51ff516f67f70b67654dbf63c618",
+   "recorded": null,
+   "match": null
+  }
+ },
+ "inputs_sha_ok": true,
+ "all_reproduced": true,
+ "elapsed_seconds": 43.426148891448975,
+ "affinity": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7
+ ]
+}

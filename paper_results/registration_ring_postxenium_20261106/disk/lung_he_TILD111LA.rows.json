@@ -1,0 +1,412 @@
+{
+ "placement": "lung_he_TILD111LA",
+ "mask": "nuclei and ring of width 3 (f0 | f3)",
+ "harness": "<local>/paper_results/registration_ring_postxenium_20261106/ring/fpr.py",
+ "seed": 20261007,
+ "draws": 200,
+ "search": 12,
+ "radius": 13,
+ "inputs_sha256": {
+  "<runs>/20261010_registration_oracle_lung_expression_inputs_v1/total.npy": "8bc4b401f80f0f46e3f29acbb8262a9664bf1e52077ff9c4d7a0f96eaa69da5d",
+  "<runs>/20261010_registration_oracle_lung_expression_inputs_v1/tissue.npy": "c797a4a6d39faf402e434ac60a2d8840c80c6c5800f544ccaac96487478fe33c",
+  "<runs>/20261010_registration_oracle_lung_he_grid_v1/grid_labels.npz": "0d10d6db48de45a2c44d93b3602b02247cbd920424aa8be3dad40df4e64d0934",
+  "<runs>/20261010_registration_oracle_lung_he_whole_TILD111LA_v1/whole_surfaces.npz": "58b1ee0e00f8a51cc59b2c7a347de7213dee1236d5ec45f3e2d547e36858ce06"
+ },
+ "elapsed": 5.213608026504517,
+ "affinity": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7
+ ],
+ "rows": [
+  {
+   "set": "Lung TILD111LA, H&E nuclei",
+   "surface": "whole",
+   "bounds": [
+    64,
+    1867,
+    0,
+    1529
+   ],
+   "nucleus_in_tissue": 388617,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.0020114248970595217,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.925,
+     "lo": 0.0013039501105482354,
+     "hi": 0.00281183502854096,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "truth": [
+    -3,
+    -3
+   ]
+  },
+  {
+   "set": "Lung TILD111LA, H&E nuclei",
+   "surface": "r0c0",
+   "bounds": [
+    64,
+    665,
+    0,
+    509
+   ],
+   "nucleus_in_tissue": 51117,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.0016672314164547508,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.395,
+     "share_exact": 0.09,
+     "lo": 2.0832688269462094e-05,
+     "hi": 0.0033672163238393565,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "truth": [
+    -3,
+    -3
+   ]
+  },
+  {
+   "set": "Lung TILD111LA, H&E nuclei",
+   "surface": "r0c1",
+   "bounds": [
+    64,
+    665,
+    509,
+    1019
+   ],
+   "nucleus_in_tissue": 43020,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -2,
+     "value": 0.0021229120507866295,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.545,
+     "share_exact": 0.195,
+     "lo": 0.0002553712139995169,
+     "hi": 0.003871241243869389,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 12,
+     "dx": 12,
+     "value": 0.001172720382487169,
+     "n": 1,
+     "second": null,
+     "interior": false,
+     "share_any": 0.655,
+     "share_within1": 0.185,
+     "share_exact": 0.175,
+     "lo": -0.0004113131094357014,
+     "hi": 0.0033998720021260346,
+     "usable": false
+    }
+   },
+   "truth": [
+    -3,
+    -3
+   ]
+  },
+  {
+   "set": "Lung TILD111LA, H&E nuclei",
+   "surface": "r0c2",
+   "bounds": [
+    64,
+    665,
+    1019,
+    1529
+   ],
+   "nucleus_in_tissue": 19374,
+   "tested": false,
+   "truth": [
+    -3,
+    -3
+   ]
+  },
+  {
+   "set": "Lung TILD111LA, H&E nuclei",
+   "surface": "r1c0",
+   "bounds": [
+    665,
+    1266,
+    0,
+    509
+   ],
+   "nucleus_in_tissue": 49132,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.004034430411489653,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.965,
+     "share_exact": 0.84,
+     "lo": 0.0022016050143689125,
+     "hi": 0.006272628262702202,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "truth": [
+    -3,
+    -3
+   ]
+  },
+  {
+   "set": "Lung TILD111LA, H&E nuclei",
+   "surface": "r1c1",
+   "bounds": [
+    665,
+    1266,
+    509,
+    1019
+   ],
+   "nucleus_in_tissue": 58218,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -2,
+     "value": 0.0029134931282550625,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.79,
+     "share_exact": 0.43,
+     "lo": 0.0011196779341032638,
+     "hi": 0.004516232754410122,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "truth": [
+    -3,
+    -3
+   ]
+  },
+  {
+   "set": "Lung TILD111LA, H&E nuclei",
+   "surface": "r1c2",
+   "bounds": [
+    665,
+    1266,
+    1019,
+    1529
+   ],
+   "nucleus_in_tissue": 35918,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -4,
+     "value": 0.002984963617656655,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.49,
+     "share_exact": 0.325,
+     "lo": 0.0008967433311531937,
+     "hi": 0.005657749296162885,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "truth": [
+    -3,
+    -3
+   ]
+  },
+  {
+   "set": "Lung TILD111LA, H&E nuclei",
+   "surface": "r2c0",
+   "bounds": [
+    1266,
+    1867,
+    0,
+    509
+   ],
+   "nucleus_in_tissue": 34860,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -3,
+     "value": 0.007555622160217101,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.985,
+     "share_exact": 0.915,
+     "lo": 0.00398672385994841,
+     "hi": 0.009265649906470216,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "truth": [
+    -3,
+    -3
+   ]
+  },
+  {
+   "set": "Lung TILD111LA, H&E nuclei",
+   "surface": "r2c1",
+   "bounds": [
+    1266,
+    1867,
+    509,
+    1019
+   ],
+   "nucleus_in_tissue": 53324,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -3,
+     "value": 0.0026524276571124883,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.945,
+     "share_exact": 0.36,
+     "lo": 0.0012732974077699411,
+     "hi": 0.003943700478185219,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "truth": [
+    -3,
+    -3
+   ]
+  },
+  {
+   "set": "Lung TILD111LA, H&E nuclei",
+   "surface": "r2c2",
+   "bounds": [
+    1266,
+    1867,
+    1019,
+    1529
+   ],
+   "nucleus_in_tissue": 43654,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -4,
+     "value": 0.0017894938315421438,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.445,
+     "share_exact": 0.3,
+     "lo": 0.00041355073258817496,
+     "hi": 0.003725455887184576,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "truth": [
+    -3,
+    -3
+   ]
+  }
+ ]
+}

@@ -1,15 +1,18 @@
 #!/usr/bin/env python3
 """Cited release and its reproduction of the official spatial gates (release_numbers.tex).
 
-Reads the provenance record of the v1.9.5.a rerun of the four official spatial
-100K gates and the release metadata shipped inside the release asset.
+Reads the provenance record of the v1.12.2 rerun of the four official spatial
+100K gates and the release metadata shipped inside the release asset. The
+earlier v1.9.5.a rerun is at <local>/
+numbers-20260927/runs/visium_hd_publication/20260927_v195a_spatial_gate_rerun.
 """
 import json
 import sys
+from pathlib import Path
 
-RECORD = sys.argv[1] if len(sys.argv) > 1 else (
-    "<local>/runs/visium_hd_publication/"
-    "20260927_v195a_spatial_gate_rerun/results/spatial_gate_rerun_v195a.json")
+RECORD = sys.argv[1] if len(sys.argv) > 1 else str(
+    Path(__file__).resolve().parents[3]
+    / "paper_results/release_gate_v1_12_2_20261105/results/spatial_gate_rerun_v1122.json")
 record = json.load(open(RECORD))
 meta = dict(line.split("=", 1) for line in record["release_metadata"].splitlines() if "=" in line)
 cases = record["cases"].values()

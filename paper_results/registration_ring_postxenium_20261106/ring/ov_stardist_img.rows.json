@@ -1,0 +1,3136 @@
+{
+ "placement": "ov_stardist_img",
+ "counts": "star",
+ "label": "Ovarian, StarDist, our image-only placement",
+ "expansions": [
+  0,
+  1,
+  2,
+  3
+ ],
+ "seed": 20261007,
+ "draws": 200,
+ "search": 12,
+ "radius": 13,
+ "inputs_sha256": {
+  "<datasets>/visium_hd_3prime_human_ovarian_ff_min_depth/source/downloads/Visium_HD_3prime_Human_Ovarian_Cancer_FF_Min_Depth_barcode_mappings.parquet": "c77700869df690dccf71f7adb6d4eae9a285225c1dd864c6c038f1eb2815da3c",
+  "<datasets>/visium_hd_3prime_human_ovarian_ff_min_depth/oracle_inputs/binned_outputs/square_002um/spatial/tissue_positions.parquet": "af26ae36552849787d50a01b50d0e3eaa5cf08926dcb525bc8009e1cf2000c94",
+  "<runs>/20260927_ovarian_cell_mapping_inputs_v1/square_totals.npz": "db1916d292981f703c8440a1017e9d4a1550876cecdafcfbb5577a8c85b7183e",
+  "<runs>/20261004_ovarian_stardist_grid_v1/grid_labels.npz": "20b8df010c81987188d310d9d8b750d8706f2eb2c1aa5f2dc21590bbb9a4659e"
+ },
+ "elapsed": 50.734304904937744,
+ "affinity": [
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31
+ ],
+ "rows": [
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "whole",
+   "bounds": [
+    0,
+    3350,
+    0,
+    3350
+   ],
+   "nucleus_in_tissue": 1504952,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -10,
+     "value": 0.0022211030505552287,
+     "n": 7,
+     "second": 0.002027037909904106,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.34,
+     "share_exact": 0.325,
+     "lo": 0.0014632422901320829,
+     "hi": 0.002876028055277452,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.03026461880293263,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.029024314396222103,
+     "hi": 0.031642356901681684,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -10,
+     "dx": -2,
+     "value": 0.0012336060487945222,
+     "n": 6,
+     "second": 0.0009030114729540184,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.26,
+     "share_exact": 0.255,
+     "lo": 0.0005971900591855095,
+     "hi": 0.001742931502402212,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.0071430480917467065,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.82,
+     "lo": 0.0063593465851632,
+     "hi": 0.007927591927688469,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.0021204820697817706,
+     "n": 2,
+     "second": 0.00036270168678953496,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.995,
+     "share_exact": 0.995,
+     "lo": 0.0018003317477378045,
+     "hi": 0.0025373225652081943,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": -4,
+     "value": 0.0025346486352167963,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.91,
+     "lo": 0.001994379935729737,
+     "hi": 0.003121088934894512,
+     "usable": true
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -3,
+     "value": 0.007037137589991582,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.565,
+     "lo": 0.006177440017480984,
+     "hi": 0.0077302383604910705,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r0c0",
+   "bounds": [
+    0,
+    670,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 66097,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -8,
+     "dx": -7,
+     "value": 0.005155728786112146,
+     "n": 5,
+     "second": 0.005094768663812088,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.37,
+     "share_exact": 0.335,
+     "lo": 0.0021772510130325553,
+     "hi": 0.007791912329005346,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.030363028951145066,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.025647085019066835,
+     "hi": 0.03507398963500975,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -9,
+     "dx": -5,
+     "value": 0.004418478446289509,
+     "n": 7,
+     "second": 0.0028404244597717287,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.405,
+     "share_exact": 0.4,
+     "lo": 0.0016791151602013389,
+     "hi": 0.00686217834680683,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.004637593154989128,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.93,
+     "share_exact": 0.76,
+     "lo": 0.0029698632205365006,
+     "hi": 0.008314625684404747,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.003538232239233441,
+     "n": 4,
+     "second": 0.002975795506173995,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.625,
+     "share_exact": 0.36,
+     "lo": 0.001625105866469362,
+     "hi": 0.005850657728361269,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": -4,
+     "value": 0.00358464946418946,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.92,
+     "share_within1": 0.525,
+     "share_exact": 0.42,
+     "lo": 0.00195516128339632,
+     "hi": 0.005192394996045882,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -3,
+     "value": 0.010232109737606132,
+     "n": 4,
+     "second": 0.0011993596777104543,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.985,
+     "lo": 0.007156321626593498,
+     "hi": 0.012379118698890584,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": 5,
+     "value": 0.0015926978377490686,
+     "n": 2,
+     "second": 0.0009435084609095146,
+     "interior": true,
+     "share_any": 0.98,
+     "share_within1": 0.1,
+     "share_exact": 0.08,
+     "lo": -3.2046750273312354e-05,
+     "hi": 0.0027232417810283127,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r0c1",
+   "bounds": [
+    0,
+    670,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 101532,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 3,
+     "dx": 1,
+     "value": 0.003726680832748963,
+     "n": 6,
+     "second": 0.002749876225582204,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.205,
+     "share_exact": 0.2,
+     "lo": 0.0012585505326230817,
+     "hi": 0.005895876500217285,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.040937614641357256,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.03764628004524185,
+     "hi": 0.04387946074078306,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -10,
+     "dx": -9,
+     "value": 0.001744374877171051,
+     "n": 7,
+     "second": 0.0016542903575227363,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.095,
+     "share_exact": 0.05,
+     "lo": 4.838620797955607e-05,
+     "hi": 0.0033241241125339495,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -4,
+     "value": 0.006674643000659453,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.985,
+     "share_exact": 0.8,
+     "lo": 0.0037623465305726246,
+     "hi": 0.009671935630191563,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": 4,
+     "value": 0.001329844486126941,
+     "n": 10,
+     "second": 0.0010941170998552963,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.08,
+     "share_exact": 0.035,
+     "lo": 0.00019523439037231194,
+     "hi": 0.002306043447692452,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -5,
+     "value": 0.0037533944847121248,
+     "n": 2,
+     "second": 0.0006266209429741654,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.98,
+     "share_exact": 0.62,
+     "lo": 0.002183166399923858,
+     "hi": 0.005101355456260492,
+     "usable": true
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.008818296506649448,
+     "n": 8,
+     "second": 0.0008784518498670124,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.995,
+     "lo": 0.006953191094427574,
+     "hi": 0.010483344033472947,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 1,
+     "dx": 1,
+     "value": 0.0010522530630725502,
+     "n": 6,
+     "second": 0.0010368141395274977,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.09,
+     "share_exact": 0.065,
+     "lo": -0.00020980459794991968,
+     "hi": 0.002124599569502067,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r0c2",
+   "bounds": [
+    0,
+    670,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 67897,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -8,
+     "dx": -9,
+     "value": 0.004112229241223453,
+     "n": 10,
+     "second": 0.0037169401383114753,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.25,
+     "share_exact": 0.25,
+     "lo": 0.0011429354487402065,
+     "hi": 0.007308751107875378,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.04356595882585734,
+     "n": 2,
+     "second": 0.002105989076196191,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.0398240439425042,
+     "hi": 0.04610972214693322,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -8,
+     "dx": 3,
+     "value": 0.0026197454709888657,
+     "n": 9,
+     "second": 0.0022737946840563072,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.07,
+     "share_exact": 0.06,
+     "lo": 0.0006239085798932731,
+     "hi": 0.004302371050687847,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -4,
+     "value": 0.011405622513342983,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.405,
+     "lo": 0.007249284882474813,
+     "hi": 0.013930415729986148,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -6,
+     "dx": 2,
+     "value": 0.0018178553251724239,
+     "n": 5,
+     "second": 0.0013666654909163523,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.03,
+     "share_exact": 0.03,
+     "lo": 0.00018494625745113519,
+     "hi": 0.0033900397022217535,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -5,
+     "dx": -3,
+     "value": 0.003002792682420541,
+     "n": 4,
+     "second": 0.0015523259461659444,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.495,
+     "share_exact": 0.37,
+     "lo": 0.001365779176067289,
+     "hi": 0.0053409494053161255,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.007159495001341387,
+     "n": 13,
+     "second": 0.0019098094790732656,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.005877280005981039,
+     "hi": 0.008840183139042251,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": -9,
+     "value": 0.0011490936667767349,
+     "n": 9,
+     "second": 0.001127340143565081,
+     "interior": true,
+     "share_any": 0.98,
+     "share_within1": 0.07,
+     "share_exact": 0.07,
+     "lo": -0.0002957650711220338,
+     "hi": 0.0028493737920865293,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r0c3",
+   "bounds": [
+    0,
+    670,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 13508,
+   "tested": false
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r0c4",
+   "bounds": [
+    0,
+    670,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 0,
+   "tested": false
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r1c0",
+   "bounds": [
+    670,
+    1340,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 66376,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 2,
+     "value": 0.004660272966615864,
+     "n": 5,
+     "second": 0.0046371976583379215,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.175,
+     "share_exact": 0.175,
+     "lo": 0.0022796591863003257,
+     "hi": 0.00759001605100092,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -3,
+     "value": 0.03531189079049013,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.825,
+     "lo": 0.0284525123293758,
+     "hi": 0.04079567563031493,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": -9,
+     "value": 0.003255848428301622,
+     "n": 8,
+     "second": 0.002119126445025099,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.055,
+     "share_exact": 0.035,
+     "lo": 0.000640349677768315,
+     "hi": 0.0060097050006382826,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -4,
+     "value": 0.007468932698673658,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.985,
+     "share_exact": 0.44,
+     "lo": 0.00361707504777474,
+     "hi": 0.009886520267115635,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.004917622772363961,
+     "n": 7,
+     "second": 0.0020959691138142666,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.795,
+     "share_exact": 0.7,
+     "lo": 0.0025814084074198052,
+     "hi": 0.0071853840952214925,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -5,
+     "value": 0.002148950257194193,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.985,
+     "share_within1": 0.4,
+     "share_exact": 0.22,
+     "lo": 0.0005205323624421276,
+     "hi": 0.00467357991983006,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.011175264030456544,
+     "n": 19,
+     "second": 0.002270723731667479,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.515,
+     "lo": 0.0069190169621480835,
+     "hi": 0.013313234822274917,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 8,
+     "dx": 5,
+     "value": 0.0020569604234452754,
+     "n": 12,
+     "second": 0.001997836007798015,
+     "interior": true,
+     "share_any": 0.965,
+     "share_within1": 0.075,
+     "share_exact": 0.07,
+     "lo": 0.0005876775335078521,
+     "hi": 0.003629627233121974,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r1c1",
+   "bounds": [
+    670,
+    1340,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 86620,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": 7,
+     "value": 0.004349815994161732,
+     "n": 9,
+     "second": 0.003322238018750312,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.165,
+     "share_exact": 0.165,
+     "lo": 0.0018594063519400518,
+     "hi": 0.006124543098739194,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.03391829133630919,
+     "n": 2,
+     "second": 0.0017348553211942175,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.94,
+     "lo": 0.029959487031663266,
+     "hi": 0.03789351560458654,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -9,
+     "dx": -7,
+     "value": 0.0024209570975113337,
+     "n": 7,
+     "second": 0.0021510659040633318,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.085,
+     "share_exact": 0.075,
+     "lo": 0.0003702615635760132,
+     "hi": 0.0045877671050356455,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.011433126906122304,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.76,
+     "lo": 0.008168178809691604,
+     "hi": 0.013880965596092289,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -9,
+     "dx": -2,
+     "value": 0.0022170863996950896,
+     "n": 8,
+     "second": 0.0016022904903281177,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.195,
+     "share_exact": 0.125,
+     "lo": 0.0002594585873671895,
+     "hi": 0.004050059503077864,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -5,
+     "value": 0.005235962113463777,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.975,
+     "share_exact": 0.745,
+     "lo": 0.002959959238848936,
+     "hi": 0.007132021916218348,
+     "usable": true
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -3,
+     "value": 0.009240833524282621,
+     "n": 8,
+     "second": 0.001307717963387356,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.64,
+     "lo": 0.006360611997038246,
+     "hi": 0.010592758934327824,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 3,
+     "dx": -5,
+     "value": 0.0009699704039053403,
+     "n": 2,
+     "second": 0.0007749012636155683,
+     "interior": true,
+     "share_any": 0.97,
+     "share_within1": 0.065,
+     "share_exact": 0.02,
+     "lo": -0.0003676340358453544,
+     "hi": 0.002432050256140456,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r1c2",
+   "bounds": [
+    670,
+    1340,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 89436,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -7,
+     "dx": -10,
+     "value": 0.0031270697476630804,
+     "n": 7,
+     "second": 0.002606649633998037,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.045,
+     "share_exact": 0.04,
+     "lo": 0.0011953977012580219,
+     "hi": 0.004701952757603374,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.038865642044230375,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.03586515006220521,
+     "hi": 0.04153436849394182,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 5,
+     "dx": -1,
+     "value": 0.002327802737289275,
+     "n": 11,
+     "second": 0.0020538240529195395,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.085,
+     "share_exact": 0.075,
+     "lo": 0.0005848869124568945,
+     "hi": 0.0035895781235457057,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.007806957230150791,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.675,
+     "lo": 0.005310600291817036,
+     "hi": 0.010435729917855083,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -2,
+     "value": 0.0023660788868784532,
+     "n": 14,
+     "second": 0.0020920169566471802,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.33,
+     "share_exact": 0.285,
+     "lo": 0.0007983812707709315,
+     "hi": 0.003695501801070728,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -5,
+     "value": 0.0036610504742274896,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.945,
+     "share_exact": 0.875,
+     "lo": 0.0021914437170832304,
+     "hi": 0.005617248188941443,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.008883317617311537,
+     "n": 7,
+     "second": 0.0009436039873280677,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.006942768543173894,
+     "hi": 0.01033956566683948,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 2,
+     "dx": 1,
+     "value": 0.0009432123521849745,
+     "n": 3,
+     "second": 0.0006810487056674308,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.1,
+     "share_exact": 0.09,
+     "lo": -9.128594288528301e-05,
+     "hi": 0.0018992340520458091,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r1c3",
+   "bounds": [
+    670,
+    1340,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 81977,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 4,
+     "dx": -10,
+     "value": 0.004398932865908423,
+     "n": 15,
+     "second": 0.004234645430792661,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.29,
+     "share_exact": 0.26,
+     "lo": 0.0012526882379057087,
+     "hi": 0.007820908936043982,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.041651486666544946,
+     "n": 4,
+     "second": 0.0022220010317023364,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.036758938077211645,
+     "hi": 0.0452718355300673,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 5,
+     "dx": -9,
+     "value": 0.003106697382732948,
+     "n": 8,
+     "second": 0.002391708327825981,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.09,
+     "share_exact": 0.065,
+     "lo": 0.0011488836390088852,
+     "hi": 0.005040732817541433,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.011690207136539454,
+     "n": 2,
+     "second": 0.0012624574201520744,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.705,
+     "lo": 0.008385829994570446,
+     "hi": 0.01389513914137665,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -2,
+     "value": 0.0018230582505052162,
+     "n": 5,
+     "second": 0.0013225987866936073,
+     "interior": true,
+     "share_any": 0.99,
+     "share_within1": 0.34,
+     "share_exact": 0.14,
+     "lo": 0.0006958530368906202,
+     "hi": 0.0037357445033749386,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -5,
+     "dx": -4,
+     "value": 0.0023316399764863327,
+     "n": 4,
+     "second": 0.00129411249278244,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.67,
+     "share_exact": 0.3,
+     "lo": 0.00027620794408685095,
+     "hi": 0.004748332131459593,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.008884187483589212,
+     "n": 4,
+     "second": 0.0017850784470909709,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.006541893469796401,
+     "hi": 0.009928505740388466,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 3,
+     "dx": -10,
+     "value": 0.0009565092512173745,
+     "n": 2,
+     "second": 0.0007623605514536225,
+     "interior": true,
+     "share_any": 0.755,
+     "share_within1": 0.09,
+     "share_exact": 0.065,
+     "lo": 5.081259145977017e-05,
+     "hi": 0.0026794881055920293,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r1c4",
+   "bounds": [
+    670,
+    1340,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 5539,
+   "tested": false
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r2c0",
+   "bounds": [
+    1340,
+    2010,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 75281,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -6,
+     "dx": 2,
+     "value": 0.003296461261409256,
+     "n": 5,
+     "second": 0.002452273077450551,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.09,
+     "share_exact": 0.035,
+     "lo": 0.0006283032817223978,
+     "hi": 0.005405537112983778,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.04152563090667216,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.895,
+     "lo": 0.036442380546203385,
+     "hi": 0.04513498556859416,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -12,
+     "dx": -3,
+     "value": 0.0035345988279473772,
+     "n": 5,
+     "second": 0.0026171000705856873,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.09,
+     "share_exact": 0.09,
+     "lo": 0.0010239283947507283,
+     "hi": 0.005870661053693888,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -3,
+     "value": 0.006259246932617812,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.985,
+     "share_exact": 0.66,
+     "lo": 0.0037717911601924253,
+     "hi": 0.008250291198056032,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.005577826976815414,
+     "n": 5,
+     "second": 0.0018664771872773933,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.95,
+     "share_exact": 0.54,
+     "lo": 0.0035443618000344625,
+     "hi": 0.007409927950678713,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -5,
+     "value": 0.0011837291561064278,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.965,
+     "share_within1": 0.495,
+     "share_exact": 0.095,
+     "lo": -0.0003455249005258287,
+     "hi": 0.0028654945739535202,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -2,
+     "value": 0.010847966152180977,
+     "n": 5,
+     "second": 0.0020745739731031776,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.785,
+     "lo": 0.007758596590511169,
+     "hi": 0.012905380036087422,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 2,
+     "dx": -2,
+     "value": 0.0007370384849805234,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.82,
+     "share_within1": 0.17,
+     "share_exact": 0.065,
+     "lo": -0.0006095669631666467,
+     "hi": 0.002139591142227712,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r2c1",
+   "bounds": [
+    1340,
+    2010,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 74998,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": 3,
+     "value": 0.004051284364225305,
+     "n": 7,
+     "second": 0.003581898777705872,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.19,
+     "share_exact": 0.16,
+     "lo": 0.000983564606752918,
+     "hi": 0.005753886075021454,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.03889224473736819,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.03438228044465085,
+     "hi": 0.0417202808030233,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -7,
+     "dx": 2,
+     "value": 0.0030073937318546573,
+     "n": 10,
+     "second": 0.0029847078379758862,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.165,
+     "share_exact": 0.15,
+     "lo": 0.0010673145036977027,
+     "hi": 0.005028910811370519,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.006350585293942834,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.805,
+     "lo": 0.0027421412114211315,
+     "hi": 0.008559251518085047,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.003656926401478966,
+     "n": 8,
+     "second": 0.0022213934010719694,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.655,
+     "share_exact": 0.585,
+     "lo": 0.0021543940431714313,
+     "hi": 0.0049497898707368156,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -5,
+     "value": 0.003522290163035624,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.595,
+     "share_exact": 0.44,
+     "lo": 0.0014110507728118781,
+     "hi": 0.005406549127957703,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.009717351450246436,
+     "n": 4,
+     "second": 0.001219793119159318,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.36,
+     "lo": 0.00647586914826011,
+     "hi": 0.011454704727711996,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 1,
+     "dx": 0,
+     "value": 0.0011299368390356168,
+     "n": 4,
+     "second": 0.0008939936034814133,
+     "interior": true,
+     "share_any": 0.97,
+     "share_within1": 0.1,
+     "share_exact": 0.065,
+     "lo": -0.0002851574487238551,
+     "hi": 0.0026719959798107047,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r2c2",
+   "bounds": [
+    1340,
+    2010,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 80501,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -10,
+     "dx": 0,
+     "value": 0.003361990921285196,
+     "n": 4,
+     "second": 0.002666851846329532,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.295,
+     "share_exact": 0.23,
+     "lo": 0.001065915883113655,
+     "hi": 0.005918470732587783,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.042942308552471276,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.04014643598721575,
+     "hi": 0.04522564602410211,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -6,
+     "dx": 5,
+     "value": 0.0022093366956050797,
+     "n": 8,
+     "second": 0.001958583676099357,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.17,
+     "share_exact": 0.17,
+     "lo": 0.0009652346166542592,
+     "hi": 0.004583884100918312,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.010746728375600645,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.915,
+     "lo": 0.0077443704616959545,
+     "hi": 0.013070954200171013,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -8,
+     "dx": 3,
+     "value": 0.0016357924814900393,
+     "n": 11,
+     "second": 0.0013943349597924648,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.125,
+     "share_exact": 0.11,
+     "lo": 0.0006216307624282658,
+     "hi": 0.0031149843273638018,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -4,
+     "value": 0.004148868602252276,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.99,
+     "share_exact": 0.7,
+     "lo": 0.0020861003308011747,
+     "hi": 0.007119716658263048,
+     "usable": true
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.008305562509964837,
+     "n": 9,
+     "second": 0.0010360232811221781,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.905,
+     "lo": 0.005827189900308377,
+     "hi": 0.00929034264269333,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": 0,
+     "value": 0.001259270472323215,
+     "n": 4,
+     "second": 0.0007126233913949953,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.295,
+     "share_exact": 0.135,
+     "lo": 0.00021833848454501928,
+     "hi": 0.0028388819085707036,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r2c3",
+   "bounds": [
+    1340,
+    2010,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 83383,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -9,
+     "value": 0.004074403093604184,
+     "n": 10,
+     "second": 0.002487924670396602,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.295,
+     "share_exact": 0.26,
+     "lo": 0.0012011593591630622,
+     "hi": 0.005982752597554315,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.038760166415836905,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.03532116619060943,
+     "hi": 0.04188664939141277,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 4,
+     "dx": -5,
+     "value": 0.002344635224553304,
+     "n": 13,
+     "second": 0.0020936936796485117,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.105,
+     "share_exact": 0.035,
+     "lo": 0.00029609265638558816,
+     "hi": 0.0038626740935317487,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -4,
+     "value": 0.006222393431480233,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.995,
+     "share_exact": 0.66,
+     "lo": 0.0037636581828612735,
+     "hi": 0.00969924687287059,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.0024285107262540517,
+     "n": 9,
+     "second": 0.0019148241876494332,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.655,
+     "share_exact": 0.53,
+     "lo": 0.0018395116134751976,
+     "hi": 0.004757135753062736,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -5,
+     "value": 0.0019100956363988786,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.43,
+     "share_exact": 0.25,
+     "lo": 0.0008606646244923272,
+     "hi": 0.004089627221049045,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.00847770747207277,
+     "n": 6,
+     "second": 0.0017148368717712081,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.965,
+     "lo": 0.006317820226049042,
+     "hi": 0.010028124768547591,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 2,
+     "dx": -4,
+     "value": 0.0010768845713378106,
+     "n": 2,
+     "second": 0.0007413150500023002,
+     "interior": true,
+     "share_any": 0.94,
+     "share_within1": 0.105,
+     "share_exact": 0.065,
+     "lo": 0.0001843587516513118,
+     "hi": 0.002484531943725835,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r2c4",
+   "bounds": [
+    1340,
+    2010,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 42891,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -12,
+     "value": 0.003570174130747672,
+     "n": 5,
+     "second": 0.003165835135394035,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.08,
+     "share_exact": 0.06,
+     "lo": -0.00037985049915234537,
+     "hi": 0.006832473133256023,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.04509625973997877,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.041911860255551464,
+     "hi": 0.048334184533152594,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": 2,
+     "value": 0.003720746151114618,
+     "n": 6,
+     "second": 0.003594145815809524,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.13,
+     "share_exact": 0.115,
+     "lo": 0.000988429500820154,
+     "hi": 0.005450759459262063,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.006662491995188424,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.95,
+     "share_exact": 0.44,
+     "lo": 0.0029849635004977506,
+     "hi": 0.008430628293837653,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.004914793284714447,
+     "n": 5,
+     "second": 0.002030424834824407,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.44,
+     "share_exact": 0.44,
+     "lo": 0.0034132965982537067,
+     "hi": 0.007068190035936262,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -1,
+     "value": 0.002187444308556774,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.935,
+     "share_within1": 0.525,
+     "share_exact": 0.315,
+     "lo": 0.0008363602276260707,
+     "hi": 0.004866774779257908,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -4,
+     "value": 0.005981062278416216,
+     "n": 3,
+     "second": 0.001492075862945752,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.97,
+     "share_exact": 0.75,
+     "lo": 0.004313649077906728,
+     "hi": 0.008613881698842802,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -10,
+     "value": 0.0007579254015394055,
+     "n": 2,
+     "second": 0.0005305216867195206,
+     "interior": true,
+     "share_any": 0.91,
+     "share_within1": 0.055,
+     "share_exact": 0.045,
+     "lo": -0.0008037257619324945,
+     "hi": 0.0030223089244229315,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r3c0",
+   "bounds": [
+    2010,
+    2680,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 56211,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": -8,
+     "value": 0.0037611707234737057,
+     "n": 7,
+     "second": 0.003495057245795241,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.235,
+     "share_exact": 0.075,
+     "lo": 0.0009029787800290292,
+     "hi": 0.0065099208542528835,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.041101640463561906,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.955,
+     "lo": 0.036314318991199704,
+     "hi": 0.04420581600207207,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": 2,
+     "value": 0.0034467455129127966,
+     "n": 7,
+     "second": 0.0026211168975347476,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.125,
+     "share_exact": 0.125,
+     "lo": 0.00034436264933999103,
+     "hi": 0.005653113201078247,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.00564709471269409,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.925,
+     "share_exact": 0.785,
+     "lo": 0.003144120650828225,
+     "hi": 0.00775792286080026,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.0034536029023153336,
+     "n": 6,
+     "second": 0.0017447230223814891,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.735,
+     "share_exact": 0.72,
+     "lo": 0.002004016232725192,
+     "hi": 0.005720772984871037,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": -1,
+     "value": 0.00214807963681507,
+     "n": 2,
+     "second": 0.001899814107688358,
+     "interior": true,
+     "share_any": 0.96,
+     "share_within1": 0.12,
+     "share_exact": 0.095,
+     "lo": -0.00018741693274721953,
+     "hi": 0.003768081095443732,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.008638392725439648,
+     "n": 8,
+     "second": 0.002346347109375868,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.795,
+     "lo": 0.005942042776012424,
+     "hi": 0.01028829171531326,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 2,
+     "dx": -1,
+     "value": 0.001734164860422438,
+     "n": 9,
+     "second": 0.001572814441899606,
+     "interior": true,
+     "share_any": 0.98,
+     "share_within1": 0.15,
+     "share_exact": 0.1,
+     "lo": -2.7837046946482785e-05,
+     "hi": 0.003900029424608957,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r3c1",
+   "bounds": [
+    2010,
+    2680,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 93106,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": 3,
+     "value": 0.0035499428562524304,
+     "n": 9,
+     "second": 0.002546943305855587,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.495,
+     "share_exact": 0.19,
+     "lo": 0.0010334588275335399,
+     "hi": 0.005638848476533915,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -3,
+     "value": 0.03547375519861706,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.89,
+     "lo": 0.031162804530687743,
+     "hi": 0.039152377386345694,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": -7,
+     "value": 0.0025353955762346114,
+     "n": 10,
+     "second": 0.002508746167556808,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.125,
+     "share_exact": 0.12,
+     "lo": 0.0009701857125137714,
+     "hi": 0.004807382339057498,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -3,
+     "value": 0.005789516513196924,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.98,
+     "share_exact": 0.365,
+     "lo": 0.0033062565554295236,
+     "hi": 0.008728835278209248,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.0032957719953545794,
+     "n": 8,
+     "second": 0.0015612557658908344,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.63,
+     "share_exact": 0.405,
+     "lo": 0.0019338559667330779,
+     "hi": 0.005010760039008228,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -5,
+     "value": 0.001819750956419397,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.785,
+     "share_exact": 0.29,
+     "lo": 0.0004483248235228804,
+     "hi": 0.0035066935324254873,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.01007849760554791,
+     "n": 5,
+     "second": 0.001436955333776524,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.75,
+     "lo": 0.007413974727304628,
+     "hi": 0.011652125512623013,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r3c2",
+   "bounds": [
+    2010,
+    2680,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 80035,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 3,
+     "dx": -6,
+     "value": 0.004665132570220054,
+     "n": 10,
+     "second": 0.003928977396456812,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.54,
+     "share_exact": 0.52,
+     "lo": 0.0031156079379008883,
+     "hi": 0.007272032820229635,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.03141630175974297,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.975,
+     "lo": 0.026431927910407608,
+     "hi": 0.03690617483471078,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -7,
+     "dx": 2,
+     "value": 0.0023521476123635754,
+     "n": 12,
+     "second": 0.002100351373368392,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.175,
+     "share_exact": 0.14,
+     "lo": 0.0005312842804036211,
+     "hi": 0.005073608927686707,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.008640381316653789,
+     "n": 2,
+     "second": 0.0017203539602332896,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.555,
+     "lo": 0.006367702611094447,
+     "hi": 0.01016255510437052,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -6,
+     "dx": 5,
+     "value": 0.0018577579648857423,
+     "n": 11,
+     "second": 0.0018438122048292094,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.095,
+     "share_exact": 0.08,
+     "lo": 4.120699450335111e-05,
+     "hi": 0.003054319401673289,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": -4,
+     "value": 0.0021366794614747775,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.785,
+     "share_exact": 0.46,
+     "lo": 0.0013733874548424313,
+     "hi": 0.003962276534634896,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -3,
+     "value": 0.007651337079582099,
+     "n": 10,
+     "second": 0.0012431168131044057,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.605,
+     "lo": 0.0049847483752148754,
+     "hi": 0.008986619859053269,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 1,
+     "dx": -4,
+     "value": 0.0011862881499673517,
+     "n": 5,
+     "second": 0.0010688896283883587,
+     "interior": true,
+     "share_any": 0.985,
+     "share_within1": 0.23,
+     "share_exact": 0.105,
+     "lo": 1.9545003546908583e-05,
+     "hi": 0.0024624372286993464,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r3c3",
+   "bounds": [
+    2010,
+    2680,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 73843,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -6,
+     "dx": 3,
+     "value": 0.00575670179454546,
+     "n": 6,
+     "second": 0.004285169778944331,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.25,
+     "share_exact": 0.165,
+     "lo": 0.00219957151693011,
+     "hi": 0.007630183100760946,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.03231152300863982,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.0299685068950299,
+     "hi": 0.03615997735352489,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 3,
+     "dx": 3,
+     "value": 0.0033566137431371157,
+     "n": 11,
+     "second": 0.0026613010610103682,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.155,
+     "share_exact": 0.155,
+     "lo": 0.0015427241533051918,
+     "hi": 0.005051475209157971,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -4,
+     "value": 0.0069347362773614085,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.985,
+     "share_exact": 0.825,
+     "lo": 0.0035499823318133174,
+     "hi": 0.008782648564202153,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -2,
+     "value": 0.00509719962566102,
+     "n": 10,
+     "second": 0.0019585322129263005,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.915,
+     "share_exact": 0.345,
+     "lo": 0.00231061207390208,
+     "hi": 0.007225681055504054,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": -4,
+     "value": 0.0024777533029493037,
+     "n": 4,
+     "second": 0.002028399900851019,
+     "interior": true,
+     "share_any": 0.96,
+     "share_within1": 0.325,
+     "share_exact": 0.215,
+     "lo": 0.0008019341697571597,
+     "hi": 0.00441199770346542,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.00860392360546447,
+     "n": 6,
+     "second": 0.0012386079482442636,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.845,
+     "lo": 0.006228254105370712,
+     "hi": 0.010876353771540882,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 2,
+     "dx": 0,
+     "value": 0.0017991006036546242,
+     "n": 2,
+     "second": 0.001777900297199153,
+     "interior": true,
+     "share_any": 0.955,
+     "share_within1": 0.13,
+     "share_exact": 0.12,
+     "lo": 0.00035889618551078755,
+     "hi": 0.0025573204172092967,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r3c4",
+   "bounds": [
+    2010,
+    2680,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 49983,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": 0,
+     "value": 0.004134827232426419,
+     "n": 9,
+     "second": 0.003157405074941444,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.29,
+     "share_exact": 0.185,
+     "lo": 0.0006469687827428572,
+     "hi": 0.007775394040689515,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.03536276731399002,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.031691844666735934,
+     "hi": 0.038310630813253685,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -8,
+     "dx": -1,
+     "value": 0.005247042764390031,
+     "n": 4,
+     "second": 0.0032799454110499227,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.33,
+     "share_exact": 0.315,
+     "lo": 0.0011416698083900835,
+     "hi": 0.007716557755310251,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -4,
+     "value": 0.004343549957333215,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.955,
+     "share_exact": 0.625,
+     "lo": 0.001884802179643952,
+     "hi": 0.007462199350572319,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -6,
+     "dx": -8,
+     "value": 0.0018611588914287935,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.285,
+     "share_exact": 0.11,
+     "lo": 0.000374695967183375,
+     "hi": 0.0037497020260826965,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -4,
+     "value": 0.0044633643490656905,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.97,
+     "share_exact": 0.52,
+     "lo": 0.0027883212109410193,
+     "hi": 0.006576598463539192,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r4c0",
+   "bounds": [
+    2680,
+    3350,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 2921,
+   "tested": false
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r4c1",
+   "bounds": [
+    2680,
+    3350,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 48529,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": -7,
+     "value": 0.004052193818130823,
+     "n": 8,
+     "second": 0.003760025701092573,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.235,
+     "share_exact": 0.23,
+     "lo": 0.002532482183098783,
+     "hi": 0.007436362583153872,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -3,
+     "value": 0.03164156550212083,
+     "n": 3,
+     "second": 0.002686154166701815,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.02788004244787706,
+     "hi": 0.03481535322902542,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": -10,
+     "value": 0.0037327174711860867,
+     "n": 10,
+     "second": 0.0034981603534722794,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.075,
+     "share_exact": 0.075,
+     "lo": 0.0011099385384284789,
+     "hi": 0.006439791130492739,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -4,
+     "value": 0.00883997371181,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.94,
+     "share_exact": 0.38,
+     "lo": 0.004863328752666568,
+     "hi": 0.01183683170511714,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -8,
+     "value": 0.0019572976203967585,
+     "n": 8,
+     "second": 0.0019189862135386981,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.08,
+     "share_exact": 0.06,
+     "lo": 0.0007989052059882596,
+     "hi": 0.0037904896094629772,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -4,
+     "value": 0.0038201700356562673,
+     "n": 4,
+     "second": 0.001484756341259219,
+     "interior": true,
+     "share_any": 0.97,
+     "share_within1": 0.73,
+     "share_exact": 0.59,
+     "lo": 0.0007447045894397875,
+     "hi": 0.006455584102133991,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.008049206610357684,
+     "n": 11,
+     "second": 0.0018156590638249703,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.995,
+     "share_exact": 0.75,
+     "lo": 0.005091949450162664,
+     "hi": 0.009389359767539336,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 9,
+     "dx": -7,
+     "value": 0.0021489168040949025,
+     "n": 8,
+     "second": 0.0014720741249547586,
+     "interior": true,
+     "share_any": 0.96,
+     "share_within1": 0.15,
+     "share_exact": 0.115,
+     "lo": 0.0007250499166696984,
+     "hi": 0.003925859459720618,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r4c2",
+   "bounds": [
+    2680,
+    3350,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 69466,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 2,
+     "dx": -3,
+     "value": 0.004754572368937726,
+     "n": 9,
+     "second": 0.0032820889059361757,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.355,
+     "share_exact": 0.3,
+     "lo": 0.00045665078469951935,
+     "hi": 0.007896886139440723,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -3,
+     "value": 0.032262051226997324,
+     "n": 3,
+     "second": 0.002300326638164707,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.027258969560126734,
+     "hi": 0.03559854338881265,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 2,
+     "dx": -2,
+     "value": 0.003194569693697913,
+     "n": 10,
+     "second": 0.0027380861203447626,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.285,
+     "share_exact": 0.255,
+     "lo": 0.0012123828372395007,
+     "hi": 0.005779807681978301,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.0060573643843135905,
+     "n": 3,
+     "second": 0.003695839664606515,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.955,
+     "share_exact": 0.7,
+     "lo": 0.002181277378434982,
+     "hi": 0.009418459868625481,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.004030892630275673,
+     "n": 3,
+     "second": 0.0017119113253756257,
+     "interior": true,
+     "share_any": 0.975,
+     "share_within1": 0.79,
+     "share_exact": 0.655,
+     "lo": 0.002461023842629467,
+     "hi": 0.005998669146012248,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": -4,
+     "value": 0.0034424370329700915,
+     "n": 3,
+     "second": 0.0022350010117133667,
+     "interior": true,
+     "share_any": 0.97,
+     "share_within1": 0.515,
+     "share_exact": 0.315,
+     "lo": 0.001048094671583366,
+     "hi": 0.0051426120747785665,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -3,
+     "value": 0.0086757512793052,
+     "n": 3,
+     "second": 0.0014583425722631826,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.006703816265691021,
+     "hi": 0.010259469991976484,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -8,
+     "dx": -3,
+     "value": 0.0024410926038184178,
+     "n": 4,
+     "second": 0.001957026203949108,
+     "interior": true,
+     "share_any": 0.865,
+     "share_within1": 0.155,
+     "share_exact": 0.115,
+     "lo": 0.0003587709477826384,
+     "hi": 0.003175219089229901,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r4c3",
+   "bounds": [
+    2680,
+    3350,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 64615,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -8,
+     "dx": -8,
+     "value": 0.0032910919761739432,
+     "n": 6,
+     "second": 0.0029970962301713033,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.1,
+     "share_exact": 0.09,
+     "lo": 0.0009362371085057219,
+     "hi": 0.0059556078692633435,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -3,
+     "value": 0.033423190344022524,
+     "n": 3,
+     "second": 0.0019825463244583785,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.029506105938663783,
+     "hi": 0.03666359571437082,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -12,
+     "dx": 1,
+     "value": 0.0026381608369128173,
+     "n": 8,
+     "second": 0.002377114007934722,
+     "interior": false,
+     "share_any": 0.99,
+     "share_within1": 0.085,
+     "share_exact": 0.07,
+     "lo": 8.086731176382147e-05,
+     "hi": 0.005027827109266088,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -4,
+     "value": 0.005141798189455593,
+     "n": 3,
+     "second": 0.0018172870753851988,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.925,
+     "share_exact": 0.76,
+     "lo": 0.002984288873276131,
+     "hi": 0.00800450313666912,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -11,
+     "dx": -6,
+     "value": 0.001460976335239339,
+     "n": 4,
+     "second": 0.0011939621315046889,
+     "interior": true,
+     "share_any": 0.85,
+     "share_within1": 0.1,
+     "share_exact": 0.06,
+     "lo": -0.00023518892357095032,
+     "hi": 0.0035655527474911086,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -1,
+     "dx": -4,
+     "value": 0.002401939333218417,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.835,
+     "share_within1": 0.47,
+     "share_exact": 0.255,
+     "lo": 0.0005235737444513916,
+     "hi": 0.00397998384162763,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -3,
+     "value": 0.008666748819935677,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.88,
+     "lo": 0.005603883245200786,
+     "hi": 0.010224210702740879,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "Ovarian, StarDist, our image-only placement",
+   "surface": "r4c4",
+   "bounds": [
+    2680,
+    3350,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 30207,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -11,
+     "dx": -5,
+     "value": 0.004774441386158346,
+     "n": 7,
+     "second": 0.004766640428851332,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.09,
+     "share_exact": 0.06,
+     "lo": 0.0010594864039988772,
+     "hi": 0.007289839803228871,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -3,
+     "value": 0.033856983356142734,
+     "n": 7,
+     "second": 0.005040693499448912,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.99,
+     "lo": 0.027175294178117697,
+     "hi": 0.03917355264745005,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": 2,
+     "value": 0.00473029813521797,
+     "n": 4,
+     "second": 0.0031032975748810365,
+     "interior": true,
+     "share_any": 0.96,
+     "share_within1": 0.265,
+     "share_exact": 0.255,
+     "lo": 0.001068690693740071,
+     "hi": 0.009117791171682762,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.006766197927158046,
+     "n": 2,
+     "second": 0.0011476212284508014,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.93,
+     "share_exact": 0.34,
+     "lo": 0.0012228689938321962,
+     "hi": 0.012018169574310995,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -12,
+     "dx": -7,
+     "value": 0.0025769091087188833,
+     "n": 2,
+     "second": 0.0016655910977800836,
+     "interior": false,
+     "share_any": 0.845,
+     "share_within1": 0.135,
+     "share_exact": 0.06,
+     "lo": 0.00048575919777527624,
+     "hi": 0.0051772578201405356,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": -4,
+     "value": 0.004202879989606334,
+     "n": 3,
+     "second": 0.0019924954064725053,
+     "interior": true,
+     "share_any": 0.99,
+     "share_within1": 0.825,
+     "share_exact": 0.36,
+     "lo": 0.0018853518299205064,
+     "hi": 0.006162028627188694,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 11,
+     "dx": 7,
+     "value": 0.001817031281617476,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.77,
+     "share_within1": 0.08,
+     "share_exact": 0.065,
+     "lo": -0.00035324319860308704,
+     "hi": 0.003928541889745527,
+     "usable": false
+    }
+   }
+  }
+ ]
+}

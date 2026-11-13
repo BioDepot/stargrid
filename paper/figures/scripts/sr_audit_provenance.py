@@ -9,7 +9,7 @@ import json
 import os
 import sys
 
-RUN = sys.argv[1] if len(sys.argv) > 1 else "<runs>/20260716_vm2jxxk_natural_sr401_bam_v1"
+RUN = sys.argv[1] if len(sys.argv) > 1 else "paper_results/number_inputs/space_ranger_vm2jxxk_a1"
 version = json.load(open(f"{RUN}/_versions"))["pipelines"].split("-")[-1]
 argv = open(f"{RUN}/_cmdline").read().split()
 reference = os.path.basename(argv[argv.index("--transcriptome") + 1]).replace("refdata-gex-", "")

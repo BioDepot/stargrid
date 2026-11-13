@@ -12,12 +12,13 @@ short-BC2 overlap geometry.
 import csv
 import gzip
 import json
+import os
 from pathlib import Path
 
-RUNS = "<runs>/runs"
-CANDIDATES = f"{RUNS}/20260716_vm2jxxk_full_natural_candidate_reference_v1/candidate_preservation/summary.json"
-TAXONOMY = f"{RUNS}/20260720_vm2jxxk_full_sr_disagreement_paper_taxonomy_v1/summary.json"
-LEDGER = f"{RUNS}/20260720_vm2jxxk_full_sr_disagreement_raw_edit_audit_v1/nonminimum_raw_edit_ledger.tsv.gz"
+CANDIDATES = "paper_results/number_inputs/candidate_preservation_summary.json"
+TAXONOMY = "paper_results/number_inputs/disagreement_taxonomy_summary.json"
+# The read-level ledger of the examination (not redistributed).
+LEDGER = os.environ.get("VISIUM_HD_AUDIT_LEDGER", "nonminimum_raw_edit_ledger.tsv.gz")
 LIMIT = 2
 JOINT = (29, 31)          # joint barcode length: BC1 15-16 plus BC2 14-15 bases
 MATES = Path(__file__).resolve().parents[1] / "data" / "sr_audit_no_candidate_mates.json"

@@ -1,0 +1,90 @@
+#!/usr/bin/env python3
+"""Display macros for where the additional molecules come from (B1), and rounded values of the release
+examinations (B3, B3-Ov) for the abstract, the running text and Table 2, with their range over the two slides.
+
+Reads the B1 splits with the cited release, one record per slide (results.json, key "examined" or
+"ovarian"): slide H1-VM2JXXK/A1 on the probe set's genes, paper_results/b1_location_effect_target_20261109,
+and the ovarian dataset, paper_results/b1_location_effect_ovarian_v1_12_2_20261109; and the examinations
+paper_results/release_examination_v1_12_2_20261105 and release_examination_ovarian_v1_12_2_20261109
+(results.json). Writes paper/source_split_numbers.tex.
+Every component is given in millions of molecules and as a percentage of Space Ranger's counted
+total M on the same slide, so the components add up to the gap D = T - M. The text names the
+direction of each component in words ("adds", "removes"), so the signs it assumes are checked here.
+Usage: source_split_numbers.py [OUTPUT]
+"""
+import hashlib
+import json
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[3]
+RELEASE = "2ca281c96f3dd2b9d596da1991b397fd05f9f73d"
+B1 = {"examined": ROOT / "paper_results" / "b1_location_effect_target_20261109" / "results.json",
+      "ovarian": ROOT / "paper_results" / "b1_location_effect_ovarian_v1_12_2_20261109" / "results.json"}
+B3 = {"": ROOT / "paper_results" / "release_examination_v1_12_2_20261105" / "results.json",
+      "Ov": ROOT / "paper_results" / "release_examination_ovarian_v1_12_2_20261109" / "results.json"}
+OUT = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "paper" / "source_split_numbers.tex"
+SLIDES = {"examined": "Ex", "ovarian": "Ov"}
+
+
+def require(condition, message):
+    if not condition:
+        sys.exit(f"source_split_numbers.py: {message}")
+
+
+def record(path):
+    content = path.read_bytes()
+    data = json.loads(content)
+    require(data.get("status") == "complete" and data.get("all_gates_passed") is True
+            and data.get("release_revision") == RELEASE, f"{path.relative_to(ROOT)}: not a complete, gated v1.12.2 record")
+    return data, hashlib.sha256(content).hexdigest()
+
+
+macros, notes, rests = {}, [], {}
+for slide, tag in SLIDES.items():
+    data, digest = record(B1[slide])
+    r = data[slide]
+    m, (b, h, t) = r["M"], (r["primary"][q] for q in ("B", "H", "T"))
+    location, rest, counting = h - b, t - h, b - m
+    components = r["native_components"]
+    require((location, rest, counting) == (components["location"], components["rest"], components["counting_offset"]),
+            f"{slide}: components differ")
+    require(location + rest + counting == t - m == r["D"], f"{slide}: split does not close")
+    require(location > 0 and counting > 0, f"{slide}: the text says location and counting add molecules")
+    require(abs(location) > abs(rest) and abs(location) > abs(counting),
+            f"{slide}: the text says the location effect is the largest component")
+    for name, value in (("Gap", t - m), ("Location", location), ("Rest", rest), ("Count", counting)):
+        macros[f"src{tag}{name}M"] = f"{abs(value) / 1e6:.2f}"
+        macros[f"src{tag}{name}Pct"] = f"{100 * abs(value) / m:.2f}"
+    macros[f"src{tag}LocationShare"] = f"{100 * location / (t - m):.0f}"
+    exact = r["exact"]                       # the exact-UMI companion of the location effect
+    require(exact["H"] - exact["B"] == exact["location"] > 0, f"{slide}: Exact location effect")
+    macros[f"src{tag}ExactLocationM"] = f"{exact['location'] / 1e6:.2f}"
+    rests[slide] = rest
+    notes.append(f"% {slide}: {B1[slide].relative_to(ROOT)}; SHA-256 {digest}")
+    notes.append(f"% {slide}: M={m:,} T={t:,} B={b:,} H={h:,}; rest is {'negative' if rest < 0 else 'positive'}")
+require(rests["examined"] < 0 < rests["ovarian"],
+        "the text says the rest removes molecules on the examined slide and adds them on the ovarian dataset")
+
+shares = {}
+for tag, path in B3.items():
+    data, digest = record(path)
+    values = data["macro_values"]
+    for name, digits in (("taxSRNonminimumPct", 2), ("taxSRUnassignedPct", 2), ("taxSRMinimumPct", 1)):
+        row = values[name + tag]
+        numerator, denominator = row["numerator"]["primary"], row["denominator"]["primary"]
+        require(abs(100 * numerator / denominator - float(row["primary"])) < 1e-3, f"{name}{tag}: ratio differs")
+        macros[name + "R" + tag] = f"{100 * numerator / denominator:.{digits}f}"
+        shares.setdefault(name, []).append(100 * numerator / denominator)
+    notes.append(f"% rounded shares{' (' + tag + ')' if tag else ''}: {path.relative_to(ROOT)}; SHA-256 {digest}")
+for name in ("taxSRNonminimumPct", "taxSRUnassignedPct"):    # range over both slides, for the abstract
+    macros[name + "RLo"], macros[name + "RHi"] = (f"{v:.1f}" for v in (min(shares[name]), max(shares[name])))
+
+lines = ["% Generated by figures/scripts/source_split_numbers.py (1MM_CR). M: Space Ranger's counted molecules",
+         "% (on slide H1-VM2JXXK/A1, on the probe set's genes); T: STARgrid's native total; B: Space Ranger's",
+         "% locations and genes under STARgrid's UMI rule; H: STARgrid's locations with Space Ranger's genes.",
+         "% Location = H - B, Rest = T - H, Count = B - M;",
+         "% M suffix: millions of molecules (absolute value), Pct: percent of M (absolute value)."] + notes
+lines += [rf"\newcommand{{\{k}}}{{{v}}}" for k, v in macros.items()]
+OUT.write_text("\n".join(lines) + "\n")
+print(f"wrote {OUT} ({len(macros)} macros)")

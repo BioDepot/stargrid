@@ -1,0 +1,923 @@
+{
+ "placement": "postxen:xen",
+ "mask": "nuclei and ring of width 3 (f0 | f3)",
+ "harness": "<local>/paper_results/registration_ring_postxenium_20261106/ring/fpr.py",
+ "seed": 20261007,
+ "draws": 200,
+ "search": 12,
+ "radius": 13,
+ "inputs_sha256": {
+  "<runs>/20261106_post_xenium_lung_oracle_v1/work/cli/counts.npz": "2cf5eac0c414c9ac5a85d797400288023641c17bd4754b3fd32fdd365d2abcb6",
+  "<runs>/20261106_post_xenium_lung_oracle_v1/work/cli/support.npz": "00431f05f22a9e6b2fdf67380437351fb19a8120dc84daee074e6c20de80ca8b",
+  "<runs>/20261106_post_xenium_lung_oracle_v1/work/cli/xen.npz": "5ddb843b9f0233e80348fb16f3b2241838dc565d73c3aa79f62d8e8b3a4fb54a"
+ },
+ "elapsed": 12.48349142074585,
+ "affinity": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7
+ ],
+ "rows": [
+  {
+   "set": "post-Xenium lung, xen nuclei",
+   "surface": "whole",
+   "bounds": [
+    0,
+    3350,
+    0,
+    3350
+   ],
+   "nucleus_in_tissue": 1306235,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.0021636609705912857,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.0017956062790703497,
+     "hi": 0.002627104491527416,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "truth": [
+    0,
+    0
+   ]
+  },
+  {
+   "set": "post-Xenium lung, xen nuclei",
+   "surface": "r0c0",
+   "bounds": [
+    0,
+    670,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 0,
+   "tested": false,
+   "truth": [
+    0,
+    0
+   ]
+  },
+  {
+   "set": "post-Xenium lung, xen nuclei",
+   "surface": "r0c1",
+   "bounds": [
+    0,
+    670,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 2449,
+   "tested": false,
+   "truth": [
+    0,
+    0
+   ]
+  },
+  {
+   "set": "post-Xenium lung, xen nuclei",
+   "surface": "r0c2",
+   "bounds": [
+    0,
+    670,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 52693,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.0021593629005978165,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.825,
+     "share_exact": 0.53,
+     "lo": 0.0008962147371611717,
+     "hi": 0.003306084145064714,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "truth": [
+    0,
+    0
+   ]
+  },
+  {
+   "set": "post-Xenium lung, xen nuclei",
+   "surface": "r0c3",
+   "bounds": [
+    0,
+    670,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 59311,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.003020986454308927,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.92,
+     "share_exact": 0.705,
+     "lo": 0.0013914938830403567,
+     "hi": 0.004417589854082722,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "truth": [
+    0,
+    0
+   ]
+  },
+  {
+   "set": "post-Xenium lung, xen nuclei",
+   "surface": "r0c4",
+   "bounds": [
+    0,
+    670,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 0,
+   "tested": false,
+   "truth": [
+    0,
+    0
+   ]
+  },
+  {
+   "set": "post-Xenium lung, xen nuclei",
+   "surface": "r1c0",
+   "bounds": [
+    670,
+    1340,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 351,
+   "tested": false,
+   "truth": [
+    0,
+    0
+   ]
+  },
+  {
+   "set": "post-Xenium lung, xen nuclei",
+   "surface": "r1c1",
+   "bounds": [
+    670,
+    1340,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 36908,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.0017845191230532187,
+     "n": 2,
+     "second": 0.0008115071404384278,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.975,
+     "share_exact": 0.18,
+     "lo": 0.0008982158312422772,
+     "hi": 0.0047569771175837335,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "truth": [
+    0,
+    0
+   ]
+  },
+  {
+   "set": "post-Xenium lung, xen nuclei",
+   "surface": "r1c2",
+   "bounds": [
+    670,
+    1340,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 80983,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.0013648846570875062,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.985,
+     "share_exact": 0.325,
+     "lo": 0.0005182780587959402,
+     "hi": 0.0028259901979185544,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "truth": [
+    0,
+    0
+   ]
+  },
+  {
+   "set": "post-Xenium lung, xen nuclei",
+   "surface": "r1c3",
+   "bounds": [
+    670,
+    1340,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 83745,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.002262185314522158,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.95,
+     "share_exact": 0.625,
+     "lo": 0.001146269148342799,
+     "hi": 0.003667191687276972,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "truth": [
+    0,
+    0
+   ]
+  },
+  {
+   "set": "post-Xenium lung, xen nuclei",
+   "surface": "r1c4",
+   "bounds": [
+    670,
+    1340,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 3452,
+   "tested": false,
+   "truth": [
+    0,
+    0
+   ]
+  },
+  {
+   "set": "post-Xenium lung, xen nuclei",
+   "surface": "r2c0",
+   "bounds": [
+    1340,
+    2010,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 32859,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.0027719599378130955,
+     "n": 2,
+     "second": 0.0018636375547476103,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.495,
+     "share_exact": 0.405,
+     "lo": 0.0015910185979608027,
+     "hi": 0.005341212723672384,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -11,
+     "dx": -9,
+     "value": 0.001426387126116424,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.905,
+     "share_within1": 0.185,
+     "share_exact": 0.06,
+     "lo": -0.0008188623718127508,
+     "hi": 0.003800362067720753,
+     "usable": false
+    }
+   },
+   "truth": [
+    0,
+    0
+   ]
+  },
+  {
+   "set": "post-Xenium lung, xen nuclei",
+   "surface": "r2c1",
+   "bounds": [
+    1340,
+    2010,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 77817,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.0025754674374873776,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.86,
+     "share_exact": 0.4,
+     "lo": 0.0016750969862002307,
+     "hi": 0.004393656524446294,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 7,
+     "dx": 11,
+     "value": 0.0008919837052788759,
+     "n": 3,
+     "second": 0.000870738634919932,
+     "interior": true,
+     "share_any": 0.905,
+     "share_within1": 0.165,
+     "share_exact": 0.085,
+     "lo": -0.000435805624261043,
+     "hi": 0.002305521187724491,
+     "usable": false
+    }
+   },
+   "truth": [
+    0,
+    0
+   ]
+  },
+  {
+   "set": "post-Xenium lung, xen nuclei",
+   "surface": "r2c2",
+   "bounds": [
+    1340,
+    2010,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 102495,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.0012680436692278363,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.195,
+     "lo": 0.0007907772354909526,
+     "hi": 0.002933295706301187,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "truth": [
+    0,
+    0
+   ]
+  },
+  {
+   "set": "post-Xenium lung, xen nuclei",
+   "surface": "r2c3",
+   "bounds": [
+    1340,
+    2010,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 93942,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.0019077714009683167,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.925,
+     "share_exact": 0.475,
+     "lo": 0.0005602976416869909,
+     "hi": 0.0030729395987542265,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "truth": [
+    0,
+    0
+   ]
+  },
+  {
+   "set": "post-Xenium lung, xen nuclei",
+   "surface": "r2c4",
+   "bounds": [
+    1340,
+    2010,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 13328,
+   "tested": false,
+   "truth": [
+    0,
+    0
+   ]
+  },
+  {
+   "set": "post-Xenium lung, xen nuclei",
+   "surface": "r3c0",
+   "bounds": [
+    2010,
+    2680,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 87482,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.0029535365017654414,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.965,
+     "share_exact": 0.745,
+     "lo": 0.001915321442796225,
+     "hi": 0.003937671972934653,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "truth": [
+    0,
+    0
+   ]
+  },
+  {
+   "set": "post-Xenium lung, xen nuclei",
+   "surface": "r3c1",
+   "bounds": [
+    2010,
+    2680,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 106963,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.002989362353412739,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.995,
+     "share_exact": 0.6,
+     "lo": 0.0013502314789363922,
+     "hi": 0.004325680803702636,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "truth": [
+    0,
+    0
+   ]
+  },
+  {
+   "set": "post-Xenium lung, xen nuclei",
+   "surface": "r3c2",
+   "bounds": [
+    2010,
+    2680,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 60965,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 1,
+     "value": 0.00277790381286791,
+     "n": 5,
+     "second": 0.0014266202625576874,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.505,
+     "share_exact": 0.39,
+     "lo": 0.0013881843483075252,
+     "hi": 0.00514770151893853,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -9,
+     "dx": 9,
+     "value": 0.0019895974189142462,
+     "n": 2,
+     "second": 0.0019433688711697483,
+     "interior": true,
+     "share_any": 0.94,
+     "share_within1": 0.2,
+     "share_exact": 0.155,
+     "lo": 0.0007675071385384175,
+     "hi": 0.0038141561060230007,
+     "usable": false
+    }
+   },
+   "truth": [
+    0,
+    0
+   ]
+  },
+  {
+   "set": "post-Xenium lung, xen nuclei",
+   "surface": "r3c3",
+   "bounds": [
+    2010,
+    2680,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 106863,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 4,
+     "dx": -1,
+     "value": 0.001422822726253159,
+     "n": 2,
+     "second": 0.0011711269766470078,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.41,
+     "share_exact": 0.25,
+     "lo": 0.0001292440260902972,
+     "hi": 0.002693972258772676,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": -12,
+     "value": 0.0011670183613652352,
+     "n": 4,
+     "second": 0.0009933663635610657,
+     "interior": false,
+     "share_any": 0.93,
+     "share_within1": 0.04,
+     "share_exact": 0.025,
+     "lo": 0.00013271374137121262,
+     "hi": 0.00195847955200815,
+     "usable": false
+    }
+   },
+   "truth": [
+    0,
+    0
+   ]
+  },
+  {
+   "set": "post-Xenium lung, xen nuclei",
+   "surface": "r3c4",
+   "bounds": [
+    2010,
+    2680,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 12719,
+   "tested": false,
+   "truth": [
+    0,
+    0
+   ]
+  },
+  {
+   "set": "post-Xenium lung, xen nuclei",
+   "surface": "r4c0",
+   "bounds": [
+    2680,
+    3350,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 108986,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.003634809141348727,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.775,
+     "lo": 0.0018351110037059806,
+     "hi": 0.005362108690281325,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "truth": [
+    0,
+    0
+   ]
+  },
+  {
+   "set": "post-Xenium lung, xen nuclei",
+   "surface": "r4c1",
+   "bounds": [
+    2680,
+    3350,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 50034,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -1,
+     "value": 0.004395336343888001,
+     "n": 2,
+     "second": 0.0016891034783887982,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.965,
+     "share_exact": 0.55,
+     "lo": 0.002508044926396835,
+     "hi": 0.006346178209156739,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -10,
+     "dx": -7,
+     "value": 0.0019188745438026844,
+     "n": 3,
+     "second": 0.0015276282433087651,
+     "interior": true,
+     "share_any": 0.675,
+     "share_within1": 0.165,
+     "share_exact": 0.12,
+     "lo": -0.00023884458615875401,
+     "hi": 0.00422448407553887,
+     "usable": false
+    }
+   },
+   "truth": [
+    0,
+    0
+   ]
+  },
+  {
+   "set": "post-Xenium lung, xen nuclei",
+   "surface": "r4c2",
+   "bounds": [
+    2680,
+    3350,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 47234,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.003163016370318017,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.965,
+     "share_exact": 0.345,
+     "lo": 0.0009280889656305525,
+     "hi": 0.005108713842126289,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "truth": [
+    0,
+    0
+   ]
+  },
+  {
+   "set": "post-Xenium lung, xen nuclei",
+   "surface": "r4c3",
+   "bounds": [
+    2680,
+    3350,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 73305,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -11,
+     "dx": 6,
+     "value": 0.001616024727403742,
+     "n": 5,
+     "second": 0.0014305342198195348,
+     "interior": true,
+     "share_any": 0.96,
+     "share_within1": 0.09,
+     "share_exact": 0.085,
+     "lo": 0.0004514170870420109,
+     "hi": 0.0024973305953073233,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -10,
+     "dx": 3,
+     "value": 0.001312290720411169,
+     "n": 2,
+     "second": 0.0006388336552796137,
+     "interior": true,
+     "share_any": 0.685,
+     "share_within1": 0.055,
+     "share_exact": 0.055,
+     "lo": -0.0006645204603928811,
+     "hi": 0.0023840456052848114,
+     "usable": false
+    }
+   },
+   "truth": [
+    0,
+    0
+   ]
+  },
+  {
+   "set": "post-Xenium lung, xen nuclei",
+   "surface": "r4c4",
+   "bounds": [
+    2680,
+    3350,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 11351,
+   "tested": false,
+   "truth": [
+    0,
+    0
+   ]
+  }
+ ]
+}

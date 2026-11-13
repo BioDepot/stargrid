@@ -1,0 +1,42 @@
+{
+ "placement": "a1_cellpose_sr3",
+ "label": "A1, Cellpose-SAM, SR 3.0.0 (GEO)",
+ "seed": 20261007,
+ "draws": 200,
+ "search": 12,
+ "radius": 17,
+ "input_files": {
+  "<runs>/20260716_vm2jxxk_natural_sr401_bam_v1/outs/binned_outputs/square_002um/raw_feature_bc_matrix.h5": {
+   "sha256": "eaef4e80223cf74f474e07ef015c6daf6febc1eb3c7fbc4694e15891c9dde8ee",
+   "recorded": "eaef4e80223cf74f474e07ef015c6daf6febc1eb3c7fbc4694e15891c9dde8ee",
+   "match": true
+  },
+  "<runs>/20260718_vm2jxxk_ambiguous_biological_opportunity_auc_v1/masks/tissue_mask.bin": {
+   "sha256": "861a9fab56a513670485281409fe0c791a48018d4ca6514fb22b17b3306b7c6d",
+   "recorded": "861a9fab56a513670485281409fe0c791a48018d4ca6514fb22b17b3306b7c6d",
+   "match": true
+  },
+  "<runs>/20261110_registration_cellpose_sam_v1/a1_cellpose_sr3/accepted_grid_labels.npy": {
+   "sha256": "4dbfa54c71cd73a46249e1961ae2f5fed4bbb74d02718c1e56c160fd4e5724a6",
+   "recorded": null,
+   "match": null
+  }
+ },
+ "inputs_sha_ok": true,
+ "all_reproduced": true,
+ "elapsed_seconds": 38.98818492889404,
+ "affinity": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  12,
+  13,
+  14,
+  15
+ ]
+}

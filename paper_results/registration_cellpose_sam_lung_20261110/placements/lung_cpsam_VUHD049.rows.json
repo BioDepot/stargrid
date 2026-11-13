@@ -1,0 +1,178 @@
+[
+ {
+  "set": "Lung VUHD049, Cellpose-SAM H&E nuclei",
+  "surface": "whole",
+  "bounds": [
+   0,
+   1507,
+   0,
+   1406
+  ],
+  "nucleus_in_tissue": 81739,
+  "centroid_y": 764.8566167924736,
+  "centroid_x": 648.9681669704792,
+  "tested": true,
+  "blocks": 240,
+  "repro_package_fft_surface_full_pm17": 0.0,
+  "repro": {
+   "package_fft_surface": 0.0
+  },
+  "repro_pass": true,
+  "ring_dy": -6,
+  "ring_dx": -2,
+  "ring_sign": "peak",
+  "ring_contrast": -0.09259243846227894,
+  "ring_border": false,
+  "ring_usable": false,
+  "dip": false,
+  "interior": false,
+  "usable": false,
+  "reason": "no dip",
+  "share_any": 0.0,
+  "n_minima": 0
+ },
+ {
+  "set": "Lung VUHD049, Cellpose-SAM H&E nuclei",
+  "surface": "r0c0",
+  "bounds": [
+   0,
+   502,
+   0,
+   468
+  ],
+  "nucleus_in_tissue": 5520,
+  "centroid_y": 335.4509057971014,
+  "centroid_x": 188.79365942028986,
+  "tested": false,
+  "usable": false,
+  "reason": "fewer than 30000 nucleus locations in tissue"
+ },
+ {
+  "set": "Lung VUHD049, Cellpose-SAM H&E nuclei",
+  "surface": "r0c1",
+  "bounds": [
+   0,
+   502,
+   468,
+   937
+  ],
+  "nucleus_in_tissue": 7547,
+  "centroid_y": 265.3581555585001,
+  "centroid_x": 741.4809858221811,
+  "tested": false,
+  "usable": false,
+  "reason": "fewer than 30000 nucleus locations in tissue"
+ },
+ {
+  "set": "Lung VUHD049, Cellpose-SAM H&E nuclei",
+  "surface": "r0c2",
+  "bounds": [
+   0,
+   502,
+   937,
+   1406
+  ],
+  "nucleus_in_tissue": 8322,
+  "centroid_y": 269.2081230473444,
+  "centroid_x": 1161.5663302090843,
+  "tested": false,
+  "usable": false,
+  "reason": "fewer than 30000 nucleus locations in tissue"
+ },
+ {
+  "set": "Lung VUHD049, Cellpose-SAM H&E nuclei",
+  "surface": "r1c0",
+  "bounds": [
+   502,
+   1004,
+   0,
+   468
+  ],
+  "nucleus_in_tissue": 12463,
+  "centroid_y": 787.6470352242638,
+  "centroid_x": 249.69140656342773,
+  "tested": false,
+  "usable": false,
+  "reason": "fewer than 30000 nucleus locations in tissue"
+ },
+ {
+  "set": "Lung VUHD049, Cellpose-SAM H&E nuclei",
+  "surface": "r1c1",
+  "bounds": [
+   502,
+   1004,
+   468,
+   937
+  ],
+  "nucleus_in_tissue": 11294,
+  "centroid_y": 756.469541349389,
+  "centroid_x": 721.6991322826279,
+  "tested": false,
+  "usable": false,
+  "reason": "fewer than 30000 nucleus locations in tissue"
+ },
+ {
+  "set": "Lung VUHD049, Cellpose-SAM H&E nuclei",
+  "surface": "r1c2",
+  "bounds": [
+   502,
+   1004,
+   937,
+   1406
+  ],
+  "nucleus_in_tissue": 10659,
+  "centroid_y": 717.8730650154798,
+  "centroid_x": 1090.9594708696875,
+  "tested": false,
+  "usable": false,
+  "reason": "fewer than 30000 nucleus locations in tissue"
+ },
+ {
+  "set": "Lung VUHD049, Cellpose-SAM H&E nuclei",
+  "surface": "r2c0",
+  "bounds": [
+   1004,
+   1507,
+   0,
+   468
+  ],
+  "nucleus_in_tissue": 13772,
+  "centroid_y": 1179.3617484751671,
+  "centroid_x": 249.46630845193147,
+  "tested": false,
+  "usable": false,
+  "reason": "fewer than 30000 nucleus locations in tissue"
+ },
+ {
+  "set": "Lung VUHD049, Cellpose-SAM H&E nuclei",
+  "surface": "r2c1",
+  "bounds": [
+   1004,
+   1507,
+   468,
+   937
+  ],
+  "nucleus_in_tissue": 7372,
+  "centroid_y": 1145.9287845903418,
+  "centroid_x": 700.365436787846,
+  "tested": false,
+  "usable": false,
+  "reason": "fewer than 30000 nucleus locations in tissue"
+ },
+ {
+  "set": "Lung VUHD049, Cellpose-SAM H&E nuclei",
+  "surface": "r2c2",
+  "bounds": [
+   1004,
+   1507,
+   937,
+   1406
+  ],
+  "nucleus_in_tissue": 4790,
+  "centroid_y": 1194.6012526096033,
+  "centroid_x": 1096.3050104384133,
+  "tested": false,
+  "usable": false,
+  "reason": "fewer than 30000 nucleus locations in tissue"
+ }
+]

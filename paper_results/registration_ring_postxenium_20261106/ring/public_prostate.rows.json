@@ -1,0 +1,3313 @@
+{
+ "placement": "public:prostate",
+ "counts": "star",
+ "label": "public prostate",
+ "expansions": [
+  0,
+  1,
+  2,
+  3
+ ],
+ "seed": 20261007,
+ "draws": 200,
+ "search": 12,
+ "radius": 13,
+ "inputs_sha256": {
+  "<datasets>/visium_hd_sr401_prostate/square_002um/raw_feature_bc_matrix.h5": "24826107d10b13aae12f6efd162fdc6c0ed9bd1a6212404a1f618c5289224707",
+  "<datasets>/visium_hd_sr401_prostate/square_002um/spatial/tissue_positions.parquet": "9224caa2a15623968eb941720aba5d740596bee56d879b178a1f251194aa80af",
+  "<datasets>/visium_hd_sr401_prostate/Visium_HD_Human_Prostate_Cancer_FFPE_barcode_mappings.parquet": "061b14051d68fc84cd77fd8b94012d1775ee09bbdf57ff74450387394e77d58a"
+ },
+ "elapsed": 91.77929282188416,
+ "affinity": [
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31
+ ],
+ "rows": [
+  {
+   "set": "public prostate",
+   "surface": "whole",
+   "bounds": [
+    0,
+    3350,
+    0,
+    3350
+   ],
+   "nucleus_in_tissue": 1711372,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 3,
+     "dx": 1,
+     "value": 0.006307362773956049,
+     "n": 2,
+     "second": 0.004276211808705188,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.43,
+     "share_exact": 0.375,
+     "lo": 0.005080118487615309,
+     "hi": 0.006923226942471206,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.0267470006011421,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.02387824270603211,
+     "hi": 0.029114741331088934,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.013744481456244184,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.01200393608635258,
+     "hi": 0.015590076592862169,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.02130791901539486,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.01967490536666803,
+     "hi": 0.02325687307688474,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.017462175525325918,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.015943430579285305,
+     "hi": 0.01932686148223437,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "public prostate",
+   "surface": "r0c0",
+   "bounds": [
+    0,
+    670,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 43868,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 0,
+     "value": 0.02868598043263426,
+     "n": 2,
+     "second": 0.016741231706487225,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.745,
+     "lo": 0.006102108368072462,
+     "hi": 0.05329046693043265,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -12,
+     "dx": 12,
+     "value": 0.0028613533943517844,
+     "n": 2,
+     "second": 0.0024371937084743944,
+     "interior": false,
+     "share_any": 0.91,
+     "share_within1": 0.11,
+     "share_exact": 0.075,
+     "lo": -0.00128511664358385,
+     "hi": 0.007770771425920059,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 1,
+     "value": 0.017864977963658824,
+     "n": 2,
+     "second": 0.0055881376599022925,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.95,
+     "share_exact": 0.625,
+     "lo": -0.0004991096820535445,
+     "hi": 0.03038564835951861,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -7,
+     "dx": -8,
+     "value": 0.004849261857311382,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.99,
+     "share_within1": 0.085,
+     "share_exact": 0.05,
+     "lo": -0.0017580481486741072,
+     "hi": 0.0111664326152511,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 1,
+     "value": 0.0208707636238743,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.89,
+     "share_exact": 0.815,
+     "lo": -0.0011212289760195089,
+     "hi": 0.03537729076971985,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -9,
+     "dx": 1,
+     "value": 0.003245219629322782,
+     "n": 2,
+     "second": 0.0026578512611532545,
+     "interior": true,
+     "share_any": 0.925,
+     "share_within1": 0.21,
+     "share_exact": 0.21,
+     "lo": 0.0009474625636829631,
+     "hi": 0.010836160737727635,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": 1,
+     "value": 0.010045384417304515,
+     "n": 2,
+     "second": 0.009628589721169867,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.46,
+     "share_exact": 0.375,
+     "lo": 0.0063171362250229735,
+     "hi": 0.015392685518822141,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -1,
+     "dx": -1,
+     "value": 0.005560978014007123,
+     "n": 4,
+     "second": 0.0020885095107524565,
+     "interior": true,
+     "share_any": 0.98,
+     "share_within1": 0.575,
+     "share_exact": 0.3,
+     "lo": 0.002491666373599047,
+     "hi": 0.010692362055036833,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "public prostate",
+   "surface": "r0c1",
+   "bounds": [
+    0,
+    670,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 19013,
+   "tested": false
+  },
+  {
+   "set": "public prostate",
+   "surface": "r0c2",
+   "bounds": [
+    0,
+    670,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 31436,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.03625672608546382,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.995,
+     "share_exact": 0.855,
+     "lo": 0.003748768487735328,
+     "hi": 0.08729308641999808,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 1,
+     "value": 0.02131311989601281,
+     "n": 2,
+     "second": 0.006930339595479396,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.845,
+     "share_exact": 0.785,
+     "lo": 0.01575379542683345,
+     "hi": 0.02814256085089024,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": 10,
+     "value": 0.009699455371574905,
+     "n": 3,
+     "second": 0.00861526121410039,
+     "interior": true,
+     "share_any": 0.99,
+     "share_within1": 0.14,
+     "share_exact": 0.13,
+     "lo": 0.002060215001137858,
+     "hi": 0.017490304970261647,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 2,
+     "value": 0.01583853465014151,
+     "n": 2,
+     "second": 0.008916843446463485,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.92,
+     "share_exact": 0.595,
+     "lo": 0.009900823690384458,
+     "hi": 0.023590724534593932,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 3,
+     "value": 0.010983572021252108,
+     "n": 3,
+     "second": 0.009150532706248438,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.615,
+     "share_exact": 0.21,
+     "lo": 0.0067339052683995145,
+     "hi": 0.013878101640961689,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.012634294561703951,
+     "n": 2,
+     "second": 0.0026444579092136378,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.94,
+     "share_exact": 0.675,
+     "lo": -0.0016532689443643385,
+     "hi": 0.025564356647056977,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "public prostate",
+   "surface": "r0c3",
+   "bounds": [
+    0,
+    670,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 38836,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 4,
+     "value": 0.005796727109592004,
+     "n": 4,
+     "second": 0.005692805738140683,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.2,
+     "share_exact": 0.15,
+     "lo": 0.00300630905812202,
+     "hi": 0.011491377910857654,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.03371676293166803,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.99,
+     "share_exact": 0.985,
+     "lo": 0.012336963653037273,
+     "hi": 0.04479096652920087,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.020548688628115652,
+     "n": 4,
+     "second": 0.007594131487980604,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.9,
+     "share_exact": 0.885,
+     "lo": 0.009244409467685172,
+     "hi": 0.02756625252788918,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.027515987027451283,
+     "n": 4,
+     "second": 0.00517835737551442,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.995,
+     "share_exact": 0.99,
+     "lo": 0.014548892567337508,
+     "hi": 0.03470887586822511,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -12,
+     "dx": -4,
+     "value": 0.004348303285180433,
+     "n": 1,
+     "second": null,
+     "interior": false,
+     "share_any": 0.99,
+     "share_within1": 0.15,
+     "share_exact": 0.115,
+     "lo": 0.0005387765626190339,
+     "hi": 0.0074331674471377045,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.018829724554848326,
+     "n": 5,
+     "second": 0.004830123069005987,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.995,
+     "share_exact": 0.985,
+     "lo": 0.008793096675349683,
+     "hi": 0.026572550903528207,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "public prostate",
+   "surface": "r0c4",
+   "bounds": [
+    0,
+    670,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 27282,
+   "tested": false
+  },
+  {
+   "set": "public prostate",
+   "surface": "r1c0",
+   "bounds": [
+    670,
+    1340,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 92611,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": 2,
+     "value": 0.008832991738773943,
+     "n": 2,
+     "second": 0.006756843461403816,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.465,
+     "share_exact": 0.165,
+     "lo": 0.0037315121587249535,
+     "hi": 0.012078851665265667,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -1,
+     "dx": 1,
+     "value": 0.05817307067255684,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.04497723878982565,
+     "hi": 0.06852143500203337,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 1,
+     "value": 0.04724794371426788,
+     "n": 8,
+     "second": 0.008659025731507786,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.0358785315204483,
+     "hi": 0.056261031168419184,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 3,
+     "dx": 1,
+     "value": 0.00833555707725464,
+     "n": 7,
+     "second": 0.004203335096559457,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.43,
+     "share_exact": 0.425,
+     "lo": 0.002870214503154606,
+     "hi": 0.011059663816257859,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 1,
+     "value": 0.05099792307257256,
+     "n": 6,
+     "second": 0.004578734691590647,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.04073264173733939,
+     "hi": 0.05980945590590685,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 3,
+     "dx": 1,
+     "value": 0.004945424134249032,
+     "n": 4,
+     "second": 0.003943272657632724,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.295,
+     "share_exact": 0.27,
+     "lo": 0.00010070395564682208,
+     "hi": 0.008712271052232688,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 1,
+     "value": 0.03943844921802797,
+     "n": 8,
+     "second": 0.00262226432283974,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.030293290032077754,
+     "hi": 0.04749520580749495,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 3,
+     "dx": 1,
+     "value": 0.004980751274196171,
+     "n": 9,
+     "second": 0.003433328758493115,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.445,
+     "share_exact": 0.43,
+     "lo": 0.0019098705248041165,
+     "hi": 0.007756114039370396,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "public prostate",
+   "surface": "r1c1",
+   "bounds": [
+    670,
+    1340,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 77737,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 3,
+     "dx": 1,
+     "value": 0.006698143167011006,
+     "n": 4,
+     "second": 0.005584717040152398,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.6,
+     "share_exact": 0.215,
+     "lo": 0.004010582359833481,
+     "hi": 0.013097469708165489,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -1,
+     "dx": 1,
+     "value": 0.034894985576891635,
+     "n": 2,
+     "second": 0.0015395806638575094,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.995,
+     "share_exact": 0.97,
+     "lo": 0.011906347621695628,
+     "hi": 0.0479381082505009,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 1,
+     "value": 0.038628894487020116,
+     "n": 9,
+     "second": 0.004666230935796545,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.6,
+     "lo": 0.026265191837645873,
+     "hi": 0.04765792050158192,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 3,
+     "dx": 0,
+     "value": 0.010936719549824558,
+     "n": 13,
+     "second": 0.006968096322238382,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.655,
+     "share_exact": 0.57,
+     "lo": 0.005612289316735075,
+     "hi": 0.014778976109399012,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 1,
+     "value": 0.042979016653416524,
+     "n": 11,
+     "second": 0.004295287822402072,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.885,
+     "lo": 0.026073000817219465,
+     "hi": 0.05211572225016743,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 3,
+     "dx": 0,
+     "value": 0.010705138316226326,
+     "n": 13,
+     "second": 0.004470555699284118,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.74,
+     "share_exact": 0.685,
+     "lo": 0.004202712911963638,
+     "hi": 0.01320246368147151,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 1,
+     "value": 0.03427571630166959,
+     "n": 14,
+     "second": 0.0032311262781057337,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.995,
+     "share_exact": 0.91,
+     "lo": 0.018481914049813197,
+     "hi": 0.043782252850980224,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 3,
+     "dx": 2,
+     "value": 0.005603252271472847,
+     "n": 8,
+     "second": 0.003793161181270044,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.525,
+     "share_exact": 0.4,
+     "lo": 0.0021763971950058414,
+     "hi": 0.0077572751070310395,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "public prostate",
+   "surface": "r1c2",
+   "bounds": [
+    670,
+    1340,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 77454,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": 1,
+     "value": 0.010743909892604542,
+     "n": 2,
+     "second": 0.005519548625491311,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.63,
+     "share_exact": 0.44,
+     "lo": 0.004551922710980894,
+     "hi": 0.012652280780200543,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.029353609156672067,
+     "n": 2,
+     "second": 0.0018850744782257234,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.965,
+     "share_exact": 0.885,
+     "lo": 0.00629444235337385,
+     "hi": 0.047285191801941684,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.022344697306866612,
+     "n": 6,
+     "second": 0.006409444020504029,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.98,
+     "share_exact": 0.97,
+     "lo": 0.009787278736697168,
+     "hi": 0.03417699283741486,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -12,
+     "dx": -8,
+     "value": 0.0050922653768533666,
+     "n": 8,
+     "second": 0.0049653489866676725,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.085,
+     "share_exact": 0.085,
+     "lo": 0.0007610428867680904,
+     "hi": 0.009964037722267864,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.029362036879399422,
+     "n": 3,
+     "second": 0.002537782960418511,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.945,
+     "lo": 0.01829271897130369,
+     "hi": 0.03829830686471086,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 7,
+     "dx": -6,
+     "value": 0.0025913105087497224,
+     "n": 4,
+     "second": 0.0021916159774441057,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.16,
+     "share_exact": 0.065,
+     "lo": 0.00018135363441673658,
+     "hi": 0.004760099588469033,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.020625116429393797,
+     "n": 4,
+     "second": 0.0023321164670970784,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.9,
+     "lo": 0.010070786545284599,
+     "hi": 0.02865844472939041,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 6,
+     "dx": -6,
+     "value": 0.0029677408789051674,
+     "n": 9,
+     "second": 0.002563205456373341,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.14,
+     "share_exact": 0.13,
+     "lo": 0.000960362671289286,
+     "hi": 0.00426917262122073,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "public prostate",
+   "surface": "r1c3",
+   "bounds": [
+    670,
+    1340,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 72507,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 3,
+     "dx": 1,
+     "value": 0.005858356529356623,
+     "n": 3,
+     "second": 0.0034130330334691816,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.33,
+     "share_exact": 0.135,
+     "lo": 0.0032282296203253345,
+     "hi": 0.009181524272779146,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 1,
+     "dx": 0,
+     "value": 0.011712169817045703,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.98,
+     "share_within1": 0.76,
+     "share_exact": 0.445,
+     "lo": 0.0031342615131979778,
+     "hi": 0.025613458663280762,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.012184085214601792,
+     "n": 5,
+     "second": 0.00681012065447506,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.875,
+     "share_exact": 0.61,
+     "lo": 0.00522734151007942,
+     "hi": 0.018031896370121397,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 8,
+     "dx": 9,
+     "value": 0.004831563244494963,
+     "n": 5,
+     "second": 0.004573181993926978,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.1,
+     "share_exact": 0.09,
+     "lo": 0.0011132340693085414,
+     "hi": 0.00850186210601452,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.01781903268108298,
+     "n": 7,
+     "second": 0.004624782534015992,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.775,
+     "lo": 0.007142772932246388,
+     "hi": 0.026093682549572398,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 8,
+     "dx": 12,
+     "value": 0.0026307410101841233,
+     "n": 4,
+     "second": 0.001811258408632166,
+     "interior": false,
+     "share_any": 0.995,
+     "share_within1": 0.13,
+     "share_exact": 0.13,
+     "lo": 0.0006397083756040479,
+     "hi": 0.005647028377533284,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.008536707843727953,
+     "n": 6,
+     "second": 0.002953072704877213,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.945,
+     "share_exact": 0.76,
+     "lo": 0.00022439496560597305,
+     "hi": 0.017499154584334962,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 8,
+     "dx": 9,
+     "value": 0.0016504603178026933,
+     "n": 6,
+     "second": 0.0016478803251978036,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.045,
+     "share_exact": 0.035,
+     "lo": -0.00013314242398977373,
+     "hi": 0.0034753949046833076,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "public prostate",
+   "surface": "r1c4",
+   "bounds": [
+    670,
+    1340,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 93014,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": 4,
+     "value": 0.011314403189084832,
+     "n": 7,
+     "second": 0.010076598803927528,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.365,
+     "share_exact": 0.265,
+     "lo": 0.00653048611989141,
+     "hi": 0.012718811449700202,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.055569266443917464,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.99,
+     "lo": 0.04916709434139222,
+     "hi": 0.060926138868705,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.015269276676905363,
+     "n": 29,
+     "second": 0.0070712777022508,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.915,
+     "share_exact": 0.805,
+     "lo": 0.008313079286046899,
+     "hi": 0.0201332615343568,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": 1,
+     "value": 0.00774544912772146,
+     "n": 17,
+     "second": 0.00754881803620433,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.385,
+     "share_exact": 0.265,
+     "lo": 0.0046507645151563385,
+     "hi": 0.010638978918181368,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.03948182560105251,
+     "n": 32,
+     "second": 0.0035495151759501464,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.995,
+     "lo": 0.034118395943980515,
+     "hi": 0.043033712925470674,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 1,
+     "dx": 4,
+     "value": 0.006920198010291978,
+     "n": 23,
+     "second": 0.0048864560296515425,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.675,
+     "share_exact": 0.625,
+     "lo": 0.002963331299852634,
+     "hi": 0.00959819493126042,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.03427279786877713,
+     "n": 28,
+     "second": 0.002369299794594104,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.99,
+     "lo": 0.029355648674586142,
+     "hi": 0.03837775799816612,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 1,
+     "dx": -3,
+     "value": 0.00709900972960531,
+     "n": 28,
+     "second": 0.0058911629462570225,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.66,
+     "share_exact": 0.555,
+     "lo": 0.0042283323718381866,
+     "hi": 0.008746604933207237,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "public prostate",
+   "surface": "r2c0",
+   "bounds": [
+    1340,
+    2010,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 88937,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": 2,
+     "value": 0.007358902909120557,
+     "n": 4,
+     "second": 0.006806873979190664,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.43,
+     "share_exact": 0.25,
+     "lo": 0.0027969840974338355,
+     "hi": 0.011839752649939628,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -1,
+     "dx": 0,
+     "value": 0.03481681265020531,
+     "n": 2,
+     "second": 0.004337733318942494,
+     "interior": true,
+     "share_any": 0.99,
+     "share_within1": 0.985,
+     "share_exact": 0.965,
+     "lo": 0.012559378920873842,
+     "hi": 0.046280185630877886,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 0,
+     "value": 0.026851737668996734,
+     "n": 2,
+     "second": 0.0048058291157309085,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.98,
+     "lo": 0.017404377673451238,
+     "hi": 0.038053780767353274,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 6,
+     "dx": 12,
+     "value": 0.003417389756596778,
+     "n": 4,
+     "second": 0.0016907030510501242,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.025,
+     "share_exact": 0.025,
+     "lo": -3.705776186567197e-05,
+     "hi": 0.007788992628821513,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 0,
+     "value": 0.03171594145753498,
+     "n": 6,
+     "second": 0.004391214336433746,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.985,
+     "lo": 0.01982820561452538,
+     "hi": 0.041877275533881556,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": 4,
+     "value": 0.0029369641646395106,
+     "n": 6,
+     "second": 0.0028934016291238818,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.13,
+     "share_exact": 0.075,
+     "lo": -0.0005509597671786992,
+     "hi": 0.006553204609165525,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 0,
+     "value": 0.02330504541152223,
+     "n": 11,
+     "second": 0.001972978467219777,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.955,
+     "lo": 0.011679167183775813,
+     "hi": 0.03328555246867609,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": 4,
+     "value": 0.0029380694503147176,
+     "n": 7,
+     "second": 0.0020528965808181976,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.28,
+     "share_exact": 0.125,
+     "lo": 0.000383752721442493,
+     "hi": 0.005162736664409812,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "public prostate",
+   "surface": "r2c1",
+   "bounds": [
+    1340,
+    2010,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 81217,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 2,
+     "dx": -2,
+     "value": 0.0076218528115281625,
+     "n": 6,
+     "second": 0.005232914951018852,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.47,
+     "share_exact": 0.38,
+     "lo": 0.004582640880437245,
+     "hi": 0.009997365911546995,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.03617816952268016,
+     "n": 3,
+     "second": 0.002222016094159618,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.445,
+     "lo": 0.023827745430378904,
+     "hi": 0.042360655467704234,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.02624967637760167,
+     "n": 20,
+     "second": 0.005010607995439953,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.6,
+     "lo": 0.015443034607528865,
+     "hi": 0.03390196395553162,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 12,
+     "dx": -2,
+     "value": 0.006953854908209212,
+     "n": 17,
+     "second": 0.004954204581388955,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.235,
+     "share_exact": 0.225,
+     "lo": 0.00424727936376954,
+     "hi": 0.009258764103457285,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.031188264447082226,
+     "n": 15,
+     "second": 0.0036139955533327495,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.56,
+     "lo": 0.02007403428038574,
+     "hi": 0.03880991299178054,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -8,
+     "dx": 2,
+     "value": 0.00464006775021597,
+     "n": 17,
+     "second": 0.004401552066170544,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.235,
+     "share_exact": 0.235,
+     "lo": 0.0016796820427150306,
+     "hi": 0.007134446294888428,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 0,
+     "value": 0.02441906528087978,
+     "n": 7,
+     "second": 0.0028227693951936583,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.715,
+     "lo": 0.014305930152229857,
+     "hi": 0.030885397637639533,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": 2,
+     "value": 0.004974397983466772,
+     "n": 10,
+     "second": 0.0034129760900205586,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.545,
+     "share_exact": 0.31,
+     "lo": 0.0022887408569193693,
+     "hi": 0.007390923159851617,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "public prostate",
+   "surface": "r2c2",
+   "bounds": [
+    1340,
+    2010,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 86545,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 2,
+     "dx": -2,
+     "value": 0.0049458790392427066,
+     "n": 3,
+     "second": 0.004900324889010488,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.22,
+     "share_exact": 0.04,
+     "lo": 0.0030477424158520615,
+     "hi": 0.008787676728307381,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.04517587660598876,
+     "n": 3,
+     "second": 0.002249206648351154,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.99,
+     "share_exact": 0.985,
+     "lo": 0.021388391987146413,
+     "hi": 0.05573642718434272,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.025207334107703927,
+     "n": 10,
+     "second": 0.006037911998661993,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.995,
+     "lo": 0.014535296193123276,
+     "hi": 0.03374108182325205,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": 0,
+     "value": 0.006662156924321039,
+     "n": 9,
+     "second": 0.005298108366020404,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.345,
+     "share_exact": 0.345,
+     "lo": 0.003486022008544898,
+     "hi": 0.010129129420579072,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.035561375149572694,
+     "n": 13,
+     "second": 0.0033335141612638175,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.023659225941320233,
+     "hi": 0.04265665670241517,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": 0,
+     "value": 0.0032792857800032493,
+     "n": 7,
+     "second": 0.003167784995204981,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.335,
+     "share_exact": 0.195,
+     "lo": 0.00037884402236856857,
+     "hi": 0.007037608234242007,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.026075603709330153,
+     "n": 14,
+     "second": 0.0026635626663382705,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.995,
+     "lo": 0.014676558668070239,
+     "hi": 0.03192991359873749,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -1,
+     "value": 0.002557402205420334,
+     "n": 10,
+     "second": 0.0024874505090463073,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.235,
+     "share_exact": 0.14,
+     "lo": 0.0004210951191877533,
+     "hi": 0.00506930429356299,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "public prostate",
+   "surface": "r2c3",
+   "bounds": [
+    1340,
+    2010,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 82735,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": -3,
+     "value": 0.005829636194513377,
+     "n": 4,
+     "second": 0.005640461452133927,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.47,
+     "share_exact": 0.26,
+     "lo": 0.00196733375419334,
+     "hi": 0.008778807477080347,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.02787601508133697,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.995,
+     "lo": 0.01573016691749553,
+     "hi": 0.04048645237703163,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.019357907933046814,
+     "n": 10,
+     "second": 0.006713650944724536,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.98,
+     "share_exact": 0.965,
+     "lo": 0.0101979306866541,
+     "hi": 0.027544545456432454,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -7,
+     "dx": 12,
+     "value": 0.004885941286922324,
+     "n": 5,
+     "second": 0.004349952382178057,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.235,
+     "share_exact": 0.235,
+     "lo": 0.0016680639108468706,
+     "hi": 0.010167919187623144,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.025390319827886643,
+     "n": 11,
+     "second": 0.00423128858875943,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.01846881296821032,
+     "hi": 0.03260610051006915,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 8,
+     "dx": 6,
+     "value": 0.0034929601623446827,
+     "n": 12,
+     "second": 0.003392147399859158,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.13,
+     "share_exact": 0.11,
+     "lo": 3.3599902217887356e-05,
+     "hi": 0.005516804585149143,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.01765248320379409,
+     "n": 6,
+     "second": 0.0023808773648299475,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.98,
+     "lo": 0.011063825096881901,
+     "hi": 0.023776853816552358,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -8,
+     "dx": 8,
+     "value": 0.0021082119876469907,
+     "n": 7,
+     "second": 0.0019726247037880063,
+     "interior": true,
+     "share_any": 0.99,
+     "share_within1": 0.065,
+     "share_exact": 0.055,
+     "lo": 0.0003419157324564409,
+     "hi": 0.003631067098049981,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "public prostate",
+   "surface": "r2c4",
+   "bounds": [
+    1340,
+    2010,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 113824,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 3,
+     "dx": 3,
+     "value": 0.00722618255608265,
+     "n": 2,
+     "second": 0.004317327530224624,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.265,
+     "share_exact": 0.17,
+     "lo": 0.004533892024775466,
+     "hi": 0.009632813917466478,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.0557463577570837,
+     "n": 2,
+     "second": 0.0010151132514397698,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.05020484171331611,
+     "hi": 0.059317981538640235,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.018024991513770683,
+     "n": 23,
+     "second": 0.005621328851915353,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.99,
+     "share_exact": 0.985,
+     "lo": 0.010453079237296176,
+     "hi": 0.024534698449671506,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": -3,
+     "value": 0.007617237016271705,
+     "n": 21,
+     "second": 0.006244390880739026,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.315,
+     "share_exact": 0.28,
+     "lo": 0.0031375807946013635,
+     "hi": 0.01087326845376689,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.033627783910755715,
+     "n": 34,
+     "second": 0.0028429043256739117,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.028206634073496235,
+     "hi": 0.0386523817188558,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": 1,
+     "value": 0.007935493993260434,
+     "n": 30,
+     "second": 0.003851300333392982,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.895,
+     "share_exact": 0.58,
+     "lo": 0.004531823678957286,
+     "hi": 0.00913288823769419,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.03078568124874681,
+     "n": 33,
+     "second": 0.002333080893130335,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.02622451355041976,
+     "hi": 0.03454665945357434,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -1,
+     "value": 0.00602920868290191,
+     "n": 34,
+     "second": 0.00520839825392394,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.715,
+     "share_exact": 0.415,
+     "lo": 0.003938178352731789,
+     "hi": 0.007537948723351235,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "public prostate",
+   "surface": "r3c0",
+   "bounds": [
+    2010,
+    2680,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 81933,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": 1,
+     "value": 0.015884062622968376,
+     "n": 2,
+     "second": 0.015469973598047027,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.59,
+     "share_exact": 0.535,
+     "lo": 0.008214712730520518,
+     "hi": 0.02197509749991245,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 0,
+     "value": 0.01368578594136216,
+     "n": 2,
+     "second": 0.009115728711055038,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.66,
+     "share_exact": 0.575,
+     "lo": 0.00497973915578997,
+     "hi": 0.02249089282307919,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 0,
+     "value": 0.013035717302270378,
+     "n": 2,
+     "second": 0.00548434941321041,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.865,
+     "share_exact": 0.86,
+     "lo": 0.007244558328434986,
+     "hi": 0.02187553577315915,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 0,
+     "value": 0.008585499236430483,
+     "n": 12,
+     "second": 0.0030206061025026543,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.725,
+     "share_exact": 0.725,
+     "lo": 0.002780167337521083,
+     "hi": 0.016096756047644264,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": 1,
+     "value": 0.006671032636378693,
+     "n": 3,
+     "second": 0.005055083813014893,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.545,
+     "share_exact": 0.435,
+     "lo": 0.002362308086309026,
+     "hi": 0.011005154415053725,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "public prostate",
+   "surface": "r3c1",
+   "bounds": [
+    2010,
+    2680,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 55193,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.04352780339237805,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.995,
+     "lo": 0.029415381098733658,
+     "hi": 0.05836250674227383,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": 0,
+     "value": 0.0191543689343332,
+     "n": 4,
+     "second": 0.010898217522673947,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.87,
+     "share_exact": 0.87,
+     "lo": 0.013564818623044584,
+     "hi": 0.027550836694409293,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.01251890539625311,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.715,
+     "share_exact": 0.71,
+     "lo": 0.002648429952160977,
+     "hi": 0.024047422965309654,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": 0,
+     "value": 0.012638845580262181,
+     "n": 3,
+     "second": 0.012374976003029836,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.64,
+     "share_exact": 0.24,
+     "lo": 0.009533291161429785,
+     "hi": 0.016604544760700085,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.01558096826080746,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.985,
+     "share_exact": 0.975,
+     "lo": 0.008170557724207139,
+     "hi": 0.02312388116109251,
+     "usable": true
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": 0,
+     "value": 0.007904179872583628,
+     "n": 5,
+     "second": 0.007119877248765949,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.595,
+     "share_exact": 0.47,
+     "lo": 0.00568574447652293,
+     "hi": 0.011438017765133127,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.015770196762820876,
+     "n": 3,
+     "second": 0.001369759898390721,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.010362832554414336,
+     "hi": 0.022783697426202995,
+     "usable": true
+    }
+   }
+  },
+  {
+   "set": "public prostate",
+   "surface": "r3c2",
+   "bounds": [
+    2010,
+    2680,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 57736,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -1,
+     "value": 0.011552666758681607,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.74,
+     "share_exact": 0.285,
+     "lo": -0.00044738630892793545,
+     "hi": 0.029042542578425062,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -10,
+     "dx": -10,
+     "value": 0.005205691610811414,
+     "n": 3,
+     "second": 0.0052035437663568995,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.005,
+     "share_exact": 0.005,
+     "lo": 0.0014152399445131526,
+     "hi": 0.00943581646331016,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -6,
+     "dx": 11,
+     "value": 0.005839523127859736,
+     "n": 2,
+     "second": 0.004279557840445869,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.125,
+     "share_exact": 0.115,
+     "lo": 0.000988339222459078,
+     "hi": 0.011830531473538908,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.006846897040764466,
+     "n": 3,
+     "second": 0.0030887815578255484,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.475,
+     "share_exact": 0.445,
+     "lo": -0.01231462238840716,
+     "hi": 0.024567382643486443,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -9,
+     "dx": -9,
+     "value": 0.002745739407684522,
+     "n": 2,
+     "second": 0.0025229701228141055,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.155,
+     "share_exact": 0.1,
+     "lo": 0.0008655355324138804,
+     "hi": 0.006781042635810594,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 2,
+     "value": 0.00502447789197169,
+     "n": 3,
+     "second": 0.004629731116484015,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.13,
+     "share_exact": 0.1,
+     "lo": 0.002458802535806987,
+     "hi": 0.007531677770902146,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -10,
+     "dx": -3,
+     "value": 0.0015217334333397226,
+     "n": 2,
+     "second": 0.0010114622140013907,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.075,
+     "share_exact": 0.005,
+     "lo": -0.0005817842876132517,
+     "hi": 0.0037921320478108904,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "public prostate",
+   "surface": "r3c3",
+   "bounds": [
+    2010,
+    2680,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 106350,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -1,
+     "value": 0.010287389778807388,
+     "n": 4,
+     "second": 0.005953377248890446,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.63,
+     "share_exact": 0.4,
+     "lo": 0.004755733551609082,
+     "hi": 0.01237000056740381,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.04163978231987597,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.03187694058778567,
+     "hi": 0.04999424336354014,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.023798238917106307,
+     "n": 11,
+     "second": 0.008728201049597928,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.016474516463385123,
+     "hi": 0.03161237152685335,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 3,
+     "dx": 2,
+     "value": 0.006629136694441651,
+     "n": 20,
+     "second": 0.006384652480634356,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.1,
+     "share_exact": 0.085,
+     "lo": 0.003575037095080619,
+     "hi": 0.00916970239967318,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.03228693753133438,
+     "n": 13,
+     "second": 0.004170754006764366,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.025487524467402073,
+     "hi": 0.040021224149043536,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 4,
+     "dx": -1,
+     "value": 0.005718970688682656,
+     "n": 13,
+     "second": 0.004859276519357358,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.28,
+     "share_exact": 0.24,
+     "lo": 0.0018615242612918749,
+     "hi": 0.007799123903788394,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.026537249570328436,
+     "n": 18,
+     "second": 0.0026466430743563585,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.019962515394307923,
+     "hi": 0.03266561286237596,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": 1,
+     "value": 0.003993510725634031,
+     "n": 18,
+     "second": 0.0039092520033492395,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.205,
+     "share_exact": 0.185,
+     "lo": 0.0019157997883593682,
+     "hi": 0.0052385442475557376,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "public prostate",
+   "surface": "r3c4",
+   "bounds": [
+    2010,
+    2680,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 118280,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 4,
+     "dx": 1,
+     "value": 0.008971483688707593,
+     "n": 4,
+     "second": 0.007889109098078606,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.265,
+     "share_exact": 0.205,
+     "lo": 0.004686733601490934,
+     "hi": 0.011103199869714643,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.05078202791046371,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.955,
+     "lo": 0.04562475053789331,
+     "hi": 0.05483657990137881,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.01400331859477233,
+     "n": 9,
+     "second": 0.008123386780349628,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.965,
+     "share_exact": 0.79,
+     "lo": 0.008475356013561192,
+     "hi": 0.020806335931162916,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 3,
+     "value": 0.0064839604604438605,
+     "n": 3,
+     "second": 0.005608312118640657,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.22,
+     "share_exact": 0.17,
+     "lo": 0.0023753194628071267,
+     "hi": 0.009381293293478121,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.03136482481801006,
+     "n": 12,
+     "second": 0.0037618681925344344,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.02626939537472146,
+     "hi": 0.03587430433964111,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 4,
+     "dx": 0,
+     "value": 0.00516659417174492,
+     "n": 9,
+     "second": 0.00423875253284689,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.21,
+     "share_exact": 0.195,
+     "lo": 0.0024450541289449956,
+     "hi": 0.006404239053986602,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.029132149703481547,
+     "n": 23,
+     "second": 0.0025546166438910056,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.02539872721769501,
+     "hi": 0.032604688144674085,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 3,
+     "dx": -3,
+     "value": 0.004127744372654951,
+     "n": 23,
+     "second": 0.003433990873574655,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.205,
+     "share_exact": 0.15,
+     "lo": 0.002646000207916313,
+     "hi": 0.006273768427642776,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "public prostate",
+   "surface": "r4c0",
+   "bounds": [
+    2680,
+    3350,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 48052,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -1,
+     "value": 0.042472823445281804,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.034233286591196295,
+     "hi": 0.051784120783083275,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": 0,
+     "value": 0.027983144299997376,
+     "n": 5,
+     "second": 0.015337308357921131,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.495,
+     "share_exact": 0.495,
+     "lo": 0.01918957847008838,
+     "hi": 0.03252174677732841,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": -1,
+     "value": 0.01707262337456328,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.975,
+     "share_within1": 0.83,
+     "share_exact": 0.83,
+     "lo": 0.01088163365889187,
+     "hi": 0.02601390895122186,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -1,
+     "value": 0.015655143644753178,
+     "n": 3,
+     "second": 0.008593384114653269,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.94,
+     "share_exact": 0.82,
+     "lo": 0.007374299034742682,
+     "hi": 0.02054765935708325,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": -1,
+     "value": 0.019095011874276646,
+     "n": 3,
+     "second": 0.003921807478295736,
+     "interior": true,
+     "share_any": 0.99,
+     "share_within1": 0.92,
+     "share_exact": 0.895,
+     "lo": 0.011188031641307425,
+     "hi": 0.022565720785699902,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -2,
+     "value": 0.006736656815679698,
+     "n": 3,
+     "second": 0.006268702668673409,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.365,
+     "share_exact": 0.29,
+     "lo": 0.003767157816617045,
+     "hi": 0.009369923935547482,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": -1,
+     "value": 0.0157983982321378,
+     "n": 3,
+     "second": 0.0028377434982479466,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.935,
+     "lo": 0.011667037698144112,
+     "hi": 0.020556473343028875,
+     "usable": true
+    }
+   }
+  },
+  {
+   "set": "public prostate",
+   "surface": "r4c1",
+   "bounds": [
+    2680,
+    3350,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 31313,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -1,
+     "value": 0.010380596277616005,
+     "n": 11,
+     "second": 0.009236704230183745,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.285,
+     "share_exact": 0.205,
+     "lo": 0.003986803231609354,
+     "hi": 0.016273246744879566,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.023860564242141558,
+     "n": 9,
+     "second": 0.0058457432651033425,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.895,
+     "share_exact": 0.795,
+     "lo": 0.004409953566719219,
+     "hi": 0.036639046330062014,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": 0,
+     "value": 0.012783131383908852,
+     "n": 21,
+     "second": 0.012135257787591058,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.16,
+     "share_exact": 0.155,
+     "lo": 0.0017967399415796282,
+     "hi": 0.020556438866852374,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": 4,
+     "value": 0.011516471814989826,
+     "n": 18,
+     "second": 0.010379666537068344,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.03,
+     "share_exact": 0.03,
+     "lo": 0.002764676682779638,
+     "hi": 0.016777066517526654,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.022008112586459072,
+     "n": 16,
+     "second": 0.007081400089187673,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.97,
+     "share_exact": 0.88,
+     "lo": 0.009944889509619453,
+     "hi": 0.03016830560021406,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 5,
+     "dx": -12,
+     "value": 0.006167703649186063,
+     "n": 14,
+     "second": 0.006068460780236706,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.08,
+     "share_exact": 0.075,
+     "lo": 0.0005708902140262428,
+     "hi": 0.014458211400939976,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.01911574065067434,
+     "n": 13,
+     "second": 0.005230820944503112,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.97,
+     "share_exact": 0.88,
+     "lo": 0.007513241647302277,
+     "hi": 0.028353573411531635,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -6,
+     "dx": -12,
+     "value": 0.005623061450088285,
+     "n": 14,
+     "second": 0.0043332552161639,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.225,
+     "share_exact": 0.16,
+     "lo": 0.002911540487601838,
+     "hi": 0.008859617286197238,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "public prostate",
+   "surface": "r4c2",
+   "bounds": [
+    2680,
+    3350,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 46294,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": -1,
+     "value": 0.025126564283309616,
+     "n": 2,
+     "second": 0.021976383624297213,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.79,
+     "share_exact": 0.755,
+     "lo": 0.011741770648713689,
+     "hi": 0.04685687889758267,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": 0,
+     "value": 0.026077454150093438,
+     "n": 3,
+     "second": 0.0172962595734496,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.66,
+     "share_exact": 0.655,
+     "lo": 0.016816203071527487,
+     "hi": 0.033031650162474946,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -2,
+     "value": 0.009168974459416113,
+     "n": 2,
+     "second": 0.008916289038144232,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.335,
+     "share_exact": 0.275,
+     "lo": 0.003999946697898288,
+     "hi": 0.014951955824667414,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -3,
+     "value": 0.004477636618944736,
+     "n": 2,
+     "second": 0.003771464881317854,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.495,
+     "share_exact": 0.27,
+     "lo": 0.001479950722855744,
+     "hi": 0.00882577409147335,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -1,
+     "dx": -1,
+     "value": 0.008873872146676787,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.83,
+     "share_within1": 0.69,
+     "share_exact": 0.665,
+     "lo": 0.0042081606988949635,
+     "hi": 0.012310758628941591,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "public prostate",
+   "surface": "r4c3",
+   "bounds": [
+    2680,
+    3350,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 62698,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": 2,
+     "value": 0.007947000180575703,
+     "n": 3,
+     "second": 0.005740865955730312,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.41,
+     "share_exact": 0.185,
+     "lo": 0.0026333346851326158,
+     "hi": 0.01133175183900067,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.02418851696290314,
+     "n": 2,
+     "second": 0.0030663216756526834,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.98,
+     "share_exact": 0.54,
+     "lo": 0.009083772816651221,
+     "hi": 0.035154637506995254,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.014768472324977022,
+     "n": 5,
+     "second": 0.009700775699077235,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.855,
+     "share_exact": 0.625,
+     "lo": 0.005326740444197187,
+     "hi": 0.023714889820000095,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -12,
+     "dx": 6,
+     "value": 0.006003798205516664,
+     "n": 6,
+     "second": 0.004310563866594896,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.115,
+     "share_exact": 0.115,
+     "lo": 0.0008099277660824412,
+     "hi": 0.009770923333435159,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.020790510538124085,
+     "n": 8,
+     "second": 0.0044405427833758004,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.685,
+     "lo": 0.011181348157892134,
+     "hi": 0.0293417604092099,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -10,
+     "dx": 9,
+     "value": 0.0025445195435108703,
+     "n": 3,
+     "second": 0.001991062154936274,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.08,
+     "share_exact": 0.07,
+     "lo": -0.0005990393185059227,
+     "hi": 0.006011995981132897,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.014094769394757956,
+     "n": 13,
+     "second": 0.003833087939466351,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.995,
+     "share_exact": 0.825,
+     "lo": 0.007689749736634388,
+     "hi": 0.020887210070017013,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": 1,
+     "value": 0.0044634485061335605,
+     "n": 12,
+     "second": 0.0038259056686457127,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.185,
+     "share_exact": 0.185,
+     "lo": 0.0015154400232423456,
+     "hi": 0.006768004145787941,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "public prostate",
+   "surface": "r4c4",
+   "bounds": [
+    2680,
+    3350,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 76507,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -1,
+     "value": 0.010193724313667385,
+     "n": 4,
+     "second": 0.008441537728991255,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.485,
+     "share_exact": 0.4,
+     "lo": 0.006073340011906842,
+     "hi": 0.015657494296223106,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": -1,
+     "value": 0.04234790856161552,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.825,
+     "lo": 0.03270524944002744,
+     "hi": 0.05149561369776615,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": -1,
+     "value": 0.007369370537057218,
+     "n": 8,
+     "second": 0.006070639141378509,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.185,
+     "share_exact": 0.085,
+     "lo": 0.003021550826821817,
+     "hi": 0.011802929130386525,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -1,
+     "value": 0.00775889047198286,
+     "n": 3,
+     "second": 0.005781981620529231,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.585,
+     "share_exact": 0.475,
+     "lo": 0.004423834204422841,
+     "hi": 0.010571315971241627,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -1,
+     "value": 0.025125374529718192,
+     "n": 9,
+     "second": 0.0038573805038972786,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.98,
+     "lo": 0.0186492397646076,
+     "hi": 0.030788810973476056,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -1,
+     "dx": -4,
+     "value": 0.005176610460603248,
+     "n": 8,
+     "second": 0.004681905698934008,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.365,
+     "share_exact": 0.25,
+     "lo": 0.0025636448800915343,
+     "hi": 0.006748942130984997,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -1,
+     "value": 0.02487482515973305,
+     "n": 15,
+     "second": 0.002691092063637379,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.975,
+     "lo": 0.019589279417569494,
+     "hi": 0.030117117755349573,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -1,
+     "dx": -4,
+     "value": 0.004040129826299088,
+     "n": 10,
+     "second": 0.00308403044989225,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.41,
+     "share_exact": 0.3,
+     "lo": 0.0024669532859798757,
+     "hi": 0.006129424630765365,
+     "usable": false
+    }
+   }
+  }
+ ]
+}

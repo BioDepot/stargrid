@@ -1,0 +1,164 @@
+{
+  "status": "complete",
+  "all_gates_passed": true,
+  "release": "official v1.12.2",
+  "release_revision": "2ca281c96f3dd2b9d596da1991b397fd05f9f73d",
+  "slide_id": "H1-VM2JXXK/A1",
+  "primary_umi_rule": "1MM_CR",
+  "gene_filter": "Space Ranger gene (GX) in the target set Visium Human Transcriptome Probe Set v2.1.0 (18,132 IDs; features/target_sets of the SR 4.0.1 raw_feature_bc_matrix.h5)",
+  "fixed_gene_policy": "Space Ranger GX; no native cross-gene reassignment in B or H",
+  "raw_UMI": "UR",
+  "location_policy": "production hard at 2 um",
+  "examined": {
+    "M": 272612275,
+    "D": 7164945,
+    "primary": {
+      "B": 273110393,
+      "H": 280257120,
+      "T": 279777220,
+      "gap": 6666827,
+      "location": 7146727,
+      "rest": -479900,
+      "location_share": 1.0719832688023854,
+      "rest_share": -0.0719832688023853,
+      "closure_error": 0
+    },
+    "native_components": {
+      "location": 7146727,
+      "rest": -479900,
+      "counting_offset": 498118
+    },
+    "native_shares": {
+      "location": 0.9974573426592946,
+      "rest": -0.06697888120564778,
+      "counting_offset": 0.06952153854635311
+    },
+    "native_closure_error": 0,
+    "exact": {
+      "B": 276287122,
+      "H": 283477461,
+      "location": 7190339
+    },
+    "exact_full": {
+      "B": 276287122,
+      "H": 283477461,
+      "T": 282994272,
+      "gap": 6707150,
+      "location": 7190339,
+      "rest": -483189,
+      "location_share": 1.0720408817455997,
+      "rest_share": -0.07204088174559985,
+      "closure_error": 0
+    },
+    "interpretation_category": "majority_on_examined_slide"
+  },
+  "all_genes": {
+    "M": 277918688,
+    "D": 1858532,
+    "primary": {
+      "B": 278426134,
+      "H": 285711927,
+      "T": 279777220,
+      "gap": 1351086,
+      "location": 7285793,
+      "rest": -5934707,
+      "location_share": 5.392545700273706,
+      "rest_share": -4.392545700273706,
+      "closure_error": 0
+    },
+    "native_components": {
+      "location": 7285793,
+      "rest": -5934707,
+      "counting_offset": 507446
+    },
+    "native_shares": {
+      "location": 3.9201870078104655,
+      "rest": -3.1932229307862334,
+      "counting_offset": 0.27303592297576795
+    },
+    "native_closure_error": 0,
+    "exact": {
+      "B": 281663936,
+      "H": 288994244,
+      "location": 7330308
+    },
+    "exact_full": {
+      "B": 281663936,
+      "H": 288994244,
+      "T": 282994272,
+      "gap": 1330336,
+      "location": 7330308,
+      "rest": -5999972,
+      "location_share": 5.5101177446900635,
+      "rest_share": -4.5101177446900635,
+      "closure_error": 0
+    },
+    "interpretation_category": "majority_on_examined_slide"
+  },
+  "off_target": {
+    "M": 5306413,
+    "B": 5315741,
+    "H": 5454807,
+    "T": 0,
+    "B_exact": 5376814,
+    "H_exact": 5516783,
+    "T_minus_H_all": -5934707,
+    "T_minus_H_target": -479900,
+    "T_minus_H_accounted_by_off_target": -5454807,
+    "share_of_old_negative_T_minus_H": 0.919136698745195
+  },
+  "T_note": "All 18,118 native STARgrid feature IDs are in the target set, so T is the all-gene native T (1MM_CR 279,777,220; Exact 282,994,272).",
+  "M_check": {
+    "M_target_from_molecule_info": 272612275,
+    "off_target_molecules": 5306413,
+    "nonzero_off_target_ids": 864,
+    "deprecated_off_target_molecules": 3162530
+  },
+  "filter_equivalence_fixture": {
+    "checks": {
+      "H_pre_equals_post_g": true,
+      "H_pre_equals_post_g2": true,
+      "H_additive_1mm": true,
+      "H_additive_exact": true,
+      "B_additive_1mm": true,
+      "B_additive_exact": true,
+      "both_equals_all": true,
+      "nontrivial": true
+    },
+    "reads": 1000,
+    "note": "two-gene variant of the 1,000-read fixture; filtering before UMI collapse equals filtering after it, and per-gene counts add up, for B and H and both UMI rules"
+  },
+  "full_slide_pre_vs_post_collapse": {
+    "H_1mm_filtered_before_collapse": 280257120,
+    "H_1mm_filtered_after_collapse": 280257120,
+    "equal": true
+  },
+  "reproduction_gates": {
+    "all_gene_B_1mm": true,
+    "all_gene_B_exact": true,
+    "all_gene_H_1mm": true,
+    "all_gene_H_exact": true,
+    "eligible": 707409359,
+    "eligible_with_CB": 639672962,
+    "eligible_with_candidates": 658940223
+  },
+  "note_h_all_v1": "The h_all_v1 run is marked failed in its summary only because an added exact-matrix post-collapse check looked for a file that the Exact mode does not write; the full-slide counts, all science gates and the 1MM_CR post-collapse check passed.",
+  "target_counts": {
+    "baseline_supporting_reads_target": 627472665,
+    "baseline_off_target_reads_with_CB": 12200297,
+    "hard_member_reads_target": 646372343,
+    "off_target_candidate_reads": 12567880
+  },
+  "stage_summaries": {
+    "g1_all_v1": "b56dae78e86c7d5beecc8cc621f20e989dfa74b4a2e2c19230e26e04324773b3",
+    "g1_target_v1": "7835158dc5d3a836a83f502c6a98a8749b0dfaa5d1d008c137b77fa01fc3ed14",
+    "h_all_v1": "e2b6019684c646f5c3abf1151a3df3391c59978e6e64514953f3dbe34944b4e7",
+    "h_target_v1": "da12ed711855eebac9666a1fabb79c189ec9bf9d50de281931c42f1153518331",
+    "local_inputs_v2": "9b1d5f674d8d568ecb3408b4218f8264da7e0f96f9cb52ac25fbfd810985af3d",
+    "export_v1": "0950eeee5db229a7a462f43d789e3092cf43c5968523ff21958fe9fe24a53efd",
+    "decode_v1": "696d12b28dcac41e85e07f8e38930562c2f1ca9a7df21f4a6b46a598cb9fbdff",
+    "g1_build_v2": "0df76172fd26fd9b00555f9037d6ca06cfb61562f9b3d729c2a4d625a5ad6ad8",
+    "h_build_v1": "c772c80d9661ec1a48683c74e9671905a66bef37fd62d8201f63630f3c7db512"
+  },
+  "new_service_units": 0
+}

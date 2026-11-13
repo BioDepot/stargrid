@@ -1,0 +1,43 @@
+{
+ "placement": "ov_cellpose_dep",
+ "label": "Ovarian, Cellpose, deposited SR 4.0.1",
+ "seed": 20261007,
+ "draws": 200,
+ "search": 12,
+ "radius": 17,
+ "input_files": {
+  "<datasets>/visium_hd_3prime_human_ovarian_ff_min_depth/oracle_inputs/binned_outputs/square_002um/spatial/tissue_positions.parquet": {
+   "sha256": "af26ae36552849787d50a01b50d0e3eaa5cf08926dcb525bc8009e1cf2000c94",
+   "recorded": "af26ae36552849787d50a01b50d0e3eaa5cf08926dcb525bc8009e1cf2000c94",
+   "match": true
+  },
+  "<runs>/20260927_ovarian_cell_mapping_inputs_v1/square_totals.npz": {
+   "sha256": "db1916d292981f703c8440a1017e9d4a1550876cecdafcfbb5577a8c85b7183e",
+   "recorded": "db1916d292981f703c8440a1017e9d4a1550876cecdafcfbb5577a8c85b7183e",
+   "match": true
+  },
+  "<runs>/20261009_registration_subposition_deposit_whole_T1_v1/accepted_grid_labels.npy": {
+   "sha256": "25a8c073c24d837bcd10540a720d672d0c290fa07f3423543779a7109bcb0610",
+   "recorded": "25a8c073c24d837bcd10540a720d672d0c290fa07f3423543779a7109bcb0610",
+   "match": true
+  },
+  "<runs>/20261009_registration_subposition_deposit_whole_T1_v1/M0_surface.npy": {
+   "sha256": "ad023fb24a7475e4e0c182af34abb97afca6d75313207d8692529d81bd5ce59f",
+   "recorded": null,
+   "match": null
+  }
+ },
+ "inputs_sha_ok": true,
+ "all_reproduced": true,
+ "elapsed_seconds": 43.93224740028381,
+ "affinity": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7
+ ]
+}

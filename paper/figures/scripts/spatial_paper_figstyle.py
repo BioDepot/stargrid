@@ -1,7 +1,9 @@
 """Shared figure style for the manuscript.
 
-Nature Methods print conventions: sans-serif, 5-7 pt type, 89 mm single-column
-or 183 mm double-column width, thin marks, recessive axes.
+Every figure is drawn at the width of the manuscript's text block and saved at
+exactly that width (see save), so the type prints at the sizes set here and is
+the same in every figure: sans-serif, 6 to 9 pt, thin marks, recessive axes.
+Nothing is set below FS_NOTE.
 
 Palette provenance: the two-colour categorical pair was validated with the
 dataviz palette validator and passes every check on a light surface --
@@ -10,13 +12,22 @@ protan / 29.1 tritan), normal-vision floor (dE 40.7) and contrast >= 3:1.
 Do not substitute colours without re-running that validator.
 """
 
+from pathlib import Path
+
 import matplotlib as mpl
 import matplotlib.pyplot as plt
+from matplotlib.transforms import Bbox
 
 # --- canvas -----------------------------------------------------------------
 MM = 1 / 25.4
-SINGLE_COL = 89 * MM
-DOUBLE_COL = 183 * MM
+TEXT_WIDTH = 451.3 / 72     # inches: A4 with 1 in margins, the manuscript's \linewidth
+
+# --- type sizes, in points as printed -------------------------------------------
+FS_PANEL = 9       # panel letters
+FS_TITLE = 7.5     # panel titles
+FS_LABEL = 7       # axis labels and running text
+FS_TICK = 6.5      # tick labels and legends
+FS_NOTE = 6        # value labels and notes; the smallest size used
 
 # --- palette (validated; see module docstring) ------------------------------
 STAR = "#0F62FE"        # open / molecule-first fields
@@ -44,12 +55,12 @@ def apply():
         "ps.fonttype": 42,
         "font.family": "sans-serif",
         "font.sans-serif": ["Helvetica", "Arial", "DejaVu Sans"],
-        "font.size": 6.5,
-        "axes.labelsize": 6.5,
-        "axes.titlesize": 7,
-        "xtick.labelsize": 6,
-        "ytick.labelsize": 6,
-        "legend.fontsize": 6,
+        "font.size": FS_LABEL,
+        "axes.labelsize": FS_LABEL,
+        "axes.titlesize": FS_TITLE,
+        "xtick.labelsize": FS_TICK,
+        "ytick.labelsize": FS_TICK,
+        "legend.fontsize": FS_TICK,
         "axes.linewidth": 0.6,
         "axes.edgecolor": INK_MUTED,
         "axes.labelcolor": INK,
@@ -74,9 +85,36 @@ def apply():
 
 
 def panel_label(ax, letter, dx=-0.19, dy=1.10):
-    """Bold lower-case panel letter, Nature style."""
-    ax.text(dx, dy, letter, transform=ax.transAxes,
-            fontsize=8, fontweight="bold", va="top", ha="left", color=INK)
+    """Bold capital panel letter (Genome Research style); the letter may be given in either case."""
+    ax.text(dx, dy, letter.upper(), transform=ax.transAxes,
+            fontsize=FS_PANEL, fontweight="bold", va="top", ha="left", color=INK)
+
+
+def save(fig, out_dir, stem, pad=0.03):
+    """Write PDF and PNG at exactly the figure's width; crop the height to the content.
+
+    The manuscript sets each figure at the text width, so a file of that width is
+    printed without scaling. Stops if anything is drawn outside the canvas, since
+    a fixed width cannot grow to hold it.
+    """
+    fig.canvas.draw()
+    renderer = fig.canvas.get_renderer()
+    boxes = [fig.get_tightbbox(renderer)]
+    # The tight box leaves out the length of axis labels, so add them.
+    for ax in fig.axes:
+        for label in (ax.xaxis.label, ax.yaxis.label):
+            if ax.axison and label.get_visible() and label.get_text().strip():
+                boxes.append(Bbox(label.get_window_extent(renderer).get_points() / fig.dpi))
+    tight = Bbox.union(boxes)
+    width = fig.get_figwidth()
+    if tight.x0 < 0 or tight.x1 > width:
+        raise SystemExit(f"{stem}: content spans {tight.x0:.3f} to {tight.x1:.3f} in, "
+                         f"outside the {width:.3f} in canvas")
+    box = Bbox.from_extents(0, tight.y0 - pad, width, tight.y1 + pad)
+    for ext in ("pdf", "png"):
+        fig.savefig(Path(out_dir) / f"{stem}.{ext}", bbox_inches=box)
+    print(f"wrote {Path(out_dir) / stem}.pdf: content {tight.x0:.2f}-{tight.x1:.2f} of {width:.2f} in wide, "
+          f"{tight.y1 - tight.y0 + 2 * pad:.2f} in tall")
 
 
 def hide_y_grid_behind(ax):

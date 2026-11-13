@@ -1,0 +1,43 @@
+{
+ "placement": "ov_cellpose_img",
+ "label": "Ovarian, Cellpose, our image-only placement",
+ "seed": 20261007,
+ "draws": 200,
+ "search": 12,
+ "radius": 17,
+ "input_files": {
+  "<datasets>/visium_hd_3prime_human_ovarian_ff_min_depth/source/downloads/Visium_HD_3prime_Human_Ovarian_Cancer_FF_Min_Depth_barcode_mappings.parquet": {
+   "sha256": "c77700869df690dccf71f7adb6d4eae9a285225c1dd864c6c038f1eb2815da3c",
+   "recorded": "c77700869df690dccf71f7adb6d4eae9a285225c1dd864c6c038f1eb2815da3c",
+   "match": true
+  },
+  "<datasets>/visium_hd_3prime_human_ovarian_ff_min_depth/oracle_inputs/binned_outputs/square_002um/spatial/tissue_positions.parquet": {
+   "sha256": "af26ae36552849787d50a01b50d0e3eaa5cf08926dcb525bc8009e1cf2000c94",
+   "recorded": "af26ae36552849787d50a01b50d0e3eaa5cf08926dcb525bc8009e1cf2000c94",
+   "match": true
+  },
+  "<runs>/20260927_ovarian_cell_mapping_inputs_v1/square_totals.npz": {
+   "sha256": "db1916d292981f703c8440a1017e9d4a1550876cecdafcfbb5577a8c85b7183e",
+   "recorded": "db1916d292981f703c8440a1017e9d4a1550876cecdafcfbb5577a8c85b7183e",
+   "match": true
+  },
+  "<runs>/20260927_ovarian_cell_mapping_inputs_v1/grid_labels.npz": {
+   "sha256": "00dc8eb1070ee245b3562acad9d434cb7a0ef63ca34a51e970f40bcbe9cc9524",
+   "recorded": "00dc8eb1070ee245b3562acad9d434cb7a0ef63ca34a51e970f40bcbe9cc9524",
+   "match": true
+  }
+ },
+ "inputs_sha_ok": true,
+ "all_reproduced": true,
+ "elapsed_seconds": 45.37616467475891,
+ "affinity": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7
+ ]
+}

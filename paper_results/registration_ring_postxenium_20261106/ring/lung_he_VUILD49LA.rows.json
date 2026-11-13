@@ -1,0 +1,1484 @@
+{
+ "placement": "lung_he_VUILD49LA",
+ "counts": "star",
+ "label": "Lung VUILD49LA, H&E nuclei",
+ "expansions": [
+  0,
+  1,
+  2,
+  3
+ ],
+ "seed": 20261007,
+ "draws": 200,
+ "search": 12,
+ "radius": 13,
+ "inputs_sha256": {
+  "<runs>/20261010_registration_oracle_lung_expression_inputs_v1/total.npy": "8bc4b401f80f0f46e3f29acbb8262a9664bf1e52077ff9c4d7a0f96eaa69da5d",
+  "<runs>/20261010_registration_oracle_lung_expression_inputs_v1/tissue.npy": "c797a4a6d39faf402e434ac60a2d8840c80c6c5800f544ccaac96487478fe33c",
+  "<runs>/20261010_registration_oracle_lung_he_grid_v1/grid_labels.npz": "0d10d6db48de45a2c44d93b3602b02247cbd920424aa8be3dad40df4e64d0934",
+  "<runs>/20261010_registration_oracle_lung_he_whole_VUILD49LA_v1/whole_surfaces.npz": "e79f8ab623c0f49fc8cafac316765bfa45cfa3e0b9a30a68f541f53b4f9fb3c4"
+ },
+ "elapsed": 13.429896116256714,
+ "affinity": [
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31
+ ],
+ "rows": [
+  {
+   "set": "Lung VUILD49LA, H&E nuclei",
+   "surface": "whole",
+   "bounds": [
+    64,
+    1812,
+    64,
+    1940
+   ],
+   "nucleus_in_tissue": 482954,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -4,
+     "value": 0.011231815776500786,
+     "n": 4,
+     "second": 0.00923367409484488,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.53,
+     "share_exact": 0.315,
+     "lo": 0.0074328043110441,
+     "hi": 0.014118404701246857,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": -3,
+     "value": 0.02152710955860715,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.58,
+     "lo": 0.016238361210109357,
+     "hi": 0.02715410145853711,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -3,
+     "value": 0.010068014983608986,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.995,
+     "share_exact": 0.515,
+     "lo": 0.00703524453884245,
+     "hi": 0.012853037039128896,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -4,
+     "value": 0.0024388920763822597,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.75,
+     "share_within1": 0.325,
+     "share_exact": 0.32,
+     "lo": 0.0005876215645838096,
+     "hi": 0.004835554149657151,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -4,
+     "value": 0.009608190383742166,
+     "n": 6,
+     "second": 0.00335036453019244,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.675,
+     "lo": 0.00783974487127781,
+     "hi": 0.011525912429254959,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -4,
+     "value": 0.0029872273818797312,
+     "n": 3,
+     "second": 0.0026071979181623295,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.47,
+     "share_exact": 0.46,
+     "lo": 0.0012004479128549185,
+     "hi": 0.004739819451183133,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -4,
+     "value": 0.008904053992228267,
+     "n": 7,
+     "second": 0.0027420162817255456,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.79,
+     "lo": 0.0071549704103483994,
+     "hi": 0.010837747950280746,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.0032662478971722253,
+     "n": 2,
+     "second": 0.001970265018329531,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.24,
+     "share_exact": 0.22,
+     "lo": 0.0017882420080183093,
+     "hi": 0.00458473487476202,
+     "usable": false
+    }
+   },
+   "truth": [
+    -2,
+    -3
+   ]
+  },
+  {
+   "set": "Lung VUILD49LA, H&E nuclei",
+   "surface": "r0c0",
+   "bounds": [
+    64,
+    646,
+    64,
+    689
+   ],
+   "nucleus_in_tissue": 36736,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.017826707817034215,
+     "n": 7,
+     "second": 0.013280943025540282,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.265,
+     "share_exact": 0.21,
+     "lo": 0.00707040912535839,
+     "hi": 0.033001612315828606,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.017203300412223843,
+     "n": 2,
+     "second": 0.008381162796282426,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.185,
+     "share_exact": 0.18,
+     "lo": 0.005360809003817912,
+     "hi": 0.0275547117383638,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -5,
+     "value": 0.010544663813337074,
+     "n": 5,
+     "second": 0.009407309577846412,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.085,
+     "share_exact": 0.08,
+     "lo": 0.004044531430317561,
+     "hi": 0.016366089151205944,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": -4,
+     "value": 0.013388365352092202,
+     "n": 3,
+     "second": 0.009966160952767034,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.33,
+     "share_exact": 0.295,
+     "lo": 0.005369221366688168,
+     "hi": 0.02146006925613526,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.007848550817944222,
+     "n": 7,
+     "second": 0.0077386173113525025,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.185,
+     "share_exact": 0.17,
+     "lo": 0.004238975967899234,
+     "hi": 0.012692056800447993,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.008914434572710572,
+     "n": 4,
+     "second": 0.00798723116026101,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.51,
+     "share_exact": 0.395,
+     "lo": 0.004911374854129169,
+     "hi": 0.014580483913247415,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.0074226900076785896,
+     "n": 8,
+     "second": 0.005717985238896883,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.405,
+     "share_exact": 0.4,
+     "lo": 0.00473779542605352,
+     "hi": 0.011860512960839531,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 11,
+     "dx": 3,
+     "value": 0.0064239828693789525,
+     "n": 3,
+     "second": 0.005775515448530277,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.135,
+     "share_exact": 0.125,
+     "lo": 0.0018476322442999794,
+     "hi": 0.011340511387981518,
+     "usable": false
+    }
+   },
+   "truth": [
+    -2,
+    -3
+   ]
+  },
+  {
+   "set": "Lung VUILD49LA, H&E nuclei",
+   "surface": "r0c1",
+   "bounds": [
+    64,
+    646,
+    689,
+    1314
+   ],
+   "nucleus_in_tissue": 38063,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -4,
+     "value": 0.014122544770530654,
+     "n": 5,
+     "second": 0.013839488899752173,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.015,
+     "share_exact": 0.015,
+     "lo": 0.0059803707598818315,
+     "hi": 0.022333087473737006,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.012987913383097016,
+     "n": 3,
+     "second": 0.0085051828457966,
+     "interior": true,
+     "share_any": 0.985,
+     "share_within1": 0.115,
+     "share_exact": 0.115,
+     "lo": 0.0047250283015143335,
+     "hi": 0.02866343254006763,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -11,
+     "dx": 11,
+     "value": 0.015068080811657891,
+     "n": 4,
+     "second": 0.009654071507609663,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.255,
+     "share_exact": 0.255,
+     "lo": 0.005098276865300133,
+     "hi": 0.02127690883332446,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": -2,
+     "value": 0.013004334778259352,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.975,
+     "share_within1": 0.435,
+     "share_exact": 0.2,
+     "lo": 0.005858044888136599,
+     "hi": 0.018036969875199593,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.008083186971099998,
+     "n": 8,
+     "second": 0.007299270072992803,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.275,
+     "share_exact": 0.275,
+     "lo": 0.0017706188935906308,
+     "hi": 0.015284551397242229,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": -2,
+     "value": 0.011558030477736958,
+     "n": 3,
+     "second": 0.006299251746339496,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.645,
+     "share_exact": 0.47,
+     "lo": 0.004859821063277444,
+     "hi": 0.016623933497486258,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.00601654602292756,
+     "n": 5,
+     "second": 0.005321983086584492,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.235,
+     "share_exact": 0.235,
+     "lo": 0.0023255993531688837,
+     "hi": 0.012294149291759133,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": -2,
+     "value": 0.006627326373127573,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.57,
+     "share_exact": 0.34,
+     "lo": 0.00290396366419598,
+     "hi": 0.013163179159140528,
+     "usable": false
+    }
+   },
+   "truth": [
+    -2,
+    -3
+   ]
+  },
+  {
+   "set": "Lung VUILD49LA, H&E nuclei",
+   "surface": "r0c2",
+   "bounds": [
+    64,
+    646,
+    1314,
+    1940
+   ],
+   "nucleus_in_tissue": 30717,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 6,
+     "dx": 2,
+     "value": 0.02177177177177181,
+     "n": 15,
+     "second": 0.02149558843652777,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.21,
+     "share_exact": 0.21,
+     "lo": 0.008281245301831552,
+     "hi": 0.034565255338845205,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.021060614203225803,
+     "n": 10,
+     "second": 0.020672167230881944,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.48,
+     "share_exact": 0.325,
+     "lo": 0.008503609350559566,
+     "hi": 0.03801498454242556,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": -4,
+     "value": 0.010945296779221403,
+     "n": 6,
+     "second": 0.01018802673188679,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.1,
+     "share_exact": 0.1,
+     "lo": 0.0015613803830053343,
+     "hi": 0.018505356330343867,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": -1,
+     "value": 0.01140819964349371,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.12,
+     "share_exact": 0.12,
+     "lo": 0.0037043738162084263,
+     "hi": 0.019855403228303405,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 1,
+     "value": 0.004466802787372437,
+     "n": 7,
+     "second": 0.004376444892381759,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.04,
+     "share_exact": 0.015,
+     "lo": -0.00040572131021984477,
+     "hi": 0.009914217774407263,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": -1,
+     "value": 0.011977818044462296,
+     "n": 2,
+     "second": 0.008178361202271112,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.47,
+     "share_exact": 0.47,
+     "lo": 0.007399564551319548,
+     "hi": 0.01670815188030398,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -7,
+     "value": 0.004688283548902827,
+     "n": 8,
+     "second": 0.004180301511339968,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.045,
+     "share_exact": 0.04,
+     "lo": 0.00025281333676374087,
+     "hi": 0.009966083846414028,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": -1,
+     "value": 0.009427445732618556,
+     "n": 3,
+     "second": 0.005918649434399792,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.385,
+     "share_exact": 0.35,
+     "lo": 0.005848955433493469,
+     "hi": 0.013832187740400795,
+     "usable": false
+    }
+   },
+   "truth": [
+    -2,
+    -3
+   ]
+  },
+  {
+   "set": "Lung VUILD49LA, H&E nuclei",
+   "surface": "r1c0",
+   "bounds": [
+    646,
+    1229,
+    64,
+    689
+   ],
+   "nucleus_in_tissue": 64296,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": -2,
+     "value": 0.015364169178242237,
+     "n": 13,
+     "second": 0.014136765401047136,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.15,
+     "share_exact": 0.11,
+     "lo": 0.003916300593250743,
+     "hi": 0.02233204192930028,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.03263089387104734,
+     "n": 14,
+     "second": 0.013999764923393498,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.985,
+     "share_exact": 0.645,
+     "lo": 0.019087593349537572,
+     "hi": 0.04179024449483298,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -3,
+     "value": 0.013259073395933019,
+     "n": 10,
+     "second": 0.007914986116276612,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.46,
+     "share_exact": 0.395,
+     "lo": 0.002500805701793613,
+     "hi": 0.022365794695366495,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -11,
+     "dx": 5,
+     "value": 0.011839204411592918,
+     "n": 9,
+     "second": 0.007805812939900791,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.305,
+     "share_exact": 0.305,
+     "lo": 0.0017365276115320156,
+     "hi": 0.01824678321923653,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -3,
+     "value": 0.014836498862867975,
+     "n": 9,
+     "second": 0.006199606193647567,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.825,
+     "share_exact": 0.585,
+     "lo": 0.0046557617386244424,
+     "hi": 0.0212145034030304,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -4,
+     "value": 0.00563593842358201,
+     "n": 7,
+     "second": 0.004705910801294566,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.065,
+     "share_exact": 0.065,
+     "lo": 0.000865565157688253,
+     "hi": 0.010968574239598829,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -3,
+     "value": 0.01482743788979568,
+     "n": 14,
+     "second": 0.0058241050253040605,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.855,
+     "share_exact": 0.66,
+     "lo": 0.004877266422460447,
+     "hi": 0.021435630686629355,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -5,
+     "dx": -2,
+     "value": 0.004291390728476729,
+     "n": 8,
+     "second": 0.004058886665198047,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.02,
+     "share_exact": 0.01,
+     "lo": -0.00011768292908735378,
+     "hi": 0.009026296984762835,
+     "usable": false
+    }
+   },
+   "truth": [
+    -2,
+    -3
+   ]
+  },
+  {
+   "set": "Lung VUILD49LA, H&E nuclei",
+   "surface": "r1c1",
+   "bounds": [
+    646,
+    1229,
+    689,
+    1314
+   ],
+   "nucleus_in_tissue": 64203,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -5,
+     "value": 0.02362049542051614,
+     "n": 5,
+     "second": 0.018268845959147573,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.605,
+     "share_exact": 0.605,
+     "lo": 0.012700121813383263,
+     "hi": 0.03335065044359744,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": -4,
+     "value": 0.025908587920189907,
+     "n": 10,
+     "second": 0.01188045915464675,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.85,
+     "share_exact": 0.825,
+     "lo": 0.013325808178067292,
+     "hi": 0.035675016863261015,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": 0,
+     "value": 0.009963805799392711,
+     "n": 4,
+     "second": 0.008232470694240934,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.33,
+     "share_exact": 0.33,
+     "lo": 0.006179550499596414,
+     "hi": 0.01603894445196545,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": -2,
+     "value": 0.009619429273739266,
+     "n": 5,
+     "second": 0.007602094657826131,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.535,
+     "share_exact": 0.12,
+     "lo": -0.0004453967705485562,
+     "hi": 0.014195801256576398,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -4,
+     "value": 0.00863476732366264,
+     "n": 8,
+     "second": 0.006009923676300932,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.615,
+     "share_exact": 0.58,
+     "lo": 0.00292827864323022,
+     "hi": 0.016532128281244115,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": -2,
+     "value": 0.007585757653970626,
+     "n": 6,
+     "second": 0.0070034993060036355,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.635,
+     "share_exact": 0.23,
+     "lo": 0.0020332183290648095,
+     "hi": 0.012614398483024602,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -4,
+     "value": 0.00991842321379699,
+     "n": 6,
+     "second": 0.005431134870020449,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.8,
+     "share_exact": 0.8,
+     "lo": 0.004803250077553917,
+     "hi": 0.016292246760635298,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -5,
+     "value": 0.007125475650620161,
+     "n": 7,
+     "second": 0.005567200798364813,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.265,
+     "share_exact": 0.265,
+     "lo": 0.0031060205216974918,
+     "hi": 0.011651005491056025,
+     "usable": false
+    }
+   },
+   "truth": [
+    -2,
+    -3
+   ]
+  },
+  {
+   "set": "Lung VUILD49LA, H&E nuclei",
+   "surface": "r1c2",
+   "bounds": [
+    646,
+    1229,
+    1314,
+    1940
+   ],
+   "nucleus_in_tissue": 53330,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": -5,
+     "value": 0.01661742096665697,
+     "n": 7,
+     "second": 0.010354317760891574,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.375,
+     "share_exact": 0.195,
+     "lo": 0.009723778155457007,
+     "hi": 0.02585050943574133,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": -3,
+     "value": 0.021587492662636154,
+     "n": 6,
+     "second": 0.010839456446280371,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.9,
+     "share_exact": 0.465,
+     "lo": 0.005523760707492506,
+     "hi": 0.03422872303594036,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -4,
+     "value": 0.013109860552669828,
+     "n": 7,
+     "second": 0.010425239486138826,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.585,
+     "share_exact": 0.36,
+     "lo": 0.0038249254534842682,
+     "hi": 0.02276209029109756,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -1,
+     "dx": -5,
+     "value": 0.006978159522735727,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.99,
+     "share_within1": 0.315,
+     "share_exact": 0.315,
+     "lo": 0.002153922502824474,
+     "hi": 0.012660045862688424,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -4,
+     "value": 0.010261304145623873,
+     "n": 5,
+     "second": 0.008436933565906246,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.7,
+     "share_exact": 0.485,
+     "lo": 0.003912296357719508,
+     "hi": 0.019235060519185495,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -1,
+     "dx": -5,
+     "value": 0.005357005981564189,
+     "n": 2,
+     "second": 0.0032812065669982626,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.305,
+     "share_exact": 0.185,
+     "lo": 0.0029548029187527747,
+     "hi": 0.00943793628615995,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -4,
+     "value": 0.010054717337133035,
+     "n": 9,
+     "second": 0.008282581273232337,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.745,
+     "share_exact": 0.53,
+     "lo": 0.0037460007359898686,
+     "hi": 0.016938385351866942,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -1,
+     "dx": -5,
+     "value": 0.006118193315172826,
+     "n": 2,
+     "second": 0.004200589289415579,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.43,
+     "share_exact": 0.28,
+     "lo": 0.003365511944901023,
+     "hi": 0.00999674470052469,
+     "usable": false
+    }
+   },
+   "truth": [
+    -2,
+    -3
+   ]
+  },
+  {
+   "set": "Lung VUILD49LA, H&E nuclei",
+   "surface": "r2c0",
+   "bounds": [
+    1229,
+    1812,
+    64,
+    689
+   ],
+   "nucleus_in_tissue": 58938,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -5,
+     "value": 0.013842790238792535,
+     "n": 10,
+     "second": 0.012345230746886537,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.41,
+     "share_exact": 0.135,
+     "lo": 0.004189121009153486,
+     "hi": 0.023360372316210555,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": -3,
+     "value": 0.037694961531977045,
+     "n": 7,
+     "second": 0.011166699505701039,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.985,
+     "lo": 0.026346806866305444,
+     "hi": 0.04869257354169957,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -3,
+     "value": 0.019826486787860365,
+     "n": 6,
+     "second": 0.007016176183979761,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.99,
+     "share_exact": 0.88,
+     "lo": 0.011769700379976733,
+     "hi": 0.02696914235088525,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -7,
+     "dx": 3,
+     "value": 0.006208430597829606,
+     "n": 3,
+     "second": 0.00438010591021587,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.15,
+     "share_exact": 0.11,
+     "lo": 0.002233778181597723,
+     "hi": 0.01186492793951589,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -3,
+     "value": 0.022397331593734915,
+     "n": 10,
+     "second": 0.006137881335575246,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.98,
+     "lo": 0.016337093954681962,
+     "hi": 0.02725771837579621,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -1,
+     "dx": -5,
+     "value": 0.004560492223974255,
+     "n": 3,
+     "second": 0.004252248933099945,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.22,
+     "share_exact": 0.19,
+     "lo": 0.0008798471336671528,
+     "hi": 0.00955858202840908,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -3,
+     "value": 0.018705957604147727,
+     "n": 13,
+     "second": 0.00623814986642679,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.975,
+     "lo": 0.013542558952841866,
+     "hi": 0.02255003868858585,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -1,
+     "dx": -5,
+     "value": 0.006570004736199064,
+     "n": 4,
+     "second": 0.002214992055016518,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.44,
+     "share_exact": 0.395,
+     "lo": 0.0022296309824398897,
+     "hi": 0.011064555923230633,
+     "usable": false
+    }
+   },
+   "truth": [
+    -2,
+    -3
+   ]
+  },
+  {
+   "set": "Lung VUILD49LA, H&E nuclei",
+   "surface": "r2c1",
+   "bounds": [
+    1229,
+    1812,
+    689,
+    1314
+   ],
+   "nucleus_in_tissue": 65212,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -4,
+     "value": 0.013385015791070654,
+     "n": 11,
+     "second": 0.010734113145455915,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.295,
+     "share_exact": 0.185,
+     "lo": 0.007159647384059342,
+     "hi": 0.020712634689822478,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": -4,
+     "value": 0.04495193138983977,
+     "n": 6,
+     "second": 0.007534530338246359,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.035427909524382475,
+     "hi": 0.05409548762903504,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -4,
+     "value": 0.019335750773599614,
+     "n": 6,
+     "second": 0.009326768891561255,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.995,
+     "share_exact": 0.995,
+     "lo": 0.014151438463135957,
+     "hi": 0.024117394737981246,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 7,
+     "dx": -3,
+     "value": 0.006763507688986703,
+     "n": 5,
+     "second": 0.006316130195474945,
+     "interior": true,
+     "share_any": 0.99,
+     "share_within1": 0.13,
+     "share_exact": 0.13,
+     "lo": 0.0016632306551965514,
+     "hi": 0.012046792368508495,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -4,
+     "value": 0.020243676289222856,
+     "n": 9,
+     "second": 0.006325350410036901,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.01601960260859338,
+     "hi": 0.025236715679458423,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": -6,
+     "value": 0.006065030436067098,
+     "n": 4,
+     "second": 0.005824235374312425,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.135,
+     "share_exact": 0.08,
+     "lo": 0.0027709112397857286,
+     "hi": 0.008828149969575361,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -4,
+     "value": 0.01890126755536059,
+     "n": 18,
+     "second": 0.005170793747212077,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.015089413021038967,
+     "hi": 0.022742815588950548,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": -6,
+     "value": 0.006928946299274763,
+     "n": 10,
+     "second": 0.006722790417217572,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.29,
+     "share_exact": 0.18,
+     "lo": 0.0035275839512861314,
+     "hi": 0.009436719673133883,
+     "usable": false
+    }
+   },
+   "truth": [
+    -2,
+    -3
+   ]
+  },
+  {
+   "set": "Lung VUILD49LA, H&E nuclei",
+   "surface": "r2c2",
+   "bounds": [
+    1229,
+    1812,
+    1314,
+    1940
+   ],
+   "nucleus_in_tissue": 71459,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.01746907441775014,
+     "n": 13,
+     "second": 0.015108708171575502,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.29,
+     "share_exact": 0.245,
+     "lo": 0.00854043657625928,
+     "hi": 0.024753228024326376,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": -4,
+     "value": 0.0347435092225441,
+     "n": 17,
+     "second": 0.011836091799304449,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.915,
+     "share_exact": 0.54,
+     "lo": 0.014637242063037478,
+     "hi": 0.04463508312887461,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -4,
+     "value": 0.017792776447250525,
+     "n": 7,
+     "second": 0.006980900132300016,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.865,
+     "share_exact": 0.51,
+     "lo": 0.00533385289715872,
+     "hi": 0.027039862625026265,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -6,
+     "dx": 7,
+     "value": 0.00822221841365589,
+     "n": 6,
+     "second": 0.006957991073600844,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.165,
+     "share_exact": 0.165,
+     "lo": 0.0020691345751694293,
+     "hi": 0.01585119976973169,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -4,
+     "value": 0.016653126952496544,
+     "n": 13,
+     "second": 0.006092685261205766,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.945,
+     "share_exact": 0.595,
+     "lo": 0.006986163561594727,
+     "hi": 0.02214908370710258,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -11,
+     "dx": -1,
+     "value": 0.007703844497572221,
+     "n": 8,
+     "second": 0.006046727865481993,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.3,
+     "share_exact": 0.3,
+     "lo": 0.0011128444215964845,
+     "hi": 0.012769590056392752,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -4,
+     "value": 0.015390376334019962,
+     "n": 18,
+     "second": 0.005776849613505997,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.925,
+     "share_exact": 0.48,
+     "lo": 0.006119885961159094,
+     "hi": 0.020287611409162583,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.005995352501929951,
+     "n": 9,
+     "second": 0.005443829697828639,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.2,
+     "share_exact": 0.19,
+     "lo": 0.0020999695531597473,
+     "hi": 0.009333168374957021,
+     "usable": false
+    }
+   },
+   "truth": [
+    -2,
+    -3
+   ]
+  }
+ ]
+}

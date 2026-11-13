@@ -1,0 +1,256 @@
+[
+ {
+  "set": "Lung VUHD049, H&E nuclei",
+  "surface": "whole",
+  "bounds": [
+   0,
+   1507,
+   0,
+   1406
+  ],
+  "nucleus_in_tissue": 229048,
+  "centroid_y": 761.1441051657295,
+  "centroid_x": 643.9429202612553,
+  "tested": true,
+  "blocks": 240,
+  "repro": {
+   "package_fft_surface": 0.0,
+   "saved_surface": 0.0
+  },
+  "repro_pass": true,
+  "ring_dy": -6,
+  "ring_dx": -3,
+  "ring_sign": "peak",
+  "ring_contrast": -0.0478532719329996,
+  "ring_border": false,
+  "ring_usable": false,
+  "dip": true,
+  "dy": -5,
+  "dx": -1,
+  "depth": 0.010513051300533593,
+  "interior": true,
+  "n_minima": 1,
+  "second_depth": null,
+  "profile": [
+   0.9894869486994664,
+   1.0,
+   0.9961425311123425,
+   0.9848086668018549,
+   0.9688197601542227,
+   0.9503586101904272
+  ],
+  "share_any": 0.97,
+  "share_within1": 0.97,
+  "share_exact": 0.66,
+  "depth_lo": 0.004200701102359414,
+  "depth_hi": 0.015142039091094742,
+  "usable": true,
+  "reason": "usable"
+ },
+ {
+  "set": "Lung VUHD049, H&E nuclei",
+  "surface": "r0c0",
+  "bounds": [
+   0,
+   502,
+   0,
+   468
+  ],
+  "nucleus_in_tissue": 14684,
+  "centroid_y": 348.4724189594116,
+  "centroid_x": 208.3454099700354,
+  "tested": false,
+  "usable": false,
+  "reason": "fewer than 30000 nucleus locations in tissue"
+ },
+ {
+  "set": "Lung VUHD049, H&E nuclei",
+  "surface": "r0c1",
+  "bounds": [
+   0,
+   502,
+   468,
+   937
+  ],
+  "nucleus_in_tissue": 20156,
+  "centroid_y": 268.49722167096644,
+  "centroid_x": 721.039045445525,
+  "tested": false,
+  "usable": false,
+  "reason": "fewer than 30000 nucleus locations in tissue"
+ },
+ {
+  "set": "Lung VUHD049, H&E nuclei",
+  "surface": "r0c2",
+  "bounds": [
+   0,
+   502,
+   937,
+   1406
+  ],
+  "nucleus_in_tissue": 26375,
+  "centroid_y": 234.12147867298577,
+  "centroid_x": 1186.6989952606634,
+  "tested": false,
+  "usable": false,
+  "reason": "fewer than 30000 nucleus locations in tissue"
+ },
+ {
+  "set": "Lung VUHD049, H&E nuclei",
+  "surface": "r1c0",
+  "bounds": [
+   502,
+   1004,
+   0,
+   468
+  ],
+  "nucleus_in_tissue": 42520,
+  "centroid_y": 799.4627704609595,
+  "centroid_x": 257.53252587017874,
+  "tested": true,
+  "blocks": 30,
+  "repro": {
+   "package_fft_surface": 0.0
+  },
+  "repro_pass": true,
+  "ring_dy": -7,
+  "ring_dx": 1,
+  "ring_sign": "peak",
+  "ring_contrast": -0.04769790868279866,
+  "ring_border": false,
+  "ring_usable": false,
+  "dip": true,
+  "dy": -5,
+  "dx": -1,
+  "depth": 0.021594589576393708,
+  "interior": true,
+  "n_minima": 3,
+  "second_depth": 0.0030389717740302302,
+  "profile": [
+   0.9784054104236063,
+   1.0,
+   1.006820571280251,
+   0.9973231069775755,
+   0.9819354060044031,
+   0.9661887829477633
+  ],
+  "share_any": 1.0,
+  "share_within1": 0.665,
+  "share_exact": 0.605,
+  "depth_lo": 0.010468450169689392,
+  "depth_hi": 0.03168743399650565,
+  "usable": false,
+  "reason": "unstable under resampling"
+ },
+ {
+  "set": "Lung VUHD049, H&E nuclei",
+  "surface": "r1c1",
+  "bounds": [
+   502,
+   1004,
+   468,
+   937
+  ],
+  "nucleus_in_tissue": 29846,
+  "centroid_y": 738.0955236882664,
+  "centroid_x": 699.1105675802453,
+  "tested": false,
+  "usable": false,
+  "reason": "fewer than 30000 nucleus locations in tissue"
+ },
+ {
+  "set": "Lung VUHD049, H&E nuclei",
+  "surface": "r1c2",
+  "bounds": [
+   502,
+   1004,
+   937,
+   1406
+  ],
+  "nucleus_in_tissue": 23240,
+  "centroid_y": 719.1676419965577,
+  "centroid_x": 1104.6181153184166,
+  "tested": false,
+  "usable": false,
+  "reason": "fewer than 30000 nucleus locations in tissue"
+ },
+ {
+  "set": "Lung VUHD049, H&E nuclei",
+  "surface": "r2c0",
+  "bounds": [
+   1004,
+   1507,
+   0,
+   468
+  ],
+  "nucleus_in_tissue": 36726,
+  "centroid_y": 1161.4420573980287,
+  "centroid_x": 274.76863802210966,
+  "tested": true,
+  "blocks": 30,
+  "repro": {
+   "package_fft_surface": 0.0
+  },
+  "repro_pass": true,
+  "ring_dy": -7,
+  "ring_dx": 1,
+  "ring_sign": "peak",
+  "ring_contrast": -0.037252588340711545,
+  "ring_border": false,
+  "ring_usable": false,
+  "dip": true,
+  "dy": -4,
+  "dx": -2,
+  "depth": 0.026754437771050354,
+  "interior": true,
+  "n_minima": 21,
+  "second_depth": 0.012717241120019485,
+  "profile": [
+   0.9732455622289496,
+   1.0,
+   1.0104737453785544,
+   1.0113851926488502,
+   0.9992864205561771,
+   0.9904210980971314
+  ],
+  "share_any": 1.0,
+  "share_within1": 0.88,
+  "share_exact": 0.44,
+  "depth_lo": 0.011884715446220565,
+  "depth_hi": 0.03577886623781406,
+  "usable": false,
+  "reason": "unstable under resampling"
+ },
+ {
+  "set": "Lung VUHD049, H&E nuclei",
+  "surface": "r2c1",
+  "bounds": [
+   1004,
+   1507,
+   468,
+   937
+  ],
+  "nucleus_in_tissue": 19484,
+  "centroid_y": 1172.9269143912954,
+  "centroid_x": 694.7186922603162,
+  "tested": false,
+  "usable": false,
+  "reason": "fewer than 30000 nucleus locations in tissue"
+ },
+ {
+  "set": "Lung VUHD049, H&E nuclei",
+  "surface": "r2c2",
+  "bounds": [
+   1004,
+   1507,
+   937,
+   1406
+  ],
+  "nucleus_in_tissue": 16017,
+  "centroid_y": 1210.622526066055,
+  "centroid_x": 1091.8231254292314,
+  "tested": false,
+  "usable": false,
+  "reason": "fewer than 30000 nucleus locations in tissue"
+ }
+]

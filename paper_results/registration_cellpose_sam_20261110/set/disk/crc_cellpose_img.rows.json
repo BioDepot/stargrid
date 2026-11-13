@@ -1,0 +1,888 @@
+{
+ "placement": "crc_cellpose_img",
+ "mask": "nuclei and ring of width 3 (f0 | f3)",
+ "harness": "<local>/paper_results/registration_ring_postxenium_20261106/ring/fpr.py",
+ "seed": 20261007,
+ "draws": 200,
+ "search": 12,
+ "radius": 13,
+ "inputs_sha256": {
+  "<datasets>/visium_hd_human_crc/processed_4.1.0_outs/barcode_mappings.parquet": "474ba729d433f0da832c88a37772a3985422a23b7f37edf8472d5628c4b69614",
+  "<datasets>/visium_hd_human_crc/processed_4.1.0_outs/binned_outputs/square_002um/spatial/tissue_positions.parquet": "198c6bfaade531af77c58150a558681e73a8d5dbaac1759e5bfda7deae64ea69",
+  "<runs>/20260930_crc_calibration_inputs_v1/square_totals.npz": "7dee08cdc3bd2b7ba76b608b9365cb21c0460e720d38f8698f6890b12c8cf147",
+  "<runs>/20261110_registration_cellpose_sam_v1/crc_cellpose_img/accepted_grid_labels.npy": "51c95e6eba8c7d10b5a118b69338a5eabc1b156959902f2bd962b71e2c69f38a"
+ },
+ "elapsed": 38.79565501213074,
+ "affinity": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  12,
+  13,
+  14,
+  15
+ ],
+ "rows": [
+  {
+   "set": "Colorectal, Cellpose-SAM, our image-only placement",
+   "surface": "whole",
+   "bounds": [
+    0,
+    3350,
+    0,
+    3350
+   ],
+   "nucleus_in_tissue": 1753429,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.001432120451797525,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.45,
+     "lo": 0.001139240888341736,
+     "hi": 0.0019872436746263544,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, our image-only placement",
+   "surface": "r0c0",
+   "bounds": [
+    0,
+    670,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 60535,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.002623795002453022,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.985,
+     "share_exact": 0.73,
+     "lo": 0.0017201572881896,
+     "hi": 0.0036138887939100865,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, our image-only placement",
+   "surface": "r0c1",
+   "bounds": [
+    0,
+    670,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 49533,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -5,
+     "value": 0.002004669312043905,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.93,
+     "share_within1": 0.29,
+     "share_exact": 0.085,
+     "lo": 0.000531319055910412,
+     "hi": 0.002800037517621218,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, our image-only placement",
+   "surface": "r0c2",
+   "bounds": [
+    0,
+    670,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 59293,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.0026717467659462812,
+     "n": 2,
+     "second": 0.0008582107673991146,
+     "interior": true,
+     "share_any": 0.97,
+     "share_within1": 0.325,
+     "share_exact": 0.255,
+     "lo": 0.000808983154860532,
+     "hi": 0.003844502966005997,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, our image-only placement",
+   "surface": "r0c3",
+   "bounds": [
+    0,
+    670,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 77866,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": -1,
+     "value": 0.0014026956619879183,
+     "n": 2,
+     "second": 0.0010340094590288729,
+     "interior": true,
+     "share_any": 0.965,
+     "share_within1": 0.555,
+     "share_exact": 0.16,
+     "lo": 0.00016462059313714916,
+     "hi": 0.0023524779531607144,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, our image-only placement",
+   "surface": "r0c4",
+   "bounds": [
+    0,
+    670,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 81225,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.0023176276055534295,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.775,
+     "share_exact": 0.475,
+     "lo": 0.0009749752268200685,
+     "hi": 0.003299483240432733,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, our image-only placement",
+   "surface": "r1c0",
+   "bounds": [
+    670,
+    1340,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 92631,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.0019428873262747892,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.88,
+     "share_exact": 0.46,
+     "lo": 0.0007579969533191123,
+     "hi": 0.0024433095014944786,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, our image-only placement",
+   "surface": "r1c1",
+   "bounds": [
+    670,
+    1340,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 72719,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 2,
+     "dx": -3,
+     "value": 0.001025267961452192,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.21,
+     "share_exact": 0.085,
+     "lo": -0.0008010443830930774,
+     "hi": 0.0021410857803546408,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, our image-only placement",
+   "surface": "r1c2",
+   "bounds": [
+    670,
+    1340,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 83694,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": 5,
+     "value": 0.0008707908124749864,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.98,
+     "share_within1": 0.255,
+     "share_exact": 0.03,
+     "lo": -2.757019591911324e-05,
+     "hi": 0.0017613777954501308,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, our image-only placement",
+   "surface": "r1c3",
+   "bounds": [
+    670,
+    1340,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 90235,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": -1,
+     "value": 0.0013624848317119742,
+     "n": 2,
+     "second": 0.0006331879828913589,
+     "interior": true,
+     "share_any": 0.99,
+     "share_within1": 0.445,
+     "share_exact": 0.225,
+     "lo": 0.00032197967214843697,
+     "hi": 0.0024325978135222638,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, our image-only placement",
+   "surface": "r1c4",
+   "bounds": [
+    670,
+    1340,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 89964,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": 0,
+     "value": 0.0011089578812446543,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.78,
+     "share_exact": 0.2,
+     "lo": 0.00040623806865187076,
+     "hi": 0.002439870365365671,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, our image-only placement",
+   "surface": "r2c0",
+   "bounds": [
+    1340,
+    2010,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 82513,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": 0,
+     "value": 0.0018156215470723769,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.56,
+     "share_exact": 0.32,
+     "lo": 0.0007671702995343644,
+     "hi": 0.002856334339310601,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, our image-only placement",
+   "surface": "r2c1",
+   "bounds": [
+    1340,
+    2010,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 94310,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 1,
+     "value": 0.00048617324532118644,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.395,
+     "share_exact": 0.035,
+     "lo": -0.0003937443379196159,
+     "hi": 0.0018501356732653971,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, our image-only placement",
+   "surface": "r2c2",
+   "bounds": [
+    1340,
+    2010,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 84959,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 3,
+     "dx": -2,
+     "value": 0.0012089360854727893,
+     "n": 4,
+     "second": 0.0010137601063497925,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.225,
+     "share_exact": 0.065,
+     "lo": 5.157349989862727e-05,
+     "hi": 0.0020268493149435463,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 2,
+     "dx": -2,
+     "value": 0.0008892944022929061,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.595,
+     "share_within1": 0.115,
+     "share_exact": 0.08,
+     "lo": -0.0004673922881994252,
+     "hi": 0.0019480924694699315,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, our image-only placement",
+   "surface": "r2c3",
+   "bounds": [
+    1340,
+    2010,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 84696,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.0026562143508419567,
+     "n": 2,
+     "second": 0.002511847363972697,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.48,
+     "share_exact": 0.185,
+     "lo": 0.0008122863139109427,
+     "hi": 0.004283799839018477,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, our image-only placement",
+   "surface": "r2c4",
+   "bounds": [
+    1340,
+    2010,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 82286,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": -1,
+     "value": 0.0036787407879110834,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.995,
+     "share_exact": 0.705,
+     "lo": 0.0025146565215621807,
+     "hi": 0.0049949226912811735,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, our image-only placement",
+   "surface": "r3c0",
+   "bounds": [
+    2010,
+    2680,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 85073,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.0014997185776091104,
+     "n": 2,
+     "second": 0.0011277266355489424,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.475,
+     "share_exact": 0.17,
+     "lo": 0.0005443136743271182,
+     "hi": 0.0022219270891534583,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, our image-only placement",
+   "surface": "r3c1",
+   "bounds": [
+    2010,
+    2680,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 108125,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 4,
+     "dx": -9,
+     "value": 0.0019655270344598463,
+     "n": 5,
+     "second": 0.0019520876280434418,
+     "interior": true,
+     "share_any": 0.93,
+     "share_within1": 0.155,
+     "share_exact": 0.07,
+     "lo": 0.000275031748484017,
+     "hi": 0.0027724919765940883,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 3,
+     "dx": -7,
+     "value": 0.0012567740962032836,
+     "n": 3,
+     "second": 0.0011763149809922435,
+     "interior": true,
+     "share_any": 0.705,
+     "share_within1": 0.165,
+     "share_exact": 0.145,
+     "lo": -0.00031193421942736217,
+     "hi": 0.002861800119045438,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, our image-only placement",
+   "surface": "r3c2",
+   "bounds": [
+    2010,
+    2680,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 89945,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 4,
+     "dx": -3,
+     "value": 0.002597356093881009,
+     "n": 2,
+     "second": 0.0016617048611431429,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.44,
+     "share_exact": 0.07,
+     "lo": -3.1350655116565904e-05,
+     "hi": 0.0034425202088053997,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, our image-only placement",
+   "surface": "r3c3",
+   "bounds": [
+    2010,
+    2680,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 19815,
+   "tested": false
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, our image-only placement",
+   "surface": "r3c4",
+   "bounds": [
+    2010,
+    2680,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 3298,
+   "tested": false
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, our image-only placement",
+   "surface": "r4c0",
+   "bounds": [
+    2680,
+    3350,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 77572,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": 0,
+     "value": 0.0019041612767705107,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.835,
+     "share_exact": 0.245,
+     "lo": 0.0010507998214630888,
+     "hi": 0.0032927355986259454,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, our image-only placement",
+   "surface": "r4c1",
+   "bounds": [
+    2680,
+    3350,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 82956,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": 0,
+     "value": 0.0015187037233057588,
+     "n": 2,
+     "second": 0.00041927147999354375,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.34,
+     "share_exact": 0.08,
+     "lo": 7.234243276427194e-06,
+     "hi": 0.002436650219541137,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, our image-only placement",
+   "surface": "r4c2",
+   "bounds": [
+    2680,
+    3350,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 88642,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": 0,
+     "value": 0.001686025812934533,
+     "n": 2,
+     "second": 0.0008320161039299112,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.49,
+     "share_exact": 0.225,
+     "lo": 0.000515030871641331,
+     "hi": 0.0021515421624520195,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, our image-only placement",
+   "surface": "r4c3",
+   "bounds": [
+    2680,
+    3350,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 11544,
+   "tested": false
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, our image-only placement",
+   "surface": "r4c4",
+   "bounds": [
+    2680,
+    3350,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 0,
+   "tested": false
+  }
+ ]
+}

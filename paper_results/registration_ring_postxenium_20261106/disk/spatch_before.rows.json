@@ -1,0 +1,989 @@
+{
+ "placement": "spatch_before",
+ "mask": "nuclei and ring of width 3 (f0 | f3)",
+ "harness": "<local>/paper_results/registration_ring_postxenium_20261106/ring/fpr.py",
+ "seed": 20261007,
+ "draws": 200,
+ "search": 12,
+ "radius": 13,
+ "inputs_sha256": {
+  "<runs>/20261004_spatch_paper_mask_inputs_v3/result/star_qc_config.json": "b00b33010947b72fa432065bfa1ee584084fc970a1e17763a650898fce7878db",
+  "<runs>/20261004_spatch_paper_mask_inputs_v3/result/square_totals.npz": "9017ef8260cf91af2062da60e7bf6baca1f14910762f4a8edec38417406973e3",
+  "<runs>/20260727_spatch_visium_hd_ffpe_100k_sr_version_audit_v2/sr410_2020a_visium_v2_100k/outs/binned_outputs/square_002um/spatial/tissue_positions.parquet": "cb7418a1645ffc6110f2d98a0e0c77e48a2444d44dea1720e1675cf4345fdf4c",
+  "<runs>/20261004_spatch_paper_mask_inputs_v3/result/grid_states.npz": "432a2e473f1aab24fb37f9f92e7e7f06674ef75d228781fb25895d1b8689651a",
+  "<runs>/20261004_spatch_affine_placement_fit_v1/result/surfaces.npz": "108ac9436a3009ab17c26c6f319c39fc84b3768b86ca59721b44da989d2a3e3c"
+ },
+ "elapsed": 40.277703523635864,
+ "affinity": [
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15
+ ],
+ "rows": [
+  {
+   "set": "SPATCH, ours before fit",
+   "surface": "whole",
+   "bounds": [
+    0,
+    3350,
+    0,
+    3350
+   ],
+   "nucleus_in_tissue": 1599622,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": -3,
+     "value": 0.001231298633360245,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.485,
+     "lo": 0.0008982454805347818,
+     "hi": 0.0016513654952171274,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "SPATCH, ours before fit",
+   "surface": "r0c0",
+   "bounds": [
+    0,
+    670,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 1413,
+   "tested": false
+  },
+  {
+   "set": "SPATCH, ours before fit",
+   "surface": "r0c1",
+   "bounds": [
+    0,
+    670,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 22265,
+   "tested": false
+  },
+  {
+   "set": "SPATCH, ours before fit",
+   "surface": "r0c2",
+   "bounds": [
+    0,
+    670,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 61568,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -7,
+     "dx": -2,
+     "value": 0.0034218849551201913,
+     "n": 14,
+     "second": 0.0017758759074040231,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.93,
+     "share_exact": 0.575,
+     "lo": 0.0023090629193000534,
+     "hi": 0.0046835400609541,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -1,
+     "dx": 9,
+     "value": 0.002119401117291364,
+     "n": 9,
+     "second": 0.001812800516805435,
+     "interior": true,
+     "share_any": 0.99,
+     "share_within1": 0.05,
+     "share_exact": 0.05,
+     "lo": 0.0006290170930340095,
+     "hi": 0.0027583100218869063,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "SPATCH, ours before fit",
+   "surface": "r0c3",
+   "bounds": [
+    0,
+    670,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 73340,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -6,
+     "dx": -3,
+     "value": 0.0025303427480078966,
+     "n": 15,
+     "second": 0.0013361861923082419,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.73,
+     "share_exact": 0.645,
+     "lo": 0.0007161201958145458,
+     "hi": 0.0038241859449861084,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -9,
+     "dx": -2,
+     "value": 0.0015495290868610123,
+     "n": 19,
+     "second": 0.001207510090250996,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.175,
+     "share_exact": 0.12,
+     "lo": 0.00012814080326268857,
+     "hi": 0.0029574368663892775,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "SPATCH, ours before fit",
+   "surface": "r0c4",
+   "bounds": [
+    0,
+    670,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 12536,
+   "tested": false
+  },
+  {
+   "set": "SPATCH, ours before fit",
+   "surface": "r1c0",
+   "bounds": [
+    670,
+    1340,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 91072,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -7,
+     "dx": -3,
+     "value": 0.002258155377825588,
+     "n": 2,
+     "second": 0.00041274721359307875,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.85,
+     "share_exact": 0.65,
+     "lo": 0.0005060756748734353,
+     "hi": 0.004323258886063797,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 6,
+     "dx": 9,
+     "value": 0.001160927712993698,
+     "n": 4,
+     "second": 0.0006925246673279428,
+     "interior": true,
+     "share_any": 0.99,
+     "share_within1": 0.035,
+     "share_exact": 0.02,
+     "lo": -0.00020158009818161402,
+     "hi": 0.001873090346268705,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "SPATCH, ours before fit",
+   "surface": "r1c1",
+   "bounds": [
+    670,
+    1340,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 94977,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -6,
+     "dx": -3,
+     "value": 0.0028037151360060797,
+     "n": 17,
+     "second": 0.001167776439311874,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.85,
+     "share_exact": 0.835,
+     "lo": 0.0017905236172862048,
+     "hi": 0.003950580707387746,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 11,
+     "dx": 5,
+     "value": 0.0011687637591727418,
+     "n": 11,
+     "second": 0.0011463804315352544,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.15,
+     "share_exact": 0.135,
+     "lo": -0.0002178971032800625,
+     "hi": 0.0028222110163390354,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "SPATCH, ours before fit",
+   "surface": "r1c2",
+   "bounds": [
+    670,
+    1340,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 71512,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -6,
+     "dx": -3,
+     "value": 0.0016633822629210648,
+     "n": 9,
+     "second": 0.0008965233155000529,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.695,
+     "share_exact": 0.335,
+     "lo": 0.0009550799557891398,
+     "hi": 0.0040178333185739825,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 11,
+     "dx": -3,
+     "value": 0.0013022392196816446,
+     "n": 10,
+     "second": 0.0011641770789975192,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.15,
+     "share_exact": 0.12,
+     "lo": -0.000351948238376748,
+     "hi": 0.0027394112428466154,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "SPATCH, ours before fit",
+   "surface": "r1c3",
+   "bounds": [
+    670,
+    1340,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 80729,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": -3,
+     "value": 0.002326850519748902,
+     "n": 8,
+     "second": 0.0014935945141116846,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.82,
+     "share_exact": 0.495,
+     "lo": 0.0013969566360809648,
+     "hi": 0.003595792998178843,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 10,
+     "value": 0.0017861685769404723,
+     "n": 7,
+     "second": 0.0011762909202215344,
+     "interior": true,
+     "share_any": 0.99,
+     "share_within1": 0.155,
+     "share_exact": 0.15,
+     "lo": 0.0005844293196131556,
+     "hi": 0.0022990542051336076,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "SPATCH, ours before fit",
+   "surface": "r1c4",
+   "bounds": [
+    670,
+    1340,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 79042,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": -3,
+     "value": 0.0024038825649088658,
+     "n": 3,
+     "second": 0.0010857655467935157,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.84,
+     "share_exact": 0.64,
+     "lo": 0.0015558713565926585,
+     "hi": 0.0037090130827339587,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "SPATCH, ours before fit",
+   "surface": "r2c0",
+   "bounds": [
+    1340,
+    2010,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 68153,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": -4,
+     "value": 0.002695339711737521,
+     "n": 7,
+     "second": 0.0013023328420065372,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.835,
+     "share_exact": 0.505,
+     "lo": 0.00023205478418798504,
+     "hi": 0.004905813859245035,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 3,
+     "dx": -11,
+     "value": 0.0012005249480159241,
+     "n": 2,
+     "second": 0.0004405167678335209,
+     "interior": true,
+     "share_any": 0.96,
+     "share_within1": 0.06,
+     "share_exact": 0.035,
+     "lo": -4.600566303894492e-05,
+     "hi": 0.0024703836915855428,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "SPATCH, ours before fit",
+   "surface": "r2c1",
+   "bounds": [
+    1340,
+    2010,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 89287,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": -3,
+     "value": 0.0029317739721894664,
+     "n": 4,
+     "second": 0.0008006870597510041,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.85,
+     "share_exact": 0.755,
+     "lo": 0.0012718862034609313,
+     "hi": 0.004074667088996331,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -6,
+     "dx": -1,
+     "value": 0.001171869040162865,
+     "n": 5,
+     "second": 0.0006298671379982856,
+     "interior": true,
+     "share_any": 0.98,
+     "share_within1": 0.26,
+     "share_exact": 0.195,
+     "lo": -9.254340217322297e-05,
+     "hi": 0.0029519606316396304,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "SPATCH, ours before fit",
+   "surface": "r2c2",
+   "bounds": [
+    1340,
+    2010,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 95296,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -4,
+     "value": 0.002725943478349979,
+     "n": 12,
+     "second": 0.0012125424481519431,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.865,
+     "share_exact": 0.475,
+     "lo": 0.001114942969392435,
+     "hi": 0.0037860628753270897,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -5,
+     "dx": -1,
+     "value": 0.0015325177955428648,
+     "n": 8,
+     "second": 0.0010124702568289345,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.355,
+     "share_exact": 0.225,
+     "lo": 0.00014949628601340084,
+     "hi": 0.0025535341404743952,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "SPATCH, ours before fit",
+   "surface": "r2c3",
+   "bounds": [
+    1340,
+    2010,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 61146,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -4,
+     "value": 0.003967083655741721,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.965,
+     "share_exact": 0.77,
+     "lo": 0.0017264559170586558,
+     "hi": 0.005064524339713129,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "SPATCH, ours before fit",
+   "surface": "r2c4",
+   "bounds": [
+    1340,
+    2010,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 57048,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -3,
+     "value": 0.0032569348122992725,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.97,
+     "share_exact": 0.63,
+     "lo": 0.0017161351438857388,
+     "hi": 0.0047829267431693636,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "SPATCH, ours before fit",
+   "surface": "r3c0",
+   "bounds": [
+    2010,
+    2680,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 57734,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -5,
+     "value": 0.0026474513522944942,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.995,
+     "share_exact": 0.37,
+     "lo": 0.0011547069511601339,
+     "hi": 0.004800211435672658,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "SPATCH, ours before fit",
+   "surface": "r3c1",
+   "bounds": [
+    2010,
+    2680,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 59463,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -4,
+     "value": 0.0013915083320314992,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.635,
+     "share_exact": 0.265,
+     "lo": 0.0003428349604212289,
+     "hi": 0.003603101147320204,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": 11,
+     "value": 0.0022132446175021636,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.69,
+     "share_within1": 0.195,
+     "share_exact": 0.19,
+     "lo": 0.0007167110600668658,
+     "hi": 0.0039007158188069132,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "SPATCH, ours before fit",
+   "surface": "r3c2",
+   "bounds": [
+    2010,
+    2680,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 78161,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -4,
+     "value": 0.0028227406129592847,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.975,
+     "share_exact": 0.75,
+     "lo": 0.0021597555495993515,
+     "hi": 0.0046115613489493956,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "SPATCH, ours before fit",
+   "surface": "r3c3",
+   "bounds": [
+    2010,
+    2680,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 61096,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -4,
+     "value": 0.0040853122866866265,
+     "n": 2,
+     "second": 0.0023732008843231345,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.99,
+     "share_exact": 0.945,
+     "lo": 0.002981632264079476,
+     "hi": 0.005686405109470156,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "SPATCH, ours before fit",
+   "surface": "r3c4",
+   "bounds": [
+    2010,
+    2680,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 53882,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -4,
+     "value": 0.004492916980365802,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.79,
+     "lo": 0.003239904717818215,
+     "hi": 0.006456666167627068,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "SPATCH, ours before fit",
+   "surface": "r4c0",
+   "bounds": [
+    2680,
+    3350,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 86752,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -5,
+     "value": 0.002860012673376655,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.95,
+     "share_exact": 0.85,
+     "lo": 0.0017241622788094601,
+     "hi": 0.004388874210828275,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "SPATCH, ours before fit",
+   "surface": "r4c1",
+   "bounds": [
+    2680,
+    3350,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 74504,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -5,
+     "value": 0.0031816351308040502,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.99,
+     "share_exact": 0.77,
+     "lo": 0.0018181250795115068,
+     "hi": 0.004410004515468441,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "SPATCH, ours before fit",
+   "surface": "r4c2",
+   "bounds": [
+    2680,
+    3350,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 36077,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -5,
+     "value": 0.004597342668989812,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.9,
+     "share_exact": 0.585,
+     "lo": 0.002259821643867577,
+     "hi": 0.006140228183967406,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "SPATCH, ours before fit",
+   "surface": "r4c3",
+   "bounds": [
+    2680,
+    3350,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 69371,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -4,
+     "value": 0.0022794028084833773,
+     "n": 9,
+     "second": 0.0015515885895873716,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.32,
+     "share_exact": 0.205,
+     "lo": 0.0006883061650265478,
+     "hi": 0.003267210551376727,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -10,
+     "dx": 5,
+     "value": 0.0014107095267019698,
+     "n": 6,
+     "second": 0.0014055129762934326,
+     "interior": true,
+     "share_any": 0.95,
+     "share_within1": 0.045,
+     "share_exact": 0.04,
+     "lo": -0.000151723069518983,
+     "hi": 0.002533807531136437,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "SPATCH, ours before fit",
+   "surface": "r4c4",
+   "bounds": [
+    2680,
+    3350,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 63198,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": -4,
+     "value": 0.004069501735233905,
+     "n": 4,
+     "second": 0.0029453429011163657,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.53,
+     "share_exact": 0.385,
+     "lo": 0.0017542588084870304,
+     "hi": 0.006393526120707111,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -10,
+     "dx": -8,
+     "value": 0.0025652646903641108,
+     "n": 2,
+     "second": 0.0021529339480835796,
+     "interior": true,
+     "share_any": 0.96,
+     "share_within1": 0.16,
+     "share_exact": 0.155,
+     "lo": 0.0006396806307455344,
+     "hi": 0.004882520042562732,
+     "usable": false
+    }
+   }
+  }
+ ]
+}

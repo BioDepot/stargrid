@@ -1,0 +1,3 @@
+slide	target_set	features	target_features	whole_matrix_mass	target_mass	off_target_mass	off_target_nonzero_features	off_target_deprecated_mass	off_target_percent_of_whole	h5	h5_sha256
+crc	Visium Human Transcriptome Probe Set v2.0	37082	18085	74882365	72861605	2020760	917	781458	2.6985792983434753	<datasets>/visium_hd_human_crc/processed_4.1.0_outs/binned_outputs/square_016um/raw_feature_bc_matrix.h5	4aa3c6a8097035969c862d1d15e08257bfd4abbe4af21b6fcf11ff50d57b23d6
+examined	Visium Human Transcriptome Probe Set v2.1.0	39125	18132	277918688	272612275	5306413	864	3162530	1.9093401160558157	<runs>/20260716_vm2jxxk_natural_sr401_bam_v1/outs/binned_outputs/square_016um/raw_feature_bc_matrix.h5	6de8d6fe2cdda89eb9de984ced57be31872608d5b3187ba596c99f17e45f4f97

@@ -1,0 +1,103 @@
+{
+  "status": "complete",
+  "all_gates_passed": true,
+  "release": "official v1.12.2",
+  "release_revision": "2ca281c96f3dd2b9d596da1991b397fd05f9f73d",
+  "slide_id": "H1-YQJBZ7X/D1",
+  "primary_umi_rule": "1MM_CR",
+  "fixed_gene_policy": "Space Ranger GX; no native cross-gene reassignment in B or H",
+  "raw_UMI": "UR",
+  "location_policy": "production hard at 2 um",
+  "ovarian": {
+    "M": 187552358,
+    "D": 14335917,
+    "primary": {
+      "B": 189504493,
+      "H": 198231870,
+      "T": 201888275,
+      "gap": 12383782,
+      "location": 8727377,
+      "rest": 3656405,
+      "location_share": 0.7047424607442218,
+      "rest_share": 0.29525753925577825,
+      "closure_error": 0
+    },
+    "native_components": {
+      "location": 8727377,
+      "rest": 3656405,
+      "counting_offset": 1952135
+    },
+    "native_shares": {
+      "location": 0.6087770318424696,
+      "rest": 0.25505204864118564,
+      "counting_offset": 0.13617091951634486
+    },
+    "native_closure_error": 0,
+    "exact": {
+      "B": 190354615,
+      "H": 199119386,
+      "location": 8764771
+    }
+  },
+  "ovarian_native_T_source": "native_v1 hard 2um matrix of the v1.12.2 run (byte-identical to the accepted seal)",
+  "ovarian_read_accounting": {
+    "bam_records": 474131092,
+    "counted_representatives": 187552358,
+    "counted_representatives_outside_E": 0,
+    "eligible": 392509264,
+    "eligible_independent_predicate": 392509264,
+    "eligible_lane_1": 97864071,
+    "eligible_lane_2": 98095407,
+    "eligible_lane_3": 98734534,
+    "eligible_lane_4": 97815252,
+    "eligible_missing_CB": 49306278,
+    "eligible_with_CB": 343202986,
+    "eligible_xf19": 2039220,
+    "invalid_raw_umi": 0,
+    "missing_corrected_umi": 14148922,
+    "missing_feature": 0,
+    "missing_or_zero_xf": 39349965,
+    "missing_raw_umi": 0,
+    "multiple_feature": 0,
+    "primary_counted_representatives": 187552358,
+    "primary_records": 474131092,
+    "secondary_or_supplementary": 0,
+    "unique_counted_keys": 187552358,
+    "unmapped": 28122941
+  },
+  "ovarian_decode_accounting": {
+    "candidate_rows": 450044069,
+    "eligible_joined": 392509264,
+    "eligible_lane_1": 97864071,
+    "eligible_lane_2": 98095407,
+    "eligible_lane_3": 98734534,
+    "eligible_lane_4": 97815252,
+    "eligible_missing_CB": 49306278,
+    "eligible_with_CB": 343202986,
+    "eligible_with_candidates": 359613661,
+    "eligible_without_candidates": 32895603,
+    "eligible_xf19": 2039220,
+    "exact_h0_reads": 179248335,
+    "largest_shard_bytes": 604136240,
+    "raw_UMI_with_N": 367886,
+    "raw_lane_1": 118532773,
+    "raw_lane_2": 118532773,
+    "raw_lane_3": 118532773,
+    "raw_lane_4": 118532773,
+    "raw_reads": 474131092,
+    "raw_with_candidates": 423760144
+  },
+  "stage_summaries": {
+    "build_v1": "0ee04f8dda37abb9299155077c614539f37e13fd66b143087a91628d79351c4c",
+    "input_validation_v1": "0110f963c03b6736db2c34e6f066736dd9e18a5cead92008a4625850efafb5bb",
+    "prepare_v1": "172abb9b1059bf89108d85e0a5a34e00e56d451a4e5d3f10715207b39f097e4d",
+    "export_v1": "835651f6d53b03e1499c1606885cd30be43da4cad3bf34571e7796d92fe4321a",
+    "decode_v1": "8a1a43aeababafa25b97cb86a19cdb764660f9c58f72697bf8a35acb57109aaa",
+    "baseline_project_v1": "a13408baf30ade4491d1208adc1b022f86024a310ee8d76c9e8508f1bfcd5f1b",
+    "baseline_count_v1": "ce03c8a6162fbc64c3685e02d87e927501fb5f3210007e8cd195cbecd2f68f5d",
+    "resolve_v1": "ca9a492cd4b27b7bebffa616fe801a3013e90ebbbbf112c9f9b646d4c88fbfd5",
+    "count_v1": "4bfd2355843798df12e5f46a06def80b2db0d60a9ef72670e004de2483245a11",
+    "continuation_v1": "880ece1032b5f706bfd8ff7f51b3157cc944e2c6dfb878c0c0e7f6fdc358d4cc"
+  },
+  "new_service_units": 0
+}

@@ -1,0 +1,1708 @@
+{
+  "status": "complete",
+  "release": "official v1.12.2",
+  "release_revision": "2ca281c96f3dd2b9d596da1991b397fd05f9f73d",
+  "dataset": "H1-VM2JXXK/A1",
+  "molecule_policy": "hard",
+  "resolution_um": 2,
+  "UMI_rule": "1MM_CR",
+  "gene_reconciliation": "MultiGeneUMI_CR",
+  "protocol": "unchanged 20261025 protocol; only the STAR Suite release differs",
+  "all_gates_passed": true,
+  "gates": {
+    "eligible_reads": 707409359,
+    "native_M": 277918688,
+    "release_T": 279777220,
+    "joined_rows": 707409359,
+    "missing_joined_rows": 0,
+    "duplicate_joined_rows": 0
+  },
+  "macro_values": {
+    "taxSharedRecords": {
+      "primary": "707,409,359",
+      "without_xf19": "706,850,990",
+      "numerator": {
+        "primary": 707409359,
+        "without_xf19": 706850990
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "eligible",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "taxCandidateReads": {
+      "primary": "658,940,223",
+      "without_xf19": "658,381,854",
+      "numerator": {
+        "primary": 658940223,
+        "without_xf19": 658381854
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "candidate",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "taxNoCandidate": {
+      "primary": "48,469,136",
+      "without_xf19": "48,469,136",
+      "numerator": {
+        "primary": 48469136,
+        "without_xf19": 48469136
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "no_candidate",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "taxSRMinimum": {
+      "primary": "632,664,675",
+      "without_xf19": "632,112,320",
+      "numerator": {
+        "primary": 632664675,
+        "without_xf19": 632112320
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "minimum",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "taxSRNonminimum": {
+      "primary": "7,008,195",
+      "without_xf19": "7,002,181",
+      "numerator": {
+        "primary": 7008195,
+        "without_xf19": 7002181
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "nonminimum",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "taxSRUnassigned": {
+      "primary": "19,267,353",
+      "without_xf19": "19,267,353",
+      "numerator": {
+        "primary": 19267353,
+        "without_xf19": 19267353
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "unassigned",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "taxUniqueMinNonmin": {
+      "primary": "5,052,134",
+      "without_xf19": "5,047,852",
+      "numerator": {
+        "primary": 5052134,
+        "without_xf19": 5047852
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "unique_nonminimum",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "shortBCTwoReads": {
+      "primary": "6,544,475",
+      "without_xf19": "6,538,882",
+      "numerator": {
+        "primary": 6544475,
+        "without_xf19": 6538882
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "overlap",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "outOtherDifferent": {
+      "primary": "463,720",
+      "without_xf19": "463,299",
+      "numerator": {
+        "primary": 463720,
+        "without_xf19": 463299
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "other",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "frameDelPlusIns": {
+      "primary": "3,308,057",
+      "without_xf19": "3,305,154",
+      "numerator": {
+        "primary": 3308057,
+        "without_xf19": 3305154
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "frame_deletion_insertion",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "frameOffsetMinusOne": {
+      "primary": "3,385,791",
+      "without_xf19": "3,382,819",
+      "numerator": {
+        "primary": 3385791,
+        "without_xf19": 3382819
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "frame_offset_minus_one",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "frameAboveEDTwo": {
+      "primary": "6,825",
+      "without_xf19": "6,820",
+      "numerator": {
+        "primary": 6825,
+        "without_xf19": 6820
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "frame_above_half",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "frameBestSplitOneOne": {
+      "primary": "6,494,911",
+      "without_xf19": "6,489,367",
+      "numerator": {
+        "primary": 6494911,
+        "without_xf19": 6489367
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "frame_one_one",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "taxNonminGreaterCost": {
+      "primary": "7,007,221",
+      "without_xf19": "7,001,207",
+      "numerator": {
+        "primary": 7007221,
+        "without_xf19": 7001207
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "sr_greater",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "taxNonminEqualCost": {
+      "primary": "974",
+      "without_xf19": "974",
+      "numerator": {
+        "primary": 974,
+        "without_xf19": 974
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "sr_equal",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "auditSREmitted": {
+      "primary": "639,672,962",
+      "without_xf19": "639,114,593",
+      "numerator": {
+        "primary": 639672962,
+        "without_xf19": 639114593
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "sr_emitted",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "auditSRNoCandidateEmitted": {
+      "primary": "92",
+      "without_xf19": "92",
+      "numerator": {
+        "primary": 92,
+        "without_xf19": 92
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "sr_no_candidate",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "auditSRBeyondHalf": {
+      "primary": "1,483",
+      "without_xf19": "1,483",
+      "numerator": {
+        "primary": 1483,
+        "without_xf19": 1483
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "beyond_half",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "auditSRAboveHalfInOverlap": {
+      "primary": "119",
+      "without_xf19": "119",
+      "numerator": {
+        "primary": 119,
+        "without_xf19": 119
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "above_half_overlap",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "outUnassignedExact": {
+      "primary": "0",
+      "without_xf19": "0",
+      "numerator": {
+        "primary": 0,
+        "without_xf19": 0
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "unassigned_tier0",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "taxCandidatePct": {
+      "primary": "93.15",
+      "without_xf19": "93.14",
+      "numerator": {
+        "primary": 658940223,
+        "without_xf19": 658381854
+      },
+      "denominator": {
+        "primary": 707409359,
+        "without_xf19": 706850990
+      },
+      "field": "100*candidate/eligible",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "taxNoCandidatePct": {
+      "primary": "6.85",
+      "without_xf19": "6.86",
+      "numerator": {
+        "primary": 48469136,
+        "without_xf19": 48469136
+      },
+      "denominator": {
+        "primary": 707409359,
+        "without_xf19": 706850990
+      },
+      "field": "100*no_candidate/eligible",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "taxSRMinimumPct": {
+      "primary": "96.0125",
+      "without_xf19": "96.0100",
+      "numerator": {
+        "primary": 632664675,
+        "without_xf19": 632112320
+      },
+      "denominator": {
+        "primary": 658940223,
+        "without_xf19": 658381854
+      },
+      "field": "100*minimum/candidate",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "taxSRNonminimumPct": {
+      "primary": "1.0636",
+      "without_xf19": "1.0635",
+      "numerator": {
+        "primary": 7008195,
+        "without_xf19": 7002181
+      },
+      "denominator": {
+        "primary": 658940223,
+        "without_xf19": 658381854
+      },
+      "field": "100*nonminimum/candidate",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "taxSRUnassignedPct": {
+      "primary": "2.9240",
+      "without_xf19": "2.9265",
+      "numerator": {
+        "primary": 19267353,
+        "without_xf19": 19267353
+      },
+      "denominator": {
+        "primary": 658940223,
+        "without_xf19": 658381854
+      },
+      "field": "100*unassigned/candidate",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "taxUniqueMinNonminPct": {
+      "primary": "72.09",
+      "without_xf19": "72.09",
+      "numerator": {
+        "primary": 5052134,
+        "without_xf19": 5047852
+      },
+      "denominator": {
+        "primary": 7008195,
+        "without_xf19": 7002181
+      },
+      "field": "100*unique_nonminimum/nonminimum",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "shortBCTwoPct": {
+      "primary": "93.38",
+      "without_xf19": "93.38",
+      "numerator": {
+        "primary": 6544475,
+        "without_xf19": 6538882
+      },
+      "denominator": {
+        "primary": 7008195,
+        "without_xf19": 7002181
+      },
+      "field": "100*overlap/nonminimum",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "taxNonminGreaterCostPct": {
+      "primary": "99.9861",
+      "without_xf19": "99.9861",
+      "numerator": {
+        "primary": 7007221,
+        "without_xf19": 7001207
+      },
+      "denominator": {
+        "primary": 7008195,
+        "without_xf19": 7002181
+      },
+      "field": "100*sr_greater/nonminimum",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "taxNonminEqualCostPct": {
+      "primary": "0.0139",
+      "without_xf19": "0.0139",
+      "numerator": {
+        "primary": 974,
+        "without_xf19": 974
+      },
+      "denominator": {
+        "primary": 7008195,
+        "without_xf19": 7002181
+      },
+      "field": "100*sr_equal/nonminimum",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "outOtherDifferentPct": {
+      "primary": "0.070",
+      "without_xf19": "0.070",
+      "numerator": {
+        "primary": 463720,
+        "without_xf19": 463299
+      },
+      "denominator": {
+        "primary": 658940223,
+        "without_xf19": 658381854
+      },
+      "field": "100*other/candidate",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "outOtherShareOfDifferentPct": {
+      "primary": "6.62",
+      "without_xf19": "6.62",
+      "numerator": {
+        "primary": 463720,
+        "without_xf19": 463299
+      },
+      "denominator": {
+        "primary": 7008195,
+        "without_xf19": 7002181
+      },
+      "field": "100*other/nonminimum",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "outOtherTwoOrThreeEditsPct": {
+      "primary": "99.8",
+      "without_xf19": "99.8",
+      "numerator": {
+        "primary": 462855,
+        "without_xf19": 462435
+      },
+      "denominator": {
+        "primary": 463720,
+        "without_xf19": 463299
+      },
+      "field": "100*other_tier2or3/other",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "outSROnlyPct": {
+      "primary": "0.0000",
+      "without_xf19": "0.0000",
+      "numerator": {
+        "primary": 92,
+        "without_xf19": 92
+      },
+      "denominator": {
+        "primary": 707409359,
+        "without_xf19": 706850990
+      },
+      "field": "100*sr_no_candidate/eligible",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "outSROnlyOfSRPct": {
+      "primary": "0.0000",
+      "without_xf19": "0.0000",
+      "numerator": {
+        "primary": 92,
+        "without_xf19": 92
+      },
+      "denominator": {
+        "primary": 639672962,
+        "without_xf19": 639114593
+      },
+      "field": "100*sr_no_candidate/sr_emitted",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "outTiedPct": {
+      "primary": "22.7",
+      "without_xf19": "22.7",
+      "numerator": {
+        "primary": 149258098,
+        "without_xf19": 149133415
+      },
+      "denominator": {
+        "primary": 658940223,
+        "without_xf19": 658381854
+      },
+      "field": "100*tied/candidate",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "outTiedSRAmongPct": {
+      "primary": "92.6",
+      "without_xf19": "92.6",
+      "numerator": {
+        "primary": 138252503,
+        "without_xf19": 138129552
+      },
+      "denominator": {
+        "primary": 149258098,
+        "without_xf19": 149133415
+      },
+      "field": "100*tied_minimum/tied",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "outTiedSROtherPct": {
+      "primary": "1.3",
+      "without_xf19": "1.3",
+      "numerator": {
+        "primary": 1956061,
+        "without_xf19": 1954329
+      },
+      "denominator": {
+        "primary": 149258098,
+        "without_xf19": 149133415
+      },
+      "field": "100*tied_nonminimum/tied",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "outTiedSRNonePct": {
+      "primary": "6.1",
+      "without_xf19": "6.1",
+      "numerator": {
+        "primary": 9049534,
+        "without_xf19": 9049534
+      },
+      "denominator": {
+        "primary": 149258098,
+        "without_xf19": 149133415
+      },
+      "field": "100*tied_unassigned/tied",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "outUnassignedSingleClosestPct": {
+      "primary": "53.0",
+      "without_xf19": "53.0",
+      "numerator": {
+        "primary": 10217819,
+        "without_xf19": 10217819
+      },
+      "denominator": {
+        "primary": 19267353,
+        "without_xf19": 19267353
+      },
+      "field": "100*unique_unassigned/unassigned",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "auditSRBeyondHalfPct": {
+      "primary": "0.0002",
+      "without_xf19": "0.0002",
+      "numerator": {
+        "primary": 1483,
+        "without_xf19": 1483
+      },
+      "denominator": {
+        "primary": 639672962,
+        "without_xf19": 639114593
+      },
+      "field": "100*beyond_half/sr_emitted",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "outSRPlacedAlsoOursPct": {
+      "primary": "100.000",
+      "without_xf19": "100.000",
+      "numerator": {
+        "primary": 639672870,
+        "without_xf19": 639114501
+      },
+      "denominator": {
+        "primary": 639672962,
+        "without_xf19": 639114593
+      },
+      "field": "100*(minimum+nonminimum)/sr_emitted",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "outOursAlsoSRPlacedPct": {
+      "primary": "97.08",
+      "without_xf19": "97.07",
+      "numerator": {
+        "primary": 639672870,
+        "without_xf19": 639114501
+      },
+      "denominator": {
+        "primary": 658940223,
+        "without_xf19": 658381854
+      },
+      "field": "100*(minimum+nonminimum)/candidate",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "outUnassignedTwoOrMoreEditsPct": {
+      "primary": "100.0",
+      "without_xf19": "100.0",
+      "numerator": {
+        "primary": 19264095,
+        "without_xf19": 19264095
+      },
+      "denominator": {
+        "primary": 19267353,
+        "without_xf19": 19267353
+      },
+      "field": "100*(unassigned_tier2+unassigned_tier3+unassigned_tier4)/unassigned",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "outUnassignedThreeOrFourEditsPct": {
+      "primary": "50.1",
+      "without_xf19": "50.1",
+      "numerator": {
+        "primary": 9654676,
+        "without_xf19": 9654676
+      },
+      "denominator": {
+        "primary": 19267353,
+        "without_xf19": 19267353
+      },
+      "field": "100*(unassigned_tier3+unassigned_tier4)/unassigned",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "outUnassignedRateOne": {
+      "primary": "0.001",
+      "without_xf19": "0.001",
+      "numerator": {
+        "primary": 3258,
+        "without_xf19": 3258
+      },
+      "denominator": {
+        "primary": 242163673,
+        "without_xf19": 241951954
+      },
+      "field": "100*unassigned_tier1/candidate_tier1",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "outUnassignedRateTwo": {
+      "primary": "7.66",
+      "without_xf19": "7.67",
+      "numerator": {
+        "primary": 9609419,
+        "without_xf19": 9609419
+      },
+      "denominator": {
+        "primary": 125443418,
+        "without_xf19": 125341421
+      },
+      "field": "100*unassigned_tier2/candidate_tier2",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "outUnassignedRateThree": {
+      "primary": "17.5",
+      "without_xf19": "17.5",
+      "numerator": {
+        "primary": 6384187,
+        "without_xf19": 6384187
+      },
+      "denominator": {
+        "primary": 36452502,
+        "without_xf19": 36426155
+      },
+      "field": "100*unassigned_tier3/candidate_tier3",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "outUnassignedRateFour": {
+      "primary": "44.6",
+      "without_xf19": "44.6",
+      "numerator": {
+        "primary": 3270489,
+        "without_xf19": 3270489
+      },
+      "denominator": {
+        "primary": 7339093,
+        "without_xf19": 7335479
+      },
+      "field": "100*unassigned_tier4/candidate_tier4",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/read_audit_v1/audit/counts.tsv",
+      "source_sha256": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+      "universe": "E"
+    },
+    "auditAboveHalfAtypicalCR": {
+      "primary": "760",
+      "without_xf19": "760",
+      "numerator": {
+        "primary": 760,
+        "without_xf19": 760
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "above_half_atypical_CR",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/metadata_v1/metadata/counts.tsv",
+      "source_sha256": "da34ba618ebd1bd11995fa86a7374d5a0f78b3b03fb2f50dca8648c083c090c9",
+      "universe": "E"
+    },
+    "auditWithinAtypicalCRPct": {
+      "primary": "2.7",
+      "without_xf19": "2.7",
+      "numerator": {
+        "primary": 186191,
+        "without_xf19": 186031
+      },
+      "denominator": {
+        "primary": 7006804,
+        "without_xf19": 7000790
+      },
+      "field": "100*within_half_atypical_CR/nonminimum_within_half",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/metadata_v1/metadata/counts.tsv",
+      "source_sha256": "da34ba618ebd1bd11995fa86a7374d5a0f78b3b03fb2f50dca8648c083c090c9",
+      "universe": "E"
+    },
+    "auditJointLo": {
+      "primary": "29",
+      "without_xf19": "29",
+      "numerator": {
+        "primary": 29,
+        "without_xf19": 29
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "native oligo length sum minimum; protocol",
+      "source": "paper_results/release_examination_v1_12_2_20261105/protocol.md",
+      "source_sha256": "22e770df3c18040843e5e82d6cf30a2af6b75b60557fc3c9cd49e710b744888f",
+      "universe": "codebook"
+    },
+    "auditJointHi": {
+      "primary": "31",
+      "without_xf19": "31",
+      "numerator": {
+        "primary": 31,
+        "without_xf19": 31
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "native oligo length sum maximum; protocol",
+      "source": "paper_results/release_examination_v1_12_2_20261105/protocol.md",
+      "source_sha256": "22e770df3c18040843e5e82d6cf30a2af6b75b60557fc3c9cd49e710b744888f",
+      "universe": "codebook"
+    },
+    "auditNoCandidateMateSupported": {
+      "primary": "0",
+      "without_xf19": "0",
+      "numerator": {
+        "primary": 0,
+        "without_xf19": 0
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "no_candidate_mate_supported",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/sr_molecules_v1/molecules/counts.json",
+      "source_sha256": "db0c39a269aa1c1b58e8fa50f4c1fdf3e1c9a596cbb4f585a3feb7a25c5e44b6",
+      "universe": "E"
+    },
+    "auditNoCandidateMateSupportedPct": {
+      "primary": "0.0",
+      "without_xf19": "0.0",
+      "numerator": {
+        "primary": 0,
+        "without_xf19": 0
+      },
+      "denominator": {
+        "primary": 92,
+        "without_xf19": 92
+      },
+      "field": "100*no_candidate_mate_supported/no_candidate_emitted",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/sr_molecules_v1/molecules/counts.json",
+      "source_sha256": "db0c39a269aa1c1b58e8fa50f4c1fdf3e1c9a596cbb4f585a3feb7a25c5e44b6",
+      "universe": "E"
+    },
+    "shortBCTwoMolecules": {
+      "primary": "2,688,234",
+      "without_xf19": "NOT_APPLICABLE_MOLECULE_ENDPOINT",
+      "numerator": {
+        "primary": 2688234,
+        "without_xf19": null
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "pairs_holding_overlap_read",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/molecule_comparison_v1/comparison/counts.tsv",
+      "source_sha256": "c604a026de20a71ac1ce50ef6bbd2972583d4c02e66bc84b965f87fff4955b03",
+      "universe": "exact member-set matches: native hard/1MM_CR versus counted SR molecules"
+    },
+    "shortBCTwoTwoUmDisagree": {
+      "primary": "2,333,347",
+      "without_xf19": "NOT_APPLICABLE_MOLECULE_ENDPOINT",
+      "numerator": {
+        "primary": 2333347,
+        "without_xf19": null
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "geometry_explained_2um",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/molecule_comparison_v1/comparison/counts.tsv",
+      "source_sha256": "c604a026de20a71ac1ce50ef6bbd2972583d4c02e66bc84b965f87fff4955b03",
+      "universe": "exact member-set matches: native hard/1MM_CR versus counted SR molecules"
+    },
+    "shortBCTwoTwoUmTotal": {
+      "primary": "11,352,145",
+      "without_xf19": "NOT_APPLICABLE_MOLECULE_ENDPOINT",
+      "numerator": {
+        "primary": 11352145,
+        "without_xf19": null
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "different_2um",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/molecule_comparison_v1/comparison/counts.tsv",
+      "source_sha256": "c604a026de20a71ac1ce50ef6bbd2972583d4c02e66bc84b965f87fff4955b03",
+      "universe": "exact member-set matches: native hard/1MM_CR versus counted SR molecules"
+    },
+    "shortBCTwoTwoUmPct": {
+      "primary": "20.55",
+      "without_xf19": "NOT_APPLICABLE_MOLECULE_ENDPOINT",
+      "numerator": {
+        "primary": 2333347,
+        "without_xf19": null
+      },
+      "denominator": {
+        "primary": 11352145,
+        "without_xf19": null
+      },
+      "field": "100*geometry_explained_2um/different_2um",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/molecule_comparison_v1/comparison/counts.tsv",
+      "source_sha256": "c604a026de20a71ac1ce50ef6bbd2972583d4c02e66bc84b965f87fff4955b03",
+      "universe": "exact member-set matches: native hard/1MM_CR versus counted SR molecules"
+    },
+    "shortBCTwoSixteenPct": {
+      "primary": "9.03",
+      "without_xf19": "NOT_APPLICABLE_MOLECULE_ENDPOINT",
+      "numerator": {
+        "primary": 274152,
+        "without_xf19": null
+      },
+      "denominator": {
+        "primary": 3035552,
+        "without_xf19": null
+      },
+      "field": "100*geometry_explained_16um/different_16um",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/molecule_comparison_v1/comparison/counts.tsv",
+      "source_sha256": "c604a026de20a71ac1ce50ef6bbd2972583d4c02e66bc84b965f87fff4955b03",
+      "universe": "exact member-set matches: native hard/1MM_CR versus counted SR molecules"
+    },
+    "caseOneClosestRow": {
+      "primary": "1,183",
+      "without_xf19": "1,183",
+      "numerator": {
+        "primary": 1183,
+        "without_xf19": 1183
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "original_one:closest_row",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/metadata_v1/metadata/sr_audit_worked_cases.tsv",
+      "source_sha256": "32863b99b936c7bccf30aca5144a5f6de1994b23a59c158e3f88416fd93d6d27",
+      "universe": "fixed/replacement worked read A00836:1579:HT3CLDSX7:1:2304:9643:9079"
+    },
+    "caseOneClosestColumn": {
+      "primary": "2,930",
+      "without_xf19": "2,930",
+      "numerator": {
+        "primary": 2930,
+        "without_xf19": 2930
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "original_one:closest_col",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/metadata_v1/metadata/sr_audit_worked_cases.tsv",
+      "source_sha256": "32863b99b936c7bccf30aca5144a5f6de1994b23a59c158e3f88416fd93d6d27",
+      "universe": "fixed/replacement worked read A00836:1579:HT3CLDSX7:1:2304:9643:9079"
+    },
+    "caseOneClosestBCOneEdits": {
+      "primary": "1",
+      "without_xf19": "1",
+      "numerator": {
+        "primary": 1,
+        "without_xf19": 1
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "original_one:closest_bc1_edits",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/metadata_v1/metadata/sr_audit_worked_cases.tsv",
+      "source_sha256": "32863b99b936c7bccf30aca5144a5f6de1994b23a59c158e3f88416fd93d6d27",
+      "universe": "fixed/replacement worked read A00836:1579:HT3CLDSX7:1:2304:9643:9079"
+    },
+    "caseOneClosestBCTwoEdits": {
+      "primary": "0",
+      "without_xf19": "0",
+      "numerator": {
+        "primary": 0,
+        "without_xf19": 0
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "original_one:closest_bc2_edits",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/metadata_v1/metadata/sr_audit_worked_cases.tsv",
+      "source_sha256": "32863b99b936c7bccf30aca5144a5f6de1994b23a59c158e3f88416fd93d6d27",
+      "universe": "fixed/replacement worked read A00836:1579:HT3CLDSX7:1:2304:9643:9079"
+    },
+    "caseOneClosestTotalEdits": {
+      "primary": "1",
+      "without_xf19": "1",
+      "numerator": {
+        "primary": 1,
+        "without_xf19": 1
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "original_one:closest_bc1_edits+closest_bc2_edits",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/metadata_v1/metadata/sr_audit_worked_cases.tsv",
+      "source_sha256": "32863b99b936c7bccf30aca5144a5f6de1994b23a59c158e3f88416fd93d6d27",
+      "universe": "fixed/replacement worked read A00836:1579:HT3CLDSX7:1:2304:9643:9079"
+    },
+    "caseOneSRRow": {
+      "primary": "1,182",
+      "without_xf19": "1,182",
+      "numerator": {
+        "primary": 1182,
+        "without_xf19": 1182
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "original_one:sr_row",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/metadata_v1/metadata/sr_audit_worked_cases.tsv",
+      "source_sha256": "32863b99b936c7bccf30aca5144a5f6de1994b23a59c158e3f88416fd93d6d27",
+      "universe": "fixed/replacement worked read A00836:1579:HT3CLDSX7:1:2304:9643:9079"
+    },
+    "caseOneSRColumn": {
+      "primary": "2,930",
+      "without_xf19": "2,930",
+      "numerator": {
+        "primary": 2930,
+        "without_xf19": 2930
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "original_one:sr_col",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/metadata_v1/metadata/sr_audit_worked_cases.tsv",
+      "source_sha256": "32863b99b936c7bccf30aca5144a5f6de1994b23a59c158e3f88416fd93d6d27",
+      "universe": "fixed/replacement worked read A00836:1579:HT3CLDSX7:1:2304:9643:9079"
+    },
+    "caseOneSRBCOneEdits": {
+      "primary": "1",
+      "without_xf19": "1",
+      "numerator": {
+        "primary": 1,
+        "without_xf19": 1
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "original_one:sr_bc1_edits",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/metadata_v1/metadata/sr_audit_worked_cases.tsv",
+      "source_sha256": "32863b99b936c7bccf30aca5144a5f6de1994b23a59c158e3f88416fd93d6d27",
+      "universe": "fixed/replacement worked read A00836:1579:HT3CLDSX7:1:2304:9643:9079"
+    },
+    "caseOneSRBCTwoEdits": {
+      "primary": "1",
+      "without_xf19": "1",
+      "numerator": {
+        "primary": 1,
+        "without_xf19": 1
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "original_one:sr_bc2_edits",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/metadata_v1/metadata/sr_audit_worked_cases.tsv",
+      "source_sha256": "32863b99b936c7bccf30aca5144a5f6de1994b23a59c158e3f88416fd93d6d27",
+      "universe": "fixed/replacement worked read A00836:1579:HT3CLDSX7:1:2304:9643:9079"
+    },
+    "caseOneSRTotalEdits": {
+      "primary": "2",
+      "without_xf19": "2",
+      "numerator": {
+        "primary": 2,
+        "without_xf19": 2
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "original_one:sr_bc1_edits+sr_bc2_edits",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/metadata_v1/metadata/sr_audit_worked_cases.tsv",
+      "source_sha256": "32863b99b936c7bccf30aca5144a5f6de1994b23a59c158e3f88416fd93d6d27",
+      "universe": "fixed/replacement worked read A00836:1579:HT3CLDSX7:1:2304:9643:9079"
+    },
+    "caseTwoClosestRow": {
+      "primary": "727",
+      "without_xf19": "727",
+      "numerator": {
+        "primary": 727,
+        "without_xf19": 727
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "original_two:closest_row",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/metadata_v1/metadata/sr_audit_worked_cases.tsv",
+      "source_sha256": "32863b99b936c7bccf30aca5144a5f6de1994b23a59c158e3f88416fd93d6d27",
+      "universe": "fixed/replacement worked read A00836:1579:HT3CLDSX7:3:2302:12472:20181"
+    },
+    "caseTwoClosestColumn": {
+      "primary": "2,736",
+      "without_xf19": "2,736",
+      "numerator": {
+        "primary": 2736,
+        "without_xf19": 2736
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "original_two:closest_col",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/metadata_v1/metadata/sr_audit_worked_cases.tsv",
+      "source_sha256": "32863b99b936c7bccf30aca5144a5f6de1994b23a59c158e3f88416fd93d6d27",
+      "universe": "fixed/replacement worked read A00836:1579:HT3CLDSX7:3:2302:12472:20181"
+    },
+    "caseTwoClosestBCOneEdits": {
+      "primary": "1",
+      "without_xf19": "1",
+      "numerator": {
+        "primary": 1,
+        "without_xf19": 1
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "original_two:closest_bc1_edits",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/metadata_v1/metadata/sr_audit_worked_cases.tsv",
+      "source_sha256": "32863b99b936c7bccf30aca5144a5f6de1994b23a59c158e3f88416fd93d6d27",
+      "universe": "fixed/replacement worked read A00836:1579:HT3CLDSX7:3:2302:12472:20181"
+    },
+    "caseTwoClosestBCTwoEdits": {
+      "primary": "0",
+      "without_xf19": "0",
+      "numerator": {
+        "primary": 0,
+        "without_xf19": 0
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "original_two:closest_bc2_edits",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/metadata_v1/metadata/sr_audit_worked_cases.tsv",
+      "source_sha256": "32863b99b936c7bccf30aca5144a5f6de1994b23a59c158e3f88416fd93d6d27",
+      "universe": "fixed/replacement worked read A00836:1579:HT3CLDSX7:3:2302:12472:20181"
+    },
+    "caseTwoClosestTotalEdits": {
+      "primary": "1",
+      "without_xf19": "1",
+      "numerator": {
+        "primary": 1,
+        "without_xf19": 1
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "original_two:closest_bc1_edits+closest_bc2_edits",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/metadata_v1/metadata/sr_audit_worked_cases.tsv",
+      "source_sha256": "32863b99b936c7bccf30aca5144a5f6de1994b23a59c158e3f88416fd93d6d27",
+      "universe": "fixed/replacement worked read A00836:1579:HT3CLDSX7:3:2302:12472:20181"
+    },
+    "caseTwoSRRow": {
+      "primary": "728",
+      "without_xf19": "728",
+      "numerator": {
+        "primary": 728,
+        "without_xf19": 728
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "original_two:sr_row",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/metadata_v1/metadata/sr_audit_worked_cases.tsv",
+      "source_sha256": "32863b99b936c7bccf30aca5144a5f6de1994b23a59c158e3f88416fd93d6d27",
+      "universe": "fixed/replacement worked read A00836:1579:HT3CLDSX7:3:2302:12472:20181"
+    },
+    "caseTwoSRColumn": {
+      "primary": "2,736",
+      "without_xf19": "2,736",
+      "numerator": {
+        "primary": 2736,
+        "without_xf19": 2736
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "original_two:sr_col",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/metadata_v1/metadata/sr_audit_worked_cases.tsv",
+      "source_sha256": "32863b99b936c7bccf30aca5144a5f6de1994b23a59c158e3f88416fd93d6d27",
+      "universe": "fixed/replacement worked read A00836:1579:HT3CLDSX7:3:2302:12472:20181"
+    },
+    "caseTwoSRBCOneEdits": {
+      "primary": "1",
+      "without_xf19": "1",
+      "numerator": {
+        "primary": 1,
+        "without_xf19": 1
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "original_two:sr_bc1_edits",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/metadata_v1/metadata/sr_audit_worked_cases.tsv",
+      "source_sha256": "32863b99b936c7bccf30aca5144a5f6de1994b23a59c158e3f88416fd93d6d27",
+      "universe": "fixed/replacement worked read A00836:1579:HT3CLDSX7:3:2302:12472:20181"
+    },
+    "caseTwoSRBCTwoEdits": {
+      "primary": "1",
+      "without_xf19": "1",
+      "numerator": {
+        "primary": 1,
+        "without_xf19": 1
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "original_two:sr_bc2_edits",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/metadata_v1/metadata/sr_audit_worked_cases.tsv",
+      "source_sha256": "32863b99b936c7bccf30aca5144a5f6de1994b23a59c158e3f88416fd93d6d27",
+      "universe": "fixed/replacement worked read A00836:1579:HT3CLDSX7:3:2302:12472:20181"
+    },
+    "caseTwoSRTotalEdits": {
+      "primary": "2",
+      "without_xf19": "2",
+      "numerator": {
+        "primary": 2,
+        "without_xf19": 2
+      },
+      "denominator": {
+        "primary": null,
+        "without_xf19": null
+      },
+      "field": "original_two:sr_bc1_edits+sr_bc2_edits",
+      "source": "paper_results/release_examination_v1_12_2_20261105/data/metadata_v1/metadata/sr_audit_worked_cases.tsv",
+      "source_sha256": "32863b99b936c7bccf30aca5144a5f6de1994b23a59c158e3f88416fd93d6d27",
+      "universe": "fixed/replacement worked read A00836:1579:HT3CLDSX7:3:2302:12472:20181"
+    }
+  },
+  "R": {
+    "eligible": {
+      "primary": 707409359,
+      "without_xf19": 706850990
+    },
+    "sr_emitted": {
+      "primary": 639672962,
+      "without_xf19": 639114593
+    },
+    "candidate": {
+      "primary": 658940223,
+      "without_xf19": 658381854
+    },
+    "no_candidate": {
+      "primary": 48469136,
+      "without_xf19": 48469136
+    },
+    "minimum": {
+      "primary": 632664675,
+      "without_xf19": 632112320
+    },
+    "nonminimum": {
+      "primary": 7008195,
+      "without_xf19": 7002181
+    },
+    "unassigned": {
+      "primary": 19267353,
+      "without_xf19": 19267353
+    },
+    "sr_no_candidate": {
+      "primary": 92,
+      "without_xf19": 92
+    },
+    "tied": {
+      "primary": 149258098,
+      "without_xf19": 149133415
+    },
+    "tied_minimum": {
+      "primary": 138252503,
+      "without_xf19": 138129552
+    },
+    "tied_nonminimum": {
+      "primary": 1956061,
+      "without_xf19": 1954329
+    },
+    "tied_unassigned": {
+      "primary": 9049534,
+      "without_xf19": 9049534
+    },
+    "unique_nonminimum": {
+      "primary": 5052134,
+      "without_xf19": 5047852
+    },
+    "unique_unassigned": {
+      "primary": 10217819,
+      "without_xf19": 10217819
+    },
+    "overlap": {
+      "primary": 6544475,
+      "without_xf19": 6538882
+    },
+    "overlap_direct": {
+      "primary": 5630560,
+      "without_xf19": 5625807
+    },
+    "other": {
+      "primary": 463720,
+      "without_xf19": 463299
+    },
+    "other_tier2or3": {
+      "primary": 462855,
+      "without_xf19": 462435
+    },
+    "sr_greater": {
+      "primary": 7007221,
+      "without_xf19": 7001207
+    },
+    "sr_equal": {
+      "primary": 974,
+      "without_xf19": 974
+    },
+    "sr_lower": {
+      "primary": 0,
+      "without_xf19": 0
+    },
+    "frame_deletion_insertion": {
+      "primary": 3308057,
+      "without_xf19": 3305154
+    },
+    "frame_offset_minus_one": {
+      "primary": 3385791,
+      "without_xf19": 3382819
+    },
+    "frame_above_half": {
+      "primary": 6825,
+      "without_xf19": 6820
+    },
+    "frame_one_one": {
+      "primary": 6494911,
+      "without_xf19": 6489367
+    },
+    "beyond_half": {
+      "primary": 1483,
+      "without_xf19": 1483
+    },
+    "nonminimum_beyond_half": {
+      "primary": 1391,
+      "without_xf19": 1391
+    },
+    "above_half_overlap": {
+      "primary": 119,
+      "without_xf19": 119
+    },
+    "no_candidate_within_limit": {
+      "primary": 0,
+      "without_xf19": 0
+    },
+    "parent_same8": {
+      "primary": 5382837,
+      "without_xf19": 5378242
+    },
+    "parent_same16_only": {
+      "primary": 690535,
+      "without_xf19": 689933
+    },
+    "parent_cross16": {
+      "primary": 934823,
+      "without_xf19": 934006
+    },
+    "candidate_tier0": {
+      "primary": 247541537,
+      "without_xf19": 247326845
+    },
+    "candidate_tier1": {
+      "primary": 242163673,
+      "without_xf19": 241951954
+    },
+    "candidate_tier2": {
+      "primary": 125443418,
+      "without_xf19": 125341421
+    },
+    "candidate_tier3": {
+      "primary": 36452502,
+      "without_xf19": 36426155
+    },
+    "candidate_tier4": {
+      "primary": 7339093,
+      "without_xf19": 7335479
+    },
+    "unassigned_tier0": {
+      "primary": 0,
+      "without_xf19": 0
+    },
+    "unassigned_tier1": {
+      "primary": 3258,
+      "without_xf19": 3258
+    },
+    "unassigned_tier2": {
+      "primary": 9609419,
+      "without_xf19": 9609419
+    },
+    "unassigned_tier3": {
+      "primary": 6384187,
+      "without_xf19": 6384187
+    },
+    "unassigned_tier4": {
+      "primary": 3270489,
+      "without_xf19": 3270489
+    }
+  },
+  "M1": {
+    "SR_counted_molecules": 277918688,
+    "SR_without_exact_match": 7795407,
+    "affected_different_16um": 320006,
+    "affected_different_2um": 2688234,
+    "affected_different_8um": 593734,
+    "different_16um": 3035552,
+    "different_2um": 11352145,
+    "different_8um": 4927891,
+    "geometry_explained_16um": 274152,
+    "geometry_explained_2um": 2333347,
+    "geometry_explained_8um": 508597,
+    "geometry_explained_changed_column_only": 48323,
+    "geometry_explained_direct": 2285024,
+    "matched_gene_agreement": 270123275,
+    "matched_pairs": 270123281,
+    "overlap_reads": 6544475,
+    "overlap_reads_in_matched_pairs": 6040983,
+    "pairs_holding_overlap_read": 2688234,
+    "release_molecules": 279777220,
+    "release_without_exact_match": 9653939
+  },
+  "M2": [
+    {
+      "stratum": "all",
+      "groups": "492068",
+      "exact_members": "21430",
+      "exact_members_and_gene": "21430",
+      "exact_members_gene_location": "15936",
+      "member_reads": "558369",
+      "D": "1858532",
+      "exact_members_and_gene_pct_of_D": 1.1530605876035496,
+      "exact_members_gene_location_pct_of_D": 0.8574509343933815
+    },
+    {
+      "stratum": "with_other_counted_gene",
+      "groups": "271251",
+      "exact_members": "12523",
+      "exact_members_and_gene": "12523",
+      "exact_members_gene_location": "9465",
+      "member_reads": "305621",
+      "D": "1858532",
+      "exact_members_and_gene_pct_of_D": 0.6738113737078512,
+      "exact_members_gene_location_pct_of_D": 0.5092729100171534
+    },
+    {
+      "stratum": "without_other_counted_gene",
+      "groups": "220817",
+      "exact_members": "8907",
+      "exact_members_and_gene": "8907",
+      "exact_members_gene_location": "6471",
+      "member_reads": "252748",
+      "D": "1858532",
+      "exact_members_and_gene_pct_of_D": 0.4792492138956983,
+      "exact_members_gene_location_pct_of_D": 0.34817802437622813
+    }
+  ],
+  "G1": {
+    "status": "complete",
+    "B": 278426134,
+    "B_Exact": 281663936,
+    "M": 277918688,
+    "T": 279777220,
+    "D": 1858532,
+    "B_minus_M": 507446,
+    "B_minus_M_pct_of_D": 27.3035922975768,
+    "supporting_reads": 639672962,
+    "UMI_rule": "1MM_CR",
+    "secondary_UMI_rule": "Exact",
+    "gene_policy": "fixed Space Ranger GX; no cross-gene reassignment",
+    "location_policy": "fixed Space Ranger CB at 2 um",
+    "raw_UMI": "UR; UB used only for eligibility",
+    "includes_xf19": true,
+    "H": null,
+    "B1_location_rest_status": "pending; H not required for G1",
+    "interpretation": "Counting offset under the common release UMI rule at fixed SR gene labels and locations; M2 is a separate exact-membership comparison, not an additive component."
+  },
+  "B1_location_effect": {
+    "slide": "H1-VM2JXXK/A1",
+    "primary_umi_rule": "1MM_CR",
+    "common_rule": {
+      "one_mm_cr": {
+        "B": 278426134,
+        "H": 285711927,
+        "T": 279777220,
+        "gap": 1351086,
+        "location": 7285793,
+        "rest": -5934707,
+        "location_share": 5.392545700273706,
+        "rest_share": -4.392545700273706,
+        "closure_error": 0
+      },
+      "exact": {
+        "B": 281663936,
+        "H": 288994244,
+        "T": 282994272,
+        "gap": 1330336,
+        "location": 7330308,
+        "rest": -5999972,
+        "location_share": 5.5101177446900635,
+        "rest_share": -4.5101177446900635,
+        "closure_error": 0
+      }
+    },
+    "native_gap": {
+      "M": 277918688,
+      "T": 279777220,
+      "gap": 1858532,
+      "location": 7285793,
+      "rest": -5427261,
+      "baseline_minus_native": 507446,
+      "location_share": 3.9201870078104655,
+      "rest_share": -2.9201870078104655,
+      "closure_error": 0
+    },
+    "interpretation_category": "majority_on_examined_slide",
+    "both_slides_conclusion_established": false,
+    "location_direction": "increase",
+    "status": "complete",
+    "protocol_commit": "c07455f",
+    "release_revision": "2ca281c96f3dd2b9d596da1991b397fd05f9f73d",
+    "eligible_reads": 707409359,
+    "eligible_with_candidates": 658940223,
+    "eligible_without_candidates": 48469136,
+    "baseline_supporting_reads": 639672962,
+    "hard_member_reads": 658940223,
+    "fixed_GX": true,
+    "raw_UMI": "UR",
+    "includes_CB_missing": true,
+    "includes_xf19": true,
+    "H_policy": "production release hard location; common integer 1MM_CR/Exact; cross-gene reassignment disabled"
+  },
+  "D": 1858532,
+  "M1_unmatched_percent": {
+    "release_without_exact_match": 3.4505807870991068,
+    "SR_without_exact_match": 2.804923647307949
+  },
+  "worked_cases_for_macros": {
+    "One": {
+      "case": "original_one",
+      "read_id": "A00836:1579:HT3CLDSX7:1:2304:9643:9079",
+      "geometry": "1",
+      "primary_order": "731",
+      "xf": "17",
+      "raw_R1": "TCTATCGTCCAGTCTGCTCCTTTCGTATTGGCGCATCAAGAAT",
+      "recorded_CR": "GTCTGCTCCTTTCGTATTGGCGCATCAAG",
+      "candidate_count": "1",
+      "closest_row": "1183",
+      "closest_col": "2930",
+      "closest_bc1_edits": "1",
+      "closest_bc2_edits": "0",
+      "closest_start": "11",
+      "closest_bc1_length": "14",
+      "closest_bc2_length": "15",
+      "sr_row": "1182",
+      "sr_col": "2930",
+      "sr_bc1_edits": "1",
+      "sr_bc2_edits": "1",
+      "sr_start": "11",
+      "sr_split": "14",
+      "sr_length": "29",
+      "same_8um": "1",
+      "same_16um": "1"
+    },
+    "Two": {
+      "case": "original_two",
+      "read_id": "A00836:1579:HT3CLDSX7:3:2302:12472:20181",
+      "geometry": "1",
+      "primary_order": "6556",
+      "xf": "17",
+      "raw_R1": "TCGAATTGTGGGTCAGGAATCCCAGCATGCAATCAAATAGCAT",
+      "recorded_CR": "GTCAGGAATCCCAGCATGCAATCAAATAG",
+      "candidate_count": "1",
+      "closest_row": "727",
+      "closest_col": "2736",
+      "closest_bc1_edits": "1",
+      "closest_bc2_edits": "0",
+      "closest_start": "11",
+      "closest_bc1_length": "14",
+      "closest_bc2_length": "15",
+      "sr_row": "728",
+      "sr_col": "2736",
+      "sr_bc1_edits": "1",
+      "sr_bc2_edits": "1",
+      "sr_start": "11",
+      "sr_split": "14",
+      "sr_length": "29",
+      "same_8um": "0",
+      "same_16um": "0"
+    }
+  },
+  "service_units_used": 0,
+  "source_sha256": {
+    "protocol.md": "22e770df3c18040843e5e82d6cf30a2af6b75b60557fc3c9cd49e710b744888f",
+    "export_v1/reads/counts.tsv": "526372172d8e219965ee24566cc8f3204ba2f9037087600b825b2d183abbbd8c",
+    "fixture_validation_v2/observed/counts.tsv": "c0d45b1e0260b6e05059fdeced8942b5c9c8b33312b195868e7c1b6f0009088e",
+    "fixture_validation_v2/export/counts.tsv": "587b5d9e05de3d08b4f9cdbbd8bed2736a1191b120e5c6483a51b698b62bfbbf",
+    "fixture_validation_v2/molecules/counts.json": "58978c21ddbc9a2bbfc6b754793fd96a20ca248bf18c695e5919505b28f75e58",
+    "fixture_validation_v2/recovered/recovery.json": "a80a0c7bfcb4f933ae4df727e9ec3d6afe99430442ef6e2d6649d0a96d23085a",
+    "decode_v1/observed/counts.tsv": "a767d63510b9e0f568989baa8d66dbd10e5210c471bcec07c493140a56779322",
+    "recover_v2/recovered/recovery.json": "a57d5eb273ff12414f0e19b3187f7f826d350e092e4d4583c014507e00204df1",
+    "recover_v2/execution.log": "a2643b103c8db5f5a0e6e733ca98246a0fa2eff600bd77f7e316de4ec46f845d",
+    "native_molecules_v1/molecules/counts.json": "44c65c5f5439a2750f0730bd3f5ee10de116b6eb7c01f5f3e93cfbb0b2d34b60",
+    "sr_molecules_v1/molecules/counts.json": "db0c39a269aa1c1b58e8fa50f4c1fdf3e1c9a596cbb4f585a3feb7a25c5e44b6",
+    "read_audit_v1/audit/counts.tsv": "132300c202e1b12518a18eeabdb6514f31b8e61da15cc6e947ab1b6a7cdbaf96",
+    "read_audit_v1/audit/fig3_edit_joint.tsv": "18ba3fea410b181d6322ad2e015ede452c6d4ad3db9ea4c08e9b36c8ca66e211",
+    "read_audit_v1/audit/fig3_edit_joint_without_xf19.tsv": "176cd4835b0ff62ac444900357a466ff91dea6460d026f6daf0d2deb739335f4",
+    "read_audit_v1/audit/frame_classes.tsv": "17a0e2cac2a5e971ca6ece593171d25e80b0ed7b2b826df60040d86a7e375a93",
+    "read_audit_v1/audit/frame_classes_without_xf19.tsv": "88d31ebba5cd03e351d14e0780145ffc3f5f6f834cfd74b3033e254534550dfb",
+    "read_audit_v1/audit/fixed_candidates.tsv": "9409e1d57ac525d9b635b16c8715588a66f15665c3a2dad83fca8756fc770867",
+    "metadata_v1/metadata/counts.tsv": "da34ba618ebd1bd11995fa86a7374d5a0f78b3b03fb2f50dca8648c083c090c9",
+    "metadata_v1/metadata/sr_audit_worked_cases.tsv": "32863b99b936c7bccf30aca5144a5f6de1994b23a59c158e3f88416fd93d6d27",
+    "molecule_comparison_v1/comparison/counts.tsv": "c604a026de20a71ac1ce50ef6bbd2972583d4c02e66bc84b965f87fff4955b03",
+    "molecule_comparison_v1/comparison/historical_only_summary.tsv": "95b768dada9ad48db82237664176c00d2f19ddde44a99c197206488b8ff73c7f",
+    "molecule_comparison_v1/comparison/historical_only_matches.tsv": "ae93eef6802a33fbc7ed58d49fc05f4df29eab6d70e7a471d5c95845a6ee4486",
+    "g1_count_v1/baseline.json": "0a7163b2e6e1c0ab004872a72fd9ae917e01b429ba8dc5aa92e383e64fa0e23c",
+    "g1_project_v1/projected/counts.tsv": "0214d22eac17199a956d9508986074faad8d42a186b1de1b580781fd5958baa1",
+    "h_project_v1/projected/counts.tsv": "ce3c98033e958a2d204ec5e4aa4a70151af537dbab22222cb0a0f57914523a9c",
+    "h_resolve_v1/resolved/counts.tsv": "28ecf1ed8410f0c61ff3665627cef1be113ad234859d80b4c7ee41fd28d27170",
+    "h_count_v1/matched_count.json": "dc246bc1111945a067560f5b142893ae4852be5fb7fdf554c23cff337dbcaf6f",
+    "g1_build_v2/fixture/projected.json": "414bdb4fed26fc8730681b840b8e16dd27eb345e94d8a5d6fd763c5a083a9742",
+    "g1_build_v2/fixture/original.json": "414bdb4fed26fc8730681b840b8e16dd27eb345e94d8a5d6fd763c5a083a9742",
+    "h_build_v1/single_gene/replay_count.json": "dbcfe5391f5a0d48acae71ccd3f5996a89c74a71f6404e54a83b975a6c090951",
+    "h_build_v1/two_genes/replay_count.json": "0da7419b977d8d4eb8a027960c63a190a68ed95cb0642f1f2bf002e0fe4e30a3"
+  },
+  "stage_summaries": {
+    "audits_build_v7": "5d91281538ee5395673796912b5231151e2b3fadb611ef771587cc4d90d29971",
+    "b1_evidence_v1": "b55bba31323fd68e90e490d46e267b1f6b7c17c61006303f2b8e629f482e7827",
+    "decode_v1": "c07a02bda479b861be566bf24a5f28419b8b7d350d744bcfefe7ee684f58644d",
+    "decoder_build_v3": "4c4f1eea3467ace77a5bb424a24e0aa47d2052a80654c5a3222a700b1ce0cea4",
+    "export_build_v1": "e829aeece9683d2f15ab9c5e84fab526d39e67db39628d0715f3ccef790f6326",
+    "export_v1": "3faf897563c54f5cfcde06e63ef5777d07bc0bc8afb1ac15f7ba5c3132b4024e",
+    "fixture_inputs_v1": "096d3f76f06d205355568fdb765f2b9bac2ec5a7be9976ffbe82b3ddcf97efc3",
+    "fixture_validation_v2": "e2106e481e2c10aeecec4c483d0ec4876d4c78a5cb2da059a0e9c810845764a3",
+    "g1_build_v2": "72911a4d589dd6c82022422af153877312990a24fa606e06b6cbe1d0160aa9d5",
+    "g1_count_v1": "e5b6ffbdb8e7280ac34d8da57f305545eee4b415212cfa936446bc968725ca6d",
+    "g1_project_v1": "e62faa0f91595b0c08c88306496d11f0f6a5dc65686d99bb56f96acd857943de",
+    "h_build_v1": "cdb5f259599eae25f4f0062649877d90c89a4a1331fe405d0c7737a86cdf922f",
+    "h_continuation_v1": "0484f17345faf08767448ec15f56ef4e6a0a065a4ad0afe9cc552783cc4e000f",
+    "h_count_v1": "2285edf1fd4167cf10af96d0f9f0c720356c149680f1665b2b1ee3f46b387213",
+    "h_project_v1": "32a4535e90cea7d81c373cbfdf89b6e2056d6bf5312703d52843338bc8ce14c9",
+    "h_resolve_v1": "84435d97a2bdbe8abfa816174fd5380e98ec698d9a2861c5c0a46075e013d21b",
+    "local_inputs_v2": "27de2c55042b9a5eb727c27c29f8c2ad799a73778d2bf6bc55c7d1ce7cc3d16e",
+    "members_build_v2": "1da89070e076b67a6ab9afc0bae91abddb9d789f16daf19a76c547d5191f1481",
+    "metadata_v1": "4cc7c36fef97ccbc8adbd23f25ec4c42ff012793f9572c84603536a1b23e747e",
+    "molecule_comparison_v1": "df4818af441d413802e55e34eef1210c2753fcd17276a9e5194603d6caf5ba57",
+    "native_molecules_v1": "52c91e5e905d4107054437e094776a6f3cd4762c1a5329e049bad7e98d01308e",
+    "native_run_v1": "d8c59388594a355f6622f14e9b9502a8a5c5610cd9ff5ab6de04b0a72295eda3",
+    "read_audit_v1": "fd5f1d81259182444b5009237b14475eb4d8aaad69b56e56d296df6d400de455",
+    "recover_v2": "bd103a95be481dd98c59d6b20f05aa35b71a29797c496ae38dae6d76a9f205cd",
+    "sr_molecules_v1": "69c2f74bf796e646984ccee0b72584fd386279e34943110a88a22caad2b72782"
+  }
+}

@@ -1,0 +1,37 @@
+dataset	tissue	bin	mean_count	locations
+lymph_node	human lymph node FFPE	nucleus, at least 4 um inside	9.105137331987462	56469
+lymph_node	human lymph node FFPE	nucleus, 2-4 um inside	8.908374091511634	218770
+lymph_node	human lymph node FFPE	nucleus, edge location	9.169943061763721	1209205
+lymph_node	human lymph node FFPE	outside nucleus, 0-2 um	10.532899603856434	1005696
+lymph_node	human lymph node FFPE	outside nucleus, 2-4 um	5.743349812456096	301796
+lymph_node	human lymph node FFPE	outside nucleus, 4-6 um	1.2522002782482458	264512
+lymph_node	human lymph node FFPE	outside nucleus, 6-10 um	0.37958013838536153	467535
+lymph_node	human lymph node FFPE	outside nucleus, 10-20 um	0.16283198967432275	903379
+lymph_node	human lymph node FFPE	outside nucleus, 20-50 um	0.09980683300432427	943743
+prostate	human prostate cancer FFPE	nucleus, at least 4 um inside	9.120562869518725	129053
+prostate	human prostate cancer FFPE	nucleus, 2-4 um inside	7.87277132410044	247232
+prostate	human prostate cancer FFPE	nucleus, edge location	6.4156665445772445	1335087
+prostate	human prostate cancer FFPE	outside nucleus, 0-2 um	6.164002356614442	1676982
+prostate	human prostate cancer FFPE	outside nucleus, 2-4 um	4.967854165533652	1342289
+prostate	human prostate cancer FFPE	outside nucleus, 4-6 um	3.5008431144600833	1267918
+prostate	human prostate cancer FFPE	outside nucleus, 6-10 um	2.1943596911775094	1514527
+prostate	human prostate cancer FFPE	outside nucleus, 10-20 um	1.1483839486060308	1041056
+prostate	human prostate cancer FFPE	outside nucleus, 20-50 um	0.4468442063772803	197890
+kidney	human kidney FFPE	nucleus, at least 4 um inside	12.138575219857417	19217
+kidney	human kidney FFPE	nucleus, 2-4 um inside	11.41855652648312	106313
+kidney	human kidney FFPE	nucleus, edge location	9.587846588156374	858656
+kidney	human kidney FFPE	outside nucleus, 0-2 um	9.03477489765976	1299098
+kidney	human kidney FFPE	outside nucleus, 2-4 um	8.70344144851639	1382877
+kidney	human kidney FFPE	outside nucleus, 4-6 um	8.08411137144828	1597501
+kidney	human kidney FFPE	outside nucleus, 6-10 um	6.8390246135612385	2359106
+kidney	human kidney FFPE	outside nucleus, 10-20 um	5.061315908762498	2525935
+kidney	human kidney FFPE	outside nucleus, 20-50 um	3.5513559449530465	491871
+mouse_brain	mouse brain FFPE	nucleus, at least 4 um inside	37.39834337960296	123263
+mouse_brain	mouse brain FFPE	nucleus, 2-4 um inside	33.090404624277454	86500
+mouse_brain	mouse brain FFPE	nucleus, edge location	27.881599525871295	364458
+mouse_brain	mouse brain FFPE	outside nucleus, 0-2 um	24.119429020090333	494168
+mouse_brain	mouse brain FFPE	outside nucleus, 2-4 um	19.854039661224085	562968
+mouse_brain	mouse brain FFPE	outside nucleus, 4-6 um	15.896670596030367	751606
+mouse_brain	mouse brain FFPE	outside nucleus, 6-10 um	11.848372098319611	1405091
+mouse_brain	mouse brain FFPE	outside nucleus, 10-20 um	8.52568507741095	1948174
+mouse_brain	mouse brain FFPE	outside nucleus, 20-50 um	5.859103051817219	554391

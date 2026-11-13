@@ -1,0 +1,23 @@
+{
+  "host": "<gpu-host>",
+  "cpu_model": "AMD Ryzen Threadripper PRO 5965WX",
+  "cpu_set": "0-15,24-39",
+  "logical_cpus": 32,
+  "physical_cores": 16,
+  "gpu_model": "NVIDIA RTX 6000 Ada Generation",
+  "preferred_gpu_index": 1,
+  "preferred_gpu_uuid": "GPU-507d144f-69b6-3166-958c-639560c30098",
+  "llm_sharing": "vLLM server stopped for the STARgrid runs (evidence/); the October Space Ranger runs ran beside an idle Gemma 4 vLLM server, any observed LLM GPU activity excluding a run",
+  "release": "v1.12.2",
+  "release_binary_sha256": "56eba373f3cdb167ce2ce645da40de9a9edf8ad08af586523770e410d203f519",
+  "memory_gib": {
+    "crc": 64,
+    "spatch": 96,
+    "ovarian": 108
+  },
+  "swap_limit_bytes": 0,
+  "source_hardware_inventory": "evidence/20261027_timing_final_inventory_v1",
+  "gpu_sharing": "used by no other computation",
+  "spaceranger_record": "paper_results/timing_20261027",
+  "spaceranger_environment_sha256": "84418ba2935268dcf2f456b067e710343ebad308e18ccaaec53ed4066c8cb8c1"
+}

@@ -1,0 +1,48 @@
+{
+  "status": "complete",
+  "command": [
+    "scripts/paper_tests/report_cancer.py",
+    "<runs>/20261021_paper_tests_cancer_report_v1"
+  ],
+  "source_revision": "4a105f091ba2e7dbdcb8114d02de2c9c8ee03e1e",
+  "cpus_used": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "inputs": {
+    "<local>/paper_results/spatial_v1_9_5_20260915/xenium_compatibility_top20/acceptance.json": "4b3d580766c84302248b63de3e662d146541a901603f76abb3dab61a0f3128ba",
+    "<storage>/staged/xenium_validation/xenium/differential_expression.csv": "ebc9f22c296c6d235bd9c51ecb4b27a65d9fb2f6ea8eda94bb8a7b92cbf7d942",
+    "<storage>/staged/xenium_validation/Xenium_V1_Human_Ovary_Cancer_FF_gene_panel.json": "5ff770a348a17bfaa03cf4370612eabd3efa3ad23eedbcc1d437a90d5ac8641d",
+    "<storage>/analyses/xenium_compatibility_broad/attempt1/result/gene_spatial_metrics.tsv": "e2fd1f37eb9d94eb5189162b2a300824028f01175135b787a783c406205a5746",
+    "<runs>/20261021_paper_tests_cancer_64_v1/summary.json": "91ee638a9278ba0a9e7d5b1fde08c3b5cf47405a8cf9f17cadb8b9302553be60",
+    "<runs>/20261021_paper_tests_cancer_64_v1/broad/gene_spatial_metrics.tsv": "9a339a1ca3319dddf4bcb160c8e46f935d3c4cfcd4d060fa53442580407ff8e7",
+    "<runs>/20261021_paper_tests_cancer_128_v1/summary.json": "b65846507660108ad13a5cf0dae9534272d19f125f3929854ad0cd0b0a5d53fb",
+    "<runs>/20261021_paper_tests_cancer_128_v1/broad/gene_spatial_metrics.tsv": "e2fd1f37eb9d94eb5189162b2a300824028f01175135b787a783c406205a5746",
+    "<runs>/20261021_paper_tests_cancer_256_v1/summary.json": "85d7243477944ee14b1773d40a82a8c44b12e6523c63aa35774ae3174af4f81f",
+    "<runs>/20261021_paper_tests_cancer_256_v1/broad/gene_spatial_metrics.tsv": "e57c597b09737644e1f80ad90996e0fb0ac5c5f39323471c12a1fe7f3cf7157b",
+    "<local>/the analysis protocolcancer_sensitivity_20261021.md": "b6ed0d762d7be3d7a67527592f3a6ffbd0c5df94040981f60ec6bd5a73be648c"
+  },
+  "scripts": {
+    "<local>/scripts/paper_tests/report_cancer.py": "65cac22c26d8653afd2d6e50267633d033113635f6db3bb8f277e8a71b4024d5",
+    "<local>/scripts/paper_tests/xenium_original/summarize_adjacent_xenium_top_genes.py": "f14b820cdf7ac60a25ad556166f504daa113220ae6aa2fddb3ab13b365d5db42"
+  },
+  "outputs": {
+    "exclusions_and_gene_changes.json": "835d617eeb78f34309956b36e37d0cf432ee3fbdb83869e6fc917c2f20fed19b",
+    "summarize_adjacent_xenium_top_genes.py": "f14b820cdf7ac60a25ad556166f504daa113220ae6aa2fddb3ab13b365d5db42",
+    "sensitivity.tsv": "71483d24e434f5b79ff401000c03bcd6c82a2678f043e32d16dd2abc299d6d9c",
+    "the analysis protocolcancer_sensitivity_20261021.md": "32a4e66071bef5df67069980ce9284df53c6433371ec87fb13b74b4193215e55",
+    "report_cancer.py": "65cac22c26d8653afd2d6e50267633d033113635f6db3bb8f277e8a71b4024d5",
+    "selected_genes.tsv": "775838979f60146e18fea2518a799b9f2fce638032b211b91e8822125b35523a"
+  },
+  "directional_agreement_variants": 7
+}

@@ -1,0 +1,2727 @@
+{
+ "placement": "expt2:he",
+ "counts": "star",
+ "label": "post-Xenium Prime 5K lung (Expt 2), he nuclei",
+ "expansions": [
+  0,
+  1,
+  2,
+  3
+ ],
+ "seed": 20261007,
+ "draws": 200,
+ "search": 12,
+ "radius": 13,
+ "inputs_sha256": {
+  "<runs>/20261106_post_xenium_lung_expt2_v1/work/cli/counts.npz": "6f28e5b415eb33c4d430b6b29e2dcb691e86759017a115abbdd243316b2da32f",
+  "<runs>/20261106_post_xenium_lung_expt2_v1/work/cli/support.npz": "be049ebf69554967f846b98157db8a179126dc1c59de667820614afd8959ce67",
+  "<runs>/20261106_post_xenium_lung_expt2_v1/work/cli/he_placed.npz": "f636e7d283e54323fc3cb3e32e08e7dd0c37944bf8323e90a9f39fbc94db27b8"
+ },
+ "elapsed": 28.72787880897522,
+ "affinity": [
+  24,
+  25,
+  26,
+  27
+ ],
+ "rows": [
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), he nuclei",
+   "surface": "whole",
+   "bounds": [
+    0,
+    3350,
+    0,
+    3350
+   ],
+   "nucleus_in_tissue": 999422,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -2,
+     "value": 0.003408602513621517,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.865,
+     "share_exact": 0.81,
+     "lo": 0.0022451317625576837,
+     "hi": 0.005600249397314929,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.004754013144837144,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.71,
+     "share_within1": 0.65,
+     "share_exact": 0.65,
+     "lo": 0.002092205937161279,
+     "hi": 0.00668256545013665,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": 0,
+     "value": 0.004691325943402491,
+     "n": 2,
+     "second": 0.00283166130110013,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.84,
+     "share_exact": 0.52,
+     "lo": 0.0031182630087244144,
+     "hi": 0.00585857953762095,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.010579004810943982,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.995,
+     "lo": 0.008635044172282655,
+     "hi": 0.012311183284118015,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -5,
+     "value": 0.0022028088777321653,
+     "n": 4,
+     "second": 0.0020947317002812937,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.395,
+     "share_exact": 0.35,
+     "lo": 0.0010604018742867872,
+     "hi": 0.003299950769425947,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -5,
+     "dx": -2,
+     "value": 0.002196801498109191,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.995,
+     "share_exact": 0.575,
+     "lo": 0.001383738042579455,
+     "hi": 0.003372660204192144,
+     "usable": true
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.003078705867876508,
+     "n": 3,
+     "second": 0.0011394189831306356,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.955,
+     "share_exact": 0.945,
+     "lo": 0.001990315569041834,
+     "hi": 0.0036578369361943094,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": -1,
+     "value": 0.0006386365618901158,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.885,
+     "share_within1": 0.475,
+     "share_exact": 0.215,
+     "lo": 0.0002591049039562143,
+     "hi": 0.0012499530781131362,
+     "usable": false
+    }
+   },
+   "truth": [
+    -4,
+    -2
+   ]
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), he nuclei",
+   "surface": "r0c0",
+   "bounds": [
+    0,
+    670,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 1,
+   "tested": false,
+   "truth": null
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), he nuclei",
+   "surface": "r0c1",
+   "bounds": [
+    0,
+    670,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 7216,
+   "tested": false,
+   "truth": null
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), he nuclei",
+   "surface": "r0c2",
+   "bounds": [
+    0,
+    670,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 50317,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.006749950265929394,
+     "n": 6,
+     "second": 0.00560184473741665,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.47,
+     "share_exact": 0.21,
+     "lo": -0.0010250456493418045,
+     "hi": 0.015615865293004707,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 9,
+     "dx": 9,
+     "value": 0.012922665635316077,
+     "n": 7,
+     "second": 0.007813894411516253,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.365,
+     "share_exact": 0.36,
+     "lo": 0.0059914448906313676,
+     "hi": 0.01691141489844731,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -6,
+     "dx": -3,
+     "value": 0.010722704412932105,
+     "n": 6,
+     "second": 0.009015234714382814,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.2,
+     "share_exact": 0.175,
+     "lo": 0.005094590893865031,
+     "hi": 0.014340881526859412,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.011533892288551395,
+     "n": 6,
+     "second": 0.006250133635757438,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.805,
+     "share_exact": 0.405,
+     "lo": 0.002995128499234412,
+     "hi": 0.019823660553501328,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": -1,
+     "value": 0.007673662763856504,
+     "n": 4,
+     "second": 0.004778613944814936,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.74,
+     "share_exact": 0.65,
+     "lo": 0.0038160214536242746,
+     "hi": 0.010481863486962362,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.005994859259181973,
+     "n": 2,
+     "second": 0.0013714918771431384,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.825,
+     "share_exact": 0.365,
+     "lo": 0.0017194916449032095,
+     "hi": 0.009769753150258523,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -6,
+     "dx": -5,
+     "value": 0.004148500731344207,
+     "n": 7,
+     "second": 0.003635139822179445,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.235,
+     "share_exact": 0.22,
+     "lo": 0.0019062797045523328,
+     "hi": 0.005253040454064523,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -5,
+     "dx": -1,
+     "value": 0.0024680859956071055,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.46,
+     "share_exact": 0.165,
+     "lo": 0.0005844699488595007,
+     "hi": 0.005723735259656859,
+     "usable": false
+    }
+   },
+   "truth": [
+    -4,
+    -1
+   ]
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), he nuclei",
+   "surface": "r0c3",
+   "bounds": [
+    0,
+    670,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 43031,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -3,
+     "value": 0.012728694338467461,
+     "n": 3,
+     "second": 0.007935893363458124,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.595,
+     "share_exact": 0.48,
+     "lo": 0.005556679636764978,
+     "hi": 0.018679513829179813,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -1,
+     "value": 0.013484168237595351,
+     "n": 3,
+     "second": 0.0045125305777170555,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.705,
+     "share_exact": 0.665,
+     "lo": 0.0029008393277628335,
+     "hi": 0.025075056095961747,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 2,
+     "dx": 8,
+     "value": 0.0074146221511708355,
+     "n": 5,
+     "second": 0.004434394825376664,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.19,
+     "share_exact": 0.185,
+     "lo": 0.0029217340028659723,
+     "hi": 0.012736678979264233,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.014838415901615276,
+     "n": 3,
+     "second": 0.004388144216210255,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.86,
+     "share_exact": 0.64,
+     "lo": 0.006420745481281182,
+     "hi": 0.02231108235754573,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": 2,
+     "value": 0.004345995284321669,
+     "n": 3,
+     "second": 0.003077852526376601,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.245,
+     "share_exact": 0.165,
+     "lo": 0.0023377614914763477,
+     "hi": 0.006305288525500692,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.005569501278084865,
+     "n": 4,
+     "second": 0.002780930222519018,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.715,
+     "share_exact": 0.53,
+     "lo": 0.0002184558349802468,
+     "hi": 0.011033932315791304,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -1,
+     "value": 0.004305829231436409,
+     "n": 5,
+     "second": 0.0034670102797960123,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.595,
+     "share_exact": 0.585,
+     "lo": 0.0018632217261812913,
+     "hi": 0.00812849948185946,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": -3,
+     "value": 0.003018247867182411,
+     "n": 4,
+     "second": 0.0023331119677731937,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.21,
+     "share_exact": 0.125,
+     "lo": 0.0009603852155763704,
+     "hi": 0.005402840328512144,
+     "usable": false
+    }
+   },
+   "truth": [
+    -3,
+    -1
+   ]
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), he nuclei",
+   "surface": "r0c4",
+   "bounds": [
+    0,
+    670,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 0,
+   "tested": false,
+   "truth": null
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), he nuclei",
+   "surface": "r1c0",
+   "bounds": [
+    670,
+    1340,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 3955,
+   "tested": false,
+   "truth": null
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), he nuclei",
+   "surface": "r1c1",
+   "bounds": [
+    670,
+    1340,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 53627,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.016922074700929768,
+     "n": 8,
+     "second": 0.010341187112292483,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.805,
+     "share_exact": 0.595,
+     "lo": 0.007812372349320468,
+     "hi": 0.024638478469786847,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -1,
+     "value": 0.01146103197770898,
+     "n": 4,
+     "second": 0.008578903041513097,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.28,
+     "share_exact": 0.275,
+     "lo": -0.0004076831637617072,
+     "hi": 0.02075735519659195,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -1,
+     "value": 0.006913449295822494,
+     "n": 3,
+     "second": 0.005153883692461836,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.49,
+     "share_exact": 0.2,
+     "lo": 0.0020808887741569524,
+     "hi": 0.012382380016559658,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 12,
+     "dx": -8,
+     "value": 0.005079604889832723,
+     "n": 2,
+     "second": 0.004358286660341548,
+     "interior": false,
+     "share_any": 0.995,
+     "share_within1": 0.06,
+     "share_exact": 0.06,
+     "lo": -0.000986763517488448,
+     "hi": 0.011400874233985697,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -1,
+     "value": 0.0086424375936891,
+     "n": 2,
+     "second": 0.001788057298133694,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.9,
+     "share_exact": 0.58,
+     "lo": 0.004583573266737684,
+     "hi": 0.012184091161521362,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -1,
+     "value": 0.003931645874722944,
+     "n": 10,
+     "second": 0.003607634765503631,
+     "interior": true,
+     "share_any": 0.99,
+     "share_within1": 0.305,
+     "share_exact": 0.22,
+     "lo": 0.00014180960627643296,
+     "hi": 0.007587012052480136,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 12,
+     "dx": 12,
+     "value": 0.0031356370249320253,
+     "n": 12,
+     "second": 0.002444537524453061,
+     "interior": false,
+     "share_any": 0.985,
+     "share_within1": 0.045,
+     "share_exact": 0.045,
+     "lo": 0.0005094444197497411,
+     "hi": 0.005097866751922653,
+     "usable": false
+    }
+   },
+   "truth": [
+    -4,
+    -2
+   ]
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), he nuclei",
+   "surface": "r1c2",
+   "bounds": [
+    670,
+    1340,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 68973,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": 0,
+     "value": 0.007340653186051371,
+     "n": 3,
+     "second": 0.005881404999485973,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.575,
+     "share_exact": 0.24,
+     "lo": 0.0026652059147023567,
+     "hi": 0.01426171850035566,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.010181994411609496,
+     "n": 3,
+     "second": 0.0030219045002514155,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.565,
+     "share_exact": 0.565,
+     "lo": 0.0003708253906148986,
+     "hi": 0.020349953447594937,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": -1,
+     "value": 0.009570059845234846,
+     "n": 9,
+     "second": 0.007948418202796459,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.435,
+     "share_exact": 0.41,
+     "lo": 0.0046319207958166525,
+     "hi": 0.014152935141884648,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.022126760275399393,
+     "n": 8,
+     "second": 0.0031998436298043,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.995,
+     "share_exact": 0.98,
+     "lo": 0.011132886203599424,
+     "hi": 0.030540886054270654,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": -3,
+     "value": 0.005101335360909731,
+     "n": 7,
+     "second": 0.004866659525306849,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.275,
+     "share_exact": 0.25,
+     "lo": 0.0028943272032123713,
+     "hi": 0.00836291147156864,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -1,
+     "value": 0.007150665241659637,
+     "n": 3,
+     "second": 0.0038141815268362134,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.845,
+     "share_exact": 0.53,
+     "lo": 0.002779691041200555,
+     "hi": 0.012751575407969193,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 1,
+     "value": 0.0031574211874461078,
+     "n": 9,
+     "second": 0.0030213852869851454,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.1,
+     "share_exact": 0.055,
+     "lo": 0.0012847813906940065,
+     "hi": 0.004724792526625593,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": 0,
+     "value": 0.0027583442966433447,
+     "n": 9,
+     "second": 0.002514047140225739,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.36,
+     "share_exact": 0.235,
+     "lo": 0.0006720997656439826,
+     "hi": 0.006734624330097575,
+     "usable": false
+    }
+   },
+   "truth": [
+    -4,
+    -2
+   ]
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), he nuclei",
+   "surface": "r1c3",
+   "bounds": [
+    670,
+    1340,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 51540,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -7,
+     "dx": 9,
+     "value": 0.011621123050914228,
+     "n": 23,
+     "second": 0.01033393973948904,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.225,
+     "share_exact": 0.195,
+     "lo": 0.006539179589088707,
+     "hi": 0.015117282894965178,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -2,
+     "value": 0.017290371197081655,
+     "n": 35,
+     "second": 0.010058754285389937,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.565,
+     "share_exact": 0.5,
+     "lo": 0.004473123679593269,
+     "hi": 0.026125007299324498,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -4,
+     "value": 0.009308524388474959,
+     "n": 31,
+     "second": 0.008387240761283943,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.285,
+     "share_exact": 0.285,
+     "lo": 0.004936016664758941,
+     "hi": 0.013070658641854204,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 11,
+     "dx": 11,
+     "value": 0.0066150552696210285,
+     "n": 22,
+     "second": 0.006364260367712871,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.075,
+     "share_exact": 0.075,
+     "lo": 0.002434048281333209,
+     "hi": 0.011106161588588036,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": 2,
+     "value": 0.0026464291966701303,
+     "n": 4,
+     "second": 0.0017598242085148375,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.115,
+     "share_exact": 0.075,
+     "lo": 0.0010279108970510486,
+     "hi": 0.005340651757225552,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -3,
+     "value": 0.003925454247280191,
+     "n": 12,
+     "second": 0.0030127795411230007,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.335,
+     "share_exact": 0.15,
+     "lo": 0.0004798027829944541,
+     "hi": 0.006270365740867183,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": 2,
+     "value": 0.004644660751230711,
+     "n": 13,
+     "second": 0.00395743586467634,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.325,
+     "share_exact": 0.285,
+     "lo": 0.0013695163317264502,
+     "hi": 0.006360313580513161,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -4,
+     "value": 0.0028079431862968462,
+     "n": 14,
+     "second": 0.002466904185608021,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.125,
+     "share_exact": 0.075,
+     "lo": 0.00043491060250314687,
+     "hi": 0.004468007709309946,
+     "usable": false
+    }
+   },
+   "truth": [
+    -3,
+    -2
+   ]
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), he nuclei",
+   "surface": "r1c4",
+   "bounds": [
+    670,
+    1340,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 0,
+   "tested": false,
+   "truth": null
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), he nuclei",
+   "surface": "r2c0",
+   "bounds": [
+    1340,
+    2010,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 59601,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -4,
+     "value": 0.009347012605115168,
+     "n": 7,
+     "second": 0.006600914048126683,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.445,
+     "share_exact": 0.365,
+     "lo": 0.005020431647478335,
+     "hi": 0.014942895392592755,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 8,
+     "dx": 10,
+     "value": 0.008339775597945076,
+     "n": 9,
+     "second": 0.005953565497013424,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.18,
+     "share_exact": 0.155,
+     "lo": 0.003953254509990098,
+     "hi": 0.01536556754524807,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": -5,
+     "value": 0.009600002470029345,
+     "n": 18,
+     "second": 0.007845619476244847,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.315,
+     "share_exact": 0.285,
+     "lo": 0.00473499933593054,
+     "hi": 0.013403326695790663,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -5,
+     "dx": -2,
+     "value": 0.02471561277339307,
+     "n": 15,
+     "second": 0.006456517239198489,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.019907031799932935,
+     "hi": 0.031287835982151714,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -2,
+     "value": 0.005369211812866759,
+     "n": 10,
+     "second": 0.004968729622140122,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.355,
+     "share_exact": 0.255,
+     "lo": 0.0029261353250483848,
+     "hi": 0.008830435296779671,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 7,
+     "dx": 9,
+     "value": 0.0052842669909940465,
+     "n": 12,
+     "second": 0.005216768131663496,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.085,
+     "share_exact": 0.08,
+     "lo": 0.001776910851772759,
+     "hi": 0.00674160936057121,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.008104009378941734,
+     "n": 12,
+     "second": 0.002849378087876664,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.955,
+     "share_exact": 0.95,
+     "lo": 0.004334134671697953,
+     "hi": 0.01085123062934243,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 9,
+     "dx": 5,
+     "value": 0.002189059675999472,
+     "n": 9,
+     "second": 0.0020771274743015544,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.1,
+     "share_exact": 0.09,
+     "lo": -0.00043707794875244,
+     "hi": 0.004895629937600843,
+     "usable": false
+    }
+   },
+   "truth": [
+    -4,
+    -2
+   ]
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), he nuclei",
+   "surface": "r2c1",
+   "bounds": [
+    1340,
+    2010,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 68999,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 10,
+     "dx": -4,
+     "value": 0.0058703399705830606,
+     "n": 17,
+     "second": 0.0055696092852441925,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.08,
+     "share_exact": 0.075,
+     "lo": 0.002133572451086896,
+     "hi": 0.010120916171403328,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.015431705236024218,
+     "n": 17,
+     "second": 0.006737040377177594,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.99,
+     "share_exact": 0.64,
+     "lo": 0.009878214142754055,
+     "hi": 0.02207470094051294,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": 0,
+     "value": 0.006669064839752048,
+     "n": 20,
+     "second": 0.004813711760385475,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.385,
+     "share_exact": 0.325,
+     "lo": 0.00269770147720258,
+     "hi": 0.01192382386944006,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -5,
+     "dx": -2,
+     "value": 0.022011566290123907,
+     "n": 26,
+     "second": 0.0061961029286833336,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.99,
+     "share_exact": 0.715,
+     "lo": 0.009809555357958143,
+     "hi": 0.029059202310295944,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": 0,
+     "value": 0.004043309128372474,
+     "n": 16,
+     "second": 0.00372762103172275,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.125,
+     "share_exact": 0.1,
+     "lo": 0.0016859478485326596,
+     "hi": 0.006550321604661769,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -5,
+     "dx": -2,
+     "value": 0.006369033221349074,
+     "n": 11,
+     "second": 0.0035695906707894354,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.77,
+     "share_exact": 0.655,
+     "lo": 0.001648476569569127,
+     "hi": 0.00991112706719481,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.007990093008578114,
+     "n": 16,
+     "second": 0.003069930756204986,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.935,
+     "share_exact": 0.915,
+     "lo": 0.004827594730866025,
+     "hi": 0.011692428802353322,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 7,
+     "dx": -3,
+     "value": 0.00211481219849885,
+     "n": 14,
+     "second": 0.0020294699136454986,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.065,
+     "share_exact": 0.05,
+     "lo": -8.956598450814975e-05,
+     "hi": 0.0041639242423109355,
+     "usable": false
+    }
+   },
+   "truth": [
+    -4,
+    -2
+   ]
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), he nuclei",
+   "surface": "r2c2",
+   "bounds": [
+    1340,
+    2010,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 80649,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -6,
+     "dx": -2,
+     "value": 0.010008902887173932,
+     "n": 3,
+     "second": 0.009644182117891642,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.255,
+     "share_exact": 0.145,
+     "lo": 0.004185192456516213,
+     "hi": 0.014102396747749225,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.018570860219787155,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.98,
+     "share_exact": 0.97,
+     "lo": 0.011329984260848788,
+     "hi": 0.02757723305212116,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.0027846614356592525,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.28,
+     "share_exact": 0.105,
+     "lo": -0.0028906694389225856,
+     "hi": 0.008102640953493707,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 12,
+     "dx": 9,
+     "value": 0.0026366120610304966,
+     "n": 2,
+     "second": 0.0024200758834924674,
+     "interior": false,
+     "share_any": 0.945,
+     "share_within1": 0.06,
+     "share_exact": 0.06,
+     "lo": -0.0009060949268032303,
+     "hi": 0.006715333167081722,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.011826331158924397,
+     "n": 4,
+     "second": 0.004093367571043283,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.97,
+     "lo": 0.006986956154449531,
+     "hi": 0.01700743818025435,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 12,
+     "dx": 11,
+     "value": 0.0018093272561029439,
+     "n": 1,
+     "second": null,
+     "interior": false,
+     "share_any": 0.97,
+     "share_within1": 0.04,
+     "share_exact": 0.04,
+     "lo": -0.00044476493627832456,
+     "hi": 0.004603408760328696,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.009441034501000534,
+     "n": 21,
+     "second": 0.002468155878080136,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.905,
+     "lo": 0.00663870389847559,
+     "hi": 0.013683438406303842,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 12,
+     "dx": 11,
+     "value": 0.002305381428432396,
+     "n": 11,
+     "second": 0.0021398630355362602,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.07,
+     "share_exact": 0.07,
+     "lo": -5.984873770236154e-05,
+     "hi": 0.004317987455620867,
+     "usable": false
+    }
+   },
+   "truth": [
+    -4,
+    -2
+   ]
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), he nuclei",
+   "surface": "r2c3",
+   "bounds": [
+    1340,
+    2010,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 54377,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 12,
+     "dx": 11,
+     "value": 0.007409137717352632,
+     "n": 15,
+     "second": 0.007044077584449138,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.06,
+     "share_exact": 0.06,
+     "lo": 0.003060144669620546,
+     "hi": 0.009591892043766776,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 7,
+     "dx": 8,
+     "value": 0.007212414831337832,
+     "n": 19,
+     "second": 0.00716165492261478,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.155,
+     "share_exact": 0.15,
+     "lo": 0.001746563918563207,
+     "hi": 0.01308200320108751,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": -2,
+     "value": 0.007863793853352119,
+     "n": 32,
+     "second": 0.006095849375961082,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.36,
+     "share_exact": 0.335,
+     "lo": 0.004441135190187917,
+     "hi": 0.012874970553334447,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.017124334169403066,
+     "n": 28,
+     "second": 0.004815110958542812,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.6,
+     "lo": 0.012225400070690557,
+     "hi": 0.02411220280876735,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -6,
+     "dx": 0,
+     "value": 0.003187930161386854,
+     "n": 17,
+     "second": 0.0030201220621488556,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.15,
+     "share_exact": 0.12,
+     "lo": 0.001532130261816872,
+     "hi": 0.005244099642359385,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -2,
+     "value": 0.004736163401175886,
+     "n": 18,
+     "second": 0.0034028367790439606,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.81,
+     "share_exact": 0.26,
+     "lo": 0.0018601273706606832,
+     "hi": 0.007451701342669607,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": 2,
+     "value": 0.0026365256744829146,
+     "n": 30,
+     "second": 0.0022394753925967237,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.12,
+     "share_exact": 0.11,
+     "lo": 0.00034013066665232743,
+     "hi": 0.004301245394951697,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -1,
+     "value": 0.0029039737737563964,
+     "n": 23,
+     "second": 0.002548005643986162,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.445,
+     "share_exact": 0.255,
+     "lo": 9.468490918677371e-05,
+     "hi": 0.005082122022446842,
+     "usable": false
+    }
+   },
+   "truth": [
+    -3,
+    -2
+   ]
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), he nuclei",
+   "surface": "r2c4",
+   "bounds": [
+    1340,
+    2010,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 0,
+   "tested": false,
+   "truth": null
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), he nuclei",
+   "surface": "r3c0",
+   "bounds": [
+    2010,
+    2680,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 74477,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": -5,
+     "value": 0.004117632486231537,
+     "n": 5,
+     "second": 0.004064275994742239,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.105,
+     "share_exact": 0.065,
+     "lo": 0.0006797376871974681,
+     "hi": 0.008075540513898744,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -11,
+     "dx": 12,
+     "value": 0.006855066309843005,
+     "n": 8,
+     "second": 0.005985547251631251,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.09,
+     "share_exact": 0.09,
+     "lo": 0.001135499282248431,
+     "hi": 0.010252420469368986,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": 0,
+     "value": 0.017246862445664535,
+     "n": 7,
+     "second": 0.00851396308573027,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.95,
+     "share_exact": 0.9,
+     "lo": 0.012248964397217916,
+     "hi": 0.020769606149950926,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -5,
+     "dx": -3,
+     "value": 0.041015310166866326,
+     "n": 10,
+     "second": 0.005990943737726684,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.795,
+     "lo": 0.035359996047525086,
+     "hi": 0.04662832039580953,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": 0,
+     "value": 0.008795299205136775,
+     "n": 6,
+     "second": 0.004651875502357461,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.745,
+     "share_exact": 0.71,
+     "lo": 0.0055728405733115995,
+     "hi": 0.011341185492162226,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -5,
+     "dx": -2,
+     "value": 0.0127323605288292,
+     "n": 5,
+     "second": 0.0038452151042330796,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.79,
+     "lo": 0.007115674478244275,
+     "hi": 0.015713134178471377,
+     "usable": true
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -3,
+     "value": 0.0035930847379106456,
+     "n": 6,
+     "second": 0.0014426873216000224,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.6,
+     "share_exact": 0.515,
+     "lo": 0.0016898999922181912,
+     "hi": 0.005045187084657233,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 1,
+     "dx": 12,
+     "value": 0.002818243949982757,
+     "n": 7,
+     "second": 0.0017202505420769176,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.345,
+     "share_exact": 0.185,
+     "lo": 0.0008750133833350882,
+     "hi": 0.004249609519319178,
+     "usable": false
+    }
+   },
+   "truth": [
+    -4,
+    -3
+   ]
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), he nuclei",
+   "surface": "r3c1",
+   "bounds": [
+    2010,
+    2680,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 59591,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -10,
+     "dx": -5,
+     "value": 0.008290252796521402,
+     "n": 5,
+     "second": 0.008208325847638198,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.09,
+     "share_exact": 0.09,
+     "lo": 0.0024051380464375437,
+     "hi": 0.012655237338407862,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -3,
+     "value": 0.009631952082022055,
+     "n": 3,
+     "second": 0.0059632227886505795,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.45,
+     "share_exact": 0.365,
+     "lo": -0.00424332020297789,
+     "hi": 0.022190509434556322,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -6,
+     "dx": 0,
+     "value": 0.010585783942580251,
+     "n": 11,
+     "second": 0.005802893136517495,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.615,
+     "share_exact": 0.39,
+     "lo": 0.004151288684826576,
+     "hi": 0.01579416014496036,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.007942704439552584,
+     "n": 5,
+     "second": 0.006262142464645959,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.565,
+     "share_exact": 0.425,
+     "lo": -0.00013798600794088226,
+     "hi": 0.020392334198822457,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -6,
+     "dx": 0,
+     "value": 0.005443560160769856,
+     "n": 4,
+     "second": 0.002901423271284731,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.39,
+     "share_exact": 0.305,
+     "lo": 0.0013900032515045458,
+     "hi": 0.009144828824188905,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -10,
+     "dx": -11,
+     "value": 0.0009397068936396469,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.115,
+     "share_exact": 0.015,
+     "lo": -0.0015243681946306318,
+     "hi": 0.003147041515959126,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": -3,
+     "value": 0.003547447332561404,
+     "n": 2,
+     "second": 0.0022966249874212252,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.38,
+     "share_exact": 0.305,
+     "lo": 0.0010988736045856706,
+     "hi": 0.006395800714025341,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 4,
+     "dx": -9,
+     "value": 0.0018236961998979728,
+     "n": 4,
+     "second": 0.0015065859553929917,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.115,
+     "share_exact": 0.06,
+     "lo": -0.00014182134520425137,
+     "hi": 0.004222380551477552,
+     "usable": false
+    }
+   },
+   "truth": [
+    -4,
+    -3
+   ]
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), he nuclei",
+   "surface": "r3c2",
+   "bounds": [
+    2010,
+    2680,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 78457,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -2,
+     "value": 0.011045026923443002,
+     "n": 3,
+     "second": 0.002746526302987551,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.925,
+     "share_exact": 0.815,
+     "lo": 0.0070032494857539766,
+     "hi": 0.015292293499218854,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": 11,
+     "value": 0.0043126975433990244,
+     "n": 11,
+     "second": 0.003913959789917376,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.08,
+     "share_exact": 0.08,
+     "lo": -0.0008512171207577579,
+     "hi": 0.008139224294287517,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": 0,
+     "value": 0.006195247849458019,
+     "n": 19,
+     "second": 0.0058994270988479425,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.305,
+     "share_exact": 0.29,
+     "lo": 0.0031585066881511083,
+     "hi": 0.011455449802250302,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -3,
+     "value": 0.011396223604334899,
+     "n": 24,
+     "second": 0.0048039245341128245,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.93,
+     "share_exact": 0.93,
+     "lo": 0.006965092861569469,
+     "hi": 0.014903778557073947,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -6,
+     "dx": 0,
+     "value": 0.003786954713344226,
+     "n": 23,
+     "second": 0.0030583164808750674,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.28,
+     "share_exact": 0.26,
+     "lo": 0.0019735884997762357,
+     "hi": 0.005661115006962247,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 3,
+     "dx": 1,
+     "value": 0.003303123049950951,
+     "n": 13,
+     "second": 0.002889162617057295,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.205,
+     "share_exact": 0.155,
+     "lo": 0.0011190388220433806,
+     "hi": 0.005485997560265321,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": 8,
+     "value": 0.0023515207284856565,
+     "n": 26,
+     "second": 0.0022475587835397715,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.07,
+     "share_exact": 0.07,
+     "lo": 0.000783897086050972,
+     "hi": 0.004304012061731708,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": -2,
+     "value": 0.002801036998142381,
+     "n": 21,
+     "second": 0.002732416803668425,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.265,
+     "share_exact": 0.115,
+     "lo": 0.0005174529935131816,
+     "hi": 0.0049517843179714745,
+     "usable": false
+    }
+   },
+   "truth": [
+    -4,
+    -3
+   ]
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), he nuclei",
+   "surface": "r3c3",
+   "bounds": [
+    2010,
+    2680,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 49655,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -3,
+     "value": 0.012930204021289526,
+     "n": 21,
+     "second": 0.006561489156092115,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.585,
+     "share_exact": 0.33,
+     "lo": 0.004497401254780109,
+     "hi": 0.021129052900239254,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 9,
+     "dx": -9,
+     "value": 0.009180603047780123,
+     "n": 18,
+     "second": 0.008424983312139589,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.205,
+     "share_exact": 0.195,
+     "lo": 0.0020193286014768166,
+     "hi": 0.015728010171847457,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -1,
+     "value": 0.01057141045484622,
+     "n": 38,
+     "second": 0.00848304992047666,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.385,
+     "share_exact": 0.36,
+     "lo": 0.004633174863863143,
+     "hi": 0.016316779205682797,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 10,
+     "dx": -10,
+     "value": 0.00795447880436273,
+     "n": 52,
+     "second": 0.00787012585643354,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.095,
+     "share_exact": 0.095,
+     "lo": 0.0036987214197602507,
+     "hi": 0.013273531872280128,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 9,
+     "dx": 11,
+     "value": 0.0052081324105111015,
+     "n": 26,
+     "second": 0.004943743996783212,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.105,
+     "share_exact": 0.08,
+     "lo": 0.0019491703945344885,
+     "hi": 0.0076910104954861285,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 3,
+     "dx": -10,
+     "value": 0.005649374848705424,
+     "n": 43,
+     "second": 0.005290660203532305,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.16,
+     "share_exact": 0.16,
+     "lo": 0.002747336808870249,
+     "hi": 0.008886789889133398,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 9,
+     "dx": 11,
+     "value": 0.004171432952484899,
+     "n": 31,
+     "second": 0.0037148872856773707,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.105,
+     "share_exact": 0.1,
+     "lo": 0.0012976105734693434,
+     "hi": 0.006256603558377806,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": -2,
+     "value": 0.004298269564215307,
+     "n": 53,
+     "second": 0.003712442863655685,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.095,
+     "share_exact": 0.045,
+     "lo": 0.0010220043321681582,
+     "hi": 0.005751464257519184,
+     "usable": false
+    }
+   },
+   "truth": [
+    -3,
+    -3
+   ]
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), he nuclei",
+   "surface": "r3c4",
+   "bounds": [
+    2010,
+    2680,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 0,
+   "tested": false,
+   "truth": null
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), he nuclei",
+   "surface": "r4c0",
+   "bounds": [
+    2680,
+    3350,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 63317,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 12,
+     "dx": 11,
+     "value": 0.008466340831528196,
+     "n": 2,
+     "second": 0.005994239391796663,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.085,
+     "share_exact": 0.085,
+     "lo": 0.0023490274765713528,
+     "hi": 0.014131164175551608,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -2,
+     "value": 0.008583562285338298,
+     "n": 4,
+     "second": 0.007322019468162688,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.29,
+     "share_exact": 0.215,
+     "lo": 0.0028065964098549,
+     "hi": 0.01523623685535724,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -5,
+     "dx": -3,
+     "value": 0.006610223051330522,
+     "n": 2,
+     "second": 0.005768777679352022,
+     "interior": true,
+     "share_any": 0.975,
+     "share_within1": 0.25,
+     "share_exact": 0.25,
+     "lo": -0.000572919259825999,
+     "hi": 0.01277851176344788,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -2,
+     "value": 0.0026717235734845524,
+     "n": 3,
+     "second": 0.0015483196715979641,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.44,
+     "share_exact": 0.05,
+     "lo": 0.0001721436309980785,
+     "hi": 0.006612491506551921,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -11,
+     "dx": -12,
+     "value": 0.001445170899392334,
+     "n": 1,
+     "second": null,
+     "interior": false,
+     "share_any": 0.975,
+     "share_within1": 0.055,
+     "share_exact": 0.025,
+     "lo": -0.0018427549455207414,
+     "hi": 0.0042390820738126035,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": -7,
+     "value": 0.002447013192872438,
+     "n": 9,
+     "second": 0.0023736857629141905,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.155,
+     "share_exact": 0.11,
+     "lo": -0.00031993017668543734,
+     "hi": 0.005252076062176332,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 5,
+     "dx": -5,
+     "value": 0.001844507426991715,
+     "n": 6,
+     "second": 0.0012682590687487227,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.07,
+     "share_exact": 0.065,
+     "lo": 0.0001085502013051909,
+     "hi": 0.004438521983910734,
+     "usable": false
+    }
+   },
+   "truth": [
+    -5,
+    -3
+   ]
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), he nuclei",
+   "surface": "r4c1",
+   "bounds": [
+    2680,
+    3350,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 39804,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -3,
+     "value": 0.03965603545682872,
+     "n": 7,
+     "second": 0.01801718077839931,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.985,
+     "share_exact": 0.675,
+     "lo": 0.027277426910915736,
+     "hi": 0.05837877283506473,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 8,
+     "dx": -5,
+     "value": 0.013136441731277593,
+     "n": 8,
+     "second": 0.008858608710470728,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.225,
+     "share_exact": 0.2,
+     "lo": 0.0021884476053316898,
+     "hi": 0.02366035141918492,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -1,
+     "value": 0.02183366844791923,
+     "n": 9,
+     "second": 0.015430607228281046,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.77,
+     "share_exact": 0.725,
+     "lo": 0.01248455345280916,
+     "hi": 0.027576946070084853,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -3,
+     "value": 0.025781949286995398,
+     "n": 9,
+     "second": 0.012006669310931084,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.955,
+     "share_exact": 0.955,
+     "lo": 0.01692238601926334,
+     "hi": 0.03461056723577216,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -3,
+     "value": 0.006961781166747727,
+     "n": 3,
+     "second": 0.005467898041266572,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.265,
+     "share_exact": 0.215,
+     "lo": 0.0021078034490291,
+     "hi": 0.012212778818651916,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -3,
+     "value": 0.02067523489686296,
+     "n": 2,
+     "second": 0.005560502927417055,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.98,
+     "lo": 0.015149414878035571,
+     "hi": 0.0239431222655255,
+     "usable": true
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": 0,
+     "value": 0.006627097351878497,
+     "n": 6,
+     "second": 0.00347052905719325,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.565,
+     "share_exact": 0.505,
+     "lo": 0.0041340103361974245,
+     "hi": 0.010698204912192878,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -3,
+     "value": 0.01386602379970936,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.95,
+     "lo": 0.009855764524634455,
+     "hi": 0.017667238895523723,
+     "usable": true
+    }
+   },
+   "truth": [
+    -4,
+    -3
+   ]
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), he nuclei",
+   "surface": "r4c2",
+   "bounds": [
+    2680,
+    3350,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 50875,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -2,
+     "value": 0.009865298321769966,
+     "n": 10,
+     "second": 0.008325458670839447,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.32,
+     "share_exact": 0.165,
+     "lo": 0.001279904738223503,
+     "hi": 0.01882255481155603,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 11,
+     "dx": -4,
+     "value": 0.004359030376859252,
+     "n": 5,
+     "second": 0.004176813121548273,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.04,
+     "share_exact": 0.04,
+     "lo": -0.00054275294591527,
+     "hi": 0.01275736234152303,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 12,
+     "dx": -12,
+     "value": 0.008696084781650626,
+     "n": 13,
+     "second": 0.007155210417443714,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.135,
+     "share_exact": 0.135,
+     "lo": 0.000874512352882151,
+     "hi": 0.01297393254231562,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -3,
+     "value": 0.012006344196987762,
+     "n": 13,
+     "second": 0.00858844961175298,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.655,
+     "share_exact": 0.61,
+     "lo": 0.0055531013269704225,
+     "hi": 0.01864324178859395,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -11,
+     "dx": 8,
+     "value": 0.003946566822460751,
+     "n": 4,
+     "second": 0.0031050935613716746,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.105,
+     "share_exact": 0.105,
+     "lo": 0.0005668891084895767,
+     "hi": 0.009459015980483858,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 8,
+     "dx": 7,
+     "value": 0.00437090765421444,
+     "n": 6,
+     "second": 0.004076425589588761,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.13,
+     "share_exact": 0.13,
+     "lo": 0.0009478512580188756,
+     "hi": 0.007905285074288323,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -9,
+     "dx": 1,
+     "value": 0.0017886417008077249,
+     "n": 2,
+     "second": 0.0015119692422256303,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.145,
+     "share_exact": 0.04,
+     "lo": -0.0006766099425793925,
+     "hi": 0.005140135352640868,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -12,
+     "dx": -1,
+     "value": 0.0023346021339752943,
+     "n": 4,
+     "second": 0.002267351939155615,
+     "interior": false,
+     "share_any": 0.995,
+     "share_within1": 0.085,
+     "share_exact": 0.05,
+     "lo": 0.00024112938569749442,
+     "hi": 0.004389480418589229,
+     "usable": false
+    }
+   },
+   "truth": [
+    -4,
+    -3
+   ]
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), he nuclei",
+   "surface": "r4c3",
+   "bounds": [
+    2680,
+    3350,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 40960,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -7,
+     "dx": -3,
+     "value": 0.007952113069172206,
+     "n": 20,
+     "second": 0.007240369645848288,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.06,
+     "share_exact": 0.04,
+     "lo": 0.003685590276127898,
+     "hi": 0.01205988663971182,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": -12,
+     "value": 0.007919923676818819,
+     "n": 29,
+     "second": 0.007627502201722591,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.15,
+     "share_exact": 0.13,
+     "lo": 0.0014937087387793453,
+     "hi": 0.013737447141925681,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -1,
+     "value": 0.010201711906602018,
+     "n": 27,
+     "second": 0.007344656876494549,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.4,
+     "share_exact": 0.365,
+     "lo": 0.003173467014395354,
+     "hi": 0.016634877912673596,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.007856645110252858,
+     "n": 38,
+     "second": 0.007651869779257692,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.26,
+     "share_exact": 0.17,
+     "lo": -0.00033045541492938697,
+     "hi": 0.01393462491760448,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -9,
+     "value": 0.005156913013859565,
+     "n": 26,
+     "second": 0.0043783089115445595,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.01,
+     "share_exact": 0.01,
+     "lo": 0.0019930640380801615,
+     "hi": 0.0063482892590850356,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 10,
+     "dx": 8,
+     "value": 0.003312860732960221,
+     "n": 23,
+     "second": 0.0030398462962237804,
+     "interior": true,
+     "share_any": 0.99,
+     "share_within1": 0.02,
+     "share_exact": 0.015,
+     "lo": 0.0006690515597434112,
+     "hi": 0.005413735973606938,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -7,
+     "dx": 7,
+     "value": 0.003429419068395223,
+     "n": 15,
+     "second": 0.002929798917653992,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.135,
+     "share_exact": 0.135,
+     "lo": 0.00041355674106858815,
+     "hi": 0.00539564023157505,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -10,
+     "dx": 8,
+     "value": 0.0031895669585469966,
+     "n": 19,
+     "second": 0.0031677243582821646,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.115,
+     "share_exact": 0.11,
+     "lo": 0.0009856635207700444,
+     "hi": 0.0055016456205632565,
+     "usable": false
+    }
+   },
+   "truth": [
+    -3,
+    -3
+   ]
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), he nuclei",
+   "surface": "r4c4",
+   "bounds": [
+    2680,
+    3350,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 0,
+   "tested": false,
+   "truth": null
+  }
+ ]
+}

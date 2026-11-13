@@ -1,0 +1,67 @@
+{
+  "status": "complete",
+  "started_utc": "2026-11-05T00:00:38.657802+00:00",
+  "script_sha256": "3fe60037296f1d90ac0ffc86c198a2fd02b4971fc46f3b0a93a4b81341cd5be9",
+  "star_binary": "<local>/v1.12.2/glibc234/bin/STAR",
+  "star_sha256": "56eba373f3cdb167ce2ce645da40de9a9edf8ad08af586523770e410d203f519",
+  "star_version": "1.12.2",
+  "release_metadata": "VERSION=v1.12.2\nARCH=amd64\nCOMPAT_LABEL=glibc234\nGLIBC_BASELINE=2.34\nCOMMIT_SHA=2ca281c96f3dd2b9d596da1991b397fd05f9f73d\nBUILD_ENVIRONMENT=star-suite-release-build:ubuntu22\nASSET_NAME=STAR-suite-v1.12.2-linux-amd64-glibc234.tar.gz\n",
+  "official_fixtures": "<storage>/official_fixtures",
+  "output_root": "<storage>/spatial",
+  "cases": {
+    "crc_flex_2020a": {
+      "exit_code": 0,
+      "logged_command_source": "<storage>/official_fixtures/crc_flex_2020a/star/Log.out",
+      "logged_binary": "<storage>/official-glibc234/bin/STAR",
+      "expected_manifest": "<storage>/official_fixtures/crc_flex_2020a/mex.relative.sha256",
+      "expected_manifest_sha256": "37e6b9e65945355b1ad23460d898197a54ab9250fcaac8c5a03ac85647b321b6",
+      "components": 36,
+      "mex_root": "<storage>/spatial/crc_flex_2020a/star/SpatialFlex.out",
+      "observed_manifest_sha256": "37e6b9e65945355b1ad23460d898197a54ab9250fcaac8c5a03ac85647b321b6",
+      "identical": 36,
+      "verdict": "pass",
+      "differing_lines": []
+    },
+    "spatch_flex_2020a": {
+      "exit_code": 0,
+      "logged_command_source": "<storage>/official_fixtures/spatch_flex_2020a/star/Log.out",
+      "logged_binary": "<storage>/official-glibc234/bin/STAR",
+      "expected_manifest": "<storage>/official_fixtures/spatch_flex_2020a/mex.relative.sha256",
+      "expected_manifest_sha256": "a1ec054f3f635b38a36b2402157b488ded0ee6b28985fd057e1f10cd4cdcccbc",
+      "components": 36,
+      "mex_root": "<storage>/spatial/spatch_flex_2020a/star/SpatialFlex.out",
+      "observed_manifest_sha256": "a1ec054f3f635b38a36b2402157b488ded0ee6b28985fd057e1f10cd4cdcccbc",
+      "identical": 36,
+      "verdict": "pass",
+      "differing_lines": []
+    },
+    "spatch_flex_2024a": {
+      "exit_code": 0,
+      "logged_command_source": "<storage>/official_fixtures/spatch_flex_2024a/star/Log.out",
+      "logged_binary": "<storage>/official-glibc234/bin/STAR",
+      "expected_manifest": "<storage>/official_fixtures/spatch_flex_2024a/mex.relative.sha256",
+      "expected_manifest_sha256": "0d1a8926daeb3da97a92381d30737238302dbbf4cbc0027c4fde49b89b9a0496",
+      "components": 36,
+      "mex_root": "<storage>/spatial/spatch_flex_2024a/star/SpatialFlex.out",
+      "observed_manifest_sha256": "0d1a8926daeb3da97a92381d30737238302dbbf4cbc0027c4fde49b89b9a0496",
+      "identical": 36,
+      "verdict": "pass",
+      "differing_lines": []
+    },
+    "ovarian_gex_2024a_compat": {
+      "exit_code": 0,
+      "logged_command_source": "<storage>/official_fixtures/ovarian_gex_2024a_compat/starLog.out",
+      "logged_binary": "<storage>/official-glibc234/bin/STAR",
+      "expected_manifest": "<storage>/official_fixtures/ovarian_gex_2024a_compat/mex.relative.sha256",
+      "expected_manifest_sha256": "7e38980266b9de6001c668a0c2c572d536b56e28806833dc638114d3cbabdc87",
+      "components": 36,
+      "mex_root": "<storage>/spatial/ovarian_gex_2024a_compat/starSpatialGex.out",
+      "observed_manifest_sha256": "7e38980266b9de6001c668a0c2c572d536b56e28806833dc638114d3cbabdc87",
+      "identical": 36,
+      "verdict": "pass",
+      "differing_lines": []
+    }
+  },
+  "all_pass": true,
+  "finished_utc": "2026-11-05T00:03:33.367180+00:00"
+}

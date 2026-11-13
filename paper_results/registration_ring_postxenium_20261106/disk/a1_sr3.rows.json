@@ -1,0 +1,909 @@
+{
+ "placement": "a1_sr3",
+ "mask": "nuclei and ring of width 3 (f0 | f3)",
+ "harness": "<local>/paper_results/registration_ring_postxenium_20261106/ring/fpr.py",
+ "seed": 20261007,
+ "draws": 200,
+ "search": 12,
+ "radius": 13,
+ "inputs_sha256": {
+  "<runs>/20260716_vm2jxxk_natural_sr401_bam_v1/outs/binned_outputs/square_002um/raw_feature_bc_matrix.h5": "eaef4e80223cf74f474e07ef015c6daf6febc1eb3c7fbc4694e15891c9dde8ee",
+  "<runs>/20260718_vm2jxxk_ambiguous_biological_opportunity_auc_v1/masks/tissue_mask.bin": "861a9fab56a513670485281409fe0c791a48018d4ca6514fb22b17b3306b7c6d",
+  "<runs>/20261009_registration_subposition_amendment9_whole_v1/accepted_grid_labels.npy": "2a2c9092c69c3092dc9785a1f91fb6a8aa885e767545aad8753948f6fae6b123",
+  "<runs>/20261009_registration_subposition_amendment9_whole_v1/M0_surface.npy": "cad0e25db8470397d28f7c066038ab5ce5d9dca16cefc222968b14b75b1a5178",
+  "<runs>/20261009_registration_subposition_amendment9_whole_v1/whole_position_regions.npz": "adbddb4c24f04d185c990f5ba1c410c86ff368c2df9bac31903e2498482fe7cd"
+ },
+ "elapsed": 44.36277794837952,
+ "affinity": [
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15
+ ],
+ "rows": [
+  {
+   "set": "A1, SR 3.0.0 (GEO)",
+   "surface": "whole",
+   "bounds": [
+    0,
+    3350,
+    0,
+    3350
+   ],
+   "nucleus_in_tissue": 1941738,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": -2,
+     "value": 0.0014025107754958022,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.58,
+     "lo": 0.0010143549638300386,
+     "hi": 0.0017745096364087554,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "A1, SR 3.0.0 (GEO)",
+   "surface": "r0c0",
+   "bounds": [
+    0,
+    670,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 37616,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": -2,
+     "value": 0.005700532958476501,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.99,
+     "share_exact": 0.5,
+     "lo": 0.003500253599811709,
+     "hi": 0.00819150585199654,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "A1, SR 3.0.0 (GEO)",
+   "surface": "r0c1",
+   "bounds": [
+    0,
+    670,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 31152,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": -3,
+     "value": 0.008775064122116039,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.91,
+     "lo": 0.0055917970008162125,
+     "hi": 0.011497798907507434,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "A1, SR 3.0.0 (GEO)",
+   "surface": "r0c2",
+   "bounds": [
+    0,
+    670,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 39799,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": -2,
+     "value": 0.006956920805652578,
+     "n": 12,
+     "second": 0.0029085477619619216,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.99,
+     "share_exact": 0.74,
+     "lo": 0.004079038412720453,
+     "hi": 0.00903420284513789,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 5,
+     "dx": 9,
+     "value": 0.00316692935076901,
+     "n": 8,
+     "second": 0.002969527624882895,
+     "interior": true,
+     "share_any": 0.94,
+     "share_within1": 0.175,
+     "share_exact": 0.175,
+     "lo": 0.0003080188532957412,
+     "hi": 0.0042301963544094994,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "A1, SR 3.0.0 (GEO)",
+   "surface": "r0c3",
+   "bounds": [
+    0,
+    670,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 75019,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -3,
+     "value": 0.0020308712255989736,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.99,
+     "share_exact": 0.585,
+     "lo": 0.001040375090059087,
+     "hi": 0.0032127812088538436,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "A1, SR 3.0.0 (GEO)",
+   "surface": "r0c4",
+   "bounds": [
+    0,
+    670,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 119034,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": -2,
+     "value": 0.000828721691056522,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.345,
+     "share_exact": 0.085,
+     "lo": -0.0003034485893816746,
+     "hi": 0.0016680400613214188,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "A1, SR 3.0.0 (GEO)",
+   "surface": "r1c0",
+   "bounds": [
+    670,
+    1340,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 98695,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -2,
+     "value": 0.002804098844563896,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.975,
+     "share_exact": 0.645,
+     "lo": 0.00197919317945619,
+     "hi": 0.0042226429550987045,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "A1, SR 3.0.0 (GEO)",
+   "surface": "r1c1",
+   "bounds": [
+    670,
+    1340,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 122305,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -2,
+     "value": 0.0029375759015422,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.98,
+     "share_exact": 0.395,
+     "lo": 0.0015853100471351245,
+     "hi": 0.0035330188046983845,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "A1, SR 3.0.0 (GEO)",
+   "surface": "r1c2",
+   "bounds": [
+    670,
+    1340,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 80082,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": -3,
+     "value": 0.0030101553008625714,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.96,
+     "share_exact": 0.58,
+     "lo": 0.0009255526388815439,
+     "hi": 0.004703271278901716,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "A1, SR 3.0.0 (GEO)",
+   "surface": "r1c3",
+   "bounds": [
+    670,
+    1340,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 106860,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -2,
+     "value": 0.0019539840261895147,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.455,
+     "share_exact": 0.3,
+     "lo": 0.0012645919899761493,
+     "hi": 0.0028466945975316794,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "A1, SR 3.0.0 (GEO)",
+   "surface": "r1c4",
+   "bounds": [
+    670,
+    1340,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 139087,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 5,
+     "dx": 5,
+     "value": 0.0011357808776621958,
+     "n": 18,
+     "second": 0.0009834190193194203,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.02,
+     "share_exact": 0.02,
+     "lo": 5.68674384137824e-05,
+     "hi": 0.002061643994471785,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 1,
+     "dx": 0,
+     "value": 0.0012316160441040447,
+     "n": 18,
+     "second": 0.0010166954705412845,
+     "interior": true,
+     "share_any": 0.99,
+     "share_within1": 0.09,
+     "share_exact": 0.085,
+     "lo": 0.00022921441197882033,
+     "hi": 0.0021407598706651354,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "A1, SR 3.0.0 (GEO)",
+   "surface": "r2c0",
+   "bounds": [
+    1340,
+    2010,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 100144,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -2,
+     "value": 0.001817561380383026,
+     "n": 2,
+     "second": 0.00040344196013619715,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.875,
+     "share_exact": 0.43,
+     "lo": 0.0004883239995189582,
+     "hi": 0.002805707043018219,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "A1, SR 3.0.0 (GEO)",
+   "surface": "r2c1",
+   "bounds": [
+    1340,
+    2010,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 85232,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -2,
+     "value": 0.001675823911737373,
+     "n": 4,
+     "second": 0.000594779076033225,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.68,
+     "share_exact": 0.275,
+     "lo": 0.0003944495169151685,
+     "hi": 0.002999434707610449,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 11,
+     "dx": 3,
+     "value": 0.00025175091265039473,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.94,
+     "share_within1": 0.03,
+     "share_exact": 0.01,
+     "lo": -0.000525876477028303,
+     "hi": 0.0011288666153056327,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "A1, SR 3.0.0 (GEO)",
+   "surface": "r2c2",
+   "bounds": [
+    1340,
+    2010,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 106617,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -3,
+     "value": 0.0019443247463672986,
+     "n": 4,
+     "second": 0.0007522266589183868,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.795,
+     "share_exact": 0.505,
+     "lo": 0.0007092397447876377,
+     "hi": 0.002886301582666595,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 9,
+     "dx": -2,
+     "value": 0.00045839723008433975,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.735,
+     "share_within1": 0.12,
+     "share_exact": 0.06,
+     "lo": -0.0005879207247937611,
+     "hi": 0.0016865950903268703,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "A1, SR 3.0.0 (GEO)",
+   "surface": "r2c3",
+   "bounds": [
+    1340,
+    2010,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 131324,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 4,
+     "value": 0.0011682001844983692,
+     "n": 2,
+     "second": 0.001072537311870736,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.31,
+     "share_exact": 0.24,
+     "lo": 0.00012868833671933483,
+     "hi": 0.002425473859776556,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "A1, SR 3.0.0 (GEO)",
+   "surface": "r2c4",
+   "bounds": [
+    1340,
+    2010,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 97640,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": -3,
+     "value": 0.0019113063231186445,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.87,
+     "share_exact": 0.42,
+     "lo": 0.0003540435051424485,
+     "hi": 0.003391902348855658,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "A1, SR 3.0.0 (GEO)",
+   "surface": "r3c0",
+   "bounds": [
+    2010,
+    2680,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 78200,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": -2,
+     "value": 0.002907122105394677,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.97,
+     "share_exact": 0.87,
+     "lo": 0.0015048373256510929,
+     "hi": 0.003932859833559677,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "A1, SR 3.0.0 (GEO)",
+   "surface": "r3c1",
+   "bounds": [
+    2010,
+    2680,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 90754,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": -2,
+     "value": 0.0014409145971616688,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.63,
+     "share_exact": 0.235,
+     "lo": 0.00017834573103632238,
+     "hi": 0.0023607833822842208,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "A1, SR 3.0.0 (GEO)",
+   "surface": "r3c2",
+   "bounds": [
+    2010,
+    2680,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 93653,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": -2,
+     "value": 0.001964061929498939,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.925,
+     "share_exact": 0.455,
+     "lo": 0.0006288022456241772,
+     "hi": 0.0032584142298182355,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "A1, SR 3.0.0 (GEO)",
+   "surface": "r3c3",
+   "bounds": [
+    2010,
+    2680,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 141262,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": -4,
+     "value": 0.0010575028679586929,
+     "n": 2,
+     "second": 0.0010159239210616455,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.28,
+     "share_exact": 0.185,
+     "lo": 5.900048493148739e-06,
+     "hi": 0.0016532590175583786,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 12,
+     "dx": -12,
+     "value": 0.0007313566206370581,
+     "n": 1,
+     "second": null,
+     "interior": false,
+     "share_any": 0.785,
+     "share_within1": 0.155,
+     "share_exact": 0.14,
+     "lo": -3.083941944942984e-05,
+     "hi": 0.0018200952594563309,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "A1, SR 3.0.0 (GEO)",
+   "surface": "r3c4",
+   "bounds": [
+    2010,
+    2680,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 104987,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": -3,
+     "value": 0.001164391079843785,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.6,
+     "share_exact": 0.365,
+     "lo": 0.0005222160238712526,
+     "hi": 0.0023817493584354366,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "A1, SR 3.0.0 (GEO)",
+   "surface": "r4c0",
+   "bounds": [
+    2680,
+    3350,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 0,
+   "tested": false
+  },
+  {
+   "set": "A1, SR 3.0.0 (GEO)",
+   "surface": "r4c1",
+   "bounds": [
+    2680,
+    3350,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 0,
+   "tested": false
+  },
+  {
+   "set": "A1, SR 3.0.0 (GEO)",
+   "surface": "r4c2",
+   "bounds": [
+    2680,
+    3350,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 14460,
+   "tested": false
+  },
+  {
+   "set": "A1, SR 3.0.0 (GEO)",
+   "surface": "r4c3",
+   "bounds": [
+    2680,
+    3350,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 33819,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.0012166466437411039,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.385,
+     "share_exact": 0.09,
+     "lo": 0.00023085993882823733,
+     "hi": 0.0029352679496554516,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "A1, SR 3.0.0 (GEO)",
+   "surface": "r4c4",
+   "bounds": [
+    2680,
+    3350,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 13997,
+   "tested": false
+  }
+ ]
+}

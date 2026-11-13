@@ -1,0 +1,927 @@
+{
+ "placement": "expt2:cpsam",
+ "mask": "nuclei and ring of width 3 (f0 | f3)",
+ "harness": "<runs>/20261106_post_xenium_lung_expt2_v1/scripts/fpr.py",
+ "seed": 20261007,
+ "draws": 200,
+ "search": 12,
+ "radius": 13,
+ "inputs_sha256": {
+  "<runs>/20261106_post_xenium_lung_expt2_v1/work/cli/counts.npz": "6f28e5b415eb33c4d430b6b29e2dcb691e86759017a115abbdd243316b2da32f",
+  "<runs>/20261106_post_xenium_lung_expt2_v1/work/cli/support.npz": "be049ebf69554967f846b98157db8a179126dc1c59de667820614afd8959ce67",
+  "<runs>/20261110_lung_cellpose_sam_v1/grids/expt2.npz": "e21f04c501e50c30b4c77a33dfb2a055f1708ee01b55a1ab0310eaaa7f93621f"
+ },
+ "elapsed": 13.463629722595215,
+ "affinity": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  12,
+  13,
+  14,
+  15
+ ],
+ "rows": [
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), Cellpose-SAM H&E nuclei",
+   "surface": "whole",
+   "bounds": [
+    0,
+    3350,
+    0,
+    3350
+   ],
+   "nucleus_in_tissue": 1643859,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.0030012877170606522,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.0025303533698669057,
+     "hi": 0.003311791976234113,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "truth": [
+    -4,
+    -2
+   ]
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), Cellpose-SAM H&E nuclei",
+   "surface": "r0c0",
+   "bounds": [
+    0,
+    670,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 0,
+   "tested": false,
+   "truth": null
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), Cellpose-SAM H&E nuclei",
+   "surface": "r0c1",
+   "bounds": [
+    0,
+    670,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 9656,
+   "tested": false,
+   "truth": null
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), Cellpose-SAM H&E nuclei",
+   "surface": "r0c2",
+   "bounds": [
+    0,
+    670,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 97340,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.0042278812236882235,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.98,
+     "share_exact": 0.78,
+     "lo": 0.001906164922387188,
+     "hi": 0.006213736660963559,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "truth": [
+    -4,
+    -1
+   ]
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), Cellpose-SAM H&E nuclei",
+   "surface": "r0c3",
+   "bounds": [
+    0,
+    670,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 75431,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -1,
+     "value": 0.004331390785054623,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.99,
+     "share_exact": 0.54,
+     "lo": 0.0018375233663681934,
+     "hi": 0.005858982853088746,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "truth": [
+    -3,
+    -1
+   ]
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), Cellpose-SAM H&E nuclei",
+   "surface": "r0c4",
+   "bounds": [
+    0,
+    670,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 0,
+   "tested": false,
+   "truth": null
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), Cellpose-SAM H&E nuclei",
+   "surface": "r1c0",
+   "bounds": [
+    670,
+    1340,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 3607,
+   "tested": false,
+   "truth": null
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), Cellpose-SAM H&E nuclei",
+   "surface": "r1c1",
+   "bounds": [
+    670,
+    1340,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 63663,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": 0,
+     "value": 0.0033025602585032843,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.695,
+     "share_exact": 0.31,
+     "lo": 0.0007856813552024778,
+     "hi": 0.005708880855146271,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "truth": [
+    -4,
+    -2
+   ]
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), Cellpose-SAM H&E nuclei",
+   "surface": "r1c2",
+   "bounds": [
+    670,
+    1340,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 152184,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -1,
+     "value": 0.002572195092502394,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.955,
+     "share_exact": 0.46,
+     "lo": 0.0007900076831651226,
+     "hi": 0.004647614596897598,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 11,
+     "dx": 9,
+     "value": 0.0005399925709632658,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.555,
+     "share_within1": 0.13,
+     "share_exact": 0.03,
+     "lo": -0.0006787754632467169,
+     "hi": 0.0017447000173997005,
+     "usable": false
+    }
+   },
+   "truth": [
+    -4,
+    -2
+   ]
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), Cellpose-SAM H&E nuclei",
+   "surface": "r1c3",
+   "bounds": [
+    670,
+    1340,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 90577,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -1,
+     "value": 0.003070517160713715,
+     "n": 2,
+     "second": 0.0011064649901260104,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.81,
+     "share_exact": 0.385,
+     "lo": 0.0006699638170393985,
+     "hi": 0.004734286366978669,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 10,
+     "dx": 8,
+     "value": 0.0012664240493778234,
+     "n": 2,
+     "second": 0.0009018952749410003,
+     "interior": true,
+     "share_any": 0.855,
+     "share_within1": 0.195,
+     "share_exact": 0.05,
+     "lo": -0.0006197632144301411,
+     "hi": 0.003075925167473595,
+     "usable": false
+    }
+   },
+   "truth": [
+    -3,
+    -2
+   ]
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), Cellpose-SAM H&E nuclei",
+   "surface": "r1c4",
+   "bounds": [
+    670,
+    1340,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 0,
+   "tested": false,
+   "truth": null
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), Cellpose-SAM H&E nuclei",
+   "surface": "r2c0",
+   "bounds": [
+    1340,
+    2010,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 101080,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.004524395045665486,
+     "n": 3,
+     "second": 0.0008928527336138359,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.99,
+     "share_exact": 0.445,
+     "lo": 0.0028942625088496875,
+     "hi": 0.005605310243918438,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 7,
+     "dx": -11,
+     "value": 0.00038552534859781495,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.56,
+     "share_within1": 0.12,
+     "share_exact": 0.075,
+     "lo": -0.0006881943344293984,
+     "hi": 0.0023339752957024047,
+     "usable": false
+    }
+   },
+   "truth": [
+    -5,
+    -2
+   ]
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), Cellpose-SAM H&E nuclei",
+   "surface": "r2c1",
+   "bounds": [
+    1340,
+    2010,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 106426,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.005342365538990368,
+     "n": 8,
+     "second": 0.0010111321396719664,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.995,
+     "share_exact": 0.91,
+     "lo": 0.004100984242266403,
+     "hi": 0.006826483573870073,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 7,
+     "dx": 10,
+     "value": 0.0013040268652467768,
+     "n": 9,
+     "second": 0.001285815110056765,
+     "interior": true,
+     "share_any": 0.985,
+     "share_within1": 0.07,
+     "share_exact": 0.065,
+     "lo": 0.000202018193531181,
+     "hi": 0.0024754183856391058,
+     "usable": false
+    }
+   },
+   "truth": [
+    -4,
+    -2
+   ]
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), Cellpose-SAM H&E nuclei",
+   "surface": "r2c2",
+   "bounds": [
+    1340,
+    2010,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 105148,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -3,
+     "value": 0.004691062440901561,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.81,
+     "share_exact": 0.365,
+     "lo": 0.0025606037072472,
+     "hi": 0.005970395429705961,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "truth": [
+    -4,
+    -2
+   ]
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), Cellpose-SAM H&E nuclei",
+   "surface": "r2c3",
+   "bounds": [
+    1340,
+    2010,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 85289,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -2,
+     "value": 0.00206604137634514,
+     "n": 2,
+     "second": 0.0008821678056423199,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.755,
+     "share_exact": 0.435,
+     "lo": 0.0010220776077018935,
+     "hi": 0.0032778269652672058,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 11,
+     "dx": -12,
+     "value": 0.001506556798228753,
+     "n": 2,
+     "second": 0.0014108680598103884,
+     "interior": false,
+     "share_any": 0.905,
+     "share_within1": 0.24,
+     "share_exact": 0.2,
+     "lo": 0.0002021468423705819,
+     "hi": 0.0029763335878287673,
+     "usable": false
+    }
+   },
+   "truth": [
+    -3,
+    -2
+   ]
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), Cellpose-SAM H&E nuclei",
+   "surface": "r2c4",
+   "bounds": [
+    1340,
+    2010,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 0,
+   "tested": false,
+   "truth": null
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), Cellpose-SAM H&E nuclei",
+   "surface": "r3c0",
+   "bounds": [
+    2010,
+    2680,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 153508,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -3,
+     "value": 0.0056831695469539145,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.94,
+     "lo": 0.004385534199399322,
+     "hi": 0.006973862292869004,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "truth": [
+    -4,
+    -3
+   ]
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), Cellpose-SAM H&E nuclei",
+   "surface": "r3c1",
+   "bounds": [
+    2010,
+    2680,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 104783,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": -3,
+     "value": 0.004702068243906288,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.985,
+     "share_exact": 0.78,
+     "lo": 0.0033623660185090666,
+     "hi": 0.006309415563965926,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "truth": [
+    -4,
+    -3
+   ]
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), Cellpose-SAM H&E nuclei",
+   "surface": "r3c2",
+   "bounds": [
+    2010,
+    2680,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 100021,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": -2,
+     "value": 0.0020676101684566905,
+     "n": 8,
+     "second": 0.0013078482084039056,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.265,
+     "share_exact": 0.15,
+     "lo": 0.00021202053262290855,
+     "hi": 0.0035812665672611712,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 3,
+     "dx": 11,
+     "value": 0.0021315242550555835,
+     "n": 4,
+     "second": 0.0016914732886327277,
+     "interior": true,
+     "share_any": 0.965,
+     "share_within1": 0.33,
+     "share_exact": 0.3,
+     "lo": 0.0009068616764304815,
+     "hi": 0.0031219585065232094,
+     "usable": false
+    }
+   },
+   "truth": [
+    -4,
+    -2
+   ]
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), Cellpose-SAM H&E nuclei",
+   "surface": "r3c3",
+   "bounds": [
+    2010,
+    2680,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 54917,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.0024421079118459588,
+     "n": 4,
+     "second": 0.0013657967626345968,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.22,
+     "share_exact": 0.06,
+     "lo": 0.000520385957783398,
+     "hi": 0.0035189819105020614,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 3,
+     "dx": -12,
+     "value": 0.002990576828493907,
+     "n": 10,
+     "second": 0.00240384051999043,
+     "interior": false,
+     "share_any": 0.985,
+     "share_within1": 0.04,
+     "share_exact": 0.04,
+     "lo": 0.0005911560936772726,
+     "hi": 0.004274246240538446,
+     "usable": false
+    }
+   },
+   "truth": [
+    -3,
+    -2
+   ]
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), Cellpose-SAM H&E nuclei",
+   "surface": "r3c4",
+   "bounds": [
+    2010,
+    2680,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 0,
+   "tested": false,
+   "truth": null
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), Cellpose-SAM H&E nuclei",
+   "surface": "r4c0",
+   "bounds": [
+    2680,
+    3350,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 113600,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -3,
+     "value": 0.004113354887879339,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.98,
+     "share_exact": 0.65,
+     "lo": 0.002072809271369469,
+     "hi": 0.0055572070856547695,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "truth": [
+    -4,
+    -3
+   ]
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), Cellpose-SAM H&E nuclei",
+   "surface": "r4c1",
+   "bounds": [
+    2680,
+    3350,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 98650,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -2,
+     "value": 0.003070230953622799,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.69,
+     "share_exact": 0.3,
+     "lo": 0.0010590935569975257,
+     "hi": 0.00509175939807629,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "truth": [
+    -4,
+    -3
+   ]
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), Cellpose-SAM H&E nuclei",
+   "surface": "r4c2",
+   "bounds": [
+    2680,
+    3350,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 78183,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -6,
+     "dx": 0,
+     "value": 0.0034056824122137286,
+     "n": 2,
+     "second": 0.0017990916906707177,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.35,
+     "share_exact": 0.265,
+     "lo": 0.00081513553912963,
+     "hi": 0.004472744988443983,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -12,
+     "dx": 2,
+     "value": 0.0007610558788664346,
+     "n": 1,
+     "second": null,
+     "interior": false,
+     "share_any": 0.82,
+     "share_within1": 0.075,
+     "share_exact": 0.06,
+     "lo": -8.786139374679091e-05,
+     "hi": 0.0019825840654430437,
+     "usable": false
+    }
+   },
+   "truth": [
+    -4,
+    -3
+   ]
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), Cellpose-SAM H&E nuclei",
+   "surface": "r4c3",
+   "bounds": [
+    2680,
+    3350,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 49796,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -3,
+     "value": 0.0022563458726543306,
+     "n": 5,
+     "second": 0.0014031637956053444,
+     "interior": true,
+     "share_any": 0.99,
+     "share_within1": 0.045,
+     "share_exact": 0.025,
+     "lo": 0.000663720832492093,
+     "hi": 0.0031259017096404995,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 5,
+     "dx": 8,
+     "value": 0.0020795499231914816,
+     "n": 5,
+     "second": 0.0015769511067625919,
+     "interior": true,
+     "share_any": 0.92,
+     "share_within1": 0.245,
+     "share_exact": 0.215,
+     "lo": 0.00047366648543155663,
+     "hi": 0.004031844712400008,
+     "usable": false
+    }
+   },
+   "truth": [
+    -3,
+    -3
+   ]
+  },
+  {
+   "set": "post-Xenium Prime 5K lung (Expt 2), Cellpose-SAM H&E nuclei",
+   "surface": "r4c4",
+   "bounds": [
+    2680,
+    3350,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 0,
+   "tested": false,
+   "truth": null
+  }
+ ]
+}

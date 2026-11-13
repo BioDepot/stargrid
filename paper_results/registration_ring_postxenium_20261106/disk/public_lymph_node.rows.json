@@ -1,0 +1,587 @@
+{
+ "placement": "public:lymph_node",
+ "mask": "nuclei and ring of width 3 (f0 | f3)",
+ "harness": "<local>/paper_results/registration_ring_postxenium_20261106/ring/fpr.py",
+ "seed": 20261007,
+ "draws": 200,
+ "search": 12,
+ "radius": 13,
+ "inputs_sha256": {
+  "<datasets>/visium_hd_sr401_lymph_node/square_002um/raw_feature_bc_matrix.h5": "ad967bb0ee560d876d807ba86208113936fa028b2f2b61c2fcc1810138e6857a",
+  "<datasets>/visium_hd_sr401_lymph_node/square_002um/spatial/tissue_positions.parquet": "5a463ff3d55f1e05f361ae50c6997312aaa3a4a90e5e86747feabe12898d8216",
+  "<datasets>/visium_hd_sr401_lymph_node/Visium_HD_Human_Lymph_Node_FFPE_barcode_mappings.parquet": "ddca219cbbfd2a918dac00b8c4c09884c4b4d314ad5be6557b0173e7a7293b60"
+ },
+ "elapsed": 79.34834742546082,
+ "affinity": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7
+ ],
+ "rows": [
+  {
+   "set": "public lymph_node",
+   "surface": "whole",
+   "bounds": [
+    0,
+    3350,
+    0,
+    3350
+   ],
+   "nucleus_in_tissue": 1484444,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    },
+    "dip": {
+     "found": true,
+     "dy": 3,
+     "dx": 2,
+     "value": 0.00032424379779694146,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.78,
+     "share_exact": 0.255,
+     "lo": 3.118654980442948e-05,
+     "hi": 0.0007260640809185955,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "public lymph_node",
+   "surface": "r0c0",
+   "bounds": [
+    0,
+    670,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 0,
+   "tested": false
+  },
+  {
+   "set": "public lymph_node",
+   "surface": "r0c1",
+   "bounds": [
+    0,
+    670,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 27,
+   "tested": false
+  },
+  {
+   "set": "public lymph_node",
+   "surface": "r0c2",
+   "bounds": [
+    0,
+    670,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 77,
+   "tested": false
+  },
+  {
+   "set": "public lymph_node",
+   "surface": "r0c3",
+   "bounds": [
+    0,
+    670,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 75109,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "public lymph_node",
+   "surface": "r0c4",
+   "bounds": [
+    0,
+    670,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 65497,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": -3,
+     "value": 0.00046023899629643594,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.635,
+     "share_within1": 0.1,
+     "share_exact": 0.025,
+     "lo": -0.0009394602001921381,
+     "hi": 0.0026757185086899726,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "public lymph_node",
+   "surface": "r1c0",
+   "bounds": [
+    670,
+    1340,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 634,
+   "tested": false
+  },
+  {
+   "set": "public lymph_node",
+   "surface": "r1c1",
+   "bounds": [
+    670,
+    1340,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 29779,
+   "tested": false
+  },
+  {
+   "set": "public lymph_node",
+   "surface": "r1c2",
+   "bounds": [
+    670,
+    1340,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 196561,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "public lymph_node",
+   "surface": "r1c3",
+   "bounds": [
+    670,
+    1340,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 34499,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "public lymph_node",
+   "surface": "r1c4",
+   "bounds": [
+    670,
+    1340,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 20304,
+   "tested": false
+  },
+  {
+   "set": "public lymph_node",
+   "surface": "r2c0",
+   "bounds": [
+    1340,
+    2010,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 8322,
+   "tested": false
+  },
+  {
+   "set": "public lymph_node",
+   "surface": "r2c1",
+   "bounds": [
+    1340,
+    2010,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 64895,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": 3,
+     "value": 0.0002602192414231652,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.605,
+     "share_within1": 0.11,
+     "share_exact": 0.07,
+     "lo": -0.0004955563113911875,
+     "hi": 0.005176494294986574,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "public lymph_node",
+   "surface": "r2c2",
+   "bounds": [
+    1340,
+    2010,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 264012,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": 10,
+     "dx": -5,
+     "value": 0.0008111728547237629,
+     "n": 14,
+     "second": 0.0007482801744165268,
+     "interior": true,
+     "share_any": 0.96,
+     "share_within1": 0.07,
+     "share_exact": 0.07,
+     "lo": 0.00018024131502134,
+     "hi": 0.0016923048919569251,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": 0,
+     "value": 0.0009369003440413692,
+     "n": 14,
+     "second": 0.0007766525496974985,
+     "interior": true,
+     "share_any": 0.95,
+     "share_within1": 0.075,
+     "share_exact": 0.05,
+     "lo": 8.944669242033939e-07,
+     "hi": 0.001578033963756273,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "public lymph_node",
+   "surface": "r2c3",
+   "bounds": [
+    1340,
+    2010,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 23820,
+   "tested": false
+  },
+  {
+   "set": "public lymph_node",
+   "surface": "r2c4",
+   "bounds": [
+    1340,
+    2010,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 15998,
+   "tested": false
+  },
+  {
+   "set": "public lymph_node",
+   "surface": "r3c0",
+   "bounds": [
+    2010,
+    2680,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 8053,
+   "tested": false
+  },
+  {
+   "set": "public lymph_node",
+   "surface": "r3c1",
+   "bounds": [
+    2010,
+    2680,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 138228,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "public lymph_node",
+   "surface": "r3c2",
+   "bounds": [
+    2010,
+    2680,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 273635,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -5,
+     "value": 0.001232354993007112,
+     "n": 45,
+     "second": 0.0010595227189242884,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.19,
+     "share_exact": 0.19,
+     "lo": 0.00048560866988706103,
+     "hi": 0.0019681792737968272,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 10,
+     "dx": 0,
+     "value": 0.0009240651990748416,
+     "n": 42,
+     "second": 0.0009229523729151756,
+     "interior": true,
+     "share_any": 0.99,
+     "share_within1": 0.105,
+     "share_exact": 0.09,
+     "lo": 0.00019557291493120245,
+     "hi": 0.0015013853606068613,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "public lymph_node",
+   "surface": "r3c3",
+   "bounds": [
+    2010,
+    2680,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 24116,
+   "tested": false
+  },
+  {
+   "set": "public lymph_node",
+   "surface": "r3c4",
+   "bounds": [
+    2010,
+    2680,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 11775,
+   "tested": false
+  },
+  {
+   "set": "public lymph_node",
+   "surface": "r4c0",
+   "bounds": [
+    2680,
+    3350,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 3508,
+   "tested": false
+  },
+  {
+   "set": "public lymph_node",
+   "surface": "r4c1",
+   "bounds": [
+    2680,
+    3350,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 78736,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    },
+    "dip": {
+     "found": true,
+     "dy": 5,
+     "dx": -9,
+     "value": 0.002261154644271901,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.8,
+     "share_within1": 0.25,
+     "share_exact": 0.215,
+     "lo": -0.00021135454504287436,
+     "hi": 0.0044611664318367356,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "public lymph_node",
+   "surface": "r4c2",
+   "bounds": [
+    2680,
+    3350,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 143580,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    },
+    "dip": {
+     "found": true,
+     "dy": 5,
+     "dx": 8,
+     "value": 0.0006928220290245424,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.755,
+     "share_within1": 0.08,
+     "share_exact": 0.055,
+     "lo": -0.0003230940931068793,
+     "hi": 0.0021935899762655117,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "public lymph_node",
+   "surface": "r4c3",
+   "bounds": [
+    2680,
+    3350,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 1909,
+   "tested": false
+  },
+  {
+   "set": "public lymph_node",
+   "surface": "r4c4",
+   "bounds": [
+    2680,
+    3350,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 1370,
+   "tested": false
+  }
+ ]
+}

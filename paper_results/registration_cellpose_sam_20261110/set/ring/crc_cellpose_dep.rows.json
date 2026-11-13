@@ -1,0 +1,3147 @@
+{
+ "placement": "crc_cellpose_dep",
+ "counts": "star",
+ "label": "Colorectal, Cellpose-SAM, deposited SR 4.1.0",
+ "expansions": [
+  0,
+  1,
+  2,
+  3
+ ],
+ "seed": 20261007,
+ "draws": 200,
+ "search": 12,
+ "radius": 13,
+ "inputs_sha256": {
+  "<datasets>/visium_hd_human_crc/processed_4.1.0_outs/binned_outputs/square_002um/spatial/tissue_positions.parquet": "198c6bfaade531af77c58150a558681e73a8d5dbaac1759e5bfda7deae64ea69",
+  "<runs>/20260930_crc_calibration_inputs_v1/square_totals.npz": "7dee08cdc3bd2b7ba76b608b9365cb21c0460e720d38f8698f6890b12c8cf147",
+  "<runs>/20261110_registration_cellpose_sam_v1/crc_cellpose_dep/accepted_grid_labels.npy": "aa482fee06b68d3b7db3bba281ac2cde743c9392af5a09937fcd7a7d3e97c44e"
+ },
+ "elapsed": 54.834386587142944,
+ "affinity": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  12,
+  13,
+  14,
+  15
+ ],
+ "rows": [
+  {
+   "set": "Colorectal, Cellpose-SAM, deposited SR 4.1.0",
+   "surface": "whole",
+   "bounds": [
+    0,
+    3350,
+    0,
+    3350
+   ],
+   "nucleus_in_tissue": 1753937,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 3,
+     "dx": -1,
+     "value": 0.006891881077514483,
+     "n": 3,
+     "second": 0.0036894673520506682,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.725,
+     "share_exact": 0.625,
+     "lo": 0.0057128987502838065,
+     "hi": 0.0077621796778883975,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.03260134449812602,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.031068312414648136,
+     "hi": 0.034245950781358336,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.00416555668093932,
+     "n": 4,
+     "second": 0.0020484186749729627,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.81,
+     "lo": 0.003174339172226215,
+     "hi": 0.005612839372408707,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 1,
+     "dx": -2,
+     "value": 0.001463956762828511,
+     "n": 2,
+     "second": 0.0012406263799445982,
+     "interior": true,
+     "share_any": 0.945,
+     "share_within1": 0.585,
+     "share_exact": 0.31,
+     "lo": 0.0009249228119217079,
+     "hi": 0.0024205172644190397,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.020893836444300762,
+     "n": 4,
+     "second": 0.0011538261481327527,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.019807765151621314,
+     "hi": 0.0216080688012651,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": -3,
+     "value": 0.0011359275295581561,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.885,
+     "share_within1": 0.665,
+     "share_exact": 0.385,
+     "lo": 0.0005206578381772742,
+     "hi": 0.002146771626862623,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.01859669574182199,
+     "n": 3,
+     "second": 0.0009091723248548789,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.01785893157757356,
+     "hi": 0.019274889045458758,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": -4,
+     "value": 0.00046475895761499686,
+     "n": 2,
+     "second": 0.00043374201595025585,
+     "interior": true,
+     "share_any": 0.775,
+     "share_within1": 0.085,
+     "share_exact": 0.055,
+     "lo": 4.354911863998224e-05,
+     "hi": 0.0008389629366297171,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, deposited SR 4.1.0",
+   "surface": "r0c0",
+   "bounds": [
+    0,
+    670,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 60494,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": -3,
+     "value": 0.0075055584496985794,
+     "n": 3,
+     "second": 0.0060844282405552175,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.445,
+     "share_exact": 0.43,
+     "lo": 0.004652506423540625,
+     "hi": 0.010613426944180783,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -1,
+     "dx": 0,
+     "value": 0.020637780280562623,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.84,
+     "lo": 0.015300778252404498,
+     "hi": 0.02570237788976123,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -2,
+     "value": 0.004914945268332582,
+     "n": 4,
+     "second": 0.003663322296028948,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.275,
+     "share_exact": 0.155,
+     "lo": 0.0017337616465668783,
+     "hi": 0.008214795487844567,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.012060193174711187,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.965,
+     "share_exact": 0.705,
+     "lo": 0.006448383089056728,
+     "hi": 0.017572449087193933,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.011133621379438186,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.63,
+     "lo": 0.008127523286553157,
+     "hi": 0.016075850719819085,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.013016185271409686,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.625,
+     "lo": 0.010212758227097229,
+     "hi": 0.016566659969406188,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, deposited SR 4.1.0",
+   "surface": "r0c1",
+   "bounds": [
+    0,
+    670,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 49581,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": -3,
+     "value": 0.006224858312136261,
+     "n": 2,
+     "second": 0.005070328145860836,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.305,
+     "share_exact": 0.23,
+     "lo": 0.0018836257206497288,
+     "hi": 0.011587825310297473,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.02783519928052469,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.87,
+     "lo": 0.0204864249035643,
+     "hi": 0.033532741758562634,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 3,
+     "dx": -2,
+     "value": 0.01273260401194598,
+     "n": 7,
+     "second": 0.008235383771076688,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.27,
+     "share_exact": 0.265,
+     "lo": 0.0068547699342288385,
+     "hi": 0.015309279563096474,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 2,
+     "dx": 0,
+     "value": 0.005289293225970826,
+     "n": 4,
+     "second": 0.004565613179996819,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.15,
+     "share_exact": 0.145,
+     "lo": -0.0005608575578605057,
+     "hi": 0.012037681893138773,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.01883600732333246,
+     "n": 5,
+     "second": 0.0030048634929065177,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.74,
+     "lo": 0.011240290978168671,
+     "hi": 0.02814763279110401,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": -3,
+     "value": 0.0031451253590125683,
+     "n": 3,
+     "second": 0.0018335050122171292,
+     "interior": true,
+     "share_any": 0.94,
+     "share_within1": 0.275,
+     "share_exact": 0.185,
+     "lo": 0.0005822849428757049,
+     "hi": 0.006939010661047082,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.016552472023016573,
+     "n": 4,
+     "second": 0.0025367469719834723,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.895,
+     "lo": 0.01308919310092685,
+     "hi": 0.021985464029290656,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -1,
+     "dx": -3,
+     "value": 0.0028521270857851944,
+     "n": 2,
+     "second": 0.00155509060322645,
+     "interior": true,
+     "share_any": 0.875,
+     "share_within1": 0.275,
+     "share_exact": 0.17,
+     "lo": 0.0003164376575968381,
+     "hi": 0.0072126880628965995,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, deposited SR 4.1.0",
+   "surface": "r0c2",
+   "bounds": [
+    0,
+    670,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 59357,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 2,
+     "dx": 3,
+     "value": 0.006606792159456365,
+     "n": 4,
+     "second": 0.005836722024433527,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.155,
+     "share_exact": 0.135,
+     "lo": 0.003788432273546638,
+     "hi": 0.01043908978593271,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.04182336287564592,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.955,
+     "lo": 0.03258755498821557,
+     "hi": 0.053779281285449385,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 0,
+     "value": 0.009845702039738002,
+     "n": 14,
+     "second": 0.007574124074108068,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.57,
+     "share_exact": 0.53,
+     "lo": 0.005445828759892086,
+     "hi": 0.013943939852037119,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 2,
+     "dx": 1,
+     "value": 0.006886670909739823,
+     "n": 8,
+     "second": 0.00489347032229881,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.27,
+     "share_exact": 0.22,
+     "lo": 0.0035256593689620727,
+     "hi": 0.009446609351847778,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.02677694127080099,
+     "n": 9,
+     "second": 0.0035579143578250427,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.735,
+     "lo": 0.021691167629364856,
+     "hi": 0.030976353639346192,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": -3,
+     "value": 0.004542749026223203,
+     "n": 5,
+     "second": 0.002807626508286698,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.28,
+     "share_exact": 0.24,
+     "lo": 0.0008769407423525555,
+     "hi": 0.0073155827730181314,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.02408531764252353,
+     "n": 4,
+     "second": 0.0012040339026893054,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.77,
+     "lo": 0.020044778856852002,
+     "hi": 0.02712149979340922,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -1,
+     "value": 0.0034398565041213747,
+     "n": 6,
+     "second": 0.003343812203682517,
+     "interior": true,
+     "share_any": 0.95,
+     "share_within1": 0.175,
+     "share_exact": 0.175,
+     "lo": 0.0014387814751946615,
+     "hi": 0.005195298226043738,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, deposited SR 4.1.0",
+   "surface": "r0c3",
+   "bounds": [
+    0,
+    670,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 77491,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 2,
+     "dx": 2,
+     "value": 0.0077508887228454615,
+     "n": 2,
+     "second": 0.005973737227191744,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.535,
+     "share_exact": 0.46,
+     "lo": 0.005974781183896299,
+     "hi": 0.011082525518025261,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.04852606366547163,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.04090348298519803,
+     "hi": 0.06080982094750401,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 0,
+     "value": 0.008769125325122085,
+     "n": 11,
+     "second": 0.007772937974460659,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.59,
+     "share_exact": 0.345,
+     "lo": 0.0035165918470556946,
+     "hi": 0.014517941228299582,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 1,
+     "dx": 2,
+     "value": 0.0061076319905889465,
+     "n": 5,
+     "second": 0.0038862978657566716,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.26,
+     "share_exact": 0.215,
+     "lo": 0.0011632947479942785,
+     "hi": 0.010106842071344038,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.0266597263503483,
+     "n": 7,
+     "second": 0.002870407965117394,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.023044405489751847,
+     "hi": 0.029856631064664945,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 9,
+     "dx": -2,
+     "value": 0.0023537860252944576,
+     "n": 5,
+     "second": 0.0021652532407506753,
+     "interior": true,
+     "share_any": 0.99,
+     "share_within1": 0.035,
+     "share_exact": 0.02,
+     "lo": 0.00024819770625688633,
+     "hi": 0.003814936229442238,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.021543813414794943,
+     "n": 3,
+     "second": 0.0019855287751584516,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.018750960626535872,
+     "hi": 0.023360891037053355,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 8,
+     "dx": -2,
+     "value": 0.0008540477367734445,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.895,
+     "share_within1": 0.025,
+     "share_exact": 0.005,
+     "lo": -0.0005092951569314275,
+     "hi": 0.0020139783875484383,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, deposited SR 4.1.0",
+   "surface": "r0c4",
+   "bounds": [
+    0,
+    670,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 81355,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -3,
+     "value": 0.007163002155688547,
+     "n": 3,
+     "second": 0.00662431734758373,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.32,
+     "share_exact": 0.31,
+     "lo": 0.002716613016753311,
+     "hi": 0.010466003641720907,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.027713307620741978,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.020556548770915624,
+     "hi": 0.03333188022289348,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 0,
+     "value": 0.005887515582968739,
+     "n": 4,
+     "second": 0.005087844210674319,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.34,
+     "share_exact": 0.225,
+     "lo": 0.0015058034569341908,
+     "hi": 0.010336348430776915,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 2,
+     "dx": -1,
+     "value": 0.005686406111330866,
+     "n": 2,
+     "second": 0.002680651429649128,
+     "interior": true,
+     "share_any": 0.99,
+     "share_within1": 0.315,
+     "share_exact": 0.315,
+     "lo": 0.0017458837490200913,
+     "hi": 0.008584857319276162,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.018514067983394167,
+     "n": 4,
+     "second": 0.0033949734217348926,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.014329194285676822,
+     "hi": 0.02289057891868109,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": -4,
+     "value": 0.0017177456392633017,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.98,
+     "share_within1": 0.26,
+     "share_exact": 0.125,
+     "lo": -0.0002077349997029687,
+     "hi": 0.004178425148310974,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.01549839624610172,
+     "n": 6,
+     "second": 0.0013949782590032545,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.995,
+     "lo": 0.012747895878869042,
+     "hi": 0.01883263550124264,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": 10,
+     "value": 0.001773824616723041,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.925,
+     "share_within1": 0.155,
+     "share_exact": 0.13,
+     "lo": 0.0007502109328722418,
+     "hi": 0.003174891689441664,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, deposited SR 4.1.0",
+   "surface": "r1c0",
+   "bounds": [
+    670,
+    1340,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 92819,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": 3,
+     "value": 0.004515598317386349,
+     "n": 5,
+     "second": 0.004416638562755981,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.345,
+     "share_exact": 0.31,
+     "lo": 0.00217145806590287,
+     "hi": 0.008418699946901293,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.022608720743141464,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.016900064944076063,
+     "hi": 0.028099265807656836,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": 0,
+     "value": 0.0031389485727471023,
+     "n": 4,
+     "second": 0.003084617324368155,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.185,
+     "share_exact": 0.15,
+     "lo": -8.794473015847063e-05,
+     "hi": 0.007182226326196424,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": 3,
+     "value": 0.0048745567388349675,
+     "n": 2,
+     "second": 0.002693233638406456,
+     "interior": true,
+     "share_any": 0.975,
+     "share_within1": 0.24,
+     "share_exact": 0.235,
+     "lo": 0.0016650192913329172,
+     "hi": 0.007208936216931756,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.01585414592163903,
+     "n": 2,
+     "second": 0.0021069947717984316,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.01330729155817435,
+     "hi": 0.01902259502615769,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.015516822345659653,
+     "n": 4,
+     "second": 0.001839195106748015,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.013207746898178885,
+     "hi": 0.01718318497733596,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -7,
+     "dx": 12,
+     "value": 0.0012014370072872538,
+     "n": 4,
+     "second": 0.001143771090599488,
+     "interior": false,
+     "share_any": 0.97,
+     "share_within1": 0.1,
+     "share_exact": 0.075,
+     "lo": -0.00016813386923397177,
+     "hi": 0.002859416417771793,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, deposited SR 4.1.0",
+   "surface": "r1c1",
+   "bounds": [
+    670,
+    1340,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 72726,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 3,
+     "dx": -1,
+     "value": 0.005902773242920656,
+     "n": 2,
+     "second": 0.004835955770022382,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.535,
+     "share_exact": 0.27,
+     "lo": 0.002866228401040971,
+     "hi": 0.009110007383402025,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.020451190304556,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.845,
+     "lo": 0.013442779763111168,
+     "hi": 0.03101114271604948,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 2,
+     "dx": 3,
+     "value": 0.0043674193577187825,
+     "n": 6,
+     "second": 0.0042893441693490075,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.12,
+     "share_exact": 0.1,
+     "lo": 0.0006351142558777392,
+     "hi": 0.007986976320672957,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.0074879511593007875,
+     "n": 4,
+     "second": 0.004071596613701378,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.6,
+     "share_exact": 0.56,
+     "lo": -0.00039726900888263894,
+     "hi": 0.014562580407239652,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.013975349490332523,
+     "n": 3,
+     "second": 0.0029899717257733105,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.985,
+     "lo": 0.008628527265855463,
+     "hi": 0.01843535007563796,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 7,
+     "dx": -10,
+     "value": 0.002914807206010561,
+     "n": 3,
+     "second": 0.0027451862111143033,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.11,
+     "share_exact": 0.065,
+     "lo": 0.0010067128253379992,
+     "hi": 0.004880310855437386,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.013317238266226106,
+     "n": 7,
+     "second": 0.0026343006457607565,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.995,
+     "lo": 0.009861131790690337,
+     "hi": 0.016484689812194024,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 3,
+     "dx": 2,
+     "value": 0.0019364656459504026,
+     "n": 5,
+     "second": 0.0017003837103085617,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.04,
+     "share_exact": 0.03,
+     "lo": 0.0005012945266911484,
+     "hi": 0.0033277599881997577,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, deposited SR 4.1.0",
+   "surface": "r1c2",
+   "bounds": [
+    670,
+    1340,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 83538,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 3,
+     "dx": -2,
+     "value": 0.005580632271315,
+     "n": 4,
+     "second": 0.004341494540569535,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.425,
+     "share_exact": 0.235,
+     "lo": 0.003195810005636274,
+     "hi": 0.008629196352330289,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.03451137444771535,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.028904302932984276,
+     "hi": 0.03971011007993046,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": 0,
+     "value": 0.007585153449650273,
+     "n": 6,
+     "second": 0.005992333870332711,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.325,
+     "share_exact": 0.31,
+     "lo": 0.0031735416901394974,
+     "hi": 0.011081964349457286,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": -2,
+     "value": 0.002850997849247139,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.985,
+     "share_within1": 0.145,
+     "share_exact": 0.03,
+     "lo": -0.0008520258022227778,
+     "hi": 0.005328141898628664,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.018237756893149548,
+     "n": 6,
+     "second": 0.0027656581304593697,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.014488276489844288,
+     "hi": 0.021665885432610024,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -1,
+     "dx": -3,
+     "value": 0.0026020579976118174,
+     "n": 4,
+     "second": 0.002064176888169844,
+     "interior": true,
+     "share_any": 0.965,
+     "share_within1": 0.28,
+     "share_exact": 0.16,
+     "lo": 0.0009062476173208461,
+     "hi": 0.005619608886158432,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.01849252042533256,
+     "n": 4,
+     "second": 0.0012239002022709222,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.01601517141166131,
+     "hi": 0.020334563412120754,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 3,
+     "dx": -2,
+     "value": 0.0022750254052891217,
+     "n": 3,
+     "second": 0.001605596482042837,
+     "interior": true,
+     "share_any": 0.94,
+     "share_within1": 0.235,
+     "share_exact": 0.13,
+     "lo": 0.0003402216533970576,
+     "hi": 0.004120719676681365,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, deposited SR 4.1.0",
+   "surface": "r1c3",
+   "bounds": [
+    670,
+    1340,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 90190,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 3,
+     "dx": -1,
+     "value": 0.00664222820019944,
+     "n": 2,
+     "second": 0.005001450208334868,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.77,
+     "share_exact": 0.685,
+     "lo": 0.004539358003679556,
+     "hi": 0.011262641842796189,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.03726867167547154,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.03117034902217592,
+     "hi": 0.04399124315421961,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": 3,
+     "value": 0.003927777160626755,
+     "n": 12,
+     "second": 0.0035363797888321447,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.08,
+     "share_exact": 0.055,
+     "lo": 0.0008910407251270404,
+     "hi": 0.007455066983532673,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 10,
+     "dx": -4,
+     "value": 0.004352605954544453,
+     "n": 9,
+     "second": 0.0035183902159833247,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.155,
+     "share_exact": 0.155,
+     "lo": 0.001883694681663789,
+     "hi": 0.0072314495499467895,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.01908323067358464,
+     "n": 10,
+     "second": 0.0028227994634300035,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.016416567250474128,
+     "hi": 0.021838326156721703,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 3,
+     "dx": 0,
+     "value": 0.005034310764130967,
+     "n": 7,
+     "second": 0.003578150098487942,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.505,
+     "share_exact": 0.435,
+     "lo": 0.0029160626254117086,
+     "hi": 0.006329835754307398,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.01881763533116909,
+     "n": 7,
+     "second": 0.0014579105325047692,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.016638059081018737,
+     "hi": 0.020941029043021836,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 3,
+     "dx": 0,
+     "value": 0.0028281546291045734,
+     "n": 8,
+     "second": 0.0019394280829063693,
+     "interior": true,
+     "share_any": 0.94,
+     "share_within1": 0.445,
+     "share_exact": 0.21,
+     "lo": 0.0007040501511567266,
+     "hi": 0.0058128571852341104,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, deposited SR 4.1.0",
+   "surface": "r1c4",
+   "bounds": [
+    670,
+    1340,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 89862,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": 2,
+     "value": 0.0055075630951468835,
+     "n": 5,
+     "second": 0.004884174569340205,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.295,
+     "share_exact": 0.22,
+     "lo": 0.003011642178471219,
+     "hi": 0.008683698598817936,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.029949285255052915,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.02459629137548768,
+     "hi": 0.03487203487744666,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 2,
+     "dx": 3,
+     "value": 0.0037882786921579203,
+     "n": 5,
+     "second": 0.0034142065145104095,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.255,
+     "share_exact": 0.15,
+     "lo": 0.0004451188733294643,
+     "hi": 0.007725032240900039,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 1,
+     "dx": -2,
+     "value": 0.0039399093851937295,
+     "n": 3,
+     "second": 0.0034325538167672143,
+     "interior": true,
+     "share_any": 0.98,
+     "share_within1": 0.2,
+     "share_exact": 0.18,
+     "lo": 0.0016794674267108457,
+     "hi": 0.0067930439461138135,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.01636961112256352,
+     "n": 2,
+     "second": 0.0023617461020506436,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.013413614509777927,
+     "hi": 0.019966100025666084,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.01592391345755617,
+     "n": 2,
+     "second": 0.0009472363069824574,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.01355013473954409,
+     "hi": 0.018770775479815455,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 1,
+     "dx": 4,
+     "value": 0.0009979968930277083,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.91,
+     "share_within1": 0.06,
+     "share_exact": 0.055,
+     "lo": 8.323891314050705e-05,
+     "hi": 0.0028622614166973455,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, deposited SR 4.1.0",
+   "surface": "r2c0",
+   "bounds": [
+    1340,
+    2010,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 82359,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": 0,
+     "value": 0.007432956814946268,
+     "n": 4,
+     "second": 0.00657754489534601,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.175,
+     "share_exact": 0.125,
+     "lo": 0.0023308729368801797,
+     "hi": 0.009717507386883035,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.023033128104258838,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.019651667605877245,
+     "hi": 0.027625590072335116,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 10,
+     "dx": -8,
+     "value": 0.004460769999748537,
+     "n": 3,
+     "second": 0.0030734599540576113,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.065,
+     "share_exact": 0.065,
+     "lo": 0.0005311005731136464,
+     "hi": 0.007179255926323586,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 11,
+     "dx": -6,
+     "value": 0.0030348803162750793,
+     "n": 5,
+     "second": 0.002924724180509819,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.1,
+     "share_exact": 0.06,
+     "lo": -0.000600289403528048,
+     "hi": 0.0072257988769294495,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.01669330085921983,
+     "n": 4,
+     "second": 0.0023859445212339736,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.01360168810847806,
+     "hi": 0.018950876493895125,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 5,
+     "dx": 12,
+     "value": 0.0021186287909329415,
+     "n": 5,
+     "second": 0.0019299265583194725,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.05,
+     "share_exact": 0.015,
+     "lo": -0.0006365896813059102,
+     "hi": 0.0038256630203326258,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.014750872976633467,
+     "n": 9,
+     "second": 0.0018353704157376693,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.011868410478137359,
+     "hi": 0.016793474533248396,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 6,
+     "dx": 7,
+     "value": 0.001839772379456206,
+     "n": 8,
+     "second": 0.0017524057607255505,
+     "interior": true,
+     "share_any": 0.945,
+     "share_within1": 0.115,
+     "share_exact": 0.11,
+     "lo": 0.0006901173166072056,
+     "hi": 0.0032879039561507814,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, deposited SR 4.1.0",
+   "surface": "r2c1",
+   "bounds": [
+    1340,
+    2010,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 94538,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": -3,
+     "value": 0.004828317094845103,
+     "n": 2,
+     "second": 0.004727717974203571,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.28,
+     "share_exact": 0.2,
+     "lo": 0.002804190114208205,
+     "hi": 0.00918238669807618,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.024358107937144657,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.019222274173550408,
+     "hi": 0.0316105387128051,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": 4,
+     "value": 0.004860200132265291,
+     "n": 4,
+     "second": 0.003274395654337958,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.36,
+     "share_exact": 0.35,
+     "lo": 0.0023062500395543474,
+     "hi": 0.008230961799937087,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.015913973370321077,
+     "n": 4,
+     "second": 0.0025164356992324333,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.011530637590277327,
+     "hi": 0.019317360558767722,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -1,
+     "value": 0.002278483999748726,
+     "n": 2,
+     "second": 0.0011649788825236485,
+     "interior": true,
+     "share_any": 0.985,
+     "share_within1": 0.205,
+     "share_exact": 0.2,
+     "lo": -9.091309009509606e-05,
+     "hi": 0.004620033983547312,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.014955214650612003,
+     "n": 9,
+     "second": 0.0014599213622343843,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.012091682125827697,
+     "hi": 0.01702367284308862,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -1,
+     "value": 0.002334388429569678,
+     "n": 8,
+     "second": 0.0015196146855793735,
+     "interior": true,
+     "share_any": 0.97,
+     "share_within1": 0.32,
+     "share_exact": 0.32,
+     "lo": 0.0006878337390233691,
+     "hi": 0.005064051990698426,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, deposited SR 4.1.0",
+   "surface": "r2c2",
+   "bounds": [
+    1340,
+    2010,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 84982,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 3,
+     "dx": 1,
+     "value": 0.008456431987168722,
+     "n": 5,
+     "second": 0.008108475017376326,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.625,
+     "share_exact": 0.565,
+     "lo": 0.005791263944417708,
+     "hi": 0.012878348294793469,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.03837734785520741,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.029880154513360117,
+     "hi": 0.050614304756816206,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.007889750619267222,
+     "n": 7,
+     "second": 0.006264925215102135,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.545,
+     "share_exact": 0.43,
+     "lo": 0.0008851975549341807,
+     "hi": 0.015451836974213769,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": -2,
+     "value": 0.006893834941894772,
+     "n": 6,
+     "second": 0.004921734741510808,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.535,
+     "share_exact": 0.465,
+     "lo": 0.0032816670633546378,
+     "hi": 0.010682371572285422,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.02018589633815404,
+     "n": 9,
+     "second": 0.003826245850848009,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.016023945237060733,
+     "hi": 0.025331692518102585,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": 1,
+     "value": 0.003901322106507177,
+     "n": 7,
+     "second": 0.0031603669870737816,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.405,
+     "share_exact": 0.34,
+     "lo": 0.0017324639187668827,
+     "hi": 0.006983548719395149,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.0181601624631067,
+     "n": 12,
+     "second": 0.0022553152450754954,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.01474615909337455,
+     "hi": 0.02141064025064134,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": 1,
+     "value": 0.002732333921510066,
+     "n": 8,
+     "second": 0.001615254154632928,
+     "interior": true,
+     "share_any": 0.97,
+     "share_within1": 0.29,
+     "share_exact": 0.265,
+     "lo": 0.0012783085160040732,
+     "hi": 0.004227847679781351,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, deposited SR 4.1.0",
+   "surface": "r2c3",
+   "bounds": [
+    1340,
+    2010,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 85006,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": 1,
+     "value": 0.008691809287904917,
+     "n": 3,
+     "second": 0.007152677716378397,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.66,
+     "share_exact": 0.09,
+     "lo": 0.005269472132834069,
+     "hi": 0.012058748175774087,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.0402013710199175,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.032985608537731394,
+     "hi": 0.04870900145983371,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.015197004541338988,
+     "n": 4,
+     "second": 0.005264283670097125,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.91,
+     "lo": 0.010975813855812328,
+     "hi": 0.020355627401269415,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": -3,
+     "value": 0.002551461809284783,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.95,
+     "share_within1": 0.32,
+     "share_exact": 0.17,
+     "lo": -0.000623646060846661,
+     "hi": 0.0063999111661899675,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.025865754910573413,
+     "n": 4,
+     "second": 0.0044662343887100775,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.02227986216411878,
+     "hi": 0.03078840653834427,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 1,
+     "dx": 3,
+     "value": 0.0048885034891160695,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.93,
+     "share_within1": 0.61,
+     "share_exact": 0.58,
+     "lo": 0.0025493413569971563,
+     "hi": 0.00922365426181486,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.022955759893651617,
+     "n": 4,
+     "second": 0.0018146128414389118,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.02067050092084164,
+     "hi": 0.026347052943153322,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": 1,
+     "value": 0.0029298815706697567,
+     "n": 2,
+     "second": 0.002510267527504495,
+     "interior": true,
+     "share_any": 0.975,
+     "share_within1": 0.415,
+     "share_exact": 0.28,
+     "lo": 0.0009532624545649737,
+     "hi": 0.00622095743140733,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, deposited SR 4.1.0",
+   "surface": "r2c4",
+   "bounds": [
+    1340,
+    2010,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 82493,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": 2,
+     "value": 0.009724155253616695,
+     "n": 3,
+     "second": 0.009223195523831107,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.305,
+     "share_exact": 0.235,
+     "lo": 0.007072042994413575,
+     "hi": 0.012057441992093788,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.05145479742030412,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.04105568004720617,
+     "hi": 0.06372760030988543,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.013551726185470292,
+     "n": 7,
+     "second": 0.005978619659545936,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.905,
+     "share_exact": 0.88,
+     "lo": 0.005061803290123995,
+     "hi": 0.020210384428026352,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": 0,
+     "value": 0.008621572106677355,
+     "n": 5,
+     "second": 0.007167197274693282,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.47,
+     "share_exact": 0.345,
+     "lo": 0.0031600283888985835,
+     "hi": 0.011317202720137528,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.030493805920343453,
+     "n": 6,
+     "second": 0.003962623074558191,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.02413276308947984,
+     "hi": 0.03777216390529714,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": 0,
+     "value": 0.004356711881433828,
+     "n": 4,
+     "second": 0.004327907046474122,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.32,
+     "share_exact": 0.31,
+     "lo": 0.0025238673240479737,
+     "hi": 0.0067806298000235975,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.026808279495150522,
+     "n": 5,
+     "second": 0.0019639090141256865,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.022082592605586805,
+     "hi": 0.03182293458085299,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 2,
+     "dx": -3,
+     "value": 0.0017793157673549054,
+     "n": 2,
+     "second": 0.001218242109662926,
+     "interior": true,
+     "share_any": 0.98,
+     "share_within1": 0.24,
+     "share_exact": 0.115,
+     "lo": -4.126854161523578e-06,
+     "hi": 0.00365076670778905,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, deposited SR 4.1.0",
+   "surface": "r3c0",
+   "bounds": [
+    2010,
+    2680,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 84996,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 2,
+     "dx": -2,
+     "value": 0.005852092492386163,
+     "n": 2,
+     "second": 0.004846858486971861,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.48,
+     "share_exact": 0.265,
+     "lo": 0.00288395985547536,
+     "hi": 0.008888134332532195,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.03210215635979474,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.027027495090033278,
+     "hi": 0.038454730117084904,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.00771250340166163,
+     "n": 5,
+     "second": 0.005156566038947208,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.79,
+     "share_exact": 0.35,
+     "lo": 0.0035630518476974906,
+     "hi": 0.01090307581071074,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 1,
+     "dx": -2,
+     "value": 0.0035235887639133434,
+     "n": 2,
+     "second": 0.0029940259534121383,
+     "interior": true,
+     "share_any": 0.94,
+     "share_within1": 0.375,
+     "share_exact": 0.145,
+     "lo": 0.00034370565430334195,
+     "hi": 0.005766885216594845,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.020287275027285778,
+     "n": 4,
+     "second": 0.004293024754343344,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.01713117252899769,
+     "hi": 0.02330792208382504,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": -3,
+     "value": 0.002966282550603716,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.935,
+     "share_within1": 0.385,
+     "share_exact": 0.37,
+     "lo": 0.0013191814325861585,
+     "hi": 0.005116328780169452,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.017559374769521963,
+     "n": 7,
+     "second": 0.0024172521521728108,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.015565967339256198,
+     "hi": 0.019539210263189756,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 3,
+     "dx": 4,
+     "value": 0.0017878773130874936,
+     "n": 2,
+     "second": 0.00115252994484083,
+     "interior": true,
+     "share_any": 0.97,
+     "share_within1": 0.145,
+     "share_exact": 0.1,
+     "lo": -0.0003734895052931564,
+     "hi": 0.003482488172441881,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, deposited SR 4.1.0",
+   "surface": "r3c1",
+   "bounds": [
+    2010,
+    2680,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 108012,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -3,
+     "value": 0.004318460111240263,
+     "n": 2,
+     "second": 0.0026515227126040486,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.145,
+     "share_exact": 0.1,
+     "lo": 0.0018035669736339744,
+     "hi": 0.006971634611000627,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.029451261347298918,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.025349296644686704,
+     "hi": 0.03271027442710736,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.009214666328981824,
+     "n": 7,
+     "second": 0.002537926558844772,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.945,
+     "share_exact": 0.93,
+     "lo": 0.005255355452043092,
+     "hi": 0.012383273718605039,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": -6,
+     "value": 0.0027219897022069395,
+     "n": 4,
+     "second": 0.0023785401913217763,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.04,
+     "share_exact": 0.04,
+     "lo": -0.00022401083989416758,
+     "hi": 0.00534961918761119,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.020556616385144943,
+     "n": 12,
+     "second": 0.0024032494952195282,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.017580432896116917,
+     "hi": 0.022900592037892593,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": 0,
+     "value": 0.0042172578653265624,
+     "n": 10,
+     "second": 0.003205754194082866,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.545,
+     "share_exact": 0.5,
+     "lo": 0.0016721424961709224,
+     "hi": 0.005894209968104318,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.016808927802550278,
+     "n": 6,
+     "second": 0.0014123583342828816,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.014648851662277852,
+     "hi": 0.018449637798207626,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 3,
+     "dx": -1,
+     "value": 0.004915662786614594,
+     "n": 15,
+     "second": 0.003072657877392193,
+     "interior": true,
+     "share_any": 0.975,
+     "share_within1": 0.53,
+     "share_exact": 0.51,
+     "lo": 0.0032055714138765484,
+     "hi": 0.007097238201513992,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, deposited SR 4.1.0",
+   "surface": "r3c2",
+   "bounds": [
+    2010,
+    2680,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 89944,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": 3,
+     "value": 0.007720967531863687,
+     "n": 2,
+     "second": 0.007365618050461764,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.43,
+     "share_exact": 0.36,
+     "lo": 0.004151819694622988,
+     "hi": 0.011069232345563718,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.03634724053110516,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.031300067079014816,
+     "hi": 0.04211080898048302,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.015317504151641792,
+     "n": 9,
+     "second": 0.006839368680217728,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.985,
+     "share_exact": 0.925,
+     "lo": 0.00943069137707407,
+     "hi": 0.02071793644228087,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": 1,
+     "value": 0.0044294244196497745,
+     "n": 2,
+     "second": 0.003713659311081585,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.135,
+     "share_exact": 0.125,
+     "lo": 0.0017971140589729789,
+     "hi": 0.008021659190372727,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.02218076915681788,
+     "n": 7,
+     "second": 0.0038894006686718274,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.01901883319197805,
+     "hi": 0.026748339108311394,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 3,
+     "dx": 0,
+     "value": 0.0052110971522362215,
+     "n": 2,
+     "second": 0.001660971322433702,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.325,
+     "share_exact": 0.255,
+     "lo": 0.0010906802468734712,
+     "hi": 0.006924447693261624,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.018602178414249604,
+     "n": 12,
+     "second": 0.0020144482659620877,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.016527234525131128,
+     "hi": 0.021797121242548696,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 2,
+     "dx": -2,
+     "value": 0.002979400011432709,
+     "n": 6,
+     "second": 0.0015521830034510575,
+     "interior": true,
+     "share_any": 0.98,
+     "share_within1": 0.37,
+     "share_exact": 0.265,
+     "lo": 0.0008550460693714373,
+     "hi": 0.005507665926532777,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, deposited SR 4.1.0",
+   "surface": "r3c3",
+   "bounds": [
+    2010,
+    2680,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 19788,
+   "tested": false
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, deposited SR 4.1.0",
+   "surface": "r3c4",
+   "bounds": [
+    2010,
+    2680,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 3310,
+   "tested": false
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, deposited SR 4.1.0",
+   "surface": "r4c0",
+   "bounds": [
+    2680,
+    3350,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 77779,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": 3,
+     "value": 0.013722783199984434,
+     "n": 4,
+     "second": 0.0130926906433948,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.35,
+     "share_exact": 0.3,
+     "lo": 0.009049739371120769,
+     "hi": 0.01578281498072407,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.05406917050702986,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.047856616472781055,
+     "hi": 0.06095254846027321,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.027069833786425024,
+     "n": 3,
+     "second": 0.005681724644916786,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.022035532892224225,
+     "hi": 0.0323666372283463,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -1,
+     "dx": 2,
+     "value": 0.004130676386609022,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.97,
+     "share_within1": 0.33,
+     "share_exact": 0.2,
+     "lo": 0.0015223347863165847,
+     "hi": 0.00726465433282629,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.0357965613917961,
+     "n": 5,
+     "second": 0.00457878254795796,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.03251686164950371,
+     "hi": 0.03837658744402986,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 1,
+     "dx": 3,
+     "value": 0.004025108104498298,
+     "n": 2,
+     "second": 0.0018825717446686596,
+     "interior": true,
+     "share_any": 0.95,
+     "share_within1": 0.52,
+     "share_exact": 0.385,
+     "lo": 0.0018313082403288523,
+     "hi": 0.0074043832681694125,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.02867766567997343,
+     "n": 5,
+     "second": 0.001908946708162329,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.026529708430780757,
+     "hi": 0.03140427212666149,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": 2,
+     "value": 0.0027348267683058314,
+     "n": 2,
+     "second": 0.0011900718938641086,
+     "interior": true,
+     "share_any": 0.975,
+     "share_within1": 0.14,
+     "share_exact": 0.1,
+     "lo": 0.00046460733223644974,
+     "hi": 0.004875587367264284,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, deposited SR 4.1.0",
+   "surface": "r4c1",
+   "bounds": [
+    2680,
+    3350,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 83065,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": -3,
+     "value": 0.0060141110648606055,
+     "n": 2,
+     "second": 0.0033692927282693574,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.67,
+     "share_exact": 0.175,
+     "lo": 0.0017375961344644197,
+     "hi": 0.013235737913856937,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.03824857633822798,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.03528064148995398,
+     "hi": 0.04365104659732789,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.011187803009102826,
+     "n": 6,
+     "second": 0.0054582104046621005,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.86,
+     "share_exact": 0.54,
+     "lo": 0.005788720948556781,
+     "hi": 0.017093427826538356,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 1,
+     "dx": 2,
+     "value": 0.0035880496007165696,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.97,
+     "share_within1": 0.15,
+     "share_exact": 0.15,
+     "lo": -0.0015303862256956678,
+     "hi": 0.00905557764097898,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.02507988630838409,
+     "n": 5,
+     "second": 0.003238666160713999,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.02256352241590227,
+     "hi": 0.028437621606448443,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 1,
+     "dx": -3,
+     "value": 0.004160822179440249,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.96,
+     "share_within1": 0.22,
+     "share_exact": 0.135,
+     "lo": 0.0008603562806221211,
+     "hi": 0.006846631926147754,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.02070983749262134,
+     "n": 10,
+     "second": 0.002236328889743344,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.018996769609204156,
+     "hi": 0.023497587043191243,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -5,
+     "dx": 1,
+     "value": 0.001965429028190635,
+     "n": 12,
+     "second": 0.0017044060332879196,
+     "interior": true,
+     "share_any": 0.96,
+     "share_within1": 0.045,
+     "share_exact": 0.01,
+     "lo": 0.0004006691195674039,
+     "hi": 0.0033893824775319834,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, deposited SR 4.1.0",
+   "surface": "r4c2",
+   "bounds": [
+    2680,
+    3350,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 88720,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -2,
+     "value": 0.0045774461734851,
+     "n": 4,
+     "second": 0.003569002166386115,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.315,
+     "share_exact": 0.065,
+     "lo": 0.0011561206572634599,
+     "hi": 0.006529591773350086,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.025530059194298516,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.96,
+     "lo": 0.02112768390846204,
+     "hi": 0.03036503682569564,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.007109767131266098,
+     "n": 5,
+     "second": 0.004400194021655368,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.845,
+     "share_exact": 0.54,
+     "lo": 0.0032029137399147535,
+     "hi": 0.011773271465995811,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 2,
+     "dx": -2,
+     "value": 0.0031079812585066424,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.99,
+     "share_within1": 0.26,
+     "share_exact": 0.12,
+     "lo": 0.00131237134073392,
+     "hi": 0.006547443469684537,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.018662976001334153,
+     "n": 3,
+     "second": 0.003016778429435041,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.99,
+     "lo": 0.015291474330064326,
+     "hi": 0.021235904864452704,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 1,
+     "dx": 3,
+     "value": 0.003452776544780378,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.93,
+     "share_within1": 0.32,
+     "share_exact": 0.295,
+     "lo": 0.0013533694523845121,
+     "hi": 0.005413098157208058,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.016564964353712464,
+     "n": 4,
+     "second": 0.001434303167392903,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.995,
+     "lo": 0.013841053164861939,
+     "hi": 0.01840021230125336,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -9,
+     "dx": 1,
+     "value": 0.0015866343971550068,
+     "n": 3,
+     "second": 0.000606452337572283,
+     "interior": true,
+     "share_any": 0.955,
+     "share_within1": 0.14,
+     "share_exact": 0.08,
+     "lo": 0.0004200062755262996,
+     "hi": 0.002835933349825712,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, deposited SR 4.1.0",
+   "surface": "r4c3",
+   "bounds": [
+    2680,
+    3350,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 11532,
+   "tested": false
+  },
+  {
+   "set": "Colorectal, Cellpose-SAM, deposited SR 4.1.0",
+   "surface": "r4c4",
+   "bounds": [
+    2680,
+    3350,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 0,
+   "tested": false
+  }
+ ]
+}

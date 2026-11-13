@@ -1,0 +1,3307 @@
+{
+ "placement": "spatch_sr3",
+ "counts": "star",
+ "label": "SPATCH, SR 3.0.0",
+ "expansions": [
+  0,
+  1,
+  2,
+  3
+ ],
+ "seed": 20261007,
+ "draws": 200,
+ "search": 12,
+ "radius": 13,
+ "inputs_sha256": {
+  "<runs>/20261004_spatch_paper_mask_inputs_v3/result/star_qc_config.json": "b00b33010947b72fa432065bfa1ee584084fc970a1e17763a650898fce7878db",
+  "<runs>/20261004_spatch_paper_mask_inputs_v3/result/square_totals.npz": "9017ef8260cf91af2062da60e7bf6baca1f14910762f4a8edec38417406973e3",
+  "<runs>/20260727_spatch_visium_hd_ffpe_100k_sr_version_audit_v2/sr410_2020a_visium_v2_100k/outs/binned_outputs/square_002um/spatial/tissue_positions.parquet": "cb7418a1645ffc6110f2d98a0e0c77e48a2444d44dea1720e1675cf4345fdf4c",
+  "<runs>/20261009_registration_subposition_amendment7_whole_sr3_v3/accepted_grid_labels.npy": "63dc43d9d6f4793ae04f9c5f9f3f0b729e4aacd0abe08f4d3b9b15d737404ac9",
+  "<runs>/20261009_registration_subposition_amendment7_whole_sr3_v3/M0_surface.npy": "8f44fe7f98985785fdb09884b0d3b4093b7f1212f7d6c7506469caaebbbc1a2b",
+  "<runs>/20261009_registration_subposition_amendment7_whole_sr3_v3/whole_position_regions.npz": "2d75ae873699cadbba06c85c45a50e366c7c2919fea4ad84f0a7cde026bf414d"
+ },
+ "elapsed": 47.17271327972412,
+ "affinity": [
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31
+ ],
+ "rows": [
+  {
+   "set": "SPATCH, SR 3.0.0",
+   "surface": "whole",
+   "bounds": [
+    0,
+    3350,
+    0,
+    3350
+   ],
+   "nucleus_in_tissue": 1600161,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": -6,
+     "value": 0.008237423420762502,
+     "n": 3,
+     "second": 0.007556224177023507,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.76,
+     "share_exact": 0.64,
+     "lo": 0.006844865467831468,
+     "hi": 0.009637856317879594,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -5,
+     "dx": -2,
+     "value": 0.024473214716356773,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.023217842978213988,
+     "hi": 0.027228697152921776,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": -4,
+     "value": 0.0046960560801634355,
+     "n": 5,
+     "second": 0.0040850684938156245,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.665,
+     "share_exact": 0.655,
+     "lo": 0.003173692744377615,
+     "hi": 0.005458019993875585,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -5,
+     "dx": -2,
+     "value": 0.004913858681517502,
+     "n": 3,
+     "second": 0.0019157772491571468,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.905,
+     "share_exact": 0.9,
+     "lo": 0.0031045414808249187,
+     "hi": 0.006058854294601541,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": -2,
+     "value": 0.010978687844037216,
+     "n": 3,
+     "second": 0.001733105145520053,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.010032065024152648,
+     "hi": 0.012091384880685313,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -5,
+     "dx": -6,
+     "value": 0.0015059947713392807,
+     "n": 2,
+     "second": 0.0013324990580858564,
+     "interior": true,
+     "share_any": 0.965,
+     "share_within1": 0.69,
+     "share_exact": 0.535,
+     "lo": 0.0010045791943694483,
+     "hi": 0.002309520508261959,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": -2,
+     "value": 0.011660254808451898,
+     "n": 3,
+     "second": 0.0015013526592331239,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.010701334605743646,
+     "hi": 0.012808992931791703,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -6,
+     "dx": 2,
+     "value": 0.0018641501191204446,
+     "n": 2,
+     "second": 0.0016811245842386358,
+     "interior": true,
+     "share_any": 0.985,
+     "share_within1": 0.435,
+     "share_exact": 0.32,
+     "lo": 0.0012387308127297853,
+     "hi": 0.0023411726543020373,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "SPATCH, SR 3.0.0",
+   "surface": "r0c0",
+   "bounds": [
+    0,
+    670,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 1418,
+   "tested": false
+  },
+  {
+   "set": "SPATCH, SR 3.0.0",
+   "surface": "r0c1",
+   "bounds": [
+    0,
+    670,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 22276,
+   "tested": false
+  },
+  {
+   "set": "SPATCH, SR 3.0.0",
+   "surface": "r0c2",
+   "bounds": [
+    0,
+    670,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 61793,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -6,
+     "dx": -5,
+     "value": 0.014531388754205343,
+     "n": 19,
+     "second": 0.010701958788760235,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.325,
+     "share_exact": 0.305,
+     "lo": 0.00729554057298813,
+     "hi": 0.017567723869810085,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -6,
+     "dx": -1,
+     "value": 0.03345143552800489,
+     "n": 17,
+     "second": 0.0050827314948386215,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.815,
+     "lo": 0.027372828227465378,
+     "hi": 0.04673336542147803,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -6,
+     "dx": 0,
+     "value": 0.013219873959976924,
+     "n": 32,
+     "second": 0.006056680818437021,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.87,
+     "share_exact": 0.865,
+     "lo": 0.00660240786887153,
+     "hi": 0.018409576898104463,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -8,
+     "dx": 1,
+     "value": 0.00913640008715555,
+     "n": 37,
+     "second": 0.00769497107479622,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.255,
+     "share_exact": 0.25,
+     "lo": 0.004178997176275229,
+     "hi": 0.014701322712994647,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -6,
+     "dx": -1,
+     "value": 0.017727229182604942,
+     "n": 13,
+     "second": 0.005184208733446605,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.013915408003860258,
+     "hi": 0.02099176602064216,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 12,
+     "dx": -1,
+     "value": 0.002555454988279915,
+     "n": 6,
+     "second": 0.0024822811193537797,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.02,
+     "share_exact": 0.02,
+     "lo": 0.0006129327386344141,
+     "hi": 0.004857387938423991,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -6,
+     "dx": -1,
+     "value": 0.01363573644817917,
+     "n": 12,
+     "second": 0.003860488655153871,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.595,
+     "lo": 0.011246208081426633,
+     "hi": 0.018266948090806593,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -7,
+     "dx": 2,
+     "value": 0.002913941002436249,
+     "n": 7,
+     "second": 0.0014700664809539354,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.155,
+     "share_exact": 0.125,
+     "lo": 0.0004778833519785642,
+     "hi": 0.004476291319496634,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "SPATCH, SR 3.0.0",
+   "surface": "r0c3",
+   "bounds": [
+    0,
+    670,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 73276,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -6,
+     "dx": 2,
+     "value": 0.012890199644871148,
+     "n": 43,
+     "second": 0.011670114982788027,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.45,
+     "share_exact": 0.35,
+     "lo": 0.006891081975479297,
+     "hi": 0.01873000395334659,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -6,
+     "dx": -2,
+     "value": 0.07502698198386737,
+     "n": 14,
+     "second": 0.005077780833099177,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.78,
+     "lo": 0.06031185068078806,
+     "hi": 0.07873262327029955,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -8,
+     "dx": 3,
+     "value": 0.007517318047117749,
+     "n": 31,
+     "second": 0.0075107538325152046,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.15,
+     "share_exact": 0.105,
+     "lo": 0.002326334905799571,
+     "hi": 0.012616262913743587,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -5,
+     "dx": -2,
+     "value": 0.01300555850220908,
+     "n": 57,
+     "second": 0.009542570110904092,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.805,
+     "share_exact": 0.695,
+     "lo": 0.007102781610243425,
+     "hi": 0.020974247791290652,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -6,
+     "dx": -2,
+     "value": 0.021908499880097132,
+     "n": 14,
+     "second": 0.004483515308965735,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.695,
+     "lo": 0.01652298044280115,
+     "hi": 0.024829465839077126,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -9,
+     "dx": -2,
+     "value": 0.0063252050173390195,
+     "n": 17,
+     "second": 0.005336776245273511,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.705,
+     "share_exact": 0.62,
+     "lo": 0.004473834056485141,
+     "hi": 0.00885326056541928,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -6,
+     "dx": -2,
+     "value": 0.02539389486806698,
+     "n": 12,
+     "second": 0.0025468488581239512,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.795,
+     "lo": 0.019934037268239967,
+     "hi": 0.027770200665246776,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -9,
+     "dx": -3,
+     "value": 0.005322313789375199,
+     "n": 16,
+     "second": 0.004471487961427489,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.385,
+     "share_exact": 0.355,
+     "lo": 0.004002363745278089,
+     "hi": 0.007782754822696004,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "SPATCH, SR 3.0.0",
+   "surface": "r0c4",
+   "bounds": [
+    0,
+    670,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 12587,
+   "tested": false
+  },
+  {
+   "set": "SPATCH, SR 3.0.0",
+   "surface": "r1c0",
+   "bounds": [
+    670,
+    1340,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 91071,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -6,
+     "dx": 2,
+     "value": 0.013645197885367555,
+     "n": 42,
+     "second": 0.011093046166476661,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.68,
+     "share_exact": 0.65,
+     "lo": 0.007816528631850467,
+     "hi": 0.017008818051529238,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -6,
+     "dx": -1,
+     "value": 0.040497395725074714,
+     "n": 20,
+     "second": 0.004490494724833871,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.985,
+     "lo": 0.031736092020897694,
+     "hi": 0.049450049924846765,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -7,
+     "dx": -1,
+     "value": 0.00860287350808231,
+     "n": 51,
+     "second": 0.007364871261917205,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.43,
+     "share_exact": 0.285,
+     "lo": 0.003522646294147819,
+     "hi": 0.014143724693720645,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -6,
+     "dx": 2,
+     "value": 0.009159732538162713,
+     "n": 79,
+     "second": 0.007806277585641119,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.44,
+     "share_exact": 0.42,
+     "lo": 0.005535604330334837,
+     "hi": 0.01354995591039502,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -6,
+     "dx": -1,
+     "value": 0.024675569087180937,
+     "n": 19,
+     "second": 0.0033302242195933918,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.01979463398484669,
+     "hi": 0.029015844746309406,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": 0,
+     "value": 0.004741681182407809,
+     "n": 18,
+     "second": 0.003441027282278908,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.19,
+     "share_exact": 0.16,
+     "lo": 0.002256380521312129,
+     "hi": 0.006895795219053256,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -6,
+     "dx": -1,
+     "value": 0.019649046497078437,
+     "n": 31,
+     "second": 0.002320270428449289,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.99,
+     "lo": 0.015761108625935178,
+     "hi": 0.023522338752552902,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": 0,
+     "value": 0.003486903267486352,
+     "n": 26,
+     "second": 0.003003399327730305,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.33,
+     "share_exact": 0.28,
+     "lo": 0.0016707813416105305,
+     "hi": 0.00554230616928099,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "SPATCH, SR 3.0.0",
+   "surface": "r1c1",
+   "bounds": [
+    670,
+    1340,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 95089,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": 2,
+     "value": 0.009034913396616773,
+     "n": 17,
+     "second": 0.008125371284029681,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.655,
+     "share_exact": 0.525,
+     "lo": 0.00692456662982584,
+     "hi": 0.012154603500298228,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -5,
+     "dx": -2,
+     "value": 0.03946455879767097,
+     "n": 17,
+     "second": 0.0026096710909805365,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.735,
+     "lo": 0.033579742348242916,
+     "hi": 0.043538474414638643,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -6,
+     "dx": 0,
+     "value": 0.009117819117653747,
+     "n": 43,
+     "second": 0.007396618903125596,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.555,
+     "share_exact": 0.335,
+     "lo": 0.004464106827263931,
+     "hi": 0.013201801804894744,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -5,
+     "dx": -2,
+     "value": 0.011165841250957764,
+     "n": 33,
+     "second": 0.004751470208509523,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.775,
+     "share_exact": 0.59,
+     "lo": 0.004074902532347266,
+     "hi": 0.015481204342821105,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": -2,
+     "value": 0.020278110177526898,
+     "n": 24,
+     "second": 0.0036852317071780494,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.7,
+     "lo": 0.016847562527030784,
+     "hi": 0.022208847992400298,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -5,
+     "dx": 2,
+     "value": 0.0031308355156983714,
+     "n": 20,
+     "second": 0.002727975272226568,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.29,
+     "share_exact": 0.21,
+     "lo": 0.0007613084808134052,
+     "hi": 0.0060255729790138135,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": -2,
+     "value": 0.01782592348143308,
+     "n": 26,
+     "second": 0.0027283240400410858,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.71,
+     "lo": 0.015126699453561649,
+     "hi": 0.019655269619999655,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -7,
+     "dx": 2,
+     "value": 0.003410066282856783,
+     "n": 17,
+     "second": 0.002711131504983366,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.33,
+     "share_exact": 0.31,
+     "lo": 0.0016737818090637874,
+     "hi": 0.004948226830297772,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "SPATCH, SR 3.0.0",
+   "surface": "r1c2",
+   "bounds": [
+    670,
+    1340,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 71550,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": 2,
+     "value": 0.010025266916570796,
+     "n": 18,
+     "second": 0.00932797077144687,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.64,
+     "share_exact": 0.26,
+     "lo": 0.0045705278915481205,
+     "hi": 0.015216032321681245,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -5,
+     "dx": -2,
+     "value": 0.03417582430297794,
+     "n": 17,
+     "second": 0.004695354384868677,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.95,
+     "lo": 0.026903703275874834,
+     "hi": 0.04096050013882764,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": 3,
+     "value": 0.013125947853781517,
+     "n": 69,
+     "second": 0.010949009536653787,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.52,
+     "share_exact": 0.485,
+     "lo": 0.00634916055603017,
+     "hi": 0.017504620881225213,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -5,
+     "dx": -2,
+     "value": 0.020414230390060406,
+     "n": 62,
+     "second": 0.008493695853426186,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.98,
+     "share_exact": 0.755,
+     "lo": 0.014514762451553488,
+     "hi": 0.025332250363419174,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": -2,
+     "value": 0.01560544045519463,
+     "n": 20,
+     "second": 0.004930991055726031,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.012056251466452455,
+     "hi": 0.01959832153121645,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -1,
+     "dx": -2,
+     "value": 0.0044705014051065195,
+     "n": 17,
+     "second": 0.0036668057365875084,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.32,
+     "share_exact": 0.215,
+     "lo": 0.001079931510589241,
+     "hi": 0.0065978070558123415,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": -2,
+     "value": 0.016154685395483037,
+     "n": 20,
+     "second": 0.0026479212850702982,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.985,
+     "lo": 0.012139864448383808,
+     "hi": 0.019048828201648972,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": 2,
+     "value": 0.002950599679845567,
+     "n": 26,
+     "second": 0.002749133662467984,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.345,
+     "share_exact": 0.2,
+     "lo": 0.0008303469584591439,
+     "hi": 0.005665265584416382,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "SPATCH, SR 3.0.0",
+   "surface": "r1c3",
+   "bounds": [
+    670,
+    1340,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 80936,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -6,
+     "dx": -6,
+     "value": 0.013436617657857308,
+     "n": 12,
+     "second": 0.008166826463051446,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.39,
+     "share_exact": 0.285,
+     "lo": 0.009111326999606812,
+     "hi": 0.01664093449541061,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -5,
+     "dx": -2,
+     "value": 0.06701428133090659,
+     "n": 6,
+     "second": 0.0035721930731817952,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.0577553612840511,
+     "hi": 0.07052786682763387,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -2,
+     "value": 0.007270113388035737,
+     "n": 16,
+     "second": 0.0069529243899317805,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.185,
+     "share_exact": 0.175,
+     "lo": 0.0011795471263987502,
+     "hi": 0.012146191184621402,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -5,
+     "dx": -2,
+     "value": 0.01293263004201528,
+     "n": 14,
+     "second": 0.00501848782057257,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.91,
+     "share_exact": 0.91,
+     "lo": 0.00721525108669458,
+     "hi": 0.01910391291382012,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": -2,
+     "value": 0.024945324461912444,
+     "n": 9,
+     "second": 0.0053922827444492505,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.02155152462953584,
+     "hi": 0.02703151828493089,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -5,
+     "dx": 1,
+     "value": 0.0061357292078195735,
+     "n": 8,
+     "second": 0.004559939818024161,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.675,
+     "share_exact": 0.455,
+     "lo": 0.0021246225387989842,
+     "hi": 0.009225952797819851,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": -2,
+     "value": 0.0241592460559088,
+     "n": 8,
+     "second": 0.0022852225528067205,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.02095199232972267,
+     "hi": 0.026230745792648204,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -1,
+     "dx": -3,
+     "value": 0.0030851299985114045,
+     "n": 5,
+     "second": 0.0025208904865403614,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.28,
+     "share_exact": 0.055,
+     "lo": 0.0008541840059869771,
+     "hi": 0.004902720684089735,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "SPATCH, SR 3.0.0",
+   "surface": "r1c4",
+   "bounds": [
+    670,
+    1340,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 78971,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -8,
+     "dx": -2,
+     "value": 0.014509815796406755,
+     "n": 7,
+     "second": 0.013417829272143411,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.615,
+     "share_exact": 0.375,
+     "lo": 0.008856183804823043,
+     "hi": 0.02148789456062432,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -5,
+     "dx": -2,
+     "value": 0.06856203425561946,
+     "n": 3,
+     "second": 0.0012693564162032933,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.76,
+     "lo": 0.057194738692487306,
+     "hi": 0.07490542114986336,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -8,
+     "dx": 1,
+     "value": 0.006151395334973442,
+     "n": 11,
+     "second": 0.005674775733266912,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.11,
+     "share_exact": 0.1,
+     "lo": 0.0010273771360418905,
+     "hi": 0.010610650195720744,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -5,
+     "dx": -2,
+     "value": 0.007108310581819821,
+     "n": 13,
+     "second": 0.004276631140495257,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.4,
+     "share_exact": 0.235,
+     "lo": 0.0001426612825740526,
+     "hi": 0.012511178137557194,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": -2,
+     "value": 0.022494874083857308,
+     "n": 8,
+     "second": 0.005113352036385299,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.8,
+     "lo": 0.01767691607831831,
+     "hi": 0.026033844165666804,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -8,
+     "dx": -2,
+     "value": 0.0064669330397617575,
+     "n": 5,
+     "second": 0.0029372895973835966,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.83,
+     "share_exact": 0.675,
+     "lo": 0.002099757237632027,
+     "hi": 0.009004218017720594,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": -2,
+     "value": 0.024528664906050546,
+     "n": 9,
+     "second": 0.003082251541813852,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.815,
+     "lo": 0.02073909262529467,
+     "hi": 0.02662767581322826,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -8,
+     "dx": -2,
+     "value": 0.005629161051560749,
+     "n": 4,
+     "second": 0.004323330252852697,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.7,
+     "share_exact": 0.35,
+     "lo": 0.0033207367585644824,
+     "hi": 0.008341678638541192,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "SPATCH, SR 3.0.0",
+   "surface": "r2c0",
+   "bounds": [
+    1340,
+    2010,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 68029,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -8,
+     "dx": -4,
+     "value": 0.010697460666710068,
+     "n": 33,
+     "second": 0.010680445162728036,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.26,
+     "share_exact": 0.255,
+     "lo": 0.007121650852852968,
+     "hi": 0.015915261959347872,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -5,
+     "dx": -2,
+     "value": 0.039534740000489066,
+     "n": 25,
+     "second": 0.0059337800954131215,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.032417500758917035,
+     "hi": 0.04475080796680493,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -9,
+     "dx": -5,
+     "value": 0.010820068441171893,
+     "n": 52,
+     "second": 0.009503783850701941,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.18,
+     "share_exact": 0.18,
+     "lo": 0.004933422703268337,
+     "hi": 0.016480682202274635,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -5,
+     "dx": -2,
+     "value": 0.016566488155397963,
+     "n": 38,
+     "second": 0.008867743708267817,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.9,
+     "share_exact": 0.9,
+     "lo": 0.01013994019719572,
+     "hi": 0.021923929386904944,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": -2,
+     "value": 0.021894101704982516,
+     "n": 12,
+     "second": 0.004026428841356289,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.018270717009815106,
+     "hi": 0.02610446601794927,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": -4,
+     "value": 0.006170820402142008,
+     "n": 14,
+     "second": 0.004649637929959205,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.48,
+     "share_exact": 0.415,
+     "lo": 0.0034551205215334,
+     "hi": 0.008577748533053195,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": -2,
+     "value": 0.018092386852611497,
+     "n": 17,
+     "second": 0.0028159753007224175,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.016218417422688276,
+     "hi": 0.02076974349178164,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -6,
+     "dx": 2,
+     "value": 0.004889274232055096,
+     "n": 15,
+     "second": 0.0039897627512723854,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.35,
+     "share_exact": 0.305,
+     "lo": 0.002119715173038883,
+     "hi": 0.006697878968642041,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "SPATCH, SR 3.0.0",
+   "surface": "r2c1",
+   "bounds": [
+    1340,
+    2010,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 89673,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": 1,
+     "value": 0.009228336826090588,
+     "n": 16,
+     "second": 0.008308939198018672,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.31,
+     "share_exact": 0.31,
+     "lo": 0.006334463736703317,
+     "hi": 0.012225002346071845,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -5,
+     "dx": -2,
+     "value": 0.038074978109918334,
+     "n": 14,
+     "second": 0.005938744427133158,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.03441858501452863,
+     "hi": 0.04244404374665756,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": -4,
+     "value": 0.011203782336381973,
+     "n": 67,
+     "second": 0.010833675963195954,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.255,
+     "share_exact": 0.245,
+     "lo": 0.005861256307780493,
+     "hi": 0.01579879903786724,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -5,
+     "dx": -2,
+     "value": 0.018120486446533635,
+     "n": 94,
+     "second": 0.009880371834926183,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.95,
+     "share_exact": 0.88,
+     "lo": 0.01266424091705547,
+     "hi": 0.023367421163279008,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": -2,
+     "value": 0.015503369145226653,
+     "n": 19,
+     "second": 0.005062707457625937,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.955,
+     "lo": 0.012294026776088485,
+     "hi": 0.018303356224221242,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": 1,
+     "value": 0.004103403510752335,
+     "n": 18,
+     "second": 0.00383459071176917,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.245,
+     "share_exact": 0.21,
+     "lo": 0.0024811081541637166,
+     "hi": 0.006651143604466023,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": -2,
+     "value": 0.017819117874525725,
+     "n": 21,
+     "second": 0.0035463407771114674,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.985,
+     "lo": 0.014319982100425638,
+     "hi": 0.019852042127491913,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": 1,
+     "value": 0.004326315282960236,
+     "n": 17,
+     "second": 0.004035044601906068,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.42,
+     "share_exact": 0.4,
+     "lo": 0.002311771424562076,
+     "hi": 0.00631566205760108,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "SPATCH, SR 3.0.0",
+   "surface": "r2c2",
+   "bounds": [
+    1340,
+    2010,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 95133,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": 2,
+     "value": 0.009235135630977664,
+     "n": 18,
+     "second": 0.008815345640909689,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.365,
+     "share_exact": 0.315,
+     "lo": 0.005443569534185633,
+     "hi": 0.013650548603743052,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.048046762723935155,
+     "n": 16,
+     "second": 0.0034762770999001713,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.6,
+     "lo": 0.0404922047298993,
+     "hi": 0.05407107997111852,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": -4,
+     "value": 0.009004601032899462,
+     "n": 45,
+     "second": 0.007169820993115694,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.4,
+     "share_exact": 0.365,
+     "lo": 0.0038205860469803623,
+     "hi": 0.01389222076208207,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -3,
+     "value": 0.013074855582364098,
+     "n": 61,
+     "second": 0.00802500559798136,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.805,
+     "share_exact": 0.645,
+     "lo": 0.007571487297211274,
+     "hi": 0.01837384330903488,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.020865498587943287,
+     "n": 22,
+     "second": 0.004346028227508292,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.925,
+     "lo": 0.017098407646038816,
+     "hi": 0.023854138996065328,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": 1,
+     "value": 0.003651039227591135,
+     "n": 15,
+     "second": 0.0032770728518503045,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.215,
+     "share_exact": 0.205,
+     "lo": 0.001729097272609112,
+     "hi": 0.006296980915453515,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.02232928887515473,
+     "n": 27,
+     "second": 0.0022219786000829966,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.83,
+     "lo": 0.018485909069978573,
+     "hi": 0.025315119845015464,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": -2,
+     "value": 0.004101488779960416,
+     "n": 22,
+     "second": 0.0033755800984004436,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.325,
+     "share_exact": 0.205,
+     "lo": 0.0015416844001547249,
+     "hi": 0.005870760177022667,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "SPATCH, SR 3.0.0",
+   "surface": "r2c3",
+   "bounds": [
+    1340,
+    2010,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 61192,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -6,
+     "value": 0.013064304449457387,
+     "n": 3,
+     "second": 0.006280520114803956,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.5,
+     "share_exact": 0.49,
+     "lo": 0.007154655092164108,
+     "hi": 0.01789106158741395,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -3,
+     "value": 0.0384702327908526,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.029305695259376197,
+     "hi": 0.04747038070581863,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -7,
+     "dx": -7,
+     "value": 0.00828271173426387,
+     "n": 18,
+     "second": 0.007980896104452961,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.115,
+     "share_exact": 0.105,
+     "lo": 0.00326581001530733,
+     "hi": 0.012690461793681296,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -6,
+     "value": 0.008144787941689935,
+     "n": 22,
+     "second": 0.00678896064010126,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.16,
+     "share_exact": 0.16,
+     "lo": 0.001774394761584061,
+     "hi": 0.013617348163732152,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -3,
+     "value": 0.020527749676170437,
+     "n": 7,
+     "second": 0.004266852936040122,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.01643661414484827,
+     "hi": 0.0236349965578001,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": -2,
+     "value": 0.0031273368411537383,
+     "n": 3,
+     "second": 0.001828240552489424,
+     "interior": true,
+     "share_any": 0.97,
+     "share_within1": 0.15,
+     "share_exact": 0.15,
+     "lo": 0.0003603593803964078,
+     "hi": 0.006190233403876605,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -3,
+     "value": 0.018904033197538972,
+     "n": 6,
+     "second": 0.0026885437992303363,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.015431852685483239,
+     "hi": 0.022572322930107448,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 10,
+     "dx": -6,
+     "value": 0.0022561978550615924,
+     "n": 3,
+     "second": 0.001508470867670253,
+     "interior": true,
+     "share_any": 0.955,
+     "share_within1": 0.05,
+     "share_exact": 0.03,
+     "lo": 0.00019437112361249964,
+     "hi": 0.003626008388840413,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "SPATCH, SR 3.0.0",
+   "surface": "r2c4",
+   "bounds": [
+    1340,
+    2010,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 56988,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -7,
+     "dx": -4,
+     "value": 0.01641314847526254,
+     "n": 7,
+     "second": 0.010875193023068164,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.875,
+     "share_exact": 0.41,
+     "lo": 0.008949045083678026,
+     "hi": 0.020191916619748805,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -3,
+     "value": 0.04612635651004182,
+     "n": 2,
+     "second": 0.003992707035947229,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.92,
+     "lo": 0.03444307433786236,
+     "hi": 0.051946538374884194,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -3,
+     "value": 0.009007954010934016,
+     "n": 9,
+     "second": 0.007094635795907855,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.27,
+     "share_exact": 0.235,
+     "lo": 0.004812901988528351,
+     "hi": 0.014296777185604244,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": 10,
+     "value": 0.005320553266216166,
+     "n": 4,
+     "second": 0.005117349686250883,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.175,
+     "share_exact": 0.175,
+     "lo": -0.0005149571649098738,
+     "hi": 0.01164717889102928,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -3,
+     "value": 0.018574101972643975,
+     "n": 2,
+     "second": 0.0015601513388709964,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.945,
+     "lo": 0.01555032289825271,
+     "hi": 0.02166523784721552,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 7,
+     "dx": 10,
+     "value": 0.0035613606956581556,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.915,
+     "share_within1": 0.37,
+     "share_exact": 0.31,
+     "lo": 0.001550975587114936,
+     "hi": 0.005508656456447823,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -3,
+     "value": 0.018678502753151083,
+     "n": 3,
+     "second": 0.002218676387940155,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.975,
+     "lo": 0.015414872423740117,
+     "hi": 0.021711245512065633,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "SPATCH, SR 3.0.0",
+   "surface": "r3c0",
+   "bounds": [
+    2010,
+    2680,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 57452,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -7,
+     "dx": -4,
+     "value": 0.010107958446478271,
+     "n": 4,
+     "second": 0.009316619984784502,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.36,
+     "share_exact": 0.335,
+     "lo": 0.006816711195216196,
+     "hi": 0.01449483243115794,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.03156986802309192,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.024986014937024858,
+     "hi": 0.036278973877033584,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -4,
+     "value": 0.011833586158263687,
+     "n": 7,
+     "second": 0.007358057751980729,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.645,
+     "share_exact": 0.64,
+     "lo": 0.006654009667010924,
+     "hi": 0.01805862520972214,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.012221434564647637,
+     "n": 4,
+     "second": 0.006670543057271994,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.68,
+     "share_exact": 0.65,
+     "lo": 0.005386853146707032,
+     "hi": 0.01928755815276379,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.01874651607418798,
+     "n": 4,
+     "second": 0.0021737738124756323,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.014300748927377588,
+     "hi": 0.02142187723426416,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -6,
+     "value": 0.0013616118171205782,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.925,
+     "share_within1": 0.125,
+     "share_exact": 0.1,
+     "lo": -0.0012591648510848652,
+     "hi": 0.0049763887683050975,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.01648017556846426,
+     "n": 5,
+     "second": 0.003120302342572545,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.995,
+     "lo": 0.01276710143745668,
+     "hi": 0.01902439595579249,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -8,
+     "dx": -3,
+     "value": 0.0021724112747740776,
+     "n": 2,
+     "second": 0.0012291317961611314,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.16,
+     "share_exact": 0.115,
+     "lo": -0.00019964385212477563,
+     "hi": 0.004617763747786128,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "SPATCH, SR 3.0.0",
+   "surface": "r3c1",
+   "bounds": [
+    2010,
+    2680,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 59599,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -2,
+     "value": 0.012963630221399569,
+     "n": 2,
+     "second": 0.006129281407650344,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.7,
+     "share_exact": 0.415,
+     "lo": 0.00795577751094414,
+     "hi": 0.015878040254518295,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.03669415889948768,
+     "n": 2,
+     "second": 0.0008380944170147675,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.555,
+     "lo": 0.028686678782277826,
+     "hi": 0.044172922432736655,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": -4,
+     "value": 0.010998762581708732,
+     "n": 30,
+     "second": 0.007426872949063856,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.275,
+     "share_exact": 0.2,
+     "lo": 0.004627465979049561,
+     "hi": 0.017256315746650076,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -3,
+     "value": 0.01879368340734955,
+     "n": 28,
+     "second": 0.008763202950028526,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.99,
+     "share_exact": 0.84,
+     "lo": 0.012490167080623399,
+     "hi": 0.02434600473195366,
+     "usable": true
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.012460806699853055,
+     "n": 15,
+     "second": 0.005235489707319019,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.995,
+     "share_exact": 0.9,
+     "lo": 0.009285909663182873,
+     "hi": 0.016430492538925624,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": 11,
+     "value": 0.004678235707988643,
+     "n": 5,
+     "second": 0.0031458297796784773,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.205,
+     "share_exact": 0.205,
+     "lo": 0.0023043319291511295,
+     "hi": 0.00847479931508337,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -2,
+     "value": 0.01463803563671462,
+     "n": 8,
+     "second": 0.004879682093517301,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.945,
+     "lo": 0.010808740577160325,
+     "hi": 0.018041813305171257,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": 1,
+     "value": 0.0042167698171555745,
+     "n": 6,
+     "second": 0.0036882738546356597,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.455,
+     "share_exact": 0.45,
+     "lo": 0.001169645003038808,
+     "hi": 0.008974841073115877,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "SPATCH, SR 3.0.0",
+   "surface": "r3c2",
+   "bounds": [
+    2010,
+    2680,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 78298,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -2,
+     "value": 0.008864788861761896,
+     "n": 5,
+     "second": 0.007222790768128151,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.355,
+     "share_exact": 0.305,
+     "lo": 0.0046152810197362115,
+     "hi": 0.012208944342124174,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -3,
+     "value": 0.03284551734555563,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.525,
+     "lo": 0.023292141356877905,
+     "hi": 0.040093719554278,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": -3,
+     "value": 0.008648456775245394,
+     "n": 13,
+     "second": 0.006712458174048974,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.415,
+     "share_exact": 0.33,
+     "lo": 0.0029184696459064467,
+     "hi": 0.013623913536522904,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": 12,
+     "value": 0.008765549503496506,
+     "n": 23,
+     "second": 0.006582088075023251,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.25,
+     "share_exact": 0.25,
+     "lo": 0.003302227240818989,
+     "hi": 0.01268087003925815,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -3,
+     "value": 0.018448700513724603,
+     "n": 5,
+     "second": 0.0027823084729086123,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.715,
+     "lo": 0.013868666679454533,
+     "hi": 0.022114431084604785,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -8,
+     "dx": -2,
+     "value": 0.0024130731456964982,
+     "n": 3,
+     "second": 0.0020376760161674445,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.145,
+     "share_exact": 0.11,
+     "lo": -0.00035741839407285,
+     "hi": 0.004767733098410909,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -3,
+     "value": 0.01741504252472481,
+     "n": 12,
+     "second": 0.003776721666864713,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.535,
+     "lo": 0.013644094523845606,
+     "hi": 0.02009385197575922,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -8,
+     "dx": -2,
+     "value": 0.0033461196195354592,
+     "n": 14,
+     "second": 0.00324692573220986,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.14,
+     "share_exact": 0.135,
+     "lo": 0.0010432625120781775,
+     "hi": 0.004969003518402923,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "SPATCH, SR 3.0.0",
+   "surface": "r3c3",
+   "bounds": [
+    2010,
+    2680,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 61047,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -1,
+     "value": 0.014545029859814207,
+     "n": 11,
+     "second": 0.011484593693484424,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.525,
+     "share_exact": 0.52,
+     "lo": 0.00843647085128051,
+     "hi": 0.017686357091616287,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.030810838775960914,
+     "n": 2,
+     "second": 0.002405071743106335,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.025135558940066593,
+     "hi": 0.03635776743756287,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -2,
+     "value": 0.009690312894425235,
+     "n": 7,
+     "second": 0.005674733620654182,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.7,
+     "share_exact": 0.53,
+     "lo": 0.005782719095712557,
+     "hi": 0.015710013841277386,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 12,
+     "dx": -9,
+     "value": 0.00812380006876079,
+     "n": 14,
+     "second": 0.00679487590773642,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.125,
+     "share_exact": 0.125,
+     "lo": 0.0019608701237182973,
+     "hi": 0.012930031284962064,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.020433788811587084,
+     "n": 2,
+     "second": 0.001247125537918281,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.01726471646336835,
+     "hi": 0.022670516968485495,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 12,
+     "dx": 5,
+     "value": 0.002388213147533347,
+     "n": 2,
+     "second": 0.0010108822371077686,
+     "interior": false,
+     "share_any": 0.95,
+     "share_within1": 0.21,
+     "share_exact": 0.19,
+     "lo": 0.00038348430623727785,
+     "hi": 0.005777767645161442,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.015523101450246157,
+     "n": 5,
+     "second": 0.002145316769179839,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.013629241669000564,
+     "hi": 0.017740446276254686,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 12,
+     "dx": 5,
+     "value": 0.002824186028387743,
+     "n": 3,
+     "second": 0.0014968073215396727,
+     "interior": false,
+     "share_any": 0.945,
+     "share_within1": 0.14,
+     "share_exact": 0.14,
+     "lo": 0.0008310888664889466,
+     "hi": 0.0047824328207746805,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "SPATCH, SR 3.0.0",
+   "surface": "r3c4",
+   "bounds": [
+    2010,
+    2680,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 53893,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": -5,
+     "value": 0.016557694139316848,
+     "n": 14,
+     "second": 0.010409323554137817,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.825,
+     "share_exact": 0.67,
+     "lo": 0.007121985957554312,
+     "hi": 0.02097541120566966,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": -4,
+     "value": 0.020618169045772516,
+     "n": 9,
+     "second": 0.004864461960102928,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.97,
+     "share_exact": 0.485,
+     "lo": 0.00978220885472073,
+     "hi": 0.02984794090352035,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -3,
+     "value": 0.011811157819653362,
+     "n": 21,
+     "second": 0.009444875290054222,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.225,
+     "share_exact": 0.225,
+     "lo": 0.006418456650899346,
+     "hi": 0.017693269911831434,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -11,
+     "dx": 12,
+     "value": 0.01058400364715506,
+     "n": 43,
+     "second": 0.010498032529128176,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.13,
+     "share_exact": 0.13,
+     "lo": 0.0038570985766379715,
+     "hi": 0.016348154473377313,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.019182755205936042,
+     "n": 4,
+     "second": 0.0032762249105089403,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.625,
+     "lo": 0.013879167112958618,
+     "hi": 0.02170162610684074,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 6,
+     "dx": -12,
+     "value": 0.0033927850789511327,
+     "n": 2,
+     "second": 0.0017180353962458206,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.14,
+     "share_exact": 0.14,
+     "lo": 0.0005337596244291337,
+     "hi": 0.006143262664765643,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -3,
+     "value": 0.018846770646822497,
+     "n": 4,
+     "second": 0.001629702445007819,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.49,
+     "lo": 0.013237978495501613,
+     "hi": 0.021172423768323123,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 1,
+     "dx": 12,
+     "value": 0.004017518140363663,
+     "n": 8,
+     "second": 0.0024165814884459236,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.165,
+     "share_exact": 0.135,
+     "lo": 0.0008635793550240274,
+     "hi": 0.005607024105515001,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "SPATCH, SR 3.0.0",
+   "surface": "r4c0",
+   "bounds": [
+    2680,
+    3350,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 86716,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -4,
+     "value": 0.008171160845582781,
+     "n": 12,
+     "second": 0.007904265711778713,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.33,
+     "share_exact": 0.16,
+     "lo": 0.004149971695315091,
+     "hi": 0.011019243921059668,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.022246054216694455,
+     "n": 9,
+     "second": 0.003211042447290091,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.955,
+     "lo": 0.016538241770497078,
+     "hi": 0.025314248825283072,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -1,
+     "value": 0.013337889034006345,
+     "n": 36,
+     "second": 0.0074092446156177605,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.755,
+     "share_exact": 0.73,
+     "lo": 0.007180526591993497,
+     "hi": 0.018929564031371138,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.013791789946486,
+     "n": 28,
+     "second": 0.007038827452391705,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.94,
+     "share_exact": 0.87,
+     "lo": 0.009335273139783065,
+     "hi": 0.018828945957382243,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.015836081540716362,
+     "n": 17,
+     "second": 0.003593253389915896,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.013106377632035598,
+     "hi": 0.018114533321503767,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 10,
+     "dx": 6,
+     "value": 0.003014796352612814,
+     "n": 12,
+     "second": 0.0028333707862618907,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.15,
+     "share_exact": 0.15,
+     "lo": 0.000789627851042643,
+     "hi": 0.005537864760278783,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.014555405564874224,
+     "n": 24,
+     "second": 0.003488420323195518,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.995,
+     "lo": 0.01209395556961002,
+     "hi": 0.01652926109644471,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -7,
+     "value": 0.0022147152107743207,
+     "n": 18,
+     "second": 0.002089523598220344,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.125,
+     "share_exact": 0.125,
+     "lo": 0.0008965802273784296,
+     "hi": 0.004263693621096948,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "SPATCH, SR 3.0.0",
+   "surface": "r4c1",
+   "bounds": [
+    2680,
+    3350,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 74341,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": 0,
+     "value": 0.008942154585420248,
+     "n": 4,
+     "second": 0.007335242734395564,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.235,
+     "share_exact": 0.235,
+     "lo": 0.0061387541751097285,
+     "hi": 0.01324893942580503,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.032071495002011785,
+     "n": 5,
+     "second": 0.002877537549748288,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.024191047193968994,
+     "hi": 0.036446850231534086,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -5,
+     "value": 0.009900218066864586,
+     "n": 18,
+     "second": 0.009839110339408652,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.235,
+     "share_exact": 0.155,
+     "lo": 0.003909270671597287,
+     "hi": 0.0142518476635841,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.014112778155584982,
+     "n": 16,
+     "second": 0.004891088546155498,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.895,
+     "share_exact": 0.82,
+     "lo": 0.0052147128061113745,
+     "hi": 0.01975332676596571,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.017414378003296482,
+     "n": 9,
+     "second": 0.0035497194627012174,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.013504433137513261,
+     "hi": 0.020998928715667543,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 5,
+     "dx": 8,
+     "value": 0.0016051622392987408,
+     "n": 5,
+     "second": 0.0012929594474876405,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.08,
+     "share_exact": 0.05,
+     "lo": -0.0012229780207390739,
+     "hi": 0.004316566303573583,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.015665167565767524,
+     "n": 9,
+     "second": 0.0026951795814142976,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.01230712623699549,
+     "hi": 0.01772000223061006,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -7,
+     "dx": -4,
+     "value": 0.0023123232329308463,
+     "n": 13,
+     "second": 0.0019267630539255842,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.165,
+     "share_exact": 0.085,
+     "lo": -0.0005115717849986045,
+     "hi": 0.0040822458945046,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "SPATCH, SR 3.0.0",
+   "surface": "r4c2",
+   "bounds": [
+    2680,
+    3350,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 36075,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -6,
+     "dx": -2,
+     "value": 0.010585078163808381,
+     "n": 3,
+     "second": 0.009583659331816818,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.29,
+     "share_exact": 0.235,
+     "lo": 0.0028682810528874226,
+     "hi": 0.015962577657627583,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.02801016343827445,
+     "n": 4,
+     "second": 0.006434949121596034,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.77,
+     "lo": 0.01611854349872548,
+     "hi": 0.03604391229409838,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -7,
+     "dx": -7,
+     "value": 0.011774401388057187,
+     "n": 15,
+     "second": 0.01156875077802022,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.105,
+     "share_exact": 0.095,
+     "lo": -0.0006774611056065969,
+     "hi": 0.02363169747777959,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 8,
+     "dx": 6,
+     "value": 0.01682858096028017,
+     "n": 44,
+     "second": 0.01639194901333796,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.25,
+     "share_exact": 0.25,
+     "lo": 0.004527462564123297,
+     "hi": 0.026109615697084664,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.01782082482427394,
+     "n": 5,
+     "second": 0.00535479700944963,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.99,
+     "share_exact": 0.985,
+     "lo": 0.011363292302613232,
+     "hi": 0.02140956107659454,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 10,
+     "dx": 10,
+     "value": 0.002935192473675907,
+     "n": 2,
+     "second": 0.001266669316361324,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.12,
+     "share_exact": 0.1,
+     "lo": -0.00016152953082944062,
+     "hi": 0.009188420213254717,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.016561659278307772,
+     "n": 5,
+     "second": 0.004038853428070643,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.995,
+     "share_exact": 0.97,
+     "lo": 0.011586422306090211,
+     "hi": 0.020188659820126915,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -12,
+     "dx": 0,
+     "value": 0.004850276773071038,
+     "n": 8,
+     "second": 0.00469259082164819,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.1,
+     "share_exact": 0.1,
+     "lo": 0.0012942809612824181,
+     "hi": 0.0074193420212062145,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "SPATCH, SR 3.0.0",
+   "surface": "r4c3",
+   "bounds": [
+    2680,
+    3350,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 69502,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -6,
+     "dx": -6,
+     "value": 0.008721754464076747,
+     "n": 10,
+     "second": 0.008352652174449693,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.145,
+     "share_exact": 0.135,
+     "lo": 0.004213650285432658,
+     "hi": 0.011976632111495595,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": -3,
+     "value": 0.047622080476571016,
+     "n": 9,
+     "second": 0.004507913083527049,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.92,
+     "lo": 0.0423912719576344,
+     "hi": 0.05200083499386494,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -4,
+     "dx": -3,
+     "value": 0.008855220472135716,
+     "n": 30,
+     "second": 0.007484097303658066,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.27,
+     "share_exact": 0.26,
+     "lo": 0.0012959277473323372,
+     "hi": 0.014094952974044228,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -4,
+     "dx": -6,
+     "value": 0.007905775260431125,
+     "n": 27,
+     "second": 0.0077225891608679875,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.205,
+     "share_exact": 0.185,
+     "lo": 0.0008089601284365924,
+     "hi": 0.014055594589001972,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -3,
+     "value": 0.02094106850275468,
+     "n": 25,
+     "second": 0.005742758777064871,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.505,
+     "lo": 0.015973269444495876,
+     "hi": 0.023411682235293572,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": -7,
+     "value": 0.00490405481605527,
+     "n": 10,
+     "second": 0.0045996504294910645,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.235,
+     "share_exact": 0.23,
+     "lo": 0.0019231371771697842,
+     "hi": 0.007784561111171718,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -3,
+     "value": 0.019973967332763465,
+     "n": 20,
+     "second": 0.0031798659553463615,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.65,
+     "lo": 0.016019689999847687,
+     "hi": 0.021563324109559422,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 2,
+     "dx": -5,
+     "value": 0.0031127618677093682,
+     "n": 15,
+     "second": 0.002995755262326094,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.345,
+     "share_exact": 0.095,
+     "lo": 0.0004018988757719417,
+     "hi": 0.00493768626774116,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "SPATCH, SR 3.0.0",
+   "surface": "r4c4",
+   "bounds": [
+    2680,
+    3350,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 63256,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": -2,
+     "value": 0.015912121001527613,
+     "n": 8,
+     "second": 0.01221607565674021,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.665,
+     "share_exact": 0.35,
+     "lo": 0.007986645312318614,
+     "hi": 0.02189982700723957,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": -3,
+     "value": 0.038210932364520334,
+     "n": 6,
+     "second": 0.00454289081635928,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.835,
+     "lo": 0.02863330769057167,
+     "hi": 0.04411249332397374,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 3,
+     "dx": -4,
+     "value": 0.010924011025350122,
+     "n": 28,
+     "second": 0.010465386316138359,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.11,
+     "share_exact": 0.105,
+     "lo": 0.0031215151477312687,
+     "hi": 0.01886775651971568,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -12,
+     "dx": 0,
+     "value": 0.007954295372560538,
+     "n": 26,
+     "second": 0.00767628175292856,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.03,
+     "share_exact": 0.025,
+     "lo": -0.0011288233734896953,
+     "hi": 0.014065198312439497,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -3,
+     "value": 0.017608620227238525,
+     "n": 17,
+     "second": 0.004993456448363798,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.62,
+     "lo": 0.012639817956108901,
+     "hi": 0.02164199061454011,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -12,
+     "dx": -10,
+     "value": 0.004838334214174345,
+     "n": 12,
+     "second": 0.004546552683826199,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.05,
+     "share_exact": 0.04,
+     "lo": 0.001599592441187464,
+     "hi": 0.007270139629148714,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -3,
+     "value": 0.017577611457788134,
+     "n": 7,
+     "second": 0.004361812987764724,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.73,
+     "lo": 0.013279428174623863,
+     "hi": 0.020636344433543834,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -10,
+     "dx": 6,
+     "value": 0.00481263427211065,
+     "n": 11,
+     "second": 0.0043861759307013415,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.115,
+     "share_exact": 0.115,
+     "lo": 0.0005737065670519764,
+     "hi": 0.007922064220856987,
+     "usable": false
+    }
+   }
+  }
+ ]
+}

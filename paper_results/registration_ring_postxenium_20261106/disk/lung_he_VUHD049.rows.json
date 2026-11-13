@@ -1,0 +1,260 @@
+{
+ "placement": "lung_he_VUHD049",
+ "mask": "nuclei and ring of width 3 (f0 | f3)",
+ "harness": "<local>/paper_results/registration_ring_postxenium_20261106/ring/fpr.py",
+ "seed": 20261007,
+ "draws": 200,
+ "search": 12,
+ "radius": 13,
+ "inputs_sha256": {
+  "<runs>/20261010_registration_oracle_lung_expression_inputs_v1/total.npy": "8bc4b401f80f0f46e3f29acbb8262a9664bf1e52077ff9c4d7a0f96eaa69da5d",
+  "<runs>/20261010_registration_oracle_lung_expression_inputs_v1/tissue.npy": "c797a4a6d39faf402e434ac60a2d8840c80c6c5800f544ccaac96487478fe33c",
+  "<runs>/20261010_registration_oracle_lung_he_grid_v1/grid_labels.npz": "0d10d6db48de45a2c44d93b3602b02247cbd920424aa8be3dad40df4e64d0934",
+  "<runs>/20261010_registration_oracle_lung_he_whole_VUHD049_v1/whole_surfaces.npz": "6c8dd68ae1f901c0e7bbffb26a848ef8c6c4b27142fa804ccb889ca5e2d2a522"
+ },
+ "elapsed": 3.2717645168304443,
+ "affinity": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7
+ ],
+ "rows": [
+  {
+   "set": "Lung VUHD049, H&E nuclei",
+   "surface": "whole",
+   "bounds": [
+    0,
+    1507,
+    0,
+    1406
+   ],
+   "nucleus_in_tissue": 229048,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": -2,
+     "value": 0.001748869293112465,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.745,
+     "lo": 0.0008174889031832222,
+     "hi": 0.002795474221319572,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "truth": [
+    -5,
+    -1
+   ]
+  },
+  {
+   "set": "Lung VUHD049, H&E nuclei",
+   "surface": "r0c0",
+   "bounds": [
+    0,
+    502,
+    0,
+    468
+   ],
+   "nucleus_in_tissue": 14684,
+   "tested": false,
+   "truth": [
+    -5,
+    -1
+   ]
+  },
+  {
+   "set": "Lung VUHD049, H&E nuclei",
+   "surface": "r0c1",
+   "bounds": [
+    0,
+    502,
+    468,
+    937
+   ],
+   "nucleus_in_tissue": 20156,
+   "tested": false,
+   "truth": [
+    -5,
+    -1
+   ]
+  },
+  {
+   "set": "Lung VUHD049, H&E nuclei",
+   "surface": "r0c2",
+   "bounds": [
+    0,
+    502,
+    937,
+    1406
+   ],
+   "nucleus_in_tissue": 26375,
+   "tested": false,
+   "truth": [
+    -5,
+    -1
+   ]
+  },
+  {
+   "set": "Lung VUHD049, H&E nuclei",
+   "surface": "r1c0",
+   "bounds": [
+    502,
+    1004,
+    0,
+    468
+   ],
+   "nucleus_in_tissue": 42520,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -5,
+     "dx": -2,
+     "value": 0.0016687800020005472,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.875,
+     "share_exact": 0.25,
+     "lo": -2.292478787903337e-05,
+     "hi": 0.0044338327595324035,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "truth": [
+    -5,
+    -1
+   ]
+  },
+  {
+   "set": "Lung VUHD049, H&E nuclei",
+   "surface": "r1c1",
+   "bounds": [
+    502,
+    1004,
+    468,
+    937
+   ],
+   "nucleus_in_tissue": 29846,
+   "tested": false,
+   "truth": [
+    -5,
+    -1
+   ]
+  },
+  {
+   "set": "Lung VUHD049, H&E nuclei",
+   "surface": "r1c2",
+   "bounds": [
+    502,
+    1004,
+    937,
+    1406
+   ],
+   "nucleus_in_tissue": 23240,
+   "tested": false,
+   "truth": [
+    -5,
+    -1
+   ]
+  },
+  {
+   "set": "Lung VUHD049, H&E nuclei",
+   "surface": "r2c0",
+   "bounds": [
+    1004,
+    1507,
+    0,
+    468
+   ],
+   "nucleus_in_tissue": 36726,
+   "tested": true,
+   "disk3": {
+    "peak": {
+     "found": true,
+     "dy": -9,
+     "dx": -2,
+     "value": 0.0014100256058715566,
+     "n": 2,
+     "second": 0.0010103167065314,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.22,
+     "share_exact": 0.105,
+     "lo": -0.0003929961991370354,
+     "hi": 0.004143761827347044,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "truth": [
+    -5,
+    -1
+   ]
+  },
+  {
+   "set": "Lung VUHD049, H&E nuclei",
+   "surface": "r2c1",
+   "bounds": [
+    1004,
+    1507,
+    468,
+    937
+   ],
+   "nucleus_in_tissue": 19484,
+   "tested": false,
+   "truth": [
+    -5,
+    -1
+   ]
+  },
+  {
+   "set": "Lung VUHD049, H&E nuclei",
+   "surface": "r2c2",
+   "bounds": [
+    1004,
+    1507,
+    937,
+    1406
+   ],
+   "nucleus_in_tissue": 16017,
+   "tested": false,
+   "truth": [
+    -5,
+    -1
+   ]
+  }
+ ]
+}

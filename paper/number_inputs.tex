@@ -1,0 +1,48 @@
+% Every number macro file, in one place, for main.tex and supplementary/additional_file_1.tex.
+% \numpath is empty when compiling from the project root and ../ from supplementary/.
+\providecommand{\numpath}{}
+%--- Every reported number lives in numbers.tex, with its provenance ----------
+\input{\numpath numbers}
+% Barcode-design facts from the slide and chemistry files (not yet in the export)
+\input{\numpath design_numbers}
+% Provenance of the audited Space Ranger run (not yet in the export)
+\input{\numpath audit_numbers}
+% Cited release and its reproduction of the official spatial gates
+\input{\numpath release_numbers}
+% Space Ranger's emitted squares against the per-half edit limit (July 2026 audit)
+\input{\numpath audit_limit_numbers}
+% Coordinates and edit counts exported from the recorded worked examples
+\input{\numpath worked_case_numbers}
+% Audit outcomes by number of edits and by ties (make_audit_outcome_numbers.py; not yet in the export)
+\input{\numpath audit_outcome_numbers}
+% Added against shared counts on the H&E image (make_he_added_shared_numbers.py; not yet in the export)
+\input{\numpath he_added_shared_numbers}
+% Range of the molecule gain on the bins in Space Ranger's matrix (make_gain_range_numbers.py; not yet in the export)
+\input{\numpath gain_range_numbers}
+% Lengths of the two barcode parts of a read under the edit limit (make_decode_length_numbers.py; not yet in the export)
+\input{\numpath decode_length_numbers}
+% Length of the UMI at the start of Read 1 (make_read1_layout_numbers.py; not yet in the export)
+\input{\numpath read1_layout_numbers}
+% Registration check (record branch paper/registration-20261018; figures/scripts/registration_numbers.py).
+\input{\numpath registration_numbers}
+% The examination of Space Ranger's recorded locations, recomputed with the release (B3, 2026-10-25;
+% record paper_results/release_examination_20261025). Its macros replace the July 2026 values of the
+% same names defined above (numbers.tex, audit_limit_numbers, worked_case_numbers,
+% audit_outcome_numbers), so \newcommand is made to redefine for this file and the next.
+\makeatletter
+\let\stargrid@newcommand\newcommand
+\renewcommand\newcommand[1]{\let#1\relax\stargrid@newcommand#1}
+\input{\numpath examination_release_numbers}
+% Paired timing of both pipelines up to registration (T1, 2026-10-28; record
+% paper_results/timing_20261027). Its macros replace the September timing of the same names in numbers.tex.
+\input{\numpath timing_numbers}
+\let\newcommand\stargrid@newcommand
+\makeatother
+% The examination of the ovarian dataset (B3-Ov, macros ending in Ov; record
+% paper_results/release_examination_ovarian_v1_12_2_20261109).
+\input{\numpath ovarian_examination_numbers}
+% Display values of the same split and rounded examination values (figures/scripts/source_split_numbers.py).
+\input{\numpath source_split_numbers}
+
+% Slide H1-VM2JXXK/A1 against Space Ranger on the probe target set (runbook A1; figures/scripts/examined_agreement_numbers.py).
+\input{\numpath examined_agreement_numbers}

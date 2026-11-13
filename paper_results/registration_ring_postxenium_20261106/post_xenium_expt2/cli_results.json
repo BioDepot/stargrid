@@ -1,0 +1,2672 @@
+{
+ "he|default|whole": {
+  "truth": [
+   -4,
+   -2
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   -4,
+   -2
+  ],
+  "share_within_one": 0.65,
+  "depth": 0.004754013144837144,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 999422
+ },
+ "he|default|r0c2": {
+  "truth": [
+   -4,
+   -1
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   9,
+   9
+  ],
+  "share_within_one": 0.365,
+  "depth": 0.012922665635316077,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 50317
+ },
+ "he|default|r0c3": {
+  "truth": [
+   -3,
+   -1
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   -3,
+   -1
+  ],
+  "share_within_one": 0.705,
+  "depth": 0.013484168237595351,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 43031
+ },
+ "he|default|r1c1": {
+  "truth": [
+   -4,
+   -2
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   -4,
+   -1
+  ],
+  "share_within_one": 0.28,
+  "depth": 0.01146103197770898,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 53627
+ },
+ "he|default|r1c2": {
+  "truth": [
+   -4,
+   -2
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   -4,
+   -2
+  ],
+  "share_within_one": 0.565,
+  "depth": 0.010181994411609496,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 68973
+ },
+ "he|default|r1c3": {
+  "truth": [
+   -3,
+   -2
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   -3,
+   -2
+  ],
+  "share_within_one": 0.565,
+  "depth": 0.017290371197081655,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 51540
+ },
+ "he|default|r2c0": {
+  "truth": [
+   -4,
+   -2
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   8,
+   10
+  ],
+  "share_within_one": 0.18,
+  "depth": 0.008339775597945076,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 59601
+ },
+ "he|default|r2c1": {
+  "truth": [
+   -4,
+   -2
+  ],
+  "usable": true,
+  "method": "dip",
+  "status": "usable",
+  "shift": [
+   -4,
+   -2
+  ],
+  "off": 0,
+  "candidate": [
+   -4,
+   -2
+  ],
+  "share_within_one": 0.99,
+  "depth": 0.015431705236024218,
+  "reason": "usable",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 68999
+ },
+ "he|default|r2c2": {
+  "truth": [
+   -4,
+   -2
+  ],
+  "usable": true,
+  "method": "dip",
+  "status": "usable",
+  "shift": [
+   -4,
+   -2
+  ],
+  "off": 0,
+  "candidate": [
+   -4,
+   -2
+  ],
+  "share_within_one": 0.98,
+  "depth": 0.018570860219787155,
+  "reason": "usable",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 80649
+ },
+ "he|default|r2c3": {
+  "truth": [
+   -3,
+   -2
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   7,
+   8
+  ],
+  "share_within_one": 0.155,
+  "depth": 0.007212414831337832,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 54377
+ },
+ "he|default|r3c0": {
+  "truth": [
+   -4,
+   -3
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   -11,
+   12
+  ],
+  "share_within_one": 0.09,
+  "depth": 0.006855066309843005,
+  "reason": "deepest dip on the edge of the search",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 74477
+ },
+ "he|default|r3c1": {
+  "truth": [
+   -4,
+   -3
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   -4,
+   -3
+  ],
+  "share_within_one": 0.45,
+  "depth": 0.009631952082022055,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 59591
+ },
+ "he|default|r3c2": {
+  "truth": [
+   -4,
+   -3
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   -4,
+   11
+  ],
+  "share_within_one": 0.08,
+  "depth": 0.0043126975433990244,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 78457
+ },
+ "he|default|r3c3": {
+  "truth": [
+   -3,
+   -3
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   9,
+   -9
+  ],
+  "share_within_one": 0.205,
+  "depth": 0.009180603047780123,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 49655
+ },
+ "he|default|r4c0": {
+  "truth": [
+   -5,
+   -3
+  ],
+  "usable": false,
+  "method": null,
+  "status": "no dip",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   null,
+   null
+  ],
+  "share_within_one": null,
+  "depth": null,
+  "reason": "no dip",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 63317
+ },
+ "he|default|r4c1": {
+  "truth": [
+   -4,
+   -3
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   8,
+   -5
+  ],
+  "share_within_one": 0.225,
+  "depth": 0.013136441731277593,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 39804
+ },
+ "he|default|r4c2": {
+  "truth": [
+   -4,
+   -3
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   11,
+   -4
+  ],
+  "share_within_one": 0.04,
+  "depth": 0.004359030376859252,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 50875
+ },
+ "he|default|r4c3": {
+  "truth": [
+   -3,
+   -3
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   0,
+   -12
+  ],
+  "share_within_one": 0.15,
+  "depth": 0.007919923676818819,
+  "reason": "deepest dip on the edge of the search",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 40960
+ },
+ "he|fringe|whole": {
+  "truth": [
+   -4,
+   -2
+  ],
+  "usable": true,
+  "method": "fringe peak (experimental)",
+  "status": "fringe peak (experimental)",
+  "shift": [
+   -4,
+   -2
+  ],
+  "off": 0,
+  "candidate": [
+   -4,
+   -2
+  ],
+  "share_within_one": 0.65,
+  "depth": 0.004754013144837144,
+  "reason": "no usable dip; fringe peak (experimental)",
+  "peak": [
+   -4,
+   -2
+  ],
+  "peak_share": 0.955,
+  "n": 999422
+ },
+ "he|fringe|r0c2": {
+  "truth": [
+   -4,
+   -1
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   9,
+   9
+  ],
+  "share_within_one": 0.365,
+  "depth": 0.012922665635316077,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   -6,
+   -5
+  ],
+  "peak_share": 0.235,
+  "n": 50317
+ },
+ "he|fringe|r0c3": {
+  "truth": [
+   -3,
+   -1
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   -3,
+   -1
+  ],
+  "share_within_one": 0.705,
+  "depth": 0.013484168237595351,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   -3,
+   -1
+  ],
+  "peak_share": 0.595,
+  "n": 43031
+ },
+ "he|fringe|r1c1": {
+  "truth": [
+   -4,
+   -2
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   -4,
+   -1
+  ],
+  "share_within_one": 0.28,
+  "depth": 0.01146103197770898,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   -4,
+   -1
+  ],
+  "peak_share": 0.305,
+  "n": 53627
+ },
+ "he|fringe|r1c2": {
+  "truth": [
+   -4,
+   -2
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   -4,
+   -2
+  ],
+  "share_within_one": 0.565,
+  "depth": 0.010181994411609496,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   -1,
+   1
+  ],
+  "peak_share": 0.1,
+  "n": 68973
+ },
+ "he|fringe|r1c3": {
+  "truth": [
+   -3,
+   -2
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   -3,
+   -2
+  ],
+  "share_within_one": 0.565,
+  "depth": 0.017290371197081655,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   -3,
+   2
+  ],
+  "peak_share": 0.325,
+  "n": 51540
+ },
+ "he|fringe|r2c0": {
+  "truth": [
+   -4,
+   -2
+  ],
+  "usable": true,
+  "method": "fringe peak (experimental)",
+  "status": "fringe peak (experimental)",
+  "shift": [
+   -4,
+   -2
+  ],
+  "off": 0,
+  "candidate": [
+   8,
+   10
+  ],
+  "share_within_one": 0.18,
+  "depth": 0.008339775597945076,
+  "reason": "no usable dip; fringe peak (experimental)",
+  "peak": [
+   -4,
+   -2
+  ],
+  "peak_share": 0.955,
+  "n": 59601
+ },
+ "he|fringe|r2c1": {
+  "truth": [
+   -4,
+   -2
+  ],
+  "usable": true,
+  "method": "dip",
+  "status": "usable",
+  "shift": [
+   -4,
+   -2
+  ],
+  "off": 0,
+  "candidate": [
+   -4,
+   -2
+  ],
+  "share_within_one": 0.99,
+  "depth": 0.015431705236024218,
+  "reason": "usable",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 68999
+ },
+ "he|fringe|r2c2": {
+  "truth": [
+   -4,
+   -2
+  ],
+  "usable": true,
+  "method": "dip",
+  "status": "usable",
+  "shift": [
+   -4,
+   -2
+  ],
+  "off": 0,
+  "candidate": [
+   -4,
+   -2
+  ],
+  "share_within_one": 0.98,
+  "depth": 0.018570860219787155,
+  "reason": "usable",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 80649
+ },
+ "he|fringe|r2c3": {
+  "truth": [
+   -3,
+   -2
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   7,
+   8
+  ],
+  "share_within_one": 0.155,
+  "depth": 0.007212414831337832,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   -3,
+   2
+  ],
+  "peak_share": 0.12,
+  "n": 54377
+ },
+ "he|fringe|r3c0": {
+  "truth": [
+   -4,
+   -3
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   -11,
+   12
+  ],
+  "share_within_one": 0.09,
+  "depth": 0.006855066309843005,
+  "reason": "deepest dip on the edge of the search",
+  "peak": [
+   -4,
+   -3
+  ],
+  "peak_share": 0.6,
+  "n": 74477
+ },
+ "he|fringe|r3c1": {
+  "truth": [
+   -4,
+   -3
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   -4,
+   -3
+  ],
+  "share_within_one": 0.45,
+  "depth": 0.009631952082022055,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   -5,
+   -3
+  ],
+  "peak_share": 0.38,
+  "n": 59591
+ },
+ "he|fringe|r3c2": {
+  "truth": [
+   -4,
+   -3
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   -4,
+   11
+  ],
+  "share_within_one": 0.08,
+  "depth": 0.0043126975433990244,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   -5,
+   8
+  ],
+  "peak_share": 0.07,
+  "n": 78457
+ },
+ "he|fringe|r3c3": {
+  "truth": [
+   -3,
+   -3
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   9,
+   -9
+  ],
+  "share_within_one": 0.205,
+  "depth": 0.009180603047780123,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   9,
+   11
+  ],
+  "peak_share": 0.105,
+  "n": 49655
+ },
+ "he|fringe|r4c0": {
+  "truth": [
+   -5,
+   -3
+  ],
+  "usable": false,
+  "method": null,
+  "status": "no dip",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   null,
+   null
+  ],
+  "share_within_one": null,
+  "depth": null,
+  "reason": "no dip",
+  "peak": [
+   -5,
+   -7
+  ],
+  "peak_share": 0.155,
+  "n": 63317
+ },
+ "he|fringe|r4c1": {
+  "truth": [
+   -4,
+   -3
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   8,
+   -5
+  ],
+  "share_within_one": 0.225,
+  "depth": 0.013136441731277593,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   -4,
+   0
+  ],
+  "peak_share": 0.565,
+  "n": 39804
+ },
+ "he|fringe|r4c2": {
+  "truth": [
+   -4,
+   -3
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   11,
+   -4
+  ],
+  "share_within_one": 0.04,
+  "depth": 0.004359030376859252,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   -9,
+   1
+  ],
+  "peak_share": 0.145,
+  "n": 50875
+ },
+ "he|fringe|r4c3": {
+  "truth": [
+   -3,
+   -3
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   0,
+   -12
+  ],
+  "share_within_one": 0.15,
+  "depth": 0.007919923676818819,
+  "reason": "deepest dip on the edge of the search",
+  "peak": [
+   -7,
+   7
+  ],
+  "peak_share": 0.135,
+  "n": 40960
+ },
+ "he|peak|whole": {
+  "truth": [
+   -4,
+   -2
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   -4,
+   -2
+  ],
+  "share_within_one": 0.65,
+  "depth": 0.004754013144837144,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 999422
+ },
+ "he|peak|r0c2": {
+  "truth": [
+   -4,
+   -1
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   9,
+   9
+  ],
+  "share_within_one": 0.365,
+  "depth": 0.012922665635316077,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 50317
+ },
+ "he|peak|r0c3": {
+  "truth": [
+   -3,
+   -1
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   -3,
+   -1
+  ],
+  "share_within_one": 0.705,
+  "depth": 0.013484168237595351,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 43031
+ },
+ "he|peak|r1c1": {
+  "truth": [
+   -4,
+   -2
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   -4,
+   -1
+  ],
+  "share_within_one": 0.28,
+  "depth": 0.01146103197770898,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 53627
+ },
+ "he|peak|r1c2": {
+  "truth": [
+   -4,
+   -2
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   -4,
+   -2
+  ],
+  "share_within_one": 0.565,
+  "depth": 0.010181994411609496,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 68973
+ },
+ "he|peak|r1c3": {
+  "truth": [
+   -3,
+   -2
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   -3,
+   -2
+  ],
+  "share_within_one": 0.565,
+  "depth": 0.017290371197081655,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 51540
+ },
+ "he|peak|r2c0": {
+  "truth": [
+   -4,
+   -2
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   8,
+   10
+  ],
+  "share_within_one": 0.18,
+  "depth": 0.008339775597945076,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 59601
+ },
+ "he|peak|r2c1": {
+  "truth": [
+   -4,
+   -2
+  ],
+  "usable": true,
+  "method": "dip",
+  "status": "usable",
+  "shift": [
+   -4,
+   -2
+  ],
+  "off": 0,
+  "candidate": [
+   -4,
+   -2
+  ],
+  "share_within_one": 0.99,
+  "depth": 0.015431705236024218,
+  "reason": "usable",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 68999
+ },
+ "he|peak|r2c2": {
+  "truth": [
+   -4,
+   -2
+  ],
+  "usable": true,
+  "method": "dip",
+  "status": "usable",
+  "shift": [
+   -4,
+   -2
+  ],
+  "off": 0,
+  "candidate": [
+   -4,
+   -2
+  ],
+  "share_within_one": 0.98,
+  "depth": 0.018570860219787155,
+  "reason": "usable",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 80649
+ },
+ "he|peak|r2c3": {
+  "truth": [
+   -3,
+   -2
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   7,
+   8
+  ],
+  "share_within_one": 0.155,
+  "depth": 0.007212414831337832,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 54377
+ },
+ "he|peak|r3c0": {
+  "truth": [
+   -4,
+   -3
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   -11,
+   12
+  ],
+  "share_within_one": 0.09,
+  "depth": 0.006855066309843005,
+  "reason": "deepest dip on the edge of the search",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 74477
+ },
+ "he|peak|r3c1": {
+  "truth": [
+   -4,
+   -3
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   -4,
+   -3
+  ],
+  "share_within_one": 0.45,
+  "depth": 0.009631952082022055,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 59591
+ },
+ "he|peak|r3c2": {
+  "truth": [
+   -4,
+   -3
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   -4,
+   11
+  ],
+  "share_within_one": 0.08,
+  "depth": 0.0043126975433990244,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 78457
+ },
+ "he|peak|r3c3": {
+  "truth": [
+   -3,
+   -3
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   9,
+   -9
+  ],
+  "share_within_one": 0.205,
+  "depth": 0.009180603047780123,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 49655
+ },
+ "he|peak|r4c0": {
+  "truth": [
+   -5,
+   -3
+  ],
+  "usable": false,
+  "method": null,
+  "status": "no dip",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   null,
+   null
+  ],
+  "share_within_one": null,
+  "depth": null,
+  "reason": "no dip",
+  "peak": [
+   12,
+   11
+  ],
+  "peak_share": 0.085,
+  "n": 63317
+ },
+ "he|peak|r4c1": {
+  "truth": [
+   -4,
+   -3
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   8,
+   -5
+  ],
+  "share_within_one": 0.225,
+  "depth": 0.013136441731277593,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 39804
+ },
+ "he|peak|r4c2": {
+  "truth": [
+   -4,
+   -3
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   11,
+   -4
+  ],
+  "share_within_one": 0.04,
+  "depth": 0.004359030376859252,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 50875
+ },
+ "he|peak|r4c3": {
+  "truth": [
+   -3,
+   -3
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   0,
+   -12
+  ],
+  "share_within_one": 0.15,
+  "depth": 0.007919923676818819,
+  "reason": "deepest dip on the edge of the search",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 40960
+ },
+ "xen|default|whole": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": true,
+  "method": "dip",
+  "status": "usable",
+  "shift": [
+   0,
+   0
+  ],
+  "off": 0,
+  "candidate": [
+   0,
+   0
+  ],
+  "share_within_one": 1.0,
+  "depth": 0.011964964423323288,
+  "reason": null,
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 1185687
+ },
+ "xen|default|r0c2": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": false,
+  "method": null,
+  "status": "no dip",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   null,
+   null
+  ],
+  "share_within_one": null,
+  "depth": null,
+  "reason": "no dip",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 60914
+ },
+ "xen|default|r0c3": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   0,
+   0
+  ],
+  "share_within_one": 0.93,
+  "depth": 0.01760289375395141,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 51114
+ },
+ "xen|default|r1c1": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   0,
+   0
+  ],
+  "share_within_one": 0.475,
+  "depth": 0.012655741531772402,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 59064
+ },
+ "xen|default|r1c2": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   0,
+   0
+  ],
+  "share_within_one": 0.905,
+  "depth": 0.015421034165457481,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 84218
+ },
+ "xen|default|r1c3": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   0,
+   0
+  ],
+  "share_within_one": 0.87,
+  "depth": 0.015754870609721472,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 60169
+ },
+ "xen|default|r2c0": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   0,
+   0
+  ],
+  "share_within_one": 0.87,
+  "depth": 0.028095044529510504,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 70855
+ },
+ "xen|default|r2c1": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": true,
+  "method": "dip",
+  "status": "usable",
+  "shift": [
+   0,
+   0
+  ],
+  "off": 0,
+  "candidate": [
+   0,
+   0
+  ],
+  "share_within_one": 1.0,
+  "depth": 0.029815424090311682,
+  "reason": "usable",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 83023
+ },
+ "xen|default|r2c2": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": true,
+  "method": "dip",
+  "status": "usable",
+  "shift": [
+   0,
+   0
+  ],
+  "off": 0,
+  "candidate": [
+   0,
+   0
+  ],
+  "share_within_one": 1.0,
+  "depth": 0.01947231831514107,
+  "reason": "usable",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 92059
+ },
+ "xen|default|r2c3": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   0,
+   0
+  ],
+  "share_within_one": 0.755,
+  "depth": 0.00951168878330344,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 69465
+ },
+ "xen|default|r3c0": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": true,
+  "method": "dip",
+  "status": "usable",
+  "shift": [
+   0,
+   0
+  ],
+  "off": 0,
+  "candidate": [
+   0,
+   0
+  ],
+  "share_within_one": 1.0,
+  "depth": 0.015020952636125906,
+  "reason": "usable",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 98229
+ },
+ "xen|default|r3c1": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   0,
+   0
+  ],
+  "share_within_one": 0.935,
+  "depth": 0.022354982612939334,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 67585
+ },
+ "xen|default|r3c2": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   0,
+   0
+  ],
+  "share_within_one": 0.53,
+  "depth": 0.009224444980048818,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 94008
+ },
+ "xen|default|r3c3": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   12,
+   10
+  ],
+  "share_within_one": 0.12,
+  "depth": 0.006831725377584474,
+  "reason": "deepest dip on the edge of the search",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 60410
+ },
+ "xen|default|r4c0": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": false,
+  "method": null,
+  "status": "no dip",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   null,
+   null
+  ],
+  "share_within_one": null,
+  "depth": null,
+  "reason": "no dip",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 69499
+ },
+ "xen|default|r4c1": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   7,
+   -9
+  ],
+  "share_within_one": 0.05,
+  "depth": 0.004276640080982497,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 41360
+ },
+ "xen|default|r4c2": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   -10,
+   8
+  ],
+  "share_within_one": 0.06,
+  "depth": 0.004282188932313025,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 58920
+ },
+ "xen|default|r4c3": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": true,
+  "method": "dip",
+  "status": "usable",
+  "shift": [
+   0,
+   0
+  ],
+  "off": 0,
+  "candidate": [
+   0,
+   0
+  ],
+  "share_within_one": 0.985,
+  "depth": 0.0167626196249665,
+  "reason": "usable",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 52386
+ },
+ "xen|fringe|whole": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": true,
+  "method": "dip",
+  "status": "usable",
+  "shift": [
+   0,
+   0
+  ],
+  "off": 0,
+  "candidate": [
+   0,
+   0
+  ],
+  "share_within_one": 1.0,
+  "depth": 0.011964964423323288,
+  "reason": null,
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 1185687
+ },
+ "xen|fringe|r0c2": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": false,
+  "method": null,
+  "status": "no dip",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   null,
+   null
+  ],
+  "share_within_one": null,
+  "depth": null,
+  "reason": "no dip",
+  "peak": [
+   2,
+   -4
+  ],
+  "peak_share": 0.27,
+  "n": 60914
+ },
+ "xen|fringe|r0c3": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": true,
+  "method": "fringe peak (experimental)",
+  "status": "fringe peak (experimental)",
+  "shift": [
+   0,
+   0
+  ],
+  "off": 0,
+  "candidate": [
+   0,
+   0
+  ],
+  "share_within_one": 0.93,
+  "depth": 0.01760289375395141,
+  "reason": "no usable dip; fringe peak (experimental)",
+  "peak": [
+   0,
+   0
+  ],
+  "peak_share": 0.96,
+  "n": 51114
+ },
+ "xen|fringe|r1c1": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   0,
+   0
+  ],
+  "share_within_one": 0.475,
+  "depth": 0.012655741531772402,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   0,
+   0
+  ],
+  "peak_share": 0.835,
+  "n": 59064
+ },
+ "xen|fringe|r1c2": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   0,
+   0
+  ],
+  "share_within_one": 0.905,
+  "depth": 0.015421034165457481,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   0,
+   0
+  ],
+  "peak_share": 0.875,
+  "n": 84218
+ },
+ "xen|fringe|r1c3": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   0,
+   0
+  ],
+  "share_within_one": 0.87,
+  "depth": 0.015754870609721472,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   0,
+   0
+  ],
+  "peak_share": 0.705,
+  "n": 60169
+ },
+ "xen|fringe|r2c0": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": true,
+  "method": "fringe peak (experimental)",
+  "status": "fringe peak (experimental)",
+  "shift": [
+   0,
+   0
+  ],
+  "off": 0,
+  "candidate": [
+   0,
+   0
+  ],
+  "share_within_one": 0.87,
+  "depth": 0.028095044529510504,
+  "reason": "no usable dip; fringe peak (experimental)",
+  "peak": [
+   0,
+   0
+  ],
+  "peak_share": 0.995,
+  "n": 70855
+ },
+ "xen|fringe|r2c1": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": true,
+  "method": "dip",
+  "status": "usable",
+  "shift": [
+   0,
+   0
+  ],
+  "off": 0,
+  "candidate": [
+   0,
+   0
+  ],
+  "share_within_one": 1.0,
+  "depth": 0.029815424090311682,
+  "reason": "usable",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 83023
+ },
+ "xen|fringe|r2c2": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": true,
+  "method": "dip",
+  "status": "usable",
+  "shift": [
+   0,
+   0
+  ],
+  "off": 0,
+  "candidate": [
+   0,
+   0
+  ],
+  "share_within_one": 1.0,
+  "depth": 0.01947231831514107,
+  "reason": "usable",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 92059
+ },
+ "xen|fringe|r2c3": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   0,
+   0
+  ],
+  "share_within_one": 0.755,
+  "depth": 0.00951168878330344,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   -4,
+   11
+  ],
+  "peak_share": 0.04,
+  "n": 69465
+ },
+ "xen|fringe|r3c0": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": true,
+  "method": "dip",
+  "status": "usable",
+  "shift": [
+   0,
+   0
+  ],
+  "off": 0,
+  "candidate": [
+   0,
+   0
+  ],
+  "share_within_one": 1.0,
+  "depth": 0.015020952636125906,
+  "reason": "usable",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 98229
+ },
+ "xen|fringe|r3c1": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": true,
+  "method": "fringe peak (experimental)",
+  "status": "fringe peak (experimental)",
+  "shift": [
+   0,
+   0
+  ],
+  "off": 0,
+  "candidate": [
+   0,
+   0
+  ],
+  "share_within_one": 0.935,
+  "depth": 0.022354982612939334,
+  "reason": "no usable dip; fringe peak (experimental)",
+  "peak": [
+   0,
+   0
+  ],
+  "peak_share": 0.975,
+  "n": 67585
+ },
+ "xen|fringe|r3c2": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   0,
+   0
+  ],
+  "share_within_one": 0.53,
+  "depth": 0.009224444980048818,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   0,
+   0
+  ],
+  "peak_share": 0.81,
+  "n": 94008
+ },
+ "xen|fringe|r3c3": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   12,
+   10
+  ],
+  "share_within_one": 0.12,
+  "depth": 0.006831725377584474,
+  "reason": "deepest dip on the edge of the search",
+  "peak": [
+   -10,
+   1
+  ],
+  "peak_share": 0.205,
+  "n": 60410
+ },
+ "xen|fringe|r4c0": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": false,
+  "method": null,
+  "status": "no dip",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   null,
+   null
+  ],
+  "share_within_one": null,
+  "depth": null,
+  "reason": "no dip",
+  "peak": [
+   0,
+   0
+  ],
+  "peak_share": 0.66,
+  "n": 69499
+ },
+ "xen|fringe|r4c1": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   7,
+   -9
+  ],
+  "share_within_one": 0.05,
+  "depth": 0.004276640080982497,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   -2,
+   -2
+  ],
+  "peak_share": 0.35,
+  "n": 41360
+ },
+ "xen|fringe|r4c2": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   -10,
+   8
+  ],
+  "share_within_one": 0.06,
+  "depth": 0.004282188932313025,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   -1,
+   8
+  ],
+  "peak_share": 0.19,
+  "n": 58920
+ },
+ "xen|fringe|r4c3": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": true,
+  "method": "dip",
+  "status": "usable",
+  "shift": [
+   0,
+   0
+  ],
+  "off": 0,
+  "candidate": [
+   0,
+   0
+  ],
+  "share_within_one": 0.985,
+  "depth": 0.0167626196249665,
+  "reason": "usable",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 52386
+ },
+ "xen|peak|whole": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": true,
+  "method": "dip",
+  "status": "usable",
+  "shift": [
+   0,
+   0
+  ],
+  "off": 0,
+  "candidate": [
+   0,
+   0
+  ],
+  "share_within_one": 1.0,
+  "depth": 0.011964964423323288,
+  "reason": null,
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 1185687
+ },
+ "xen|peak|r0c2": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": false,
+  "method": null,
+  "status": "no dip",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   null,
+   null
+  ],
+  "share_within_one": null,
+  "depth": null,
+  "reason": "no dip",
+  "peak": [
+   -1,
+   0
+  ],
+  "peak_share": 0.855,
+  "n": 60914
+ },
+ "xen|peak|r0c3": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   0,
+   0
+  ],
+  "share_within_one": 0.93,
+  "depth": 0.01760289375395141,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 51114
+ },
+ "xen|peak|r1c1": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   0,
+   0
+  ],
+  "share_within_one": 0.475,
+  "depth": 0.012655741531772402,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 59064
+ },
+ "xen|peak|r1c2": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   0,
+   0
+  ],
+  "share_within_one": 0.905,
+  "depth": 0.015421034165457481,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 84218
+ },
+ "xen|peak|r1c3": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   0,
+   0
+  ],
+  "share_within_one": 0.87,
+  "depth": 0.015754870609721472,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 60169
+ },
+ "xen|peak|r2c0": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   0,
+   0
+  ],
+  "share_within_one": 0.87,
+  "depth": 0.028095044529510504,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 70855
+ },
+ "xen|peak|r2c1": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": true,
+  "method": "dip",
+  "status": "usable",
+  "shift": [
+   0,
+   0
+  ],
+  "off": 0,
+  "candidate": [
+   0,
+   0
+  ],
+  "share_within_one": 1.0,
+  "depth": 0.029815424090311682,
+  "reason": "usable",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 83023
+ },
+ "xen|peak|r2c2": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": true,
+  "method": "dip",
+  "status": "usable",
+  "shift": [
+   0,
+   0
+  ],
+  "off": 0,
+  "candidate": [
+   0,
+   0
+  ],
+  "share_within_one": 1.0,
+  "depth": 0.01947231831514107,
+  "reason": "usable",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 92059
+ },
+ "xen|peak|r2c3": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   0,
+   0
+  ],
+  "share_within_one": 0.755,
+  "depth": 0.00951168878330344,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 69465
+ },
+ "xen|peak|r3c0": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": true,
+  "method": "dip",
+  "status": "usable",
+  "shift": [
+   0,
+   0
+  ],
+  "off": 0,
+  "candidate": [
+   0,
+   0
+  ],
+  "share_within_one": 1.0,
+  "depth": 0.015020952636125906,
+  "reason": "usable",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 98229
+ },
+ "xen|peak|r3c1": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   0,
+   0
+  ],
+  "share_within_one": 0.935,
+  "depth": 0.022354982612939334,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 67585
+ },
+ "xen|peak|r3c2": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   0,
+   0
+  ],
+  "share_within_one": 0.53,
+  "depth": 0.009224444980048818,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 94008
+ },
+ "xen|peak|r3c3": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   12,
+   10
+  ],
+  "share_within_one": 0.12,
+  "depth": 0.006831725377584474,
+  "reason": "deepest dip on the edge of the search",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 60410
+ },
+ "xen|peak|r4c0": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": false,
+  "method": null,
+  "status": "no dip",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   null,
+   null
+  ],
+  "share_within_one": null,
+  "depth": null,
+  "reason": "no dip",
+  "peak": [
+   1,
+   0
+  ],
+  "peak_share": 0.875,
+  "n": 69499
+ },
+ "xen|peak|r4c1": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   7,
+   -9
+  ],
+  "share_within_one": 0.05,
+  "depth": 0.004276640080982497,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 41360
+ },
+ "xen|peak|r4c2": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": false,
+  "method": null,
+  "status": "unstable",
+  "shift": null,
+  "off": null,
+  "candidate": [
+   -10,
+   8
+  ],
+  "share_within_one": 0.06,
+  "depth": 0.004282188932313025,
+  "reason": "deepest dip within one location in fewer than 95% of resamples",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 58920
+ },
+ "xen|peak|r4c3": {
+  "truth": [
+   0,
+   0
+  ],
+  "usable": true,
+  "method": "dip",
+  "status": "usable",
+  "shift": [
+   0,
+   0
+  ],
+  "off": 0,
+  "candidate": [
+   0,
+   0
+  ],
+  "share_within_one": 0.985,
+  "depth": 0.0167626196249665,
+  "reason": "usable",
+  "peak": [
+   null,
+   null
+  ],
+  "peak_share": null,
+  "n": 52386
+ }
+}

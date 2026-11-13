@@ -1,0 +1,42 @@
+{
+ "placement": "spatch_after_ratio",
+ "label": "SPATCH, ours after the refitted correction (correlation ratio)",
+ "seed": 20261007,
+ "draws": 200,
+ "search": 12,
+ "radius": 17,
+ "input_files": {
+  "<runs>/20261004_spatch_paper_mask_inputs_v3/result/star_qc_config.json": {
+   "sha256": "b00b33010947b72fa432065bfa1ee584084fc970a1e17763a650898fce7878db",
+   "recorded": null,
+   "match": null
+  },
+  "<runs>/20261004_spatch_paper_mask_inputs_v3/result/square_totals.npz": {
+   "sha256": "9017ef8260cf91af2062da60e7bf6baca1f14910762f4a8edec38417406973e3",
+   "recorded": null,
+   "match": null
+  },
+  "<runs>/20260727_spatch_visium_hd_ffpe_100k_sr_version_audit_v2/sr410_2020a_visium_v2_100k/outs/binned_outputs/square_002um/spatial/tissue_positions.parquet": {
+   "sha256": "cb7418a1645ffc6110f2d98a0e0c77e48a2444d44dea1720e1675cf4345fdf4c",
+   "recorded": null,
+   "match": null
+  },
+  "<runs>/20261004_spatch_paper_mask_inputs_v3/result/grid_states.npz": {
+   "sha256": "432a2e473f1aab24fb37f9f92e7e7f06674ef75d228781fb25895d1b8689651a",
+   "recorded": null,
+   "match": null
+  },
+  "<local>/paper_results/spatch_rescore_ratio_20261109/placement/spatch_refit_ratio.json": {
+   "sha256": "e4abe59f024641caae3b1496fc9b23fc45bfbfe6a4d43f33854d4fe226daa1a1",
+   "recorded": null,
+   "match": null
+  }
+ },
+ "inputs_sha_ok": true,
+ "all_reproduced": true,
+ "elapsed_seconds": 51.35123586654663,
+ "affinity": [
+  14,
+  15
+ ]
+}

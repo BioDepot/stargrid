@@ -1,0 +1,42 @@
+{
+ "placement": "lung_cpsam_TILD111LA",
+ "label": "Lung TILD111LA, Cellpose-SAM H&E nuclei",
+ "seed": 20261007,
+ "draws": 200,
+ "search": 12,
+ "radius": 17,
+ "input_files": {
+  "<runs>/20261010_registration_oracle_lung_expression_inputs_v1/total.npy": {
+   "sha256": "8bc4b401f80f0f46e3f29acbb8262a9664bf1e52077ff9c4d7a0f96eaa69da5d",
+   "recorded": "8bc4b401f80f0f46e3f29acbb8262a9664bf1e52077ff9c4d7a0f96eaa69da5d",
+   "match": true
+  },
+  "<runs>/20261010_registration_oracle_lung_expression_inputs_v1/tissue.npy": {
+   "sha256": "c797a4a6d39faf402e434ac60a2d8840c80c6c5800f544ccaac96487478fe33c",
+   "recorded": "c797a4a6d39faf402e434ac60a2d8840c80c6c5800f544ccaac96487478fe33c",
+   "match": true
+  },
+  "<runs>/20261110_lung_cellpose_sam_v1/grids/vannan.npz": {
+   "sha256": "4b0010feabaacf6a6d12e31e9f348df01beced73e24920ea4e5a245cfd3f61c8",
+   "recorded": null,
+   "match": null
+  }
+ },
+ "inputs_sha_ok": true,
+ "all_reproduced": true,
+ "elapsed_seconds": 3.410106897354126,
+ "affinity": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  12,
+  13,
+  14,
+  15
+ ]
+}

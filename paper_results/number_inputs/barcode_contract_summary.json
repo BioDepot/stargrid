@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "source_type": "space_ranger_slide_design_read_segments",
+  "source": "<spaceranger-4.1.0>/visium_hd_v1.slide",
+  "out_dir": "<datasets>/visium_hd_human_crc/hd_barcode_contract/visium_hd_v1_readspace_suffix_prefix_20260504",
+  "records": 11222500,
+  "bc1_whitelist_size": 3168,
+  "bc2_whitelist_size": 3350,
+  "paths": {
+    "barcode_coords": "<datasets>/visium_hd_human_crc/hd_barcode_contract/visium_hd_v1_readspace_suffix_prefix_20260504/barcode_coords.tsv",
+    "bc1_whitelist": "<datasets>/visium_hd_human_crc/hd_barcode_contract/visium_hd_v1_readspace_suffix_prefix_20260504/bc1_whitelist.txt",
+    "bc2_whitelist": "<datasets>/visium_hd_human_crc/hd_barcode_contract/visium_hd_v1_readspace_suffix_prefix_20260504/bc2_whitelist.txt",
+    "raw28_barcode_coords": "<datasets>/visium_hd_human_crc/hd_barcode_contract/visium_hd_v1_readspace_suffix_prefix_20260504/raw28_barcode_coords.tsv"
+  },
+  "slide_design": {
+    "version": "v1",
+    "name": "visium_hd_v1",
+    "description": "VISIUM HD V1",
+    "grid_rows": 3350,
+    "grid_cols": 3350,
+    "barcode_arrangement": "BC1_X_BC2_Y",
+    "coordinate_convention": "row2 is the BC2/Y index; col2 is the BC1/X index",
+    "combined_barcode_token": "BC1_BC2"
+  },
+  "chemistry": {
+    "source": "<spaceranger-4.1.0>/chemistry_defs.json",
+    "name": "SPATIAL-HD-v1",
+    "description": "Visium HD v1",
+    "barcode_extraction_method": "joint_bc1_bc2",
+    "min_offset": 8,
+    "max_offset": 12,
+    "segments": [
+      {
+        "part": "bc1",
+        "read_type": "R1",
+        "offset": 11,
+        "length": 14
+      },
+      {
+        "part": "bc2",
+        "read_type": "R1",
+        "offset": 25,
+        "length": 14
+      }
+    ],
+    "raw28_token": "BC1BC2"
+  },
+  "contract_stats": {
+    "coordinate_universe": "matrix_h5",
+    "coordinates_seen": 11222500,
+    "duplicate_coordinates": 0,
+    "skipped_out_of_grid_coordinates": 0,
+    "bc1_segment_policy": "suffix",
+    "bc2_segment_policy": "prefix",
+    "bc1_segment_uniqueness": {
+      "segments": 3168,
+      "total_assignments": 3350,
+      "unique_segments": 2990,
+      "colliding_segments": 178,
+      "max_collision": 3
+    },
+    "bc2_segment_uniqueness": {
+      "segments": 3350,
+      "total_assignments": 3350,
+      "unique_segments": 3350,
+      "colliding_segments": 0,
+      "max_collision": 1
+    },
+    "raw28_records": 11222500,
+    "raw28_distinct": 10612800,
+    "raw28_ambiguous_keys": 596300
+  }
+}

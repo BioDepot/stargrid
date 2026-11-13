@@ -1,0 +1,2542 @@
+{
+ "placement": "a1_cellpose_sr410",
+ "counts": "star",
+ "label": "A1, Cellpose-SAM, SR 4.1.0",
+ "expansions": [
+  0,
+  1,
+  2,
+  3
+ ],
+ "seed": 20261007,
+ "draws": 200,
+ "search": 12,
+ "radius": 13,
+ "inputs_sha256": {
+  "<runs>/20260716_vm2jxxk_natural_sr401_bam_v1/outs/binned_outputs/square_002um/raw_feature_bc_matrix.h5": "eaef4e80223cf74f474e07ef015c6daf6febc1eb3c7fbc4694e15891c9dde8ee",
+  "<runs>/20260718_vm2jxxk_ambiguous_biological_opportunity_auc_v1/masks/tissue_mask.bin": "861a9fab56a513670485281409fe0c791a48018d4ca6514fb22b17b3306b7c6d",
+  "<runs>/20261110_registration_cellpose_sam_v1/a1_cellpose_sr410/accepted_grid_labels.npy": "9ce49c391a765276f0a20bdfea49c38df36a78b593f2486c74675c15850eb22c"
+ },
+ "elapsed": 50.55888867378235,
+ "affinity": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  12,
+  13,
+  14,
+  15
+ ],
+ "rows": [
+  {
+   "set": "A1, Cellpose-SAM, SR 4.1.0",
+   "surface": "whole",
+   "bounds": [
+    0,
+    3350,
+    0,
+    3350
+   ],
+   "nucleus_in_tissue": 920164,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 2,
+     "dx": 2,
+     "value": 0.008064500896947324,
+     "n": 4,
+     "second": 0.007635743915841209,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.725,
+     "share_exact": 0.715,
+     "lo": 0.0065019265371709265,
+     "hi": 0.009456388786193188,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.030424216323353348,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.02702410203286863,
+     "hi": 0.03317657282407749,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.022171720502560888,
+     "n": 7,
+     "second": 0.004155631235127855,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.01936960313839851,
+     "hi": 0.025623266765280518,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": -2,
+     "value": 0.008304723862252339,
+     "n": 12,
+     "second": 0.006835843891267901,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.78,
+     "share_exact": 0.725,
+     "lo": 0.0057987500306103555,
+     "hi": 0.009637750597875387,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.02823586291075575,
+     "n": 7,
+     "second": 0.002741237002786834,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.026641753710420536,
+     "hi": 0.029467370833943646,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 3,
+     "value": 0.005232810483966288,
+     "n": 6,
+     "second": 0.0047111589353934225,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.675,
+     "share_exact": 0.595,
+     "lo": 0.00446085334982588,
+     "hi": 0.006169319003866183,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.017986132898451412,
+     "n": 4,
+     "second": 0.0019766100459146507,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.017047735070270624,
+     "hi": 0.018843254631489843,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 3,
+     "dx": 0,
+     "value": 0.0035571731872667822,
+     "n": 4,
+     "second": 0.003212966726147126,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.28,
+     "share_exact": 0.27,
+     "lo": 0.002419820272034301,
+     "hi": 0.004418411270673503,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "A1, Cellpose-SAM, SR 4.1.0",
+   "surface": "r0c0",
+   "bounds": [
+    0,
+    670,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 24150,
+   "tested": false
+  },
+  {
+   "set": "A1, Cellpose-SAM, SR 4.1.0",
+   "surface": "r0c1",
+   "bounds": [
+    0,
+    670,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 24227,
+   "tested": false
+  },
+  {
+   "set": "A1, Cellpose-SAM, SR 4.1.0",
+   "surface": "r0c2",
+   "bounds": [
+    0,
+    670,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 34786,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": -1,
+     "value": 0.017710891075792157,
+     "n": 14,
+     "second": 0.0138662945987309,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.5,
+     "share_exact": 0.28,
+     "lo": 0.008634936896975271,
+     "hi": 0.02593313876930215,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.014377819727957153,
+     "n": 16,
+     "second": 0.012212296322075433,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.315,
+     "share_exact": 0.315,
+     "lo": 0.005104898267156189,
+     "hi": 0.024382366610949103,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.034064010525072685,
+     "n": 10,
+     "second": 0.00961203007518785,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.99,
+     "share_exact": 0.78,
+     "lo": 0.02506619253914198,
+     "hi": 0.044302653377824686,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 7,
+     "dx": 12,
+     "value": 0.009660552004954859,
+     "n": 8,
+     "second": 0.009418889739588598,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.12,
+     "share_exact": 0.115,
+     "lo": 0.002546628744333238,
+     "hi": 0.015940218035771628,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.03481085976747722,
+     "n": 7,
+     "second": 0.0047216908489378095,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.975,
+     "lo": 0.029177753033583626,
+     "hi": 0.04174027309213172,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -9,
+     "dx": 11,
+     "value": 0.0060771044355185655,
+     "n": 4,
+     "second": 0.003832785542522976,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.335,
+     "share_exact": 0.26,
+     "lo": 0.0020405917099321352,
+     "hi": 0.009712619123426523,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.016646819838190607,
+     "n": 5,
+     "second": 0.005482516597082432,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.855,
+     "lo": 0.012504103569050512,
+     "hi": 0.020654964626014582,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -9,
+     "dx": 11,
+     "value": 0.005293541822144698,
+     "n": 6,
+     "second": 0.004311730689512516,
+     "interior": true,
+     "share_any": 0.985,
+     "share_within1": 0.425,
+     "share_exact": 0.33,
+     "lo": 0.0029494150829314477,
+     "hi": 0.008287531320408825,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "A1, Cellpose-SAM, SR 4.1.0",
+   "surface": "r0c3",
+   "bounds": [
+    0,
+    670,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 107025,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": -2,
+     "value": 0.004677103665801985,
+     "n": 2,
+     "second": 0.003423387840151948,
+     "interior": true,
+     "share_any": 0.975,
+     "share_within1": 0.32,
+     "share_exact": 0.14,
+     "lo": -0.0009925770011832951,
+     "hi": 0.011499019236264231,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.028119324545933577,
+     "n": 8,
+     "second": 0.004414596023981865,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.805,
+     "lo": 0.02246716166919732,
+     "hi": 0.04033270756204851,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.035587713946156674,
+     "n": 13,
+     "second": 0.009427295953112313,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.73,
+     "lo": 0.028978509030728017,
+     "hi": 0.042373859854176334,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": -2,
+     "value": 0.010149065401050317,
+     "n": 7,
+     "second": 0.009602717696766128,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.25,
+     "share_exact": 0.205,
+     "lo": 0.0037381805321745564,
+     "hi": 0.01669094800287377,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.032587648237826894,
+     "n": 6,
+     "second": 0.0042117713682880975,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.97,
+     "lo": 0.027643756261148685,
+     "hi": 0.03868181406893351,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": 1,
+     "value": 0.005857191923333782,
+     "n": 2,
+     "second": 0.0051656382469082995,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.235,
+     "share_exact": 0.23,
+     "lo": 0.0023486756622534996,
+     "hi": 0.009519246011292545,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.02136287800196568,
+     "n": 5,
+     "second": 0.005638874615233602,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.845,
+     "lo": 0.017003205407397325,
+     "hi": 0.024257054978679374,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": -2,
+     "value": 0.004535185581927448,
+     "n": 4,
+     "second": 0.00449968485171004,
+     "interior": true,
+     "share_any": 0.96,
+     "share_within1": 0.195,
+     "share_exact": 0.17,
+     "lo": 0.0011387038933580423,
+     "hi": 0.007428702431331727,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "A1, Cellpose-SAM, SR 4.1.0",
+   "surface": "r0c4",
+   "bounds": [
+    0,
+    670,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 30871,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 3,
+     "value": 0.011558082482057364,
+     "n": 12,
+     "second": 0.00852181485530723,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.29,
+     "share_exact": 0.29,
+     "lo": 0.004527119488864295,
+     "hi": 0.016732794397899358,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.05029268394466635,
+     "n": 5,
+     "second": 0.004768880616701443,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.0351433007601392,
+     "hi": 0.07246083819401754,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.023079731256094638,
+     "n": 18,
+     "second": 0.008669016785114447,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.72,
+     "share_exact": 0.71,
+     "lo": 0.011331146955640404,
+     "hi": 0.03302788177783736,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": -1,
+     "value": 0.014246211972440692,
+     "n": 25,
+     "second": 0.009997023246704817,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.405,
+     "share_exact": 0.23,
+     "lo": 0.0066357751827602314,
+     "hi": 0.021084579136925942,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.031509885432818185,
+     "n": 2,
+     "second": 0.001922174649841235,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.02354438611141278,
+     "hi": 0.035512435099375086,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 2,
+     "value": 0.016591466633439134,
+     "n": 6,
+     "second": 0.013916924860250424,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.45,
+     "share_exact": 0.45,
+     "lo": 0.008899661541909867,
+     "hi": 0.020880506655088147,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.02163072121101739,
+     "n": 4,
+     "second": 0.003014979317370603,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.015246068501601174,
+     "hi": 0.024714412088335292,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": 0,
+     "value": 0.007992579251267617,
+     "n": 5,
+     "second": 0.004634024901156386,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.545,
+     "share_exact": 0.515,
+     "lo": 0.00363927740726544,
+     "hi": 0.012104162046519006,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "A1, Cellpose-SAM, SR 4.1.0",
+   "surface": "r1c0",
+   "bounds": [
+    670,
+    1340,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 44839,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": 2,
+     "value": 0.011746488366025876,
+     "n": 10,
+     "second": 0.011424340637050445,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.15,
+     "share_exact": 0.14,
+     "lo": 0.005848011708221262,
+     "hi": 0.019136062298589832,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.034604073577418126,
+     "n": 9,
+     "second": 0.004687623839635391,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.02668337554728066,
+     "hi": 0.04586982312839713,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.03171696093928422,
+     "n": 19,
+     "second": 0.008678230596258496,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.02396326538545726,
+     "hi": 0.039100790635884605,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -12,
+     "dx": 0,
+     "value": 0.007073041349752951,
+     "n": 27,
+     "second": 0.007047539073107845,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.035,
+     "share_exact": 0.035,
+     "lo": -0.0005534641161840986,
+     "hi": 0.0145996978048988,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.03500024630009335,
+     "n": 16,
+     "second": 0.004595256944700754,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.02893358042160509,
+     "hi": 0.04048015819725391,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": 1,
+     "value": 0.004783637858772782,
+     "n": 11,
+     "second": 0.004422642517192932,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.29,
+     "share_exact": 0.23,
+     "lo": 0.0026141449757548954,
+     "hi": 0.008998341471290538,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.020472243226338227,
+     "n": 8,
+     "second": 0.0024957707919859295,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.98,
+     "lo": 0.01524224905237423,
+     "hi": 0.023431137001880792,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 6,
+     "dx": 12,
+     "value": 0.00233554444095474,
+     "n": 14,
+     "second": 0.002016483874977326,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.045,
+     "share_exact": 0.045,
+     "lo": -0.0004781021245560013,
+     "hi": 0.004864429605360299,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "A1, Cellpose-SAM, SR 4.1.0",
+   "surface": "r1c1",
+   "bounds": [
+    670,
+    1340,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 53899,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -2,
+     "value": 0.009784128979085871,
+     "n": 7,
+     "second": 0.008672611155092103,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.465,
+     "share_exact": 0.25,
+     "lo": 0.00642196270351692,
+     "hi": 0.014351343066633384,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.03311972047365597,
+     "n": 4,
+     "second": 0.004044794875837754,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.685,
+     "lo": 0.02881114740502871,
+     "hi": 0.04038061953969836,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.032370779057179,
+     "n": 21,
+     "second": 0.008736485468755717,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.685,
+     "lo": 0.023903685021591715,
+     "hi": 0.03933378021773859,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 6,
+     "dx": -11,
+     "value": 0.006997138536288472,
+     "n": 18,
+     "second": 0.006651725621308446,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.065,
+     "share_exact": 0.065,
+     "lo": -0.0007659504783857018,
+     "hi": 0.013470731083732463,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.030757877711347748,
+     "n": 17,
+     "second": 0.004769786299398726,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.965,
+     "lo": 0.025719080721506728,
+     "hi": 0.03610632866716403,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 3,
+     "dx": 1,
+     "value": 0.005963894767092359,
+     "n": 7,
+     "second": 0.0037306467585707104,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.495,
+     "share_exact": 0.45,
+     "lo": 0.0037108528241896225,
+     "hi": 0.01025949441802742,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.02027940193259714,
+     "n": 9,
+     "second": 0.0026041138930275043,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.965,
+     "lo": 0.016885239855660122,
+     "hi": 0.024122885137025058,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -1,
+     "dx": -3,
+     "value": 0.004815587197318338,
+     "n": 6,
+     "second": 0.0025411985807766158,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.66,
+     "share_exact": 0.39,
+     "lo": 0.0028475357370346317,
+     "hi": 0.007003418644329727,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "A1, Cellpose-SAM, SR 4.1.0",
+   "surface": "r1c2",
+   "bounds": [
+    670,
+    1340,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 55562,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 2,
+     "dx": 1,
+     "value": 0.02553366406803681,
+     "n": 2,
+     "second": 0.020203626939532926,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.485,
+     "share_exact": 0.485,
+     "lo": 0.018561827550326655,
+     "hi": 0.02892458498339151,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.03660909793083322,
+     "n": 3,
+     "second": 0.0035475633704107334,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.995,
+     "share_exact": 0.625,
+     "lo": 0.028682026072249615,
+     "hi": 0.04279821859214616,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.049557251566863414,
+     "n": 4,
+     "second": 0.009628887629866245,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.995,
+     "lo": 0.04256930519790193,
+     "hi": 0.05796954737961685,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -5,
+     "dx": 10,
+     "value": 0.008375778895129526,
+     "n": 2,
+     "second": 0.0046588654531872775,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.255,
+     "share_exact": 0.24,
+     "lo": 0.00263116079453046,
+     "hi": 0.013694168213677164,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.036730819801785275,
+     "n": 2,
+     "second": 0.006094610748963003,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.975,
+     "lo": 0.0329102683308479,
+     "hi": 0.04062612481076327,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 10,
+     "dx": -9,
+     "value": 0.0028177560606161833,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.875,
+     "share_within1": 0.12,
+     "share_exact": 0.12,
+     "lo": 4.537768522905337e-06,
+     "hi": 0.006126614185937554,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.018227451279456908,
+     "n": 3,
+     "second": 0.0050117757733016965,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.69,
+     "lo": 0.015847575959634524,
+     "hi": 0.02074257925623283,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 3,
+     "dx": 0,
+     "value": 0.0028426495317916967,
+     "n": 2,
+     "second": 0.0028377511248907084,
+     "interior": true,
+     "share_any": 0.95,
+     "share_within1": 0.315,
+     "share_exact": 0.125,
+     "lo": 0.0007978625292973219,
+     "hi": 0.00627215945702958,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "A1, Cellpose-SAM, SR 4.1.0",
+   "surface": "r1c3",
+   "bounds": [
+    670,
+    1340,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 52316,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": -2,
+     "value": 0.020994192305191506,
+     "n": 6,
+     "second": 0.01231866562169781,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.925,
+     "share_exact": 0.715,
+     "lo": 0.014573422281290327,
+     "hi": 0.02471401909352987,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.05632046105220068,
+     "n": 7,
+     "second": 0.007257536624211358,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.046808389705561185,
+     "hi": 0.06728655949750086,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.03933871682804324,
+     "n": 7,
+     "second": 0.008111276379084709,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.03358447806918985,
+     "hi": 0.04661574885909557,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 2,
+     "dx": 1,
+     "value": 0.009495034792946,
+     "n": 5,
+     "second": 0.008651656512614014,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.6,
+     "share_exact": 0.59,
+     "lo": 0.005777738806745506,
+     "hi": 0.01643455570612333,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.03993924428348983,
+     "n": 7,
+     "second": 0.006612747589335388,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.03456514560590683,
+     "hi": 0.043704559015691126,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 3,
+     "dx": 0,
+     "value": 0.00706575542032406,
+     "n": 2,
+     "second": 0.003617816742507718,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.695,
+     "share_exact": 0.225,
+     "lo": 0.002943927755487777,
+     "hi": 0.011058857141891153,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.025175321134593753,
+     "n": 10,
+     "second": 0.004431182497949715,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.021212785498002172,
+     "hi": 0.029528825721411803,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 3,
+     "dx": 1,
+     "value": 0.006847386171436987,
+     "n": 2,
+     "second": 0.0026758952230635513,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.84,
+     "share_exact": 0.675,
+     "lo": 0.004824948056292527,
+     "hi": 0.00878164092261239,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "A1, Cellpose-SAM, SR 4.1.0",
+   "surface": "r1c4",
+   "bounds": [
+    670,
+    1340,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 74878,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -2,
+     "value": 0.004293530280991664,
+     "n": 3,
+     "second": 0.00420910418670406,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.68,
+     "share_exact": 0.455,
+     "lo": 0.0010903316972980914,
+     "hi": 0.007833062055813305,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.008779737793720876,
+     "n": 2,
+     "second": 0.001666536156403442,
+     "interior": true,
+     "share_any": 0.975,
+     "share_within1": 0.94,
+     "share_exact": 0.93,
+     "lo": 0.003184681552863855,
+     "hi": 0.016105879241405312,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -8,
+     "dx": -4,
+     "value": 0.002948598498297317,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.98,
+     "share_within1": 0.035,
+     "share_exact": 0.015,
+     "lo": -0.002708047913036754,
+     "hi": 0.01475033440264855,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -1,
+     "dx": -1,
+     "value": 0.019163581915734418,
+     "n": 6,
+     "second": 0.00888808606060243,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.705,
+     "share_exact": 0.65,
+     "lo": 0.009795939981398407,
+     "hi": 0.02806798603977548,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.012249004951098819,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.94,
+     "share_within1": 0.885,
+     "share_exact": 0.885,
+     "lo": 0.006011197990017386,
+     "hi": 0.019363809514004238,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -1,
+     "dx": -1,
+     "value": 0.009241816188442553,
+     "n": 2,
+     "second": 0.009136619869733686,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.83,
+     "share_exact": 0.405,
+     "lo": 0.0036685405273914813,
+     "hi": 0.015516701013651192,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.008783443207710073,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.815,
+     "share_within1": 0.775,
+     "share_exact": 0.77,
+     "lo": 0.004083175964712226,
+     "hi": 0.013931613741897253,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -1,
+     "dx": -2,
+     "value": 0.008690613773028266,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.785,
+     "share_exact": 0.42,
+     "lo": 0.006202740903801673,
+     "hi": 0.011726083553349082,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "A1, Cellpose-SAM, SR 4.1.0",
+   "surface": "r2c0",
+   "bounds": [
+    1340,
+    2010,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 36952,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": -2,
+     "value": 0.011331011210139463,
+     "n": 22,
+     "second": 0.0070988586859219716,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.53,
+     "share_exact": 0.33,
+     "lo": 0.000769926819784689,
+     "hi": 0.022096735525737037,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.05310545019890367,
+     "n": 19,
+     "second": 0.00647204379620403,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.0413227018936384,
+     "hi": 0.06691288184691892,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.014154729737368754,
+     "n": 28,
+     "second": 0.007883487177637205,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.605,
+     "share_exact": 0.59,
+     "lo": 0.007221090561747634,
+     "hi": 0.022158774036783305,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 7,
+     "dx": 1,
+     "value": 0.00964556056022392,
+     "n": 44,
+     "second": 0.00949654734935046,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.17,
+     "share_exact": 0.17,
+     "lo": 0.0027786827098626767,
+     "hi": 0.01578329292996235,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.02532697280092111,
+     "n": 10,
+     "second": 0.0034873002173492207,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.02069379949883219,
+     "hi": 0.02983426205229548,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": -2,
+     "value": 0.00576352520967649,
+     "n": 16,
+     "second": 0.004119515406390772,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.22,
+     "share_exact": 0.215,
+     "lo": 0.003346342336325528,
+     "hi": 0.008613809637404398,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.017572812284696537,
+     "n": 12,
+     "second": 0.0032633354093993816,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.012762136640233507,
+     "hi": 0.02116917398613214,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -1,
+     "dx": 4,
+     "value": 0.003194263763985461,
+     "n": 8,
+     "second": 0.002333074406401292,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.245,
+     "share_exact": 0.075,
+     "lo": 0.0007191177545446627,
+     "hi": 0.006230006380997522,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "A1, Cellpose-SAM, SR 4.1.0",
+   "surface": "r2c1",
+   "bounds": [
+    1340,
+    2010,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 29036,
+   "tested": false
+  },
+  {
+   "set": "A1, Cellpose-SAM, SR 4.1.0",
+   "surface": "r2c2",
+   "bounds": [
+    1340,
+    2010,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 53089,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 2,
+     "dx": 2,
+     "value": 0.015000024650011046,
+     "n": 6,
+     "second": 0.008661966874291549,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.625,
+     "share_exact": 0.435,
+     "lo": 0.009870636181683112,
+     "hi": 0.021443348539988263,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.031246670022055834,
+     "n": 7,
+     "second": 0.003163870912349598,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.02130536210220087,
+     "hi": 0.04430761467812006,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.03153945023370852,
+     "n": 19,
+     "second": 0.01312731155290181,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.985,
+     "lo": 0.023426253876413266,
+     "hi": 0.0374489749476527,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": -9,
+     "value": 0.007279000627875676,
+     "n": 27,
+     "second": 0.0066265134137214465,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.07,
+     "share_exact": 0.055,
+     "lo": 0.0017828447813529828,
+     "hi": 0.0125102583265965,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.032377430488815806,
+     "n": 14,
+     "second": 0.007527583954903161,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.025518756497514467,
+     "hi": 0.036773631549025146,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": 0,
+     "value": 0.00615416302845917,
+     "n": 15,
+     "second": 0.004414728939732382,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.47,
+     "share_exact": 0.425,
+     "lo": 0.0020700179384451956,
+     "hi": 0.011542323974637673,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.019744513142212927,
+     "n": 6,
+     "second": 0.00472642557732228,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.93,
+     "lo": 0.014784254458253104,
+     "hi": 0.02249102567500751,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 2,
+     "dx": 2,
+     "value": 0.005109792532531077,
+     "n": 11,
+     "second": 0.003531968031813104,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.245,
+     "share_exact": 0.225,
+     "lo": 0.0028855215444361817,
+     "hi": 0.00892531648753298,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "A1, Cellpose-SAM, SR 4.1.0",
+   "surface": "r2c3",
+   "bounds": [
+    1340,
+    2010,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 56170,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -3,
+     "value": 0.006556335027625426,
+     "n": 2,
+     "second": 0.0035177558278944865,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.485,
+     "share_exact": 0.43,
+     "lo": 0.0031463058688326107,
+     "hi": 0.009832021675787478,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.02214111365619187,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.013339563598826426,
+     "hi": 0.0344234690655126,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.034685120516374957,
+     "n": 44,
+     "second": 0.011163580674021123,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.98,
+     "share_exact": 0.98,
+     "lo": 0.018155724204193213,
+     "hi": 0.04258807305581444,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": -2,
+     "value": 0.013260838706767086,
+     "n": 49,
+     "second": 0.009185195747592911,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.34,
+     "share_exact": 0.32,
+     "lo": 0.0038178216055800656,
+     "hi": 0.022494131257617064,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.03248851065834102,
+     "n": 18,
+     "second": 0.005438660652264948,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.025417977415705638,
+     "hi": 0.03699031663879061,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": -3,
+     "value": 0.009984685328235376,
+     "n": 26,
+     "second": 0.00694154378731815,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.51,
+     "share_exact": 0.395,
+     "lo": 0.005698274990323099,
+     "hi": 0.013695217607576674,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.019232613948195754,
+     "n": 16,
+     "second": 0.003936245265313776,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.01569621503812459,
+     "hi": 0.02275966090211443,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 3,
+     "value": 0.008373034788420441,
+     "n": 17,
+     "second": 0.008187927516597027,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.365,
+     "share_exact": 0.285,
+     "lo": 0.004330212973303604,
+     "hi": 0.01206800618653522,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "A1, Cellpose-SAM, SR 4.1.0",
+   "surface": "r2c4",
+   "bounds": [
+    1340,
+    2010,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 48091,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 2,
+     "value": 0.00891112305137609,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.66,
+     "share_exact": 0.29,
+     "lo": 0.004146079464552916,
+     "hi": 0.013398426565199996,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.019577380452119097,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 0.94,
+     "share_within1": 0.94,
+     "share_exact": 0.52,
+     "lo": 0.009045376014887863,
+     "hi": 0.03491508446753348,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.017171137164452288,
+     "n": 53,
+     "second": 0.01713968383802511,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.42,
+     "share_exact": 0.4,
+     "lo": 0.0007430282420240116,
+     "hi": 0.0308351962292451,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": -2,
+     "value": 0.019593236700313432,
+     "n": 66,
+     "second": 0.01341731417505021,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.83,
+     "share_exact": 0.455,
+     "lo": 0.009763802652786929,
+     "hi": 0.02948323782336709,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.026278010781156214,
+     "n": 15,
+     "second": 0.00849013753261385,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.995,
+     "share_exact": 0.99,
+     "lo": 0.016436293418026365,
+     "hi": 0.03338957272908554,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": 0,
+     "value": 0.011182357680816768,
+     "n": 26,
+     "second": 0.008756435928813033,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.335,
+     "share_exact": 0.27,
+     "lo": 0.00644785925576632,
+     "hi": 0.014848342268944999,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.01649640411887443,
+     "n": 11,
+     "second": 0.0031465622758493073,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.99,
+     "share_exact": 0.685,
+     "lo": 0.009337001204352957,
+     "hi": 0.02196040760672154,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 2,
+     "value": 0.008997405217613608,
+     "n": 19,
+     "second": 0.005250962769874246,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.485,
+     "share_exact": 0.405,
+     "lo": 0.0048739633028622,
+     "hi": 0.012270263664721875,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "A1, Cellpose-SAM, SR 4.1.0",
+   "surface": "r3c0",
+   "bounds": [
+    2010,
+    2680,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 30467,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -3,
+     "dx": -2,
+     "value": 0.01043781321116577,
+     "n": 15,
+     "second": 0.009146521611858027,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.085,
+     "share_exact": 0.025,
+     "lo": 0.005059603524947681,
+     "hi": 0.015574075537361171,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.07370468427844656,
+     "n": 19,
+     "second": 0.007883040123970453,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.965,
+     "lo": 0.06255964540973451,
+     "hi": 0.08746193412072165,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.02781799712567734,
+     "n": 63,
+     "second": 0.013371219282367619,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.84,
+     "lo": 0.020204694004469913,
+     "hi": 0.03988753813182352,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": 0,
+     "value": 0.010400977551619728,
+     "n": 67,
+     "second": 0.010384195605286806,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.245,
+     "share_exact": 0.135,
+     "lo": 0.004864873359294547,
+     "hi": 0.018563368837119974,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.03286544945760839,
+     "n": 23,
+     "second": 0.005447901263155641,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.945,
+     "lo": 0.026750134131249697,
+     "hi": 0.03856416327756147,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": 1,
+     "value": 0.011899944329244239,
+     "n": 23,
+     "second": 0.011297355518546603,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.47,
+     "share_exact": 0.355,
+     "lo": 0.008486532599616056,
+     "hi": 0.015529838383256785,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.023813257262787157,
+     "n": 23,
+     "second": 0.003944400826687344,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.94,
+     "lo": 0.018312719622231032,
+     "hi": 0.02719542213259048,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": -2,
+     "value": 0.004370671677679239,
+     "n": 35,
+     "second": 0.003163740107816282,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.28,
+     "share_exact": 0.14,
+     "lo": 0.0021280553610658393,
+     "hi": 0.007229183740943793,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "A1, Cellpose-SAM, SR 4.1.0",
+   "surface": "r3c1",
+   "bounds": [
+    2010,
+    2680,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 23159,
+   "tested": false
+  },
+  {
+   "set": "A1, Cellpose-SAM, SR 4.1.0",
+   "surface": "r3c2",
+   "bounds": [
+    2010,
+    2680,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 31197,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 2,
+     "dx": -3,
+     "value": 0.010465429877321908,
+     "n": 3,
+     "second": 0.00575292352706791,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.465,
+     "share_exact": 0.225,
+     "lo": 0.004980854983104105,
+     "hi": 0.01351271523816501,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.05570622964113725,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.041608088405015016,
+     "hi": 0.07210393680940184,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.020782433837844394,
+     "n": 16,
+     "second": 0.008188277732081417,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.9,
+     "share_exact": 0.855,
+     "lo": 0.010688827647932114,
+     "hi": 0.02706697468303067,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": 1,
+     "value": 0.011662737300211279,
+     "n": 12,
+     "second": 0.009647550056804177,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.55,
+     "share_exact": 0.485,
+     "lo": 0.005703856642046074,
+     "hi": 0.018519966373984568,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.032265731300627376,
+     "n": 11,
+     "second": 0.004038318510666938,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.024665576079220698,
+     "hi": 0.03647383252885499,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 2,
+     "dx": 1,
+     "value": 0.011269827699901258,
+     "n": 6,
+     "second": 0.009405471764130091,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.68,
+     "share_exact": 0.385,
+     "lo": 0.007462379385895002,
+     "hi": 0.014284714678100148,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.02321925953638959,
+     "n": 8,
+     "second": 0.003968018326296674,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.018212596319811182,
+     "hi": 0.026250134055606177,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 1,
+     "dx": -3,
+     "value": 0.00501452915849121,
+     "n": 5,
+     "second": 0.003971080456927845,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.615,
+     "share_exact": 0.19,
+     "lo": 0.00196767142216511,
+     "hi": 0.00697206368901985,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "A1, Cellpose-SAM, SR 4.1.0",
+   "surface": "r3c3",
+   "bounds": [
+    2010,
+    2680,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 42187,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 2,
+     "value": 0.011278802234450103,
+     "n": 18,
+     "second": 0.009950365098556846,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.165,
+     "share_exact": 0.16,
+     "lo": 0.005146634782275306,
+     "hi": 0.017932359480090438,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.04640326200215927,
+     "n": 24,
+     "second": 0.006018138915656057,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.03143849881717009,
+     "hi": 0.06365765666044793,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.024222072262393146,
+     "n": 29,
+     "second": 0.008219178082191858,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.99,
+     "share_exact": 0.99,
+     "lo": 0.014211752234265669,
+     "hi": 0.03216154787518193,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": 0,
+     "value": 0.009360927421833032,
+     "n": 40,
+     "second": 0.007163153329500238,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.335,
+     "share_exact": 0.245,
+     "lo": 0.0018418528712448622,
+     "hi": 0.017357661126921463,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.0298428645821458,
+     "n": 13,
+     "second": 0.005080829346946869,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.02383755170662339,
+     "hi": 0.03317002610107205,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 2,
+     "dx": 0,
+     "value": 0.013518549009073122,
+     "n": 23,
+     "second": 0.012926480558371645,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.46,
+     "share_exact": 0.46,
+     "lo": 0.008617459391646931,
+     "hi": 0.01580636858660238,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.019386778246561986,
+     "n": 11,
+     "second": 0.0026258385486064295,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.015070282902327365,
+     "hi": 0.02218572094975875,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": -3,
+     "value": 0.00718788844321927,
+     "n": 19,
+     "second": 0.007082903989567679,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.26,
+     "share_exact": 0.165,
+     "lo": 0.003243053631406559,
+     "hi": 0.009529332050247913,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "A1, Cellpose-SAM, SR 4.1.0",
+   "surface": "r3c4",
+   "bounds": [
+    2010,
+    2680,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 40854,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 2,
+     "dx": -3,
+     "value": 0.011008837960502671,
+     "n": 8,
+     "second": 0.00955277632417828,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.315,
+     "share_exact": 0.22,
+     "lo": 0.006380722565210589,
+     "hi": 0.016531207311597823,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.040227251683286336,
+     "n": 13,
+     "second": 0.006200282826997805,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.58,
+     "lo": 0.028730072297037876,
+     "hi": 0.057387627397954596,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.020678545204215082,
+     "n": 50,
+     "second": 0.0077238258834511075,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.96,
+     "share_exact": 0.73,
+     "lo": 0.008993992030325087,
+     "hi": 0.030278599641039725,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": -1,
+     "value": 0.014130240245701975,
+     "n": 54,
+     "second": 0.014107079617239893,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.425,
+     "share_exact": 0.31,
+     "lo": 0.008396005534163253,
+     "hi": 0.018917895749040625,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -1,
+     "value": 0.02450494496623712,
+     "n": 18,
+     "second": 0.004889844404766253,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.625,
+     "lo": 0.02198707938722716,
+     "hi": 0.03015385431686304,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": -3,
+     "value": 0.011663016387704839,
+     "n": 25,
+     "second": 0.010142143941757165,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.445,
+     "share_exact": 0.445,
+     "lo": 0.006925515319765571,
+     "hi": 0.01563941228478337,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -1,
+     "value": 0.018073268669685394,
+     "n": 18,
+     "second": 0.0022440210778396086,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.75,
+     "lo": 0.015642231572596393,
+     "hi": 0.023421279099269738,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -3,
+     "dx": -1,
+     "value": 0.006889735190199975,
+     "n": 23,
+     "second": 0.003439571534759711,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.475,
+     "share_exact": 0.38,
+     "lo": 0.00333606127119892,
+     "hi": 0.008749095819535285,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "A1, Cellpose-SAM, SR 4.1.0",
+   "surface": "r4c0",
+   "bounds": [
+    2680,
+    3350,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 0,
+   "tested": false
+  },
+  {
+   "set": "A1, Cellpose-SAM, SR 4.1.0",
+   "surface": "r4c1",
+   "bounds": [
+    2680,
+    3350,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 0,
+   "tested": false
+  },
+  {
+   "set": "A1, Cellpose-SAM, SR 4.1.0",
+   "surface": "r4c2",
+   "bounds": [
+    2680,
+    3350,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 5138,
+   "tested": false
+  },
+  {
+   "set": "A1, Cellpose-SAM, SR 4.1.0",
+   "surface": "r4c3",
+   "bounds": [
+    2680,
+    3350,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 13720,
+   "tested": false
+  },
+  {
+   "set": "A1, Cellpose-SAM, SR 4.1.0",
+   "surface": "r4c4",
+   "bounds": [
+    2680,
+    3350,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 7551,
+   "tested": false
+  }
+ ]
+}

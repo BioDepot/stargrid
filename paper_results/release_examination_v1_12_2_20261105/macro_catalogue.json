@@ -1,0 +1,476 @@
+[
+  {
+    "macro": "auditAboveHalfAtypicalCR",
+    "current_printed": "5,069",
+    "printed_source": "<local>/paper/audit_limit_numbers.tex",
+    "printed_source_sha256": "c9702576747047d649d8fe30ea1c72e5f503ac7363beb2ab072a0cce754f746c"
+  },
+  {
+    "macro": "auditJointHi",
+    "current_printed": "31",
+    "printed_source": "<local>/paper/audit_limit_numbers.tex",
+    "printed_source_sha256": "c9702576747047d649d8fe30ea1c72e5f503ac7363beb2ab072a0cce754f746c"
+  },
+  {
+    "macro": "auditJointLo",
+    "current_printed": "29",
+    "printed_source": "<local>/paper/audit_limit_numbers.tex",
+    "printed_source_sha256": "c9702576747047d649d8fe30ea1c72e5f503ac7363beb2ab072a0cce754f746c"
+  },
+  {
+    "macro": "auditNoCandidateMateSupported",
+    "current_printed": "8,463",
+    "printed_source": "<local>/paper/audit_limit_numbers.tex",
+    "printed_source_sha256": "c9702576747047d649d8fe30ea1c72e5f503ac7363beb2ab072a0cce754f746c"
+  },
+  {
+    "macro": "auditNoCandidateMateSupportedPct",
+    "current_printed": "77.7",
+    "printed_source": "<local>/paper/audit_limit_numbers.tex",
+    "printed_source_sha256": "c9702576747047d649d8fe30ea1c72e5f503ac7363beb2ab072a0cce754f746c"
+  },
+  {
+    "macro": "auditSRAboveHalfInOverlap",
+    "current_printed": "0",
+    "printed_source": "<local>/paper/audit_limit_numbers.tex",
+    "printed_source_sha256": "c9702576747047d649d8fe30ea1c72e5f503ac7363beb2ab072a0cce754f746c"
+  },
+  {
+    "macro": "auditSRBeyondHalf",
+    "current_printed": "15,962",
+    "printed_source": "<local>/paper/audit_limit_numbers.tex",
+    "printed_source_sha256": "c9702576747047d649d8fe30ea1c72e5f503ac7363beb2ab072a0cce754f746c"
+  },
+  {
+    "macro": "auditSRBeyondHalfPct",
+    "current_printed": "0.0025",
+    "printed_source": "<local>/paper/audit_limit_numbers.tex",
+    "printed_source_sha256": "c9702576747047d649d8fe30ea1c72e5f503ac7363beb2ab072a0cce754f746c"
+  },
+  {
+    "macro": "auditSREmitted",
+    "current_printed": "639,672,962",
+    "printed_source": "<local>/paper/audit_limit_numbers.tex",
+    "printed_source_sha256": "c9702576747047d649d8fe30ea1c72e5f503ac7363beb2ab072a0cce754f746c"
+  },
+  {
+    "macro": "auditSRNoCandidateEmitted",
+    "current_printed": "10,892",
+    "printed_source": "<local>/paper/audit_limit_numbers.tex",
+    "printed_source_sha256": "c9702576747047d649d8fe30ea1c72e5f503ac7363beb2ab072a0cce754f746c"
+  },
+  {
+    "macro": "auditWithinAtypicalCRPct",
+    "current_printed": "3.7",
+    "printed_source": "<local>/paper/audit_limit_numbers.tex",
+    "printed_source_sha256": "c9702576747047d649d8fe30ea1c72e5f503ac7363beb2ab072a0cce754f746c"
+  },
+  {
+    "macro": "caseOneClosestBCOneEdits",
+    "current_printed": "1",
+    "printed_source": "<local>/paper/worked_case_numbers.tex",
+    "printed_source_sha256": "79a7bb06868afa9a5cbdb49c47a0f564e3d0425fd3e852fe8079004be8359f45"
+  },
+  {
+    "macro": "caseOneClosestBCTwoEdits",
+    "current_printed": "0",
+    "printed_source": "<local>/paper/worked_case_numbers.tex",
+    "printed_source_sha256": "79a7bb06868afa9a5cbdb49c47a0f564e3d0425fd3e852fe8079004be8359f45"
+  },
+  {
+    "macro": "caseOneClosestColumn",
+    "current_printed": "2930",
+    "printed_source": "<local>/paper/worked_case_numbers.tex",
+    "printed_source_sha256": "79a7bb06868afa9a5cbdb49c47a0f564e3d0425fd3e852fe8079004be8359f45"
+  },
+  {
+    "macro": "caseOneClosestRow",
+    "current_printed": "1183",
+    "printed_source": "<local>/paper/worked_case_numbers.tex",
+    "printed_source_sha256": "79a7bb06868afa9a5cbdb49c47a0f564e3d0425fd3e852fe8079004be8359f45"
+  },
+  {
+    "macro": "caseOneClosestTotalEdits",
+    "current_printed": "1",
+    "printed_source": "<local>/paper/worked_case_numbers.tex",
+    "printed_source_sha256": "79a7bb06868afa9a5cbdb49c47a0f564e3d0425fd3e852fe8079004be8359f45"
+  },
+  {
+    "macro": "caseOneSRBCOneEdits",
+    "current_printed": "1",
+    "printed_source": "<local>/paper/worked_case_numbers.tex",
+    "printed_source_sha256": "79a7bb06868afa9a5cbdb49c47a0f564e3d0425fd3e852fe8079004be8359f45"
+  },
+  {
+    "macro": "caseOneSRBCTwoEdits",
+    "current_printed": "1",
+    "printed_source": "<local>/paper/worked_case_numbers.tex",
+    "printed_source_sha256": "79a7bb06868afa9a5cbdb49c47a0f564e3d0425fd3e852fe8079004be8359f45"
+  },
+  {
+    "macro": "caseOneSRColumn",
+    "current_printed": "2930",
+    "printed_source": "<local>/paper/worked_case_numbers.tex",
+    "printed_source_sha256": "79a7bb06868afa9a5cbdb49c47a0f564e3d0425fd3e852fe8079004be8359f45"
+  },
+  {
+    "macro": "caseOneSRRow",
+    "current_printed": "1182",
+    "printed_source": "<local>/paper/worked_case_numbers.tex",
+    "printed_source_sha256": "79a7bb06868afa9a5cbdb49c47a0f564e3d0425fd3e852fe8079004be8359f45"
+  },
+  {
+    "macro": "caseOneSRTotalEdits",
+    "current_printed": "2",
+    "printed_source": "<local>/paper/worked_case_numbers.tex",
+    "printed_source_sha256": "79a7bb06868afa9a5cbdb49c47a0f564e3d0425fd3e852fe8079004be8359f45"
+  },
+  {
+    "macro": "caseTwoClosestBCOneEdits",
+    "current_printed": "1",
+    "printed_source": "<local>/paper/worked_case_numbers.tex",
+    "printed_source_sha256": "79a7bb06868afa9a5cbdb49c47a0f564e3d0425fd3e852fe8079004be8359f45"
+  },
+  {
+    "macro": "caseTwoClosestBCTwoEdits",
+    "current_printed": "0",
+    "printed_source": "<local>/paper/worked_case_numbers.tex",
+    "printed_source_sha256": "79a7bb06868afa9a5cbdb49c47a0f564e3d0425fd3e852fe8079004be8359f45"
+  },
+  {
+    "macro": "caseTwoClosestColumn",
+    "current_printed": "2736",
+    "printed_source": "<local>/paper/worked_case_numbers.tex",
+    "printed_source_sha256": "79a7bb06868afa9a5cbdb49c47a0f564e3d0425fd3e852fe8079004be8359f45"
+  },
+  {
+    "macro": "caseTwoClosestRow",
+    "current_printed": "727",
+    "printed_source": "<local>/paper/worked_case_numbers.tex",
+    "printed_source_sha256": "79a7bb06868afa9a5cbdb49c47a0f564e3d0425fd3e852fe8079004be8359f45"
+  },
+  {
+    "macro": "caseTwoClosestTotalEdits",
+    "current_printed": "1",
+    "printed_source": "<local>/paper/worked_case_numbers.tex",
+    "printed_source_sha256": "79a7bb06868afa9a5cbdb49c47a0f564e3d0425fd3e852fe8079004be8359f45"
+  },
+  {
+    "macro": "caseTwoSRBCOneEdits",
+    "current_printed": "1",
+    "printed_source": "<local>/paper/worked_case_numbers.tex",
+    "printed_source_sha256": "79a7bb06868afa9a5cbdb49c47a0f564e3d0425fd3e852fe8079004be8359f45"
+  },
+  {
+    "macro": "caseTwoSRBCTwoEdits",
+    "current_printed": "1",
+    "printed_source": "<local>/paper/worked_case_numbers.tex",
+    "printed_source_sha256": "79a7bb06868afa9a5cbdb49c47a0f564e3d0425fd3e852fe8079004be8359f45"
+  },
+  {
+    "macro": "caseTwoSRColumn",
+    "current_printed": "2736",
+    "printed_source": "<local>/paper/worked_case_numbers.tex",
+    "printed_source_sha256": "79a7bb06868afa9a5cbdb49c47a0f564e3d0425fd3e852fe8079004be8359f45"
+  },
+  {
+    "macro": "caseTwoSRRow",
+    "current_printed": "728",
+    "printed_source": "<local>/paper/worked_case_numbers.tex",
+    "printed_source_sha256": "79a7bb06868afa9a5cbdb49c47a0f564e3d0425fd3e852fe8079004be8359f45"
+  },
+  {
+    "macro": "caseTwoSRTotalEdits",
+    "current_printed": "2",
+    "printed_source": "<local>/paper/worked_case_numbers.tex",
+    "printed_source_sha256": "79a7bb06868afa9a5cbdb49c47a0f564e3d0425fd3e852fe8079004be8359f45"
+  },
+  {
+    "macro": "frameAboveEDTwo",
+    "current_printed": "5,070",
+    "printed_source": "<local>/paper/numbers.tex",
+    "printed_source_sha256": "76586b46d4c49b5f7832e789290af5f99f92b4d8f876f74d6ff76b2dc036ed70"
+  },
+  {
+    "macro": "frameBestSplitOneOne",
+    "current_printed": "3,627,986",
+    "printed_source": "<local>/paper/numbers.tex",
+    "printed_source_sha256": "76586b46d4c49b5f7832e789290af5f99f92b4d8f876f74d6ff76b2dc036ed70"
+  },
+  {
+    "macro": "frameDelPlusIns",
+    "current_printed": "2,979,137",
+    "printed_source": "<local>/paper/numbers.tex",
+    "printed_source_sha256": "76586b46d4c49b5f7832e789290af5f99f92b4d8f876f74d6ff76b2dc036ed70"
+  },
+  {
+    "macro": "frameOffsetMinusOne",
+    "current_printed": "3,033,432",
+    "printed_source": "<local>/paper/numbers.tex",
+    "printed_source_sha256": "76586b46d4c49b5f7832e789290af5f99f92b4d8f876f74d6ff76b2dc036ed70"
+  },
+  {
+    "macro": "outOtherDifferent",
+    "current_printed": "192,555",
+    "printed_source": "<local>/audit_outcome_numbers.tex",
+    "printed_source_sha256": "ac3b497185be98186f956aabab65612135aafc53beab217605853f0afea574a0"
+  },
+  {
+    "macro": "outOtherDifferentPct",
+    "current_printed": "0.030",
+    "printed_source": "<local>/audit_outcome_numbers.tex",
+    "printed_source_sha256": "ac3b497185be98186f956aabab65612135aafc53beab217605853f0afea574a0"
+  },
+  {
+    "macro": "outOtherShareOfDifferentPct",
+    "current_printed": "5.02",
+    "printed_source": "<local>/audit_outcome_numbers.tex",
+    "printed_source_sha256": "ac3b497185be98186f956aabab65612135aafc53beab217605853f0afea574a0"
+  },
+  {
+    "macro": "outOtherTwoOrThreeEditsPct",
+    "current_printed": "99.8",
+    "printed_source": "<local>/audit_outcome_numbers.tex",
+    "printed_source_sha256": "ac3b497185be98186f956aabab65612135aafc53beab217605853f0afea574a0"
+  },
+  {
+    "macro": "outOursAlsoSRPlacedPct",
+    "current_printed": "99.71",
+    "printed_source": "<local>/audit_outcome_numbers.tex",
+    "printed_source_sha256": "ac3b497185be98186f956aabab65612135aafc53beab217605853f0afea574a0"
+  },
+  {
+    "macro": "outSROnlyOfSRPct",
+    "current_printed": "0.0017",
+    "printed_source": "<local>/audit_outcome_numbers.tex",
+    "printed_source_sha256": "ac3b497185be98186f956aabab65612135aafc53beab217605853f0afea574a0"
+  },
+  {
+    "macro": "outSROnlyPct",
+    "current_printed": "0.0015",
+    "printed_source": "<local>/audit_outcome_numbers.tex",
+    "printed_source_sha256": "ac3b497185be98186f956aabab65612135aafc53beab217605853f0afea574a0"
+  },
+  {
+    "macro": "outSRPlacedAlsoOursPct",
+    "current_printed": "99.998",
+    "printed_source": "<local>/audit_outcome_numbers.tex",
+    "printed_source_sha256": "ac3b497185be98186f956aabab65612135aafc53beab217605853f0afea574a0"
+  },
+  {
+    "macro": "outTiedPct",
+    "current_printed": "20.6",
+    "printed_source": "<local>/audit_outcome_numbers.tex",
+    "printed_source_sha256": "ac3b497185be98186f956aabab65612135aafc53beab217605853f0afea574a0"
+  },
+  {
+    "macro": "outTiedSRAmongPct",
+    "current_printed": "98.7",
+    "printed_source": "<local>/audit_outcome_numbers.tex",
+    "printed_source_sha256": "ac3b497185be98186f956aabab65612135aafc53beab217605853f0afea574a0"
+  },
+  {
+    "macro": "outTiedSRNonePct",
+    "current_printed": "0.6",
+    "printed_source": "<local>/audit_outcome_numbers.tex",
+    "printed_source_sha256": "ac3b497185be98186f956aabab65612135aafc53beab217605853f0afea574a0"
+  },
+  {
+    "macro": "outTiedSROtherPct",
+    "current_printed": "0.7",
+    "printed_source": "<local>/audit_outcome_numbers.tex",
+    "printed_source_sha256": "ac3b497185be98186f956aabab65612135aafc53beab217605853f0afea574a0"
+  },
+  {
+    "macro": "outUnassignedExact",
+    "current_printed": "0",
+    "printed_source": "<local>/audit_outcome_numbers.tex",
+    "printed_source_sha256": "ac3b497185be98186f956aabab65612135aafc53beab217605853f0afea574a0"
+  },
+  {
+    "macro": "outUnassignedRateFour",
+    "current_printed": "15.2",
+    "printed_source": "<local>/audit_outcome_numbers.tex",
+    "printed_source_sha256": "ac3b497185be98186f956aabab65612135aafc53beab217605853f0afea574a0"
+  },
+  {
+    "macro": "outUnassignedRateOne",
+    "current_printed": "0.001",
+    "printed_source": "<local>/audit_outcome_numbers.tex",
+    "printed_source_sha256": "ac3b497185be98186f956aabab65612135aafc53beab217605853f0afea574a0"
+  },
+  {
+    "macro": "outUnassignedRateThree",
+    "current_printed": "2.3",
+    "printed_source": "<local>/audit_outcome_numbers.tex",
+    "printed_source_sha256": "ac3b497185be98186f956aabab65612135aafc53beab217605853f0afea574a0"
+  },
+  {
+    "macro": "outUnassignedRateTwo",
+    "current_printed": "0.37",
+    "printed_source": "<local>/audit_outcome_numbers.tex",
+    "printed_source_sha256": "ac3b497185be98186f956aabab65612135aafc53beab217605853f0afea574a0"
+  },
+  {
+    "macro": "outUnassignedSingleClosestPct",
+    "current_printed": "58.4",
+    "printed_source": "<local>/audit_outcome_numbers.tex",
+    "printed_source_sha256": "ac3b497185be98186f956aabab65612135aafc53beab217605853f0afea574a0"
+  },
+  {
+    "macro": "outUnassignedThreeOrFourEditsPct",
+    "current_printed": "76.7",
+    "printed_source": "<local>/audit_outcome_numbers.tex",
+    "printed_source_sha256": "ac3b497185be98186f956aabab65612135aafc53beab217605853f0afea574a0"
+  },
+  {
+    "macro": "outUnassignedTwoOrMoreEditsPct",
+    "current_printed": "99.9",
+    "printed_source": "<local>/audit_outcome_numbers.tex",
+    "printed_source_sha256": "ac3b497185be98186f956aabab65612135aafc53beab217605853f0afea574a0"
+  },
+  {
+    "macro": "shortBCTwoMolecules",
+    "current_printed": "1,538,738",
+    "printed_source": "<local>/paper/numbers.tex",
+    "printed_source_sha256": "76586b46d4c49b5f7832e789290af5f99f92b4d8f876f74d6ff76b2dc036ed70"
+  },
+  {
+    "macro": "shortBCTwoPct",
+    "current_printed": "94.98",
+    "printed_source": "<local>/paper/numbers.tex",
+    "printed_source_sha256": "76586b46d4c49b5f7832e789290af5f99f92b4d8f876f74d6ff76b2dc036ed70"
+  },
+  {
+    "macro": "shortBCTwoReads",
+    "current_printed": "3,644,060",
+    "printed_source": "<local>/paper/numbers.tex",
+    "printed_source_sha256": "76586b46d4c49b5f7832e789290af5f99f92b4d8f876f74d6ff76b2dc036ed70"
+  },
+  {
+    "macro": "shortBCTwoSixteenPct",
+    "current_printed": "7.37",
+    "printed_source": "<local>/paper/numbers.tex",
+    "printed_source_sha256": "76586b46d4c49b5f7832e789290af5f99f92b4d8f876f74d6ff76b2dc036ed70"
+  },
+  {
+    "macro": "shortBCTwoTwoUmDisagree",
+    "current_printed": "1,352,442",
+    "printed_source": "<local>/paper/numbers.tex",
+    "printed_source_sha256": "76586b46d4c49b5f7832e789290af5f99f92b4d8f876f74d6ff76b2dc036ed70"
+  },
+  {
+    "macro": "shortBCTwoTwoUmPct",
+    "current_printed": "16.21",
+    "printed_source": "<local>/paper/numbers.tex",
+    "printed_source_sha256": "76586b46d4c49b5f7832e789290af5f99f92b4d8f876f74d6ff76b2dc036ed70"
+  },
+  {
+    "macro": "shortBCTwoTwoUmTotal",
+    "current_printed": "8,341,434",
+    "printed_source": "<local>/paper/numbers.tex",
+    "printed_source_sha256": "76586b46d4c49b5f7832e789290af5f99f92b4d8f876f74d6ff76b2dc036ed70"
+  },
+  {
+    "macro": "taxCandidatePct",
+    "current_printed": "90.69",
+    "printed_source": "<local>/paper/numbers.tex",
+    "printed_source_sha256": "76586b46d4c49b5f7832e789290af5f99f92b4d8f876f74d6ff76b2dc036ed70"
+  },
+  {
+    "macro": "taxCandidateReads",
+    "current_printed": "641,532,499",
+    "printed_source": "<local>/paper/numbers.tex",
+    "printed_source_sha256": "76586b46d4c49b5f7832e789290af5f99f92b4d8f876f74d6ff76b2dc036ed70"
+  },
+  {
+    "macro": "taxNoCandidate",
+    "current_printed": "65,876,860",
+    "printed_source": "<local>/paper/numbers.tex",
+    "printed_source_sha256": "76586b46d4c49b5f7832e789290af5f99f92b4d8f876f74d6ff76b2dc036ed70"
+  },
+  {
+    "macro": "taxNoCandidatePct",
+    "current_printed": "9.31",
+    "printed_source": "<local>/paper/numbers.tex",
+    "printed_source_sha256": "76586b46d4c49b5f7832e789290af5f99f92b4d8f876f74d6ff76b2dc036ed70"
+  },
+  {
+    "macro": "taxNonminEqualCost",
+    "current_printed": "895",
+    "printed_source": "<local>/paper/numbers.tex",
+    "printed_source_sha256": "76586b46d4c49b5f7832e789290af5f99f92b4d8f876f74d6ff76b2dc036ed70"
+  },
+  {
+    "macro": "taxNonminEqualCostPct",
+    "current_printed": "0.0233",
+    "printed_source": "<local>/paper/numbers.tex",
+    "printed_source_sha256": "76586b46d4c49b5f7832e789290af5f99f92b4d8f876f74d6ff76b2dc036ed70"
+  },
+  {
+    "macro": "taxNonminGreaterCost",
+    "current_printed": "3,835,720",
+    "printed_source": "<local>/paper/numbers.tex",
+    "printed_source_sha256": "76586b46d4c49b5f7832e789290af5f99f92b4d8f876f74d6ff76b2dc036ed70"
+  },
+  {
+    "macro": "taxNonminGreaterCostPct",
+    "current_printed": "99.9767",
+    "printed_source": "<local>/paper/numbers.tex",
+    "printed_source_sha256": "76586b46d4c49b5f7832e789290af5f99f92b4d8f876f74d6ff76b2dc036ed70"
+  },
+  {
+    "macro": "taxSRMinimum",
+    "current_printed": "635,825,455",
+    "printed_source": "<local>/paper/numbers.tex",
+    "printed_source_sha256": "76586b46d4c49b5f7832e789290af5f99f92b4d8f876f74d6ff76b2dc036ed70"
+  },
+  {
+    "macro": "taxSRMinimumPct",
+    "current_printed": "99.1104",
+    "printed_source": "<local>/paper/numbers.tex",
+    "printed_source_sha256": "76586b46d4c49b5f7832e789290af5f99f92b4d8f876f74d6ff76b2dc036ed70"
+  },
+  {
+    "macro": "taxSRNonminimum",
+    "current_printed": "3,836,615",
+    "printed_source": "<local>/paper/numbers.tex",
+    "printed_source_sha256": "76586b46d4c49b5f7832e789290af5f99f92b4d8f876f74d6ff76b2dc036ed70"
+  },
+  {
+    "macro": "taxSRNonminimumPct",
+    "current_printed": "0.5980",
+    "printed_source": "<local>/paper/numbers.tex",
+    "printed_source_sha256": "76586b46d4c49b5f7832e789290af5f99f92b4d8f876f74d6ff76b2dc036ed70"
+  },
+  {
+    "macro": "taxSRUnassigned",
+    "current_printed": "1,870,429",
+    "printed_source": "<local>/paper/numbers.tex",
+    "printed_source_sha256": "76586b46d4c49b5f7832e789290af5f99f92b4d8f876f74d6ff76b2dc036ed70"
+  },
+  {
+    "macro": "taxSRUnassignedPct",
+    "current_printed": "0.2916",
+    "printed_source": "<local>/paper/numbers.tex",
+    "printed_source_sha256": "76586b46d4c49b5f7832e789290af5f99f92b4d8f876f74d6ff76b2dc036ed70"
+  },
+  {
+    "macro": "taxSharedRecords",
+    "current_printed": "707,409,359",
+    "printed_source": "<local>/paper/numbers.tex",
+    "printed_source_sha256": "76586b46d4c49b5f7832e789290af5f99f92b4d8f876f74d6ff76b2dc036ed70"
+  },
+  {
+    "macro": "taxUniqueMinNonmin",
+    "current_printed": "2,899,938",
+    "printed_source": "<local>/paper/numbers.tex",
+    "printed_source_sha256": "76586b46d4c49b5f7832e789290af5f99f92b4d8f876f74d6ff76b2dc036ed70"
+  },
+  {
+    "macro": "taxUniqueMinNonminPct",
+    "current_printed": "75.59",
+    "printed_source": "<local>/paper/numbers.tex",
+    "printed_source_sha256": "76586b46d4c49b5f7832e789290af5f99f92b4d8f876f74d6ff76b2dc036ed70"
+  }
+]

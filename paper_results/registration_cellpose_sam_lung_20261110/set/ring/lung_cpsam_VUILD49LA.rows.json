@@ -1,0 +1,310 @@
+{
+ "placement": "lung_cpsam_VUILD49LA",
+ "counts": "star",
+ "label": "Lung VUILD49LA, Cellpose-SAM H&E nuclei",
+ "expansions": [
+  0,
+  1,
+  2,
+  3
+ ],
+ "seed": 20261007,
+ "draws": 200,
+ "search": 12,
+ "radius": 13,
+ "inputs_sha256": {
+  "<runs>/20261010_registration_oracle_lung_expression_inputs_v1/total.npy": "8bc4b401f80f0f46e3f29acbb8262a9664bf1e52077ff9c4d7a0f96eaa69da5d",
+  "<runs>/20261010_registration_oracle_lung_expression_inputs_v1/tissue.npy": "c797a4a6d39faf402e434ac60a2d8840c80c6c5800f544ccaac96487478fe33c",
+  "<runs>/20261110_lung_cellpose_sam_v1/grids/vannan.npz": "4b0010feabaacf6a6d12e31e9f348df01beced73e24920ea4e5a245cfd3f61c8"
+ },
+ "elapsed": 4.898212671279907,
+ "affinity": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  12,
+  13,
+  14,
+  15
+ ],
+ "rows": [
+  {
+   "set": "Lung VUILD49LA, Cellpose-SAM H&E nuclei",
+   "surface": "whole",
+   "bounds": [
+    64,
+    1812,
+    64,
+    1940
+   ],
+   "nucleus_in_tissue": 161554,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -1,
+     "value": 0.017001663123522137,
+     "n": 4,
+     "second": 0.012526402933917158,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.68,
+     "share_exact": 0.45,
+     "lo": 0.010275812070200502,
+     "hi": 0.020741993414530435,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -2,
+     "dx": -4,
+     "value": 0.030452177449012074,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.64,
+     "lo": 0.022859600413725912,
+     "hi": 0.03777923428059712,
+     "usable": true
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -3,
+     "value": 0.011516259478770996,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.66,
+     "share_exact": 0.55,
+     "lo": 0.005674952538338607,
+     "hi": 0.016267226191192925,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 11,
+     "dx": 7,
+     "value": 0.006517962829164947,
+     "n": 3,
+     "second": 0.004256948654944526,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.275,
+     "share_exact": 0.265,
+     "lo": 0.0021976867480493685,
+     "hi": 0.010787207734004186,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -3,
+     "value": 0.020620831386792382,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.695,
+     "lo": 0.015951210366887895,
+     "hi": 0.02415716932056436,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -3,
+     "value": 0.013100631417874764,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.595,
+     "lo": 0.009477831870407778,
+     "hi": 0.016827837442459026,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "truth": [
+    -2,
+    -3
+   ]
+  },
+  {
+   "set": "Lung VUILD49LA, Cellpose-SAM H&E nuclei",
+   "surface": "r0c0",
+   "bounds": [
+    64,
+    646,
+    64,
+    689
+   ],
+   "nucleus_in_tissue": 13724,
+   "tested": false,
+   "truth": [
+    -2,
+    -3
+   ]
+  },
+  {
+   "set": "Lung VUILD49LA, Cellpose-SAM H&E nuclei",
+   "surface": "r0c1",
+   "bounds": [
+    64,
+    646,
+    689,
+    1314
+   ],
+   "nucleus_in_tissue": 22586,
+   "tested": false,
+   "truth": [
+    -2,
+    -3
+   ]
+  },
+  {
+   "set": "Lung VUILD49LA, Cellpose-SAM H&E nuclei",
+   "surface": "r0c2",
+   "bounds": [
+    64,
+    646,
+    1314,
+    1940
+   ],
+   "nucleus_in_tissue": 7745,
+   "tested": false,
+   "truth": [
+    -2,
+    -3
+   ]
+  },
+  {
+   "set": "Lung VUILD49LA, Cellpose-SAM H&E nuclei",
+   "surface": "r1c0",
+   "bounds": [
+    646,
+    1229,
+    64,
+    689
+   ],
+   "nucleus_in_tissue": 16881,
+   "tested": false,
+   "truth": [
+    -2,
+    -3
+   ]
+  },
+  {
+   "set": "Lung VUILD49LA, Cellpose-SAM H&E nuclei",
+   "surface": "r1c1",
+   "bounds": [
+    646,
+    1229,
+    689,
+    1314
+   ],
+   "nucleus_in_tissue": 28468,
+   "tested": false,
+   "truth": [
+    -2,
+    -3
+   ]
+  },
+  {
+   "set": "Lung VUILD49LA, Cellpose-SAM H&E nuclei",
+   "surface": "r1c2",
+   "bounds": [
+    646,
+    1229,
+    1314,
+    1940
+   ],
+   "nucleus_in_tissue": 15620,
+   "tested": false,
+   "truth": [
+    -2,
+    -3
+   ]
+  },
+  {
+   "set": "Lung VUILD49LA, Cellpose-SAM H&E nuclei",
+   "surface": "r2c0",
+   "bounds": [
+    1229,
+    1812,
+    64,
+    689
+   ],
+   "nucleus_in_tissue": 16514,
+   "tested": false,
+   "truth": [
+    -2,
+    -3
+   ]
+  },
+  {
+   "set": "Lung VUILD49LA, Cellpose-SAM H&E nuclei",
+   "surface": "r2c1",
+   "bounds": [
+    1229,
+    1812,
+    689,
+    1314
+   ],
+   "nucleus_in_tissue": 21533,
+   "tested": false,
+   "truth": [
+    -2,
+    -3
+   ]
+  },
+  {
+   "set": "Lung VUILD49LA, Cellpose-SAM H&E nuclei",
+   "surface": "r2c2",
+   "bounds": [
+    1229,
+    1812,
+    1314,
+    1940
+   ],
+   "nucleus_in_tissue": 18483,
+   "tested": false,
+   "truth": [
+    -2,
+    -3
+   ]
+  }
+ ]
+}

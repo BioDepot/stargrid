@@ -1,0 +1,28 @@
+{
+ "note": "Whole tissue sections measured by Xenium and then Visium HD on the same section, other than the four Vannan cores. The builders read this list: to add a section, copy its ring-run rows files (fpr.py output for the H&E and the Xenium nuclei) under ring/ and add an entry. Rows files hold, per surface, f0 (nuclei: dip) and f1-f3 (ring widths 1-3: peak and dip) with the truth shift. Each section has a group: discovery sections count in regchkFringeHe*; confirmation sections (tested after the ring width was fixed) are kept separate and count in regchkFringeConfirm*.",
+ "sections": [
+  {
+   "id": "H1-9QZXXNP/D1",
+   "label": "Post-Xenium lung, Experiment 1",
+   "short": "Post-Xenium lung 1",
+   "he_rows": "ring/postxen_he.rows.json",
+   "xen_rows": "ring/postxen_xen.rows.json",
+   "regions_division": 5,
+   "source": "post_xenium_expt1/README_post_xenium_run.md",
+   "group": "discovery",
+   "registration": "Space Ranger 3.0.0"
+  },
+  {
+   "id": "H1-JGHRVB7/D1",
+   "label": "Post-Xenium lung, Experiment 2",
+   "short": "Post-Xenium lung 2",
+   "he_rows": "ring/expt2_he.rows.json",
+   "xen_rows": "ring/expt2_xen.rows.json",
+   "regions_division": 5,
+   "group": "confirmation",
+   "registration": "Space Ranger 3.0.0, aligned by hand in Loupe Browser 8.0",
+   "source": "post_xenium_expt2/README_expt2_run.md",
+   "cli_check": "post_xenium_expt2/cli_results.json"
+  }
+ ]
+}

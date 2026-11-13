@@ -1,0 +1,43 @@
+{
+ "placement": "crc_stardist_img",
+ "label": "Colorectal, StarDist, our image-only placement",
+ "seed": 20261007,
+ "draws": 200,
+ "search": 12,
+ "radius": 17,
+ "input_files": {
+  "<datasets>/visium_hd_human_crc/processed_4.1.0_outs/barcode_mappings.parquet": {
+   "sha256": "474ba729d433f0da832c88a37772a3985422a23b7f37edf8472d5628c4b69614",
+   "recorded": "474ba729d433f0da832c88a37772a3985422a23b7f37edf8472d5628c4b69614",
+   "match": true
+  },
+  "<datasets>/visium_hd_human_crc/processed_4.1.0_outs/binned_outputs/square_002um/spatial/tissue_positions.parquet": {
+   "sha256": "198c6bfaade531af77c58150a558681e73a8d5dbaac1759e5bfda7deae64ea69",
+   "recorded": "198c6bfaade531af77c58150a558681e73a8d5dbaac1759e5bfda7deae64ea69",
+   "match": true
+  },
+  "<runs>/20260930_crc_calibration_inputs_v1/square_totals.npz": {
+   "sha256": "7dee08cdc3bd2b7ba76b608b9365cb21c0460e720d38f8698f6890b12c8cf147",
+   "recorded": "7dee08cdc3bd2b7ba76b608b9365cb21c0460e720d38f8698f6890b12c8cf147",
+   "match": true
+  },
+  "<runs>/20261004_crc_stardist_grid_v1/grid_labels.npz": {
+   "sha256": "e9eb2f0a0a36ae970bb056316be134edaaa51868a7129d11a6fa43bc7848e281",
+   "recorded": "e9eb2f0a0a36ae970bb056316be134edaaa51868a7129d11a6fa43bc7848e281",
+   "match": true
+  }
+ },
+ "inputs_sha_ok": true,
+ "all_reproduced": true,
+ "elapsed_seconds": 44.44906711578369,
+ "affinity": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7
+ ]
+}

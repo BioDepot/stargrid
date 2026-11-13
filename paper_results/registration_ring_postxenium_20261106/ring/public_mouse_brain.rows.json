@@ -1,0 +1,1628 @@
+{
+ "placement": "public:mouse_brain",
+ "counts": "star",
+ "label": "public mouse_brain",
+ "expansions": [
+  0,
+  1,
+  2,
+  3
+ ],
+ "seed": 20261007,
+ "draws": 200,
+ "search": 12,
+ "radius": 13,
+ "inputs_sha256": {
+  "<datasets>/visium_hd_sr401_mouse_brain/square_002um/raw_feature_bc_matrix.h5": "bbf502c121295b058fd9596e1460e46a8a6ba914bd583a22be686de203fb8fc4",
+  "<datasets>/visium_hd_sr401_mouse_brain/square_002um/spatial/tissue_positions.parquet": "2ac8f9de3ed4718f0d9967e6ac240d04f3750340a0122a4ffa300bb0c913500e",
+  "<datasets>/visium_hd_sr401_mouse_brain/Visium_HD_Mouse_Brain_barcode_mappings.parquet": "ae98f7452b30a5c062cf54378fae48b34b4ba0ea026a3a075e17147c257199b6"
+ },
+ "elapsed": 83.89206409454346,
+ "affinity": [
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31
+ ],
+ "rows": [
+  {
+   "set": "public mouse_brain",
+   "surface": "whole",
+   "bounds": [
+    0,
+    3350,
+    0,
+    3350
+   ],
+   "nucleus_in_tissue": 574221,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -1,
+     "value": 0.026996257397575718,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.024659876187262376,
+     "hi": 0.029057931956220896,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.015197792028165846,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.01229228269327456,
+     "hi": 0.017927174262666025,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.00763998916231734,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.00695918171039257,
+     "hi": 0.00906978901544946,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 1,
+     "value": 0.002477270923732844,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.865,
+     "share_exact": 0.445,
+     "lo": 0.001635084300653078,
+     "hi": 0.003353311480949006,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "public mouse_brain",
+   "surface": "r0c0",
+   "bounds": [
+    0,
+    670,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 7995,
+   "tested": false
+  },
+  {
+   "set": "public mouse_brain",
+   "surface": "r0c1",
+   "bounds": [
+    0,
+    670,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 27356,
+   "tested": false
+  },
+  {
+   "set": "public mouse_brain",
+   "surface": "r0c2",
+   "bounds": [
+    0,
+    670,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 37003,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": -1,
+     "value": 0.033408957705396425,
+     "n": 6,
+     "second": 0.004955694690884194,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.026940772038971418,
+     "hi": 0.03899175729504356,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 12,
+     "dx": 11,
+     "value": 0.005299714991945481,
+     "n": 11,
+     "second": 0.0048836587083663785,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.175,
+     "share_exact": 0.16,
+     "lo": 0.001268534356443088,
+     "hi": 0.010257476543731603,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": 0,
+     "value": 0.014654789706924687,
+     "n": 16,
+     "second": 0.007631479751824433,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.86,
+     "share_exact": 0.74,
+     "lo": 0.010057524342754236,
+     "hi": 0.02052536609728264,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 12,
+     "value": 0.009071605370484459,
+     "n": 16,
+     "second": 0.007086343071832646,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.19,
+     "share_exact": 0.19,
+     "lo": 0.00285205191685583,
+     "hi": 0.016013613096831886,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": -2,
+     "value": 0.01362850904436197,
+     "n": 5,
+     "second": 0.008373108834100584,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.67,
+     "share_exact": 0.555,
+     "lo": 0.00820585175439617,
+     "hi": 0.016698074933253926,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": 12,
+     "value": 0.002175228236350746,
+     "n": 3,
+     "second": 0.0011991751092976788,
+     "interior": false,
+     "share_any": 0.985,
+     "share_within1": 0.095,
+     "share_exact": 0.08,
+     "lo": -0.00030374892234841797,
+     "hi": 0.005056015780579963,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -2,
+     "value": 0.005124857791644066,
+     "n": 4,
+     "second": 0.003730660690185905,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.655,
+     "share_exact": 0.57,
+     "lo": 0.0036502037226007534,
+     "hi": 0.00814881096986811,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 2,
+     "dx": -1,
+     "value": 0.007386928591658459,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.995,
+     "share_exact": 0.98,
+     "lo": 0.0054658752692353235,
+     "hi": 0.010886777279446078,
+     "usable": true
+    }
+   }
+  },
+  {
+   "set": "public mouse_brain",
+   "surface": "r0c3",
+   "bounds": [
+    0,
+    670,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 10778,
+   "tested": false
+  },
+  {
+   "set": "public mouse_brain",
+   "surface": "r0c4",
+   "bounds": [
+    0,
+    670,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 0,
+   "tested": false
+  },
+  {
+   "set": "public mouse_brain",
+   "surface": "r1c0",
+   "bounds": [
+    670,
+    1340,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 13537,
+   "tested": false
+  },
+  {
+   "set": "public mouse_brain",
+   "surface": "r1c1",
+   "bounds": [
+    670,
+    1340,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 36476,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.007981622467752691,
+     "n": 2,
+     "second": 0.004984648873438635,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.695,
+     "share_exact": 0.51,
+     "lo": 0.0006736145375019043,
+     "hi": 0.020716502364069734,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": 1,
+     "value": 0.023708393250738036,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.94,
+     "share_exact": 0.525,
+     "lo": 0.013929263729862302,
+     "hi": 0.03311234916599516,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.013474193416244118,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.995,
+     "share_exact": 0.9,
+     "lo": 0.008289733273708905,
+     "hi": 0.018473982000375568,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.00785408272779109,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.97,
+     "share_exact": 0.765,
+     "lo": 0.001645820026799061,
+     "hi": 0.011839282539704305,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "public mouse_brain",
+   "surface": "r1c2",
+   "bounds": [
+    670,
+    1340,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 32041,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": -1,
+     "value": 0.014927922795325399,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.52,
+     "lo": 0.008948034028674818,
+     "hi": 0.022664926025955424,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": 0,
+     "value": 0.0200226874976579,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.77,
+     "share_exact": 0.765,
+     "lo": 0.012564520710003009,
+     "hi": 0.027017846453253263,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -12,
+     "dx": -5,
+     "value": 0.009628865782687956,
+     "n": 5,
+     "second": 0.009164251406980406,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.07,
+     "share_exact": 0.065,
+     "lo": 0.00025709164218167,
+     "hi": 0.01868337105223215,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": 0,
+     "value": 0.01353865261281717,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.99,
+     "share_exact": 0.635,
+     "lo": 0.008191630083764678,
+     "hi": 0.01637260948952813,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 0,
+     "value": 0.005152381045228527,
+     "n": 2,
+     "second": 0.004439336887889445,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.625,
+     "share_exact": 0.345,
+     "lo": 0.0024129793859103744,
+     "hi": 0.008942432462754146,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "public mouse_brain",
+   "surface": "r1c3",
+   "bounds": [
+    670,
+    1340,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 47500,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": -1,
+     "value": 0.042648544379907394,
+     "n": 9,
+     "second": 0.002535761510716661,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.935,
+     "lo": 0.03637669981988116,
+     "hi": 0.04856962284994426,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 1,
+     "dx": 12,
+     "value": 0.0031063027912575647,
+     "n": 6,
+     "second": 0.0026565340352521227,
+     "interior": false,
+     "share_any": 0.995,
+     "share_within1": 0.045,
+     "share_exact": 0.035,
+     "lo": -0.0004120715174623533,
+     "hi": 0.006928370905129366,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 1,
+     "dx": -1,
+     "value": 0.02316810366637645,
+     "n": 5,
+     "second": 0.005667038793557788,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.995,
+     "share_exact": 0.61,
+     "lo": 0.01575898369373397,
+     "hi": 0.02948088056774675,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -12,
+     "dx": -1,
+     "value": 0.010337803672144763,
+     "n": 12,
+     "second": 0.009334662596350074,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.29,
+     "share_exact": 0.27,
+     "lo": 0.005793680799509984,
+     "hi": 0.017816979480312353,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": -1,
+     "value": 0.009024760322889458,
+     "n": 3,
+     "second": 0.0059967983773376865,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.875,
+     "share_exact": 0.8,
+     "lo": 0.006855396949035297,
+     "hi": 0.012453669158776437,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -12,
+     "dx": 5,
+     "value": 0.003946837719235874,
+     "n": 1,
+     "second": null,
+     "interior": false,
+     "share_any": 0.955,
+     "share_within1": 0.205,
+     "share_exact": 0.19,
+     "lo": 0.0004966943418825032,
+     "hi": 0.006805734478306281,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 3,
+     "dx": 1,
+     "value": 0.008784038540641248,
+     "n": 2,
+     "second": 0.00518244157174097,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.65,
+     "share_exact": 0.52,
+     "lo": 0.0073355257838255755,
+     "hi": 0.01130726014962118,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 1,
+     "dx": -2,
+     "value": 0.010020131861555925,
+     "n": 2,
+     "second": 0.002463858681457154,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.98,
+     "lo": 0.007005338475694903,
+     "hi": 0.012371117906098787,
+     "usable": true
+    }
+   }
+  },
+  {
+   "set": "public mouse_brain",
+   "surface": "r1c4",
+   "bounds": [
+    670,
+    1340,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 1607,
+   "tested": false
+  },
+  {
+   "set": "public mouse_brain",
+   "surface": "r2c0",
+   "bounds": [
+    1340,
+    2010,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 21033,
+   "tested": false
+  },
+  {
+   "set": "public mouse_brain",
+   "surface": "r2c1",
+   "bounds": [
+    1340,
+    2010,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 36254,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.034042187463047435,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.028654759707417772,
+     "hi": 0.041114516802751556,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 12,
+     "dx": 8,
+     "value": 0.0020142771967707196,
+     "n": 1,
+     "second": null,
+     "interior": false,
+     "share_any": 0.81,
+     "share_within1": 0.085,
+     "share_exact": 0.065,
+     "lo": -0.002125039354324709,
+     "hi": 0.007326267100668394,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.024886415777929383,
+     "n": 3,
+     "second": 0.00823277163485292,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.995,
+     "share_exact": 0.925,
+     "lo": 0.01576585787666937,
+     "hi": 0.034436958496475926,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -8,
+     "dx": 11,
+     "value": 0.009104371651377119,
+     "n": 4,
+     "second": 0.004824896242521914,
+     "interior": true,
+     "share_any": 0.995,
+     "share_within1": 0.25,
+     "share_exact": 0.245,
+     "lo": -0.0009135946868840338,
+     "hi": 0.017620222594409717,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 0,
+     "value": 0.011019806836540358,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.985,
+     "lo": 0.006229792878338386,
+     "hi": 0.015422505609702026,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 2,
+     "dx": 0,
+     "value": 0.00740524916071017,
+     "n": 2,
+     "second": 0.005104855736979053,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.75,
+     "share_exact": 0.635,
+     "lo": 0.0034065111725778197,
+     "hi": 0.010574321455708085,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "public mouse_brain",
+   "surface": "r2c2",
+   "bounds": [
+    1340,
+    2010,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 34028,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -1,
+     "value": 0.019002958228238054,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.014126819863465007,
+     "hi": 0.02715915594679915,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -12,
+     "dx": -12,
+     "value": 0.005759972051754714,
+     "n": 2,
+     "second": 0.0036049291518928106,
+     "interior": false,
+     "share_any": 0.925,
+     "share_within1": 0.22,
+     "share_exact": 0.205,
+     "lo": 0.0017442382362208102,
+     "hi": 0.01099757585065527,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": -2,
+     "value": 0.01118933749408857,
+     "n": 6,
+     "second": 0.008566383162387448,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.2,
+     "share_exact": 0.19,
+     "lo": 0.0003863386609070596,
+     "hi": 0.020912141653833937,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -9,
+     "dx": -11,
+     "value": 0.009058974997847025,
+     "n": 3,
+     "second": 0.005144029087338797,
+     "interior": true,
+     "share_any": 0.99,
+     "share_within1": 0.25,
+     "share_exact": 0.24,
+     "lo": 0.0009153506725070788,
+     "hi": 0.016709564057576586,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -1,
+     "value": 0.004946225001456694,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.86,
+     "share_exact": 0.52,
+     "lo": 0.0019103573690101906,
+     "hi": 0.008541417121253248,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -1,
+     "value": 0.002467094408198811,
+     "n": 2,
+     "second": 0.0018497936088666123,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.47,
+     "share_exact": 0.255,
+     "lo": 3.541428442463439e-05,
+     "hi": 0.004866989988111747,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   }
+  },
+  {
+   "set": "public mouse_brain",
+   "surface": "r2c3",
+   "bounds": [
+    1340,
+    2010,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 50262,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -2,
+     "value": 0.03334081014085166,
+     "n": 3,
+     "second": 0.0038900946502475886,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.95,
+     "lo": 0.02714330671957259,
+     "hi": 0.03727450365991964,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -11,
+     "dx": 2,
+     "value": 0.003870980824703496,
+     "n": 3,
+     "second": 0.0034163509020326277,
+     "interior": true,
+     "share_any": 0.99,
+     "share_within1": 0.19,
+     "share_exact": 0.175,
+     "lo": 0.0011956348359629223,
+     "hi": 0.006783817985989155,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": -1,
+     "value": 0.017839501376432088,
+     "n": 8,
+     "second": 0.010547617274795806,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.89,
+     "share_exact": 0.85,
+     "lo": 0.010464541480271022,
+     "hi": 0.023415193926808988,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -12,
+     "dx": 3,
+     "value": 0.006471326769874608,
+     "n": 8,
+     "second": 0.006187141843528754,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.1,
+     "share_exact": 0.095,
+     "lo": 0.0021968940324920473,
+     "hi": 0.013475468526983024,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 0,
+     "value": 0.00971599322227834,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.965,
+     "share_exact": 0.835,
+     "lo": 0.007159183068501773,
+     "hi": 0.012840025901219835,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 6,
+     "dx": 12,
+     "value": 0.0011475799039529777,
+     "n": 1,
+     "second": null,
+     "interior": false,
+     "share_any": 0.97,
+     "share_within1": 0.225,
+     "share_exact": 0.075,
+     "lo": -0.0007453781397513347,
+     "hi": 0.003971068569349695,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 3,
+     "dx": -1,
+     "value": 0.007828938455115342,
+     "n": 2,
+     "second": 0.005208152644289754,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.4,
+     "share_exact": 0.195,
+     "lo": 0.004201019354327396,
+     "hi": 0.01037599014583146,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 0,
+     "dx": -2,
+     "value": 0.007379972300712412,
+     "n": 2,
+     "second": 0.0009561043314082474,
+     "interior": true,
+     "share_any": 0.99,
+     "share_within1": 0.98,
+     "share_exact": 0.965,
+     "lo": 0.005334201514966036,
+     "hi": 0.010184042253053577,
+     "usable": true
+    }
+   }
+  },
+  {
+   "set": "public mouse_brain",
+   "surface": "r2c4",
+   "bounds": [
+    1340,
+    2010,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 11407,
+   "tested": false
+  },
+  {
+   "set": "public mouse_brain",
+   "surface": "r3c0",
+   "bounds": [
+    2010,
+    2680,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 17688,
+   "tested": false
+  },
+  {
+   "set": "public mouse_brain",
+   "surface": "r3c1",
+   "bounds": [
+    2010,
+    2680,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 32867,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 0,
+     "value": 0.03532950277295632,
+     "n": 12,
+     "second": 0.007792139755649963,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.028269429363829663,
+     "hi": 0.04155203612524642,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 11,
+     "dx": -5,
+     "value": 0.008193380074075662,
+     "n": 8,
+     "second": 0.006665203171711043,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.095,
+     "share_exact": 0.09,
+     "lo": 0.002435043807290011,
+     "hi": 0.013480877956237935,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 0,
+     "value": 0.036545014171230905,
+     "n": 11,
+     "second": 0.009510154821436245,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 1.0,
+     "lo": 0.027912509032682106,
+     "hi": 0.045069017384805225,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": -12,
+     "dx": 0,
+     "value": 0.01413046341045332,
+     "n": 35,
+     "second": 0.013099439731309448,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.185,
+     "share_exact": 0.185,
+     "lo": 0.004653280641654703,
+     "hi": 0.02159962886146176,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": 0,
+     "value": 0.019650124048105733,
+     "n": 5,
+     "second": 0.0047625773831385665,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.98,
+     "lo": 0.017092736161666226,
+     "hi": 0.023630711583298436,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 10,
+     "dx": 0,
+     "value": 0.0032818412772982475,
+     "n": 6,
+     "second": 0.003018621961696555,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.185,
+     "share_exact": 0.13,
+     "lo": 7.622980383399122e-05,
+     "hi": 0.006503544139261466,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": -1,
+     "value": 0.006383398887361169,
+     "n": 2,
+     "second": 0.003275370198405625,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.525,
+     "share_exact": 0.515,
+     "lo": 0.0034804328479943634,
+     "hi": 0.00917021110731911,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -12,
+     "dx": 6,
+     "value": 0.004266119257197332,
+     "n": 2,
+     "second": 0.0027824894298301706,
+     "interior": false,
+     "share_any": 0.985,
+     "share_within1": 0.535,
+     "share_exact": 0.51,
+     "lo": 0.0016717717547884425,
+     "hi": 0.006715978202105998,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "public mouse_brain",
+   "surface": "r3c2",
+   "bounds": [
+    2010,
+    2680,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 42319,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": -1,
+     "value": 0.02533541425389285,
+     "n": 3,
+     "second": 0.004047369764593967,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.82,
+     "lo": 0.020464783183970943,
+     "hi": 0.0322727959517569,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 11,
+     "dx": 11,
+     "value": 0.004652646936492588,
+     "n": 6,
+     "second": 0.003316872652192382,
+     "interior": true,
+     "share_any": 0.99,
+     "share_within1": 0.25,
+     "share_exact": 0.165,
+     "lo": -0.00031474918403858723,
+     "hi": 0.008452005932036849,
+     "usable": false
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": -1,
+     "value": 0.027961856261857543,
+     "n": 3,
+     "second": 0.0061773829848730255,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.975,
+     "lo": 0.02053571679220973,
+     "hi": 0.03366566652123327,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 11,
+     "dx": 8,
+     "value": 0.006293813293739681,
+     "n": 11,
+     "second": 0.005728303743510188,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.085,
+     "share_exact": 0.085,
+     "lo": 0.000993224812538546,
+     "hi": 0.013723764457678029,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": -1,
+     "value": 0.013325307203940984,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.895,
+     "lo": 0.008609098122855503,
+     "hi": 0.01581572293419693,
+     "usable": true
+    },
+    "dip": {
+     "found": true,
+     "dy": 12,
+     "dx": -9,
+     "value": 0.002281400564811298,
+     "n": 1,
+     "second": null,
+     "interior": false,
+     "share_any": 0.965,
+     "share_within1": 0.15,
+     "share_exact": 0.095,
+     "lo": -0.0006742448789405608,
+     "hi": 0.005487231500552872,
+     "usable": false
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": 0,
+     "dx": 1,
+     "value": 0.0056239716018640085,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.85,
+     "share_exact": 0.47,
+     "lo": 0.002275727036126918,
+     "hi": 0.007253793535919962,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 12,
+     "dx": -9,
+     "value": 0.0015350296514271555,
+     "n": 1,
+     "second": null,
+     "interior": false,
+     "share_any": 0.85,
+     "share_within1": 0.12,
+     "share_exact": 0.07,
+     "lo": -0.0008892133305509753,
+     "hi": 0.004103238505849419,
+     "usable": false
+    }
+   }
+  },
+  {
+   "set": "public mouse_brain",
+   "surface": "r3c3",
+   "bounds": [
+    2010,
+    2680,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 50010,
+   "tested": true,
+   "f0": {
+    "repro_vs_package_fft": 0.0,
+    "peak": {
+     "found": true,
+     "dy": -1,
+     "dx": -2,
+     "value": 0.03154737547909803,
+     "n": 2,
+     "second": 0.0010569604524417464,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 1.0,
+     "share_exact": 0.73,
+     "lo": 0.026785321592218587,
+     "hi": 0.03444218017712821,
+     "usable": true
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f1": {
+    "peak": {
+     "found": true,
+     "dy": -11,
+     "dx": 4,
+     "value": 0.009822187991463727,
+     "n": 9,
+     "second": 0.008973226116086863,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.135,
+     "share_exact": 0.135,
+     "lo": 0.0022366350338618723,
+     "hi": 0.017495101774086367,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": 12,
+     "dx": -5,
+     "value": 0.008779508229350141,
+     "n": 8,
+     "second": 0.008445407561826768,
+     "interior": false,
+     "share_any": 1.0,
+     "share_within1": 0.055,
+     "share_exact": 0.055,
+     "lo": 0.0007244557724772119,
+     "hi": 0.014587512276676335,
+     "usable": false
+    }
+   },
+   "f2": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": 0,
+     "value": 0.008016272801452118,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.815,
+     "share_exact": 0.485,
+     "lo": 0.003933561736217961,
+     "hi": 0.013538392217447386,
+     "usable": false
+    },
+    "dip": {
+     "found": false,
+     "usable": false,
+     "interior": false,
+     "n": 0,
+     "share_any": null
+    }
+   },
+   "f3": {
+    "peak": {
+     "found": true,
+     "dy": -2,
+     "dx": 1,
+     "value": 0.0064657175929359045,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.805,
+     "share_exact": 0.415,
+     "lo": 0.003816545513358294,
+     "hi": 0.009197450045563932,
+     "usable": false
+    },
+    "dip": {
+     "found": true,
+     "dy": -1,
+     "dx": -2,
+     "value": 0.0065543341376971265,
+     "n": 1,
+     "second": null,
+     "interior": true,
+     "share_any": 1.0,
+     "share_within1": 0.975,
+     "share_exact": 0.85,
+     "lo": 0.00485600421328147,
+     "hi": 0.009744409851438169,
+     "usable": true
+    }
+   }
+  },
+  {
+   "set": "public mouse_brain",
+   "surface": "r3c4",
+   "bounds": [
+    2010,
+    2680,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 1960,
+   "tested": false
+  },
+  {
+   "set": "public mouse_brain",
+   "surface": "r4c0",
+   "bounds": [
+    2680,
+    3350,
+    0,
+    670
+   ],
+   "nucleus_in_tissue": 9332,
+   "tested": false
+  },
+  {
+   "set": "public mouse_brain",
+   "surface": "r4c1",
+   "bounds": [
+    2680,
+    3350,
+    670,
+    1340
+   ],
+   "nucleus_in_tissue": 8051,
+   "tested": false
+  },
+  {
+   "set": "public mouse_brain",
+   "surface": "r4c2",
+   "bounds": [
+    2680,
+    3350,
+    1340,
+    2010
+   ],
+   "nucleus_in_tissue": 28115,
+   "tested": false
+  },
+  {
+   "set": "public mouse_brain",
+   "surface": "r4c3",
+   "bounds": [
+    2680,
+    3350,
+    2010,
+    2680
+   ],
+   "nucleus_in_tissue": 16602,
+   "tested": false
+  },
+  {
+   "set": "public mouse_brain",
+   "surface": "r4c4",
+   "bounds": [
+    2680,
+    3350,
+    2680,
+    3350
+   ],
+   "nucleus_in_tissue": 0,
+   "tested": false
+  }
+ ]
+}

@@ -1,0 +1,70 @@
+dataset	tissue	surface	nucleus_locations	dip_dy	dip_dx	depth	depth_lo	depth_hi	share_any_dip	share_within_one	share_exact	interior	usable	n_local_minima	second_depth	ring_dy	ring_dx	ring_sign	ring_contrast
+lymph_node	human lymph node FFPE	whole	1484444	0	0	0.071	0.0671	0.0751	1.0	1.0	1.0	True	True	33	0.0014	0	0	dip	0.0997
+lymph_node	human lymph node FFPE	r0c3	75109	1	1	0.0992	0.0857	0.1114	1.0	1.0	0.515	True	True	5	0.0036	1	1	dip	0.115
+lymph_node	human lymph node FFPE	r0c4	65497	1	1	0.1111	0.0922	0.1241	1.0	1.0	1.0	True	True	21	0.005	1	1	dip	0.1353
+lymph_node	human lymph node FFPE	r1c2	196561	0	0	0.045	0.0406	0.0506	1.0	1.0	0.735	True	True	23	0.0024	0	0	dip	0.0762
+lymph_node	human lymph node FFPE	r1c3	34499	1	0	0.0936	0.0625	0.1031	1.0	1.0	0.595	True	True	34	0.0098	1	0	dip	0.1072
+lymph_node	human lymph node FFPE	r2c1	64895	0	0	0.1033	0.0936	0.1099	1.0	1.0	1.0	True	True	23	0.0049	0	0	dip	0.1276
+lymph_node	human lymph node FFPE	r2c2	264012	0	0	0.0765	0.0719	0.0819	1.0	1.0	1.0	True	True	29	0.0042	0	0	dip	0.1026
+lymph_node	human lymph node FFPE	r3c1	138228	0	0	0.095	0.0898	0.1013	1.0	1.0	1.0	True	True	23	0.0032	0	0	dip	0.1227
+lymph_node	human lymph node FFPE	r3c2	273635	0	0	0.0792	0.0702	0.0863	1.0	1.0	1.0	True	True	44	0.0042	0	0	dip	0.1039
+lymph_node	human lymph node FFPE	r4c1	78736	0	0	0.1108	0.1032	0.1164	1.0	1.0	1.0	True	True	32	0.0046	0	0	dip	0.1459
+lymph_node	human lymph node FFPE	r4c2	143580	0	0	0.0584	0.0515	0.0653	1.0	1.0	1.0	True	True	17	0.0032	0	0	dip	0.0811
+prostate	human prostate cancer FFPE	whole	1711372	0	0	0.0267	0.0239	0.0291	1.0	1.0	1.0	True	True	1		-3	-2	peak	-0.0403
+prostate	human prostate cancer FFPE	r0c0	43868	-12	12	0.0029	-0.0013	0.0078	0.91	0.11	0.075	False	False	2	0.0024	-1	-1	peak	-0.1426
+prostate	human prostate cancer FFPE	r0c2	31436						0.9			False	False	0		0	1	peak	-0.1947
+prostate	human prostate cancer FFPE	r0c3	38836	0	1	0.0337	0.0123	0.0448	1.0	0.99	0.985	True	True	1		3	-1	peak	-0.0414
+prostate	human prostate cancer FFPE	r1c0	92611	-1	1	0.0582	0.045	0.0685	1.0	1.0	1.0	True	True	1		-1	1	dip	0.0693
+prostate	human prostate cancer FFPE	r1c1	77737	-1	1	0.0349	0.0119	0.0479	0.995	0.995	0.97	True	True	2	0.0015	3	1	peak	-0.0526
+prostate	human prostate cancer FFPE	r1c2	77454	0	1	0.0294	0.0063	0.0473	0.995	0.965	0.885	True	True	2	0.0019	3	1	peak	-0.0521
+prostate	human prostate cancer FFPE	r1c3	72507	1	0	0.0117	0.0031	0.0256	0.98	0.76	0.445	True	False	1		-2	-2	peak	-0.049
+prostate	human prostate cancer FFPE	r1c4	93014	0	0	0.0556	0.0492	0.0609	1.0	1.0	0.99	True	True	1		0	0	dip	0.1071
+prostate	human prostate cancer FFPE	r2c0	88937	-1	0	0.0348	0.0126	0.0463	0.99	0.985	0.965	True	True	2	0.0043	-3	-2	peak	-0.0544
+prostate	human prostate cancer FFPE	r2c1	81217	0	0	0.0362	0.0238	0.0424	1.0	1.0	0.445	True	True	3	0.0022	0	1	dip	0.0444
+prostate	human prostate cancer FFPE	r2c2	86545	0	0	0.0452	0.0214	0.0557	1.0	0.99	0.985	True	True	3	0.0022	0	0	dip	0.0625
+prostate	human prostate cancer FFPE	r2c3	82735	0	0	0.0279	0.0157	0.0405	1.0	1.0	0.995	True	True	1		-1	-3	peak	-0.0396
+prostate	human prostate cancer FFPE	r2c4	113824	0	0	0.0557	0.0502	0.0593	1.0	1.0	1.0	True	True	2	0.001	0	0	dip	0.115
+prostate	human prostate cancer FFPE	r3c0	81933						0.57			False	False	0		1	-1	peak	-0.096
+prostate	human prostate cancer FFPE	r3c1	55193						0.34			False	False	0		0	0	peak	-0.2319
+prostate	human prostate cancer FFPE	r3c2	57736						0.6			False	False	0		0	-1	peak	-0.0875
+prostate	human prostate cancer FFPE	r3c3	106350	0	0	0.0416	0.0319	0.05	1.0	1.0	1.0	True	True	1		0	0	dip	0.0712
+prostate	human prostate cancer FFPE	r3c4	118280	0	0	0.0508	0.0456	0.0548	1.0	1.0	0.955	True	True	1		0	0	dip	0.0952
+prostate	human prostate cancer FFPE	r4c0	48052						0.315			False	False	0		0	-1	peak	-0.2009
+prostate	human prostate cancer FFPE	r4c1	31313	0	0	0.0239	0.0044	0.0366	1.0	0.895	0.795	True	False	9	0.0058	-3	-1	peak	-0.0508
+prostate	human prostate cancer FFPE	r4c2	46294						0.11			False	False	0		1	0	peak	-0.1367
+prostate	human prostate cancer FFPE	r4c3	62698	0	0	0.0242	0.0091	0.0352	0.995	0.98	0.54	True	True	2	0.0031	1	-4	peak	-0.0547
+prostate	human prostate cancer FFPE	r4c4	76507	0	-1	0.0423	0.0327	0.0515	1.0	1.0	0.825	True	True	1		0	-1	dip	0.0798
+kidney	human kidney FFPE	whole	984186						0.125			False	False	0		1	1	peak	-0.0831
+kidney	human kidney FFPE	r0c0	44686	-12	-9	0.006	0.0001	0.0117	0.99	0.235	0.165	False	False	1		2	2	peak	-0.1038
+kidney	human kidney FFPE	r0c1	40406	-10	0	0.008	0.0033	0.0131	1.0	0.285	0.285	True	False	3	0.0033	0	1	peak	-0.1495
+kidney	human kidney FFPE	r0c2	43533	-4	-10	0.0067	0.0008	0.0121	0.995	0.14	0.125	True	False	8	0.0057	0	1	peak	-0.0896
+kidney	human kidney FFPE	r0c3	38494	-1	8	0.0068	0.0003	0.0098	1.0	0.09	0.065	True	False	11	0.0059	0	1	peak	-0.1675
+kidney	human kidney FFPE	r0c4	35202	-7	12	0.0092	0.0033	0.0146	1.0	0.28	0.25	False	False	4	0.0047	0	1	peak	-0.1951
+kidney	human kidney FFPE	r1c0	47733	-1	-1	0.0069	-0.0011	0.0124	0.99	0.2	0.15	True	False	1		2	2	peak	-0.1111
+kidney	human kidney FFPE	r1c1	45722	-11	-5	0.0041	-0.0003	0.0086	1.0	0.06	0.035	True	False	5	0.0041	1	1	peak	-0.0555
+kidney	human kidney FFPE	r1c2	42115	-3	0	0.0068	0.0029	0.0113	1.0	0.37	0.145	True	False	10	0.0055	0	0	peak	-0.1118
+kidney	human kidney FFPE	r1c3	43293	-3	0	0.0085	0.0017	0.0149	1.0	0.33	0.285	True	False	11	0.0057	0	1	peak	-0.1037
+kidney	human kidney FFPE	r1c4	39446	0	-2	0.0193	0.007	0.0233	1.0	0.41	0.395	True	False	11	0.0061	1	1	peak	-0.09
+kidney	human kidney FFPE	r2c0	46618	0	0	0.023	0.0011	0.0472	1.0	0.825	0.81	True	False	3	0.0044	2	2	peak	-0.0947
+kidney	human kidney FFPE	r2c1	43174	-1	-2	0.0074	0.0019	0.0132	0.995	0.45	0.245	True	False	4	0.0057	0	1	peak	-0.0644
+kidney	human kidney FFPE	r2c2	42629	-10	11	0.0088	0.0016	0.0132	1.0	0.105	0.1	True	False	12	0.0072	0	0	peak	-0.1314
+kidney	human kidney FFPE	r2c3	42172	6	3	0.0076	0.0029	0.0118	1.0	0.195	0.17	True	False	11	0.0063	0	0	peak	-0.1564
+kidney	human kidney FFPE	r2c4	39268	-1	-2	0.0132	0.0048	0.0185	1.0	0.54	0.47	True	False	11	0.0102	0	0	peak	-0.1078
+kidney	human kidney FFPE	r3c0	41312	0	0	0.0223	0.0104	0.0303	1.0	0.95	0.935	True	True	3	0.003	3	-1	peak	-0.1372
+kidney	human kidney FFPE	r3c1	49175	0	0	0.0352	-0.0039	0.0678	1.0	0.84	0.78	True	False	6	0.0078	3	0	peak	-0.0532
+kidney	human kidney FFPE	r3c2	43262	9	1	0.0031	-0.0013	0.0077	1.0	0.035	0.02	True	False	3	0.0027	1	0	peak	-0.0661
+kidney	human kidney FFPE	r3c3	39974	1	-3	0.0091	0.0024	0.0123	1.0	0.175	0.125	True	False	8	0.0064	0	0	peak	-0.113
+kidney	human kidney FFPE	r4c0	43522	0	0	0.0385	0.0155	0.0691	1.0	1.0	0.62	True	True	1		2	0	peak	-0.1678
+kidney	human kidney FFPE	r4c1	40836						0.92			False	False	0		1	0	peak	-0.1154
+kidney	human kidney FFPE	r4c2	36552	8	3	0.0054	-0.0004	0.0116	1.0	0.15	0.105	True	False	3	0.0033	0	0	peak	-0.1253
+mouse_brain	mouse brain FFPE	whole	574221						0.0			False	False	0		0	-1	peak	-0.3451
+mouse_brain	mouse brain FFPE	r0c2	37003	12	11	0.0053	0.0013	0.0103	1.0	0.175	0.16	False	False	11	0.0049	2	-1	peak	-0.4519
+mouse_brain	mouse brain FFPE	r1c1	36476						0.105			False	False	0		2	-2	peak	-0.1211
+mouse_brain	mouse brain FFPE	r1c2	32041						0.455			False	False	0		1	-1	peak	-0.2469
+mouse_brain	mouse brain FFPE	r1c3	47500	1	12	0.0031	-0.0004	0.0069	0.995	0.045	0.035	False	False	6	0.0027	1	-1	peak	-0.5345
+mouse_brain	mouse brain FFPE	r2c1	36254	12	8	0.002	-0.0021	0.0073	0.81	0.085	0.065	False	False	1		0	0	peak	-0.4581
+mouse_brain	mouse brain FFPE	r2c2	34028	-12	-12	0.0058	0.0017	0.011	0.925	0.22	0.205	False	False	2	0.0036	0	-1	peak	-0.2651
+mouse_brain	mouse brain FFPE	r2c3	50262	-11	2	0.0039	0.0012	0.0068	0.99	0.19	0.175	True	False	3	0.0034	0	-2	peak	-0.4721
+mouse_brain	mouse brain FFPE	r3c1	32867	11	-5	0.0082	0.0024	0.0135	1.0	0.095	0.09	True	False	8	0.0067	-1	1	peak	-0.5023
+mouse_brain	mouse brain FFPE	r3c2	42319	11	11	0.0047	-0.0003	0.0085	0.99	0.25	0.165	True	False	6	0.0033	-1	-1	peak	-0.4171
+mouse_brain	mouse brain FFPE	r3c3	50010						0.86			False	False	0		-1	-2	peak	-0.3191

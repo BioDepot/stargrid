@@ -1,0 +1,43 @@
+{
+ "placement": "ov_stardist_dep",
+ "label": "Ovarian, StarDist, deposited SR 4.0.1",
+ "seed": 20261007,
+ "draws": 200,
+ "search": 12,
+ "radius": 17,
+ "input_files": {
+  "<datasets>/visium_hd_3prime_human_ovarian_ff_min_depth/oracle_inputs/binned_outputs/square_002um/spatial/tissue_positions.parquet": {
+   "sha256": "af26ae36552849787d50a01b50d0e3eaa5cf08926dcb525bc8009e1cf2000c94",
+   "recorded": "af26ae36552849787d50a01b50d0e3eaa5cf08926dcb525bc8009e1cf2000c94",
+   "match": true
+  },
+  "<runs>/20260927_ovarian_cell_mapping_inputs_v1/square_totals.npz": {
+   "sha256": "db1916d292981f703c8440a1017e9d4a1550876cecdafcfbb5577a8c85b7183e",
+   "recorded": "db1916d292981f703c8440a1017e9d4a1550876cecdafcfbb5577a8c85b7183e",
+   "match": true
+  },
+  "<runs>/20261009_registration_subposition_deposit_whole_T1b_v1/accepted_grid_labels.npy": {
+   "sha256": "b6915a1937c7d3174f1ac0bdefbc57edc436c66213f9dc18b3c136836120f307",
+   "recorded": "b6915a1937c7d3174f1ac0bdefbc57edc436c66213f9dc18b3c136836120f307",
+   "match": true
+  },
+  "<runs>/20261009_registration_subposition_deposit_whole_T1b_v1/M0_surface.npy": {
+   "sha256": "38049aa0f8f51feebc4a17cc41b44a0cadbd70ba2ba602b169da0a24c6e7a012",
+   "recorded": null,
+   "match": null
+  }
+ },
+ "inputs_sha_ok": true,
+ "all_reproduced": true,
+ "elapsed_seconds": 39.018930435180664,
+ "affinity": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7
+ ]
+}
