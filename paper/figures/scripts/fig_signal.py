@@ -91,6 +91,8 @@ require(macro("cpSROnlyAUCLo") <= round(lo, 3) and round(hi, 3) <= macro("cpSROn
 
 top = {r["method"]: r for r in rows(XEN / "xenium_compatibility_top20/top20_summary.tsv")}
 genes = rows(XEN / "xenium_compatibility_top20/top20_genes.tsv")
+# The Xenium panel names ENSG00000107201 DDX58; its approved symbol, and its name in the 2024-A annotation, is RIGI.
+APPROVED_SYMBOL = {"DDX58": "RIGI"}
 for key, name in (("hard", "xenHardPearson"), ("space_ranger", "xenSRPearson")):
     require(f"{float(top[key]['median_spatial_pearson']):.3f}" == M[name], f"{name} differs from the table")
 diffs = sorted(((float(g["hard_spatial_pearson"]) - float(g["space_ranger_spatial_pearson"]), g["gene_name"])
@@ -199,7 +201,7 @@ for y, (d, name) in enumerate(diffs):
     ax_d.barh(y, d, height=0.62, color=S.STAR if d > 0 else S.SR)
 ax_d.axvline(0, color=S.CHANCE, lw=0.6)
 ax_d.set_yticks(range(n))
-ax_d.set_yticklabels([name for _, name in diffs], fontstyle="italic")
+ax_d.set_yticklabels([APPROVED_SYMBOL.get(name, name) for _, name in diffs], fontstyle="italic")
 ax_d.set_ylim(n - 0.4, -0.6)
 ax_d.tick_params(axis="y", length=0)
 ax_d.set_xlabel("Correlation with Xenium,\nSTARgrid minus Space Ranger")

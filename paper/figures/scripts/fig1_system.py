@@ -17,7 +17,9 @@ import spatial_paper_figstyle as S  # noqa: E402
 OUT = Path(sys.argv[1]) if len(sys.argv) > 1 else HERE.parent
 M = paper_macros.load()
 S.apply()
-PALE = "#eef3ff"      # light tint of the STAR blue for process boxes
+PALE = "#eef3ff"      # light tint of the STAR blue: steps that are new in STARgrid
+SUITE = "#e2e5ea"     # light grey: the step that uses the methods of STAR Suite
+NEW_TAG, SUITE_TAG = "new in STARgrid", "STAR Suite methods"
 EDGE = "#9ca3af"
 MONO = "DejaVu Sans Mono"
 NUCLEUS = "#6d4c9f"   # nuclei, as in the registration figure
@@ -55,8 +57,9 @@ bottom = outer[2].subgridspec(1, 2, width_ratios=[1.0, 1.25], wspace=0.30)
 titles = ["1  Decoding", "2  Gene assignment", "3  Count assignment", "4  Registration"]
 subs = ["barcode to best-matching locations", "Read 2 to a gene", "one location per molecule",
         "image to the capture grid"]
-tags = [("STAR Suite process", S.STAR), ("STAR Suite process", S.STAR), ("STAR Suite process", S.STAR),
-        ("images and counts", S.STAR)]
+# What is new in STARgrid and what it takes from STAR Suite (co-author's review, 2026-11-13): decoding, count
+# assignment and registration are new; gene assignment uses the methods of STAR Suite.
+tags = [(NEW_TAG, S.STAR), (SUITE_TAG, S.INK_MUTED), (NEW_TAG, S.STAR), (NEW_TAG, S.STAR)]
 axes = []
 for i in range(4):
     ax = fig.add_subplot(steps[0, i])
@@ -166,13 +169,17 @@ box(ax, 0, 4, 28, 28, "Images", "microscope (H&E)\nCytAssist", face="white")
 ax.add_patch(FancyBboxPatch((32, 1), 134, 94, boxstyle="round,pad=0,rounding_size=1.5",
                             facecolor="none", edgecolor=S.STAR, lw=0.9, ls=(0, (3, 2))))
 ax.text(34, 92.6, "STARgrid", fontsize=S.FS_LABEL, color=S.STAR, fontweight="bold", va="top")
-ax.text(52, 92.6, "steps 1–3: one STAR Suite process", fontsize=S.FS_NOTE, color=S.STAR, va="top")
+ax.text(52, 92.6, "steps 1–3: a single run", fontsize=S.FS_NOTE, color=S.STAR, va="top")
+# key to the box colours, right-aligned with the boxes of steps 1–3
+for x, face, label in ((101, PALE, NEW_TAG), (131, SUITE, SUITE_TAG)):
+    ax.add_patch(Rectangle((x, 89.4), 4, 2.9, fc=face, ec=EDGE, lw=0.5))
+    ax.text(x + 5.5, 90.85, label, fontsize=S.FS_NOTE, color=S.INK, va="center")
 ax.text(34, 37.0, "step 4: registration", fontsize=S.FS_NOTE, color=S.STAR, va="top")
 
 box(ax, 37, 67, 38, 19, "1 Barcode decoding",
     f"every location at the\nminimum edit distance\n(≤ {M['perHalfED']} edits per barcode)", face=PALE)
 box(ax, 37, 43, 38, 21, "2 Gene assignment",
-    "RNA-seq: alignment,\nintrons included\nFlex: half-probe match,\nno genome", face=PALE)
+    "RNA-seq: alignment,\nintrons included\nFlex: half-probe match,\nno genome", face=SUITE)
 box(ax, 81, 54, 32, 21, "3 Read cliques",
     "same gene,\nsame raw UMI,\na shared candidate\nlocation", face=PALE)
 box(ax, 119, 54, 43, 21, "3 Molecule resolution",
