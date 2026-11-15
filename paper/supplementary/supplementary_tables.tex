@@ -178,7 +178,7 @@ StarDist & Space Ranger 4.1.0, our run & (0, 0) & 3.8 & (0, 0) & 0.0 & 17 & 20 &
 \centering\scriptsize
 \caption{\textbf{Supplemental Table S11. Lung tissue measured by Xenium and then Visium HD on the same section.} Tissue: the four cores of one slide (H1-K3WKZHN/D1) and the whole sections of two further slides (identifiers given). Each tissue has two rows for the nuclei segmented from the H\&E image: Cellpose-SAM, as \STARgrid{} does, and StarDist, the control; the Xenium nuclei are the same in both rows and their results are given in the first. Registration: Space Ranger 3.0.0 in all of them; by hand for the four cores and, in Loupe Browser 8.0, for H1-JGHRVB7/D1. Mask displacement: the shift that brings the nuclei segmented from the H\&E image onto the nuclei imaged by Xenium, measured from the two masks alone, without counts, for the segmentation of the row; this is the truth for the H\&E nuclei of the row, and zero is the truth for the Xenium nuclei. Dip: the deepest dip within 12 locations in the counts deposited with the dataset. Correlation ratio and Usable: as in Supplemental Table~S8. Within one: the percentage of draws of spatial blocks in which the shift found lies within one location of the full-data one. Shifts not usable are in italics. Shifts are (rows, columns) in capture locations of 2\,\textmu m, rows running down the slide. Lower part, regions (the 3 $\times$ 3 division of each core, the 5 $\times$ 5 division of a section; regions holding at least 30,000 nucleus locations in tissue): the truth of a region is the mask displacement of that region for the H\&E nuclei and zero for the Xenium nuclei. Usable dips and usable ratios: regions where the dip or the correlation ratio is usable, by the distance of its shift from the truth. No usable dip lies two or more locations from its truth.}
 \label{supptab:11}
-\setlength{\tabcolsep}{2.5pt}
+\setlength{\tabcolsep}{2pt}
 \begin{tabular}{lrrrrrrrrrr}
 \toprule
  & \multicolumn{2}{c}{Mask displacement} & \multicolumn{2}{c}{H\&E nuclei, dip} & \multicolumn{2}{c}{H\&E nuclei, ratio} & \multicolumn{2}{c}{Xenium nuclei, dip} & \multicolumn{2}{c}{Xenium nuclei, ratio} \\
@@ -199,7 +199,7 @@ H1-JGHRVB7/D1, Cellpose-SAM & ($-$4, $-$2) & 8.9 & ($-$4, $-$2) & 100.0 & ($-$4,
 H1-JGHRVB7/D1, StarDist (control) & ($-$4, $-$2) & 8.9 & \textit{($-$4, $-$2)} & 65.0 & ($-$4, $-$2) & 100.0 & \multicolumn{4}{c}{Xenium nuclei: as in the row above} \\
 \bottomrule
 \end{tabular}
-\medskip
+\par\medskip
 \begin{tabular}{lrrrrrrrrrr}
 \toprule
  & \multicolumn{6}{c}{H\&E nuclei} & \multicolumn{4}{c}{Xenium nuclei} \\

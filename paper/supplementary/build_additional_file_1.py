@@ -533,7 +533,8 @@ s6_lower = tabular(["Tissue", "Regions", "At truth", "One off", "At truth", "One
                           r" & & \multicolumn{2}{c}{Usable dips} & \multicolumn{3}{c}{Usable ratios} & & \multicolumn{3}{c}{Usable ratios} \\",
                           r"\cmidrule(lr){3-4}\cmidrule(lr){5-7}\cmidrule(l){9-11}"))
 blocks.append("\n".join([r"\begin{table}[H]", r"\centering\scriptsize", rf"\caption{{{s6_caption}}}", r"\label{tab:s7}",
-                         r"\setlength{\tabcolsep}{2.5pt}", s6_upper, r"\medskip", s6_lower, r"\end{table}"]))
+                         # The upper part fits the text block at this column spacing; \par puts the space between the parts.
+                         r"\setlength{\tabcolsep}{2pt}", s6_upper, r"\par\medskip", s6_lower, r"\end{table}"]))
 
 # --- S7: sources of the additional molecules (B1 with v1.12.2; A1 on the probe set's genes) ----------------
 B1_SPLITS = {"examined": HERE.parents[1] / "paper_results" / "b1_location_effect_target_20261109" / "results.json",

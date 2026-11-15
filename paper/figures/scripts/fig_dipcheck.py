@@ -111,7 +111,7 @@ PROFILES = [  # placement, label, colour, marker, line style, filled
 ]
 BAND_LABELS = [">4", "2–4", "0–2", "0–2", "2–4", "4–6", "6–8", "8–10", "10–12", "far"]
 EDGE_AT = 2.5                 # between I1 and O1
-FAR_AT = 9.9                 # "far", set apart after a gap
+FAR_AT = 9.4                 # "far", set apart after a gap
 BAND_X = list(range(9)) + [FAR_AT]
 
 far = {(r["case"], int(r["radius"])): r for r in tsv(T / "far_shift_all_summaries.tsv")
@@ -143,7 +143,8 @@ steps = fig.add_gridspec(1, 4, wspace=0.10, left=0.02, right=0.985, top=0.962, b
 lower = fig.add_gridspec(2, 1, height_ratios=[1.16, 1.0], hspace=0.40, left=0.105, right=0.935, top=0.761,
                          bottom=0.103)
 middle = lower[0].subgridspec(1, 2, width_ratios=[1.62, 1.0], wspace=0.36)
-bottom = lower[1].subgridspec(1, 2, width_ratios=[1.3, 1.0], wspace=0.22)
+# d is wide enough for its tick labels "8–10" and "10–12" to stand apart
+bottom = lower[1].subgridspec(1, 2, width_ratios=[1.36, 1.0], wspace=0.17)     # e keeps its width
 
 # ------------------------------------------------------------------------------------------------
 # a: the check in four steps
@@ -221,7 +222,7 @@ for col in range(NCOL):
 masks(ax, ec=NUCLEUS, lw=1.1)
 ax.add_patch(Ellipse((0.42, 4.55), 0.62, 0.46, fc="none", ec=NUCLEUS, lw=1.1))
 ax.text(0.9, 4.55, "nucleus", fontsize=S.FS_NOTE, color=NUCLEUS, va="center")
-key_square(ax, 3.65, 0, "capture\nlocation", edge=GRID_EDGE)
+key_square(ax, 3.35, 0, "capture\nlocation", edge=GRID_EDGE)     # its two lines at 3.75 and 2.95, as the keys of 2 and 3
 
 # 2: counts, a local hollow under each nucleus
 ax = step_axes[1]
@@ -357,9 +358,9 @@ for name, label, colour, marker, style, filled in PROFILES:
               mfc=colour if filled else "white", mec=colour, mew=0.8)
 ax_d.axhline(1.0, color=S.INK_MUTED, lw=0.5, zorder=1)
 ax_d.axvline(EDGE_AT, color=S.CHANCE, lw=0.6, ls="--", zorder=1)
-ax_d.axvspan(-0.6, EDGE_AT, color=S.GRID, alpha=0.5, lw=0, zorder=0)
+ax_d.axvspan(-0.5, EDGE_AT, color=S.GRID, alpha=0.5, lw=0, zorder=0)
 ax_d.axvline((8 + FAR_AT) / 2, color=S.INK_MUTED, lw=0.5, ls=":", zorder=1)
-ax_d.set_xlim(-0.6, FAR_AT + 0.6)
+ax_d.set_xlim(-0.5, FAR_AT + 0.5)
 ax_d.set_xticks(BAND_X)
 ax_d.set_xticklabels(BAND_LABELS)
 ax_d.tick_params(axis="x", length=2, labelsize=S.FS_NOTE)

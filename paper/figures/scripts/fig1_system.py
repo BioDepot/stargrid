@@ -82,11 +82,13 @@ ax = axes[0]
 ax.add_patch(Rectangle((0.2, 4.3), 3.0, 0.45, fc="#dddddd", ec="#555555", lw=0.45))
 ax.add_patch(Rectangle((0.2, 4.3), 1.3, 0.45, fc=S.STAR, ec="#555555", lw=0.45))
 ax.text(0.2, 3.85, "read barcode", fontsize=S.FS_NOTE, color=S.STAR, va="top")
-ax.add_patch(FancyArrowPatch((3.4, 4.5), (5.35, 3.2), arrowstyle="-|>", mutation_scale=6, lw=0.7, color=S.INK_MUTED,
-                             connectionstyle="arc3,rad=-0.3"))
-small_grid(ax, 5.45, 0.2, 5, 6, 0.75)
-ax.add_patch(Rectangle((5.45 + 1 * 0.75, 0.2 + 3 * 0.75), 0.75, 0.75, fc=S.STAR, ec="#555555", lw=0.5))
-ax.add_patch(Rectangle((5.45 + 1 * 0.75, 0.2 + 2 * 0.75), 0.75, 0.75, fc=S.STAR, alpha=0.3, ec="#555555", lw=0.5))
+# The grid starts clear of the note "all best-matching locations kept", which is 5.3 units wide.
+DX, DS = 5.85, 0.72
+ax.add_patch(FancyArrowPatch((3.4, 4.5), (DX - 0.1, 0.2 + 4 * DS), arrowstyle="-|>", mutation_scale=6, lw=0.7,
+                             color=S.INK_MUTED, connectionstyle="arc3,rad=-0.3"))
+small_grid(ax, DX, 0.2, 5, 6, DS)
+ax.add_patch(Rectangle((DX + 1 * DS, 0.2 + 3 * DS), DS, DS, fc=S.STAR, ec="#555555", lw=0.5))
+ax.add_patch(Rectangle((DX + 1 * DS, 0.2 + 2 * DS), DS, DS, fc=S.STAR, alpha=0.3, ec="#555555", lw=0.5))
 ax.text(0.2, 1.6, "all best-matching\nlocations kept", fontsize=S.FS_NOTE, va="center",
         color=S.INK_MUTED, linespacing=1.25)
 
@@ -267,7 +269,7 @@ def head(ax, letter, title, dy=0.012):
 
 
 head(axes[0], "a", "The four steps of STARgrid")
-head(ax_b, "b", "Inputs, steps and outputs", dy=0.0)
+head(ax_b, "b", "Inputs, steps and outputs")     # above the dashed box, whose top edge is the top of the axes
 y_cd = max(ax_c.get_position().y1, ax_d.get_position().y1)
 for ax, letter, title in ((ax_c, "c", "The spatial barcode"), (ax_d, "d", "Resolving a read clique")):
     pos = ax.get_position()
