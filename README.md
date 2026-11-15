@@ -134,6 +134,8 @@ and after the correction) and `fit.json` (the displacement fitted across the sli
 skipped if its output is complete, so a stopped run can be resumed. `--dry-run` prints the
 commands; `--help` lists the options.
 
+This step is also the Launchpad recipe `star_visium_hd_registration` in STAR Suite, which fills in the same command.
+
 On the ovarian slide the script reports that the counts place the nuclei −4 rows and −3 columns of
 capture locations (−8 and −6 µm) from where the first stage put them, and that the displacement
 fitted across the slide predicts all ten held-out regions within one location. Given the nuclei of
